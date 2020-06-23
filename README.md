@@ -1,16 +1,59 @@
-# Kasper
+# planet.bluesabre.org
 
-> This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll. 
-Feel free to fork, change, modify and re-use it.
+Feed aggregator for Xfce and Xubuntu releases. Powered by:
+
+- [Kasper](https://github.com/rosario/kasper)
+- [Jekyll](https://github.com/jekyll/jekyll)
+- [Planet Pluto](https://github.com/feedreader/planet.rb)
+
 
 ## Installation
 
-    git clone https://github.com/rosario/kasper.git
-    cd kasper
+    git clone https://github.com/bluesabre/planet.bluesabre.org
+    cd planet.bluesabre.org
     gem install jekyll
     gem install jekyll-paginate
 
-## How to use it
+
+## Configuration
+
+### Planet Pluto Configuration
+
+Add additional sources to planet.ini.
+
+    title = Planet Ruby
+
+    [rubylang]
+        title = Ruby Lang News
+        link  = http://www.ruby-lang.org/en/news
+        feed  = http://www.ruby-lang.org/en/feeds/news.rss
+
+Use the pluto command line tool and pass in the planet configuration.
+
+    pluto update planet.ini
+
+This will
+
+1) fetch all feeds listed in `planet.ini` and
+
+2) store all entries in a local database, that is, `planet.db` in your working folder.
+
+
+### Generate Planet Posts
+
+Use the planet.rb script to generate the blog posts for your static website.
+
+    ruby ./planet.rb
+
+
+This will
+
+1) fetch the latest entries from the local database, that is, `planet.db` and
+
+2) generate a blog story for every entry in `_posts/`
+
+
+### Build and Serve
 
 Build page and start local web server
 
@@ -20,29 +63,10 @@ Build page into `_site` folder
 
     jekyll build
 
-## Kasper theme includes
-
-* Pagination
-* Rss
-* Google Analytics Tracking code
-* Code Syntax Highlight
-* Author's profile with picture
-* Disqus comments
-
-## Screenshots
-
-![index page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-index.png)
-![post page](https://raw.github.com/rosario/kasper/master/assets/images/kasper-theme-post.png)
-
-
-## Thanks
-
-Most of the work has been already done by the Ghost team, I've just ported Casper to Jekyll. 
-I've also added few things specific to Jekyll and some minor style changes.
 
 ## Copyright & License
 
-Copyright (C) 2013 Ghost Foundation - Released under the MIT License.
+Kasper Theme - Copyright (C) 2013 Ghost Foundation - Released under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
