@@ -12,3 +12,5 @@ plugins: [jekyll-paginate]
 # Details for the RSS feed generator
 url: "https://planet.bluesabre.org"
 author: "Sean Davis"
+
+exclude: [fetch-ubuntu-package.py, fetch-xfce-announce.py, planet.ini, planet.db, planet.rb, README.md, xfce-announce.json]

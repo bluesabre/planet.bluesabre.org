@@ -52,7 +52,7 @@ about: 'about.html'
         </header>
         {% assign excerptSize = post.excerpt | number_of_words %}
         {% assign excerptAlt = post.content | split:"<p>" | shift | first | strip_html %}
-        {% if post.original_link contains "github.com" or post.original_link contains "mail.xfce.org" %}
+        {% if post.original_link contains "github.com" or post.original_link contains "mail.xfce.org" or post.original_link contains "changelogs.ubuntu.com" %}
             <section class="post-content">{{ post.content }}</section>
         {% else if excerptSize < 10 %}
             <section class="post-excerpt"><p>{{ excerptAlt }}</p></section>
@@ -62,6 +62,8 @@ about: 'about.html'
         <footer>
             {% if post.original_link contains "github.com" or post.original_link contains "mail.xfce.org" %}
             <a class="read-more" href="{{ post.original_link }}">&raquo; Release Announcement</a>
+            {% elsif post.original_link contains "changelogs.ubuntu.com" %}
+            <a class="read-more" href="{{ post.original_link }}">&raquo; Changelog</a>
             {% else %}
             <a class="read-more" href="{{ post.original_link }}">&raquo; Read More</a>
             {% endif %}

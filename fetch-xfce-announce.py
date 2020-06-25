@@ -1,8 +1,24 @@
 import os
+import shutil
+import subprocess
 
 def fetch_feed():
-    # ~/.local/bin/mailman-rss --archive-url https://mail.xfce.org/pipermail/xfce-announce/ --max-items 10 > xfce-announce.xml
+    print("Fetching feed...")
+    mailman = shutil.which("mailman-rss")
+    if mailman is None:
+        localpath = os.path.expanduser("~/.local/bin/mailman-rss")
+        if os.path.exists(localpath):
+            mailman = localpath
+    if mailman is not None:
+        print("Using %s to fetch feed" % mailman)
+        with open('xfce-announce.xml', "w") as outfile:
+            subprocess.run([mailman, "--archive-url", "https://mail.xfce.org/pipermail/xfce-announce/", "--max-items", "10"], stdout=outfile)
     pass
+
+def update_planet():
+    print("Updating planet...")
+    subprocess.run(["pluto", "update", "planet.ini"])
+    subprocess.run(["ruby", "planet.rb"])
 
 def read_post_head(filename):
     contents = {}
@@ -64,11 +80,15 @@ def get_posts():
     return posts
 
 def clean_posts():
+    print("Cleaning posts...")
     for filename in get_posts():
+        print("- %s" % filename)
         new_contents = read_post_body(filename)
         if new_contents:
             with open(filename, "w") as outfile:
                 outfile.write(new_contents)
             os.rename(filename, filename.replace(".html", ".md"))
 
+fetch_feed()
+update_planet()
 clean_posts()

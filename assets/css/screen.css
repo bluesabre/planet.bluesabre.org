@@ -248,6 +248,10 @@ p, ul, ol, dl {
     margin: 0 0 1.75em 0;
 }
 
+.post-content p:contains("\[ ") {
+    margin-bottom: 0;
+}
+
 ol, ul {
     padding-left: 3rem;
 }
