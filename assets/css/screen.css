@@ -1731,6 +1731,9 @@ background: linear-gradient(40deg, rgba(25,47,47,1) 0%, rgba(6,23,29,1) 100%);
         background: #191b1f;
         box-shadow: #191b1f 0 0 0 5px;
     }
+    .site-footer {
+        border-top-color: rgba(146, 163, 171, 0.8);
+    }
 	.post-feed {
 		background: #191b1f
 	}

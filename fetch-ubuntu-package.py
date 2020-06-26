@@ -24,7 +24,10 @@ def md_body(body):
             line = line.strip()
             output.append(indent + "- " + line)
         else:
-            output[len(output) - 1] += line
+            if len(output) > 0:
+                output[len(output) - 1] += line
+            else:
+                output.append(line)
     return "\n".join(output)
 
 # ^([A-Za-z0-9\-]+)\s+\((.+)\)\s+([A-Za-z]+);\s+.*$
@@ -38,6 +41,7 @@ author_regex = r"^\s--\s(.*)\s<(.*)>\s+(.*)$"
 def convert_date(date_string):
     # Fri, 06 Apr 2012 21:42:53 +0200
     date_string = date_string.replace("  ", " ")
+    date_string = date_string.strip()
     weekday, day, month_string, year, time, offset = date_string.split(" ", 6)
     months = {
         "Jan": "01",
@@ -56,6 +60,17 @@ def convert_date(date_string):
     month = months[month_string]
     return "%s-%s-%s %s.000000000 Z" % (year, month, day, time)
 
+def get_changelog_url_topdir(package_name):
+    if package_name.startswith("lib"):
+        topdir = package_name[:4]
+    else:
+        topdir = package_name[0]
+    return "http://changelogs.ubuntu.com/changelogs/pool/universe/%s/%s" % (topdir, package_name)
+
+def get_changelog_url(package_name, version):
+    topdir = get_changelog_url_topdir(package_name)
+    return "%s/%s_%s/changelog" % (topdir, package_name, version)
+
 def process_changelog(contents):
     releases = []
     current_release = None
@@ -64,9 +79,8 @@ def process_changelog(contents):
             match = re.search(release_regex, line)
             if match is not None:
                 package, version, archive = (match[1], match[2], match[3])
-                startswith = package[0]
                 current_release = "%s (%s) %s" % (package, version, archive)
-                original_link = "http://changelogs.ubuntu.com/changelogs/pool/universe/%s/%s/%s_%s/changelog" % (startswith, package, package, version)
+                original_link = get_changelog_url(package, version)
                 body = ""
             continue
         match = re.search(author_regex, line)
@@ -91,8 +105,7 @@ def process_changelog(contents):
 
 def get_changelog(package_name):
     #http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/
-    startswith = package_name[0]
-    url = "http://changelogs.ubuntu.com/changelogs/pool/universe/%s/%s/" % (startswith, package_name)
+    url = "%s/" % get_changelog_url_topdir(package_name)
 
     page = urllib.request.urlopen(url)
     content = page.read()
@@ -145,8 +158,97 @@ def get_posts(package_name):
         with open(filename, 'w') as outfile:
             outfile.write(file_contents)
         release_count += 1
-        if release_count == 5:
+        if release_count == 1:
             return
 
-get_posts("lightdm-gtk-greeter")
-get_posts("xubuntu-default-settings")
+packages = [
+    "atril",
+    "blueman",
+    "catfish",
+    "elementary-xfce",
+    "engrampa",
+    "exo",
+    "garcon",
+    "gigolo",
+    "gimp",
+    "greybird-gtk-theme",
+    "libxfce4ui",
+    "libxfce4util",
+    "lightdm",
+    "lightdm-gtk-greeter",
+    "lightdm-gtk-greeter-settings",
+    "mate-calc",
+    "menulibre",
+    "mousepad",
+    "mugshot",
+    "numix-gtk-theme",
+    "parole",
+    "pidgin",
+    "ristretto",
+    "sgt-launcher",
+    "sgt-puzzles",
+    "shimmer-themes",
+    "thunar",
+    "thunar-archive-plugin",
+    "thunar-dropbox-plugin",
+    "thunar-media-tags-plugin",
+    "thunar-vcs-plugin",
+    "thunar-volman",
+    "tumbler",
+    "xfburn",
+    "xfce4",
+    "xfce4-appfinder",
+    "xfce4-battery-plugin",
+    "xfce4-clipman-plugin",
+    "xfce4-cpufreq-plugin",
+    "xfce4-cpugraph-plugin",
+    "xfce4-datetime-plugin",
+    "xfce4-dict",
+    "xfce4-diskperf-plugin",
+    "xfce4-eyes-plugin",
+    "xfce4-fsguard-plugin",
+    "xfce4-genmon-plugin",
+    "xfce4-goodies",
+    "xfce4-indicator-plugin",
+    "xfce4-mailwatch-plugin",
+    "xfce4-mount-plugin",
+    "xfce4-mpc-plugin",
+    "xfce4-netload-plugin",
+    "xfce4-notes-plugin",
+    "xfce4-notifyd",
+    "xfce4-panel",
+    "xfce4-panel-profiles",
+    "xfce4-places-plugin",
+    "xfce4-power-manager",
+    "xfce4-pulseaudio-plugin",
+    "xfce4-screensaver",
+    "xfce4-screenshooter",
+    "xfce4-sensors-plugin",
+    "xfce4-session",
+    "xfce4-settings",
+    "xfce4-smartbookmark-plugin",
+    "xfce4-statusnotifier-plugin",
+    "xfce4-systemload-plugin",
+    "xfce4-taskmanager",
+    "xfce4-terminal",
+    "xfce4-time-out-plugin",
+    "xfce4-timer-plugin",
+    "xfce4-verve-plugin",
+    "xfce4-wavelan-plugin",
+    "xfce4-weather-plugin",
+    "xfce4-whiskermenu-plugin",
+    "xfce4-xkb-plugin",
+    "xfconf",
+    "xfdashboard",
+    "xfdesktop4",
+    "xfwm4",
+    "xiccd",
+    "xubuntu-artwork",
+    "xubuntu-community-artwork",
+    "xubuntu-default-settings",
+    "xubuntu-docs",
+    "xubuntu-meta"
+]
+
+for package_name in packages:
+    get_posts(package_name)
