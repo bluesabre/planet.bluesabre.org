@@ -141,6 +141,7 @@ created_at: %s
 author: %s
 layout: post
 original_link: %s
+excerpt_only: false
 ---
 %s""" % (release["release"], release["date"], release["author"], release["original_link"], release["body"])
     return contents

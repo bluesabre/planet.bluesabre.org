@@ -2,6 +2,8 @@
 #  to run use
 #     ruby ./planet.rb
 
+require 'uri'
+
 require 'pluto/models'     ## see https://rubygems.org/gems/pluto-models
 
 
@@ -57,7 +59,26 @@ private
       'layout'     => 'post'
     }
 
+    if ['Sean Davis', 'Alexander Schwinn', 'André Miranda', 'Pasi Lallinaho', 'Simon Steinbeiß', 'Romain Bouvier'].include? item.feed.title
+      frontmatter['excerpt_only'] = true
+    else
+      frontmatter['excerpt_only'] = false
+    end
+
+    if item.content
+      summary = item.summary.to_s.gsub(/<\/?[^>]*>/, "")
+      if summary.include? 'Continue reading'
+        summary = summary.split('Continue reading')[0]
+      end
+      #summary = item.summary.to_s
+      frontmatter['summary'] = summary    unless summary.empty?
+    end
+
     frontmatter['original_link'] = item.url    unless item.url.empty?
+
+    uri = URI.parse(item.url)
+    host = uri.host.downcase
+    frontmatter['hostname'] = uri.scheme + "://" + host + "/"
 
 
     File.open( fn, 'w:utf-8' ) do |f|
