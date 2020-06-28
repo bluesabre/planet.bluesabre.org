@@ -59,8 +59,8 @@ private
       'layout'     => 'post'
     }
 
-    if ['Sean Davis', 'Alexander Schwinn', 'André Miranda', 'Pasi Lallinaho', 'Simon Steinbeiß', 'Romain Bouvier'].include? item.feed.title
-      frontmatter['excerpt_only'] = true
+    if ['Sean Davis'].include? item.feed.title
+      frontmatter['excerpt_only'] = false
     else
       frontmatter['excerpt_only'] = false
     end

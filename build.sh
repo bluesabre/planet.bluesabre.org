@@ -79,6 +79,7 @@ function update() {
     fi
     update_xfce_posts --fetch
     update_planet
+    update_planet_db
     update_planet_posts
     update_xfce_posts --clean
 }

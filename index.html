@@ -79,15 +79,17 @@ cover: false
         {% if useContent==true %}
             <section class="post-content">{{ content }}</section>
         {% else %}
-            <section class="post-excerpt">{{ content }}</section>
+            <section class="post-excerpt"><p>{{ content }}</p></section>
         {% endif %}
         <footer>
             {% if post.original_link contains "github.com" or post.original_link contains "mail.xfce.org" %}
                 <a class="read-more" href="{{ post.original_link }}">&raquo; Release Announcement</a>
             {% elsif post.original_link contains "changelogs.ubuntu.com" %}
                 <a class="read-more" href="{{ post.original_link }}">&raquo; Changelog</a>
+            {% elsif useContent==true %}
+                <a class="read-more" href="{{ post.original_link }}">&raquo; Original Post</a>
             {% else %}
-                <a class="read-more" href="{{ post.original_link }}">&raquo; Read More</a>
+                <a class="read-more" href="{{ post.original_link }}">&raquo; Continue reading <em>{{ post.title }}</em>...</a>
             {% endif %}
         </footer>
     </article>
