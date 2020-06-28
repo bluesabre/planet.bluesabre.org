@@ -74,6 +74,7 @@ function update_ubuntu_packages() {
 }
 
 function update() {
+    git pull
     if [[ "$1" == "ubuntu" ]]; then
         update_ubuntu_packages
     fi
@@ -83,6 +84,18 @@ function update() {
     update_planet_posts
     update_xfce_posts --clean
 }
+
+function deploy() {
+    cp -R build/* /var/www/planet.bluesabre.org/
+}
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+cd $DIR
+
+if [[ "$1" == "deploy" ]]; then
+    deploy
+    exit 0
+fi
 
 update $1
 build_site
