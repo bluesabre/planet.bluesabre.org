@@ -270,6 +270,21 @@ code {
 	width: 80%;
 }
 
+.main-header .inner p {
+	opacity: 0.8;
+	margin-bottom: 0;
+}
+.main-header .inner p:hover {
+	opacity: 1.0;
+}
+
+.main-header .inner p,
+.main-header .inner a {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
 .main-nav {
 	position: relative;
 	padding: 35px 40px;
@@ -736,7 +751,7 @@ body:not(.post-template) .post-title {
 		height: auto;
 		min-height: 240px;
 		height: 60%;
-		padding: 15% 0;
+		padding: 15% 0 0 0;
 	}
 	.home-template .main-header:after,
 	.scroll-down {

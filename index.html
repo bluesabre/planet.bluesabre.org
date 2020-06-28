@@ -22,8 +22,13 @@ cover: false
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
             </h2>
+            {% if paginator.previous_page %}
+            {% else %}
             <br>
-            <a href="https://github.com/bluesabre/planet.bluesabre.org">GitHub</a>
+            <p>
+                Developer? Blogger? Get the source and submit your own blog at <a href="https://github.com/bluesabre/planet.bluesabre.org">GitHub</a>
+            </p>
+            {% endif %}
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
