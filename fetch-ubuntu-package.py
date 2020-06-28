@@ -57,6 +57,8 @@ def convert_date(date_string):
         "Nov": "11",
         "Dec": "12"
     }
+    if len(day) == 1:
+        day = "0" + day
     month = months[month_string]
     return "%s-%s-%s %s.000000000 Z" % (year, month, day, time)
 
