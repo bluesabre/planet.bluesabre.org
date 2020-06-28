@@ -1,6 +1,7 @@
 import os
 import shutil
 import subprocess
+import sys
 
 def fetch_feed():
     print("Fetching feed...")
@@ -14,11 +15,6 @@ def fetch_feed():
         with open('xfce-announce.xml', "w") as outfile:
             subprocess.run([mailman, "--archive-url", "https://mail.xfce.org/pipermail/xfce-announce/", "--max-items", "10"], stdout=outfile)
     pass
-
-def update_planet():
-    print("Updating planet...")
-    subprocess.run(["pluto", "update", "planet.ini"])
-    subprocess.run(["ruby", "planet.rb"])
 
 def read_post_head(filename):
     contents = {}
@@ -89,6 +85,10 @@ def clean_posts():
                 outfile.write(new_contents)
             os.rename(filename, filename.replace(".html", ".md"))
 
-fetch_feed()
-update_planet()
-clean_posts()
+cmd = sys.argv[1]
+
+if cmd == "--fetch":
+    fetch_feed()
+
+elif cmd == "--clean":
+    clean_posts()

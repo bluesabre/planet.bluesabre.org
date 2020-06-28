@@ -1,6 +1,7 @@
 name: Planet Bluesabre
 description: All the latest from Xfce, Xubuntu, & Friends
 meta_description: "Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends"
+timezone: America/New_York
 
 markdown: kramdown
 highlighter: rouge
@@ -13,4 +14,14 @@ plugins: [jekyll-paginate]
 url: "https://planet.bluesabre.org"
 author: "Sean Davis"
 
-exclude: [fetch-ubuntu-package.py, fetch-xfce-announce.py, planet.ini, planet.db, planet.rb, README.md, xfce-announce.json]
+exclude:
+  - build
+  - build.sh
+  - LICENSE.txt
+  - fetch-ubuntu-package.py
+  - fetch-xfce-announce.py
+  - planet.ini
+  - planet.db
+  - planet.rb
+  - README.md
+  - xfce-announce.json

@@ -70,7 +70,6 @@ private
       if summary.include? 'Continue reading'
         summary = summary.split('Continue reading')[0]
       end
-      #summary = item.summary.to_s
       frontmatter['summary'] = summary    unless summary.empty?
     end
 

@@ -2,7 +2,6 @@
 layout: default
 title: Home
 cover: false
-about: 'about.html'
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
@@ -51,42 +50,44 @@ about: 'about.html'
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}
             </time>
-            <a href="{{ post.original_link }}" class="post-permalink">Permalink</a>
+            <a href="{{ post.original_link }}" class="post-permalink">
+                Permalink
+            </a>
         </header>
+        {% assign useContent = false %}
         {% if post.excerpt_only==true %}
             {% assign excerptSize = post.excerpt | number_of_words %}
             {% if post.summary %}
-            {% assign summarySize = post.summary | number_of_words %}
+                {% assign summarySize = post.summary | number_of_words %}
             {% endif %}
             {% assign excerptAlt = post.content | split:"<p>" | shift | first | strip_html %}
             {% if post.original_link contains "github.com" or post.original_link contains "mail.xfce.org" or post.original_link contains "changelogs.ubuntu.com" %}
-            <section class="post-content">{{ post.content }}</section>
+                {% assign useContent = true %}
+                {% assign content = post.content %}
             {% elsif post.summary and summarySize > 0 and summarySize < 200 %}
-            <section class="post-excerpt">
-                <p>{{ post.summary }}</p>
-            </section>
+                {% assign content = post.summary %}
             {% elsif excerptSize < 10 %}
-            <section class="post-excerpt">
-                <p>{{ excerptAlt }}</p>
-            </section>
+                {% assign content = excerptAlt %}
             {% else %}
-            <section class="post-excerpt">
-                <p>{{ post.excerpt | strip_html }}</p>
-            </section>
+                {% assign content = post.excerpt | strip_html %}
             {% endif %}
         {% else %}
-            <section class="post-content">
-                {% assign srcReplace = 'src="' | append: post.hostname %}
-                {{ post.content | replace: 'src="/', srcReplace }}
-            </section>
+            {% assign useContent = true %}
+            {% assign srcReplace = 'src="' | append: post.hostname %}
+            {% assign content = post.content | replace: 'src="/', srcReplace %}
+        {% endif %}
+        {% if useContent==true %}
+            <section class="post-content">{{ content }}</section>
+        {% else %}
+            <section class="post-excerpt">{{ content }}</section>
         {% endif %}
         <footer>
             {% if post.original_link contains "github.com" or post.original_link contains "mail.xfce.org" %}
-            <a class="read-more" href="{{ post.original_link }}">&raquo; Release Announcement</a>
+                <a class="read-more" href="{{ post.original_link }}">&raquo; Release Announcement</a>
             {% elsif post.original_link contains "changelogs.ubuntu.com" %}
-            <a class="read-more" href="{{ post.original_link }}">&raquo; Changelog</a>
+                <a class="read-more" href="{{ post.original_link }}">&raquo; Changelog</a>
             {% else %}
-            <a class="read-more" href="{{ post.original_link }}">&raquo; Read More</a>
+                <a class="read-more" href="{{ post.original_link }}">&raquo; Read More</a>
             {% endif %}
         </footer>
     </article>
