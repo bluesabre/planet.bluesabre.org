@@ -1,5 +1,9 @@
 #!/bin/bash
 
+export PATH=/home/bluesabre/gems/bin:/home/bluesabre/bin:/home/bluesabre/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
 function update_planet_db {
     sqlite3 planet.db "UPDATE items SET published = '2019-07-28 12:00:00' WHERE title = 'Mugshot 0.4.2';"
     sqlite3 planet.db "UPDATE items SET published = '2018-08-08 12:00:00' WHERE title = 'Mugshot 0.4.1';"
@@ -86,6 +90,7 @@ function update() {
 }
 
 function deploy() {
+    build_site
     cp -R build/* /var/www/planet.bluesabre.org/
 }
 
