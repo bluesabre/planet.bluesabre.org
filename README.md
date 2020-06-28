@@ -5,14 +5,46 @@ Feed aggregator for Xfce and Xubuntu releases. Powered by:
 - [Kasper](https://github.com/rosario/kasper)
 - [Jekyll](https://github.com/jekyll/jekyll)
 - [Planet Pluto](https://github.com/feedreader/planet.rb)
+- [mailman-rss](https://pypi.org/project/mailman-rss/) for processing xfce-announce
 
+Updated frequently at [planet.bluesabre.org](https://planet.bluesabre.org)
+
+## Adding Your Blog
+
+1. Add your feed details to `planet.ini`.
+1. If you want your feed to only show an excerpt (for rendering or other purposes), add your blog title to ~line 62 of `planet.rb`.
+
+```ruby
+if ['Sean Davis', 'My Blog Title'].include? item.feed.title
+  frontmatter['excerpt_only'] = false
+else
+  frontmatter['excerpt_only'] = false
+end
+```
+
+## Included Goodies
+
+- `fetch-ubuntu-package.py` pulls the latest ubuntu changelogs for a list of packages, and parses them into Markdown
+- `fetch-xfce-announce.py` uses `mailman-rss` to pull Xfce release announcements, then cleans them up and converts them into Markdown
 
 ## Installation
 
+    # Jekyll dependencies
     git clone https://github.com/bluesabre/planet.bluesabre.org
     cd planet.bluesabre.org
-    gem install jekyll
+    gem install jekyll bundler
     gem install jekyll-paginate
+    
+    # Pluto dependencies
+    sudo apt-get install libsqlite3-dev
+    gem install pluto
+    
+    # Processing xfce-announce
+    sudo apt install python3-pip python3-lxml
+    pip3 install mailman-rss
+    
+    # Correcting GitHub release dates
+    sudo apt install sqlite3
 
 
 ## Configuration
