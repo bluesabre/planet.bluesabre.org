@@ -49,6 +49,8 @@
             }
         }
 
+        $("img[width]").removeAttr("width").removeAttr("height");
+
         var $img = $("img").on('load', updateImageWidth);
         function casperFullImg() {
             $img.each(updateImageWidth);
