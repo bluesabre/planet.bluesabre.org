@@ -11,7 +11,7 @@ function update_planet_db {
     sqlite3 planet.db "UPDATE items SET published = '2014-08-02 12:00:00' WHERE title = 'Mugshot 0.2.4';"
     sqlite3 planet.db "UPDATE items SET published = '2014-04-04 12:00:00' WHERE title = 'Mugshot 0.2.3';"
     sqlite3 planet.db "UPDATE items SET published = '2014-03-09 12:00:00' WHERE title = 'Mugshot 0.2.2';"
-    sqlite3 planet.db "UPDATE items SET published = '2020-05-31 12:00:00' WHERE title = 'MenuLibre 2.2.1';"
+    sqlite3 planet.db "UPDATE items SET published = '2019-05-31 12:00:00' WHERE title = 'MenuLibre 2.2.1';"
     sqlite3 planet.db "UPDATE items SET published = '2018-03-16 12:00:00' WHERE title = 'MenuLibre 2.2.0';"
     sqlite3 planet.db "UPDATE items SET published = '2018-02-05 12:00:00' WHERE title = 'MenuLibre 2.1.5';"
     sqlite3 planet.db "UPDATE items SET published = '2018-01-18 12:00:00' WHERE title = 'MenuLibre 2.1.4';"
