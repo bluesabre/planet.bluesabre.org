@@ -81,7 +81,8 @@ cover: false
         {% else %}
             {% assign useContent = true %}
             {% assign srcReplace = 'src="' | append: post.hostname %}
-            {% assign content = post.content | replace: 'src="/', srcReplace %}
+            {% assign hrefReplace = 'src="' | append: post.hostname %}
+            {% assign content = post.content | replace: 'src="/', srcReplace | replace: 'href="/', hrefReplace %}
         {% endif %}
         {% if useContent==true %}
             <section class="post-content">{{ content }}</section>

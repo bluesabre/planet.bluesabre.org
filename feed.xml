@@ -14,7 +14,7 @@ layout: null
 <channel>
 	<title><![CDATA[{{ site.name }}]]></title>
 	<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-	<link href="{{ site.url }}/" />
+	<link>{{ site.url }}/</link>
 	<description><![CDATA[{{ site.description }}]]></description>
 	<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
 	<language>en-US</language>
@@ -54,7 +54,8 @@ layout: null
           ]]>
         {% else %}
           {% assign srcReplace = 'src="' | append: post.hostname %}
-          <![CDATA[{{ post.content | expand_urls: post.hostname | replace: 'src="/', srcReplace | cdata_escape }}]]>
+          {% assign hrefReplace = 'href="' | append: post.hostname %}
+          <![CDATA[{{ post.content | expand_urls: post.hostname | replace: 'src="/', srcReplace | replace: 'href="/', hrefReplace | cdata_escape }}]]>
         {% endif %}
       </content:encoded>
 		</item>
