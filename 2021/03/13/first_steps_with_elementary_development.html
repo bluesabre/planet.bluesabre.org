@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">First Steps with elementary Development</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2021-03-13">13 Mar 2021</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2021-03-13">13 Mar 2021</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">First Steps with elementary Development</h1> -->
+
+        <section class="post-content">
+            <img src="https://bluesabre.org/content/images/2021/03/first_steps_gradient.png" alt="First Steps with elementary Development"><p>Nearly two weeks have passed since I <a href="https://bluesabre.org/2021/02/28/and-now-for-something-completely-different/">announced</a> that I would be exploring development on elementary OS. I had more positive feedback than I expected, so thanks everybody for your awesome support! Since the announcement, I&apos;ve been getting my feet wet with a few different elementary-related projects, and I think I&apos;m starting to get the hang of things.</p><h2 id="wingpanel-ayatana-indicator">Wingpanel Ayatana Indicator</h2><p>I&apos;ve long been a fan of <em>indicators</em>, the modern replacement for Systray icons. Fewer apps are using Systray these days, and it has been deprecated across several desktops and toolkits. Replacing the Systray are AppIndicators (of the <a href="https://wiki.ubuntu.com/DesktopExperienceTeam/ApplicationIndicators">Ubuntu</a> and <a href="https://ayatanaindicators.github.io/">Ayatana</a> variety) and <a href="https://www.freedesktop.org/wiki/Specifications/StatusNotifierItem/">StatusNotifierItems</a>. These have pretty wide support and are commonly used by messaging apps (Discord, Slack, Telegram) and cloud syncing apps (Dropbox, pCloud, SyncThing).</p><h3 id="adding-support-for-elementary-6-odin">Adding support for elementary 6 &quot;Odin&quot;</h3><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://github.com/Lafydev/wingpanel-indicator-ayatana/pull/16"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Odin Support by bluesabre &#xB7; Pull Request #16 &#xB7; Lafydev/wingpanel-indicator-ayatana</div><div class="kg-bookmark-description">This branch adds support for elementary 6 Odin and updates the Debian packaging to a recent standard. Since this branch updates the dependencies to the latest Wingpanel and Granite, it&amp;#39;s not co...</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://github.githubassets.com/favicons/favicon.svg" alt="First Steps with elementary Development"><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">Lafydev</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://avatars.githubusercontent.com/u/44295362?s=400&amp;v=4" alt="First Steps with elementary Development"></div></a></figure><p>With a few development library updates, the existing version of the indicator did not support the upcoming Odin release. After a bit of hacking and experimentation, I got the package working fully. Check out the above pull request in case you need to get your indicator fix. In a less useful update, I also <a href="https://github.com/Lafydev/wingpanel-indicator-ayatana/pull/17">refreshed the packaging</a> for elementary 5 &quot;Hera&quot;.</p><h2 id="files-tabular-numbers-in-the-file-transfer-dialog">Files: Tabular numbers in the file transfer dialog</h2><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://github.com/elementary/files/issues/1567"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Use tabular numbers in file transfer dialog &#xB7; Issue #1567 &#xB7; elementary/files</div><div class="kg-bookmark-description">Problem When a file is being transferred, the string showing the progress jitters all over the place due to the differing widths of the numbers. progress.mp4 Proposal We use tabular numbers in the ...</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://github.githubassets.com/favicons/favicon.svg" alt="First Steps with elementary Development"><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">elementary</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://avatars.githubusercontent.com/u/1978534?s=400&amp;v=4" alt="First Steps with elementary Development"></div></a></figure><p>I found this issue while browsing the <em>Bitesize Issues</em> found in the <a href="https://elementary.io/get-involved#desktop-development">Desktop Development</a> section of elementary&apos;s Get Involved page. Tabular numbers would prevent the file transfer dialog from jumping around, which seemed like a nice improvement. With the referenced code example, I was able to quickly identify the needed changes and get my hands dirty with a bit of Vala. After a code review and a small tweak, my pull request was merged!</p><h2 id="wingpanel-sound-indicator">Wingpanel Sound Indicator</h2><p>After browsing the various projects and open issues, I became interested in hacking on the Wingpanel Sound Indicator. On the Xfce side, I&apos;ve maintained the <a href="https://gitlab.xfce.org/panel-plugins/xfce4-pulseaudio-plugin">Xfce PulseAudio Plugin</a> and <a href="https://gitlab.xfce.org/apps/parole">Parole Media Player</a> for quite some time and have some relevant experience to apply with MPRIS and DBus.</p><h3 id="fixing-spotify-s-missing-artwork">Fixing Spotify&apos;s missing artwork</h3><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://github.com/elementary/wingpanel-indicator-sound/issues/145"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Spotify album art stopped showing &#xB7; Issue #145 &#xB7; elementary/wingpanel-indicator-sound</div><div class="kg-bookmark-description">I don&#x2019;t really know why, but about a week ago the sound indicator stopped showing the album art from the currently playing music. But still works fine on notifications for example.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://github.githubassets.com/favicons/favicon.svg" alt="First Steps with elementary Development"><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">elementary</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://avatars.githubusercontent.com/u/1978534?s=400&amp;v=4" alt="First Steps with elementary Development"></div></a></figure><p>When I&apos;m at my computer, I&apos;ve always got Spotify playing in the background. Having the album artwork in the sound indicator is a nice touch, so I wanted to dig in and see if I could land a fix. Using <a href="https://wiki.gnome.org/Apps/DFeet">DFeet</a>, I was able to get the URL Spotify was sending, found it was returning a 404 response, and ultimately came across <a href="https://community.spotify.com/t5/Desktop-Linux/MPRIS-cover-art-url-file-not-found/td-p/4920104">this post on the Spotify Community</a> about the invalid URL.</p><p>I threw together a <a href="https://github.com/elementary/wingpanel-indicator-sound/pull/186">simple pull request</a> to replace the invalid URL with a currently known working one (Vala makes this super simple) and sent it along. A couple of the elementary developers quickly responded with some valid feedback, including the simple fact that Spotify needs to fix their own app. If any Spotify developers are reading... please? :)</p><h3 id="bluetooth-audio-devices-listed-as-music-players">Bluetooth audio devices listed as music players</h3><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://github.com/elementary/wingpanel-indicator-sound/issues/89"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Bluetooth audio device listed as music player? &#xB7; Issue #89 &#xB7; elementary/wingpanel-indicator-sound</div><div class="kg-bookmark-description">One of my bluetooth headphones is listed as if it&amp;#39;s a music player in the sound indicator: It&amp;#39;s also listed as monitor by PulseAudio volume control: But, my other bluetooth device is also l...</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://github.githubassets.com/favicons/favicon.svg" alt="First Steps with elementary Development"><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">elementary</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://avatars.githubusercontent.com/u/1978534?s=400&amp;v=4" alt="First Steps with elementary Development"></div></a></figure><p>The Wingpanel Sound Indicator conveniently shows available media players, phones, and other devices that can be controlled via <a href="https://specifications.freedesktop.org/mpris-spec/2.2/">MPRIS</a>. A device I didn&apos;t expect to see in the list was my Bluetooth headphones! Unsurprisingly, the media controls didn&apos;t have any effect on my headphones.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/03/Screenshot-from-2021-03-12-19-32-42.png" class="kg-image" alt="First Steps with elementary Development" loading="lazy" width="371" height="305"><figcaption>One of these things is not like the other.</figcaption></figure><p>I did some more digging in DFeet, but the most useful property I could find was that this player uses the audio-card icon. I tracked down the icon-related code in bluez and used that as the basis for a new issue:</p><figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="https://github.com/bluez/bluez/issues/106"><div class="kg-bookmark-content"><div class="kg-bookmark-title">org.bluez.MediaPlayer1 interface available for bluetooth headphones &#xB7; Issue #106 &#xB7; bluez/bluez</div><div class="kg-bookmark-description">The org.bluez.MediaPlayer1 interface seems to be made available for bluetooth headphones, including my &amp;quot;Air by AfterShokz&amp;quot;. However, this interface doesn&amp;#39;t do anything and doesn&amp;#39;t...</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="https://github.githubassets.com/favicons/favicon.svg" alt="First Steps with elementary Development"><span class="kg-bookmark-author">GitHub</span><span class="kg-bookmark-publisher">bluez</span></div></div><div class="kg-bookmark-thumbnail"><img src="https://avatars.githubusercontent.com/u/57395048?s=400&amp;v=4" alt="First Steps with elementary Development"></div></a></figure><p>Here&apos;s hoping that one can get fixed upstream! If not, I&apos;ll continue exploring options for hiding this device in the Sound Indicator.</p><h2 id="what-s-next">What&apos;s next?</h2><p>I&apos;m having fun exploring the elementary code and issue trackers, and I think I&apos;ll be able to make some meaningful contributions to be project. I may spend a bit more time on the Wingpanel Sound Indicator before getting more out of my comfort zone with some larger projects. I&apos;ve also got some updates coming for Xubuntu in the next couple of days, so watch my blog and <a href="https://twitter.com/bluesabredavis">Twitter</a> for updates.</p><p>In case you&apos;d like to join in, I recommend checking out the <a href="https://elementary.io/get-involved">Get Involved</a> page for ways to contribute. Additionally, elementary announced yesterday that they did not get accepted into the Google Summer of Code this year, but shared a list of potential projects to work on. There&apos;s some pretty substantial projects listed here, so if you&apos;re looking for something to do, this seems like a good opportunity.</p><figure class="kg-card kg-embed-card"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Google Summer of Code was a little too full to accept us this year, but our ideas list is still a great place to find potential projects if you&#x2019;d like to get involved!<a href="https://t.co/dmbHh79EoW">https://t.co/dmbHh79EoW</a> <a href="https://t.co/urrBaKWfLe">pic.twitter.com/urrBaKWfLe</a></p>&#x2014; elementary (@elementary) <a href="https://twitter.com/elementary/status/1370464872677453831?ref_src=twsrc%5Etfw">March 12, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</figure>
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

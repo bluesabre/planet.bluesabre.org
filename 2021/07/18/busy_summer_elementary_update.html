@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Busy Summer: elementary Update</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2021-07-18">18 Jul 2021</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2021-07-18">18 Jul 2021</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">Busy Summer: elementary Update</h1> -->
+
+        <section class="post-content">
+            <img src="https://bluesabre.org/content/images/2021/07/busy-summer-elementary-update-1.png" alt="Busy Summer: elementary Update"><p>I&apos;ve been quiet the last few months. With an increased (at-work) workload and the start of returning to a normal life, I simply haven&apos;t had the time to sit down and focus on FOSS. Despite that, I still managed to contribute some worthwhile improvements to elementary.</p><p><strong>Disclaimer:</strong> elementary 6 &quot;Odin&quot; is still in development, so the features displayed below are not final. Watch the <a href="https://blog.elementary.io/">elementary Blog</a> for updates on the next release.</p><h2 id="sound-indicator">Sound Indicator</h2><p>After <a href="https://bluesabre.org/2021/04/24/whats-new-april-2021/#elementary-development-update">adding device management support</a>, I continued making incremental improvements to the sound indicator. It will now remember previously selected devices, so switching between various setups is now easier (<a href="https://github.com/elementary/wingpanel-indicator-sound/pull/192">#192</a>). Devices with long names (HDMI from graphics cards can be pretty bad) are now ellipsized, keeping the popup menu reasonable sized (<a href="https://github.com/elementary/wingpanel-indicator-sound/pull/193">#193</a>). Finally, MPRIS players created by browsers will now go away once playback is complete, keeping the menu tidy (<a href="https://github.com/elementary/wingpanel-indicator-sound/pull/196">#196</a>).</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-sound-1.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-sound-2.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-sound-3.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div></div></div><figcaption>MPRIS players from web browsers disappear once they&apos;re complete. Secondary audio devices can be easily activated after being used once, simplifying switching between audio setups.</figcaption></figure><h2 id="notifications">Notifications</h2><p>Notifications in elementary 6 are now more compliant with the FreeDesktop.org <a href="https://specifications.freedesktop.org/notification-spec/latest/index.html">Desktop Notifications Specification</a>. Application icons and images sourced from a URI (<a href="https://github.com/elementary/notifications/pull/120">#120</a>) as well as raw image data (<a href="https://github.com/elementary/notifications/pull/123">#123</a>, <a href="https://github.com/elementary/wingpanel-indicator-notifications/pull/211">#211</a>) are now supported in both the notifications and the indicator. Support for actions has also been added (<a href="https://github.com/elementary/notifications/pull/125">#125</a>), making notifications interactive.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-notifications-1.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-notifications-2.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-notifications-3.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div></div></div><figcaption>Improved image support and actions make notifications more effective and useful.</figcaption></figure><h2 id="darkbar-my-first-elementary-app">Darkbar: My First elementary App</h2><figure class="kg-card kg-embed-card"><iframe width="200" height="113" src="https://www.youtube.com/embed/HElpBJXgfIE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure><p>As I started using more non-elementary applications, I found a few that didn&apos;t correctly support the dark theme. In particular, I found VS Code and GIMP annoying with dark content and a light titlebar, and sought to find a solution. The VS Code extension <a href="https://marketplace.visualstudio.com/items?itemName=fkrull.gtk-dark-titlebar">GTK Dark Title Bar</a> did the trick. <a href="https://github.com/fkrull/vscode-gtk-dark-titlebar/blob/main/src/setGtkThemeVariant.ts#L50">Diving into it&apos;s source code</a>, I found the necessary <code>xprop</code> command to force a window to use dark styles.</p><p>After some experimentation, <a href="https://github.com/bluesabre/darkbar">Darkbar</a> was born. Darkbar runs in the background, and applies your theme preference to X11 windows using server-side decorations (SSD). This works well for GTK2 applications like GIMP, and electron-based apps like Slack and Todoist. It even works in other desktop environments, with some caveats:</p><ul><li>It only works in X11. Wayland is not supported.</li><li>It only works windows managers supporting GTK dark style variants. This includes Gala in elementary, and Mutter in GNOME. Xfwm4 is not currently supported as it doesn&apos;t support the style variants.</li></ul><p>If you&apos;re running elementary 6, you can download and install Darkbar from <a href="https://github.com/bluesabre/darkbar/releases">here</a>. Otherwise, you&apos;ll need to configure the elementary AppCenter repo (instructions intentionally left off until it&apos;s official) and build the Flatpak yourself.</p><pre><code class="language-bash">flatpak-builder build org.bluesabre.darkbar.yml --user --install --force-clean</code></pre><h2 id="whats-next">What&apos;s Next?</h2><p>I&apos;ve started getting back in the groove with Xubuntu and Xfce development. I&apos;ll be working on some releases over the next couple of days and will have another blog post shortly with the latest updates there. If you want to support my work, sponsor me on <a href="https://github.com/sponsors/bluesabre">GitHub</a> or <a href="https://www.patreon.com/bluesabre">Patreon</a>. Every little bit is appreciated!</p><p><em>Post photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/summer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

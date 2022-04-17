@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Xfce infrastructure in 2020</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2020-07-18">18 Jul 2020</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2020-07-18">18 Jul 2020</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">Xfce infrastructure in 2020</h1> -->
+
+        <section class="post-content">
+            <p>Oh boy, 3 years without any blogpost ! So much things happened in the Xfce world!<br />
+First, we finally released <a href="https://www.xfce.org/about/news/?post=1565568000">Xfce 4.14</a> in August 2019, more than 4 years of effort, a migration to gtk3, and so much new things, but you already know that, and you surely already run it.
+We are now working on <a href="https://wiki.xfce.org/releng/4.16/roadmap">Xfce 4.16</a> , with the hope to release it this year  (yes, in 2020) !<br />
+You can read more development news on our <a href="https://blog.xfce.org">blog</a>.<br />
+Some buzzwords: new icons, CSD, drop of gtk2 support, UI revamp, and tons of other stuff.</p>
+
+<p><a href="/media/images/xfce4-settings-manager-4.15.png"><img src="/media/images/xfce4-settings-manager-4.15.png" alt="xfce4-setting-manager 4.15" /></a></p>
+
+<p>I want to talk a bit about the infrastructure.<br />
+Last year, we had a <a href="https://gandi.net">Gandi</a> sponsorship for our servers. I started an Ansible repository with all our services (no more -undocumented- local modifications!), and we migrated a big part of our infra to the new servers (docs, www, wiki etc).</p>
+
+<p>Then came the time to think about our development environment. We used the <code class="language-plaintext highlighter-rouge">cgit/gitolite/bugzilla</code> triptych, which worked fine for us for more than a decade, but make difficulty to have new contributor (our workflow was…hm, suboptimal).<br />
+We tested differents solutions (mainly Gitea and GitLab), and we opted for the famous <a href="https://about.gitlab.com">Gitlab</a>, already used by multiples open source projects. In the core team we were several to use it at work, so we were in a familiar environment.</p>
+
+<p>For months, a gitlab was running on one of our Gandi instance, to do tests and prepare the transition.</p>
+
+<p>But it was so much work that we never started the real migration. Then came the Covid-19 lockdown. No friends, no bars, lot of free time, so why not spent it on Xfce ?</p>
+
+<p>With Simon (ochosi) and Andre (andreldm), we started to use our own gitlab by opening issues, creating todo, doing merge requests etc related to the migration.<br />
+The 1st of May, we finally did <a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">the migration to GitLab</a> ! Woot !</p>
+
+<p>Jason (j4yav), working for Gitlab inc, joined us and proposed to help us for the Gitlab CI/CD setup. At the same time, we got a new (sponsored !) VM from <a href="https://fosshost.org/">FossHost</a> ! Perfect timing, we can now run a dedicated <code class="language-plaintext highlighter-rouge">gitlab-runner</code> instance, and we <a href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/">started to use gitlab-ci</a> !</p>
+
+<p>As of July 2020, almost all <code class="language-plaintext highlighter-rouge">Xfce</code> components (core, apps, panel plugins) run <code class="language-plaintext highlighter-rouge">make distcheck</code> on every merge requests and push to master, thanks to our <a href="https://hub.docker.com/r/xfce/xfce-build/tags">xfce-build</a> docker container.</p>
+
+<p><a href="/media/images/xfce-gitlab-pipelines.png"><img src="/media/images/xfce-gitlab-pipelines.png" alt="xfce gitlab-ci pipelines" /></a></p>
+
+<p>Now that we have a beautiful <a href="https://gitlab.xfce.org">GitLab</a>, merge requests and CI, the only missing part was… the migration from Bugzilla !<br />
+I forked and modified <a href="https://gitlab.xfce.org/infra/bztogl">bztogl</a>, a tool developped and used by Gnome and Freedesktop folks when they migrated away from bugzilla to gitlab in 2018/2019.<br />
+Initially, we wanted to migrate all bugzilla issues to gitlab (opened and closed ones). But we had more than 15000 issues ! We decided to only migrate opened issues. We took the opportunity to do a biiig cleanup of old bugs by closing more than 500 of them.</p>
+
+<p>A important condition of the bugzilla migration was to not lose our 15 years of history.<br />
+AndreLDM did a huge work by creating <a href="https://gitlab.xfce.org/andreldm/bzstatic">bzstatic</a>, a tool to snapshot a bugzilla instance and make it a simple static html version : <a href="https://bugzilla.xfce.org">https://bugzilla.xfce.org</a>.<br />
+He open sourced it at <a href="https://gitlab.xfce.org/andreldm/bzstatic">https://gitlab.xfce.org/andreldm/bzstatic</a> !</p>
+
+<p><a href="/media/images/xfce-bugzilla-bzstatic.png"><img src="/media/images/xfce-bugzilla-bzstatic.png" alt="xfce bugzillla bzstatic" /></a></p>
+
+<p>As a result, we now have a modern developments workflow, fully integrated with gitlab.
+We enabled github and gitlab.com auth on our instance (some people requested it), and since 3 months, we’ve seen a surge of new contributors, issues and merge requests ! Really a good news for the Xfce project ! 
+We also had a sponsorship from <a href="https://www.scaleway.com">Scaleway</a> lately, that we need to set up !</p>
+
+<p>So much things left to do, like update all our documentations for the new workflow, work on <code class="language-plaintext highlighter-rouge">Xfce 4.16</code>, get rid of our old release manager app and use gitlab-ci to generate artifacts, simplify our translation workflow and tons of other things !</p>
+
+<p>Enjoy !</p>
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

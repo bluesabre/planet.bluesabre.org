@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+
+<channel>
+	<title><![CDATA[Planet Bluesabre]]></title>
+	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
+	<link>https://planet.bluesabre.org/</link>
+	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
+	<lastBuildDate>Sun, 17 Apr 2022 06:30:17 -0400</lastBuildDate>
+	<language>en-US</language>
+	<generator>Jekyll v4.2.0</generator>
+
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: xfce4-panel 4.17.0 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001108.html</link>
+			<pubDate>Sat, 16 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001108.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[[Please note that this is a development release.]
+
+
+  Dependency Changes:
+    
+      Garcon &gt;= 0.8.0
+      GLib &gt;= 2.56.0
+      Libxfce4ui &gt;= 4.17.1
+    
+  
+  Code Refactoring:
+    
+      Remove unused project files
+      Use GLib structured logging
+      Remove obsolete Exo version checks
+      Bump minimal required Garcon to 0.8.0 i.e. Xfce 4.16
+      Remove obsolete GTK version checks
+      Use GLIB_VERSION_MIN/MAX_REQUIRED/ALLOWED
+      autoconf: Some updates
+      libxfce4panel: Silence -Wredundant-decls warnings (#495)
+      Revamp the documentation to modernize and uniformize accross
+components (!35)
+    
+  
+  Bug Fixes:
+    
+      panel: Fix regression "intellihide does not hide when leaving
+slowly" (#388)
+      panel: Fix regression "'Span Monitor' has no effect" (#405)
+      panel: Keep a reference on item during drag and drop
+      panel: Fix a memory leak
+      systray: Do not apply icon if not yet set
+      Fix deadcode.DeadStores warnings from scan-build (!56)
+      Fix core.UndefinedBinaryOperatorResult warning from
+scan-build (#142)
+      Fix core.NullDereference warning from scan-build (!57)
+      panel: Fix broken drag and drop between panels (#561)
+      systray: Only activate item under mouse
+      Use a normalized URI internally for the background image
+      panel: Disconnect from screen signals when window is destroyed
+      Fix ignored *.desktop.in in .gitignore
+      systray: Do not connect to proxy signal if async method failed
+      actions: Lay out buttons in grid for deskbar (#437, !69)
+      wrapper: Rework widget drawing (#520, !67)
+      windowmenu: Emit "deactivate" signal when hiding the menu
+(#22, !68)
+      systray: Trust the status to update the attention icon
+(#392, !64)
+      tasklist: Add a setting to control the display of tooltips
+(#548, !63)
+      Fixed some window buttons not appearing in the panel
+(#188, !66)
+      Remove ellipsis (#480, !65)
+      launcher: Only activate under mouse (Fixes #519)
+      launcher: Clear action menu when destroyed (Fixes #540, !61)
+      actions: Block panel autohide (Fixes #431, !62)
+      panel: Fix grabs for popup commands (Fixes #506, !60)
+      Fix compilation warnings (#492, #493, #494, !53)
+      launcher: Adjust menu icon size (Fixes #255, !51)
+      Fix exit procedure when plugin insertion failed (!49)
+      libxfce4panel: Review memory management for context menu
+(#452, !46)
+      panel: Mitigate a memory leak when removing items (!46)
+      tasklist: Silence an allocation warning (!48)
+      launcher: Check for menu item initialization (!47)
+      panel: Change width of default panel-2 to 1% (Fixes #454, !44)
+      Fix some *-CRITICAL warnings (!43)
+      libxfce4panel: Do not destroy context menu if popped up
+(#442, !45)
+      tasklist: Auto-adjust icon size (v2) (#90, !29)
+      pager: Allow disable switch with mouse wheel for miniature
+view (#253, !37)
+      Add icons to help and about items in panel menu (#421)
+      pager: Use gobject bindings (Fixes #376, !32)
+      launcher: avoid double fork (#407, !25)
+      Fix build warnings (!31)
+      Display tooltip title of statusnotifier items as plaintext
+(!30)
+      pager: Switch to new workspaces icon name
+      statustray: Prevent crash when parsing properties
+(Fixes #379, !26)
+      windowmenu: fix use-after-free in
+window_menu_plugin_window_item_new (!24)
+    
+  
+  Translation Updates:
+Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
+(Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+Eastern Armenian, English (Australia), English (United Kingdom),
+Estonian, Finnish, French, Galician, Georgian, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian
+Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Polish, Portuguese,
+Portuguese (Brazil), Romanian, Russian, Serbian, Sinhala, Slovak,
+Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Uyghur,
+Vietnamese]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Dependency Changes:
+    <ul>
+      <li>Garcon &gt;= 0.8.0</li>
+      <li>GLib &gt;= 2.56.0</li>
+      <li>Libxfce4ui &gt;= 4.17.1</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>Remove unused project files</li>
+      <li>Use GLib structured logging</li>
+      <li>Remove obsolete Exo version checks</li>
+      <li>Bump minimal required Garcon to 0.8.0 i.e. Xfce 4.16</li>
+      <li>Remove obsolete GTK version checks</li>
+      <li>Use GLIB_VERSION_MIN/MAX_REQUIRED/ALLOWED</li>
+      <li>autoconf: Some updates</li>
+      <li>libxfce4panel: Silence <code class="language-plaintext highlighter-rouge">-Wredundant-decls</code> warnings (#495)</li>
+      <li>Revamp the documentation to modernize and uniformize accross
+components (!35)</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>panel: Fix regression "intellihide does not hide when leaving
+slowly" (#388)</li>
+      <li>panel: Fix regression "'Span Monitor' has no effect" (#405)</li>
+      <li>panel: Keep a reference on item during drag and drop</li>
+      <li>panel: Fix a memory leak</li>
+      <li>systray: Do not apply icon if not yet set</li>
+      <li>Fix <code class="language-plaintext highlighter-rouge">deadcode.DeadStores</code> warnings from <code class="language-plaintext highlighter-rouge">scan-build</code> (!56)</li>
+      <li>Fix <code class="language-plaintext highlighter-rouge">core.UndefinedBinaryOperatorResult</code> warning from
+<code class="language-plaintext highlighter-rouge">scan-build</code> (#142)</li>
+      <li>Fix <code class="language-plaintext highlighter-rouge">core.NullDereference</code> warning from <code class="language-plaintext highlighter-rouge">scan-build</code> (!57)</li>
+      <li>panel: Fix broken drag and drop between panels (#561)</li>
+      <li>systray: Only activate item under mouse</li>
+      <li>Use a normalized URI internally for the background image</li>
+      <li>panel: Disconnect from screen signals when window is destroyed</li>
+      <li>Fix ignored <code class="language-plaintext highlighter-rouge">*.desktop.in</code> in <code class="language-plaintext highlighter-rouge">.gitignore</code></li>
+      <li>systray: Do not connect to proxy signal if async method failed</li>
+      <li>actions: Lay out buttons in grid for deskbar (#437, !69)</li>
+      <li>wrapper: Rework widget drawing (#520, !67)</li>
+      <li>windowmenu: Emit "deactivate" signal when hiding the menu
+(#22, !68)</li>
+      <li>systray: Trust the status to update the attention icon
+(#392, !64)</li>
+      <li>tasklist: Add a setting to control the display of tooltips
+(#548, !63)</li>
+      <li>Fixed some window buttons not appearing in the panel
+(#188, !66)</li>
+      <li>Remove ellipsis (#480, !65)</li>
+      <li>launcher: Only activate under mouse (Fixes #519)</li>
+      <li>launcher: Clear action menu when destroyed (Fixes #540, !61)</li>
+      <li>actions: Block panel autohide (Fixes #431, !62)</li>
+      <li>panel: Fix grabs for popup commands (Fixes #506, !60)</li>
+      <li>Fix compilation warnings (#492, #493, #494, !53)</li>
+      <li>launcher: Adjust menu icon size (Fixes #255, !51)</li>
+      <li>Fix exit procedure when plugin insertion failed (!49)</li>
+      <li>libxfce4panel: Review memory management for context menu
+(#452, !46)</li>
+      <li>panel: Mitigate a memory leak when removing items (!46)</li>
+      <li>tasklist: Silence an allocation warning (!48)</li>
+      <li>launcher: Check for menu item initialization (!47)</li>
+      <li>panel: Change width of default panel-2 to 1% (Fixes #454, !44)</li>
+      <li>Fix some <code class="language-plaintext highlighter-rouge">*-CRITICAL</code> warnings (!43)</li>
+      <li>libxfce4panel: Do not destroy context menu if popped up
+(#442, !45)</li>
+      <li>tasklist: Auto-adjust icon size (v2) (#90, !29)</li>
+      <li>pager: Allow disable switch with mouse wheel for miniature
+view (#253, !37)</li>
+      <li>Add icons to help and about items in panel menu (#421)</li>
+      <li>pager: Use gobject bindings (Fixes #376, !32)</li>
+      <li>launcher: avoid double fork (#407, !25)</li>
+      <li>Fix build warnings (!31)</li>
+      <li>Display tooltip title of statusnotifier items as plaintext
+(!30)</li>
+      <li>pager: Switch to new workspaces icon name</li>
+      <li>statustray: Prevent crash when parsing properties
+(Fixes #379, !26)</li>
+      <li>windowmenu: fix use-after-free in
+window_menu_plugin_window_item_new (!24)</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
+(Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+Eastern Armenian, English (Australia), English (United Kingdom),
+Estonian, Finnish, French, Galician, Georgian, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian
+Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Polish, Portuguese,
+Portuguese (Brazil), Romanian, Russian, Serbian, Sinhala, Slovak,
+Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Uyghur,
+Vietnamese</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: xfce4-panel 4.16.4 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001109.html</link>
+			<pubDate>Sat, 16 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001109.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Update copyright year and standardize formatting</li>
+  <li>Update and sort author list by name</li>
+  <li>panel: Fix regression "intellihide does not hide when leaving
+slowly" (#388)</li>
+  <li>panel: Fix regression "'Span Monitor' has no effect" (#405)</li>
+  <li>panel: Keep a reference on item during drag and drop</li>
+  <li>Fix <code class="language-plaintext highlighter-rouge">core.UndefinedBinaryOperatorResult</code> warning from
+<code class="language-plaintext highlighter-rouge">scan-build</code> (#142)</li>
+  <li>panel: Fix broken drag and drop between panels (#561)</li>
+  <li>panel: Disconnect from screen signals when window is destroyed</li>
+  <li>systray: Do not connect to proxy signal if async method failed</li>
+  <li>panel: Mitigate a memory leak when removing items (!46)</li>
+  <li>windowmenu: Emit "deactivate" signal when hiding the menu
+(#22, !68)</li>
+  <li>systray: Fix wrong sanity check</li>
+  <li>systray: Properly initialize systray item</li>
+  <li>systray: Trust the status to update the attention icon
+(#392, !64)</li>
+  <li>Fixed some window buttons not appearing in the panel (#188, !66)</li>
+  <li>launcher: Only activate under mouse (Fixes #519)</li>
+  <li>libxfce4panel: Review memory management for context menu
+(#452, !46)</li>
+  <li>actions: Block panel autohide (Fixes #431, !62)</li>
+  <li>launcher: Clear action menu when destroyed (Fixes #540, !61)</li>
+  <li>Translation Updates:
+Arabic, Armenian (Armenia), Catalan, Malay, Occitan (post 1500),
+Polish, Romanian, Russian, Slovenian, Spanish, Swedish, Thai</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Update copyright year and standardize formatting</li>
+  <li>Update and sort author list by name</li>
+  <li>panel: Fix regression "intellihide does not hide when leaving
+slowly" (#388)</li>
+  <li>panel: Fix regression "'Span Monitor' has no effect" (#405)</li>
+  <li>panel: Keep a reference on item during drag and drop</li>
+  <li>Fix <code class="language-plaintext highlighter-rouge">core.UndefinedBinaryOperatorResult</code> warning from
+<code class="language-plaintext highlighter-rouge">scan-build</code> (#142)</li>
+  <li>panel: Fix broken drag and drop between panels (#561)</li>
+  <li>panel: Disconnect from screen signals when window is destroyed</li>
+  <li>systray: Do not connect to proxy signal if async method failed</li>
+  <li>panel: Mitigate a memory leak when removing items (!46)</li>
+  <li>windowmenu: Emit "deactivate" signal when hiding the menu
+(#22, !68)</li>
+  <li>systray: Fix wrong sanity check</li>
+  <li>systray: Properly initialize systray item</li>
+  <li>systray: Trust the status to update the attention icon
+(#392, !64)</li>
+  <li>Fixed some window buttons not appearing in the panel (#188, !66)</li>
+  <li>launcher: Only activate under mouse (Fixes #519)</li>
+  <li>libxfce4panel: Review memory management for context menu
+(#452, !46)</li>
+  <li>actions: Block panel autohide (Fixes #431, !62)</li>
+  <li>launcher: Clear action menu when destroyed (Fixes #540, !61)</li>
+  <li>Translation Updates:
+Arabic, Armenian (Armenia), Catalan, Malay, Occitan (post 1500),
+Polish, Romanian, Russian, Slovenian, Spanish, Swedish, Thai</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xubuntu-docs (22.04) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_22.04/changelog</link>
+			<pubDate>Wed, 13 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_22.04/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>New user-docs for 22.04</li>
+  <li>Update Standards-Version to 4.6.0.1.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New user-docs for 22.04</li>
+  <li>Update Standards-Version to 4.6.0.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: xfce4-terminal 1.0.1 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html</link>
+			<pubDate>Wed, 13 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p>Stable release fixing regressions and a couple of older bugs.</p>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>Stable release fixing regressions and a couple of older bugs.</p>
+
+<ul>
+  <li>A new hidden preference <code class="language-plaintext highlighter-rouge">DropdownParametersOnce</code> has been introduced
+to control whether the drop-down
+window accepts command line arguments after creation. With the
+introduction of this preference
+an older bug was fixed where tabs could be added to the drop-down
+window even though they
+weren't supposed to.</li>
+  <li>Options: –active-tab does not behave properly when adding tabs to
+existing windows.</li>
+</ul>
+
+<p>Regressions fixed:</p>
+<ul>
+  <li>Find dialog does not respond to Return key (Issue #176)</li>
+  <li>Dragging a URL from Chromium ends up truncated (Issue #180)</li>
+  <li>Toolbar size changes when the window is maximized (Issue #181).</li>
+  <li>Unable to create a single window with many tabs through command line
+options (Issue #182).</li>
+</ul>
+
+<p>Translation Updates:
+  Danish, Finnish, Greek, Russian, Turkish</p>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xubuntu-community-artwork (22.04.0) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-community-artwork/xubuntu-community-artwork_22.04.0/changelog</link>
+			<pubDate>Tue, 12 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-community-artwork/xubuntu-community-artwork_22.04.0/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Include winners from the Xubuntu 22.04 Community Contest</li>
+  <li>d/copyright:
+    <ul>
+      <li>Update copyrights for newly-added files</li>
+      <li>Change my email address</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Bump Standards-Version to 4.6.0.1</li>
+      <li>Bump debhelper version to 13</li>
+    </ul>
+  </li>
+  <li>d/docs:
+    <ul>
+      <li>README &gt; README.md</li>
+    </ul>
+  </li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Include winners from the Xubuntu 22.04 Community Contest</li>
+  <li>d/copyright:
+    <ul>
+      <li>Update copyrights for newly-added files</li>
+      <li>Change my email address</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Bump Standards-Version to 4.6.0.1</li>
+      <li>Bump debhelper version to 13</li>
+    </ul>
+  </li>
+  <li>d/docs:
+    <ul>
+      <li>README &gt; README.md</li>
+    </ul>
+  </li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xubuntu-default-settings (22.04.0) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_22.04.0/changelog</link>
+			<pubDate>Sun, 10 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_22.04.0/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>usr/share/xubuntu/applications/defaults.list:
+    <ul>
+      <li>Update desktop files to current names (LP: #1967112)</li>
+      <li>Set associations for mimetypes with multiple handlers</li>
+      <li>Replace unsupported mimetype associations (LP: #1764124)</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/autostart/xcape-super-binding.desktop:
+    <ul>
+      <li>Add Type=Application to show in startup apps (LP: #1963850)</li>
+    </ul>
+  </li>
+  <li>debian/xubuntu-default-settings.gconf-defaults,    debian/rules:
+    <ul>
+      <li>Drop obsolete blueman gconf defaults</li>
+    </ul>
+  </li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>usr/share/xubuntu/applications/defaults.list:
+    <ul>
+      <li>Update desktop files to current names (LP: #1967112)</li>
+      <li>Set associations for mimetypes with multiple handlers</li>
+      <li>Replace unsupported mimetype associations (LP: #1764124)</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/autostart/xcape-super-binding.desktop:
+    <ul>
+      <li>Add Type=Application to show in startup apps (LP: #1963850)</li>
+    </ul>
+  </li>
+  <li>debian/xubuntu-default-settings.gconf-defaults,    debian/rules:
+    <ul>
+      <li>Drop obsolete blueman gconf defaults</li>
+    </ul>
+  </li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-settings (4.16.2-1ubuntu2) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.16.2-1ubuntu2/changelog</link>
+			<pubDate>Sun, 10 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.16.2-1ubuntu2/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>d/p/lp_1967111.patch:
+    <ul>
+      <li>Fix ‘Web Browser’ launcher with firefox snap (LP: #1967111)</li>
+    </ul>
+  </li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>d/p/lp_1967111.patch:
+    <ul>
+      <li>Fix ‘Web Browser’ launcher with firefox snap (LP: #1967111)</li>
+    </ul>
+  </li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: xfce4-eyes-plugin 4.6.0 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001106.html</link>
+			<pubDate>Mon, 04 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001106.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Add Chibi theme (!4)</li>
+  <li>Small code improvements</li>
+  <li>Translation Updates:
+Albanian, Armenian (Armenia), Basque, Belarusian, English (Canada),
+Finnish, French, Hebrew, Slovenian, Spanish, Thai, Ukrainian, Uyghur</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Add Chibi theme (!4)</li>
+  <li>Small code improvements</li>
+  <li>Translation Updates:
+Albanian, Armenian (Armenia), Basque, Belarusian, English (Canada),
+Finnish, French, Hebrew, Slovenian, Spanish, Thai, Ukrainian, Uyghur</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: thunar 4.17.8 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001105.html</link>
+			<pubDate>Sat, 02 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001105.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[[Please note that this is a development release.]]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>[Please note that this is a development release.]</p>
+
+<p>Development release on the thunar master branch which ships alot of
+fixes, translation updates and new features.</p>
+
+<p>The highlight are:</p>
+
+<ul>
+  <li>Recursive search</li>
+  <li>Shortcuts editor GUI (Same than xfce4-terminal)</li>
+  <li>Configurable Toolbar</li>
+</ul>
+
+<p>I hope you enjoy !</p>
+
+<p>Here the detailed changelog:</p>
+<ul>
+  <li>Show <code class="language-plaintext highlighter-rouge">Configure Toolbar...</code> option on right-clicking toolbar items.</li>
+  <li>Add built-in buttons for toolbar customization:
+  Search, Toggle,Reload, Zoom</li>
+  <li>Allow to customize toolbar by using custom actions (Issues #607 #621)</li>
+  <li>Location bar: Make sure to show the correct root button (Issue #725)</li>
+  <li>Recursive search: Do not search when the search query is empty.</li>
+  <li>Column headers: Configure columns popup on right-click</li>
+  <li>Bulk renamer: Use wording "Extension" over "Suffix" (Issue #729)</li>
+  <li>Look for thunar plugins at $THUNARX_DIRS (Issue #748)</li>
+  <li>Speedup search by disabling row-related callbacks while searching</li>
+  <li>Add spinner element to each tab to display search status</li>
+  <li>Add option for vertical split panes (#722)</li>
+  <li>List view name column improvements (#736)</li>
+  <li>Option to show full path in tabs (Issue #627)</li>
+  <li>Generate documentation for internal functions (Issue #617)</li>
+  <li>Fix of various memory leaks</li>
+  <li>Dont reload the view when text is copied (Issue #706)</li>
+  <li>Use 'g_timeout_add_full' to set tree-view cursor (Issue #351)</li>
+  <li>NULL checks to prevent crash on malformed bookmark URI (Issue #716)</li>
+  <li>Skip files with IO errors during directory scan (Issue #696)</li>
+  <li>Shortcuts View: Allow devices a drag and drop target (Issue #708)</li>
+  <li>Support for thumbnail size x-large and xx-large (Issue #606)</li>
+  <li>Add support for accelerators that include the <code class="language-plaintext highlighter-rouge">Tab</code> key (Issue #580)</li>
+  <li>Add Recursive Search (!146)</li>
+  <li>Use save way to copy a "struct tm" to prevent crash (Issue #700)</li>
+  <li>Add UCA parameter to specify a number of files (Issue #26)</li>
+  <li>Fix: User disabled accelerators are re-enabled on 2nd restart (!177)</li>
+  <li>Add a GUI shortcuts editor (Issue #279)</li>
+  <li>Use alphabetical sorting for devices in the side-pane (Issue #610)</li>
+</ul>
+
+<p>Translation Updates:
+  Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
+  Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+  (Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
+  (Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
+  French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+  Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
+  Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Persian
+  (Iran), Polish, Portuguese, Romanian, Serbian, Slovak, Spanish,
+  Swedish, Telugu, Thai, Turkish, Urdu, Urdu (Pakistan), Uyghur,
+  Vietnamese</p>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: thunar 4.16.11 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001104.html</link>
+			<pubDate>Sat, 02 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001104.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[Bugfix and translation release on the thunar 4.16 branch.]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>Bugfix and translation release on the thunar 4.16 branch.</p>
+
+<p>Bugfixes:</p>
+<ul>
+  <li>Dont reload the view when text is copied (Issue #706)</li>
+  <li>NULL checks to prevent crash on malformed bookmark URI (Issue #716)</li>
+  <li>Use 'g_timeout_add_full' to set tree-view cursor (Issue #351)</li>
+  <li>Fix signal disconnect in thunar_window_unrealize</li>
+  <li>Don't go beyond THUNAR_N_VISIBLE_COLUMNS while parsing col widths</li>
+</ul>
+
+<p>Translation Updates:
+  Danish, Greek, Indonesian, Malay, Occitan (post 1500), Romanian</p>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: xfce4-terminal 1.0.0 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001103.html</link>
+			<pubDate>Fri, 01 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001103.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[Stable release including improvements introduced in versions 0.9.0,
+0.9.1 and 0.9.2. 
+The Shortcuts Editor requires libxfce4ui 4.17.2 or greater.]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<h1 id="100">1.0.0</h1>
+
+<p>Stable release including improvements introduced in versions 0.9.0,
+0.9.1 and 0.9.2. 
+The Shortcuts Editor requires libxfce4ui 4.17.2 or greater.</p>
+
+<p>Fixes</p>
+<ul>
+  <li>Remove remaining libxfce4ui 4.16 version guards</li>
+</ul>
+
+<p>Translation Updates:
+  Danish, Greek, Russian, Turkish</p>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: mousepad 0.5.9 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html</link>
+			<pubDate>Fri, 01 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>New Features:
+    <ul>
+      <li>Add shortcuts plugin (#70, !121)
+Depends on Libxfce4ui 4.17.5 which is a dev version, so will
+be excluded at configure time on most systems until Xfce 4.18
+is released.</li>
+      <li>Add search history (!119)</li>
+      <li>File monitoring: Add an automatic reloading option</li>
+    </ul>
+  </li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New Features:
+    <ul>
+      <li>Add shortcuts plugin (#70, !121)
+Depends on Libxfce4ui 4.17.5 which is a dev version, so will
+be excluded at configure time on most systems until Xfce 4.18
+is released.</li>
+      <li>Add search history (!119)</li>
+      <li>File monitoring: Add an automatic reloading option</li>
+    </ul>
+  </li>
+  <li>Appearance Changes / Minor Improvements:
+    <ul>
+      <li>Move the document modification mark to the close button (#63,
+!122)</li>
+      <li>Add mousepad styleclass for easier theming (#33)</li>
+      <li>Hide search bar by pressing Esc key even when not focused</li>
+      <li>Search: Escape selection when regex search is enabled</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>Plugins: Add a skeleton plugin to ease writing of new plugins</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Test plugin: Sanitize memory management of sources</li>
+      <li>Honor GTK_CSD</li>
+      <li>Filter entries from <code class="language-plaintext highlighter-rouge">accels.scm</code> on non-detailed action name</li>
+      <li>i18n: Check for <code class="language-plaintext highlighter-rouge">bind_textdomain_codeset()</code></li>
+      <li>Update Copying (#160, !120)</li>
+      <li>Session history: Never clear session array on exit (#162)</li>
+      <li>Fix broken feature "Show menubar temporarily when hidden"</li>
+      <li>Force encoding when reloading</li>
+      <li>Force encoding when it has been explicitly set by the user</li>
+      <li>Do not consider encoding as always user-set in the "Open"
+dialog</li>
+      <li>Fix antonym of the word "indent" in preferences dialog (!118)</li>
+      <li>File monitoring: Try to filter out fake deletions</li>
+      <li>Add ellipsis to preferences menu entry (!117)</li>
+      <li>Switch all labels to title case in prefs dialog (!116)</li>
+      <li>Correctly restore font size after zooming when using system
+font (#158)</li>
+      <li>Printing: Enable line wrapping by default (#156)</li>
+      <li>Fix a warning from GCC static analyzer</li>
+      <li>Search: Do not delay the search when the text changes</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
+Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+Thai, Turkish, Ukrainian, Uyghur</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: libxfce4ui 4.17.6 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html</link>
+			<pubDate>Thu, 31 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[[Please note that this is a development release.]]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>[Please note that this is a development release.]</p>
+
+<p>Development release on the master branch, required to be able to make
+use of 'xfce_gtk_toggle_tool_button_new_from_action_entry' inside
+thunar.</p>
+
+<ul>
+  <li>XfceShortcutsEditor: Do not update editor if shortcut change failed</li>
+  <li>XfceShortcutsEditor: Allow to choose "Space" or "Enter" as shortcut</li>
+  <li>XfceShortcutDialog: Do not propagate key events</li>
+  <li>Function description spelling and format.</li>
+  <li>Add new function xfce_gtk_toggle_tool_button_new_from_action_entry</li>
+  <li>XfceShortcutsGrabber: Fix <code class="language-plaintext highlighter-rouge">-Wanalyzer-null-dereference</code> warning</li>
+  <li>Secure memory allocations</li>
+  <li>Update COPYING</li>
+  <li>XfceShortcutsGrabber: Detect auto-repeat key press</li>
+  <li>XfceShortcutDialog: Fix a memory leak</li>
+  <li>Translation Updates:
+Azerbaijani</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xubuntu-meta (2.241) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.241/changelog</link>
+			<pubDate>Mon, 28 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.241/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Refreshed dependencies</li>
+  <li>Removed firefox from desktop-recommends (LP: #1966794)</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Refreshed dependencies</li>
+  <li>Removed firefox from desktop-recommends (LP: #1966794)</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[v0.16: 0.16]]></title>
+			<link>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16</link>
+			<pubDate>Thu, 24 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[elementary Xfce Icon Theme]]></dc:creator>
+		
+		
+			<guid>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
+contributions from newhoa and tux93.</p>
+<ul>
+<li>Add audio overamplified icon</li>
+<li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
+<li>Updates to actions icons</li>
+<li>Update places/sidebar icons</li>
+<li>Add missing mimetype icons</li>
+<li>Add missing icons</li>
+<li>Add places icons at 96px</li>
+<li>Update broken symlink</li>
+<li>Add new person icons, fix some inconsitencies</li>
+<li>Update navigation icons from upstream</li>
+<li>Update session icons (logout, shutdown, etc)</li>
+<li>Fix icon name extension</li>
+<li>Add names to mime archive icons at 128px</li>
+<li>Update emblem icons from upstream</li>
+<li>Add/Update device icons</li>
+<li>Updates and fixes to mime icons</li>
+<li>Add new desktop places icon</li>
+<li>Add support for xfpm 4.16 icons</li>
+<li>Fix broken link</li>
+<li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
+<li>Added json/xz icon, fixed some icon inconsistencies</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
+contributions from newhoa and tux93.</p>
+<ul>
+<li>Add audio overamplified icon</li>
+<li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
+<li>Updates to actions icons</li>
+<li>Update places/sidebar icons</li>
+<li>Add missing mimetype icons</li>
+<li>Add missing icons</li>
+<li>Add places icons at 96px</li>
+<li>Update broken symlink</li>
+<li>Add new person icons, fix some inconsitencies</li>
+<li>Update navigation icons from upstream</li>
+<li>Update session icons (logout, shutdown, etc)</li>
+<li>Fix icon name extension</li>
+<li>Add names to mime archive icons at 128px</li>
+<li>Update emblem icons from upstream</li>
+<li>Add/Update device icons</li>
+<li>Updates and fixes to mime icons</li>
+<li>Add new desktop places icon</li>
+<li>Add support for xfpm 4.16 icons</li>
+<li>Fix broken link</li>
+<li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
+<li>Added json/xz icon, fixed some icon inconsistencies</li>
+</ul>]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[elementary-xfce (0.16-0ubuntu1) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.16-0ubuntu1/changelog</link>
+			<pubDate>Thu, 24 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.16-0ubuntu1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>New upstream version 0.16</li>
+  <li>Update Standards-Version to 4.6.0.1.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New upstream version 0.16</li>
+  <li>Update Standards-Version to 4.6.0.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[0.16]]></title>
+			<link>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16</link>
+			<pubDate>Thu, 24 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[elementary Xfce Icon Theme]]></dc:creator>
+		
+		
+			<guid>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
+contributions from <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> and <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/tux93/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tux93">@tux93</a>.</p>
+<ul>
+<li>Add audio overamplified icon</li>
+<li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
+<li>Updates to actions icons</li>
+<li>Update places/sidebar icons</li>
+<li>Add missing mimetype icons</li>
+<li>Add missing icons</li>
+<li>Add places icons at 96px</li>
+<li>Update broken symlink</li>
+<li>Add new person icons, fix some inconsitencies</li>
+<li>Update navigation icons from upstream</li>
+<li>Update session icons (logout, shutdown, etc)</li>
+<li>Fix icon name extension</li>
+<li>Add names to mime archive icons at 128px</li>
+<li>Update emblem icons from upstream</li>
+<li>Add/Update device icons</li>
+<li>Updates and fixes to mime icons</li>
+<li>Add new desktop places icon</li>
+<li>Add support for xfpm 4.16 icons</li>
+<li>Fix broken link</li>
+<li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
+<li>Added json/xz icon, fixed some icon inconsistencies</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
+contributions from <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> and <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/tux93/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tux93">@tux93</a>.</p>
+<ul>
+<li>Add audio overamplified icon</li>
+<li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
+<li>Updates to actions icons</li>
+<li>Update places/sidebar icons</li>
+<li>Add missing mimetype icons</li>
+<li>Add missing icons</li>
+<li>Add places icons at 96px</li>
+<li>Update broken symlink</li>
+<li>Add new person icons, fix some inconsitencies</li>
+<li>Update navigation icons from upstream</li>
+<li>Update session icons (logout, shutdown, etc)</li>
+<li>Fix icon name extension</li>
+<li>Add names to mime archive icons at 128px</li>
+<li>Update emblem icons from upstream</li>
+<li>Add/Update device icons</li>
+<li>Updates and fixes to mime icons</li>
+<li>Add new desktop places icon</li>
+<li>Add support for xfpm 4.16 icons</li>
+<li>Fix broken link</li>
+<li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
+<li>Added json/xz icon, fixed some icon inconsistencies</li>
+</ul>]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[greybird-gtk-theme (3.23.1-0ubuntu1) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-0ubuntu1/changelog</link>
+			<pubDate>Wed, 23 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-0ubuntu1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>New upstream version 3.23.1 (LP: #1966002)</li>
+  <li>Update Standards-Version to 4.6.0.1</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New upstream version 3.23.1 (LP: #1966002)</li>
+  <li>Update Standards-Version to 4.6.0.1</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[3.23.1]]></title>
+			<link>https://github.com/shimmerproject/Greybird/releases/tag/v3.23.1</link>
+			<pubDate>Wed, 23 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Greybird GTK Theme]]></dc:creator>
+		
+		
+			<guid>https://github.com/shimmerproject/Greybird/releases/tag/v3.23.1</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p>Make sure everything gets installed in its right place (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1166416352" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/316" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/316/hovercard" href="https://github.com/shimmerproject/Greybird/issues/316">#316</a>, <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1176973615" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/317" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/317/hovercard" href="https://github.com/shimmerproject/Greybird/issues/317">#317</a>, <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1177404193" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/318" data-hovercard-type="pull_request" data-hovercard-url="/shimmerproject/Greybird/pull/318/hovercard" href="https://github.com/shimmerproject/Greybird/pull/318">#318</a>)</p>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>Make sure everything gets installed in its right place (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1166416352" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/316" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/316/hovercard" href="https://github.com/shimmerproject/Greybird/issues/316">#316</a>, <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1176973615" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/317" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/317/hovercard" href="https://github.com/shimmerproject/Greybird/issues/317">#317</a>, <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1177404193" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/318" data-hovercard-type="pull_request" data-hovercard-url="/shimmerproject/Greybird/pull/318/hovercard" href="https://github.com/shimmerproject/Greybird/pull/318">#318</a>)</p>]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[3.23.0]]></title>
+			<link>https://github.com/shimmerproject/Greybird/releases/tag/v3.23.0</link>
+			<pubDate>Tue, 22 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Greybird GTK Theme]]></dc:creator>
+		
+		
+			<guid>https://github.com/shimmerproject/Greybird/releases/tag/v3.23.0</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+<li>Add initial support for Gtk4 and libhandy</li>
+<li>Fix dark xfwm4-a11y install path (Issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1044336745" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/307" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/307/hovercard" href="https://github.com/shimmerproject/Greybird/issues/307">#307</a>)</li>
+<li>Fix xfwm4-a11y and xfwm4-compact install path (Issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1044336745" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/307" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/307/hovercard" href="https://github.com/shimmerproject/Greybird/issues/307">#307</a>)</li>
+<li>Fix: GtkLabel: <code>Backdrop</code>ped selection color adjusted</li>
+<li>Fix: Backdropped selection: <code>GtkListBox</code>es weren't grey</li>
+<li>Hotfix: removed background color for non-bg items</li>
+<li>Gtk3: Adjusted selected backdrop fg/bg colors: shades of grey.</li>
+<li>Changes the xfwm4 border colors</li>
+<li>build: refactor meson</li>
+<li>Correct gradients for horizontal scrollbars</li>
+<li>Reduce messagedialog buttonbox size</li>
+<li>Make CSD titlebars slimmer</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+<li>Add initial support for Gtk4 and libhandy</li>
+<li>Fix dark xfwm4-a11y install path (Issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1044336745" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/307" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/307/hovercard" href="https://github.com/shimmerproject/Greybird/issues/307">#307</a>)</li>
+<li>Fix xfwm4-a11y and xfwm4-compact install path (Issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1044336745" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/307" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/307/hovercard" href="https://github.com/shimmerproject/Greybird/issues/307">#307</a>)</li>
+<li>Fix: GtkLabel: <code>Backdrop</code>ped selection color adjusted</li>
+<li>Fix: Backdropped selection: <code>GtkListBox</code>es weren't grey</li>
+<li>Hotfix: removed background color for non-bg items</li>
+<li>Gtk3: Adjusted selected backdrop fg/bg colors: shades of grey.</li>
+<li>Changes the xfwm4 border colors</li>
+<li>build: refactor meson</li>
+<li>Correct gradients for horizontal scrollbars</li>
+<li>Reduce messagedialog buttonbox size</li>
+<li>Make CSD titlebars slimmer</li>
+</ul>]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xubuntu-meta (2.240) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.240/changelog</link>
+			<pubDate>Sat, 19 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.240/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Refreshed dependencies</li>
+  <li>Added language-selector-common to core, desktop</li>
+  <li>Added libfuse2 to core-recommends, desktop-recommends (LP: #1965636)</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Refreshed dependencies</li>
+  <li>Added language-selector-common to core, desktop</li>
+  <li>Added libfuse2 to core-recommends, desktop-recommends (LP: #1965636)</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: orage 4.16.0 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001100.html</link>
+			<pubDate>Thu, 17 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001100.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p>Note: GlobalTime and Orage panel plugin are being deprecated and
+will be removed in a future release. Their features will be
+integrated with or provided by existing Xfce components.
+See https://gitlab.xfce.org/apps/orage/-/issues/3#note_43209</p>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>Note: GlobalTime and Orage panel plugin are being deprecated and
+will be removed in a future release. Their features will be
+integrated with or provided by existing Xfce components.
+See https://gitlab.xfce.org/apps/orage/-/issues/3#note_43209</p>
+
+<p>Finalize port to GTK 3, small fixes and cleanup for 4.16.0 (see MRs
+for more details):</p>
+<ul>
+  <li>Add new application icon (!18)</li>
+  <li>Fix some memory leaks</li>
+  <li>i18n: Use <code class="language-plaintext highlighter-rouge">xfce_textdomain()</code> to initialize translations</li>
+  <li>Trace messages cleanup (!15)</li>
+  <li>Update COPYING (Issue #10, !17)</li>
+  <li>Use stdout and stderr correctly in main.c</li>
+  <li>Build tz_convert only with bundled libical (!14)</li>
+  <li>Switch to reverse-DNS naming for icon and desktop files (!13)</li>
+  <li>D-Bus service cleanup (!12)</li>
+  <li>Fix <code class="language-plaintext highlighter-rouge">orage_exec()</code> and its calls</li>
+  <li>Update project files (!10)</li>
+  <li>Fixed strptime parse issue on FreeBSD (#6, !11)</li>
+  <li>Fix make distcheck warnning</li>
+  <li>Fixed libpopt detection on FreeBSD (!9)</li>
+  <li>Fix build warnings 3: Clang static analyzer (!6)</li>
+  <li>Added 'git' to program version string and 'sed' check (!7)</li>
+  <li>Fix build warnings 2: Compilation (!4)</li>
+  <li>Fix build warnings 1: Autotools (!3)</li>
+  <li>Add basic GitLab pipeline (!2)</li>
+</ul>
+
+<p>Commits from merge request !1 (GTK 3 port), which also includes
+4.15.x below:</p>
+<ul>
+  <li>Reverted to c60567fe</li>
+  <li>Fixed typos</li>
+  <li>Added support for 'legacy' non RGBA GTK colours. Both RGBA and old 
+colous are now supported.</li>
+  <li>Replaced unused parameters '(void)' castings with GLib G_GNUC_UNUSED.
+Added GLib check to configure.</li>
+  <li>Removed trailing whitespaces and corrected formatting</li>
+  <li>Updated version numbers</li>
+  <li>Aligned new appointment-&gt;alarm Sound and Procedure entry fields and
+removed unused code.</li>
+  <li>Renamed 'OragePlugin *clock' to 'OragePlugin *plugin' or 'OragePlugin
+*orage_plugin'</li>
+  <li>Fixed libical support, supported libical version is now &gt;= 3.0.</li>
+  <li>Added variable tmp only when HAVE_LIBICAL is not defined</li>
+  <li>Dead code removal</li>
+  <li>Removed outdated is_utc, libical uses UTC timezone. This patch allows
+to use libical 3.0</li>
+  <li>Updated with 'Ical week start day' issue</li>
+  <li>Fixed: "'Ical week start day' configuration parameter is ignored". 
+Issue #5</li>
+  <li>
+    <p>Changed version number to 4.15.2</p>
+  </li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+Croatian, Czech, Danish, Dutch, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Italian, Japanese, Kazakh, Korean,
+Latvian, Lithuanian, Malay, Norwegian Bokmål, Norwegian Nynorsk,
+Occitan (post 1500), Polish, Portuguese, Portuguese (Brazil),
+Romanian, Russian, Serbian, Slovak, Spanish, Swedish, Thai, Turkish,
+Ukrainian, Urdu, Urdu (Pakistan), Uyghur</li>
+</ul>
+
+<h1 id="4151-2021-12-15-unreleased-version">4.15.1 (2021-12-15, unreleased version)</h1>
+<p>Notes from old ChangeLog file:</p>
+<ul>
+  <li>Fixed libbsd dependency: reverted libical strl* functions back to
+str* or changed orage functions from strl* to g_strl*.</li>
+  <li>Automake changes: silent mode is now default</li>
+  <li>Minimum autogen required version is 4.16.0</li>
+  <li>Ported GlobalTime to GTK3:
+    <ul>
+      <li>Replaced GlobalTime background and foreground colours from
+GdkColor to GdkRGBA (old colours from GlobalTime configuration
+is not valid anymore)</li>
+    </ul>
+  </li>
+  <li>Ported panel-plugin to GTK3.
+    <ul>
+      <li>Changed to plugin to use panel plugin class. Initial patches
+contributed by Patronos.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Full commit list:</p>
+<ul>
+  <li>Version 4.15.1 release time</li>
+  <li>Updated with panel plugin changes</li>
+  <li>Changed 'save' signal to member of plugin class</li>
+  <li>Dead code removal</li>
+  <li>Added FIXME comments</li>
+  <li>Changed int parameter to gint</li>
+  <li>Removed invalid "column-homogeneous" property from box property</li>
+  <li>Fixed plugin tooltip</li>
+  <li>Fixed rc file write</li>
+  <li>Fixed panel plugin blocking/unblocking when configuration menu is 
+closed</li>
+  <li>Fixed "properties_frame" handling</li>
+  <li>Added log domain for panel plugin</li>
+  <li>Fixed object "dialog" getters and setters</li>
+  <li>Fixed class based plugin intialization</li>
+  <li>Added xfce_titled_dialog_get_type == 0 check</li>
+  <li>Updated TODO message</li>
+  <li>Removed redundant declaration</li>
+  <li>Replaced GTK_STOCK_OK with "_OK"</li>
+  <li>Replaced deprected GTK2 code with alternative GTK3 code</li>
+  <li>Replaced gtk_tool_button_new_from_stock with 
+orage_toolbar_append_button</li>
+  <li>Removed deprecated gtk_widget_get_default_style</li>
+  <li>Removed redundant const qualifiers</li>
+  <li>Fixed typo</li>
+  <li>Replaced gtk_font_button_get_font_name with gtk_font_chooser_get_font
+and added g_free for release memory from allocated font name</li>
+  <li>Disable unused parameter warning</li>
+  <li>Changed variable clock_rotation_array from char to const gchar</li>
+  <li>Changed OS default background to white and foreground (text colour) 
+to black</li>
+  <li>Replaced gtk_style_context_get_property with gtk_style_context_get</li>
+  <li>Fixed casting of GtkStyleProvider</li>
+  <li>Replaced deprecated gtk_css_provider_get_default with 
+gtk_css_provider_new</li>
+  <li>Suppressed deprecated warnings</li>
+  <li>Changed clock background and font colour from GtkColour to GtkRGBA</li>
+  <li>Casted GtkWidget to GtkLabel</li>
+  <li>Replaced gtk_widget_override_font with gtk_label_set_attributes</li>
+  <li>Replaced hbox with box</li>
+  <li>Replaced table with grid</li>
+  <li>Suppresed unused parameter warning</li>
+  <li>Fixed tooltips for GTK3 (removed gtk_tooltips_new and related)</li>
+  <li>Removed unused code</li>
+  <li>Fixed panel plugin type name</li>
+  <li>Code cleanup: replaced ';;' with ';'</li>
+  <li>Patches from issues #4: started to porting orage plugin to class 
+structure.</li>
+  <li>Replaced string constants which was used in several places with
+macros</li>
+  <li>Added patches from issues #2 and #3. These patches allows to compile 
+panel-pugin, but compiled code is still non functional (needs cleanup 
+from remaining GTK2 version).</li>
+  <li>Enabled XFCE API for GTK3 (X-XFCE-API=2.0)</li>
+  <li>Internal libical and tz_convert fixes to get it compiled on Fedora35</li>
+  <li>Suppressed unused parameter warnings</li>
+  <li>Replaced subdir object build with convenience library</li>
+  <li>Enabled building panel plugin</li>
+  <li>Enabled building 'xfce-xfcalendar-settings.desktop'</li>
+  <li>Fixed compiler warnings about coparing signed and unsigned</li>
+  <li>Replaced gtk_hbox_new with gtk_box_new</li>
+  <li>Suppressed deperecation warnings for 
+gtk_widget_override_background_color and gtk_widget_override_color</li>
+  <li>Isolated deprecated color modify functions</li>
+  <li>Replaced deprecated gtk_font_button_get_font_name with 
+gtk_font_chooser_get_font</li>
+  <li>Replaced deprecated gtk_widget_modify_font and 
+gtk_widget_override_font with gtk_label_set_attributes</li>
+  <li>GNU intltool 0.51.0 (Ubuntu 21.04) needs that 'm4' directory exists 
+before calling intltoolize</li>
+  <li>Replaced Globaltime colours from GdkColor to GdkRGBA</li>
+  <li>Replaced GTK_STOCK_OK in globaltime timezone selection with "_OK" and
+changed orage timezone selection to match as possible with globaltime
+timezone slection (in future globaltime tz selection will be merged with
+orage tz selection)</li>
+  <li>Replaced gtk_image_new_from_stock with gtk_image_new_from_icon_name</li>
+  <li>Replaced stock ID based buttons with named icon based</li>
+  <li>Fixed grid cell lengths for two last rows in "Text Default 
+Formatting" table</li>
+  <li>Replaced table with grid</li>
+  <li>Replaced all boxes in gt_prefs.c with grid</li>
+  <li>Removed redundant gtk_box_pack_start</li>
+  <li>Removed redundant warning macros</li>
+  <li>Replaced deprecated gtk_widget_modify_font with 
+gtk_widget_override_font</li>
+  <li>Fixed GlobalTime raising event handling</li>
+  <li>Added more debug info for tray icon rising</li>
+  <li>Ported code that use GdkEventClient to GTK3</li>
+  <li>Replaced box with grid</li>
+  <li>Replaced clocks.hdr_hbox box with grid</li>
+  <li>Replaced clocks.main_hbox hbox with grid</li>
+  <li>Disabled unused parameter warning</li>
+  <li>Fixed pointer error while pressing any button (re-added functions.h)</li>
+  <li>Added .gitignore</li>
+  <li>Added X11 library check to configure</li>
+  <li>Created convinience library for shared files (shared between Orage 
+and Globaltime)</li>
+  <li>Re-enabled building Globaltime</li>
+  <li>Fixed libbsd dependency: reverted libical strl* functions back to
+str*</li>
+  <li>Added new TODOs and removed already done</li>
+  <li>Updated changes in version 4.15.x</li>
+  <li>Removing dependency to libbsd: replaced strlcpy, strlcat, etc 
+functions with g_strl* functions</li>
+  <li>Added silent automake rules as default</li>
+  <li>Updated required XDT_AUTOGEN_REQUIRED_VERSION to 4.16.0</li>
+  <li>Fixed Orage internal CSS filenames</li>
+  <li>Changed working version to 4.15.1</li>
+  <li>Reverted back required autogen version</li>
+</ul>
+
+<h1 id="4150-2021-10-07-unreleased-version">4.15.0 (2021-10-07, unreleased version)</h1>
+<p>Most code ported to GTK3, tested only on FreeBSD.</p>
+<ul>
+  <li>GTK3 port</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: libxfce4ui 4.17.5 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001099.html</link>
+			<pubDate>Tue, 15 Mar 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001099.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[[Please note that this is a development release.]]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>[Please note that this is a development release.]</p>
+
+<p>Development release on the master branch, required to allow Mousepad
+proper usage of the XfceShortcutsEditor.</p>
+
+<p>Changelog:</p>
+
+<ul>
+  <li>XfceShortcutsEditor: Allow NULL for section name and document it</li>
+  <li>XfceShortcutsEditor: Add new vectorized constructor</li>
+  <li>i18n: Do not use textdomain() in libs</li>
+  <li>XfceShortcutsEditor: Remove label formatting if necessary</li>
+  <li>Simplify startup notification timeout</li>
+  <li>XfceShortcutsDialog: center the dialog on the parent window</li>
+  <li>Translation Updates:
+Danish, Russian</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-time-out-plugin (1.1.1-0ubuntu2) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.1-0ubuntu2/changelog</link>
+			<pubDate>Sat, 12 Mar 2022 00:00:00 -0500</pubDate>
+			<dc:creator><![CDATA[Jeremy Bicha]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.1-0ubuntu2/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>No-change rebuild against latest gdk-pixbuf</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-places-plugin (1.8.1-1build1) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-places-plugin/xfce4-places-plugin_1.8.1-1build1/changelog</link>
+			<pubDate>Sat, 12 Mar 2022 00:00:00 -0500</pubDate>
+			<dc:creator><![CDATA[Jeremy Bicha]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-places-plugin/xfce4-places-plugin_1.8.1-1build1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>No-change rebuild against latest gdk-pixbuf</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-mailwatch-plugin (1.3.0-0ubuntu2) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mailwatch-plugin/xfce4-mailwatch-plugin_1.3.0-0ubuntu2/changelog</link>
+			<pubDate>Sat, 12 Mar 2022 00:00:00 -0500</pubDate>
+			<dc:creator><![CDATA[Jeremy Bicha]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mailwatch-plugin/xfce4-mailwatch-plugin_1.3.0-0ubuntu2/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>No-change rebuild against latest gdk-pixbuf</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-eyes-plugin (4.5.1-1build1) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1build1/changelog</link>
+			<pubDate>Sat, 12 Mar 2022 00:00:00 -0500</pubDate>
+			<dc:creator><![CDATA[Jeremy Bicha]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1build1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>No-change rebuild against latest gdk-pixbuf</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-dict (0.8.4-1build1) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.4-1build1/changelog</link>
+			<pubDate>Sat, 12 Mar 2022 00:00:00 -0500</pubDate>
+			<dc:creator><![CDATA[Jeremy Bicha]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.4-1build1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>No-change rebuild against latest gdk-pixbuf</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfburn (0.6.2-1build1) jammy]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfburn/xfburn_0.6.2-1build1/changelog</link>
+			<pubDate>Sat, 12 Mar 2022 00:00:00 -0500</pubDate>
+			<dc:creator><![CDATA[Jeremy Bicha]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfburn/xfburn_0.6.2-1build1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>No-change rebuild against latest gdk-pixbuf</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[Xfce accepted to Google Summer of Code 2022]]></title>
+			<link>https://alexxcons.github.io/blogpost_4.html</link>
+			<pubDate>Fri, 11 Mar 2022 00:00:00 -0500</pubDate>
+			<dc:creator><![CDATA[Alexander Schwinn]]></dc:creator>
+		
+		
+			<guid>https://alexxcons.github.io/blogpost_4.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[<div id="body" class="clear">
+            <h2>Xfce accepted to Google Summer of Code 2022</h2>
+            <p></p>
+            <p>Good news, Xfce has been accepted to <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/xfce">Google Summer of Code 2022</a> !</p>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<div id="body" class="clear">
+            <h2>Xfce accepted to Google Summer of Code 2022</h2>
+            <p></p>
+            <p>Good news, Xfce has been accepted to <a href="https://summerofcode.withgoogle.com/programs/2022/organizations/xfce">Google Summer of Code 2022</a> !</p>
+
+            <p>This time not only different thunar projects will be mentored, but as well some xfce4-terminal, xfce4-screenshooter and xfce4-panel projects. Check our  <a href="https://wiki.xfce.org/projects/gsoc/start">Xfce GSoC Wiki</a> for a detailed list of project ideas !</p>
+
+            <p>If you are not much involved into Xfce yet and interested in software development, now might be a good opportunity to contribute to Xfce while even getting payed for it !</p>
+
+            <p>In case you are already involved in Xfce development, you might be interested to mentor a GSoC contributor and add some project idea to the <a href="https://wiki.xfce.org/projects/gsoc/start#project_ideas">ideas-list</a> for which you can do mentoring.</p>
+
+            <p>For more detailed information, best check the guides on the <a href="https://summerofcode.withgoogle.com">official GSoC page</a>.</p>
+
+            <p>Hope to see you there !</p>
+        </div>]]>
+        
+      </content:encoded>
+		</item>
+	
+
+</channel>
+
+</rss>

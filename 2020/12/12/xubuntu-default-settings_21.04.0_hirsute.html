@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">xubuntu-default-settings (21.04.0) hirsute</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2020-12-12">12 Dec 2020</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2020-12-12">12 Dec 2020</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">xubuntu-default-settings (21.04.0) hirsute</h1> -->
+
+        <section class="post-content">
+            <ul>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml:
+    <ul>
+      <li>Set Gtk/CursorThemeName to DMZ-White (LP: #1838008)</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/menus/xfce-applications.menu:
+    <ul>
+      <li>Hide confusing xfce4-terminal-settings.desktop</li>
+    </ul>
+  </li>
+  <li>usr/share/xubuntu/applications/xfce4-terminal.desktop:
+    <ul>
+      <li>Dropped, enable showing in the menu (LP: #1851387)</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/panel/default.xml:
+    <ul>
+      <li>Migrate statusnotifier to systray and remove from panel (LP: #1907871)</li>
+      <li>Remove separator between clock and tray, add padding</li>
+      <li>Enable pulseaudio plugin window focus support</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/helpers.rc:
+    <ul>
+      <li>Change FileManager key to lowercase thunar to fix defaults</li>
+    </ul>
+  </li>
+  <li>debian/live/whiskermenu-1.rc,    etc/xdg/xdg-xubuntu/menus/xfce-applications.menu,    etc/xdg/xdg-xubuntu/xfce4/whiskermenu/defaults.rc,    usr/share/xubuntu/applications/defaults.list:
+    <ul>
+      <li>Replace exo-* with xfce4-* commands</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml:
+    <ul>
+      <li>Hide default icons: File System and Removable Devices</li>
+      <li>Exclude applications menu on desktop right click</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/thunar.xml:
+    <ul>
+      <li>Switch default location selector to path bar</li>
+      <li>Enabled opening folders in new tab on middle click</li>
+      <li>Disabled changing window icon for special folders</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml:
+    <ul>
+      <li>Apply upstream keyboard bindings:
+        <ul>
+          <li>Ctrl+Alt+Delete: xfce4-session-logout</li>
+          <li>Ctrl+Shift+Escape: xfce4-taskmanager</li>
+          <li>Super+R: xfrun4</li>
+          <li>Super+E, Ctrl+Alt+F: exo-open –launch FileManager</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

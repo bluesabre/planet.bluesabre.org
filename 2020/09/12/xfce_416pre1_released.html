@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Xfce 4.16pre1 released!</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2020-09-12">12 Sep 2020</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2020-09-12">12 Sep 2020</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">Xfce 4.16pre1 released!</h1> -->
+
+        <section class="post-content">
+            <p>As <a href="https://wiki.xfce.org/releng/4.16/roadmap">scheduled</a> we have just released Xfce 4.16pre1 on August 27th (sorry for the long time to write a post about it) - the first development release leading up to Xfce 4.16. And it comes with a boatload of new features and improvements, so prepare yourselves.</p>
+
+<h3 id="notable-changes">Notable Changes</h3>
+
+<h4 id="general">General</h4>
+
+<ul>
+  <li>Dropping lots of code (Gtk2 support), improving maintainability</li>
+  <li>
+    <p>Adding new icons to all core components to extend Xfce’s visual identity (also: follow freedesktop.org rDNS icon naming standard)
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/icons.png" alt="New icons" style="display: block; margin:auto" /></p>
+  </li>
+  <li>
+    <p>A revamped and improved “About Xfce” dialog that also holds general system details
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/about.png" alt="About dialog" style="display: block; margin:auto" /></p>
+  </li>
+  <li>
+    <p>Switch to client-side decorations for settings dialogs
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/csd.png" alt="CSD Settings" style="display: block; margin:auto" /></p>
+  </li>
+  <li>Lots of bugfixes everywhere</li>
+</ul>
+
+<h4 id="settings">Settings</h4>
+
+<ul>
+  <li>
+    <p>New “Default Applications” dialog: merge between “Mime Settings” and “Preferred Applications”
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/mime-editor.png" alt="Mime editor" style="display: block; margin:auto" /></p>
+  </li>
+  <li>
+    <p>Display: Support for fractional scaling (with XRandR), better fallback in case of mis-configuration
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/scale.png" alt="Display dialog" style="display: block; margin:auto" /></p>
+  </li>
+  <li>
+    <p>Settings Manager: Improved search/filter</p>
+  </li>
+</ul>
+
+<h4 id="panel">Panel</h4>
+
+<ul>
+  <li>
+    <p>New Plugin: “Status Tray” - a merger between the systray and the statusnotifier plugin, will make life for users much easier and less confusing, now supports the panel’s global “icon size” setting
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/status-tray.png" alt="Status tray plugin" style="display: block; margin:auto" /></p>
+  </li>
+  <li>
+    <p>Autohide animation: Makes “autohide” more easily understandable (in the sense of: where did my panel just go?)
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/autohide.gif" alt="Autohide animation" width="640px" style="display: block; margin:auto" /></p>
+  </li>
+  <li>Launchers now show desktop file actions on right-click (e.g. “Open a New Private Window” for Firefox)</li>
+  <li>
+    <p>The Window list now supports “launching a new instance” of an application in the right-click menu
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/launch-new-instance.png" alt="Launch new instance" height="240px" style="display: block; margin:auto" /></p>
+  </li>
+  <li>The Workspace switcher can optionally show numbering for workspaces</li>
+  <li>Dark mode for the panel (precondition: your theme has to support dark mode)</li>
+</ul>
+
+<h4 id="thunar">Thunar</h4>
+
+<ul>
+  <li>
+    <p>Copying and moving can be paused
+<img src="https://andreldm.com/assets/img/xfce-4.16pre1/thunar-pause.png" alt="Thunar transfer dialog" style="display: block; margin:auto" /></p>
+  </li>
+  <li>Support for queued file transfer (configurable)</li>
+  <li>Initial support to remember view settings per directory</li>
+  <li>New versioning scheme</li>
+</ul>
+
+<h4 id="volman">Volman</h4>
+<ul>
+  <li>Removed PDA Tab</li>
+  <li>New versioning scheme</li>
+</ul>
+
+<h4 id="xfwm4">Xfwm4</h4>
+<ul>
+  <li>Show alt-tab dialog only on the primary monitor (if one is set)</li>
+</ul>
+
+<h4 id="power-manager">Power Manager</h4>
+<ul>
+  <li>Cleaner settings dialog (battery and “on power” settings)</li>
+  <li>Optional visual indicator in the panel when “Presentation mode” is enabled</li>
+  <li>Automatically dismiss low-power notifications upon connecting of a charger</li>
+</ul>
+
+<h4 id="session">Session</h4>
+<ul>
+  <li>Improved gpg-agent support</li>
+  <li>Smaller visual cleanups</li>
+</ul>
+
+<h4 id="appfinder">Appfinder</h4>
+<ul>
+  <li>Allow sorting apps by frecency (frequency and recency)</li>
+</ul>
+
+<h4 id="thumbnailing-service">Thumbnailing Service</h4>
+<ul>
+  <li>Support for excluding paths (in the tumbler.rc settings file)</li>
+</ul>
+
+<h4 id="xfconf-settings-service">Xfconf Settings Service</h4>
+<ul>
+  <li>Enable gsettings backend by default</li>
+  <li>Bash auto-completion for xfconf-query</li>
+  <li>Drop Perl bindings</li>
+</ul>
+
+<h3 id="where-can-you-get-it">Where can you get it?</h3>
+
+<p>Besides manually compiling <a href="https://archive.xfce.org/xfce/4.16pre1/src/">tarballs</a>, it’s also possible to use <a href="https://github.com/schuellerf/xfce-test">xfce-test</a> (<code class="language-plaintext highlighter-rouge">ubuntu_20.04-xfce-4.16pre1</code> tag) to easily preview Xfce 4.16 without the risk of breaking your system.</p>
+
+<p>Update: Arch Linux users more adventurous than usual can try <code class="language-plaintext highlighter-rouge">-devel</code> packages from AUR. Likewise, openSUSE users can install <a href="https://en.opensuse.org/Xfce_repositories">packages</a> built directly from git master. If you’re afraid to trash your system consider playing with a virtual machine first.</p>
+
+<p>Please go ahead try this release if possible, we would be more happy to hear your impressions as well as get bug reports before the final release.</p>
+
+<h3 id="whats-next">What’s next?</h3>
+
+<p>We’re expecting to release Xfce 4.16pre2 at the end of this month and if necessary pre3 will be released in October. If everything goes as planned Xfce 4.16 should be released by November!</p>
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

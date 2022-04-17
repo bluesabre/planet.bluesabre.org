@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Thunar, GtkAction and a big mess</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2020-06-24">24 Jun 2020</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2020-06-24">24 Jun 2020</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">Thunar, GtkAction and a big mess</h1> -->
+
+        <section class="post-content">
+            <h3 id="overview">Overview</h3>
+
+<p>My journey into the <a href="https://developer.gnome.org/gtk3/stable/GtkAction.html">GtkAction</a> abysses of <a href="https://gitlab.xfce.org/xfce/thunar">Thunar</a> began in the mid of 2019. Be warned, it is no story of success. It is rather a story about finding a way through a maze while walking into almost every dead end.</p>
+
+<p>Actually I just wanted to fix <a href="https://gitlab.xfce.org/xfce/thunar/-/issues/198">#198 (Merge all file-context-menus into one)</a>. But somehow things got weird. More than half a year later and after numerous interactive rebases I finally merged my branch into master \o/</p>
+
+<h3 id="motivation">Motivation</h3>
+
+<p>The old Thunar used to create the same menu items in different places using different code. In the past that led to inconsistencies. E.g. the location bar only provided a very minimal context menu, no <a href="https://docs.xfce.org/xfce/thunar/custom-actions">custom actions</a> at all.</p>
+
+<p><img src="/assets/img/location_buttons_context_menu.png" alt="location button context menu" /></p>
+
+<p>From time to time I found myself right-clicking on a <code class="language-plaintext highlighter-rouge">location-button</code>, just to find out that there still is no <code class="language-plaintext highlighter-rouge">custom action</code>. At some point of maximal annoyance I decided to fix that problem … not sure if I would have done so when I knew how long that road would be.</p>
+
+<p>Looking at <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/xfce-4.14/thunar/thunar-location-button.c">thunar-location-buttons.c</a> revealed a lot of duplicated code. <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/xfce-4.14/thunar/thunar-standard-view.c">thunar-standard-view</a> and <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/xfce-4.14/thunar/thunar-window.c">thunar-window</a> both used the deprecated <a href="https://developer.gnome.org/gtk3/stable/GtkActionGroup.html#GtkActionEntry">GtkActionEntry</a> to define <code class="language-plaintext highlighter-rouge">menu item labels</code> and related actions. The <code class="language-plaintext highlighter-rouge">location buttons</code> just mirrored parts of that code. On top some other actions were defined in <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/xfce-4.14/thunar/thunar-standard-view.c">thunar-launcher</a> or had their own classes, inheriting <code class="language-plaintext highlighter-rouge">GtkAction</code>.</p>
+
+<p>So yay, lets just copy+paste the missing stuff to the location buttons?
+Nah, that would be too easy. As a developer who values <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>, it would hurt my belief in clean code to produce more mess.</p>
+
+<h3 id="lets-start-hacking">Let’s Start Hacking</h3>
+
+<p>I started to do some coding .. first I created a new widget <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/master/thunar/thunar-menu.c">thunar-menu</a> which internally is a <a href="https://developer.gnome.org/gtk3/stable/GtkMenu.html">gtk-menu</a>, and moved menu-item creation and the related actions for copy/cut/paste/delete/move_to_trash there to have them at some central place, so they can be reused by different menus. I as well moved the actions from <code class="language-plaintext highlighter-rouge">thunar-launcher</code> to <code class="language-plaintext highlighter-rouge">thunar-menu</code> (I guess the original intention of the launcher was, to actually launch things, not to manage menu-items) and replaced separate action classes in favour of methods inside <code class="language-plaintext highlighter-rouge">thunar-menu</code>.</p>
+
+<p>Meanwhile the location-button-menu and the context-menu, which I used for testing, were populated with some items again.</p>
+
+<p>The old code made massive use of the deprecated <code class="language-plaintext highlighter-rouge">GtkAction</code> and <code class="language-plaintext highlighter-rouge">GtkActionEntry</code> classes together with <code class="language-plaintext highlighter-rouge">GtkUiManager</code>. I did not want to add more <code class="language-plaintext highlighter-rouge">G_GNUC_BEGIN_IGNORE_DEPRECATIONS</code> to silence warnings. So I decided to replace the deprecated calls.</p>
+
+<p>Looking into the gtk3 documentation revealed that there now is <a href="https://developer.gnome.org/GAction/">GAction</a> and <a href="https://developer.gnome.org/gio/stable/GActionMap.html#GActionEntry">GActionEntry</a> which provides some service around accelerator activation, and there is <a href="https://developer.gnome.org/gtk3/stable/GtkMenu.html">GtkMenu</a>/<a href="https://developer.gnome.org/gio/stable/GMenu.html">GMenu</a> for which at that time I had no clear idea why there are two of them.</p>
+
+<p>The <a href="https://developer.gnome.org/GAction/">documentation of GAction</a> told me that it should not be used for anything related to labels, icons or creation of visual widgets, damn. So at that time I did not see an advantage in using this class. I decided to rather go for <code class="language-plaintext highlighter-rouge">GtkMenu</code> together with some custom replacement for <code class="language-plaintext highlighter-rouge">GtkActionEntry</code>: <a href="https://gitlab.xfce.org/xfce/libxfce4ui/-/blob/master/libxfce4ui/xfce-gtk-extensions.h#L45">XfceGtkActionEntry</a>.</p>
+
+<p>In retrospective ignoring <code class="language-plaintext highlighter-rouge">GAction</code> might not have been my smartest move. Meanwhile I understood how <code class="language-plaintext highlighter-rouge">GAction</code> can be used with <code class="language-plaintext highlighter-rouge">GtkMenu</code>, and I will most likely go for it at some later point.</p>
+
+<p>Regarding <a href="https://developer.gnome.org/gtk3/stable/GtkUIManager.html">GtkUiManager</a>: The definition of menu-items of Thunar was scattered across <a href="https://gitlab.xfce.org/xfce/thunar/-/commit/ed46f9c3baa3533629d8c1000511300fb0e6fdd5">7 different *-ui.xml files</a>, making it hard to figure out what belongs together. Because of that I decided to just get rid of the deprecated <code class="language-plaintext highlighter-rouge">GtkUiManager</code> and create menu-items in the code instead of predefining their order in xml. IMO the usage of xml files might be nice for static GUI’s, though for dynamic menu-creation it just introduces unnecessary complexity.</p>
+
+<p>So I started to build <code class="language-plaintext highlighter-rouge">XfceGtkActionEntry</code> and some support methods.<code class="language-plaintext highlighter-rouge">XfceGtkActionEntry</code> is a structure which holds labels, tooltips, icons, types, the accelerator paths and callbacks to the related actions. Like <code class="language-plaintext highlighter-rouge">GtkActionEntry</code> it is just a struct and can be filled in a static way.</p>
+
+<p>Next problem: The menus in Thunar so far did not get destroyed, but were updated whenever the selected items got changed, and got shown when needed. That sounded wrong to me. Why should I want to update menu-items, which can be expensive, while no menu is visible at all ?
+There were bugs about menu flickering and slowness while rubber banding/mass select which seem to be related. Since I anyhow needed to touch that part, I decided to build menus only when they need to be shown.</p>
+
+<p>Things went well, I came to the point where I needed some items from <code class="language-plaintext highlighter-rouge">thunar-window</code>, like the zoom-section and the view-specific settings. As well most file-menu items in the <code class="language-plaintext highlighter-rouge">thunar-window</code> menu did not work any more since I moved management of them from <code class="language-plaintext highlighter-rouge">thunar-launcher</code> to<code class="language-plaintext highlighter-rouge"> thunar-menu</code>. So next step clearly was: Introduce <code class="language-plaintext highlighter-rouge">XfceGtkActionEntry</code> to <code class="language-plaintext highlighter-rouge">thunar-window</code> … and than shit hit the fan.</p>
+
+<p>So far the <code class="language-plaintext highlighter-rouge">thunar-window</code> menu was always present and took care for any accelerator actions. Since my concept was “create menu on request”, there was no menu instance which could take care for accelerators any more, leading to dysfunctional accelerator keys, rendering my whole concept as faulty .. aargh.</p>
+
+<h3 id="start-all-over-again">Start all over again</h3>
+
+<p>After some time of grieve and doubts I fixed the problem by moving most of the code from <code class="language-plaintext highlighter-rouge">thunar-menu</code> back to <code class="language-plaintext highlighter-rouge">thunar-launcher</code>, which lifetime is coupled to <code class="language-plaintext highlighter-rouge">thunar-window</code>.</p>
+
+<p>From now on <code class="language-plaintext highlighter-rouge">thunar-menu</code> was more or less just an convenience wrapper for <code class="language-plaintext highlighter-rouge">thunar-launcher</code> … still useful, but sadly it lost its glory. <code class="language-plaintext highlighter-rouge">thunar-launcher</code> now builds volatile menu items on request and permanently listens to the related accelerators. Finally accelerators started to work fine, and I was able to continue to fight with the window menu.</p>
+
+<p>I had much more trouble with that menu, too much to tell it here .. however somehow I managed to get it functional, so that it mostly worked like before.</p>
+
+<h3 id="an-unpleasant-discovery">An unpleasant discovery</h3>
+
+<p>Later on, while <a href="https://gitlab.gnome.org/GNOME/gtk/-/issues/2375">reporting a bug against gtk</a> I learned that the class <a href="https://developer.gnome.org/gtk3/stable/gtk3-Accelerator-Maps.html">gtk_accel_map</a>, which I use as a central part will be deprecated soon … aargh again. The gtk devs so far just missed to set a deprecation macro. So it seems like I will need to touch the accelerator part again. This time I plan to make use of the <a href="https://developer.gnome.org/gio/stable/GActionMap.html">GActionMap</a> interface .. going to be a story for another day.</p>
+
+<h3 id="testing-and-open-issues">Testing and open issues</h3>
+
+<p>For first testing and code-review I luckily got support of some early adopters. They found many more defects and regressions which kept me busy a long while. Fortunately nothing concept-breaking was found.</p>
+
+<p>While writing this there are still some regressions I introduced, waiting to get fixed by me before a stable release:</p>
+<ul>
+  <li><a href="https://gitlab.xfce.org/xfce/thunar/-/issues/331">Regression: Missing accelerators for bookmark items</a></li>
+  <li><a href="https://gitlab.xfce.org/xfce/thunar/-/issues/319">GObject-WARNING on closing thunar in some conditions</a></li>
+</ul>
+
+<p>And there are related tasks on my agenda, for which I just did not find the time so far:</p>
+<ul>
+  <li>rename <code class="language-plaintext highlighter-rouge">thunar-launcher</code> to e.g. <code class="language-plaintext highlighter-rouge">thunar-action-manager</code></li>
+  <li>use <code class="language-plaintext highlighter-rouge">thunar-menu</code> in <code class="language-plaintext highlighter-rouge">bookmark view</code></li>
+  <li>use <code class="language-plaintext highlighter-rouge">thunar-menu</code> in <code class="language-plaintext highlighter-rouge">Tree view</code></li>
+  <li>many minor things</li>
+</ul>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Finally I ended up with <a href="https://gitlab.xfce.org/xfce/thunar/-/merge_requests/10">25 commits and +4717 / -7149 line changes</a>. The occurrence of <code class="language-plaintext highlighter-rouge">G_GNUC_BEGIN_IGNORE_DEPRECATIONS</code> got reduced from 250 to 35. The remaining 35 occurrences will further drop when using GtkMenu for bookmark-view/tree-view. That should simplify the move to gtk4 in the future. The <code class="language-plaintext highlighter-rouge">location-button</code> context menu shows custom-actions now, and as well some other bugs got fixed with the changes.</p>
+
+<p>So overall, the result does not look too bad I guess.</p>
+
+<p>Well, this blogpost grew by far too long. I hope you nevertheless enjoyed the journey into the Thunar internals!</p>
+
+<p>… enough storytelling for now, I really need to take care of these remaining regressions! :)</p>
+
+<p>Thanks to <a href="https://gitlab.xfce.org/reubengreen73">Reuben</a>, <a href="https://gitlab.xfce.org/andreldm">AndreLDM</a>, <a href="https://gitlab.xfce.org/DarkTrick">DarkTrick</a> and others for early testing and bug reporting! Special thanks to AndreLDM, motivating me to write this blogpost at all :D.</p>
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

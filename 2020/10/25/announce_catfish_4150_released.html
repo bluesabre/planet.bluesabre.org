@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ANNOUNCE: catfish 4.15.0 released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2020-10-25">25 Oct 2020</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2020-10-25">25 Oct 2020</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">ANNOUNCE: catfish 4.15.0 released</h1> -->
+
+        <section class="post-content">
+            <p>[Please note that this is a development release.]</p>
+
+<p>Disclaimer on the significant version bump (1.4.x to 4.15.x):
+With this release, Catfish has started integrating Xfce components.
+Going forward, Catfish's versioning scheme will reflect the target Xfce
+release.</p>
+
+<p>Dependency Changes:</p>
+<ul>
+  <li>GTK &gt;= 3.22</li>
+  <li>GLib &gt;= 2.42</li>
+  <li>Python 2 support has been removed</li>
+  <li>Python 3 &gt;= 3.2 (#33)</li>
+  <li>Xfconf &gt;= 4.14.0 (requires GObject Introspection, see INSTALL)</li>
+  <li>Zeitgeist optional dependency now requires GObject Introspection</li>
+</ul>
+
+<p>New Features:</p>
+<ul>
+  <li>Added Ctrl+H shortcut to show/hide hidden files (#16)</li>
+  <li>Added "Today" and "Month" filters to the sidebar (#23)</li>
+  <li>Fulltext searches now include more text files (#7)</li>
+</ul>
+
+<p>General:</p>
+<ul>
+  <li>New app icon, now using an rDNS icon name (org.xfce.catfish)</li>
+  <li>Migrated ChangeLog to NEWS to better match Xfce projects</li>
+  <li>Renamed README to README.md and updated to match Xfce projects</li>
+  <li>Updated INSTALL to reference python3-specific packages (#36)</li>
+  <li>Various in-app icon updates (#15, #17, #26)</li>
+  <li>Added additional padding to Other and Custom gear icons (#20)</li>
+</ul>
+
+<p>Bug Fixes:</p>
+<ul>
+  <li>Check if zeitgeist daemon is running at startup (#34)</li>
+  <li>Correctly position custom filter popups above gear icon (#18)</li>
+  <li>Default to the current date in the custom date filters (#24)</li>
+  <li>Fix 'list' object has no attribute 'lower' (#9)</li>
+  <li>Fix fulltext freeze with special files (#32)</li>
+  <li>Fix python crash when some extension scheme is used (#35)</li>
+  <li>Fix statusbar moving on mouseover</li>
+  <li>Move custom file extension hint to tooltip (#25)</li>
+  <li>Sidebar entries no longer move when losing focus (#22)</li>
+</ul>
+
+<p>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), Estonian, Finnish, French,
+Galician, German, Greek, Hebrew, Hungarian, Icelandic, Indonesian,
+Interlingue, Italian, Japanese, Korean, Lithuanian, Malay, Norwegian
+Bokmål, Norwegian Nynorsk, Polish, Portuguese, Portuguese (Brazil),
+Russian, Serbian, Slovak, Slovenian, Spanish, Thai, Turkish, Ukrainian</p>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

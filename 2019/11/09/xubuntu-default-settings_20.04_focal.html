@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">xubuntu-default-settings (20.04) focal</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2019-11-09">09 Nov 2019</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2019-11-09">09 Nov 2019</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">xubuntu-default-settings (20.04) focal</h1> -->
+
+        <section class="post-content">
+            <ul>
+  <li>debian/control:
+    <ul>
+      <li>Bump Standards-Version to 4.4.0</li>
+      <li>Add Rules-Requires-Root: no</li>
+      <li>Update Vcs- locations</li>
+    </ul>
+  </li>
+  <li>debian/control, debian/compat:
+    <ul>
+      <li>Bump debhelper to version 12</li>
+    </ul>
+  </li>
+  <li>debian/live/*:
+    <ul>
+      <li>Move live config files to subdirectory</li>
+    </ul>
+  </li>
+  <li>debian/live/whiskermenu-1.rc,    debian/xubuntu-live-settings.install:
+    <ul>
+      <li>Remove lock menu option in live since locking is disabled (LP: #1835668)</li>
+    </ul>
+  </li>
+  <li>debian/live/light-locker.desktop,    debian/xubuntu-live-settings.install:
+    <ul>
+      <li>Remove light-locker autostart entry since we no longer ship it</li>
+    </ul>
+  </li>
+  <li>debian/source/lintian-overrides:
+    <ul>
+      <li>Add override for testsuite-autopkgtest-missing</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml:
+    <ul>
+      <li>Drop workspace labels, inconsistent with 5+ workspaces (LP: #1829778)</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml:
+    <ul>
+      <li>Set the Xubuntu wallpaper as default for up to 4 displays</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/menus/xfce-applications.menu,    etc/xdg/xdg-xubuntu/menus/xfce-settings-manager.menu:
+    <ul>
+      <li>Workaround menu handling errors in pyxdg (LP: #1833863)</li>
+    </ul>
+  </li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

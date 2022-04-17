@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ANNOUNCE: xfce4-panel 4.17.0 released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2022-04-16">16 Apr 2022</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2022-04-16">16 Apr 2022</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">ANNOUNCE: xfce4-panel 4.17.0 released</h1> -->
+
+        <section class="post-content">
+            <p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Dependency Changes:
+    <ul>
+      <li>Garcon &gt;= 0.8.0</li>
+      <li>GLib &gt;= 2.56.0</li>
+      <li>Libxfce4ui &gt;= 4.17.1</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>Remove unused project files</li>
+      <li>Use GLib structured logging</li>
+      <li>Remove obsolete Exo version checks</li>
+      <li>Bump minimal required Garcon to 0.8.0 i.e. Xfce 4.16</li>
+      <li>Remove obsolete GTK version checks</li>
+      <li>Use GLIB_VERSION_MIN/MAX_REQUIRED/ALLOWED</li>
+      <li>autoconf: Some updates</li>
+      <li>libxfce4panel: Silence <code class="language-plaintext highlighter-rouge">-Wredundant-decls</code> warnings (#495)</li>
+      <li>Revamp the documentation to modernize and uniformize accross
+components (!35)</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>panel: Fix regression "intellihide does not hide when leaving
+slowly" (#388)</li>
+      <li>panel: Fix regression "'Span Monitor' has no effect" (#405)</li>
+      <li>panel: Keep a reference on item during drag and drop</li>
+      <li>panel: Fix a memory leak</li>
+      <li>systray: Do not apply icon if not yet set</li>
+      <li>Fix <code class="language-plaintext highlighter-rouge">deadcode.DeadStores</code> warnings from <code class="language-plaintext highlighter-rouge">scan-build</code> (!56)</li>
+      <li>Fix <code class="language-plaintext highlighter-rouge">core.UndefinedBinaryOperatorResult</code> warning from
+<code class="language-plaintext highlighter-rouge">scan-build</code> (#142)</li>
+      <li>Fix <code class="language-plaintext highlighter-rouge">core.NullDereference</code> warning from <code class="language-plaintext highlighter-rouge">scan-build</code> (!57)</li>
+      <li>panel: Fix broken drag and drop between panels (#561)</li>
+      <li>systray: Only activate item under mouse</li>
+      <li>Use a normalized URI internally for the background image</li>
+      <li>panel: Disconnect from screen signals when window is destroyed</li>
+      <li>Fix ignored <code class="language-plaintext highlighter-rouge">*.desktop.in</code> in <code class="language-plaintext highlighter-rouge">.gitignore</code></li>
+      <li>systray: Do not connect to proxy signal if async method failed</li>
+      <li>actions: Lay out buttons in grid for deskbar (#437, !69)</li>
+      <li>wrapper: Rework widget drawing (#520, !67)</li>
+      <li>windowmenu: Emit "deactivate" signal when hiding the menu
+(#22, !68)</li>
+      <li>systray: Trust the status to update the attention icon
+(#392, !64)</li>
+      <li>tasklist: Add a setting to control the display of tooltips
+(#548, !63)</li>
+      <li>Fixed some window buttons not appearing in the panel
+(#188, !66)</li>
+      <li>Remove ellipsis (#480, !65)</li>
+      <li>launcher: Only activate under mouse (Fixes #519)</li>
+      <li>launcher: Clear action menu when destroyed (Fixes #540, !61)</li>
+      <li>actions: Block panel autohide (Fixes #431, !62)</li>
+      <li>panel: Fix grabs for popup commands (Fixes #506, !60)</li>
+      <li>Fix compilation warnings (#492, #493, #494, !53)</li>
+      <li>launcher: Adjust menu icon size (Fixes #255, !51)</li>
+      <li>Fix exit procedure when plugin insertion failed (!49)</li>
+      <li>libxfce4panel: Review memory management for context menu
+(#452, !46)</li>
+      <li>panel: Mitigate a memory leak when removing items (!46)</li>
+      <li>tasklist: Silence an allocation warning (!48)</li>
+      <li>launcher: Check for menu item initialization (!47)</li>
+      <li>panel: Change width of default panel-2 to 1% (Fixes #454, !44)</li>
+      <li>Fix some <code class="language-plaintext highlighter-rouge">*-CRITICAL</code> warnings (!43)</li>
+      <li>libxfce4panel: Do not destroy context menu if popped up
+(#442, !45)</li>
+      <li>tasklist: Auto-adjust icon size (v2) (#90, !29)</li>
+      <li>pager: Allow disable switch with mouse wheel for miniature
+view (#253, !37)</li>
+      <li>Add icons to help and about items in panel menu (#421)</li>
+      <li>pager: Use gobject bindings (Fixes #376, !32)</li>
+      <li>launcher: avoid double fork (#407, !25)</li>
+      <li>Fix build warnings (!31)</li>
+      <li>Display tooltip title of statusnotifier items as plaintext
+(!30)</li>
+      <li>pager: Switch to new workspaces icon name</li>
+      <li>statustray: Prevent crash when parsing properties
+(Fixes #379, !26)</li>
+      <li>windowmenu: fix use-after-free in
+window_menu_plugin_window_item_new (!24)</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
+(Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+Eastern Armenian, English (Australia), English (United Kingdom),
+Estonian, Finnish, French, Galician, Georgian, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian
+Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Polish, Portuguese,
+Portuguese (Brazil), Romanian, Russian, Serbian, Sinhala, Slovak,
+Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Uyghur,
+Vietnamese</li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

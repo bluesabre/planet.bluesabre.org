@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">gimp (2.10.22-4) unstable</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2021-04-03">03 Apr 2021</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2021-04-03">03 Apr 2021</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">gimp (2.10.22-4) unstable</h1> -->
+
+        <section class="post-content">
+            <ul>
+  <li>Team upload</li>
+</ul>
+
+<p>[ Laurent Bigonville ]</p>
+<ul>
+  <li>Drop debian/shlibs.local, not needed anymore.    This file has the adverse effect of lowering the required version of    libbabl-0.1-0. The library now ships a .symbols file with    Build-Depends-Package, so let dh_shlibs adjust the dependency version    automatically (Closes: #983568)</li>
+</ul>
+
+<p>[ Simon McVittie ]</p>
+<ul>
+  <li>d/p/app-Print-2-digit-LittleCMS-minor-versions-correctly.patch:    Print 2-digit lcms minor versions correctly. Related to #900819, #986192.</li>
+  <li>d/p/app-Don-t-second-guess-the-dependency-system.patch:    Don’t require lcms runtime version &gt;= compile-time version.    If no new symbols referenced by GIMP have been introduced (as is the    case when upgrading from 2.9 to 2.12~rc1), we only need a dependency    on version 2.9. (Closes: #900819, #986192)</li>
+  <li>d/p/*_hurd_ftbfs.patch: Add patch metadata</li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

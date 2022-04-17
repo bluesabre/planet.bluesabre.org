@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header no-cover">
+    <nav class="main-nav overlay clearfix">
+            
+        
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        
+        <a class="subscribe-button icon-feed" href="/feed.xml ">Subscribe</a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">Planet Bluesabre</h1>
+            <h2 class="page-description">
+                 All the latest from Xfce, Xubuntu, & Friends. 
+            </h2>
+            
+            
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+
+<main id="content" class="content" role="main">
+
+    <div class="extra-pagination inner">
+        <nav class="pagination" role="pagination">
+    
+        
+            <a class="newer-posts" href="/page58" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 59 of 64 </span>
+     
+        <a class="older-posts" href="/page60" title="Next Page">Older Posts &raquo;</a>
+     
+</nav>
+    </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2020/01/14/xfce-4-14-maintenance-and-4-15-updates/">Xfce 4.14 Maintenance and 4.15 Updates</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon Steinbeiß
+            
+            
+            <time class="post-date" datetime="2020-01-14">
+                14 Jan 2020
+            </time>
+            <a href="https://simon.shimmerproject.org/2020/01/14/xfce-4-14-maintenance-and-4-15-updates/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2>Xfce 4.14 Maintenance</h2>
+<p>As promised we&#8217;re trying to be much better at doing maintenance releases for Xfce 4.14. In part, we had a hard time doing maintenance for Xfce 4.12 because with all the porting work it was hard to focus on fixing Gtk+2 bugs and many bugreports/fixes didn&#8217;t apply to both 4.12 and 4.14.<br />
+This has now changed and as many bugs apply to both Xfce 4.14 and the current 4.15 development versions we can much more easily backport fixes. Consequently we have already done quite a few maintenance releases so far and this week a few more followed, fixing bugs and featuring improved translations:</p>
+<ul>
+<li>xfce4-panel 4.14.3 <span style="color: #808080;">(4.14.2 had a bad release build)</span></li>
+<li>xfce4-session 4.14.1</li>
+<li>xfce4-settings 4.14.2</li>
+<li>xfdesktop 4.14.2</li>
+</ul>
+<h2>Xfce 4.15 Updates</h2>
+<p>One of the major UI changes that we announced for the 4.16 cycle was the switch to GtkHeaderBars or so-called Client-side decorations (CSD). The first big step in this direction has now happened in libxfce4ui, our main user interface library. With the change, almost all dialogs will be converted to using CSD by default without any code changes in existing projects.</p>
+<p>There are quite a few advantages we&#8217;re looking forward to (improved resize areas, consistent theming etc) by making use of this core Gtk feature.</p>
+<p>A few more features that got released (in the xfce4-panel 4.15.1, libxfce4ui 4.15.1, libxfce4util 4.15.0 and xfce4-settings 4.15.0):</p>
+<ul>
+<li>an improved &#8220;About Xfce&#8221; dialog that features basics of the system properties</li>
+<li>improvements to the &#8220;Display&#8221; dialog (show Aspect Ratio, show Preferred Mode)</li>
+<li>only show Gtk themes that support Gtk3 in the &#8220;Appearance&#8221; dialog</li>
+<li>function for improved application icon lookup (used in Xfce Session&#8217;s settings dialog and in the Xfce Panel&#8217;s systray settings for now)</li>
+<li>the panel&#8217; dark mode got enabled by default (which means it will look nicer with Adwaita e.g. on Fedora by default)</li>
+<li>the Directory Menu plugin now allows you to directly create Folders and Files</li>
+<li>we also bumped the overall Xfce version to 4.15 so people testing 4.15 packages should see the right version in e.g. the &#8220;About Xfce&#8221; dialog.</li>
+</ul>
+<p>Enjoy! <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>(and don&#8217;t forget to write bug reports <img src="https://s.w.org/images/core/emoji/11/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</p>
+<h3>Some Screenshots</h3>
+<figure id="attachment_328" style="width: 215px" class="wp-caption alignleft"><img class="size-medium wp-image-328" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita-215x300.png" alt="" width="215" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita-215x300.png 215w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita.png 452w" sizes="(max-width: 215px) 85vw, 215px" /><figcaption class="wp-caption-text">Appearance Settings (Adwaita)</figcaption></figure>
+<figure id="attachment_315" style="width: 215px" class="wp-caption alignleft"><img class="size-medium wp-image-315" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance-215x300.png" alt="" width="215" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance-215x300.png 215w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance.png 452w" sizes="(max-width: 215px) 85vw, 215px" /><figcaption class="wp-caption-text">Appearance Settings (Greybird)</figcaption></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="mceTemp"></div>
+<figure id="attachment_337" style="width: 300px" class="wp-caption alignleft"><img class="size-medium wp-image-337" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1-300x221.png" alt="" width="300" height="221" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1-300x221.png 300w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1.png 758w" sizes="(max-width: 300px) 85vw, 300px" /><figcaption class="wp-caption-text">New Settings Manager layout</figcaption></figure>
+<figure id="attachment_333" style="width: 258px" class="wp-caption alignleft"><img class="size-medium wp-image-333" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about-258x300.png" alt="" width="258" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about-258x300.png 258w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about.png 602w" sizes="(max-width: 258px) 85vw, 258px" /><figcaption class="wp-caption-text">New and shiny About dialog</figcaption></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<figure id="attachment_336" style="width: 219px" class="wp-caption alignleft"><img class="size-medium wp-image-336" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray-219x300.png" alt="" width="219" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray-219x300.png 219w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray.png 472w" sizes="(max-width: 219px) 85vw, 219px" /><figcaption class="wp-caption-text">Better app icons (Panel Systray)</figcaption></figure>
+<h3>Technical background: XfceTitledDialog with CSD</h3>
+<p><span style="color: #808080;">(This subsection is targeted at developers.)</span></p>
+<p>Some components (namely Thunar, Thunar volman, xfce4-panel, xfce4-settings, xfburn and xfce4-mixer) inherit the XfceTitledDialogClass explicitly when creating their dialog object have to be fixed by using the new API introduced in the upcoming release libxfce4ui-4.15.1.<br />
+<em>All other dialogs should work out of the box and not require any additional meddling.</em></p>
+<ul>
+<li>xfce_titled_dialog_create_action_area <span style="color: #808080;">(to initialize the custom action area)</span></li>
+<li>xfce_titled_dialog_add_button <span style="color: #808080;">(as an equivalent to gtk_dialog_add_button)</span></li>
+<li class="programlisting">xfce_titled_dialog_add_action_widget<span style="color: #808080;"> (as an equivalent to gtk_dialog_add_action_widget)</span></li>
+<li>xfce_titled_dialog_set_default_response <span style="color: #808080;">(as an equivalent to gtk_dialog_set_default_response)</span></li>
+</ul>
+<p>The point of the new API is packing the dialog&#8217;s action buttons in the action area at the bottom of the dialog (vs. the standard GtkDialog behavior of packing them in the GtkHeaderBar as part of the window decorations). This means that dialogs remain in their previous/traditional layout with minimal effort on the developer&#8217;s/maintainer&#8217;s side, in part because the parameters were kept the same as in their upstream GtkDialog counterparts.</p>
+<p>Here is a (very simple) example commit of how to port existing dialogs that use XfceTitledDialogClass:<br />
+<a href="https://git.xfce.org/xfce/xfce4-panel/commit/?id=35440ee2d9540a3c1afdcbff5f50dc0ee2f83d9b">https://git.xfce.org/xfce/xfce4-panel/commit/?id=35440ee2d9540a3c1afdcbff5f50dc0ee2f83d9b</a></p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://simon.shimmerproject.org/2020/01/14/xfce-4-14-maintenance-and-4-15-updates/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_1.4.13-1/changelog">catfish (1.4.13-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2020-01-14">
+                14 Jan 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_1.4.13-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[ Ondřej Nový ]</p>
+<ul>
+  <li>Bump Standards-Version to 4.4.1.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Set upstream metadata fields: Repository.</li>
+</ul>
+
+<p>[ Sean Davis ]</p>
+<ul>
+  <li>New upstream release.</li>
+  <li>d/control:
+    <ul>
+      <li>Remove Jackson from Uploaders. Thanks!</li>
+    </ul>
+  </li>
+  <li>d/upstream/metadata: Set correct repository</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_1.4.13-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.11">Greybird 3.22.11</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Greybird GTK Theme
+            
+            
+            <time class="post-date" datetime="2020-01-04">
+                04 Jan 2020
+            </time>
+            <a href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.11" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is a feature release.</p>
+<h2>Features</h2>
+<ul>
+<li>Buildsystem ported to meson</li>
+<li>Add dark version of the theme</li>
+<li>Add xfwm4 Greybird-accessibility-dark</li>
+</ul>
+<h2>Bugfixes</h2>
+<ul>
+<li>Also set backdrop color for print dialog (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="426075091" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/243" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/243/hovercard" href="https://github.com/shimmerproject/Greybird/issues/243">#243</a>)</li>
+<li>Make error and warning entry text more readable</li>
+<li>Improve button sizing</li>
+<li>Add minimal size to header bar button's label</li>
+<li>xfce4-panel: Add drop-target style</li>
+<li>xfdesktop: Highlight selected icons</li>
+<li>Hide i/o on GtkSwitches</li>
+<li>Update installation instructions for meson</li>
+</ul></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.11">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/">Catfish 1.4.12 Released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2020-01-01">
+                01 Jan 2020
+            </time>
+            <a href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><img src="https://bluesabre.org/content/images/2020/01/catfish-1.4.12-home.png" alt="Catfish 1.4.12 Released"><p>Welcome to 2020! Let's ring in the new year with a brand new Catfish release.</p><h2 id="what-s-new">What's New</h2><h3 id="wayland-support">Wayland Support</h3><p>Catfish 1.4.12 adds support for running on Wayland. Before now, there were some X-specific dependencies related to handling display sizes. These have now been resolved, and Catfish should run smoothly and consistently everywhere.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2020/01/catfish-on-wayland.png" class="kg-image" alt="Catfish 1.4.12 Released"><figcaption>Catfish 1.4.12 on Wayland on Ubuntu 19.10</figcaption></figure><h3 id="dialog-improvements">Dialog Improvements</h3><p>All dialogs now utilize client-side decorations (CSD) and are modal. The main window will continue to respect the window layout setting introduced in the 1.4.10 release.</p><p>I also applied a number of fixes to the new Preferences and Search Index dialogs, so they should behave more consistently and work well with keyboard navigation.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-about-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-prefs-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-search-index-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div></div></div><figcaption>The new dialogs are more streamlined and standardized.</figcaption></figure><h3 id="release-process-updates">Release Process Updates</h3><p>I've improved the release process to make it easier for maintainers and to ensure builds are free of temporary files. This helps ensure a faster delivery to package maintainers, and therefore to distributions.</p><h3 id="translation-updates">Translation Updates</h3><p>Albanian, Catalan, Chinese (China), Chinese (Taiwan), Czech, Danish, Dutch, French, Galician, German, Italian, Japanese, Norwegian Bokmål, Russian, Serbian, Spanish, Turkish</p><h2 id="downloads">Downloads</h2><p><a href="https://archive.xfce.org/src/apps/catfish/1.4/catfish-1.4.12.tar.bz2">Source tarball</a></p><pre><code>$ md5sum catfish-1.4.12.tar.bz2 
+9aad6a0bc695ec8793d4294880974cb2
+
+$ sha1sum catfish-1.4.12.tar.bz2 
+4e78e291a2f17c85122a85049bdc837b49afdd66
+
+$ sha256sum catfish-1.4.12.tar.bz2 
+c3fb30e02b217752aa493b49769be1a5fc2adde70b22aef381e6c67d5227134a</code></pre><p>Catfish 1.4.12 will be included in Xubuntu 20.04 "Focal Fossa", available in April.</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/parole/parole_1.0.5-1/changelog">parole (1.0.5-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2019-12-31">
+                31 Dec 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/parole/parole_1.0.5-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>d/watch: update to use uscan special strings</li>
+  <li>New upstream version 1.0.5</li>
+  <li>d/control: update dh compat level to 12</li>
+  <li>d/control: update standards version to 4.4.1</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/parole/parole_1.0.5-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.7-1/changelog">xfce4-screenshooter (1.9.7-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2019-12-25">
+                25 Dec 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.7-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+  <li>d/watch: Update for upstream’s move to mirrorbit.</li>
+  <li>New upstream version 1.9.7</li>
+  <li>d/control:
+    <ul>
+      <li>Set R³ to no.</li>
+      <li>Update dh compat to 12.</li>
+    </ul>
+  </li>
+  <li>Update Standards-Version to 4.4.1.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.7-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-3/changelog">lightdm-gtk-greeter-settings (1.2.2-3) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                James Lu
+            
+            
+            <time class="post-date" datetime="2019-12-24">
+                24 Dec 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-3/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>d/control:
+    <ul>
+      <li>Remove outdated X-Python3-Version field (lintian tag      ancient-python-version-field)</li>
+      <li>Bump to Standards-Version 4.4.1 and debhelper 12; no changes needed.</li>
+      <li>Fix insecure-copyright-format-uri Lintian warning</li>
+      <li>Set Rules-Requires-Root: no</li>
+    </ul>
+  </li>
+  <li>d/copyright: update copyright authors and years</li>
+  <li>Add patch 0001-Refresh-translations.patch backported from upstream commit    https://git.launchpad.net/lightdm-gtk-greeter-settings/commit/?id=69e614899be17816d1cc8ce658d95d6731b83bd7    Thanks to Roxfr for suggesting translation updates.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-3/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2019/12/21/catfish-1-4-11-released/">Catfish 1.4.11 Released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2019-12-21">
+                21 Dec 2019
+            </time>
+            <a href="https://bluesabre.org/2019/12/21/catfish-1-4-11-released/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2 id="what-s-new">What's New?</h2><h3 id="general">General</h3><ul><li>Radio indicators are now displayed on the layout options, making your selection clearer on all themes</li></ul><h3 id="bug-fixes">Bug Fixes</h3><ul><li>Startup crash when GdkDisplay or GdkScreen calls return None (LP <a href="https://bugs.launchpad.net/ubuntu/+source/catfish/+bug/1822914">#1822914</a>)</li><li>Configuration of preferred window layout (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=16085">#16085</a>)</li><li>Finding files in the target directory (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=15985">#15985</a>, <a href="https://bugzilla.xfce.org/show_bug.cgi?id=16233">#16233</a>)</li><li>Symbolic links looping, causing search to go on forever (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=16272">#16272</a>)</li><li>Home (~) expansion for the start path, simplifying commandline usage:</li></ul><pre><code>catfish --path=~/Desktop</code></pre><ul><li>Fix asv-summary-has-dot-suffix (<a href="https://appstream.debian.org/sid/main/issues/catfish.html">Debian Appstream</a>) </li></ul><h3 id="translation-updates">Translation Updates</h3><img src="https://bluesabre.org/content/images/2019/12/catfish-1.4.11-home.png" alt="Catfish 1.4.11 Released"><p>Albanian, Belarusian, Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Dutch, French, German, Interlingue, Italian, Korean, Lithuanian, Malay, Norwegian Bokmål, Portuguese, Portuguese (Brazil), Russian, Serbian, Slovak, Spanish, Thai, Turkish</p><h2 id="downloads">Downloads</h2><p><a href="https://archive.xfce.org/src/apps/catfish/1.4/catfish-1.4.11.tar.bz2">Source tarball</a></p><figure class="kg-card kg-code-card"><pre><code>$ md5sum catfish-1.4.11.tar.bz2 
+67e23d45fded026ef3445bc7fe1d1653
+
+$ sha1sum catfish-1.4.11.tar.bz2 
+e7617948d59c69faa3f2569981b7371126d00737
+
+$ sha256sum catfish-1.4.11.tar.bz2 
+617baf9309e3cdfb20c8357ac786eb26f30e6fd4280d4534d3cdd742c7ffcd85</code></pre><figcaption>Checksums since the Xfce Release Manager is not currently publishing them.</figcaption></figure><p><em>Catfish 1.4.11 will be included in Xubuntu 20.04 "Focal Fossa", available in April.</em></p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2019/12/21/catfish-1-4-11-released/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.7.7-0ubuntu1/changelog">xfdashboard (0.7.7-0ubuntu1) devel</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2019-12-19">
+                19 Dec 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.7.7-0ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>d/watch: Update for upstream’s move to mirrorbit.</li>
+  <li>New upstream version 0.7.7
+    <ul>
+      <li>Update symbols, adding Build-Depends-Package.</li>
+    </ul>
+  </li>
+  <li>d/compat, d/control:
+    <ul>
+      <li>Drop d/compat in favor of debhelper-compat, bump to 12.</li>
+    </ul>
+  </li>
+  <li>d/control;
+    <ul>
+      <li>Set R³ to no.</li>
+      <li>Update Homepage field.</li>
+    </ul>
+  </li>
+  <li>d/copyright: Update years.</li>
+  <li>Update Standards-Version to 4.4.1.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.7.7-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2019/12/13/the-new-bluesabre-org/">The New bluesabre.org</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2019-12-13">
+                13 Dec 2019
+            </time>
+            <a href="https://bluesabre.org/2019/12/13/the-new-bluesabre-org/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><img src="https://bluesabre.org/content/images/2019/12/site-featured.png" alt="The New bluesabre.org"><p>Behold! And welcome to the new <a href="https://bluesabre.org/">bluesabre.org</a>! If you're a regular, you might have noticed that the site has had a bit of a facelift. After nearly a decade of publishing with <a href="https://wordpress.org/">Wordpress</a>, I've moved to <a href="https://ghost.org/">Ghost</a>. And so far, I'm impressed.</p><h2 id="what-s-new">What's New?</h2><p><strong>It's faster.</strong> Ghost is fast without any help, providing all the publishing tools I need and (from what I can tell) none that I don't. To further speed things up, I've optimized all of the images on my site for small download sizes and super-fast loading.</p><p><strong>It's more open.</strong> Ghost themes, powered by Handlebars templates,  are significantly easier to maintain than Wordpress themes, and you can really go far with the default <a href="https://github.com/TryGhost/Casper">Casper</a> theme. I've forked the theme with a few minor enhancements, and made it available on GitHub. Meet <a href="https://github.com/bluesabre/Mouser">Mouser</a>.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2019/12/Mouser_screenshot.png" class="kg-image" alt="The New bluesabre.org"><figcaption>Left: standard or "light" theme on desktop; Right: "dark" theme on mobile</figcaption></figure><p><strong>It's more consistent.</strong> Years of blogging included years of varying headers, layouts, and custom CSS. With this move, I'll standardized each page and post to make for a less jarring reading experience. Oh, and it now supports dark themes (as sent by your system or browser).</p><figure class="kg-card kg-code-card"><pre><code>/usr/bin/google-chrome-stable --force-dark-mode</code></pre><figcaption>Pro tip: You can force Chrom(ium) to use dark mode in Linux with a commandline flag.</figcaption></figure><p><strong>It's easier for me.</strong> Goodbye plugins, hello everything I need to just write. With a nearly upstream theme, an unmodified core, and no plugins to worry about, I can worry about other things like development, blogging, mentorships, and community engagement. It all gets better from here.</p><h2 id="what-s-next">What's Next?</h2><p>With this site migration finally out of the way, it's time to get back to work on Xubuntu 20.04 LTS "Focal Fossa". There's a lot of work to do, and only a few months to do it. In particular, I'd like to get some appearance items out of the way...</p><ul><li>Greybird-Dark, the new dark variant of the standard Xfce theme, is in <a href="https://github.com/shimmerproject/Greybird">master</a>, and is ready for an initial release.</li><li>We <a href="https://twitter.com/m_wimpress/status/1139376489445486594">should be able</a> to add the Greybird themes to the gtk-common-themes snap package, enabling a consistent look for Snap packages in Xubuntu.</li></ul><p>Let me know what you think of the new site in the comments below. As for me, back to work I go!</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2019/12/13/the-new-bluesabre-org/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <nav class="pagination" role="pagination">
+    
+        
+            <a class="newer-posts" href="/page58" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 59 of 64 </span>
+     
+        <a class="older-posts" href="/page60" title="Next Page">Older Posts &raquo;</a>
+     
+</nav>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

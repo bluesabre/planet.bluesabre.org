@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ANNOUNCE: mousepad 0.5.9 released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2022-04-01">01 Apr 2022</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2022-04-01">01 Apr 2022</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">ANNOUNCE: mousepad 0.5.9 released</h1> -->
+
+        <section class="post-content">
+            <ul>
+  <li>New Features:
+    <ul>
+      <li>Add shortcuts plugin (#70, !121)
+Depends on Libxfce4ui 4.17.5 which is a dev version, so will
+be excluded at configure time on most systems until Xfce 4.18
+is released.</li>
+      <li>Add search history (!119)</li>
+      <li>File monitoring: Add an automatic reloading option</li>
+    </ul>
+  </li>
+  <li>Appearance Changes / Minor Improvements:
+    <ul>
+      <li>Move the document modification mark to the close button (#63,
+!122)</li>
+      <li>Add mousepad styleclass for easier theming (#33)</li>
+      <li>Hide search bar by pressing Esc key even when not focused</li>
+      <li>Search: Escape selection when regex search is enabled</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>Plugins: Add a skeleton plugin to ease writing of new plugins</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Test plugin: Sanitize memory management of sources</li>
+      <li>Honor GTK_CSD</li>
+      <li>Filter entries from <code class="language-plaintext highlighter-rouge">accels.scm</code> on non-detailed action name</li>
+      <li>i18n: Check for <code class="language-plaintext highlighter-rouge">bind_textdomain_codeset()</code></li>
+      <li>Update Copying (#160, !120)</li>
+      <li>Session history: Never clear session array on exit (#162)</li>
+      <li>Fix broken feature "Show menubar temporarily when hidden"</li>
+      <li>Force encoding when reloading</li>
+      <li>Force encoding when it has been explicitly set by the user</li>
+      <li>Do not consider encoding as always user-set in the "Open"
+dialog</li>
+      <li>Fix antonym of the word "indent" in preferences dialog (!118)</li>
+      <li>File monitoring: Try to filter out fake deletions</li>
+      <li>Add ellipsis to preferences menu entry (!117)</li>
+      <li>Switch all labels to title case in prefs dialog (!116)</li>
+      <li>Correctly restore font size after zooming when using system
+font (#158)</li>
+      <li>Printing: Enable line wrapping by default (#156)</li>
+      <li>Fix a warning from GCC static analyzer</li>
+      <li>Search: Do not delay the search when the text changes</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
+Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+Thai, Turkish, Ukrainian, Uyghur</li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

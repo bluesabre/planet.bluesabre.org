@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ANNOUNCE: xfce4-sensors-plugin 1.4.0 released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2021-07-25">25 Jul 2021</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2021-07-25">25 Jul 2021</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">ANNOUNCE: xfce4-sensors-plugin 1.4.0 released</h1> -->
+
+        <section class="post-content">
+            <p>Release 1.4.0 of the xfce4-sensors-plugin fixes a number of issues and
+modernizes the plugin's source code for Xfce 4.16 and later.</p>
+
+<ul>
+  <li>Code cleanups</li>
+  <li>Update configuration flags for GitLab distcheck</li>
+  <li>Add basic GitLab pipeline</li>
+  <li>Check for libsensors if it is explicitly enabled</li>
+  <li>Use a drawing area to display sensor data in text UI style</li>
+  <li>Fix a use-after-free error when closing the main window</li>
+  <li>Increase main window size from 400 to 800 pixels</li>
+  <li>Fix a use-after-free error when disabling a tachometer</li>
+  <li>Fix preliminary config memory leak</li>
+  <li>Improved handling of denormal floating-point values</li>
+  <li>Update automatic coloring of progress bars</li>
+  <li>Update and sort the list of authors</li>
+  <li>Corrections to the number of rows when displaying sensor data as text</li>
+  <li>Remove support for lm-sensors 2.x (API &lt; 0x400)</li>
+  <li>Center tachometers vertically</li>
+  <li>Layout sensors when cover-all-rows is toggled</li>
+  <li>Fix invalid "size-changed" callback function declaration</li>
+  <li>Avoid interference of tachometer allocations with GtkBox child allocs</li>
+  <li>configure: Remove nano version and update init arguments</li>
+  <li>configure: Bump required glib to 2.50</li>
+  <li>configure: Bump required Xfce libs to 4.14</li>
+  <li>configure: Remove checks covered by C99</li>
+  <li>configure: Remove UNIX variants check</li>
+  <li>Ellipsize labels only when needed</li>
+  <li>Remove support for libnotify 0.4</li>
+  <li>Enable automatic switching of colors based on light or dark UI theme</li>
+  <li>Move text inside the tachometer</li>
+  <li>Remove unused options.dialog files</li>
+  <li>Use capital letters when spelling NVIDIA</li>
+  <li>Code cleanup: Shorten all variable names to speedup readability</li>
+  <li>Use a single bit to store boolean values</li>
+  <li>Prevent memset2() from compiling because of a double-increment bug</li>
+  <li>Fix fgets() compiler warning</li>
+  <li>Code cleanup: Remove all TRACE() lines</li>
+  <li>Fix invalid order of widgets after changing panel orientation</li>
+  <li>Fix accesses to destroyed widgets when changing the panel orientation</li>
+  <li>Increase icon size in about dialog from 32 to 48 pixels</li>
+  <li>Update copyright year in about dialog</li>
+  <li>Fix invalid state flag</li>
+  <li>Include X11 headers before NVCtrl headers</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+Croatian, Czech, Danish, Dutch, Eastern Armenian, English
+(Australia), English (United Kingdom), Finnish, French, Galician,
+German, Greek, Hebrew, Hungarian, Icelandic, Indonesian, Interlingue,
+Italian, Japanese, Korean, Latvian, Lithuanian, Malay, Norwegian
+Bokmål, Occitan (post 1500), Polish, Portuguese, Portuguese
+(Brazil), Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+Thai, Turkish, Ukrainian, Urdu, Urdu (Pakistan), Uyghur</li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

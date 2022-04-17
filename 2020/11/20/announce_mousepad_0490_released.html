@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ANNOUNCE: mousepad 0.4.90 released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2020-11-20">20 Nov 2020</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2020-11-20">20 Nov 2020</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">ANNOUNCE: mousepad 0.4.90 released</h1> -->
+
+        <section class="post-content">
+            <p>[Please note that this is a release candidate for upcoming stable
+version 0.5, released in about a week if nothing blocks.]</p>
+
+<ul>
+  <li>Dependency Changes:
+    <ul>
+      <li>GLib &gt;= 2.45.8</li>
+      <li>GTK+ &gt;= 3.20</li>
+      <li>GtkSourceView &gt;= 3.24</li>
+      <li>GTK+ 2 support has been removed</li>
+      <li>GtkSourceView 2 support has been removed</li>
+    </ul>
+  </li>
+  <li>New Features:
+    <ul>
+      <li>Add keybindings to show the menubar temporarily when hidden</li>
+      <li>Add command line option and setting for file opening mode</li>
+      <li>Improve encoding dialog</li>
+      <li>Add regex search</li>
+    </ul>
+  </li>
+  <li>Discontinued Features
+    <ul>
+      <li>multi-select (GTK+ 2)</li>
+    </ul>
+  </li>
+  <li>Appearance Changes
+    <ul>
+      <li>Replace <code class="language-plaintext highlighter-rouge">$HOME</code> with a tilde in displayed filename</li>
+      <li>Add new default keybindings and reveal some hidden ones</li>
+      <li>Search bar tweaks</li>
+      <li>Make tabs expanded for consistency with other Xfce programs</li>
+      <li>Add copyright and license info to About dialog</li>
+      <li>Improve label texts of "Find and Replace" dialog and search bar</li>
+      <li>Make the statusbar smaller</li>
+      <li>Add new app icon and switch to reverse DNS name</li>
+      <li>Save the state of the "highlight all" button in the search bar</li>
+      <li>Update window title of Find and Replace dialog</li>
+      <li>Add "Wrap around" check box to Find and Replace dialog (Bug #11290)</li>
+      <li>Infer filetype from shebang line (Bug #10514)</li>
+      <li>Show info when Templates directory does not exist (Bug #10486)</li>
+    </ul>
+  </li>
+  <li>Code Refactoring
+    <ul>
+      <li>Restore the use of the file <code class="language-plaintext highlighter-rouge">accels.scm</code></li>
+      <li>Code refactoring around saving and restoring window geometry</li>
+      <li>Improve save-related actions</li>
+      <li>Fully switch to GtkApplication</li>
+      <li>Avoid deprecation warnings 5: CSS related</li>
+      <li>Avoid deprecation warnings 4: GtkUIManager and GtkAction</li>
+      <li>GtkStock</li>
+      <li>Avoid deprecation warnings 2: miscellaneous</li>
+      <li>Avoid deprecation warnings 1: alignment and padding</li>
+      <li>Avoid compilation warnings other than deprecation</li>
+      <li>Remove support for GTK+2</li>
+      <li>Switch to README.md and foreign automake mode</li>
+      <li>Add basic GitLab pipeline</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Remove README.md from DISTCLEANFILES, it's not generated</li>
+      <li>Fix crash when dragging tab to GSV widget</li>
+      <li>Change GtkTextView wrap mode to GTK_WRAP_WORD_CHAR</li>
+      <li>Initialize the recent manager if needed at startup</li>
+      <li>Prevent search bar from overlapping the document</li>
+      <li>Properly disconnect signal handlers</li>
+      <li>Fix make distcheck</li>
+      <li>Fix color modifications in search entries</li>
+      <li>Do not open an empty document when encoding failed</li>
+      <li>Do not search for previously selected text</li>
+      <li>Update search field with selected text</li>
+      <li>Bug #16717: Move from exo-csource to xdt-csource</li>
+      <li>Remember last save location (Bug #14165)</li>
+      <li>Use g_get_user_dir to get Templates directory (Bug #11048)</li>
+      <li>Sync remaining menu actions to their settings (Bug #11046)</li>
+      <li>Install appstream in metainfo folder (Bug #11200)</li>
+      <li>Add appdata file (Bug #11200)</li>
+      <li>Fix building with <code class="language-plaintext highlighter-rouge">--enable-dbus --disable-gtk3</code></li>
+      <li>Change visibility of fullscreen bars after small delay (Bug #9735)</li>
+      <li>Fix return type of fullscreen settings (Bug #9735)</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian
+Nynorsk, Occitan (post 1500), Polish, Portuguese, Portuguese
+(Brazil), Romanian, Russian, Serbian, Slovak, Slovenian, Spanish,
+Swedish, Telugu, Thai, Turkish, Ukrainian, Uyghur</li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>The Xfce-announce Archives</title>
+    <description>The Xfce-announce Archives</description>
+    <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
+    <pubDate>Sun, 17 Apr 2022 06:30:02 -0400</pubDate>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: xfce4-panel 4.16.4 released</title>
+      <pubDate>Sat, 16 Apr 2022 08:01:41 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;625ab025d0dfb_6cf82b067380c5c4393ee@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-panel 4.16.4 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.4.tar.bz2
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.4.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.4.tar.bz2?sha256
+
+
+What is xfce4-panel?
+====================
+
+Xfce&amp;#x27;s panel.
+
+Website: 
+  https://www.xfce.org/
+
+
+Release notes for 4.16.4
+========================
+- Update copyright year and standardize formatting
+- Update and sort author list by name
+- panel: Fix regression &amp;quot;intellihide does not hide when leaving
+  slowly&amp;quot; (#388)
+- panel: Fix regression &amp;quot;&amp;#x27;Span Monitor&amp;#x27; has no effect&amp;quot; (#405)
+- panel: Keep a reference on item during drag and drop
+- Fix `core.UndefinedBinaryOperatorResult` warning from
+  `scan-build` (#142)
+- panel: Fix broken drag and drop between panels (#561)
+- panel: Disconnect from screen signals when window is destroyed
+- systray: Do not connect to proxy signal if async method failed
+- panel: Mitigate a memory leak when removing items (!46)
+- windowmenu: Emit &amp;quot;deactivate&amp;quot; signal when hiding the menu
+  (#22, !68)
+- systray: Fix wrong sanity check
+- systray: Properly initialize systray item
+- systray: Trust the status to update the attention icon
+  (#392, !64)
+- Fixed some window buttons not appearing in the panel (#188, !66)
+- launcher: Only activate under mouse (Fixes #519)
+- libxfce4panel: Review memory management for context menu
+  (#452, !46)
+- actions: Block panel autohide (Fixes #431, !62)
+- launcher: Clear action menu when destroyed (Fixes #540, !61)
+- Translation Updates:
+  Arabic, Armenian (Armenia), Catalan, Malay, Occitan (post 1500),
+  Polish, Romanian, Russian, Slovenian, Spanish, Swedish, Thai</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001109.html</link>
+    </item>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: xfce4-panel 4.17.0 released</title>
+      <pubDate>Sat, 16 Apr 2022 07:33:56 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;625aa9a4d44d_6cf82b067380c5c43914e@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-panel 4.17.0 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.0.tar.bz2
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.0.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.0.tar.bz2?sha256
+
+
+What is xfce4-panel?
+====================
+
+Xfce&amp;#x27;s panel.
+
+Website: 
+  https://www.xfce.org/
+
+
+Release notes for 4.17.0
+========================
+[Please note that this is a development release.]
+
+- Dependency Changes:
+  - Garcon &amp;gt;= 0.8.0
+  - GLib &amp;gt;= 2.56.0
+  - Libxfce4ui &amp;gt;= 4.17.1
+
+- Code Refactoring:
+  - Remove unused project files
+  - Use GLib structured logging
+  - Remove obsolete Exo version checks
+  - Bump minimal required Garcon to 0.8.0 i.e. Xfce 4.16
+  - Remove obsolete GTK version checks
+  - Use GLIB_VERSION_MIN/MAX_REQUIRED/ALLOWED
+  - autoconf: Some updates
+  - libxfce4panel: Silence `-Wredundant-decls` warnings (#495)
+  - Revamp the documentation to modernize and uniformize accross
+    components (!35)
+
+- Bug Fixes:
+  - panel: Fix regression &amp;quot;intellihide does not hide when leaving
+    slowly&amp;quot; (#388)
+  - panel: Fix regression &amp;quot;&amp;#x27;Span Monitor&amp;#x27; has no effect&amp;quot; (#405)
+  - panel: Keep a reference on item during drag and drop
+  - panel: Fix a memory leak
+  - systray: Do not apply icon if not yet set
+  - Fix `deadcode.DeadStores` warnings from `scan-build` (!56)
+  - Fix `core.UndefinedBinaryOperatorResult` warning from
+    `scan-build` (#142)
+  - Fix `core.NullDereference` warning from `scan-build` (!57)
+  - panel: Fix broken drag and drop between panels (#561)
+  - systray: Only activate item under mouse
+  - Use a normalized URI internally for the background image
+  - panel: Disconnect from screen signals when window is destroyed
+  - Fix ignored `*.desktop.in` in `.gitignore`
+  - systray: Do not connect to proxy signal if async method failed
+  - actions: Lay out buttons in grid for deskbar (#437, !69)
+  - wrapper: Rework widget drawing (#520, !67)
+  - windowmenu: Emit &amp;quot;deactivate&amp;quot; signal when hiding the menu
+    (#22, !68)
+  - systray: Trust the status to update the attention icon
+    (#392, !64)
+  - tasklist: Add a setting to control the display of tooltips
+    (#548, !63)
+  - Fixed some window buttons not appearing in the panel
+    (#188, !66)
+  - Remove ellipsis (#480, !65)
+  - launcher: Only activate under mouse (Fixes #519)
+  - launcher: Clear action menu when destroyed (Fixes #540, !61)
+  - actions: Block panel autohide (Fixes #431, !62)
+  - panel: Fix grabs for popup commands (Fixes #506, !60)
+  - Fix compilation warnings (#492, #493, #494, !53)
+  - launcher: Adjust menu icon size (Fixes #255, !51)
+  - Fix exit procedure when plugin insertion failed (!49)
+  - libxfce4panel: Review memory management for context menu
+    (#452, !46)
+  - panel: Mitigate a memory leak when removing items (!46)
+  - tasklist: Silence an allocation warning (!48)
+  - launcher: Check for menu item initialization (!47)
+  - panel: Change width of default panel-2 to 1% (Fixes #454, !44)
+  - Fix some `*-CRITICAL` warnings (!43)
+  - libxfce4panel: Do not destroy context menu if popped up
+    (#442, !45)
+  - tasklist: Auto-adjust icon size (v2) (#90, !29)
+  - pager: Allow disable switch with mouse wheel for miniature
+    view (#253, !37)
+  - Add icons to help and about items in panel menu (#421)
+  - pager: Use gobject bindings (Fixes #376, !32)
+  - launcher: avoid double fork (#407, !25)
+  - Fix build warnings (!31)
+  - Display tooltip title of statusnotifier items as plaintext
+    (!30)
+  - pager: Switch to new workspaces icon name
+  - statustray: Prevent crash when parsing properties
+    (Fixes #379, !26)
+  - windowmenu: fix use-after-free in
+    window_menu_plugin_window_item_new (!24)
+
+- Translation Updates:
+  Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+  Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
+  (Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+  Eastern Armenian, English (Australia), English (United Kingdom),
+  Estonian, Finnish, French, Galician, Georgian, German, Greek, Hebrew,
+  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+  Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian
+  Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Polish, Portuguese,
+  Portuguese (Brazil), Romanian, Russian, Serbian, Sinhala, Slovak,
+  Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Uyghur,
+  Vietnamese</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001108.html</link>
+    </item>
+    <item>
+      <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
+      <title>ANNOUNCE: xfce4-terminal 1.0.1 released</title>
+      <pubDate>Wed, 13 Apr 2022 13:04:57 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;625702b97eff4_6cf82b067380c5c438958@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-terminal 1.0.1 is now available for download from
+  
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.1.tar.bz2
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.1.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.1.tar.bz2?sha256
+
+
+What is xfce4-terminal?
+=======================
+
+Xfce4-terminal is a modern terminal emulator for the Unix/Linux desktop
+- primarily for the Xfce desktop environment. It is a lightweight
+emulator based on the VTE widget, easy to use and provides an optional
+drop-down window (game-console style).
+
+Website: 
+  https://docs.xfce.org/apps/terminal/start
+
+
+Release notes for 1.0.1
+=======================
+Stable release fixing regressions and a couple of older bugs.
+
+- A new hidden preference `DropdownParametersOnce` has been introduced
+to control whether the drop-down
+  window accepts command line arguments after creation. With the
+introduction of this preference
+  an older bug was fixed where tabs could be added to the drop-down
+window even though they
+  weren&amp;#x27;t supposed to.
+- Options: --active-tab does not behave properly when adding tabs to
+existing windows.
+
+Regressions fixed:
+- Find dialog does not respond to Return key (Issue #176)
+- Dragging a URL from Chromium ends up truncated (Issue #180)
+- Toolbar size changes when the window is maximized (Issue #181).
+- Unable to create a single window with many tabs through command line
+options (Issue #182).
+
+Translation Updates:
+  Danish, Finnish, Greek, Russian, Turkish</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html</link>
+    </item>
+    <item>
+      <author>andre at andreldm.com (Andre Miranda)</author>
+      <title>ANNOUNCE: xfce4-eyes-plugin 4.6.0 released</title>
+      <pubDate>Mon, 04 Apr 2022 17:40:46 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;624b65de38c38_6cf82b067380c5c438773@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-eyes-plugin 4.6.0 is now available for download from
+  
+  https://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/4.6/xfce4-eyes-plugin-4.6.0.tar.bz2
+  https://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/4.6/xfce4-eyes-plugin-4.6.0.tar.bz2?sha1
+  https://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/4.6/xfce4-eyes-plugin-4.6.0.tar.bz2?sha256
+
+
+What is xfce4-eyes-plugin?
+==========================
+
+Eyes is a xfce4 panel plugin that adds eyes which watch your every step.
+Scary!
+
+Website: 
+  https://docs.xfce.org/panel-plugins/xfce4-eyes-plugin
+
+
+Release notes for 4.6.0
+=======================
+- Add Chibi theme (!4)
+- Small code improvements
+- Translation Updates:
+  Albanian, Armenian (Armenia), Basque, Belarusian, English (Canada),
+  Finnish, French, Hebrew, Slovenian, Spanish, Thai, Ukrainian, Uyghur</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001106.html</link>
+    </item>
+    <item>
+      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
+      <title>ANNOUNCE: thunar 4.17.8 released</title>
+      <pubDate>Sat, 02 Apr 2022 18:38:35 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;6248d06ba9c75_6cf82b067380c5c4385d9@xfce2.mail&amp;gt;</guid>
+      <description>thunar 4.17.8 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.8.tar.bz2
+  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.8.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.8.tar.bz2?sha256
+
+
+What is thunar?
+===============
+
+Thunar is a modern file manager for the Xfce Desktop Environment. It has
+been designed from the ground up to be fast and easy-to-use. Its user
+interface is clean and intuitive, and does not include any confusing or
+useless options. Thunar is fast and responsive with a good start up time
+and directory load time. Thunar is accessible using Assistive
+Technologies and is fully standards compliant.
+
+Website: 
+  https://docs.xfce.org/xfce/thunar/start
+
+
+Release notes for 4.17.8
+========================
+[Please note that this is a development release.]
+
+Development release on the thunar master branch which ships alot of
+fixes, translation updates and new features.
+
+The highlight are:
+
+- Recursive search
+- Shortcuts editor GUI (Same than xfce4-terminal)
+- Configurable Toolbar
+
+I hope you enjoy !
+
+Here the detailed changelog:
+- Show `Configure Toolbar...` option on right-clicking toolbar items.
+- Add built-in buttons for toolbar customization:
+    Search, Toggle,Reload, Zoom
+- Allow to customize toolbar by using custom actions (Issues #607 #621)
+- Location bar: Make sure to show the correct root button (Issue #725)
+- Recursive search: Do not search when the search query is empty.
+- Column headers: Configure columns popup on right-click
+- Bulk renamer: Use wording &amp;quot;Extension&amp;quot; over &amp;quot;Suffix&amp;quot; (Issue #729)
+- Look for thunar plugins at $THUNARX_DIRS (Issue #748)
+- Speedup search by disabling row-related callbacks while searching
+- Add spinner element to each tab to display search status
+- Add option for vertical split panes (#722)
+- List view name column improvements (#736)
+- Option to show full path in tabs (Issue #627)
+- Generate documentation for internal functions (Issue #617)
+- Fix of various memory leaks
+- Dont reload the view when text is copied (Issue #706)
+- Use &amp;#x27;g_timeout_add_full&amp;#x27; to set tree-view cursor (Issue #351)
+- NULL checks to prevent crash on malformed bookmark URI (Issue #716)
+- Skip files with IO errors during directory scan (Issue #696)
+- Shortcuts View: Allow devices a drag and drop target (Issue #708)
+- Support for thumbnail size x-large and xx-large (Issue #606)
+- Add support for accelerators that include the `Tab` key (Issue #580)
+- Add Recursive Search (!146)
+- Use save way to copy a &amp;quot;struct tm&amp;quot; to prevent crash (Issue #700)
+- Add UCA parameter to specify a number of files (Issue #26)
+- Fix: User disabled accelerators are re-enabled on 2nd restart (!177)
+- Add a GUI shortcuts editor (Issue #279)
+- Use alphabetical sorting for devices in the side-pane (Issue #610)
+
+Translation Updates:
+  Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
+  Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+  (Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
+  (Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
+  French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+  Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
+  Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Persian
+  (Iran), Polish, Portuguese, Romanian, Serbian, Slovak, Spanish,
+  Swedish, Telugu, Thai, Turkish, Urdu, Urdu (Pakistan), Uyghur,
+  Vietnamese</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001105.html</link>
+    </item>
+    <item>
+      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
+      <title>ANNOUNCE: thunar 4.16.11 released</title>
+      <pubDate>Sat, 02 Apr 2022 18:10:54 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;6248c9ee58759_6cf82b067380c5c438335@xfce2.mail&amp;gt;</guid>
+      <description>thunar 4.16.11 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/thunar/4.16/thunar-4.16.11.tar.bz2
+  https://archive.xfce.org/src/xfce/thunar/4.16/thunar-4.16.11.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/thunar/4.16/thunar-4.16.11.tar.bz2?sha256
+
+
+What is thunar?
+===============
+
+Thunar is a modern file manager for the Xfce Desktop Environment. It has
+been designed from the ground up to be fast and easy-to-use. Its user
+interface is clean and intuitive, and does not include any confusing or
+useless options. Thunar is fast and responsive with a good start up time
+and directory load time. Thunar is accessible using Assistive
+Technologies and is fully standards compliant.
+
+Website: 
+  https://docs.xfce.org/xfce/thunar/start
+
+
+Release notes for 4.16.11
+=========================
+Bugfix and translation release on the thunar 4.16 branch.
+
+Bugfixes:
+- Dont reload the view when text is copied (Issue #706)
+- NULL checks to prevent crash on malformed bookmark URI (Issue #716)
+- Use &amp;#x27;g_timeout_add_full&amp;#x27; to set tree-view cursor (Issue #351)
+- Fix signal disconnect in thunar_window_unrealize
+- Don&amp;#x27;t go beyond THUNAR_N_VISIBLE_COLUMNS while parsing col widths
+
+Translation Updates:
+  Danish, Greek, Indonesian, Malay, Occitan (post 1500), Romanian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001104.html</link>
+    </item>
+    <item>
+      <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
+      <title>ANNOUNCE: xfce4-terminal 1.0.0 released</title>
+      <pubDate>Fri, 01 Apr 2022 12:32:29 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;6247291d1eed5_6cf82b067380c5c43816@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-terminal 1.0.0 is now available for download from
+  
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.0.tar.bz2
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.0.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.0.tar.bz2?sha256
+
+
+What is xfce4-terminal?
+=======================
+
+Xfce4-terminal is a modern terminal emulator for the Unix/Linux desktop
+- primarily for the Xfce desktop environment. It is a lightweight
+emulator based on the VTE widget, easy to use and provides an optional
+drop-down window (game-console style).
+
+Website: 
+  https://docs.xfce.org/apps/terminal/start
+
+
+Release notes for 1.0.0
+=======================
+1.0.0
+======
+
+Stable release including improvements introduced in versions 0.9.0,
+0.9.1 and 0.9.2. 
+The Shortcuts Editor requires libxfce4ui 4.17.2 or greater. 
+
+Fixes
+- Remove remaining libxfce4ui 4.16 version guards
+
+Translation Updates:
+  Danish, Greek, Russian, Turkish</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001103.html</link>
+    </item>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: mousepad 0.5.9 released</title>
+      <pubDate>Fri, 01 Apr 2022 09:50:37 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;6247032d1961e_6cf82b067380c5c43798e@xfce2.mail&amp;gt;</guid>
+      <description>mousepad 0.5.9 is now available for download from
+  
+  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.9.tar.bz2
+  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.9.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.9.tar.bz2?sha256
+
+
+What is mousepad?
+=================
+
+A simple text editor for Xfce.
+
+Website: 
+  https://docs.xfce.org/apps/mousepad/
+
+
+Release notes for 0.5.9
+=======================
+- New Features:
+  - Add shortcuts plugin (#70, !121)
+    Depends on Libxfce4ui 4.17.5 which is a dev version, so will
+    be excluded at configure time on most systems until Xfce 4.18
+    is released.
+  - Add search history (!119)
+  - File monitoring: Add an automatic reloading option
+
+- Appearance Changes / Minor Improvements:
+  - Move the document modification mark to the close button (#63,
+    !122)
+  - Add mousepad styleclass for easier theming (#33)
+  - Hide search bar by pressing Esc key even when not focused
+  - Search: Escape selection when regex search is enabled
+
+- Code Refactoring:
+  - Plugins: Add a skeleton plugin to ease writing of new plugins
+
+- Bug Fixes:
+  - Test plugin: Sanitize memory management of sources
+  - Honor GTK_CSD
+  - Filter entries from `accels.scm` on non-detailed action name
+  - i18n: Check for `bind_textdomain_codeset()`
+  - Update Copying (#160, !120)
+  - Session history: Never clear session array on exit (#162)
+  - Fix broken feature &amp;quot;Show menubar temporarily when hidden&amp;quot;
+  - Force encoding when reloading
+  - Force encoding when it has been explicitly set by the user
+  - Do not consider encoding as always user-set in the &amp;quot;Open&amp;quot;
+    dialog
+  - Fix antonym of the word &amp;quot;indent&amp;quot; in preferences dialog (!118)
+  - File monitoring: Try to filter out fake deletions
+  - Add ellipsis to preferences menu entry (!117)
+  - Switch all labels to title case in prefs dialog (!116)
+  - Correctly restore font size after zooming when using system
+    font (#158)
+  - Printing: Enable line wrapping by default (#156)
+  - Fix a warning from GCC static analyzer
+  - Search: Do not delay the search when the text changes
+
+- Translation Updates:
+  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+  Dutch, Eastern Armenian, English (Australia), English (United
+  Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+  Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+  1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
+  Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+  Thai, Turkish, Ukrainian, Uyghur</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html</link>
+    </item>
+    <item>
+      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
+      <title>ANNOUNCE: libxfce4ui 4.17.6 released</title>
+      <pubDate>Thu, 31 Mar 2022 17:23:31 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62461bd477d57_6cf82b067380c5c4377f6@xfce2.mail&amp;gt;</guid>
+      <description>libxfce4ui 4.17.6 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.6.tar.bz2
+  https://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.6.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.6.tar.bz2?sha256
+
+
+What is libxfce4ui?
+===================
+
+Libxfce4ui is used to share commonly used Xfce widgets among the Xfce
+applications.
+
+Website: 
+  https://www.xfce.org/
+
+
+Release notes for 4.17.6
+========================
+[Please note that this is a development release.]
+
+Development release on the master branch, required to be able to make
+use of &amp;#x27;xfce_gtk_toggle_tool_button_new_from_action_entry&amp;#x27; inside
+thunar.
+
+- XfceShortcutsEditor: Do not update editor if shortcut change failed
+- XfceShortcutsEditor: Allow to choose &amp;quot;Space&amp;quot; or &amp;quot;Enter&amp;quot; as shortcut
+- XfceShortcutDialog: Do not propagate key events
+- Function description spelling and format.
+- Add new function xfce_gtk_toggle_tool_button_new_from_action_entry
+- XfceShortcutsGrabber: Fix `-Wanalyzer-null-dereference` warning
+- Secure memory allocations
+- Update COPYING
+- XfceShortcutsGrabber: Detect auto-repeat key press
+- XfceShortcutDialog: Fix a memory leak
+- Translation Updates:
+  Azerbaijani</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html</link>
+    </item>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: orage 4.16.0 released</title>
+      <pubDate>Thu, 17 Mar 2022 12:39:50 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62336456cbd20_2fb2b20c04ec5bc2052d@xfce2.mail&amp;gt;</guid>
+      <description>orage 4.16.0 is now available for download from
+  
+  https://archive.xfce.org/src/apps/orage/4.16/orage-4.16.0.tar.bz2
+  https://archive.xfce.org/src/apps/orage/4.16/orage-4.16.0.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/orage/4.16/orage-4.16.0.tar.bz2?sha256
+
+
+What is orage?
+==============
+
+Xfce Calendar
+
+Website: 
+  https://www.xfce.org/projects/orage/
+
+
+Release notes for 4.16.0
+========================
+Note: GlobalTime and Orage panel plugin are being deprecated and
+will be removed in a future release. Their features will be
+integrated with or provided by existing Xfce components.
+See https://gitlab.xfce.org/apps/orage/-/issues/3#note_43209
+
+Finalize port to GTK 3, small fixes and cleanup for 4.16.0 (see MRs
+for more details):
+- Add new application icon (!18)
+- Fix some memory leaks
+- i18n: Use `xfce_textdomain()` to initialize translations
+- Trace messages cleanup (!15)
+- Update COPYING (Issue #10, !17)
+- Use stdout and stderr correctly in main.c
+- Build tz_convert only with bundled libical (!14)
+- Switch to reverse-DNS naming for icon and desktop files (!13)
+- D-Bus service cleanup (!12)
+- Fix `orage_exec()` and its calls
+- Update project files (!10)
+- Fixed strptime parse issue on FreeBSD (#6, !11)
+- Fix make distcheck warnning
+- Fixed libpopt detection on FreeBSD (!9)
+- Fix build warnings 3: Clang static analyzer (!6)
+- Added &amp;#x27;git&amp;#x27; to program version string and &amp;#x27;sed&amp;#x27; check (!7)
+- Fix build warnings 2: Compilation (!4)
+- Fix build warnings 1: Autotools (!3)
+- Add basic GitLab pipeline (!2)
+
+Commits from merge request !1 (GTK 3 port), which also includes
+4.15.x below:
+- Reverted to c60567fe
+- Fixed typos
+- Added support for &amp;#x27;legacy&amp;#x27; non RGBA GTK colours. Both RGBA and old 
+colous are now supported.
+- Replaced unused parameters &amp;#x27;(void)&amp;#x27; castings with GLib G_GNUC_UNUSED.
+Added GLib check to configure.
+- Removed trailing whitespaces and corrected formatting
+- Updated version numbers
+- Aligned new appointment-&amp;gt;alarm Sound and Procedure entry fields and
+removed unused code.
+- Renamed &amp;#x27;OragePlugin *clock&amp;#x27; to &amp;#x27;OragePlugin *plugin&amp;#x27; or &amp;#x27;OragePlugin
+*orage_plugin&amp;#x27;
+- Fixed libical support, supported libical version is now &amp;gt;= 3.0.
+- Added variable tmp only when HAVE_LIBICAL is not defined
+- Dead code removal
+- Removed outdated is_utc, libical uses UTC timezone. This patch allows
+to use libical 3.0
+- Updated with &amp;#x27;Ical week start day&amp;#x27; issue
+- Fixed: &amp;quot;&amp;#x27;Ical week start day&amp;#x27; configuration parameter is ignored&amp;quot;. 
+Issue #5
+- Changed version number to 4.15.2
+
+- Translation Updates:
+  Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+  Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+  Croatian, Czech, Danish, Dutch, English (Australia), English (United
+  Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+  Hungarian, Icelandic, Indonesian, Italian, Japanese, Kazakh, Korean,
+  Latvian, Lithuanian, Malay, Norwegian Bokmål, Norwegian Nynorsk,
+  Occitan (post 1500), Polish, Portuguese, Portuguese (Brazil),
+  Romanian, Russian, Serbian, Slovak, Spanish, Swedish, Thai, Turkish,
+  Ukrainian, Urdu, Urdu (Pakistan), Uyghur
+
+4.15.1 (2021-12-15, unreleased version)
+======
+Notes from old ChangeLog file:
+* Fixed libbsd dependency: reverted libical strl* functions back to
+  str* or changed orage functions from strl* to g_strl*.
+* Automake changes: silent mode is now default
+* Minimum autogen required version is 4.16.0
+* Ported GlobalTime to GTK3:
+  * Replaced GlobalTime background and foreground colours from
+    GdkColor to GdkRGBA (old colours from GlobalTime configuration
+    is not valid anymore)
+* Ported panel-plugin to GTK3.
+  * Changed to plugin to use panel plugin class. Initial patches
+    contributed by Patronos.
+
+Full commit list:
+- Version 4.15.1 release time
+- Updated with panel plugin changes
+- Changed &amp;#x27;save&amp;#x27; signal to member of plugin class
+- Dead code removal
+- Added FIXME comments
+- Changed int parameter to gint
+- Removed invalid &amp;quot;column-homogeneous&amp;quot; property from box property
+- Fixed plugin tooltip
+- Fixed rc file write
+- Fixed panel plugin blocking/unblocking when configuration menu is 
+closed
+- Fixed &amp;quot;properties_frame&amp;quot; handling
+- Added log domain for panel plugin
+- Fixed object &amp;quot;dialog&amp;quot; getters and setters
+- Fixed class based plugin intialization
+- Added xfce_titled_dialog_get_type == 0 check
+- Updated TODO message
+- Removed redundant declaration
+- Replaced GTK_STOCK_OK with &amp;quot;_OK&amp;quot;
+- Replaced deprected GTK2 code with alternative GTK3 code
+- Replaced gtk_tool_button_new_from_stock with 
+orage_toolbar_append_button
+- Removed deprecated gtk_widget_get_default_style
+- Removed redundant const qualifiers
+- Fixed typo
+- Replaced gtk_font_button_get_font_name with gtk_font_chooser_get_font
+and added g_free for release memory from allocated font name
+- Disable unused parameter warning
+- Changed variable clock_rotation_array from char to const gchar
+- Changed OS default background to white and foreground (text colour) 
+to black
+- Replaced gtk_style_context_get_property with gtk_style_context_get
+- Fixed casting of GtkStyleProvider
+- Replaced deprecated gtk_css_provider_get_default with 
+gtk_css_provider_new
+- Suppressed deprecated warnings
+- Changed clock background and font colour from GtkColour to GtkRGBA
+- Casted GtkWidget to GtkLabel
+- Replaced gtk_widget_override_font with gtk_label_set_attributes
+- Replaced hbox with box
+- Replaced table with grid
+- Suppresed unused parameter warning
+- Fixed tooltips for GTK3 (removed gtk_tooltips_new and related)
+- Removed unused code
+- Fixed panel plugin type name
+- Code cleanup: replaced &amp;#x27;;;&amp;#x27; with &amp;#x27;;&amp;#x27;
+- Patches from issues #4: started to porting orage plugin to class 
+structure.
+- Replaced string constants which was used in several places with
+macros
+- Added patches from issues #2 and #3. These patches allows to compile 
+panel-pugin, but compiled code is still non functional (needs cleanup 
+from remaining GTK2 version).
+- Enabled XFCE API for GTK3 (X-XFCE-API=2.0)
+- Internal libical and tz_convert fixes to get it compiled on Fedora35
+- Suppressed unused parameter warnings
+- Replaced subdir object build with convenience library
+- Enabled building panel plugin
+- Enabled building &amp;#x27;xfce-xfcalendar-settings.desktop&amp;#x27;
+- Fixed compiler warnings about coparing signed and unsigned
+- Replaced gtk_hbox_new with gtk_box_new
+- Suppressed deperecation warnings for 
+gtk_widget_override_background_color and gtk_widget_override_color
+- Isolated deprecated color modify functions
+- Replaced deprecated gtk_font_button_get_font_name with 
+gtk_font_chooser_get_font
+- Replaced deprecated gtk_widget_modify_font and 
+gtk_widget_override_font with gtk_label_set_attributes
+- GNU intltool 0.51.0 (Ubuntu 21.04) needs that &amp;#x27;m4&amp;#x27; directory exists 
+before calling intltoolize
+- Replaced Globaltime colours from GdkColor to GdkRGBA
+- Replaced GTK_STOCK_OK in globaltime timezone selection with &amp;quot;_OK&amp;quot; and
+changed orage timezone selection to match as possible with globaltime
+timezone slection (in future globaltime tz selection will be merged with
+orage tz selection)
+- Replaced gtk_image_new_from_stock with gtk_image_new_from_icon_name
+- Replaced stock ID based buttons with named icon based
+- Fixed grid cell lengths for two last rows in &amp;quot;Text Default 
+Formatting&amp;quot; table
+- Replaced table with grid
+- Replaced all boxes in gt_prefs.c with grid
+- Removed redundant gtk_box_pack_start
+- Removed redundant warning macros
+- Replaced deprecated gtk_widget_modify_font with 
+gtk_widget_override_font
+- Fixed GlobalTime raising event handling
+- Added more debug info for tray icon rising
+- Ported code that use GdkEventClient to GTK3
+- Replaced box with grid
+- Replaced clocks.hdr_hbox box with grid
+- Replaced clocks.main_hbox hbox with grid
+- Disabled unused parameter warning
+- Fixed pointer error while pressing any button (re-added functions.h)
+- Added .gitignore
+- Added X11 library check to configure
+- Created convinience library for shared files (shared between Orage 
+and Globaltime)
+- Re-enabled building Globaltime
+- Fixed libbsd dependency: reverted libical strl* functions back to
+str*
+- Added new TODOs and removed already done
+- Updated changes in version 4.15.x
+- Removing dependency to libbsd: replaced strlcpy, strlcat, etc 
+functions with g_strl* functions
+- Added silent automake rules as default
+- Updated required XDT_AUTOGEN_REQUIRED_VERSION to 4.16.0
+- Fixed Orage internal CSS filenames
+- Changed working version to 4.15.1
+- Reverted back required autogen version
+
+4.15.0 (2021-10-07, unreleased version)
+======
+Most code ported to GTK3, tested only on FreeBSD.
+- GTK3 port</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001100.html</link>
+    </item>
+  </channel>
+</rss>

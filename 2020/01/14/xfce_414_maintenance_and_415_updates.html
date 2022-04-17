@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Xfce 4.14 Maintenance and 4.15 Updates</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2020-01-14">14 Jan 2020</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2020-01-14">14 Jan 2020</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">Xfce 4.14 Maintenance and 4.15 Updates</h1> -->
+
+        <section class="post-content">
+            <h2>Xfce 4.14 Maintenance</h2>
+<p>As promised we&#8217;re trying to be much better at doing maintenance releases for Xfce 4.14. In part, we had a hard time doing maintenance for Xfce 4.12 because with all the porting work it was hard to focus on fixing Gtk+2 bugs and many bugreports/fixes didn&#8217;t apply to both 4.12 and 4.14.<br />
+This has now changed and as many bugs apply to both Xfce 4.14 and the current 4.15 development versions we can much more easily backport fixes. Consequently we have already done quite a few maintenance releases so far and this week a few more followed, fixing bugs and featuring improved translations:</p>
+<ul>
+<li>xfce4-panel 4.14.3 <span style="color: #808080;">(4.14.2 had a bad release build)</span></li>
+<li>xfce4-session 4.14.1</li>
+<li>xfce4-settings 4.14.2</li>
+<li>xfdesktop 4.14.2</li>
+</ul>
+<h2>Xfce 4.15 Updates</h2>
+<p>One of the major UI changes that we announced for the 4.16 cycle was the switch to GtkHeaderBars or so-called Client-side decorations (CSD). The first big step in this direction has now happened in libxfce4ui, our main user interface library. With the change, almost all dialogs will be converted to using CSD by default without any code changes in existing projects.</p>
+<p>There are quite a few advantages we&#8217;re looking forward to (improved resize areas, consistent theming etc) by making use of this core Gtk feature.</p>
+<p>A few more features that got released (in the xfce4-panel 4.15.1, libxfce4ui 4.15.1, libxfce4util 4.15.0 and xfce4-settings 4.15.0):</p>
+<ul>
+<li>an improved &#8220;About Xfce&#8221; dialog that features basics of the system properties</li>
+<li>improvements to the &#8220;Display&#8221; dialog (show Aspect Ratio, show Preferred Mode)</li>
+<li>only show Gtk themes that support Gtk3 in the &#8220;Appearance&#8221; dialog</li>
+<li>function for improved application icon lookup (used in Xfce Session&#8217;s settings dialog and in the Xfce Panel&#8217;s systray settings for now)</li>
+<li>the panel&#8217; dark mode got enabled by default (which means it will look nicer with Adwaita e.g. on Fedora by default)</li>
+<li>the Directory Menu plugin now allows you to directly create Folders and Files</li>
+<li>we also bumped the overall Xfce version to 4.15 so people testing 4.15 packages should see the right version in e.g. the &#8220;About Xfce&#8221; dialog.</li>
+</ul>
+<p>Enjoy! <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>(and don&#8217;t forget to write bug reports <img src="https://s.w.org/images/core/emoji/11/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</p>
+<h3>Some Screenshots</h3>
+<figure id="attachment_328" style="width: 215px" class="wp-caption alignleft"><img class="size-medium wp-image-328" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita-215x300.png" alt="" width="215" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita-215x300.png 215w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita.png 452w" sizes="(max-width: 215px) 85vw, 215px" /><figcaption class="wp-caption-text">Appearance Settings (Adwaita)</figcaption></figure>
+<figure id="attachment_315" style="width: 215px" class="wp-caption alignleft"><img class="size-medium wp-image-315" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance-215x300.png" alt="" width="215" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance-215x300.png 215w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance.png 452w" sizes="(max-width: 215px) 85vw, 215px" /><figcaption class="wp-caption-text">Appearance Settings (Greybird)</figcaption></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="mceTemp"></div>
+<figure id="attachment_337" style="width: 300px" class="wp-caption alignleft"><img class="size-medium wp-image-337" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1-300x221.png" alt="" width="300" height="221" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1-300x221.png 300w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1.png 758w" sizes="(max-width: 300px) 85vw, 300px" /><figcaption class="wp-caption-text">New Settings Manager layout</figcaption></figure>
+<figure id="attachment_333" style="width: 258px" class="wp-caption alignleft"><img class="size-medium wp-image-333" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about-258x300.png" alt="" width="258" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about-258x300.png 258w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about.png 602w" sizes="(max-width: 258px) 85vw, 258px" /><figcaption class="wp-caption-text">New and shiny About dialog</figcaption></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<figure id="attachment_336" style="width: 219px" class="wp-caption alignleft"><img class="size-medium wp-image-336" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray-219x300.png" alt="" width="219" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray-219x300.png 219w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray.png 472w" sizes="(max-width: 219px) 85vw, 219px" /><figcaption class="wp-caption-text">Better app icons (Panel Systray)</figcaption></figure>
+<h3>Technical background: XfceTitledDialog with CSD</h3>
+<p><span style="color: #808080;">(This subsection is targeted at developers.)</span></p>
+<p>Some components (namely Thunar, Thunar volman, xfce4-panel, xfce4-settings, xfburn and xfce4-mixer) inherit the XfceTitledDialogClass explicitly when creating their dialog object have to be fixed by using the new API introduced in the upcoming release libxfce4ui-4.15.1.<br />
+<em>All other dialogs should work out of the box and not require any additional meddling.</em></p>
+<ul>
+<li>xfce_titled_dialog_create_action_area <span style="color: #808080;">(to initialize the custom action area)</span></li>
+<li>xfce_titled_dialog_add_button <span style="color: #808080;">(as an equivalent to gtk_dialog_add_button)</span></li>
+<li class="programlisting">xfce_titled_dialog_add_action_widget<span style="color: #808080;"> (as an equivalent to gtk_dialog_add_action_widget)</span></li>
+<li>xfce_titled_dialog_set_default_response <span style="color: #808080;">(as an equivalent to gtk_dialog_set_default_response)</span></li>
+</ul>
+<p>The point of the new API is packing the dialog&#8217;s action buttons in the action area at the bottom of the dialog (vs. the standard GtkDialog behavior of packing them in the GtkHeaderBar as part of the window decorations). This means that dialogs remain in their previous/traditional layout with minimal effort on the developer&#8217;s/maintainer&#8217;s side, in part because the parameters were kept the same as in their upstream GtkDialog counterparts.</p>
+<p>Here is a (very simple) example commit of how to port existing dialogs that use XfceTitledDialogClass:<br />
+<a href="https://git.xfce.org/xfce/xfce4-panel/commit/?id=35440ee2d9540a3c1afdcbff5f50dc0ee2f83d9b">https://git.xfce.org/xfce/xfce4-panel/commit/?id=35440ee2d9540a3c1afdcbff5f50dc0ee2f83d9b</a></p>
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

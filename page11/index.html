@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header no-cover">
+    <nav class="main-nav overlay clearfix">
+            
+        
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        
+        <a class="subscribe-button icon-feed" href="/feed.xml ">Subscribe</a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">Planet Bluesabre</h1>
+            <h2 class="page-description">
+                 All the latest from Xfce, Xubuntu, & Friends. 
+            </h2>
+            
+            
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+
+<main id="content" class="content" role="main">
+
+    <div class="extra-pagination inner">
+        <nav class="pagination" role="pagination">
+    
+        
+            <a class="newer-posts" href="/page10" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 11 of 64 </span>
+     
+        <a class="older-posts" href="/page12" title="Next Page">Older Posts &raquo;</a>
+     
+</nav>
+    </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001068.html">xfce4-cpugraph-plugin 1.2.4 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-10-01">
+                01 Oct 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001068.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Besides the bug fixes and feature updates listed below, this release
+migrates the source code from C to C++ in order to increase type-safety,
+to use reference counting and containers for semi-automatic memory
+management where possible, and to slightly improve source code
+readability.</p>
+
+<ul>
+  <li>Update README</li>
+  <li>New icons</li>
+  <li>Lower the number of false positives in sub-optimal SMT scheduling</li>
+  <li>Account for irregular core IDs in CPU topology (issue #25)</li>
+  <li>Increase type-safety of the return types of callback functions</li>
+  <li>Fix CPU topology initialization memory leak</li>
+  <li>Replace author nicknames with real names</li>
+  <li>Update and sort the list of authors</li>
+  <li>Use C++ λ-functions for widget signal handlers</li>
+  <li>Slightly improved CPU count detection in case some CPUs are offline</li>
+  <li>Bump requirements to version 4.14</li>
+  <li>Enable close button translations (issue #24)</li>
+  <li>Fix compiler warnings on FreeBSD and SUN</li>
+  <li>Bump properties dialog to Xfce 4.14 API</li>
+  <li>Avoid FreeBSD "string.h" include file issue</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian,
+Bulgarian, Catalan, Chinese (China), Chinese (Taiwan), Croatian,
+Czech, Danish, Dutch, Eastern Armenian, English (Australia), English
+(United Kingdom), Estonian, Finnish, French, Galician, German, Greek,
+Hebrew, Hungarian, Icelandic, Indonesian, Interlingue, Italian,
+Japanese, Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål,
+Occitan (post 1500), Polish, Portuguese, Portuguese (Brazil),
+Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
+Ukrainian, Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001068.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001067.html">exo 4.17.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-09-29">
+                29 Sep 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001067.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<p>Providing another exo dev-release majorly to give proper trusted
+flag-support for testers</p>
+
+<p>Changelog:</p>
+<ul>
+  <li>Add typecheck to prevent Gtk-CRITICAL (Issue #63)</li>
+  <li>Initialize <code class="language-plaintext highlighter-rouge">modifier</code> at the time of declaration</li>
+  <li>Remove redundant code</li>
+  <li>Fix AC_LANG_SOURCE macro</li>
+  <li>Fix <code class="language-plaintext highlighter-rouge">G_UNLIKELY</code> check</li>
+  <li>Fix memory leak</li>
+  <li>exo_strdup_strftime: Support additional encoding (Issue #66)</li>
+  <li>exo-die: Add trusted flag support</li>
+</ul>
+
+<p>Translation Updates:
+  Catalan, Galician, Indonesian, Kazakh, Spanish</p>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001067.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2021/09/26/menulibre-2-2-2-release/">MenuLibre 2.2.3 Released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-09-26">
+                26 Sep 2021
+            </time>
+            <a href="https://bluesabre.org/2021/09/26/menulibre-2-2-2-release/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2 id="whats-new">What&apos;s New?</h2><h3 id="new-features">New Features</h3><ul><li>Added diagnostics for failed menu loading</li><li>Added support for GNOME-specific categories (<a href="https://github.com/bluesabre/menulibre/issues/56">#56</a>)</li><li>Added support for PrefersNonDefaultGPU (<a href="https://github.com/bluesabre/menulibre/issues/50">#50</a>)</li><li>Added support for unprefixed applications.menu (<a href="https://github.com/bluesabre/menulibre/issues/67">#67</a>)</li><li>Added support for X-GNOME-UsesNotifications (<a href="https://github.com/bluesabre/menulibre/issues/79">#79</a>)</li><li>Added support for XFCE-specific categories (<a href="https://github.com/bluesabre/menulibre/issues/54">#54</a>)</li><li>Enabled opening a root editor for root-owned files with pkexec (<a href="https://github.com/bluesabre/menulibre/issues/62">#62</a>)</li><li>Enabled searching for Exec key and desktop entry (<a href="https://github.com/bluesabre/menulibre/issues/52">#52</a>)</li></ul><h3 id="general">General</h3><ul><li>Added AppData file (<a href="https://github.com/bluesabre/menulibre/issues/61">#61</a>)</li><li>Documented intltool build requirement (<a href="https://github.com/bluesabre/menulibre/pull/59">#59</a>)</li><li>Switched to the <a href="https://github.com/bluesabre/menulibre/wiki/Recognized-Desktop-Entry-Keys">MenuLibre Wiki</a> for key descriptions (<a href="https://github.com/bluesabre/menulibre/issues/48">#48</a>)</li></ul><h3 id="bug-fixes">Bug Fixes</h3><ul><li>Added valid types to validator, reducing false positives (<a href="https://github.com/bluesabre/menulibre/issues/66">#66</a>)</li><li>Fixed builds with newer versions of GTK (<a href="https://github.com/bluesabre/menulibre/pull/77">#77</a>)</li><li>Fixed history state when editing Name and Comment (<a href="https://github.com/bluesabre/menulibre/issues/57">#57</a>)</li><li>Fixed running with newer versions of GTK (<a href="https://github.com/bluesabre/menulibre/issues/82">#82</a>)</li><li>Fixed selection leaving screen while moving items (<a href="https://github.com/bluesabre/menulibre/issues/25">#25</a>)</li><li>Fixed typo in desktop file processing error</li><li>Fixed msgfmt errors</li></ul><h3 id="updated-translations">Updated Translations</h3><img src="https://bluesabre.org/content/images/2021/09/menulibre-2.2.3-featured.png" alt="MenuLibre 2.2.3 Released"><p>Arabic, Catalan, Chinese (China), Danish, Dutch, English (United Kingdom), French, German, Japanese, Lithuanian, Malay, Malay (Arabic), Polish, Russian, Spanish, Turkish, Ukrainian</p><h2 id="deep-dive-into-new-features">Deep Dive Into New Features</h2><h3 id="newly-added-keys">Newly Added Keys</h3><p><strong>PrefersNonDefaultGPU</strong> was added to the FreeDesktop.org <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">Desktop Entry Specification</a> in version 1.4. It&apos;s a hint for the desktop environment to use a non-discrete, more powerful GPU, if it is available. Support for this key was recently added to Xubuntu and elementary, and is making it&apos;s way to other desktop environments as well.</p><p><strong>X-GNOME-UsesNotifications</strong> is used by GNOME, elementary, and other GTK desktops (possibly others as well) to inform the environment that an app can send notifications. This enables management of those notifications through a single interface. This feature is seen in GNOME and elementary.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/09/notifications-elementary.png" width="1040" height="740" loading="lazy" alt="MenuLibre 2.2.3 Released" srcset="https://bluesabre.org/content/images/size/w600/2021/09/notifications-elementary.png 600w, https://bluesabre.org/content/images/size/w1000/2021/09/notifications-elementary.png 1000w, https://bluesabre.org/content/images/2021/09/notifications-elementary.png 1040w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/09/notifications-gnome.png" width="1040" height="740" loading="lazy" alt="MenuLibre 2.2.3 Released" srcset="https://bluesabre.org/content/images/size/w600/2021/09/notifications-gnome.png 600w, https://bluesabre.org/content/images/size/w1000/2021/09/notifications-gnome.png 1000w, https://bluesabre.org/content/images/2021/09/notifications-gnome.png 1040w" sizes="(min-width: 720px) 720px"></div></div></div><figcaption>X-GNOME-UsesNotifications empowers the user to control their notifications.</figcaption></figure><h3 id="improving-cross-platform-support">Improving Cross-Platform Support</h3><p>Support for <strong>GNOME-specific </strong>and <strong>Xfce-specific</strong> application categories has been added. When running in a supported desktop environment, these categories are now available and should enable a tighter integration and more advanced menu management features.</p><p><strong>Un-prefixed applications.menu files</strong>, as seen in <a href="https://manjaro.org/downloads/official/kde/">Manjaro KDE</a>, are now supported. Typically, a desktop environment will use prefixed versions of the applications menu to have separate menu options for different desktop environments. If a prefixed version of the menu cannot be found, the un-prefixed version will be used instead.</p><p>If you&apos;re using a desktop environment or distribution that is still unsupported, the new<strong> diagnostics dialog</strong> will help report the issue and get it resolved sooner. Everything I need to add support is included in the dialog, so just copy and paste or take a screenshot and <a href="https://github.com/bluesabre/menulibre/issues/new">report a bug on GitHub</a>.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/09/diagnostic-dialog-1.png" class="kg-image" alt="MenuLibre 2.2.3 Released" loading="lazy" width="634" height="462" srcset="https://bluesabre.org/content/images/size/w600/2021/09/diagnostic-dialog-1.png 600w, https://bluesabre.org/content/images/2021/09/diagnostic-dialog-1.png 634w"><figcaption>When MenuLibre fails to load your menu, you are now given more details about the failure.</figcaption></figure><h3 id="find-and-edit-faster">Find and Edit Faster</h3><p>MenuLibre&apos;s <strong>search entry</strong> can now search using the Exec key and .desktop filename. This is in addition to the Name and Comment keys that were previously used. It should now be significantly easier to track down a long-lost launcher.</p><p><strong>Menu validation</strong> received some much needed improvements. Valid types such as Link, Directory, and Service are no longer flagged for review. Invalid files that are owned by root can now be instantly edited with a root editor. <code>pkexec</code> is used to launch the editor will superuser permissions to make any needed adjustments.</p><h2 id="downloads"><strong>Downloads</strong></h2><p><a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz">Source tarball</a> (<a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz/+md5">md5</a>, <a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz.asc">sig</a>)</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2021/09/26/menulibre-2-2-2-release/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.3">MenuLibre 2.2.3</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                MenuLibre
+            
+            
+            <time class="post-date" datetime="2021-09-26">
+                26 Sep 2021
+            </time>
+            <a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.3" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is a minor bugfix release correcting failed menu loading.</p>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Fixed making diagnostic text selectable on KDE</li>
+<li>Fixed loading from non-existent directories</li>
+</ul></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.3">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-1/changelog">menulibre (2.2.2-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-09-26">
+                26 Sep 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream release.</li>
+  <li>d/control, d/copyright, d/upstream/metadata, d/watch:
+    <ul>
+      <li>Switch to new upstream github.com/bluesabre/menulibre</li>
+      <li>Switch to new maintainer address</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Bump Standards-Version to 4.5.1, no changes needed.</li>
+      <li>Bump debhelper-compat to 13</li>
+      <li>Update uploader email</li>
+    </ul>
+  </li>
+  <li>d/copyright:
+    <ul>
+      <li>Add data/metainfo/menulibre.appdata.xml</li>
+    </ul>
+  </li>
+  <li>d/upstream/metadata:
+    <ul>
+      <li>Add Bug-Database, Bug-Submit</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.3-1/changelog">catfish (4.16.3-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-09-26">
+                26 Sep 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.3-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[ Sean Davis ]</p>
+<ul>
+  <li>New upstream release.</li>
+</ul>
+
+<p>[ Diego M. Rodriguez ]</p>
+<ul>
+  <li>d/control: drop mlocate recommends (transitional) (Closes: #992740)</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.3-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001066.html">thunar 4.17.6 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-09-26">
+                26 Sep 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001066.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<p>Yet another thunar development release, mainly to protect our testers
+from an annoying crash which can occur on clipboard operations
+(copy/paste)</p>
+
+<p>Sorry for the inconvenience &amp; happy testing !</p>
+
+<p>The changelog:</p>
+
+<ul>
+  <li>Reset sort_column if it exceeds THUNAR_N_VISIBLE_COLUMNS</li>
+  <li>Avoid many 'Failed to open directory' windows (Issue #660)</li>
+  <li>Add file &amp; folder count on the properties dialog (Issue #395)</li>
+  <li>Use basename instead of display_name for file duplication (#649)</li>
+  <li>Fix signal disconnect in thunar_window_unrealize to prevent crash</li>
+  <li>
+    <p>Don't go beyond THUNAR_N_VISIBLE_COLUMNS while parsing col widths</p>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
+Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+(Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
+(Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
+French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
+Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi
+(Punjabi), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
+Romanian, Serbian, Slovak, Spanish, Swedish, Telugu, Thai, Turkish,
+Urdu, Urdu (Pakistan), Uyghur, Vietnamese</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001066.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001065.html">catfish 4.16.3 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-09-26">
+                26 Sep 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001065.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>General:</p>
+<ul>
+  <li>Update "Searching…" Cursor</li>
+</ul>
+
+<p>Bug Fixes:</p>
+<ul>
+  <li>Sidebar background color bugfix</li>
+  <li>Fixes for syntax, fulltext zip search, special files (fixes #62)</li>
+  <li>Adds symbolic link icons, better icon updating (fixes #46)</li>
+</ul>
+
+<p>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), Estonian, Finnish, French,
+Galician, German, Greek, Hebrew, Hungarian, Icelandic, Indonesian,
+Interlingue, Italian, Japanese, Korean, Lithuanian, Malay, Norwegian
+Bokmål, Norwegian Nynorsk, Polish, Portuguese, Portuguese (Brazil),
+Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
+Ukrainian</p>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001065.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.2">MenuLibre 2.2.2</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                MenuLibre
+            
+            
+            <time class="post-date" datetime="2021-09-25">
+                25 Sep 2021
+            </time>
+            <a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.2" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2>New Features</h2>
+<ul>
+<li>Added diagnostics for failed menu loading</li>
+<li>Added support for GNOME-specific categories (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="639769768" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/56" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/56/hovercard" href="https://github.com/bluesabre/menulibre/issues/56">#56</a>)</li>
+<li>Added support for PrefersNonDefaultGPU (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="635869949" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/50" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/50/hovercard" href="https://github.com/bluesabre/menulibre/issues/50">#50</a>)</li>
+<li>Added support for unprefixed applications.menu (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="743146861" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/67" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/67/hovercard" href="https://github.com/bluesabre/menulibre/issues/67">#67</a>)</li>
+<li>Added support for X-GNOME-UsesNotifications (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="836956399" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/79" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/79/hovercard" href="https://github.com/bluesabre/menulibre/issues/79">#79</a>)</li>
+<li>Added support for XFCE specific categories (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="639742321" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/54" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/54/hovercard" href="https://github.com/bluesabre/menulibre/issues/54">#54</a>)</li>
+<li>Enabled opening a root editor for root-owned files with pkexec (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="688128341" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/62" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/62/hovercard" href="https://github.com/bluesabre/menulibre/issues/62">#62</a>)</li>
+<li>Enabled searching for Exec key and desktop entry (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="635869972" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/52" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/52/hovercard" href="https://github.com/bluesabre/menulibre/issues/52">#52</a>)</li>
+</ul>
+<h2>General</h2>
+<ul>
+<li>Added AppData file (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="684914264" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/61" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/61/hovercard" href="https://github.com/bluesabre/menulibre/issues/61">#61</a>)</li>
+<li>Documented intltool build requirement (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="672250559" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/59" data-hovercard-type="pull_request" data-hovercard-url="/bluesabre/menulibre/pull/59/hovercard" href="https://github.com/bluesabre/menulibre/pull/59">#59</a>)</li>
+<li>Switched to the MenuLibre wiki for key descriptions (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="635869915" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/48" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/48/hovercard" href="https://github.com/bluesabre/menulibre/issues/48">#48</a>)</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Added valid types to validator, reducing false positives (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="724452027" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/66" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/66/hovercard" href="https://github.com/bluesabre/menulibre/issues/66">#66</a>)</li>
+<li>Fixed builds with newer versions of GTK (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="834182752" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/77" data-hovercard-type="pull_request" data-hovercard-url="/bluesabre/menulibre/pull/77/hovercard" href="https://github.com/bluesabre/menulibre/pull/77">#77</a>)</li>
+<li>Fixed history state when editing Name and Comment (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="654272013" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/57" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/57/hovercard" href="https://github.com/bluesabre/menulibre/issues/57">#57</a>)</li>
+<li>Fixed msgfmt errors</li>
+<li>Fixed running with newer versions of GTK (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="909472549" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/82" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/82/hovercard" href="https://github.com/bluesabre/menulibre/issues/82">#82</a>)</li>
+<li>Fixed selection leaving screen while moving items (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="635869524" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/25" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/25/hovercard" href="https://github.com/bluesabre/menulibre/issues/25">#25</a>)</li>
+<li>Fixed typo in desktop file processing error</li>
+</ul>
+<h2>Updated Translations</h2>
+<p>Arabic, Catalan, Chinese (China), Danish, Dutch, English (United Kingdom), French, German, Japanese, Lithuanian, Malay, Malay (Arabic), Polish, Russian, Spanish, Turkish, Ukrainian</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.2">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.2">menulibre-2.2.2</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                MenuLibre
+            
+            
+            <time class="post-date" datetime="2021-09-25">
+                25 Sep 2021
+            </time>
+            <a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.2" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>MenuLibre 2.2.2</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.2">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <nav class="pagination" role="pagination">
+    
+        
+            <a class="newer-posts" href="/page10" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 11 of 64 </span>
+     
+        <a class="older-posts" href="/page12" title="Next Page">Older Posts &raquo;</a>
+     
+</nav>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

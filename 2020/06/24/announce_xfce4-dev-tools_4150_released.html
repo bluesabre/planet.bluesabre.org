@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ANNOUNCE: xfce4-dev-tools 4.15.0 released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2020-06-24">24 Jun 2020</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2020-06-24">24 Jun 2020</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">ANNOUNCE: xfce4-dev-tools 4.15.0 released</h1> -->
+
+        <section class="post-content">
+            <p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>New macro XDT_VERSION_INIT(SEMVER[, TAG])</li>
+</ul>
+
+<p>This macro takes care of setting up the version numbering.
+It will define the following macros based on SEMVER and TAG:</p>
+
+<ul>
+  <li>xdt_version</li>
+  <li>xdt_version_major</li>
+  <li>xdt_version_minor</li>
+  <li>xdt_version_micro</li>
+  <li>xdt_version_tag</li>
+  <li>xdt_version_build</li>
+  <li>xdt_debug_default</li>
+</ul>
+
+<p>If TAG isn't specified, the xdt_version_tag and xdt_version_git
+will be empty and xdt_debug_default will be set to "minimum",
+otherwise the xdt_version_build will contain a git hash and
+xdt_debug_default will be set to "yes"</p>
+
+<p>Example usage:</p>
+
+<p>XDT_VERSION_INIT([4.15.3],[git])
+  AC_INIT([xfce4-someproject], [xdt_version()])
+  …
+  XDT_FEATURE_DEBUG([xdt_debug_default])</p>
+
+<ul>
+  <li>
+    <p>XDT_I18N macro will now automatically find the linguas if none are
+specified during the autoconf run.</p>
+  </li>
+  <li>
+    <p>Install m4 macros in default search dir. This makes autoconf find the
+macros by default.</p>
+  </li>
+</ul>
+
+<p>By setting version via XDT_VERSION_INIT and using XDT_I18N without
+arguments,
+this is no longer necessary to use a separate configure.ac.in and a
+plain configure.ac can be used !
+A big thank to Natanael Copa (ncopa) for his work on this part !</p>
+
+<ul>
+  <li>
+    <p>xfce4-dev-tools now also handle the CI (docker container,
+.gitlab-ci.yml templates files etc) on our new gitlab instance. A merge
+request or a push to master to any of our projects automatically trigger
+a build. This will help us to catch errors quicker and have better
+quality. Thanks to Jason Yavorska and Simon Steinbeiss.</p>
+  </li>
+  <li>
+    <p>New helpers are also available (xfce-get-release-notes, 
+xfce-get-translations, xfce-update-news) to help our maintainers to do
+releases ! Thanks Simon again.</p>
+  </li>
+  <li>Use datarootdir instead of datadir</li>
+  <li>xdt-autogen: explicitly set search path for m4 macros</li>
+  <li>Install the xfce-helpers</li>
+  <li>Add two new helpers to help releasers</li>
+  <li>Install m4 macros into default $datadir/aclocal</li>
+  <li>Update README for new gitlab urls</li>
+  <li>xdt-autogen: Improve and simplify linguas detection</li>
+  <li>Let XDT_I18N automatically find the po/*.po as default</li>
+  <li>Let configure generate the xdt-autogen script</li>
+  <li>Implement XDT_VERSION_INIT</li>
+  <li>Add manpage and tests to xdt-csource</li>
+  <li>Add xfce4-dev-tools build in addition to container build</li>
+  <li>Check BEFORE_SHA along with changes to .po files</li>
+  <li>gitlabci: Ensure to run autogen in distcheck stage</li>
+  <li>Switch to "foreign" mode for automake</li>
+  <li>Add CI templates notes</li>
+  <li>Update README with explanation of Dockerfile</li>
+  <li>Fix whitespace error</li>
+  <li>Add helper script to get all translation-updates</li>
+  <li>Integrate xfce-build container build/creation</li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

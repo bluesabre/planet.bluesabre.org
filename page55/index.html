@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header no-cover">
+    <nav class="main-nav overlay clearfix">
+            
+        
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        
+        <a class="subscribe-button icon-feed" href="/feed.xml ">Subscribe</a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">Planet Bluesabre</h1>
+            <h2 class="page-description">
+                 All the latest from Xfce, Xubuntu, & Friends. 
+            </h2>
+            
+            
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+
+<main id="content" class="content" role="main">
+
+    <div class="extra-pagination inner">
+        <nav class="pagination" role="pagination">
+    
+        
+            <a class="newer-posts" href="/page54" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 55 of 64 </span>
+     
+        <a class="older-posts" href="/page56" title="Next Page">Older Posts &raquo;</a>
+     
+</nav>
+    </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/">GitLab CI is up and running</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon Steinbeiß
+            
+            
+            <time class="post-date" datetime="2020-05-10">
+                10 May 2020
+            </time>
+            <a href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p><img class="transparent alignright" src="https://fosshost.org/wp-content/uploads/2020/05/Fosshost_Oficial_Logo_400px.png" alt="https://fosshost.org/wp-content/uploads/2020/05/Fosshost_Oficial_Logo_400px.png" /></p>
+<p>As announced less than two weeks ago, the next steps in <a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">our GitLab migration</a> are following. While we originally planned that the migration from Bugzilla to GitLab issues would be the next step we received generous support from <a href="https://fosshost.org">the brand new <strong>fosshost</strong> project</a>: They provided us with the virtual infrastructure to be able to set up <strong>our first GitLab Runner</strong>.<br />
+A huge thank you to the fosshost for welcoming us aboard (and in record time)!</p>
+<p>Standing on the shoulders of the <a href="https://github.com/schuellerf/xfce-test">xfce-test</a> project by Florian and with support from <span class="author">Jason we managed to get a Docker container <a href="https://hub.docker.com/r/xfce/xfce-build">xfce-build</a> up and running that we now use for a (for now: very basic) test, aka &#8220;does it build?&#8221;. </span>A nice side-effect of having this container published on Dockerhub is that everyone can easily use it locally by running <strong>docker pull xfce/xfce-build</strong>.</p>
+<p>If you&#8217;re curious what&#8217;s inside the container you can take a look at the <a href="https://gitlab.xfce.org/xfce/xfce4-dev-tools/-/blob/master/Dockerfile">Dockerfile</a>. In short we use the latest Ubuntu 20.04 as a basis and then compile the Xfce core libraries based on the latest Git tag on the master branch.</p>
+<p>The first project I set a pipeline up for is <a href="https://gitlab.xfce.org/xfce/xfce4-settings">xfce4-settings</a>. So from now on every commit and merge request will be built automatically and we as developers will receive immediate feedback. If you want to see what this looks like <a href="https://gitlab.xfce.org/xfce/xfce4-settings/-/commit/0e688e7f5ed7aaa9d9f8797baf30026210f4f6ed/pipelines?ref=master">feel free to click here</a>.</p>
+<h3>Next steps</h3>
+<p>Enabling the pipeline in more core repos will certainly be the next step. This should be as easy as adding <a href="https://gitlab.xfce.org/xfce/xfce4-settings/-/blob/master/.gitlab-ci.yml">this .gitlab-ci.yml</a> file to the repository&#8217;s master branch and enabling the CI/CD feature of the project.</p>
+<p>In parallel we have continued to work on the Bugzilla migration, but more on that later. Stay tuned!</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog">xfce4-taskmanager (1.2.3-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-05-09">
+                09 May 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Trim trailing whitespace.</li>
+  <li>Use secure copyright file specification URI.</li>
+  <li>Bump debhelper from old 10 to 12.</li>
+  <li>Set debhelper-compat version in Build-Depends.</li>
+  <li>Update standards version to 4.4.1, no changes needed.</li>
+</ul>
+
+<p>[ Mateusz Łukasik ]</p>
+<ul>
+  <li>Update d/watch.</li>
+  <li>New upstream version 1.2.3</li>
+  <li>d/control: update standards version to 4.5.0</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>d/control: R³: no.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog">xfwm4 (4.14.2-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-05-03">
+                03 May 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Trim trailing whitespace.</li>
+  <li>Bump debhelper from old 11 to 12.</li>
+  <li>Set upstream metadata fields: Name (from ./configure), Repository.</li>
+  <li>Fix day-of-week for changelog entry 4.0.0.final-1.</li>
+</ul>
+
+<p>[ Mateusz Łukasik ]</p>
+<ul>
+  <li>d/watch: Update to working version.</li>
+  <li>New upstream version 4.14.1
+    <ul>
+      <li>Fix raise delay (Closes: #940796)</li>
+    </ul>
+  </li>
+  <li>d/control: update standards version to 4.5.0</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream version 4.14.2.
+    <ul>
+      <li>Fix window title alignment (Closes: #953112)</li>
+    </ul>
+  </li>
+  <li>d/control: R³: no.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.14.4-1/changelog">xfce4-panel (4.14.4-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-05-03">
+                03 May 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.14.4-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+  <li>New upstream version 4.14.4.</li>
+  <li>d/control: R³: no.</li>
+  <li>d/libxfce4panel-2.0-4.symbols: Set Build-Depends-Package.</li>
+  <li>Update Standards-Version to 4.5.0.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.14.4-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">Xfce switches to GitLab</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon Steinbeiß
+            
+            
+            <time class="post-date" datetime="2020-04-30">
+                30 Apr 2020
+            </time>
+            <a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2>GitLab is here!</h2>
+<p>Starting today, May 1, we&#8217;re switching from our cgit/gitolite setup to GitLab. Our old server, git.xfce.org, is now a ready-only in-sync mirror (so you can still pull code). Our new server is gitlab.xfce.org.</p>
+<p>(The detailed version of this blog post can be read in my <a href="https://mail.xfce.org/pipermail/xfce4-dev/2020-April/032436.html">announcement on the Xfce Mailing List</a>.)</p>
+<p><img class="alignnone size-medium" src="https://about.gitlab.com/images/press/logo/preview/gitlab-logo-white-preview.png" width="3828" height="1688" /></p>
+<p>For <strong>users</strong> nothing changes.</p>
+<p>For <strong>distributors</strong> nothing changes (presuming you&#8217;re using the release tarballs and not Git tags).</p>
+<p>For <strong>developers and contributors</strong> quite a few things change.</p>
+<ul>
+<li>Most importantly: The Git URL changed, so you need to update the remotes of your local repositories. <a href="https://github.com/ochosi/xfce-helpers/blob/master/xfce-migrate-to-gl">Feel free to use our helper script.</a></li>
+<li>Fork repositories and use branches and merge requests!</li>
+<li>If you don&#8217;t have an account yet (we created quite a few for you regulars already) please sign up! We have opened registrations for GitLab accounts as well as allowing you to register with your GitHub account (if you have one).<br />
+Please poke us on IRC or the mailinglist if you&#8217;re lacking repository access or ownership. (By default new users cannot fork before being manually approved. Yes. We <strong>are</strong> afraid of the spambots.)</li>
+</ul>
+<p>Have a nice <a href="https://gitlab.xfce.org">GitLab</a>!</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.2.8-2/changelog">tumbler (0.2.8-2) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2020-04-30">
+                30 Apr 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.2.8-2/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[ Debian Janitor ]</p>
+<ul>
+  <li>Set upstream metadata fields: Name (from ./configure), Repository.</li>
+</ul>
+
+<p>[ Yves-Alexis Perez ]</p>
+<ul>
+  <li>d/control: replace build-dep libgtk2-dev by libgdk-pixbuf2.0-dev    (closes: #959087)</li>
+  <li>d/control: update standards version to 4.5.0</li>
+  <li>d/rules: drop –as-needed from linker flags</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.2.8-2/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.4.4-1/changelog">xfce4-whiskermenu-plugin (2.4.4-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-04-26">
+                26 Apr 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.4.4-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+  <li>New upstream version 2.4.4</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.4.4-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2020/04/17/xubuntu-20-04-in-screenshots-desktop/">Xubuntu 20.04 In Screenshots: Desktop</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2020-04-17">
+                17 Apr 2020
+            </time>
+            <a href="https://bluesabre.org/2020/04/17/xubuntu-20-04-in-screenshots-desktop/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><img src="https://bluesabre.org/content/images/2020/04/xubuntu-focal-home.png" alt="Xubuntu 20.04 In Screenshots: Desktop"><p>With Xubuntu 20.04 "Focal Fossa" less than a week away (April 23, 2020), it's time to take a look at what's new. In this post, I walk through the post-installation desktop from the process of the <a href="http://iso.qa.ubuntu.com/qatracker/milestones/408/builds">20200416 daily image</a>. Below, you'll find screenshots from some of our core applications with the default Greybird and brand-new Greybird-dark themes.</p><p>These screenshots are free to use, but don't hard link to them. Download them for yourself and share them on your publication!</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2020/04/desktop-01-1.png" class="kg-image" alt="Xubuntu 20.04 In Screenshots: Desktop"><figcaption>With our latest wallpaper, the Xubuntu desktop is a calm and relaxing place to come back to.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-02-whisker-1.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-02-whisker-dark-1.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>The Whisker Menu helps you quickly find and pin your favorite applications.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-03-firefox.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-03-firefox-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>Firefox looks great with both the light and dark Greybird variants.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-04-thunderbird.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-04-thunderbird-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>Likewise, Thunderbird looks great regardless of your preference.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-05-libreoffice.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-05-libreoffice-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>LibreOffice doesn't wear Greybird-dark quite as nicely. It's not unusable, but it is a little unsightly. With the standard Greybird, LibreOffice shines.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-06-software.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-06-software-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>GNOME Software is included to make it easy to install Debian packages from the repos as well as snaps. Flatpak is also supported once the necessary plugins are installed.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-07-xfce.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-07-xfce-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>A major improvement since Xubuntu 18.04, all included Xfce applications are now using the latest GTK+3 toolkit. Hundreds of bugs that have been fixed in the last two years.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-08-mate.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-08-mate-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>Our included MATE applications, Atril, Engrampa, and MATE Calculator fill some missing functionality for the Xubuntu desktop.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-09-images.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-09-images-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>Catfish (front) is a lightweight and speedy search tool. Ristretto makes viewing any image fast and efficient.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-10-settings.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-10-settings-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>The Xfce Settings Manager collects all of your preferences in one place. The Settings Editor enables advanced editing.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-11-audio.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-11-audio-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>Parole Media Player will play nearly any content you send it's way. The PulseAudio Plugin provides easy access to audio inputs and outputs and includes media controls for active media players. Support for the Plasma Browser Integration plugin is included once the plugin is installed.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-12-wallpaper.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-12-wallpaper-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>Xubuntu includes a variety of high-quality wallpapers from previous releases, as well as the winners of the 20.04 Xubuntu Community Wallpaper Contest.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-13-lockscreen.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-13-lockscreen-dark.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>Xfce Screensaver provides a secure and configurable lockscreen with support for Xscreensaver's screensavers.</figcaption></figure><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-14-wallpaper-1.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-14-wallpaper-2.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-14-wallpaper-6.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-14-wallpaper-3.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-14-wallpaper-5.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/desktop-14-wallpaper-4.png" width="1440" height="900" alt="Xubuntu 20.04 In Screenshots: Desktop"></div></div></div><figcaption>Each of the six winners from the Xubuntu Community Wallpaper Contest look great with Xubuntu's default layout. Pick your favorite!</figcaption></figure></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2020/04/17/xubuntu-20-04-in-screenshots-desktop/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_0.12.11-1ubuntu1/changelog">exo (0.12.11-1ubuntu1) focal</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-04-15">
+                15 Apr 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_0.12.11-1ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>d/rules: Update sed rule to replace all occurrences, not just the first.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_0.12.11-1ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2020/04/12/xubuntu-20-04-in-screenshots-the-installer/">Xubuntu 20.04 In Screenshots: Installation</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2020-04-12">
+                12 Apr 2020
+            </time>
+            <a href="https://bluesabre.org/2020/04/12/xubuntu-20-04-in-screenshots-the-installer/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><img src="https://bluesabre.org/content/images/2020/04/2004-screenshots-home.png" alt="Xubuntu 20.04 In Screenshots: Installation"><p>With Xubuntu 20.04 "Focal Fossa" due in less than two weeks (April 23, 2020), it's time to take a look at what's new. In this post, I walk through the installation process of the <a href="http://iso.qa.ubuntu.com/qatracker/milestones/408/builds">20200412 daily image</a>. These images show off the installation working completely as expected, with all components loading and installation completing successfully.</p><p>These screenshots are free to use, but don't hard link to them. Download them for yourself and share them on your publication!</p><h2 id="booting-the-installation-media">Booting the Installation Media</h2><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-01-1.png" width="640" height="480" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-02-1.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div></div></div><figcaption>Xubuntu's installation media starts with just two icons. Press any key for installation options, or the installation disc will start loading to the install options.</figcaption></figure><h2 id="configuring-the-installation">Configuring the Installation</h2><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install_page_1_logo.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-04-1.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-05-1.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-06-1.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-07-1.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-08-1.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-09-1.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-10-2.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-11-2.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div></div></div><figcaption>When everything works like it's supposed to, this is what you'll see. The Xubuntu installation process has changed little over the years.</figcaption></figure><h2 id="finishing-up-with-the-slideshow">Finishing Up with the Slideshow</h2><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-12-2.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-13-2.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-14-2.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-15-2.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-16-2.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/04/install-17-2.png" width="1024" height="768" alt="Xubuntu 20.04 In Screenshots: Installation"></div></div></div><figcaption>Once you've filled out all of the installation options, the installer finishes with some informative slides. At the end, remove your installation media and press Enter to reboot into your newly installed Xubuntu!</figcaption></figure></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2020/04/12/xubuntu-20-04-in-screenshots-the-installer/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <nav class="pagination" role="pagination">
+    
+        
+            <a class="newer-posts" href="/page54" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 55 of 64 </span>
+     
+        <a class="older-posts" href="/page56" title="Next Page">Older Posts &raquo;</a>
+     
+</nav>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

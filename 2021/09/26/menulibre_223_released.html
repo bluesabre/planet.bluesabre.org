@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">MenuLibre 2.2.3 Released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2021-09-26">26 Sep 2021</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2021-09-26">26 Sep 2021</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">MenuLibre 2.2.3 Released</h1> -->
+
+        <section class="post-content">
+            <h2 id="whats-new">What&apos;s New?</h2><h3 id="new-features">New Features</h3><ul><li>Added diagnostics for failed menu loading</li><li>Added support for GNOME-specific categories (<a href="https://github.com/bluesabre/menulibre/issues/56">#56</a>)</li><li>Added support for PrefersNonDefaultGPU (<a href="https://github.com/bluesabre/menulibre/issues/50">#50</a>)</li><li>Added support for unprefixed applications.menu (<a href="https://github.com/bluesabre/menulibre/issues/67">#67</a>)</li><li>Added support for X-GNOME-UsesNotifications (<a href="https://github.com/bluesabre/menulibre/issues/79">#79</a>)</li><li>Added support for XFCE-specific categories (<a href="https://github.com/bluesabre/menulibre/issues/54">#54</a>)</li><li>Enabled opening a root editor for root-owned files with pkexec (<a href="https://github.com/bluesabre/menulibre/issues/62">#62</a>)</li><li>Enabled searching for Exec key and desktop entry (<a href="https://github.com/bluesabre/menulibre/issues/52">#52</a>)</li></ul><h3 id="general">General</h3><ul><li>Added AppData file (<a href="https://github.com/bluesabre/menulibre/issues/61">#61</a>)</li><li>Documented intltool build requirement (<a href="https://github.com/bluesabre/menulibre/pull/59">#59</a>)</li><li>Switched to the <a href="https://github.com/bluesabre/menulibre/wiki/Recognized-Desktop-Entry-Keys">MenuLibre Wiki</a> for key descriptions (<a href="https://github.com/bluesabre/menulibre/issues/48">#48</a>)</li></ul><h3 id="bug-fixes">Bug Fixes</h3><ul><li>Added valid types to validator, reducing false positives (<a href="https://github.com/bluesabre/menulibre/issues/66">#66</a>)</li><li>Fixed builds with newer versions of GTK (<a href="https://github.com/bluesabre/menulibre/pull/77">#77</a>)</li><li>Fixed history state when editing Name and Comment (<a href="https://github.com/bluesabre/menulibre/issues/57">#57</a>)</li><li>Fixed running with newer versions of GTK (<a href="https://github.com/bluesabre/menulibre/issues/82">#82</a>)</li><li>Fixed selection leaving screen while moving items (<a href="https://github.com/bluesabre/menulibre/issues/25">#25</a>)</li><li>Fixed typo in desktop file processing error</li><li>Fixed msgfmt errors</li></ul><h3 id="updated-translations">Updated Translations</h3><img src="https://bluesabre.org/content/images/2021/09/menulibre-2.2.3-featured.png" alt="MenuLibre 2.2.3 Released"><p>Arabic, Catalan, Chinese (China), Danish, Dutch, English (United Kingdom), French, German, Japanese, Lithuanian, Malay, Malay (Arabic), Polish, Russian, Spanish, Turkish, Ukrainian</p><h2 id="deep-dive-into-new-features">Deep Dive Into New Features</h2><h3 id="newly-added-keys">Newly Added Keys</h3><p><strong>PrefersNonDefaultGPU</strong> was added to the FreeDesktop.org <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">Desktop Entry Specification</a> in version 1.4. It&apos;s a hint for the desktop environment to use a non-discrete, more powerful GPU, if it is available. Support for this key was recently added to Xubuntu and elementary, and is making it&apos;s way to other desktop environments as well.</p><p><strong>X-GNOME-UsesNotifications</strong> is used by GNOME, elementary, and other GTK desktops (possibly others as well) to inform the environment that an app can send notifications. This enables management of those notifications through a single interface. This feature is seen in GNOME and elementary.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/09/notifications-elementary.png" width="1040" height="740" loading="lazy" alt="MenuLibre 2.2.3 Released" srcset="https://bluesabre.org/content/images/size/w600/2021/09/notifications-elementary.png 600w, https://bluesabre.org/content/images/size/w1000/2021/09/notifications-elementary.png 1000w, https://bluesabre.org/content/images/2021/09/notifications-elementary.png 1040w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/09/notifications-gnome.png" width="1040" height="740" loading="lazy" alt="MenuLibre 2.2.3 Released" srcset="https://bluesabre.org/content/images/size/w600/2021/09/notifications-gnome.png 600w, https://bluesabre.org/content/images/size/w1000/2021/09/notifications-gnome.png 1000w, https://bluesabre.org/content/images/2021/09/notifications-gnome.png 1040w" sizes="(min-width: 720px) 720px"></div></div></div><figcaption>X-GNOME-UsesNotifications empowers the user to control their notifications.</figcaption></figure><h3 id="improving-cross-platform-support">Improving Cross-Platform Support</h3><p>Support for <strong>GNOME-specific </strong>and <strong>Xfce-specific</strong> application categories has been added. When running in a supported desktop environment, these categories are now available and should enable a tighter integration and more advanced menu management features.</p><p><strong>Un-prefixed applications.menu files</strong>, as seen in <a href="https://manjaro.org/downloads/official/kde/">Manjaro KDE</a>, are now supported. Typically, a desktop environment will use prefixed versions of the applications menu to have separate menu options for different desktop environments. If a prefixed version of the menu cannot be found, the un-prefixed version will be used instead.</p><p>If you&apos;re using a desktop environment or distribution that is still unsupported, the new<strong> diagnostics dialog</strong> will help report the issue and get it resolved sooner. Everything I need to add support is included in the dialog, so just copy and paste or take a screenshot and <a href="https://github.com/bluesabre/menulibre/issues/new">report a bug on GitHub</a>.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/09/diagnostic-dialog-1.png" class="kg-image" alt="MenuLibre 2.2.3 Released" loading="lazy" width="634" height="462" srcset="https://bluesabre.org/content/images/size/w600/2021/09/diagnostic-dialog-1.png 600w, https://bluesabre.org/content/images/2021/09/diagnostic-dialog-1.png 634w"><figcaption>When MenuLibre fails to load your menu, you are now given more details about the failure.</figcaption></figure><h3 id="find-and-edit-faster">Find and Edit Faster</h3><p>MenuLibre&apos;s <strong>search entry</strong> can now search using the Exec key and .desktop filename. This is in addition to the Name and Comment keys that were previously used. It should now be significantly easier to track down a long-lost launcher.</p><p><strong>Menu validation</strong> received some much needed improvements. Valid types such as Link, Directory, and Service are no longer flagged for review. Invalid files that are owned by root can now be instantly edited with a root editor. <code>pkexec</code> is used to launch the editor will superuser permissions to make any needed adjustments.</p><h2 id="downloads"><strong>Downloads</strong></h2><p><a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz">Source tarball</a> (<a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz/+md5">md5</a>, <a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz.asc">sig</a>)</p>
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>
