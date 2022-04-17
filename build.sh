@@ -92,6 +92,13 @@ function update() {
 function deploy() {
     build_site
     cp -R build/* /var/www/planet.bluesabre.org/
+    rm -rf ~/planet-builds/*
+    cp -R build/* ~/planet-builds/
+    cd ~/planet-builds
+    git add -u
+    git add .
+    git commit -m "Update posts"
+    git push
 }
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
