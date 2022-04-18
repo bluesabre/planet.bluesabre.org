@@ -408,9 +408,6 @@ Urdu (Pakistan), Uyghur</li>
 
 
 
-
-
-
   
 
     
@@ -456,9 +453,6 @@ Urdu (Pakistan), Uyghur</li>
 <p class="">Download the <em>Raspberry Pi Generic (64-bit ARM) preinstalled server image</em> for your selected Ubuntu version. You should end up with a filename ending in <code>-preinstalled-server-arm64+raspi.img.xz</code></p>
 
 
-
-
-
   <a href="https://cdimage.ubuntu.com/releases/20.04/release/" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
     
   >
@@ -484,9 +478,6 @@ Urdu (Pakistan), Uyghur</li>
   </a>
 
 <h3>Prepare the SD Card</h3><p class=""><strong>Warning: The next steps will erase all content on your SD card. Be sure to confirm the device you’re overwriting to prevent wiping importing data.</strong></p><p class="">Insert your SD card into your computer. Then select your installation method below.</p><h4>Option 1. GNOME Disks</h4><p class="">If you’re installing from GNOME or Xubuntu, you already have <em>Disks</em> installed.</p><ol data-rte-list="default"><li><p class="">Select the SD card in the <em>Disks</em> sidebar.</p></li><li><p class="">Click the <em>dots</em> menu button in the upper right corner.</p></li><li><p class="">Select <em>Restore Disk Image…</em></p></li><li><p class="">Click the button next to <em>Image to Restore</em> and navigate to your <code>img.xz</code> file. Click <em>Start Restoring…</em></p></li><li><p class="">Confirm your device one last time and click <em>Restore</em>. Authenticate with your password if requested.</p></li><li><p class="">After some time, the SD card should be successfully flashed.</p></li></ol>
-
-
-
 
 
 
@@ -709,9 +700,6 @@ Urdu (Pakistan), Uyghur</li>
 <h4>Option 2. Raspberry Pi Imager</h4><p class="">Download and install the <a href="https://github.com/raspberrypi/rpi-imager">Raspberry Pi Imager</a> for Windows, macOS, or Ubuntu/Debian.</p>
 
 
-
-
-
   <a href="https://downloads.raspberrypi.org/imager/imager_latest.exe" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
     
   >
@@ -737,9 +725,6 @@ Urdu (Pakistan), Uyghur</li>
   </a>
 
 <p class="">Once installed, you will find <em>Imager</em> in your applications menu/launcher.</p><ol data-rte-list="default"><li><p class="">Under <em>Operating System</em>, click <em>Choose OS</em>.</p></li><li><p class="">Scroll to the bottom option, <em>Use custom</em>, and click it. Navigate to and select your <code>img.xz</code> file.</p></li><li><p class="">Click <em>Choose Storage</em> under <em>Storage</em>.</p></li><li><p class="">Carefully select your SD card from the list.</p></li><li><p class="">Click <em>Write</em>.</p></li><li><p class="">Click <em>Yes</em> on the confirmation dialog to proceed. Authenticate with your password if requested.</p></li><li><p class="">After some time, the SD card should be successfully flashed.</p></li></ol>
-
-
-
 
 
 
@@ -1060,9 +1045,6 @@ Urdu (Pakistan), Uyghur</li>
 
 
 
-
-
-
   
 
   
@@ -1166,9 +1148,6 @@ Urdu (Pakistan), Uyghur</li>
 
 
 
-
-
-
   
 
     
@@ -1235,9 +1214,6 @@ Urdu (Pakistan), Uyghur</li>
 
 
 
-
-
-
   
 
     
@@ -1288,16 +1264,10 @@ Urdu (Pakistan), Uyghur</li>
   
 
 
-<p class="">Time to run updates! Issue the following commands to fully update your device.</p>
-
-
-<code>
+<p class="">Time to run updates! Issue the following commands to fully update your device.</p><code>
 $ sudo apt update<br>
 $ sudo apt dist-upgrade
 </code><p class="">This will take a while, go make some coffee. Once updates are complete, reboot your device with <code>sudo reboot</code>. Login again and it’s time to install Xubuntu or <a href="https://unit193.net/xubuntu/">Xubuntu Core</a> with <code>desktopify</code>.</p>
-
-
-
 
 
 
@@ -1453,10 +1423,7 @@ $ sudo apt dist-upgrade
 
 
 
-<h4>Install Xubuntu with desktopify</h4><p class="">Using the patched <code>desktopify</code> script, you can now install Xubuntu or Xubuntu Core on your Raspberry Pi 4. Select one or other, but don’t try to install both. Xubuntu Core is a subset of Xubuntu, so it probably wouldn’t do anything anyway.</p><p class="">Note: The <code>—oem</code> flag is optional but recommended. Without it, you will need to change the hostname and add a new user yourself.</p>
-
-
-<code>
+<h4>Install Xubuntu with desktopify</h4><p class="">Using the patched <code>desktopify</code> script, you can now install Xubuntu or Xubuntu Core on your Raspberry Pi 4. Select one or other, but don’t try to install both. Xubuntu Core is a subset of Xubuntu, so it probably wouldn’t do anything anyway.</p><p class="">Note: The <code>—oem</code> flag is optional but recommended. Without it, you will need to change the hostname and add a new user yourself.</p><code>
 # Get the desktopify repository<br>
 $ git clone https://github.com/bluesabre/desktopify.git<br>
 <br>
@@ -1471,9 +1438,6 @@ sudo ./desktopify --de xubuntu --oem<br>
 sudo ./desktopify --de xubuntu-core --oem
 
 </code><p class="">Once this process is completed, reboot once more with <code>sudo reboot</code>. On next boot, your device will be running Xubuntu!</p>
-
-
-
 
 
 
@@ -1566,9 +1530,6 @@ sudo ./desktopify --de xubuntu-core --oem
 
 
 <h4>Post installation</h4><p class="">If you opted for the <em>OEM </em>installation option, you’ll first be greeted with the Ubiquity one-time device setup. Enter your details and wait a bit longer and you will be ready to login with your new username and password.</p>
-
-
-
 
 
 
@@ -1789,9 +1750,6 @@ sudo ./desktopify --de xubuntu-core --oem
 
 
 <p class="">If you did not use the <em>OEM</em> installation option, your password is the same as the one you set when you first started the Raspberry Pi.</p>
-
-
-
 
 
 
@@ -2033,17 +1991,11 @@ Czech, Hebrew, Occitan (post 1500), Romanian, Ukrainian</li>
         
         
         
-            <section class="post-content"><p class="">When I installed Xubuntu 22.04 I was shocked to see that Bluetooth wasn’t working. I’ve got a pretty standard and well-supported Bluetooth chipset, Intel Wireless-AC 3168 Bluetooth, so this threw me for a loop.</p><p class="">After blaming and then apologizing to <a href="https://github.com/blueman-project/blueman">Blueman</a>, I found a hint on the <a href="https://bbs.archlinux.org/viewtopic.php?id=271459">Arch Linux forum</a>. The kernel version on 22.04, <em>5.15.0.18.18</em>, is currently broken with several Intel Bluetooth chipsets. There were reports in that same thread that the issue was resolved in 5.15.4, so I set out to upgrade my kernel… something I haven’t had to do in a <em>really </em>long time.</p><h3>Upgrading my kernel</h3><p class="">The good news is, upgrading your kernel no longer requires that you compile it yourself. Did I mention that it’s been a really long time since I’ve had to do this? After searching for a bit, I came across <a href="https://www.omgubuntu.co.uk/2017/02/ukuu-easy-way-to-install-mainline-kernel-ubuntu">suggestions</a> to use a utility called <a href="https://github.com/teejee2008/ukuu">Ukuu</a> (the “Ubuntu Kernel Update Utility”). However, this project is no longer free. Instead, you should now use a project called <a href="https://github.com/bkw777/mainline">mainline</a>.</p><p class=""><em>Fair warning now…</em> installing alternative kernels could leave your system in a worse state than you started. Just like the version currently available in Xubuntu 22.04, kernel updates can have regressions and will be less tested than those you find in the standard Ubuntu repositories. You have been warned!</p><h4>Installing mainline</h4><p class="">To easily install the latest version of mainline and stay up-to-date, use the <a href="https://code.launchpad.net/~cappelikan/+archive/ubuntu/ppa">cappelikan PPA</a>. Fire up a terminal and enter the following commands:</p>
-
-
-<code>
+            <section class="post-content"><p class="">When I installed Xubuntu 22.04 I was shocked to see that Bluetooth wasn’t working. I’ve got a pretty standard and well-supported Bluetooth chipset, Intel Wireless-AC 3168 Bluetooth, so this threw me for a loop.</p><p class="">After blaming and then apologizing to <a href="https://github.com/blueman-project/blueman">Blueman</a>, I found a hint on the <a href="https://bbs.archlinux.org/viewtopic.php?id=271459">Arch Linux forum</a>. The kernel version on 22.04, <em>5.15.0.18.18</em>, is currently broken with several Intel Bluetooth chipsets. There were reports in that same thread that the issue was resolved in 5.15.4, so I set out to upgrade my kernel… something I haven’t had to do in a <em>really </em>long time.</p><h3>Upgrading my kernel</h3><p class="">The good news is, upgrading your kernel no longer requires that you compile it yourself. Did I mention that it’s been a really long time since I’ve had to do this? After searching for a bit, I came across <a href="https://www.omgubuntu.co.uk/2017/02/ukuu-easy-way-to-install-mainline-kernel-ubuntu">suggestions</a> to use a utility called <a href="https://github.com/teejee2008/ukuu">Ukuu</a> (the “Ubuntu Kernel Update Utility”). However, this project is no longer free. Instead, you should now use a project called <a href="https://github.com/bkw777/mainline">mainline</a>.</p><p class=""><em>Fair warning now…</em> installing alternative kernels could leave your system in a worse state than you started. Just like the version currently available in Xubuntu 22.04, kernel updates can have regressions and will be less tested than those you find in the standard Ubuntu repositories. You have been warned!</p><h4>Installing mainline</h4><p class="">To easily install the latest version of mainline and stay up-to-date, use the <a href="https://code.launchpad.net/~cappelikan/+archive/ubuntu/ppa">cappelikan PPA</a>. Fire up a terminal and enter the following commands:</p><code>
 $ sudo add-apt-repository ppa:cappelikan/ppa<br>
 $ sudo apt update<br>
 $ sudo apt install mainline
 </code><p class="">Once installed, you will find <em>Ubuntu Mainline Kernel Installer</em> in your application menu.</p><h4>Using mainline</h4>
-
-
-
 
 
 
@@ -2138,27 +2090,15 @@ $ sudo apt install mainline
         
             <section class="post-content"><iframe scrolling="no" allowfullscreen src="https://bluesabre.org//www.youtube.com/embed/5IVbcW4HHAA?wmode=opaque" width="854" frameborder="0" height="480"></iframe>
 
-<p class="">One of the features I’ve grown to appreciate since using macOS, elementary OS, and GNOME 4x is multi-touch gestures for switching workspaces. When I came back to Xubuntu, I ran into some roadblocks bringing my favorite feature into Xfce. By disabling the Synaptics driver and installing Touchégg, you can bring Magic Trackpad support and gestures to Xubuntu.</p><h3>Replacing Synaptics with libinput</h3><p class="">Xubuntu ships with the Synaptics driver for improved laptop touchpad support. <a href="https://www.x.org/releases/X11R7.6/doc/man/man4/synaptics.4.xhtml">Synaptics</a> is an X11 input driver specifically for touchpad support, but it directly interferes with libinput in Xfce. <a href="https://www.freedesktop.org/wiki/Software/libinput/">libinput</a> is a Wayland- and X11-compatible input driver with improved touchpad support and is a key component for Touchégg. If Synaptics is present, it takes precedence over libinput, so it has to be removed to continue.</p><p class=""><em>An additional benefit of removing Synaptics: it doesn’t support the Apple Magic Trackpad 2 at all. When it’s installed, you cannot move your cursor. You can only right-click. Uninstall Synaptics to make the Magic Trackpad work in Xubuntu!</em></p><h4>Uninstall Synaptics</h4><p class="">Removing the driver is trivially easy. Open up a terminal and issue the following command:</p>
-
-
-<code>
+<p class="">One of the features I’ve grown to appreciate since using macOS, elementary OS, and GNOME 4x is multi-touch gestures for switching workspaces. When I came back to Xubuntu, I ran into some roadblocks bringing my favorite feature into Xfce. By disabling the Synaptics driver and installing Touchégg, you can bring Magic Trackpad support and gestures to Xubuntu.</p><h3>Replacing Synaptics with libinput</h3><p class="">Xubuntu ships with the Synaptics driver for improved laptop touchpad support. <a href="https://www.x.org/releases/X11R7.6/doc/man/man4/synaptics.4.xhtml">Synaptics</a> is an X11 input driver specifically for touchpad support, but it directly interferes with libinput in Xfce. <a href="https://www.freedesktop.org/wiki/Software/libinput/">libinput</a> is a Wayland- and X11-compatible input driver with improved touchpad support and is a key component for Touchégg. If Synaptics is present, it takes precedence over libinput, so it has to be removed to continue.</p><p class=""><em>An additional benefit of removing Synaptics: it doesn’t support the Apple Magic Trackpad 2 at all. When it’s installed, you cannot move your cursor. You can only right-click. Uninstall Synaptics to make the Magic Trackpad work in Xubuntu!</em></p><h4>Uninstall Synaptics</h4><p class="">Removing the driver is trivially easy. Open up a terminal and issue the following command:</p><code>
 $ sudo apt remove xserver-xorg-input-synaptics
-</code><p class="">After removing the driver, restart your system. Once you’re up and running, your touchpad should have a bit more life in it! With the Synaptics driver out of the way, libinput will be able to take over and enable Touchégg.</p><h4>Reinstall Synaptics (if needed)</h4><p class="">If for some reason you need to reinstall the Synaptics driver, just enter the following into your terminal and then reboot. Synaptics will be reinstalled, <em>but Touchégg will not function correctly</em>. </p>
-
-
-<code>
+</code><p class="">After removing the driver, restart your system. Once you’re up and running, your touchpad should have a bit more life in it! With the Synaptics driver out of the way, libinput will be able to take over and enable Touchégg.</p><h4>Reinstall Synaptics (if needed)</h4><p class="">If for some reason you need to reinstall the Synaptics driver, just enter the following into your terminal and then reboot. Synaptics will be reinstalled, <em>but Touchégg will not function correctly</em>. </p><code>
 $ sudo apt install xserver-xorg-input-synaptics
-</code><h3>Install Touchégg for Multi-Touch Gestures</h3><p class=""><a href="https://github.com/JoseExposito/touchegg">Touchégg</a> runs in the background and translates touchpad gestures into actions. Once configured, you will be able to use three- or four-finger gestures to switch workspaces, resize or rearrange windows, or even run custom commands.</p><p class="">To install Touchégg on Xubuntu, follow the <a href="https://github.com/JoseExposito/touchegg#ubuntu-debian-and-derivatives">Ubuntu instructions</a> below. Note that you will find <code>touchegg</code> in the Ubuntu repositories, but it is an older version and won’t behave as expected.</p>
-
-
-<code>
+</code><h3>Install Touchégg for Multi-Touch Gestures</h3><p class=""><a href="https://github.com/JoseExposito/touchegg">Touchégg</a> runs in the background and translates touchpad gestures into actions. Once configured, you will be able to use three- or four-finger gestures to switch workspaces, resize or rearrange windows, or even run custom commands.</p><p class="">To install Touchégg on Xubuntu, follow the <a href="https://github.com/JoseExposito/touchegg#ubuntu-debian-and-derivatives">Ubuntu instructions</a> below. Note that you will find <code>touchegg</code> in the Ubuntu repositories, but it is an older version and won’t behave as expected.</p><code>
 $ sudo add-apt-repository ppa:touchegg/stable <br>
 $ sudo apt update <br>
 $ sudo apt install touchegg
 </code><p class="">Restart your computer and the <code>touchegg</code> daemon will be running in the background.</p><h3>Install Touché to Configure Touchégg</h3>
-
-
-
 
 
 
@@ -2221,10 +2161,7 @@ $ sudo apt install touchegg
   
 
 
-<p class=""><a href="https://github.com/JoseExposito/touche">Touché</a> is the desktop companion application to configure Touchégg. It’s available on <a href="https://flathub.org/apps/details/com.github.joseexposito.touche">FlatHub</a> so the next step will be to enable Flatpak on Xubuntu. We’re doing it all, right here, right now.</p><h4>Install Flatpak support in Xubuntu</h4><p class="">Following the <a href="https://flatpak.org/setup/Ubuntu">Ubuntu</a> setup instructions on flathub.org, run the following commands in a Terminal.</p>
-
-
-<code>
+<p class=""><a href="https://github.com/JoseExposito/touche">Touché</a> is the desktop companion application to configure Touchégg. It’s available on <a href="https://flathub.org/apps/details/com.github.joseexposito.touche">FlatHub</a> so the next step will be to enable Flatpak on Xubuntu. We’re doing it all, right here, right now.</p><h4>Install Flatpak support in Xubuntu</h4><p class="">Following the <a href="https://flatpak.org/setup/Ubuntu">Ubuntu</a> setup instructions on flathub.org, run the following commands in a Terminal.</p><code>
 # Install Flatpak<br>
 $ sudo apt install flatpak<br><br>
 
@@ -2233,15 +2170,9 @@ $ sudo apt install gnome-software-plugin-flatpak<br><br>
 
 # Add the Flathub repository<br>
 $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-</code><p class="">Restart your computer once again and you’ll be ready to install Flatpaks.</p><h4>Install Touché from Flathub</h4><p class="">Final step! Click the <em>Install</em> button on <a href="https://flathub.org/apps/details/com.github.joseexposito.touche">Flathub</a> or install from the Terminal:</p>
-
-
-<code>
+</code><p class="">Restart your computer once again and you’ll be ready to install Flatpaks.</p><h4>Install Touché from Flathub</h4><p class="">Final step! Click the <em>Install</em> button on <a href="https://flathub.org/apps/details/com.github.joseexposito.touche">Flathub</a> or install from the Terminal:</p><code>
 $ flatpak install flathub com.github.joseexposito.touche
 </code><h3>Configure Your Touchpad Gestures</h3><p class="">You’ll find Touché in the application menu. Launch it and add your global and per-application gestures! Remember that Xubuntu is configured with a single workspace, so gestures to <em>Switch desktop</em> will fail until you add some additional workspaces. You can do this from Xubuntu’s <em>Workspaces</em> settings.</p>
-
-
-
 
 
 

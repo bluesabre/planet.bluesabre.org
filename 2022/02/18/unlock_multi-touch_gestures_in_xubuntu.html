@@ -60,27 +60,15 @@
         <section class="post-content">
             <iframe scrolling="no" allowfullscreen src="//www.youtube.com/embed/5IVbcW4HHAA?wmode=opaque" width="854" frameborder="0" height="480"></iframe>
 
-<p class="">One of the features I’ve grown to appreciate since using macOS, elementary OS, and GNOME 4x is multi-touch gestures for switching workspaces. When I came back to Xubuntu, I ran into some roadblocks bringing my favorite feature into Xfce. By disabling the Synaptics driver and installing Touchégg, you can bring Magic Trackpad support and gestures to Xubuntu.</p><h3>Replacing Synaptics with libinput</h3><p class="">Xubuntu ships with the Synaptics driver for improved laptop touchpad support. <a href="https://www.x.org/releases/X11R7.6/doc/man/man4/synaptics.4.xhtml">Synaptics</a> is an X11 input driver specifically for touchpad support, but it directly interferes with libinput in Xfce. <a href="https://www.freedesktop.org/wiki/Software/libinput/">libinput</a> is a Wayland- and X11-compatible input driver with improved touchpad support and is a key component for Touchégg. If Synaptics is present, it takes precedence over libinput, so it has to be removed to continue.</p><p class=""><em>An additional benefit of removing Synaptics: it doesn’t support the Apple Magic Trackpad 2 at all. When it’s installed, you cannot move your cursor. You can only right-click. Uninstall Synaptics to make the Magic Trackpad work in Xubuntu!</em></p><h4>Uninstall Synaptics</h4><p class="">Removing the driver is trivially easy. Open up a terminal and issue the following command:</p>
-
-
-<code>
+<p class="">One of the features I’ve grown to appreciate since using macOS, elementary OS, and GNOME 4x is multi-touch gestures for switching workspaces. When I came back to Xubuntu, I ran into some roadblocks bringing my favorite feature into Xfce. By disabling the Synaptics driver and installing Touchégg, you can bring Magic Trackpad support and gestures to Xubuntu.</p><h3>Replacing Synaptics with libinput</h3><p class="">Xubuntu ships with the Synaptics driver for improved laptop touchpad support. <a href="https://www.x.org/releases/X11R7.6/doc/man/man4/synaptics.4.xhtml">Synaptics</a> is an X11 input driver specifically for touchpad support, but it directly interferes with libinput in Xfce. <a href="https://www.freedesktop.org/wiki/Software/libinput/">libinput</a> is a Wayland- and X11-compatible input driver with improved touchpad support and is a key component for Touchégg. If Synaptics is present, it takes precedence over libinput, so it has to be removed to continue.</p><p class=""><em>An additional benefit of removing Synaptics: it doesn’t support the Apple Magic Trackpad 2 at all. When it’s installed, you cannot move your cursor. You can only right-click. Uninstall Synaptics to make the Magic Trackpad work in Xubuntu!</em></p><h4>Uninstall Synaptics</h4><p class="">Removing the driver is trivially easy. Open up a terminal and issue the following command:</p><code>
 $ sudo apt remove xserver-xorg-input-synaptics
-</code><p class="">After removing the driver, restart your system. Once you’re up and running, your touchpad should have a bit more life in it! With the Synaptics driver out of the way, libinput will be able to take over and enable Touchégg.</p><h4>Reinstall Synaptics (if needed)</h4><p class="">If for some reason you need to reinstall the Synaptics driver, just enter the following into your terminal and then reboot. Synaptics will be reinstalled, <em>but Touchégg will not function correctly</em>. </p>
-
-
-<code>
+</code><p class="">After removing the driver, restart your system. Once you’re up and running, your touchpad should have a bit more life in it! With the Synaptics driver out of the way, libinput will be able to take over and enable Touchégg.</p><h4>Reinstall Synaptics (if needed)</h4><p class="">If for some reason you need to reinstall the Synaptics driver, just enter the following into your terminal and then reboot. Synaptics will be reinstalled, <em>but Touchégg will not function correctly</em>. </p><code>
 $ sudo apt install xserver-xorg-input-synaptics
-</code><h3>Install Touchégg for Multi-Touch Gestures</h3><p class=""><a href="https://github.com/JoseExposito/touchegg">Touchégg</a> runs in the background and translates touchpad gestures into actions. Once configured, you will be able to use three- or four-finger gestures to switch workspaces, resize or rearrange windows, or even run custom commands.</p><p class="">To install Touchégg on Xubuntu, follow the <a href="https://github.com/JoseExposito/touchegg#ubuntu-debian-and-derivatives">Ubuntu instructions</a> below. Note that you will find <code>touchegg</code> in the Ubuntu repositories, but it is an older version and won’t behave as expected.</p>
-
-
-<code>
+</code><h3>Install Touchégg for Multi-Touch Gestures</h3><p class=""><a href="https://github.com/JoseExposito/touchegg">Touchégg</a> runs in the background and translates touchpad gestures into actions. Once configured, you will be able to use three- or four-finger gestures to switch workspaces, resize or rearrange windows, or even run custom commands.</p><p class="">To install Touchégg on Xubuntu, follow the <a href="https://github.com/JoseExposito/touchegg#ubuntu-debian-and-derivatives">Ubuntu instructions</a> below. Note that you will find <code>touchegg</code> in the Ubuntu repositories, but it is an older version and won’t behave as expected.</p><code>
 $ sudo add-apt-repository ppa:touchegg/stable <br>
 $ sudo apt update <br>
 $ sudo apt install touchegg
 </code><p class="">Restart your computer and the <code>touchegg</code> daemon will be running in the background.</p><h3>Install Touché to Configure Touchégg</h3>
-
-
-
 
 
 
@@ -143,10 +131,7 @@ $ sudo apt install touchegg
   
 
 
-<p class=""><a href="https://github.com/JoseExposito/touche">Touché</a> is the desktop companion application to configure Touchégg. It’s available on <a href="https://flathub.org/apps/details/com.github.joseexposito.touche">FlatHub</a> so the next step will be to enable Flatpak on Xubuntu. We’re doing it all, right here, right now.</p><h4>Install Flatpak support in Xubuntu</h4><p class="">Following the <a href="https://flatpak.org/setup/Ubuntu">Ubuntu</a> setup instructions on flathub.org, run the following commands in a Terminal.</p>
-
-
-<code>
+<p class=""><a href="https://github.com/JoseExposito/touche">Touché</a> is the desktop companion application to configure Touchégg. It’s available on <a href="https://flathub.org/apps/details/com.github.joseexposito.touche">FlatHub</a> so the next step will be to enable Flatpak on Xubuntu. We’re doing it all, right here, right now.</p><h4>Install Flatpak support in Xubuntu</h4><p class="">Following the <a href="https://flatpak.org/setup/Ubuntu">Ubuntu</a> setup instructions on flathub.org, run the following commands in a Terminal.</p><code>
 # Install Flatpak<br>
 $ sudo apt install flatpak<br><br>
 
@@ -155,15 +140,9 @@ $ sudo apt install gnome-software-plugin-flatpak<br><br>
 
 # Add the Flathub repository<br>
 $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-</code><p class="">Restart your computer once again and you’ll be ready to install Flatpaks.</p><h4>Install Touché from Flathub</h4><p class="">Final step! Click the <em>Install</em> button on <a href="https://flathub.org/apps/details/com.github.joseexposito.touche">Flathub</a> or install from the Terminal:</p>
-
-
-<code>
+</code><p class="">Restart your computer once again and you’ll be ready to install Flatpaks.</p><h4>Install Touché from Flathub</h4><p class="">Final step! Click the <em>Install</em> button on <a href="https://flathub.org/apps/details/com.github.joseexposito.touche">Flathub</a> or install from the Terminal:</p><code>
 $ flatpak install flathub com.github.joseexposito.touche
 </code><h3>Configure Your Touchpad Gestures</h3><p class="">You’ll find Touché in the application menu. Launch it and add your global and per-application gestures! Remember that Xubuntu is configured with a single workspace, so gestures to <em>Switch desktop</em> will fail until you add some additional workspaces. You can do this from Xubuntu’s <em>Workspaces</em> settings.</p>
-
-
-
 
 
 

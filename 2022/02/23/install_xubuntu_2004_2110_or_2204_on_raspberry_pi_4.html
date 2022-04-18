@@ -74,9 +74,6 @@
 
 
 
-
-
-
   
 
     
@@ -122,9 +119,6 @@
 <p class="">Download the <em>Raspberry Pi Generic (64-bit ARM) preinstalled server image</em> for your selected Ubuntu version. You should end up with a filename ending in <code>-preinstalled-server-arm64+raspi.img.xz</code></p>
 
 
-
-
-
   <a href="https://cdimage.ubuntu.com/releases/20.04/release/" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
     
   >
@@ -150,9 +144,6 @@
   </a>
 
 <h3>Prepare the SD Card</h3><p class=""><strong>Warning: The next steps will erase all content on your SD card. Be sure to confirm the device you’re overwriting to prevent wiping importing data.</strong></p><p class="">Insert your SD card into your computer. Then select your installation method below.</p><h4>Option 1. GNOME Disks</h4><p class="">If you’re installing from GNOME or Xubuntu, you already have <em>Disks</em> installed.</p><ol data-rte-list="default"><li><p class="">Select the SD card in the <em>Disks</em> sidebar.</p></li><li><p class="">Click the <em>dots</em> menu button in the upper right corner.</p></li><li><p class="">Select <em>Restore Disk Image…</em></p></li><li><p class="">Click the button next to <em>Image to Restore</em> and navigate to your <code>img.xz</code> file. Click <em>Start Restoring…</em></p></li><li><p class="">Confirm your device one last time and click <em>Restore</em>. Authenticate with your password if requested.</p></li><li><p class="">After some time, the SD card should be successfully flashed.</p></li></ol>
-
-
-
 
 
 
@@ -375,9 +366,6 @@
 <h4>Option 2. Raspberry Pi Imager</h4><p class="">Download and install the <a href="https://github.com/raspberrypi/rpi-imager">Raspberry Pi Imager</a> for Windows, macOS, or Ubuntu/Debian.</p>
 
 
-
-
-
   <a href="https://downloads.raspberrypi.org/imager/imager_latest.exe" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element"
     
   >
@@ -403,9 +391,6 @@
   </a>
 
 <p class="">Once installed, you will find <em>Imager</em> in your applications menu/launcher.</p><ol data-rte-list="default"><li><p class="">Under <em>Operating System</em>, click <em>Choose OS</em>.</p></li><li><p class="">Scroll to the bottom option, <em>Use custom</em>, and click it. Navigate to and select your <code>img.xz</code> file.</p></li><li><p class="">Click <em>Choose Storage</em> under <em>Storage</em>.</p></li><li><p class="">Carefully select your SD card from the list.</p></li><li><p class="">Click <em>Write</em>.</p></li><li><p class="">Click <em>Yes</em> on the confirmation dialog to proceed. Authenticate with your password if requested.</p></li><li><p class="">After some time, the SD card should be successfully flashed.</p></li></ol>
-
-
-
 
 
 
@@ -726,9 +711,6 @@
 
 
 
-
-
-
   
 
   
@@ -832,9 +814,6 @@
 
 
 
-
-
-
   
 
     
@@ -901,9 +880,6 @@
 
 
 
-
-
-
   
 
     
@@ -954,16 +930,10 @@
   
 
 
-<p class="">Time to run updates! Issue the following commands to fully update your device.</p>
-
-
-<code>
+<p class="">Time to run updates! Issue the following commands to fully update your device.</p><code>
 $ sudo apt update<br>
 $ sudo apt dist-upgrade
 </code><p class="">This will take a while, go make some coffee. Once updates are complete, reboot your device with <code>sudo reboot</code>. Login again and it’s time to install Xubuntu or <a href="https://unit193.net/xubuntu/">Xubuntu Core</a> with <code>desktopify</code>.</p>
-
-
-
 
 
 
@@ -1119,10 +1089,7 @@ $ sudo apt dist-upgrade
 
 
 
-<h4>Install Xubuntu with desktopify</h4><p class="">Using the patched <code>desktopify</code> script, you can now install Xubuntu or Xubuntu Core on your Raspberry Pi 4. Select one or other, but don’t try to install both. Xubuntu Core is a subset of Xubuntu, so it probably wouldn’t do anything anyway.</p><p class="">Note: The <code>—oem</code> flag is optional but recommended. Without it, you will need to change the hostname and add a new user yourself.</p>
-
-
-<code>
+<h4>Install Xubuntu with desktopify</h4><p class="">Using the patched <code>desktopify</code> script, you can now install Xubuntu or Xubuntu Core on your Raspberry Pi 4. Select one or other, but don’t try to install both. Xubuntu Core is a subset of Xubuntu, so it probably wouldn’t do anything anyway.</p><p class="">Note: The <code>—oem</code> flag is optional but recommended. Without it, you will need to change the hostname and add a new user yourself.</p><code>
 # Get the desktopify repository<br>
 $ git clone https://github.com/bluesabre/desktopify.git<br>
 <br>
@@ -1137,9 +1104,6 @@ sudo ./desktopify --de xubuntu --oem<br>
 sudo ./desktopify --de xubuntu-core --oem
 
 </code><p class="">Once this process is completed, reboot once more with <code>sudo reboot</code>. On next boot, your device will be running Xubuntu!</p>
-
-
-
 
 
 
@@ -1232,9 +1196,6 @@ sudo ./desktopify --de xubuntu-core --oem
 
 
 <h4>Post installation</h4><p class="">If you opted for the <em>OEM </em>installation option, you’ll first be greeted with the Ubiquity one-time device setup. Enter your details and wait a bit longer and you will be ready to login with your new username and password.</p>
-
-
-
 
 
 
@@ -1455,9 +1416,6 @@ sudo ./desktopify --de xubuntu-core --oem
 
 
 <p class="">If you did not use the <em>OEM</em> installation option, your password is the same as the one you set when you first started the Raspberry Pi.</p>
-
-
-
 
 
 
