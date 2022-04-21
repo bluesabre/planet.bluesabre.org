@@ -65,6 +65,116 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4/changelog">lightdm (1.30.0-0ubuntu4) hirsute</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Gunnar Hjalmarsson
+            
+            
+            <time class="post-date" datetime="2021-04-11">
+                11 Apr 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>debian/patches/fix-guest-session-ICEauthority-error.patch:
+    <ul>
+      <li>Fixes AppArmor issue which prevented access to the guest session      feature in e.g. MATE (LP: #1921655). Thanks to Jonas Wiegert for      the solution!</li>
+    </ul>
+  </li>
+  <li>debian/patches/Glibc-2.33-fix.patch:
+    <ul>
+      <li>Cherry picked from upstream to prevent FTBFS</li>
+    </ul>
+  </li>
+  <li>debian/patches/dont-turn-format-warnings-into-errors.patch:
+    <ul>
+      <li>Works around FTBFS on s390x with gcc versions higher than gcc-9.</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001029.html">xfdashboard 0.9.2 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-04-08">
+                08 Apr 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001029.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>xfdashboard-0.9.2 "Gradients! Whoohoooo!" was released on 2021-04-08.</p>
+
+<p>This is a development release.</p>
+
+<ul>
+  <li>New feature: Enhanced new color class XfdashboardGradientColor
+to support also linear gradients besided solid colors
+(single colors) and path gradients. Added support to specify
+colors for XfdashboardGradientColor in CSS.</li>
+  <li>Background fill color of XfdashboardBackground as well as outline
+color of XfdashboardOutlineEffect do support all types of new
+color class XfdashboardGradientColor, i.e solid colors, linear
+gradients and path gradients</li>
+  <li>Fix failing to create texture for outlines because either width or
+height is zero (#8)</li>
+  <li>Fix visual bug in default theme drawing wrong fill and outlines
+corners at workspace selector</li>
+  <li>Fix not to draw outlines with rounded corners if background type
+has not set rounded corners like fill background has already checked
+for years</li>
+  <li>Improved algorithm to detect application and determine its desktop
+file (*.desktop) for X11 windows by checking for the X atom called
+"_GTK_APPLICATION_ID" at X11 window properties and at Linux also
+lookup executable file from /proc filesystem in application database.
+For *BSD unixes I need help!</li>
+  <li>Disabled applications-search-provider statistics as it uses a file
+instead of settings object or similar</li>
+  <li>Smaller bug-fixes</li>
+  <li>Clean-ups</li>
+  <li>More API documentation</li>
+  <li>Updated localizations:
+  es, eu, gl, lt, nb, pt_BR, sv, tr</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001029.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog">xubuntu-artwork (21.04.1) hirsute</a></h1>
         </header>
         <header class="post-meta">
@@ -436,93 +546,6 @@ Ukrainian, Urdu (Pakistan), Urdu, Uyghur</li>
         <footer>
             
                 <a class="read-more" href="https://simon.shimmerproject.org/2021/03/23/post-4-16-fatigue-and-whats-next/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001026.html">xfce4-battery-plugin 1.1.4 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-03-23">
-                23 Mar 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001026.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Add help button to properties dialog</li>
-  <li>Drop subtitle from settings dialog</li>
-  <li>Fix labels alignment for very small panels</li>
-  <li>Fix compilation warnings</li>
-  <li>automake: INCLUDES -&gt; AM_CPPFLAGS</li>
-  <li>autoconf: Some updates</li>
-  <li>Remove unnecessary boxes</li>
-  <li>Remove GSourceFunc casts</li>
-  <li>Add new README.md, update AM_INIT_AUTOMAKE</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Update URLs from goodies.xfce.org to docs.xfce.org (Bug #16154)</li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (Canada),
-English (United Kingdom), Estonian, Finnish, French, Galician,
-German, Greek, Hebrew, Hungarian, Icelandic, Indonesian, Interlingue,
-Italian, Japanese, Kazakh, Korean, Latvian, Lithuanian, Malay,
-Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Polish,
-Portuguese, Portuguese (Brazil), Russian, Serbian, Slovak, Slovenian,
-Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu (Pakistan),
-Uyghur, Uzbek, Uzbek (Latin), Vietnamese</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001026.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.1-0ubuntu1/changelog">atril (1.24.1-0ubuntu1) hirsute</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Martin Wimpress
-            
-            
-            <time class="post-date" datetime="2021-03-22">
-                22 Mar 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.1-0ubuntu1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream maintenance release.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.1-0ubuntu1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

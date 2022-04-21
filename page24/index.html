@@ -65,6 +65,98 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001016.html">xfdashboard 0.9.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-03-05">
+                05 Mar 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001016.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>xfdashboard-0.9.0 "When I'm grown up I want to be a library" was
+released on 2021-03-05.</p>
+
+<p>This is a development release.</p>
+
+<ul>
+  <li>New feature: Introduces XfdashboardSettings as settings object for
+libxfdashboard. This is the first step to turn libxfdashboard into a
+real library and removes xfconf as dependency from it but it is still
+needed for the application and settings application to store settings
+permanently as XfdashboardSettings is just a in-memory storage.</li>
+  <li>New feature: Introduces XfdashboardPluginSettings as settings object
+for plugins like XfdashboardSettings is for the library.</li>
+  <li>Do not compile and install the "example-search-provider" plugin
+anymore but include sources and Makefile example (now called
+Makefile.am.example) in distribution file. Should make life easier for
+packagers ;) … and for users as this plugin is useless ;)</li>
+  <li>Change AppInfo to match AppStream specification (#4)</li>
+  <li>Smaller bug-fixes</li>
+  <li>More API documentation</li>
+  <li>Updated localizations</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001016.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001014.html">xfdesktop 4.14.4 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-03-04">
+                04 Mar 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001014.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is final maintenance release for the 4.14 series.</p>
+
+<ul>
+  <li>Fix Applications Menu memory leak (Bug #102)</li>
+  <li>Translation Updates:
+Amharic, Arabic, Asturian, Basque, Belarusian, Danish, English
+(Australia), English (Canada), Greek, Icelandic, Indonesian,
+Interlingue, Norwegian Nynorsk, Occitan (post 1500), Portuguese,
+Romanian, Slovenian, Uyghur, Uzbek</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001014.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001015.html">xfdashboard 0.8.1 released</a></h1>
         </header>
         <header class="post-meta">
@@ -377,72 +469,6 @@ Italian</li>
         <footer>
             
                 <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001009.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/2021/02/25/xubuntu-21-04-progress-update/">Xubuntu 21.04 Progress Update</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2021-02-25">
-                25 Feb 2021
-            </time>
-            <a href="https://bluesabre.org/2021/02/25/xubuntu-21-04-progress-update/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><img src="https://bluesabre.org/content/images/2021/02/xubuntu-development-update.png" alt="Xubuntu 21.04 Progress Update"><p>Today, February 25, 2021 marks <a href="https://wiki.ubuntu.com/FeatureFreeze">Feature Freeze</a> for the Ubuntu 21.04 <a href="https://discourse.ubuntu.com/t/hirsute-hippo-release-schedule/18539">release schedule</a>. At this point, we stop introducing new features and packages and start to focus on testing and bug fixes. Feature Freeze also marks Debian Import Freeze, which means that packages we have in common with Debian will no longer automatically sync to Xubuntu for the rest of the cycle.</p><p>This makes it a great time to update you on the goings-on in Xubuntu 21.04. So far, we have a pretty impressive list of changes, both technical and user-facing.</p><h2 id="xfce-4-16">Xfce 4.16</h2><p>The highlight of this release, of course, is <a href="https://xfce.org/about/news/?post=1608595200">Xfce 4.16</a>. Having been released in December 2020, Xfce 4.16 includes a wide variety of new features and improvements. Most visibly, Xfce has a new color palette and refreshed icons, based loosely on Adwaita. To see the new icons in action, switch to the Adwaita icon theme in the Appearance settings.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/02/upstream-icons.png" class="kg-image" alt="Xubuntu 21.04 Progress Update" loading="lazy" width="1126" height="521" srcset="https://bluesabre.org/content/images/size/w600/2021/02/upstream-icons.png 600w, https://bluesabre.org/content/images/size/w1000/2021/02/upstream-icons.png 1000w, https://bluesabre.org/content/images/2021/02/upstream-icons.png 1126w" sizes="(min-width: 720px) 720px"><figcaption>Xfce 4.16&apos;s new visual identity. A consistent set of icons based on a shared palette and design principles.</figcaption></figure><p>For a complete overview of the changes in Xfce 4.16, please check out the <a href="https://www.xfce.org/about/tour416">feature tour</a> and <a href="https://www.xfce.org/download/changelogs/4.16/">changelog</a>.</p><h2 id="ayatana-indicators">Ayatana Indicators</h2><p>We&apos;ve switched to the <a href="https://ayatanaindicators.github.io">Ayatana</a> indicator stack with the Xfce Indicator Plugin and LightDM GTK+ Greeter. Where the previous Application Indicator stack exists primarily in Ubuntu, Ayatana Indicators are cross-platform and available on Debian and elsewhere. This change may affect your indicator usage, as not all existing Application Indicators have been ported to Ayatana.</p><h2 id="new-package-additions">New Package Additions</h2><p>Xubuntu 21.04 has added <a href="https://hexchat.github.io">Hexchat</a> (<a href="https://github.com/Xubuntu/xubuntu-default-settings/issues/12">#12</a>) and <a href="https://www.nongnu.org/synaptic/">Synaptic</a> to the desktop seed. adwaita-icon-theme-full is now included to make the included Adwaita icon theme fully functional, whereas it previously didn&apos;t include a large number of icons. Finally, <a href="https://pagure.io/mlocate">mlocate</a> has been replaced with <a href="https://plocate.sesse.net">plocate</a>, which should result in even faster lookups with Catfish.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/02/xubuntu-hexchat.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.04 Progress Update" srcset="https://bluesabre.org/content/images/size/w600/2021/02/xubuntu-hexchat.png 600w, https://bluesabre.org/content/images/size/w1000/2021/02/xubuntu-hexchat.png 1000w, https://bluesabre.org/content/images/2021/02/xubuntu-hexchat.png 1440w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/02/xubuntu-synaptic.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.04 Progress Update" srcset="https://bluesabre.org/content/images/size/w600/2021/02/xubuntu-synaptic.png 600w, https://bluesabre.org/content/images/size/w1000/2021/02/xubuntu-synaptic.png 1000w, https://bluesabre.org/content/images/2021/02/xubuntu-synaptic.png 1440w" sizes="(min-width: 720px) 720px"></div></div></div><figcaption>Hexchat and Synaptic have been welcomed into the Xubuntu packageset.</figcaption></figure><h2 id="xubuntu-documentation">Xubuntu Documentation</h2><p>It&apos;s been years since we&apos;d last updated the included Xubuntu Documentation, and the latest packaged version doesn&apos;t even include the rewrite we completed last cycle. For now, here&apos;s what been updated since 18.04.</p><ul><li>Updated contributor-docs to current practice, PPAs used, and milestones vs testing weeks</li><li>Updated webchat link to accomodate the new syntax</li><li>Moved from deprecated gnome-doc-utils to itstool (LP: <a href="https://launchpad.net/bugs/1905548">#1905548</a>)</li><li>Aligned appendix-packages to seed changes</li><li>Fixed typos and linked refs</li></ul><h3 id="help-needed">Help Needed</h3><p>For the latest changes to the Xubuntu Documentation, we&apos;re looking for help! Docbook is not the most straight-forward format, and we have a lot of changes in <a href="https://drive.google.com/drive/folders/10nsLPokttFjG9g4x4mLBYNkTyO0izy5H">Google Drive</a> that need to make their way to the <a href="https://github.com/Xubuntu/xubuntu-docs/tree/docs-refresh">docs-refresh branch</a> on the Xubuntu GitHub. If you&apos;d like to help out, please join us on Freenode at <a href="https://kiwiirc.com/nextclient/chat.freenode.org/#xubuntu-devel">#xubuntu-devel</a>.</p><h2 id="settings-changes">Settings Changes</h2><h3 id="general">General</h3><ul><li>Set Gtk/CursorThemeName to DMZ-White to fix the broken mouse cursor with Snap packages (LP: <a href="https://bugs.launchpad.net/bugs/1838008">#1838008</a>)</li><li>Set window size of the file dialog to ensure it fits on screen with lower resolutions</li></ul><h3 id="panel">Panel</h3><ul><li>Removed the StatusNotifier plugin, replaced by Systray (LP: <a href="https://bugs.launchpad.net/bugs/1907871">#1907871</a>)</li><li>Replaced the separator between the clock and tray with text padding</li><li>Enabled window focus support for the PulseAudio plugin</li></ul><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/02/xubuntu-panel.png" class="kg-image" alt="Xubuntu 21.04 Progress Update" loading="lazy" width="276" height="102"><figcaption>By replacing the separators, there&apos;s no longer a mouse gap between plugins and the clock is no longer smashed against the side of the screen.</figcaption></figure><h3 id="desktop">Desktop</h3><ul><li>Removed the File System and Removable Device icons</li><li>Removed the applications menu from the right-click menu</li></ul><h3 id="file-manager">File Manager</h3><ul><li>Switched the location selector to use the pathbar layout</li><li>Enabled opening folders in a new tab with a mouse middle-click</li><li>Disabled changing the window icon for special folders (Desktop, Documents, etc)</li></ul><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/02/xubuntu-thunar.png" class="kg-image" alt="Xubuntu 21.04 Progress Update" loading="lazy" width="1440" height="900" srcset="https://bluesabre.org/content/images/size/w600/2021/02/xubuntu-thunar.png 600w, https://bluesabre.org/content/images/size/w1000/2021/02/xubuntu-thunar.png 1000w, https://bluesabre.org/content/images/2021/02/xubuntu-thunar.png 1440w" sizes="(min-width: 720px) 720px"><figcaption>Thunar with the new Pathbar layout and stable window icon.</figcaption></figure><h3 id="menu-settings-manager">Menu &amp; Settings Manager</h3><ul><li>Added Sound entry to the Settings Manager (<a href="https://github.com/Xubuntu/xubuntu-default-settings/issues/7">#7</a>)</li><li>Added Xfce Terminal to the menu (LP: <a href="https://bugs.launchpad.net/bugs/1851387">#1851387</a>)</li><li>Removed confusing Xfce Terminal Settings from the menu</li><li>Removed TexInfo and Pavucontrol from the menu (<a href="https://github.com/Xubuntu/xubuntu-default-settings/issues/6">#6</a>)</li></ul><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/02/xubuntu-settings-manager.png" class="kg-image" alt="Xubuntu 21.04 Progress Update" loading="lazy" width="1440" height="900" srcset="https://bluesabre.org/content/images/size/w600/2021/02/xubuntu-settings-manager.png 600w, https://bluesabre.org/content/images/size/w1000/2021/02/xubuntu-settings-manager.png 1000w, https://bluesabre.org/content/images/2021/02/xubuntu-settings-manager.png 1440w" sizes="(min-width: 720px) 720px"><figcaption>Xfce Settings Manager with the new Sound entry and dropdown search.</figcaption></figure><h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3><ul><li><strong>Ctrl+Alt+Delete</strong> will now display the logout dialog</li><li><strong>Ctrl+Shift+Escape</strong> will now launch the Task Manager</li><li><strong>Super+R </strong>will now launch the Application Finder</li><li><strong>Super+E</strong> and <strong>Ctrl+Alt+F</strong> will now launch the File Manager</li></ul><h2 id="and-more">And More</h2><p>With two months to go, there&apos;s still a lot of work to be done and plenty of changes coming from mainline Ubuntu as well. If you&apos;d like to join in on the fun, check out the <a href="https://xubuntu.org/contribute/">Get Involved</a> section of the Xubuntu website.</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://bluesabre.org/2021/02/25/xubuntu-21-04-progress-update/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001008.html">xfce4-panel 4.16.2 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-02-25">
-                25 Feb 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001008.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Add icons to help and about items in panel menu</li>
-  <li>Modernize documentation (developer.xfce.org)</li>
-  <li>Translation Updates:
-Croatian, Estonian, Georgian, Ukrainian</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001008.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>

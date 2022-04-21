@@ -65,6 +65,88 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-August/000885.html">tumbler 0.3.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-08-13">
+                13 Aug 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-August/000885.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release targeting xfce
+4.16pre1]</p>
+
+<ul>
+  <li>Fix jpeg thumbnail orientation when fallback code is taken place (Bug
+#28).</li>
+  <li>Use AC_CONFIG_MACRO_DIRS instead of AC_CONFIG_MACRO_DIR</li>
+  <li>Fix GTimeVal deprecation</li>
+  <li>Drop support of GLib &lt; 2.32</li>
+  <li>Use guint32 for request handle and fix its further occurrences of 0</li>
+  <li>Implement Excludes paths in tumbler.rc</li>
+  <li>Translation Updates: be, da, el, es, he, hu, hye, it, nl, pl, sq,
+zh_TW, zh_HK</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-August/000885.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-August/000884.html">xfwm4 4.15.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-08-09">
+                09 Aug 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-August/000884.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Fix an error leak in compositor (xfce/xfwm4#351)</li>
+  <li>Fix compositor selection atom misuse</li>
+  <li>Prefer zero initialized memory allocation functions</li>
+  <li>Use g_slice allocator for compositor windows</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-August/000884.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-August/000883.html">xfwm4 4.14.5 released</a></h1>
         </header>
         <header class="post-meta">
@@ -375,94 +457,6 @@ New translations: hye</li>
         <footer>
             
                 <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000879.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000877.html">xfce4-whiskermenu-plugin 2.4.6 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-07-23">
-                23 Jul 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000877.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Fix crash during grab check. (Issue #19)</li>
-  <li>Fix background incorrect without compositing.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000877.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000878.html">xfce4-timer-plugin 1.7.1 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-07-23">
-                23 Jul 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000878.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Update URLs from goodies.x.o to docs.x.o (Bug #16180)</li>
-  <li>Do not recreate box when orientation changes</li>
-  <li>Remove unused eventbox</li>
-  <li>Avoid square-sized plugin (Bug #16101)</li>
-  <li>Remove unused variables and function</li>
-  <li>Resolve GCC warning: ISO C90 forbids mixed declarations and code</li>
-  <li>Preferences: Improved spacing and layout in editor (Bug #14678)</li>
-  <li>Selecting a timer always starts it</li>
-  <li>Add Hossam Ayman's multiple timer code, some leak and g_free fixes in
-update_function.</li>
-  <li>Translation Updates:
-Albanian, Arabic, Asturian, Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (United
-Kingdom),
-Finnish, French, Galician, German, Greek, Hebrew, Hungarian,
-Icelandic,
-Indonesian, Italian, Japanese, Korean, Latvian, Lithuanian, Malay,
-Norwegian Bokmål, Occitan (post 1500), Polish, Portuguese, Portuguese
-(Brazil), Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
-Thai,
-Turkish, Uighur, Ukrainian, Urdu, Urdu (Pakistan)</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000878.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
