@@ -13,10 +13,92 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Thu, 21 Apr 2022 15:30:16 -0400</lastBuildDate>
+	<lastBuildDate>Thu, 21 Apr 2022 18:54:29 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[Xubuntu 22.04 released!]]></title>
+			<link>https://xubuntu.org/news/xubuntu-22-04-released/</link>
+			<pubDate>Thu, 21 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xubuntu Blog]]></dc:creator>
+		
+		
+			<guid>https://xubuntu.org/news/xubuntu-22-04-released/</guid>
+        
+        
+        
+        
+			<description><![CDATA[The Xubuntu team is happy to announce the immediate release of Xubuntu 22.04. Xubuntu 22.04, codenamed Jammy Jellyfish, is a long-term support (LTS) release and will be supported for 3 years, until 2025. The Xubuntu and Xfce development teams have made great strides in usability, expanded features, and additional applications in the last two years. [&#8230;]]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>The Xubuntu team is happy to announce the immediate release of Xubuntu 22.04.</p>
+
+
+
+<p>Xubuntu 22.04, codenamed <strong>Jammy Jellyfish</strong>, is a long-term support (LTS) release and will be supported for 3 years, until 2025.</p>
+
+
+
+<p>The Xubuntu and Xfce development teams have made great strides in usability, expanded features, and additional applications in the last two years. Users coming from 20.04 will be delighted with improvements found in Xfce 4.16 and our expanded application set. 21.10 users will appreciate the added stability that comes from the numerous maintenance releases that landed this cycle.</p>
+
+
+
+<p>The&nbsp;<strong>final release images</strong>&nbsp;are available as torrents and direct downloads from&nbsp;<a href="https://xubuntu.org/download/">xubuntu.org/download/</a>.</p>
+
+
+
+<p>As the main server might be busy in the first few days after the release, we recommend using the torrents if possible.</p>
+
+
+
+<p><strong>Xubuntu Core</strong>, our minimal ISO edition, is available to download from&nbsp;<a href="https://unit193.net/xubuntu/core/">unit193.net/xubuntu/core/</a>&nbsp;[<a href="http://unit193.net/xubuntu/core/xubuntu-22.04-core-amd64.iso.torrent">torrent</a>]. Find out more about Xubuntu Core&nbsp;<a href="https://unit193.net/xubuntu/">here</a>.</p>
+
+
+
+<p>We’d like to thank everybody who contributed to this release of Xubuntu!</p>
+
+
+
+<h2>Highlights and Known Issues</h2>
+
+
+
+<h3>Highlights</h3>
+
+
+
+<ul><li><strong>Mousepad 0.5.8</strong>, our text editor, broadens its feature set with the addition of session backup and restore, plugin support, and a new gspell plugin.</li><li><strong>Ristretto 0.12.2</strong>, the versatile image viewer, improves thumbnail support and features numerous performance improvements.</li><li><strong>Whisker Menu Plugin 2.7.1</strong>&nbsp;expands customization options with several new preferences and&nbsp;CSS&nbsp;classes for theme developers.</li><li><strong>Firefox</strong>&nbsp;is now included as a Snap package.</li><li>Refreshed&nbsp;<a href="https://xubuntu.github.io/xubuntu-docs/user/C/index.html">user documentation</a>, available on the ISO and online.</li><li>Six new wallpapers from the <a href="https://xubuntu.org/news/xubuntu-22-04-community-wallpaper-contest-winners/" data-type="post" data-id="5403">22.04 Community Wallpaper Contest</a>.</li></ul>
+
+
+
+<h3>Known Issues</h3>
+
+
+
+<ul><li>The shutdown prompt may not be displayed at the end of the installation. Instead you might just see a Xubuntu logo, a black screen with an underscore in the upper left hand corner, or just a black screen. Press Enter and the system will reboot into the installed environment. (LP:&nbsp;<a href="https://bugs.launchpad.net/ubuntu-release-notes/+bug/1944519">#1944519</a>)</li><li>The Firefox Snap is not currently able to open the locally-installed Xubuntu Docs. (LP: <a href="https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1967109">#1967109</a>)</li></ul>
+
+
+
+<p>For more obscure known issues, information on affecting bugs, bug fixes, and a list of new package versions, please refer to the&nbsp;<a href="https://wiki.xubuntu.org/releases/22.04/release-notes">Xubuntu Release Notes</a>.</p>
+
+
+
+<p>The main&nbsp;<a href="https://discourse.ubuntu.com/t/jammy-jellyfish-release-notes/24668">Ubuntu Rele</a>ase Notes&nbsp;cover many of the other packages we carry and more generic issues.</p>
+
+
+
+<h2>Support</h2>
+
+
+
+<p><strong>For support&nbsp;</strong>with the release, navigate to&nbsp;<a href="https://xubuntu.org/help/">Help &amp; Support</a>&nbsp;for a complete list of methods to get help.</p>]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[Xubuntu 22.04: New Since 21.10]]></title>
@@ -159,7 +241,7 @@ It features a modest set of updates for users coming from Xubuntu 21.10.]]></des
             
               
                 
-                <a data-title="Untitled by Dagat (CC-BY-4.0)" data-description="" data-lightbox-theme="dark" href="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494530781-M6AWM5XQJ9J7U01YTB7Y/Untitled_by_Mathias_Huber.jpg" role="button" class="
+                <a data-title="Untitled by Mathias Hüber (CC-BY-4.0)" data-description="" data-lightbox-theme="dark" href="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494530781-M6AWM5XQJ9J7U01YTB7Y/Untitled_by_Mathias_Huber.jpg" role="button" class="
                     image-slide-anchor
                     
                       js-gallery-lightbox-opener
@@ -170,7 +252,7 @@ It features a modest set of updates for users coming from Xubuntu 21.10.]]></des
                   
                     <span class="v6-visually-hidden">View fullsize</span>
                   
-                  <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494530781-M6AWM5XQJ9J7U01YTB7Y/Untitled_by_Mathias_Huber.jpg" data-image-dimensions="3440x2293" data-image-focal-point="0.5,0.5" alt="Untitled by Dagat (CC-BY-4.0)" data-load="false" data-image-id="62608c39ca1b543c3aacf2b8" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494530781-M6AWM5XQJ9J7U01YTB7Y/Untitled_by_Mathias_Huber.jpg?format=1000w" /><br>
+                  <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494530781-M6AWM5XQJ9J7U01YTB7Y/Untitled_by_Mathias_Huber.jpg" data-image-dimensions="3440x2293" data-image-focal-point="0.5,0.5" alt="Untitled by Mathias Hüber (CC-BY-4.0)" data-load="false" data-image-id="62608c39ca1b543c3aacf2b8" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494530781-M6AWM5XQJ9J7U01YTB7Y/Untitled_by_Mathias_Huber.jpg?format=1000w" /><br>
                 </a>
                 
               
@@ -223,7 +305,7 @@ It features a modest set of updates for users coming from Xubuntu 21.10.]]></des
             
               
                 
-                <a data-title="Untitled by Mathias Hüber (CC-BY-4.0)" data-description="" data-lightbox-theme="dark" href="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494531322-CZ1DW1UBIN3HXNG9D1W2/Untitled_by_Dagat.jpg" role="button" class="
+                <a data-title="Untitled by Dagat (CC-BY-4.0)" data-description="" data-lightbox-theme="dark" href="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494531322-CZ1DW1UBIN3HXNG9D1W2/Untitled_by_Dagat.jpg" role="button" class="
                     image-slide-anchor
                     
                       js-gallery-lightbox-opener
@@ -234,7 +316,7 @@ It features a modest set of updates for users coming from Xubuntu 21.10.]]></des
                   
                     <span class="v6-visually-hidden">View fullsize</span>
                   
-                  <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494531322-CZ1DW1UBIN3HXNG9D1W2/Untitled_by_Dagat.jpg" data-image-dimensions="4032x3024" data-image-focal-point="0.5,0.5" alt="Untitled by Mathias Hüber (CC-BY-4.0)" data-load="false" data-image-id="62608c3952996c755557a20c" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494531322-CZ1DW1UBIN3HXNG9D1W2/Untitled_by_Dagat.jpg?format=1000w" /><br>
+                  <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494531322-CZ1DW1UBIN3HXNG9D1W2/Untitled_by_Dagat.jpg" data-image-dimensions="4032x3024" data-image-focal-point="0.5,0.5" alt="Untitled by Dagat (CC-BY-4.0)" data-load="false" data-image-id="62608c3952996c755557a20c" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1650494531322-CZ1DW1UBIN3HXNG9D1W2/Untitled_by_Dagat.jpg?format=1000w" /><br>
                 </a>
                 
               
@@ -552,6 +634,52 @@ It features a modest set of updates for users coming from Xubuntu 21.10.]]></des
 
 
 <h3>Wrapping Up</h3><p class="">We hope you enjoy this new Xubuntu release! Are you interested in a <em>New Since 20.04</em> blog post? Let me know in the comments or on social media.</p><p class="">If you’d like to support me as I work on and write about Xubuntu, consider donating via GitHub Sponsors, Ko-Fi, or Patreon! Links to each can be found on my <a href="https://bluesabre.org/donate">Donate page</a>.</p><p class="">Thanks for reading and using Xubuntu!</p>]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[Xubuntu 22.04 Community Wallpaper Contest Winners]]></title>
+			<link>https://xubuntu.org/news/xubuntu-22-04-community-wallpaper-contest-winners/</link>
+			<pubDate>Thu, 21 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xubuntu Blog]]></dc:creator>
+		
+		
+			<guid>https://xubuntu.org/news/xubuntu-22-04-community-wallpaper-contest-winners/</guid>
+        
+        
+        
+        
+			<description><![CDATA[The Xubuntu team is happy to announce the results of the 22.04 community wallpaper contest! As always, we&#8217;d like to send out a huge thanks to every contestant. The Xubuntu Community Wallpaper Contest gives us a unique chance to interact with the community and get contributions from members who may otherwise not have had the [&#8230;]]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>The Xubuntu team is happy to announce the results of the 22.04 community wallpaper contest!</p>
+
+
+
+<p>As always, we&#8217;d like to send out a huge thanks to every contestant. The Xubuntu Community Wallpaper Contest gives us a unique chance to interact with the community and get contributions from members who may otherwise not have had the opportunity to join in before. With around 130 submissions, the contest garnered less interest this time around, but we still had a lot of great work to pick from. All of the submissions are browsable on the <a href="https://contest.xubuntu.org/wallpaper_contest/xubuntu-22-04-community-wallpaper-contest/?action=view">22.04 contest page at contest.xubuntu.org</a>.</p>
+
+
+
+<p>Without further ado, here are the winners:</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="1330" height="568" src="https://xubuntu.org/wp-content/uploads/2022/04/8da6/xubuntu-wallpaper-contest-winners.jpg" alt="" class="wp-image-5422"/></figure>
+
+
+
+<p>From left to right, top to bottom. Click on the links for full-size image versions.</p>
+
+
+
+<ul><li><a href="https://github.com/Xubuntu/xubuntu-community-artwork/blob/master/usr/share/xfce4/backdrops/Kanchanjunga_Peaks_by_Pushkar_Deshpande.jpg">&#8220;Kanchanjunga Peaks&#8221; by Pushkar Deshpande (CC-BY-4.0)</a></li><li><a href="https://github.com/Xubuntu/xubuntu-community-artwork/blob/master/usr/share/xfce4/backdrops/Journey_home_by_Juliette_Taka.png">&#8220;Journey home&#8221; by Juliette Taka (CC-BY-4.0)</a></li><li><a href="https://github.com/Xubuntu/xubuntu-community-artwork/blob/master/usr/share/xfce4/backdrops/Field_by_Tibor_Mokanszki.jpg">&#8220;Field&#8221; by Tibor Mokánszki (CC-BY-4.0)</a></li><li><a href="https://github.com/Xubuntu/xubuntu-community-artwork/blob/master/usr/share/xfce4/backdrops/Untitled_by_Dagat.jpg">Untitled by Dagat (CC-BY-4.0)</a></li><li><a href="https://github.com/Xubuntu/xubuntu-community-artwork/blob/master/usr/share/xfce4/backdrops/Dolomites_by_Felix_Hartlieb.jpg">&#8220;Dolomites&#8221; by Felix Hartlieb (CC-BY-4.0)</a></li><li><a href="https://github.com/Xubuntu/xubuntu-community-artwork/blob/master/usr/share/xfce4/backdrops/Untitled_by_Mathias_Huber.jpg">Untitled by Mathias Hüber (CC-BY-4.0)</a></li></ul>
+
+
+
+<p>Congratulations, and thanks for your wonderful contributions!</p>]]>
         
       </content:encoded>
 		</item>
@@ -2437,56 +2565,6 @@ Danish, Russian</li>
 		
 		
 			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-places-plugin/xfce4-places-plugin_1.8.1-1build1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>No-change rebuild against latest gdk-pixbuf</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[xfce4-mailwatch-plugin (1.3.0-0ubuntu2) jammy]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mailwatch-plugin/xfce4-mailwatch-plugin_1.3.0-0ubuntu2/changelog</link>
-			<pubDate>Sat, 12 Mar 2022 00:00:00 -0500</pubDate>
-			<dc:creator><![CDATA[Jeremy Bicha]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mailwatch-plugin/xfce4-mailwatch-plugin_1.3.0-0ubuntu2/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>No-change rebuild against latest gdk-pixbuf</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[xfce4-eyes-plugin (4.5.1-1build1) jammy]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1build1/changelog</link>
-			<pubDate>Sat, 12 Mar 2022 00:00:00 -0500</pubDate>
-			<dc:creator><![CDATA[Jeremy Bicha]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1build1/changelog</guid>
         
         
         

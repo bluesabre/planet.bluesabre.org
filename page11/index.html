@@ -65,6 +65,159 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001072.html">xfce4-whiskermenu-plugin 2.6.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-10-13">
+                13 Oct 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001072.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Fix menu not toggling. (Issue #61)</li>
+  <li>Fix small icon in multi-row panels. (Issue #37)</li>
+  <li>Fix missing minimize and maximize buttons in settings dialog.</li>
+  <li>Replace deprecated code for grab check.</li>
+  <li>Translation updates: Greek, Slovak, Spanish.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001072.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001071.html">ristretto 0.12.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-10-11">
+                11 Oct 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001071.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Dependency Changes:
+    <ul>
+      <li>libxfce4ui &gt;= 4.16.0</li>
+      <li>libxfce4util &gt;= 4.16.0</li>
+    </ul>
+  </li>
+  <li>New Features:
+    <ul>
+      <li>Allow to choose the default scale (!29)</li>
+      <li>Keep the scale in memory for each loaded image (#7, #17, !28)</li>
+      <li>Toggle fullscreen mode by double clicking on the image</li>
+    </ul>
+  </li>
+  <li>Performance Improvement:
+    <ul>
+      <li>Optimize directory loading (#20, #22, #32, #37, !31)</li>
+      <li>Optimize image viewer redraw: Disable overlay scrolling (#64)</li>
+      <li>Optimize image viewer redraw: Reuse source surface (#64, !26)</li>
+      <li>Avoid using Cairo Xlib backend to create surfaces (#60, #61,
+#62, !25)</li>
+      <li>Optimize image viewer redraw: Animation (#64)</li>
+      <li>Optimize image viewer redraw: Background color (#64)</li>
+      <li>Optimize image viewer redraw: Clock (#64)</li>
+      <li>Optimize image viewer redraw: Selection box (#64)</li>
+      <li>Don't redraw the main window when it loses focus (#64)</li>
+      <li>Remove the shadow of the toolbar buttons (#51, #64)</li>
+    </ul>
+  </li>
+  <li>Appearance Changes:
+    <ul>
+      <li>Hide thumbnail scrollbar when unused (!24)</li>
+      <li>Use the same background for the image and the thumbnails (#36,
+!23)</li>
+      <li>Drop preferences-desktop-default-applications icon</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>Flatpak build (!32)</li>
+      <li>Refactoring: Use only one file filter for the app</li>
+      <li>Refactoring: Icon bar adjustments</li>
+      <li>Cleanup: <code class="language-plaintext highlighter-rouge">icon_bar.c</code></li>
+      <li>Cleanup: Pass orientation directly from file to viewer</li>
+      <li>Code refactoring: Image viewer adjustments, scale and drawing
+(!27)</li>
+      <li>Use integers for the image rendering rectangle</li>
+      <li>Code cleanup: Build sanitation, obsolete code removal, spacing,
+normalization (!22)</li>
+      <li>Transfer contents from dispose() to finalize()</li>
+      <li>Add debugging macros</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Protect asynchronous jobs from an application exit</li>
+      <li>Fix position of the active item in the icon bar when vertical
+(#34)</li>
+      <li>Take into account the device scale (#47, !30)</li>
+      <li>Properly load images via drag and drop (#67)</li>
+      <li>Delay GdkPixbufLoader "closed" signal handler</li>
+      <li>Use the same scale factor to zoom via action and scrolling</li>
+      <li>Fix a lack of centering when zooming via the menu action</li>
+      <li>Fix some memory leak (several commits of this kind)</li>
+      <li>Fix file creation monitoring</li>
+      <li>Try to display the image on <code class="language-plaintext highlighter-rouge">GDK_PIXBUF_ERROR_CORRUPT_IMAGE</code>
+(#39)</li>
+      <li>Always set adjustment upper bounds greater than page sizes (#35)</li>
+      <li>Scaling/zoom corrections (#30, !8)</li>
+      <li>Fix animated GIF display</li>
+      <li>Automate and sanitize memory management of sources (#65)</li>
+      <li>Fix <code class="language-plaintext highlighter-rouge">rstto_icon_bar_rows_reordered()</code> (#48)</li>
+      <li>Chain up to parent in dispose() and finalize()</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
+Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
+Ukrainian, Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001071.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001070.html">xfce4-cpugraph-plugin 1.2.5 released</a></h1>
         </header>
         <header class="post-meta">
@@ -600,106 +753,6 @@ flag-support for testers</p>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.3-1/changelog">catfish (4.16.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2021-09-26">
-                26 Sep 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[ Sean Davis ]</p>
-<ul>
-  <li>New upstream release.</li>
-</ul>
-
-<p>[ Diego M. Rodriguez ]</p>
-<ul>
-  <li>d/control: drop mlocate recommends (transitional) (Closes: #992740)</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001066.html">thunar 4.17.6 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-09-26">
-                26 Sep 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001066.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<p>Yet another thunar development release, mainly to protect our testers
-from an annoying crash which can occur on clipboard operations
-(copy/paste)</p>
-
-<p>Sorry for the inconvenience &amp; happy testing !</p>
-
-<p>The changelog:</p>
-
-<ul>
-  <li>Reset sort_column if it exceeds THUNAR_N_VISIBLE_COLUMNS</li>
-  <li>Avoid many 'Failed to open directory' windows (Issue #660)</li>
-  <li>Add file &amp; folder count on the properties dialog (Issue #395)</li>
-  <li>Use basename instead of display_name for file duplication (#649)</li>
-  <li>Fix signal disconnect in thunar_window_unrealize to prevent crash</li>
-  <li>
-    <p>Don't go beyond THUNAR_N_VISIBLE_COLUMNS while parsing col widths</p>
-  </li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
-Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
-(Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
-(Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
-French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
-Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
-Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi
-(Punjabi), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
-Romanian, Serbian, Slovak, Spanish, Swedish, Telugu, Thai, Turkish,
-Urdu, Urdu (Pakistan), Uyghur, Vietnamese</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-September/001066.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
