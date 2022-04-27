@@ -13,7 +13,7 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Wed, 27 Apr 2022 15:30:17 -0400</lastBuildDate>
+	<lastBuildDate>Wed, 27 Apr 2022 18:54:30 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
@@ -2074,7 +2074,7 @@ contributions from newhoa and tux93.</p>
         
         
 			<description><![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
-contributions from <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> and <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/tux93/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tux93">@tux93</a>.</p>
+contributions from <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> and <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tux93/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tux93">@tux93</a>.</p>
 <ul>
 <li>Add audio overamplified icon</li>
 <li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
@@ -2103,7 +2103,7 @@ contributions from <a class="user-mention" data-hovercard-type="user" data-hover
           
           
           <![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
-contributions from <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> and <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/tux93/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tux93">@tux93</a>.</p>
+contributions from <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> and <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tux93/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tux93">@tux93</a>.</p>
 <ul>
 <li>Add audio overamplified icon</li>
 <li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
