@@ -54,12 +54,398 @@
             <a class="newer-posts" href="/page9" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 10 of 65 </span>
+    <span class="page-number"> Page 10 of 66 </span>
      
         <a class="older-posts" href="/page11" title="Next Page">Older Posts &raquo;</a>
      
 </nav>
     </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.8-1/changelog">mousepad (0.5.8-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2021-11-27">
+                27 Nov 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.8-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream version 0.5.8</li>
+  <li>d/control: add b-d on libgspell-1-dev for gspell plugin</li>
+  <li>d/control: update standards version to 4.6.0</li>
+  <li>split libmousepad to separate packages</li>
+  <li>d/control: build against gtksourceview 4</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.8-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001079.html">ristretto 0.12.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-11-26">
+                26 Nov 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001079.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Dependency Changes:
+    <ul>
+      <li>GLib &gt;= 2.44.0</li>
+    </ul>
+  </li>
+  <li>Performance Improvement:
+    <ul>
+      <li>Optimize sorting by content type</li>
+      <li>Load images asynchronously (#16, #29, #32, !34)</li>
+      <li>Increase image loading buffer size (!34)</li>
+    </ul>
+  </li>
+  <li>Appearance Changes:
+    <ul>
+      <li>Allow to display all files in the open dialog (!33)</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>Rework the file opening procedure (!33)</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Fix a memory leak when closing the window directly</li>
+      <li>Refactoring: Clarify thumbnailer queue management</li>
+      <li>Thumbnailer: Do not empty an unprocessed file list</li>
+      <li>Update window title on image deletion or insertion</li>
+      <li>Perform content-based filtering wherever necessary</li>
+      <li>Set device scale for animated images</li>
+      <li>Properly recognize SVG compressed image files</li>
+      <li>Use the generic pixbuf loader for RAW image files</li>
+      <li>Fix pointer behavior in fullscreen mode</li>
+      <li>Icon bar: Properly highlight item under the cursor</li>
+      <li>Icon bar: Center on the active item for any size change</li>
+      <li>Fix regression: Exif orientation is not respected (#69)</li>
+      <li>Do not try to load images whose pixbuf is not available (!34)</li>
+      <li>Fix memory management of image loading objects (!34)</li>
+      <li>Use URIs instead of filenames in the <code class="language-plaintext highlighter-rouge">.desktop</code> file (#49)</li>
+      <li>Directory loading: Allow to load a directory via the cli</li>
+      <li>Flatpak: Access remote locations with GVfs</li>
+      <li>Directory loading: Fix improper use of GFileEnumerator APIs
+(#68)</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
+Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
+Ukrainian, Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001079.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001078.html">mousepad 0.5.8 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-11-26">
+                26 Nov 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001078.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Revert "Chain-up to parent in <code class="language-plaintext highlighter-rouge">mousepad_window_scroll_event()</code>"
+(#150)</li>
+      <li>Search: Fix a memory leak</li>
+      <li>Search: Remove obsolete workaround for the document finalization</li>
+      <li>Drop restrictions on URI scheme</li>
+      <li>Update <code class="language-plaintext highlighter-rouge">POTFILES.in</code></li>
+      <li>Printing: Remove the "Page Setup" dialog (#148)</li>
+      <li>Flatpak: Complete scripts</li>
+      <li>Flatpak: Access remote locations with GVfs</li>
+      <li>Search: Fix the history cleanup</li>
+      <li>Search: Prevent GTask warnings when replacing text</li>
+      <li>Search: Ensure settings synchronization before searching</li>
+      <li>Fix translation domain in Appdata file</li>
+      <li>flatpak: Update README</li>
+      <li>flatpak: Add generic manifest and basic scripts</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
+Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+Thai, Turkish, Ukrainian, Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001078.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001077.html">thunar 4.17.7 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-11-22">
+                22 Nov 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001077.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<p>Development release on the master branch. Released now to fix some
+rather inconvenient regressions/crashes, so that early testers dont have
+to suffer from them.</p>
+
+<p>Here the complete changelog:</p>
+
+<ul>
+  <li>Use GList over gchar** for getting an uri list (Issue #684)</li>
+  <li>Prevent crash when restoring non-existing URI (Issue #684)</li>
+  <li>Regression: Can't copy and replace a directory any more (Issue #682)</li>
+  <li>'New file' dialog: Dont highlight template extension (Issue #676)</li>
+  <li>Use g_strcmp0 over strcmp to prevent crash (Issue #679)</li>
+  <li>Inherit sort column/order of new tabs from current tab (Issue #678)</li>
+  <li>Feature: Statusbar customization (Issue #666)</li>
+  <li>Add link to thunar doc. to uca chooser dialog (Issue #245)</li>
+  <li>Dont replace ACSII characters &lt; 0 for FAT filesystems (Issue #655)</li>
+  <li>Fix: Side pane tree view loading time increased (Issue #659)</li>
+  <li>Remove the <code class="language-plaintext highlighter-rouge">file://</code> prefix in the location column</li>
+  <li>Support '.' in themed desktop-file names</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
+Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+(Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
+(Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
+French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
+Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi
+(Punjabi), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
+Romanian, Serbian, Slovak, Spanish, Swedish, Telugu, Thai, Turkish,
+Urdu, Urdu (Pakistan), Uyghur, Vietnamese</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001077.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.2-1/changelog">xfce4-sensors-plugin (1.4.2-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2021-11-21">
+                21 Nov 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.2-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream version 1.4.2</li>
+  <li>d/control: update standards version to 4.6.0</li>
+  <li>update lintian overrides</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.2-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001076.html">xfce4-whiskermenu-plugin 2.7.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-11-20">
+                20 Nov 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001076.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Add showing categories as icons on top or bottom. (Issue #62)</li>
+  <li>Add hiding username. (Issue #36)</li>
+  <li>Add rounded profile picture.</li>
+  <li>Add optional AccountsService support.</li>
+  <li>Add catfish search action.</li>
+  <li>Add CSS classes for theming.</li>
+  <li>Improve search result relevance.</li>
+  <li>Make stripping release builds optional.</li>
+  <li>Rearrange settings dialog.</li>
+  <li>Remove sliding out search results.</li>
+  <li>Remove useless grab check.</li>
+  <li>Rename icon to follow reverse DNS scheme.</li>
+  <li>Replace size grip with resizing from edges.</li>
+  <li>Replace slots with lambdas.</li>
+  <li>Use original menu layout.</li>
+  <li>Use dm-tool for switching users.</li>
+  <li>Translation updates: Basque, Bulgarian, Chinese (Taiwan), Danish,
+Dutch, French, Greek, Lithuanian, Portuguese, Portuguese (Brazil),
+Slovak, Spanish, Swedish, Turkish, Ukrainian.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001076.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001075.html">xfce4-sensors-plugin 1.4.2 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-11-15">
+                15 Nov 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001075.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Besides the bug fixes and feature updates listed below, this release
+migrates the source code from C to C++ in order to increase type-safety,
+to use reference counting and containers for semi-automatic memory
+management where possible, and to slightly improve source code
+readability.</p>
+
+<ul>
+  <li>Prevent overlap of tachometer titles</li>
+  <li>Improved standalone app layout</li>
+  <li>Fix crash in hddtemp codepath with a SATA SSD drive</li>
+  <li>Increase default temperature ranges of HDDs and NVIDIA GPUs by 10℃</li>
+  <li>Remove default values from RC configuration files</li>
+  <li>Suppress title after the user adds the 1st sensor</li>
+  <li>Remove hard-coded limits restricting the maximum number of sensors</li>
+  <li>Test all possible build configurations using brute-force search</li>
+  <li>Use xfce4::connect instead of the less safe g_signal_connect</li>
+  <li>Enable lm_sensors in GitLab distcheck</li>
+  <li>Fix memory leaks</li>
+  <li>Translation Updates:
+Basque, Danish, Hebrew, Indonesian, Italian, Korean, Malay,
+Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001075.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
 
     
 
@@ -169,826 +555,13 @@
 
     
 
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_22.04/changelog">xubuntu-artwork (22.04) jammy</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2021-11-04">
-                04 Nov 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_22.04/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>debian/xubuntu-wallpapers.links:
-    <ul>
-      <li>Link to development wallpaper</li>
-    </ul>
-  </li>
-  <li>usr/share/plymouth/themes/xubuntu-text/xubuntu-text.plymouth
-    <ul>
-      <li>Bump plymouth-text version number for jammy</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_22.04/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.3-1/changelog">blueman (2.2.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Christopher Schramm
-            
-            
-            <time class="post-date" datetime="2021-10-28">
-                28 Oct 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New release</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/news/2021/10/17/xubuntu-21-10-released">Xubuntu 21.10 Released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2021-10-17">
-                17 Oct 2021
-            </time>
-            <a href="https://bluesabre.org/news/2021/10/17/xubuntu-21-10-released" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p class="">Xubuntu 21.10 "Impish Indri" was released on October 14, 2021. Check out the <a href="https://xubuntu.org/news/xubuntu-21-10-released/">release announcement</a> and <a href="https://wiki.xubuntu.org/releases/21.10/release-notes">release notes</a>. I've expanded on both below.</p><h2>New Features</h2><h3>GNOME Disk Usage Analyzer</h3><p class=""><a href="https://apps.gnome.org/app/org.gnome.baobab/">GNOME Disk Usage Analyzer</a> (baobab) scans folders, devices, and remote locations to provide an in-depth report on disk usage. It can quickly identify large files and folders wasting disk space and enable users to act on them. A tree-like and graphical representation are used to display disk usage.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/335d0e42-80e4-414f-92a7-561a25a45ed3/xubuntu-21.10-baobab.png" data-image-dimensions="1280x720" data-image-focal-point="0.5,0.5" alt="GNOME Disk Usage Analyzer being used to show disk space usage." data-load="false" data-image-id="62010fc5e3fc8e24fd1832a3" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/335d0e42-80e4-414f-92a7-561a25a45ed3/xubuntu-21.10-baobab.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">Disk Usage Analyzer makes it much easier to recover lost disk space.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<h3>GNOME Disks</h3><p class=""><a href="https://apps.gnome.org/app/org.gnome.DiskUtility/">GNOME Disks</a> provides an easy way to inspect, format, partition, and configure disks. You can view SMART data, manage devices, benchmark physical disks, and image flash drives using GNOME Disks. Another benefit is that it can mount partitions on-demand or automatically.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/82e3567a-4787-4349-ab84-aaaf0f85b680/xubuntu-21.10-disks.png" data-image-dimensions="1280x720" data-image-focal-point="0.5,0.5" alt="GNOME Disks showing the disk partition table for a thumb drive." data-load="false" data-image-id="620110613cf6a364ac6d5cfa" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/82e3567a-4787-4349-ab84-aaaf0f85b680/xubuntu-21.10-disks.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">GNOME Disks is an all-in-one solution for managing physical disks and partitions.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<h3>Rhythmbox</h3><p class=""><a href="https://wiki.gnome.org/Apps/Rhythmbox/">Rhythmbox</a> is a music-playing application. It features a media library, podcast feeds, and live internet radio stations. It integrates with the Xfce PulseAudio Plugin in Xubuntu, controlling playback and granting easy access to recent playlists. Xubuntu ships with the <a href="https://github.com/fossfreedom/alternative-toolbar">Alternative Toolbar</a> plugin enabled, making the application layout fit in with the rest of the desktop. Additionally, the Music key on multimedia keyboards will now launch Rhythmbox instead of Parole.</p>
-
-
-
-
-  
-
-  
-
-
-
-  
-    
-      
-
-        
-
-        
-
-        
-          
-            
-              
-                
-                <a data-title="Classic Layout" data-description="&lt;p class=&quot;&quot; style=&quot;white-space:pre-wrap;&quot;&gt;Rhythmbox with the “Alternative Toolbar” plugin in the classic layout.&lt;/p&gt;" data-lightbox-theme="dark" href="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237148870-ACS6D18SJIWBUL727DDY/xubuntu-21.10-rhythmbox-main-1.png" role="button" class="
-                    image-slide-anchor
-                    
-                      js-gallery-lightbox-opener
-                    
-                    content-fill
-                  "
-                >
-                  
-                    <span class="v6-visually-hidden">View fullsize</span>
-                  
-                  <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237148870-ACS6D18SJIWBUL727DDY/xubuntu-21.10-rhythmbox-main-1.png" data-image-dimensions="1280x720" data-image-focal-point="0.5,0.5" alt="Classic Layout" data-load="false" data-image-id="6201115c0bc7d027029d0fa7" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237148870-ACS6D18SJIWBUL727DDY/xubuntu-21.10-rhythmbox-main-1.png?format=1000w" /><br>
-                </a>
-                
-              
-            
-          
-
-          
-        
-
-      
-
-        
-
-        
-
-        
-          
-            
-              
-                
-                <a data-title="Alternative Toolbar Settings" data-description="&lt;p class=&quot;&quot; style=&quot;white-space:pre-wrap;&quot;&gt;If you prefer a more modern look, it is only a few clicks away.&lt;/p&gt;" data-lightbox-theme="dark" href="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237148918-NX7HMR024UUZ3NXYXADD/xubuntu-21.10-rhythmbox-alt-toolbar.png" role="button" class="
-                    image-slide-anchor
-                    
-                      js-gallery-lightbox-opener
-                    
-                    content-fill
-                  "
-                >
-                  
-                    <span class="v6-visually-hidden">View fullsize</span>
-                  
-                  <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237148918-NX7HMR024UUZ3NXYXADD/xubuntu-21.10-rhythmbox-alt-toolbar.png" data-image-dimensions="1280x720" data-image-focal-point="0.5,0.5" alt="Alternative Toolbar Settings" data-load="false" data-image-id="6201115c0f39ed3c81f2d8df" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237148918-NX7HMR024UUZ3NXYXADD/xubuntu-21.10-rhythmbox-alt-toolbar.png?format=1000w" /><br>
-                </a>
-                
-              
-            
-          
-
-          
-        
-
-      
-
-        
-
-        
-
-        
-          
-            
-              
-                
-                <a data-title="Modern Layout" data-description="&lt;p class=&quot;&quot; style=&quot;white-space:pre-wrap;&quot;&gt;Once configured with the bottom compact controls, Rhythmbox takes on a modern style.&lt;/p&gt;" data-lightbox-theme="dark" href="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237149370-IQXYMQNDTH4I3L845950/xubuntu-21.10-rhythmbox-modern.png" role="button" class="
-                    image-slide-anchor
-                    
-                      js-gallery-lightbox-opener
-                    
-                    content-fill
-                  "
-                >
-                  
-                    <span class="v6-visually-hidden">View fullsize</span>
-                  
-                  <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237149370-IQXYMQNDTH4I3L845950/xubuntu-21.10-rhythmbox-modern.png" data-image-dimensions="1280x720" data-image-focal-point="0.5,0.5" alt="Modern Layout" data-load="false" data-image-id="6201115dedb5904d238433d8" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1644237149370-IQXYMQNDTH4I3L845950/xubuntu-21.10-rhythmbox-modern.png?format=1000w" /><br>
-                </a>
-                
-              
-            
-          
-
-          
-        
-
-      
-    
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-<h3>Super Key Support</h3><p class="">The Super (or Windows) key will now reveal the application menu, similar to Windows and other desktop environments. This is possible thanks to the inclusion of <a href="https://github.com/alols/xcape">xcape</a>. xcape is used to configure modifier keys to act as other keys when pressed. For Xubuntu, the left Super key is now mapped to trigger the Ctrl+Escape key combination used for the Whisker Menu. For a peek into the technical reason for this workaround, please see the upstream <a href="https://gitlab.xfce.org/xfce/libxfce4ui/-/issues/1#note_12979">Xfce bug</a>.</p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today&#39;s <a href="https://twitter.com/Xubuntu?ref_src=twsrc%5Etfw">@Xubuntu</a> daily iso (2021-08-20) features xcape, enabling the Super key for showing the Whisker Menu.<br><br>Download here: <a href="https://t.co/dcaG1gN84b">https://t.co/dcaG1gN84b</a><br>More information: <a href="https://t.co/6fmT7DlK0j">https://t.co/6fmT7DlK0j</a> <a href="https://t.co/lQbokbqBW9">pic.twitter.com/lQbokbqBW9</a></p>&mdash; Sean Davis (@bluesabredavis) <a href="https://twitter.com/bluesabredavis/status/1428561898073698306?ref_src=twsrc%5Etfw">August 20, 2021</a></blockquote>
-<p class="">The Super key now works exactly as you'd expect.</p><h3>PipeWire</h3><p class=""><a href="https://pipewire.org/">PipeWire</a> is now included in Xubuntu and the other flavors. PipeWire is a project that improves audio and video handling in Linux. It is used alongside PulseAudio to significantly improve hardware support, particularly for Bluetooth audio devices. For regular usage, PipeWire quietly works in the background. Audio devices are still controlled through the Xfce PulseAudio Plugin and PulseAudio Volume Control (pavucontrol).</p><h2>Pidgin Removal</h2><p class=""><a href="https://pidgin.im/">Pidgin</a>, “the universal chat client,” is no longer included in Xubuntu. Due to an increasing number of chat services moving to proprietary and restricted protocols, the overall usefulness of Pidgin has diminished significantly over the years. However, if you still use Pidgin, it can be installed from the repository.</p><p class=""><a href="https://latenightlinux.com/late-night-linux-extra-episode-32/">Late Night Linux Extra episode 32</a> featured <a href="https://reaperworld.com/">Gary Kramlich</a>, the lead Pidgin maintainer. In this episode, Gary explained that while many of these services are no longer available within Pidgin by default, existing plugins enable support for those services. Unfortunately, many plugins change rapidly, making it impossible to keep them packaged and up-to-date in Ubuntu.</p><h2>UX Updates</h2><p class="">In continuing our keyboard shortcut clean-up, the long-obsoleted Super+{1,2,3,4} shortcuts were removed. These shortcuts go way back to when Xubuntu had a two-panel layout and launched the first four pinned applications. For a complete list of keyboard shortcuts, <a href="https://wiki.xubuntu.org/releases/21.10/keyboard-shortcuts">click here</a>.</p><p class="">We also made a minor change to our Thunar defaults, updating the title bar to always display the full path of the current directory. This should make navigating and managing the filesystem easier with multiple open windows.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/76710b43-cf09-4c43-b121-ec22a050cd4b/xubuntu-21.10-thunar.png" data-image-dimensions="1280x720" data-image-focal-point="0.5,0.5" alt="Thunar File Manager showing a directory seven directories deep." data-load="false" data-image-id="6201133be0e2b44d94f3f7ca" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/76710b43-cf09-4c43-b121-ec22a050cd4b/xubuntu-21.10-thunar.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">Go layers deep in your filesystem and never forget where you are with the full path displayed in Thunar at all times.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<h2>About the Xubuntu Versions</h2><p class="">Xubuntu has three installable versions. Using the <a href="https://xubuntu.org/download/">main ISO</a> (2.0G), you can pick from the Normal or Minimal installation option, whereas <a href="https://unit193.net/xubuntu/core/">Xubuntu Core</a> (1.0G) will result in a much smaller installation size. Normal includes everything you need to be productive and have fun with Xubuntu. Meanwhile, Minimal and Core are designed to provide the bare essentials, enabling you to tailor Xubuntu to your needs.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/b4ea244b-2af8-4c53-9133-77203b8f396c/xubuntu-21.10-installer.png" data-image-dimensions="1280x720" data-image-focal-point="0.5,0.5" alt="Xubuntu installer showing installation options." data-load="false" data-image-id="620113a20aad284715226561" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/b4ea244b-2af8-4c53-9133-77203b8f396c/xubuntu-21.10-installer.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">When installing from the main ISO, you have an option to perform a "Normal" or "Minimal" installation.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class="">Core and Minimal seem to have the same purpose, but Core has a few advantages. For one, the download size is much smaller and more accessible for those with limited connectivity options. Second, the install size is quite a bit smaller due to how the different versions work. Core installs only the minimal set of packages. Minimal first installs the Normal Xubuntu version and then removes the excess packages. Unfortunately, it’s impossible to reliably identify and remove all of the extra packages, so you end up with another 1.0G of bloat.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/af042f20-2ed9-48bc-be7e-d80d474db714/xubuntu-versions.png" data-image-dimensions="435x85" data-image-focal-point="0.5,0.5" alt="A small chart showing disk and memory usage differences for each Xubuntu version." data-load="false" data-image-id="620113fc3c229f6f8ebe95f7" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/af042f20-2ed9-48bc-be7e-d80d474db714/xubuntu-versions.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">Save nearly 2.0G of disk space by opting for the Xubuntu Core version.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class="">You can learn more about Xubuntu Core <a href="https://unit193.net/xubuntu/">here</a> or view the spreadsheet I put together with the package and memory differences <a href="https://docs.google.com/spreadsheets/d/13hJ1hvU8gPouxpUycvlESW-xQqJaKUq-xQFjHXY_umU/edit#gid=1201272180">here</a>.</p><h2>Wrapping Up</h2><p class="">Xubuntu 21.10 features the work of numerous contributors from the Xfce, GNOME, MATE, Ubuntu, and Debian communities. If you'd like to contribute, check out the following links:</p><ul data-rte-list="default"><li><p class=""><a href="https://xfce.org/getinvolved">Xfce</a></p></li><li><p class=""><a href="https://www.gnome.org/get-involved/">GNOME</a></p></li><li><p class=""><a href="https://mate-desktop.org/">MATE</a></p></li><li><p class=""><a href="https://xubuntu.org/contribute/">Xubuntu</a></p></li><li><p class=""><a href="https://www.debian.org/devel/join/">Debian</a></p></li></ul><p class="">Next up, we have the 22.04 "<a href="https://www.omgubuntu.co.uk/2021/10/ubuntu-22-04-codename-jammy-jellyfish">Jammy Jellyfish</a>" LTS cycle. The next six months will be focused primarily on bug fixes and other improvements, building a solid LTS foundation for the next three years. As it is an LTS, we'll be running a Wallpaper Contest again, so keep an eye on the Xubuntu <a href="https://xubuntu.org/">website</a> and <a href="https://twitter.com/Xubuntu">Twitter</a> for updates.</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://bluesabre.org/news/2021/10/17/xubuntu-21-10-released">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001073.html">xfce4-terminal 0.9.0 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-10-16">
-                16 Oct 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001073.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>This is a development release.</p>
-
-<ul>
-  <li>Replace the deprecated GtkActionEntries with XfceGtkActionEntries
-(Issue #79)</li>
-  <li>Opening a dialog from a drop-down window closes the window (Issue
-#136)</li>
-  <li>Add <code class="language-plaintext highlighter-rouge">Fill</code> background image style (MR !23).</li>
-  <li>Improved options parsing (for both short and long forms)</li>
-  <li>Add a menu entry to send signals to the foreground process (Issue
-#59)</li>
-  <li>Fix <code class="language-plaintext highlighter-rouge">keep window open</code> preference being applied on restart.</li>
-  <li>Rework "–tab" and "–window" behavior (Issue #13)</li>
-  <li>Ignore unused modifiers for scroll wheel zooming</li>
-  <li>Add alternative shortcuts for zooming (Issue #126)</li>
-  <li>Expand scrolled window and make dialog size 70% of parent (!17)</li>
-  <li>Support libxfce4ui XfceTitledDialog new API</li>
-</ul>
-
-<p>Unsafe Paste Dialog:</p>
-<ul>
-  <li>Update unsafe paste dialog text (Issue #73)</li>
-  <li>Fix paste button focus</li>
-  <li>Replace subtitle by infobar for Unsafe paste dialog</li>
-  <li>Fix the <code class="language-plaintext highlighter-rouge">unsafe paste</code> dialog to actually paste</li>
-</ul>
-
-<p>Cleanup:</p>
-<ul>
-  <li>Update <code class="language-plaintext highlighter-rouge">.gitignore</code>, HACKING, AUTHORS, COPYRIGHTS</li>
-  <li>Update –preferences, –tab and –window documentation</li>
-  <li>Fix various typos</li>
-  <li>Fix compilation warnings</li>
-  <li>Remove unnecessary function call (!24)</li>
-</ul>
-
-<p>Temporary changes (will be changed before the final release):</p>
-<ul>
-  <li>Add a "Do not warn me again" checkbox for the "Unsafe Paste" dialog
-(Issue #129)</li>
-</ul>
-
-<p>Translation Updates:
-  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-  Dutch, Eastern Armenian, English (Australia), English (United
-  Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-  Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
-  1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
-  Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
-  Ukrainian, Uyghur</p>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-October/001073.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://xubuntu.org/news/xubuntu-21-10-released/">Xubuntu 21.10 released!</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xubuntu Blog
-            
-            
-            <time class="post-date" datetime="2021-10-15">
-                15 Oct 2021
-            </time>
-            <a href="https://xubuntu.org/news/xubuntu-21-10-released/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>The Xubuntu team is happy to announce the immediate release of Xubuntu 21.10.</p>
-
-
-
-<p>Xubuntu 21.10, codenamed <strong>Impish Indri</strong>, is a regular release and will be supported for 9 months, until June 2022. If you need a stable environment with longer support time we recommend that you use <a style="" href="https://xubuntu.org/release/20-04/">Xubuntu 20.04 LTS</a> instead.</p>
-
-
-
-<p>The <strong>final release images</strong> are available as torrents and direct downloads from <a href="https://xubuntu.org/download/">xubuntu.org/download/</a>.</p>
-
-
-
-<p>As the main server might be busy in the first few days after the release, we recommend using the torrents if possible.</p>
-
-
-
-<p><strong>Xubuntu Core</strong>, our minimal ISO edition, is available to download from <a style="" href="https://unit193.net/xubuntu/core/">unit193.net/xubuntu/core/</a>&nbsp;[<a href="http://unit193.net/xubuntu/core/xubuntu-21.10-core-amd64.iso.torrent">torrent</a>]. Find out more about Xubuntu Core&nbsp;<a style="" href="https://unit193.net/xubuntu/">here</a>.</p>
-
-
-
-<p>We&#8217;d like to thank everybody who contributed to this release of Xubuntu!</p>
-
-
-
-<h2 id="mce_5">Highlights and Known Issues</h2>
-
-
-
-<h3 id="mce_6">Highlights</h3>
-
-
-
-<ul><li><strong>New Software:</strong> Xubuntu now comes pre-installed with GNOME Disk Analyzer, GNOME Disk Utility, and Rhythmbox. Disk Analyzer and Disk Utility make it easier to monitor and manage your partitions. Rhythmbox enables music playback with a dedicated media library.</li><li><strong>Pipewire:</strong> Pipewire is now included in Xubuntu, and is used in conjunction with PulseAudio to improve audio playback and hardware support in Linux.</li><li><strong>Keyboard Shortcuts:</strong> The Super (Windows) key will now reveal the applications menu. Existing Super+ keyboard shortcuts are unaffected.</li></ul>
-
-
-
-<h3 id="mce_8">Known Issues</h3>
-
-
-
-<ul><li>The shutdown prompt may not be displayed at the end of the installation. Instead you might just see a Xubuntu logo, a black screen with an underscore in the upper left hand corner, or just a black screen. Press Enter and the system will reboot into the installed environment. (LP: <a href="https://bugs.launchpad.net/ubuntu-release-notes/+bug/1944519">#1944519</a>)</li></ul>
-
-
-
-<p>For more obscure known issues, information on affecting bugs, bug fixes, and a list of new package versions, please refer to the <a href="https://wiki.xubuntu.org/releases/21.10/release-notes" target="_blank" rel="noreferrer noopener">Xubuntu Release Notes</a>.</p>
-
-
-
-<p>The main <a rel="noreferrer noopener" href="https://discourse.ubuntu.com/t/impish-indri-release-notes/21951" target="_blank">Ubuntu Release Notes</a> cover many of the other packages we carry and more generic issues.</p>
-
-
-
-<h2 id="mce_11">Support</h2>
-
-
-
-<p><strong>For support</strong> with the release, navigate to <a href="https://xubuntu.org/help/">Help &amp; Support</a> for a complete list of methods to get help.</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://xubuntu.org/news/xubuntu-21-10-released/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.1-1/changelog">xfce4-whiskermenu-plugin (2.6.1-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2021-10-15">
-                15 Oct 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.1-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream version 2.6.1</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.1-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.7-2ubuntu1/changelog">pidgin (1:2.14.7-2ubuntu1) jammy</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Gianfranco Costamagna
-            
-            
-            <time class="post-date" datetime="2021-10-15">
-                15 Oct 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.7-2ubuntu1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Minimize delta with Debian: remaining changes:
-    <ul>
-      <li>Bump epoch (change committed on git)</li>
-      <li>add unity integration</li>
-      <li>make libpurple-dev multiarch (not tagged ad such since      it still requires work on plugins)</li>
-      <li>update preferences file.</li>
-      <li>add Ubuntu patches:
-        <ul>
-          <li>04_let_crasher_for_apport.patch</li>
-          <li>05_default_to_irc_ubuntu_com.patch</li>
-          <li>10_docklet_default_off.patch</li>
-          <li>11_buddy_list_really_show.patch</li>
-          <li>13_sounds_and_timers.patch</li>
-          <li>60_1024x600_gtkpounce.c.patch</li>
-          <li>60_1024x600_gtkprefs.c.patch</li>
-          <li>pounce-webview.patch</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.7-2ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
     <nav class="pagination" role="pagination">
     
         
             <a class="newer-posts" href="/page9" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 10 of 65 </span>
+    <span class="page-number"> Page 10 of 66 </span>
      
         <a class="older-posts" href="/page11" title="Next Page">Older Posts &raquo;</a>
      

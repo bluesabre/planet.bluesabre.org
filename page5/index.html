@@ -54,12 +54,271 @@
             <a class="newer-posts" href="/page4" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 5 of 65 </span>
+    <span class="page-number"> Page 5 of 66 </span>
      
         <a class="older-posts" href="/page6" title="Next Page">Older Posts &raquo;</a>
      
 </nav>
     </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001096.html">xfdashboard 0.9.90 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2022-03-04">
+                04 Mar 2022
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001096.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>xfdashboard-0.9.90 "Before it is too late" was released on 2022-03-04.</p>
+
+<p>This is a release candidate for upcoming stable version 1.0.0.</p>
+
+<ul>
+  <li>New feature: Added a new property "visibility", which is stylable,
+to XfdashboardActor, so each actor inherits this new stylable
+property. This stylable property controls if an actor should be
+visible if requested to using clutter_actor_show(). Setting
+"visibility" to false is similar to "display: none;" for CSS of
+HTML while setting it to true will allow the actor to be shown.</li>
+  <li>Fixed compiler warning about "'<em>_atomic_load' discards 'volatile'
+qualifier" in g_once</em>* functions of Glib which was changed in
+releases since 2.66.3</li>
+  <li>Prepared for newer libxfce4util (version 4.17.2 or higher) which
+changed function xfce_append_quoted to xfce_g_string_append_quoted</li>
+  <li>Updated translations:
+be, bg, ca, da, de, el, es, et, eu, fr, gl, he, id, it, ja, ko, lt,
+nb, nl, pl, pt, pt_BR, ru, sl, sq, sr, sv, tr, zh_CN</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001096.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001097.html">xfce4-terminal 0.9.2 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2022-03-04">
+                04 Mar 2022
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001097.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h1 id="092">0.9.2</h1>
+<p>This is a RELEASE CANDIDATE for 1.0.0. If you want to help keep
+xfce4-terminal
+bug-free you can test this release and report any problems you
+encounter.</p>
+
+<p>DEPENDENCIES UPDATED:</p>
+<ul>
+  <li>VTE: 0.51.3</li>
+  <li>Xfce-libs: 4.16.0</li>
+</ul>
+
+<p>General Improvements:</p>
+<ul>
+  <li>Use XfceTitledDialog for <code class="language-plaintext highlighter-rouge">Find</code> (Issue #168)</li>
+  <li>Include '\r' in unsafe-paste checks</li>
+  <li>Update tab accelerators at runtime</li>
+  <li>Consume events that activate accelerator callbacks (Issues #159 #153)</li>
+</ul>
+
+<p>Shortcuts editor (depends on libxfce4ui 4.17):</p>
+<ul>
+  <li>Center on the active terminal window.</li>
+  <li>Change handling of goto-tab accelerators so they can be changed
+through the editor.</li>
+</ul>
+
+<p>Regressions fixed:</p>
+<ul>
+  <li>Menubar changes size when the window is maximized (Issue #156)</li>
+  <li>Context Menu: Revert changes in order and contents introduced by the
+transition to XfceGtkActionEntries</li>
+  <li>Add "Show Window Borders" entry in View menu (it was missing in the
+last 2 dev releases)</li>
+  <li>Revert view menu order (Zoom entries below checkboxes)</li>
+  <li>Fix the visibility flag of the scrollbar (Issue #161, could lead to
+broken themes)</li>
+</ul>
+
+<p>Other:</p>
+<ul>
+  <li>Replace GTimeVal with gint64</li>
+  <li>Fix build warnings</li>
+  <li>Update Copyright</li>
+</ul>
+
+<p>Translation Updates:
+  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+  Dutch, Eastern Armenian, English (Australia), English (United
+  Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+  Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+  1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
+  Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
+  Ukrainian</p>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001097.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001095.html">xfce4-diskperf-plugin 2.7.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2022-03-03">
+                03 Mar 2022
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001095.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Enable high-frequency tooltip updates</li>
+  <li>Remove rounding to multiples of 5 MiB/s</li>
+  <li>Change default maximum I/O bandwidth from 40 MiB/s to 1024 MiB/s</li>
+  <li>Adjust tooltip spacing</li>
+  <li>Update and sort the list of authors</li>
+  <li>Bump required GTK+ version to 3.16</li>
+  <li>Update README</li>
+  <li>Reformat copyright notices</li>
+  <li>Update configuration files</li>
+  <li>Fix compilation warnings</li>
+  <li>Code cleanups</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (Canada),
+English (United Kingdom), French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Italian, Japanese, Korean, Latvian,
+Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500), Panjabi
+(Punjabi), Polish, Portuguese, Portuguese (Brazil), Russian, Serbian,
+Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu,
+Urdu (Pakistan), Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001095.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://xubuntu.org/news/xubuntu-22-04-community-wallpaper-contest/">Xubuntu 22.04 Community Wallpaper Contest</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xubuntu Blog
+            
+            
+            <time class="post-date" datetime="2022-02-25">
+                25 Feb 2022
+            </time>
+            <a href="https://xubuntu.org/news/xubuntu-22-04-community-wallpaper-contest/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>We’re on our way to the 22.04 LTS release and it’s time for another community wallpaper contest!</p>
+
+
+
+<h2>How to participate?</h2>
+
+
+
+<p>For a chance to win, submit your submission at&nbsp;<a href="https://contest.xubuntu.org/">contest.xubuntu.org</a>.</p>
+
+
+
+<h3>Important dates</h3>
+
+
+
+<ul><li><strong>Start of submissions:</strong>&nbsp;Immediately</li><li><strong>Submission deadline:</strong>&nbsp;March 12th, 2022</li><li><strong>Announcement of selections:</strong>&nbsp;Late March</li></ul>
+
+
+
+<p>All dates are in UTC.</p>
+
+
+
+<h3>Contest terms</h3>
+
+
+
+<p>All submissions must adhere to the&nbsp;<a href="http://contest.xubuntu.org/terms">Terms and Guidelines</a>, including specifics about subject matter, image resolution and attribution.</p>
+
+
+
+<p>After the submission deadline, the Xubuntu team will pick 6 winners from all submissions for inclusion on the Xubuntu 22.04 ISO, and will also be available to other Xubuntu version users as a xubuntu-community-wallpaper package. The winners will also receive some Xubuntu stickers.</p>
+
+
+
+<h3>Any questions?</h3>
+
+
+
+<p>Please join <strong>#xubuntu-devel</strong> on Libera for assistance or email the <a href="https://lists.ubuntu.com/mailman/listinfo/xubuntu-devel">Xubuntu developer mailing list</a> if you have any problems with your submission.</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://xubuntu.org/news/xubuntu-22-04-community-wallpaper-contest/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
 
     
 
@@ -2038,156 +2297,13 @@ $ flatpak install flathub com.github.joseexposito.touche
 
     
 
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.3-1/changelog">xfce4-sensors-plugin (1.4.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2022-02-15">
-                15 Feb 2022
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 1.4.3.</li>
-  <li>d/README.Debian: Drop, no longer useful.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notifyd/xfce4-notifyd_0.6.3-1/changelog">xfce4-notifyd (0.6.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2022-02-15">
-                15 Feb 2022
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notifyd/xfce4-notifyd_0.6.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 0.6.3.</li>
-  <li>d/control: Bump DH compat to 13.</li>
-  <li>d/rules: Drop ‘–as-needed’, default in stable now.</li>
-  <li>Update Standards-Version to 4.6.0.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notifyd/xfce4-notifyd_0.6.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.6-1/changelog">xfce4-cpugraph-plugin (1.2.6-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2022-02-15">
-                15 Feb 2022
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.6-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 1.2.6.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.6-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.7-1/changelog">xfce4-cpufreq-plugin (1.2.7-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2022-02-15">
-                15 Feb 2022
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.7-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 1.2.7.</li>
-  <li>d/docs: Follow rename, README → README.md.</li>
-  <li>d/rules: Add -lpthread to LDFLAGS, drop –as-needed.</li>
-  <li>Update Standards-Version to 4.6.0.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.7-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
     <nav class="pagination" role="pagination">
     
         
             <a class="newer-posts" href="/page4" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 5 of 65 </span>
+    <span class="page-number"> Page 5 of 66 </span>
      
         <a class="older-posts" href="/page6" title="Next Page">Older Posts &raquo;</a>
      

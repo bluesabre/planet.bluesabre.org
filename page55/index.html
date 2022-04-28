@@ -54,12 +54,413 @@
             <a class="newer-posts" href="/page54" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 55 of 65 </span>
+    <span class="page-number"> Page 55 of 66 </span>
      
         <a class="older-posts" href="/page56" title="Next Page">Older Posts &raquo;</a>
      
 </nav>
     </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_1.8.15-1/changelog">thunar (1.8.15-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-06-20">
+                20 Jun 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_1.8.15-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+  <li>New upstream version 1.8.15.</li>
+  <li>d/libthunarx-3-0.symbols: Set Build-Depends-Package.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_1.8.15-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2020/06/18/why-bountysource-why/">Why Bountysource? Why?</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon Steinbeiß
+            
+            
+            <time class="post-date" datetime="2020-06-18">
+                18 Jun 2020
+            </time>
+            <a href="https://simon.shimmerproject.org/2020/06/18/why-bountysource-why/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h4>TL;DR</h4>
+<ol>
+<li>No more Xfce bugs on Bountysource.com (no support for GitLab)</li>
+<li>All remaining bug bounties returned to original backers</li>
+<li>Xfce Team account on Bountysource remains intact for now (including all donations so far)</li>
+</ol>
+<h3>Some background</h3>
+<p>When we kicked off Bountysource as one way to contribute to Xfce financially, this platform really seemed to be in a different place. It supported a multitude of bugtrackers (including our own, now archived, Bugzilla instance) and the web interface was frankly much more reliable.</p>
+<p><img class="alignleft size-full wp-image-358" src="http://simon.shimmerproject.org/wp-content/uploads/2020/06/bountysource.png" alt="" width="280" height="80" /></p>
+<p>When Bountysource decided to change its Terms of Service yesterday (note: the ToS change has been withdrawn since) this was a bit of a wake-up call for us. Let me briefly summarize: All uncollected bounties would after a fixed amount of time would have been withdrawn and the money retained by Bountysource. I can only presume that the business model of the platform is seriously struggling if such a drastic measure is imposed on the community when at the same time the fee of withdrawing/collecting bounties is at a not exactly unconsiderable 10%.</p>
+<p>This all comes also after a so-called &#8220;inactivity fee&#8221; was introduced in 2018, which already felt strange and made me wonder what Bountysource does with all the money it holds for its users to justify such a fee. (Just putting the money in a regular bank account while holding on to it would earn you a little interest, as opposed to costing you &#8211; inflation ignored).</p>
+<p>In any case, even if my reasoning above is not sound, we took the decision to disable bug bounties for Xfce starting now. This is the only reasonable step because GitLab is not supported, so we don&#8217;t have any way of updating our issues or confirming that they were closed (GitHub is the only supported platform these days).</p>
+<p>The Bountysource Support team confirmed that all existing bug bounties will be returned to the original backers by them.</p>
+<p>Please note that this change does not affect the Xfce Team account. We haven&#8217;t decided what our next step will be there but for the time being we will leave things as they are. So you can still donate to the Team and we can withdraw that money to use it for the project (footnote: we have not withdrawn anything so far).</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://simon.shimmerproject.org/2020/06/18/why-bountysource-why/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000867.html">xfdesktop 4.15.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-06-18">
+                18 Jun 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000867.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is a development release of Xfdesktop aiming the upcoming release
+of Xfce 4.16.</p>
+
+<ul>
+  <li>Pull in new fallback icon from Adwaita</li>
+  <li>Add new app icon and switch to rDNS icon name</li>
+  <li>Avoid redundant calls to backdrop_changed_cb (Bug #16773)</li>
+  <li>Move from exo-csource to xdt-csource (Bug #16717)</li>
+  <li>Increase minimum desktop icon size to 16 (Bug #16667)</li>
+  <li>Correct spelling of file system (Bug #16543)</li>
+  <li>Increase desktop icon increments to 2 (Bug #16668)</li>
+  <li>Unselect all items after single click activation</li>
+  <li>Fix memory leak when reconnecting DP monitor (Bug #16314)</li>
+  <li>Fix regression caused by (Bug #16342)</li>
+  <li>Fix transparent background color (Bug #16380)</li>
+  <li>Add Shift+Ctrl+N keybinding for Create Folder (Bug #15660)</li>
+  <li>Ignore modifier key events in type-ahead find (Bug #11149)</li>
+  <li>Added type-ahead find for Desktop icons (Bug #11149)</li>
+  <li>Do not insert hyphens at intra-word line breaks (Bug #16339)</li>
+  <li>Replace deprecated G_FILE_MONITOR_EVENT_MOVED (Bug #16342)</li>
+  <li>Translation Updates: Albanian, Amharic, Arabic, Armenian (Armenia),
+Basque, Belarusian, Belarusian (Tarask), Bulgarian, Catalan, Chinese
+(China), Chinese (Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, English (Australia), English (Canada), English (United Kingdom),
+Estonian, Finnish, French, Galician, Georgian, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian Nynorsk,
+Occitan (post 1500), Persian (Iran), Polish, Portuguese, Portuguese
+(Brazil), Romanian, Russian, Serbian, Slovak, Slovenian, Spanish,
+Swedish, Thai, Turkish, Uighur, Ukrainian, Uzbek</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000867.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000866.html">thunar 4.15.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-06-18">
+                18 Jun 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000866.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is a development release of Thunar aiming the upcoming release of
+Xfce 4.16.</p>
+
+<p>As you may have noticed, Thunar's versioning scheme changed to follow
+the format adopted by other Xfce core components. We hope this doesn't
+cause any problem for packagers (since 4.15.0 &gt; 1.8.15) and simplifies
+how to reason about compatibility between components.</p>
+
+<p>This release includes all fixes and improvements present in Thunar 1.8.x
+plus the changes listed below. Before going into details, I would like
+to thank the usual hard work of translators and the many contributions
+from Theo, Reuben, Cyrille and Yousuf, thank you all, we really
+appreciate your efforts.</p>
+
+<p>Oh, with regards stability, it's pretty good, I've been using git master
+for while now, but due big changes carried by Alexander (in preparation
+for gtk4 and making the code easier to maintain) expect a couple of
+rough edges.
+We hope to get feedback (and bug reports) from early adopters as soon as
+possible in order to fix all regressions in time for Xfce 4.16 ;)</p>
+
+<ul>
+  <li>Fix unavailable rubber banding in detailed view (Issue #326)</li>
+  <li>Context menu entries in Thunar flutter while downloading (Issue #276)</li>
+  <li>Improve cusor handling after file deletion in thunar (Issue #69)</li>
+  <li>Fix regression: Trying to open a .desktop file from the context menu
+leads to the execution of the file (Issue #325)</li>
+  <li>Use numbering on label "open new window/tab" only for multiple
+windows/tabs
+(MR #15)</li>
+  <li>Remove "Sort by" and "View as" from menu item labels (Issue #247)</li>
+  <li>Add new app icon and switch to rDNS icon name (MR #11)</li>
+  <li>Replace deprecated GtkActionEntry with XfceGtkActionEntry (Issue
+#293)</li>
+  <li>Menus are now updated when selection changes not only when opened
+(Issue #293)</li>
+  <li>Merge all file-context-menus into one (Issue #198)</li>
+  <li>Ghost file ocasionally remains when dropping file into directory
+(Fixes #312)</li>
+  <li>Use XfceFilenameInput to validate long filenames (Bug #13720)</li>
+  <li>Support for variables like $HOME in address bar (Bug #12165)</li>
+  <li>Fix eject button click detection when using RTL languages (Bug
+#11387)</li>
+  <li>Remove upper case from group names in shortcuts view</li>
+  <li>Option to rename a file when existing copy conflicts (Bug #16686)</li>
+  <li>Remove suffix "- FileManager" from window title</li>
+  <li>Move from exo-csource to xdt-csource (Bug #16717)</li>
+  <li>Pause button on copy/move (Bug #16685)</li>
+  <li>Allow drag-and-drop of multiple files in icon view (Bug #2487)</li>
+  <li>Add keywords to .desktop files to thunar (Bug #16618)</li>
+  <li>Reduce vertical space in Templates info popup</li>
+  <li>Hide android phone from network group (Bug #11584)</li>
+  <li>Reduce size of Templates info popup</li>
+  <li>Do not add "cant-write" emblem to files in the Trash</li>
+  <li>Hide Browse Network entry in shortcuts view if not supported</li>
+  <li>Move 'network' to the bottom of tree view (Bug #16516)</li>
+  <li>Add examples to "Select by Pattern" dialog (Bug #16587)</li>
+  <li>Improve tooltips in shortcuts view (Bug #16566)</li>
+  <li>Rename "Disconnect" context menu entry in side pane (Bug #16558)</li>
+  <li>Make path entry matching case-insensitive (Bug #12747)</li>
+  <li>Add new bookmarks to bottom of list in shortcuts view (Bug #16526)</li>
+  <li>Move places above devices in shortcuts view (Bug #11586)</li>
+  <li>Add desktop actions for home, computer and trash (Bug #16497)</li>
+  <li>Option to use static icon instead of folder icon (Bug #16501)</li>
+  <li>Remove top level desktop entry from tree view (Bug #16474)</li>
+  <li>Easy access to computer:/// (Bug #16472)</li>
+  <li>Use libxfce4ui close-multiple-tab dialog (Bug #16254)</li>
+  <li>Replace deprecated G_FILE_MONITOR_EVENT_MOVED (Bug #16328)</li>
+  <li>Use symbolic icon for eject (Bug #16281)</li>
+  <li>Prevent ghost files after "move" on remote locations (Bug #15704)</li>
+  <li>Add a confirmation dialog when closing a window with multiple open
+tabs.</li>
+  <li>Improve explanation string for "invert selection" action (Bug #15625)</li>
+  <li>Improve layout of Permissions tab (Bug #15557)</li>
+  <li>Remove superfluous shell script "ThunarBulkRename" (Bug #15373)</li>
+  <li>Make labels in permissions chooser wrap</li>
+  <li>Add a small delay when dismissing notifications (Bug #14552)</li>
+  <li>File / Folder size text in statusbar sometimes is ambiguous (Bug
+#14203)</li>
+  <li>Add missing parameter to ThunarBrowserPokeDeviceFunc function</li>
+  <li>Add property to enable/disable frames on thumbnails (Bug #14433)</li>
+  <li>Improved spacing between widgets in Properties and Preferences
+dialogs</li>
+  <li>Fixed numerous compiler warnings</li>
+  <li>Fixed numerous warning and critical messages</li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Asturian,
+Basque, Belarusian, Bengali, Bulgarian, Catalan, Chinese (China),
+Chinese (Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch,
+Eastern Armenian, English (Australia), English (United Kingdom),
+Esperanto, Estonian, Finnish, French, Galician, German, Greek,
+Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål,
+Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Persian
+(Iran), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
+Serbian, Slovak, Slovenian, Spanish, Swedish, Telugu, Thai, Turkish,
+Uighur, Ukrainian, Urdu, Urdu (Pakistan), Vietnamese</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000866.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html">libxfce4ui 4.15.3 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-06-07">
+                07 Jun 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Update bug URLs to point to gitlab.xfce</li>
+  <li>xfce-about: Hide empty email address tags (Fixes #12)</li>
+  <li>Remove translator email address as per request (Fixes #11)</li>
+  <li>Add missing translator "Hugo Carvalho" to xfce4-about (issue #18)</li>
+  <li>Replace deprecated 'gdk_keyboard_ungrab' function (Fixes #15)</li>
+  <li>shortcuts-grabber: Correctly ungrab keys on updating shortcuts (Fixes
+#16)</li>
+  <li>Add basic GitLab pipeline</li>
+  <li>Allow more granular control over menu item accelerators.
+    <ul>
+      <li>No automatic accelerator activation formenu items</li>
+      <li>Added 'gtk_menu_item_set_accel_label'</li>
+      <li>Added 'xfce_gtk_accel_group_connect_action_entries'</li>
+    </ul>
+  </li>
+  <li>renamed 'xfce_gtk_accel_group_append' to
+'xfce_gtk_accel_map_add_entries' and modified internals accordingly.
+No automatic add to an accel_group any more, since this may lead to
+double-activation in some cases.</li>
+  <li>Add "xfce_gtk_accel_group_disconnect_action_entries" to be able to
+revert "xfce_gtk_accel_group_connect_action_entries"</li>
+  <li>Add title to xfce_dialog_confirm_close_tabs</li>
+  <li>Add new methods to libxfce4ui.symbols. Followup of
+231e57daccb5946379f413ed440629c32025f6f3</li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Basque,
+Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
+(Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+Eastern Armenian, English (Australia), English (United Kingdom),
+Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål,
+Norwegian Nynorsk, Occitan (post 1500), Polish, Portuguese,
+Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
+Slovenian, Spanish, Swedish, Telugu, Thai, Turkish,
+Uighur, Ukrainian, Welsh</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://0.0.0.0:4000/articles/2020-06-05/xfce-in-2020.html">Xfce in 2020</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Romain Bouvier
+            
+            
+            <time class="post-date" datetime="2020-06-05">
+                05 Jun 2020
+            </time>
+            <a href="http://0.0.0.0:4000/articles/2020-06-05/xfce-in-2020.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Oh boy, 3 years without any blogposts ! So much things happened in Xfce world!</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://0.0.0.0:4000/articles/2020-06-05/xfce-in-2020.html">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://alexxcons.github.io/2020/06/04/hello-world.html">Hello World</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Alexander Schwinn
+            
+            
+            <time class="post-date" datetime="2020-06-04">
+                04 Jun 2020
+            </time>
+            <a href="https://alexxcons.github.io/2020/06/04/hello-world.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Actually I just want to test if stuff works at all .. seems to be fine :)</p>
+
+<p>Many thanks to AndreLDM for poitning me to the sources of <a href="https://andreldm.com" target="_blank">his blog</a> and settings things up!</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://alexxcons.github.io/2020/06/04/hello-world.html">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
 
     
 
@@ -213,370 +614,13 @@ Slovenian, Spanish, Swedish, Thai, Turkish, Uighur, Ukrainian</li>
 
     
 
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-May/000863.html">exo 4.15.1 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-05-27">
-                27 May 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-May/000863.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<p>This release transitions several exo components to xfce-settings, and
-drops GTK+ 2 support.
-Please use with xfce-settings 4.15.1 or later for best results.</p>
-<ul>
-  <li>Removed binaries: exo-compose-mail, exo-helper-2</li>
-  <li>Removed from API: ExoCellRendererEllipsizedText, 
-ExoIconBar, ExoToolbarsEditor, ExoToolbarsEditorDialog, 
-ExoToolbarsModel, ExoToolbarsView, ExoWrapTable, ExoXsessionClient,
-exo_atomic_inc, exo_atomic_dec</li>
-</ul>
-
-<p>Other Updates:</p>
-<ul>
-  <li>state variable is a GtkStateFlags</li>
-  <li>Fix previous commit</li>
-  <li>desktop-item-edit: Fix sensitivity of save button (Bug #16813)</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Attach popup window to toplevel parent (Bug #16768)</li>
-  <li>Rename Thunar.desktop to thunar.desktop (Bug #16197)</li>
-  <li>Extend selection on shift+drag (Bug #7526)</li>
-  <li>Do not cancel selection on shift+drag</li>
-  <li>Rename Thunar.desktop to thunar.desktop (Bug #16197)</li>
-  <li>Fix type declaration (Bug #16678)</li>
-  <li>desktop-item-edit: Use new XfceTitledDialog API</li>
-  <li>Fix GTimeVal deprecation</li>
-  <li>Replace deprecated G_INLINE_FUNC macro</li>
-  <li>Replace deprecated macro</li>
-  <li>Wrong keyboard navigation after using rubberband in exo-icon-view (Bug
-#16286)</li>
-  <li>Cursor position in icon view not visible/highlighted when using ctrl +
-arrows (Bug #12227)</li>
-  <li>Make sure default applications are properly set in mimeapps.list</li>
-  <li>Translation Updates:
-Albanian, Amharic, Arabic, Asturian, Basque, Belarusian, Bengali,
-Catalan, Chinese (Hong Kong), Chinese (Taiwan), Danish, Dutch, Estonian,
-Greek, Hungarian, Icelandic, Interlingue, Italian, Kannada, Latvian,
-Lithuanian, Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500),
-Panjabi (Punjabi), Persian (Iran), Portuguese, Romanian, Russian,
-Slovak, Spanish, Telugu, Turkish, Uighur, Urdu, Urdu (Pakistan),
-Vietnamese</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-May/000863.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.3-1/changelog">xfconf (4.14.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-05-12">
-                12 May 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 4.14.3.</li>
-  <li>d/control:
-    <ul>
-      <li>Drop explicit Build-depends on dpkg-dev and libtool.</li>
-      <li>R³: no.</li>
-      <li>Bump DH compat to 12.</li>
-    </ul>
-  </li>
-  <li>d/rules: Move ‘–fail-missing’ to dh_missing.</li>
-  <li>d/libxfconf-0-3.symbols: Set Build-Depends-Package.</li>
-  <li>d/watch:
-    <ul>
-      <li>Update for upstream’s move to mirrorbit.</li>
-      <li>Use uscan special strings.</li>
-    </ul>
-  </li>
-  <li>Update Standards-Version to 4.5.0.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/">GitLab CI is up and running</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Simon Steinbeiß
-            
-            
-            <time class="post-date" datetime="2020-05-10">
-                10 May 2020
-            </time>
-            <a href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p><img class="transparent alignright" src="https://fosshost.org/wp-content/uploads/2020/05/Fosshost_Oficial_Logo_400px.png" alt="https://fosshost.org/wp-content/uploads/2020/05/Fosshost_Oficial_Logo_400px.png" /></p>
-<p>As announced less than two weeks ago, the next steps in <a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">our GitLab migration</a> are following. While we originally planned that the migration from Bugzilla to GitLab issues would be the next step we received generous support from <a href="https://fosshost.org">the brand new <strong>fosshost</strong> project</a>: They provided us with the virtual infrastructure to be able to set up <strong>our first GitLab Runner</strong>.<br />
-A huge thank you to the fosshost for welcoming us aboard (and in record time)!</p>
-<p>Standing on the shoulders of the <a href="https://github.com/schuellerf/xfce-test">xfce-test</a> project by Florian and with support from <span class="author">Jason we managed to get a Docker container <a href="https://hub.docker.com/r/xfce/xfce-build">xfce-build</a> up and running that we now use for a (for now: very basic) test, aka &#8220;does it build?&#8221;. </span>A nice side-effect of having this container published on Dockerhub is that everyone can easily use it locally by running <strong>docker pull xfce/xfce-build</strong>.</p>
-<p>If you&#8217;re curious what&#8217;s inside the container you can take a look at the <a href="https://gitlab.xfce.org/xfce/xfce4-dev-tools/-/blob/master/Dockerfile">Dockerfile</a>. In short we use the latest Ubuntu 20.04 as a basis and then compile the Xfce core libraries based on the latest Git tag on the master branch.</p>
-<p>The first project I set a pipeline up for is <a href="https://gitlab.xfce.org/xfce/xfce4-settings">xfce4-settings</a>. So from now on every commit and merge request will be built automatically and we as developers will receive immediate feedback. If you want to see what this looks like <a href="https://gitlab.xfce.org/xfce/xfce4-settings/-/commit/0e688e7f5ed7aaa9d9f8797baf30026210f4f6ed/pipelines?ref=master">feel free to click here</a>.</p>
-<h3>Next steps</h3>
-<p>Enabling the pipeline in more core repos will certainly be the next step. This should be as easy as adding <a href="https://gitlab.xfce.org/xfce/xfce4-settings/-/blob/master/.gitlab-ci.yml">this .gitlab-ci.yml</a> file to the repository&#8217;s master branch and enabling the CI/CD feature of the project.</p>
-<p>In parallel we have continued to work on the Bugzilla migration, but more on that later. Stay tuned!</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog">xfce4-taskmanager (1.2.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-05-09">
-                09 May 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-</ul>
-
-<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Trim trailing whitespace.</li>
-  <li>Use secure copyright file specification URI.</li>
-  <li>Bump debhelper from old 10 to 12.</li>
-  <li>Set debhelper-compat version in Build-Depends.</li>
-  <li>Update standards version to 4.4.1, no changes needed.</li>
-</ul>
-
-<p>[ Mateusz Łukasik ]</p>
-<ul>
-  <li>Update d/watch.</li>
-  <li>New upstream version 1.2.3</li>
-  <li>d/control: update standards version to 4.5.0</li>
-</ul>
-
-<p>[ Unit 193 ]</p>
-<ul>
-  <li>d/control: R³: no.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog">xfwm4 (4.14.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-05-03">
-                03 May 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-</ul>
-
-<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Trim trailing whitespace.</li>
-  <li>Bump debhelper from old 11 to 12.</li>
-  <li>Set upstream metadata fields: Name (from ./configure), Repository.</li>
-  <li>Fix day-of-week for changelog entry 4.0.0.final-1.</li>
-</ul>
-
-<p>[ Mateusz Łukasik ]</p>
-<ul>
-  <li>d/watch: Update to working version.</li>
-  <li>New upstream version 4.14.1
-    <ul>
-      <li>Fix raise delay (Closes: #940796)</li>
-    </ul>
-  </li>
-  <li>d/control: update standards version to 4.5.0</li>
-</ul>
-
-<p>[ Unit 193 ]</p>
-<ul>
-  <li>New upstream version 4.14.2.
-    <ul>
-      <li>Fix window title alignment (Closes: #953112)</li>
-    </ul>
-  </li>
-  <li>d/control: R³: no.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.14.4-1/changelog">xfce4-panel (4.14.4-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-05-03">
-                03 May 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.14.4-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 4.14.4.</li>
-  <li>d/control: R³: no.</li>
-  <li>d/libxfce4panel-2.0-4.symbols: Set Build-Depends-Package.</li>
-  <li>Update Standards-Version to 4.5.0.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.14.4-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">Xfce switches to GitLab</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Simon Steinbeiß
-            
-            
-            <time class="post-date" datetime="2020-04-30">
-                30 Apr 2020
-            </time>
-            <a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><h2>GitLab is here!</h2>
-<p>Starting today, May 1, we&#8217;re switching from our cgit/gitolite setup to GitLab. Our old server, git.xfce.org, is now a ready-only in-sync mirror (so you can still pull code). Our new server is gitlab.xfce.org.</p>
-<p>(The detailed version of this blog post can be read in my <a href="https://mail.xfce.org/pipermail/xfce4-dev/2020-April/032436.html">announcement on the Xfce Mailing List</a>.)</p>
-<p><img class="alignnone size-medium" src="https://about.gitlab.com/images/press/logo/preview/gitlab-logo-white-preview.png" width="3828" height="1688" /></p>
-<p>For <strong>users</strong> nothing changes.</p>
-<p>For <strong>distributors</strong> nothing changes (presuming you&#8217;re using the release tarballs and not Git tags).</p>
-<p>For <strong>developers and contributors</strong> quite a few things change.</p>
-<ul>
-<li>Most importantly: The Git URL changed, so you need to update the remotes of your local repositories. <a href="https://github.com/ochosi/xfce-helpers/blob/master/xfce-migrate-to-gl">Feel free to use our helper script.</a></li>
-<li>Fork repositories and use branches and merge requests!</li>
-<li>If you don&#8217;t have an account yet (we created quite a few for you regulars already) please sign up! We have opened registrations for GitLab accounts as well as allowing you to register with your GitHub account (if you have one).<br />
-Please poke us on IRC or the mailinglist if you&#8217;re lacking repository access or ownership. (By default new users cannot fork before being manually approved. Yes. We <strong>are</strong> afraid of the spambots.)</li>
-</ul>
-<p>Have a nice <a href="https://gitlab.xfce.org">GitLab</a>!</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
     <nav class="pagination" role="pagination">
     
         
             <a class="newer-posts" href="/page54" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 55 of 65 </span>
+    <span class="page-number"> Page 55 of 66 </span>
      
         <a class="older-posts" href="/page56" title="Next Page">Older Posts &raquo;</a>
      
