@@ -13,7 +13,7 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Fri, 29 Apr 2022 21:30:19 -0400</lastBuildDate>
+	<lastBuildDate>Sat, 30 Apr 2022 00:54:27 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
@@ -43,6 +43,123 @@
   <li>Update to kinetic.</li>
   <li>Refreshed dependencies</li>
   <li>Removed acpi-support from core-recommends [amd64], desktop-    recommends [amd64]</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[mousepad (0.5.9-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.9-1/changelog</link>
+			<pubDate>Sat, 23 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.9-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 0.5.9.</li>
+  <li>d/control: Bump DH compat to 13.</li>
+  <li>d/rules: Drop –as-needed and autoreconf override, no longer needed.</li>
+  <li>d/libmousepad0.symbols: Update symbols and add Build-Depends-Package.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 0.5.9.</li>
+  <li>d/control: Bump DH compat to 13.</li>
+  <li>d/rules: Drop –as-needed and autoreconf override, no longer needed.</li>
+  <li>d/libmousepad0.symbols: Update symbols and add Build-Depends-Package.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-panel (4.16.4-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.4-1/changelog</link>
+			<pubDate>Fri, 22 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.4-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 4.16.4.</li>
+  <li>d/rules: Drop –as-needed, since it’s now the default in stable.</li>
+  <li>Update Standards-Version to 4.6.0.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 4.16.4.</li>
+  <li>d/rules: Drop –as-needed, since it’s now the default in stable.</li>
+  <li>Update Standards-Version to 4.6.0.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-diskperf-plugin (2.7.0-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-diskperf-plugin/xfce4-diskperf-plugin_2.7.0-1/changelog</link>
+			<pubDate>Fri, 22 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-diskperf-plugin/xfce4-diskperf-plugin_2.7.0-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 2.7.0.</li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 13.</li>
+      <li>R³: no.</li>
+      <li>Update ‘homepage’ field, goodies.xfce → docs.xfce.</li>
+    </ul>
+  </li>
+  <li>d/rules: Drop –as-needed, now default in stable.</li>
+  <li>Update Standards-Version to 4.6.0.</li>
+  <li>Trim trailing whitespace from previous changelog entries.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 2.7.0.</li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 13.</li>
+      <li>R³: no.</li>
+      <li>Update ‘homepage’ field, goodies.xfce → docs.xfce.</li>
+    </ul>
+  </li>
+  <li>d/rules: Drop –as-needed, now default in stable.</li>
+  <li>Update Standards-Version to 4.6.0.</li>
+  <li>Trim trailing whitespace from previous changelog entries.</li>
 </ul>
 ]]>
         
@@ -781,6 +898,46 @@ It features a modest set of updates for users coming from Xubuntu 21.10.]]></des
 
 
 <p>Congratulations, and thanks for your wonderful contributions!</p>]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-eyes-plugin (4.6.0-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.6.0-1/changelog</link>
+			<pubDate>Wed, 20 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.6.0-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Set upstream metadata fields: Bug-Submit (from ./configure).</li>
+  <li>Update standards version to 4.5.1, no changes needed.</li>
+  <li>Avoid explicitly specifying -Wl,–as-needed linker flag.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Set upstream metadata fields: Bug-Submit (from ./configure).</li>
+  <li>Update standards version to 4.5.1, no changes needed.</li>
+  <li>Avoid explicitly specifying -Wl,–as-needed linker flag.</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream version 4.6.0.</li>
+  <li>d/copyright: Update years.</li>
+  <li>Update Standards-Version to 4.6.0.</li>
+</ul>
+]]>
         
       </content:encoded>
 		</item>
@@ -2259,136 +2416,6 @@ contributions from <a class="user-mention notranslate" data-hovercard-type="user
 <li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
 <li>Added json/xz icon, fixed some icon inconsistencies</li>
 </ul>]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[greybird-gtk-theme (3.23.1-0ubuntu1) jammy]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-0ubuntu1/changelog</link>
-			<pubDate>Wed, 23 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-0ubuntu1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>New upstream version 3.23.1 (LP: #1966002)</li>
-  <li>Update Standards-Version to 4.6.0.1</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>New upstream version 3.23.1 (LP: #1966002)</li>
-  <li>Update Standards-Version to 4.6.0.1</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[3.23.1]]></title>
-			<link>https://github.com/shimmerproject/Greybird/releases/tag/v3.23.1</link>
-			<pubDate>Wed, 23 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Greybird GTK Theme]]></dc:creator>
-		
-		
-			<guid>https://github.com/shimmerproject/Greybird/releases/tag/v3.23.1</guid>
-        
-        
-        
-        
-			<description><![CDATA[<p>Make sure everything gets installed in its right place (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1166416352" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/316" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/316/hovercard" href="https://github.com/shimmerproject/Greybird/issues/316">#316</a>, <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1176973615" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/317" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/317/hovercard" href="https://github.com/shimmerproject/Greybird/issues/317">#317</a>, <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1177404193" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/318" data-hovercard-type="pull_request" data-hovercard-url="/shimmerproject/Greybird/pull/318/hovercard" href="https://github.com/shimmerproject/Greybird/pull/318">#318</a>)</p>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p>Make sure everything gets installed in its right place (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1166416352" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/316" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/316/hovercard" href="https://github.com/shimmerproject/Greybird/issues/316">#316</a>, <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1176973615" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/317" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/317/hovercard" href="https://github.com/shimmerproject/Greybird/issues/317">#317</a>, <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1177404193" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/318" data-hovercard-type="pull_request" data-hovercard-url="/shimmerproject/Greybird/pull/318/hovercard" href="https://github.com/shimmerproject/Greybird/pull/318">#318</a>)</p>]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[3.23.0]]></title>
-			<link>https://github.com/shimmerproject/Greybird/releases/tag/v3.23.0</link>
-			<pubDate>Tue, 22 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Greybird GTK Theme]]></dc:creator>
-		
-		
-			<guid>https://github.com/shimmerproject/Greybird/releases/tag/v3.23.0</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-<li>Add initial support for Gtk4 and libhandy</li>
-<li>Fix dark xfwm4-a11y install path (Issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1044336745" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/307" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/307/hovercard" href="https://github.com/shimmerproject/Greybird/issues/307">#307</a>)</li>
-<li>Fix xfwm4-a11y and xfwm4-compact install path (Issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1044336745" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/307" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/307/hovercard" href="https://github.com/shimmerproject/Greybird/issues/307">#307</a>)</li>
-<li>Fix: GtkLabel: <code>Backdrop</code>ped selection color adjusted</li>
-<li>Fix: Backdropped selection: <code>GtkListBox</code>es weren't grey</li>
-<li>Hotfix: removed background color for non-bg items</li>
-<li>Gtk3: Adjusted selected backdrop fg/bg colors: shades of grey.</li>
-<li>Changes the xfwm4 border colors</li>
-<li>build: refactor meson</li>
-<li>Correct gradients for horizontal scrollbars</li>
-<li>Reduce messagedialog buttonbox size</li>
-<li>Make CSD titlebars slimmer</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-<li>Add initial support for Gtk4 and libhandy</li>
-<li>Fix dark xfwm4-a11y install path (Issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1044336745" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/307" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/307/hovercard" href="https://github.com/shimmerproject/Greybird/issues/307">#307</a>)</li>
-<li>Fix xfwm4-a11y and xfwm4-compact install path (Issue <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1044336745" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/307" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/307/hovercard" href="https://github.com/shimmerproject/Greybird/issues/307">#307</a>)</li>
-<li>Fix: GtkLabel: <code>Backdrop</code>ped selection color adjusted</li>
-<li>Fix: Backdropped selection: <code>GtkListBox</code>es weren't grey</li>
-<li>Hotfix: removed background color for non-bg items</li>
-<li>Gtk3: Adjusted selected backdrop fg/bg colors: shades of grey.</li>
-<li>Changes the xfwm4 border colors</li>
-<li>build: refactor meson</li>
-<li>Correct gradients for horizontal scrollbars</li>
-<li>Reduce messagedialog buttonbox size</li>
-<li>Make CSD titlebars slimmer</li>
-</ul>]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[xubuntu-meta (2.240) jammy]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.240/changelog</link>
-			<pubDate>Sat, 19 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.240/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>Refreshed dependencies</li>
-  <li>Added language-selector-common to core, desktop</li>
-  <li>Added libfuse2 to core-recommends, desktop-recommends (LP: #1965636)</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>Refreshed dependencies</li>
-  <li>Added language-selector-common to core, desktop</li>
-  <li>Added libfuse2 to core-recommends, desktop-recommends (LP: #1965636)</li>
-</ul>
-]]>
         
       </content:encoded>
 		</item>
