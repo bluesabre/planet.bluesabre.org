@@ -65,6 +65,76 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html">libxfce4ui 4.15.3 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-06-07">
+                07 Jun 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Update bug URLs to point to gitlab.xfce</li>
+  <li>xfce-about: Hide empty email address tags (Fixes #12)</li>
+  <li>Remove translator email address as per request (Fixes #11)</li>
+  <li>Add missing translator "Hugo Carvalho" to xfce4-about (issue #18)</li>
+  <li>Replace deprecated 'gdk_keyboard_ungrab' function (Fixes #15)</li>
+  <li>shortcuts-grabber: Correctly ungrab keys on updating shortcuts (Fixes
+#16)</li>
+  <li>Add basic GitLab pipeline</li>
+  <li>Allow more granular control over menu item accelerators.
+    <ul>
+      <li>No automatic accelerator activation formenu items</li>
+      <li>Added 'gtk_menu_item_set_accel_label'</li>
+      <li>Added 'xfce_gtk_accel_group_connect_action_entries'</li>
+    </ul>
+  </li>
+  <li>renamed 'xfce_gtk_accel_group_append' to
+'xfce_gtk_accel_map_add_entries' and modified internals accordingly.
+No automatic add to an accel_group any more, since this may lead to
+double-activation in some cases.</li>
+  <li>Add "xfce_gtk_accel_group_disconnect_action_entries" to be able to
+revert "xfce_gtk_accel_group_connect_action_entries"</li>
+  <li>Add title to xfce_dialog_confirm_close_tabs</li>
+  <li>Add new methods to libxfce4ui.symbols. Followup of
+231e57daccb5946379f413ed440629c32025f6f3</li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Basque,
+Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
+(Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+Eastern Armenian, English (Australia), English (United Kingdom),
+Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål,
+Norwegian Nynorsk, Occitan (post 1500), Polish, Portuguese,
+Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
+Slovenian, Spanish, Swedish, Telugu, Thai, Turkish,
+Uighur, Ukrainian, Welsh</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://0.0.0.0:4000/articles/2020-06-05/xfce-in-2020.html">Xfce in 2020</a></h1>
         </header>
         <header class="post-meta">
@@ -484,68 +554,6 @@ A huge thank you to the fosshost for welcoming us aboard (and in record time)!</
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog">xfwm4 (4.14.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-05-03">
-                03 May 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-</ul>
-
-<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Trim trailing whitespace.</li>
-  <li>Bump debhelper from old 11 to 12.</li>
-  <li>Set upstream metadata fields: Name (from ./configure), Repository.</li>
-  <li>Fix day-of-week for changelog entry 4.0.0.final-1.</li>
-</ul>
-
-<p>[ Mateusz Łukasik ]</p>
-<ul>
-  <li>d/watch: Update to working version.</li>
-  <li>New upstream version 4.14.1
-    <ul>
-      <li>Fix raise delay (Closes: #940796)</li>
-    </ul>
-  </li>
-  <li>d/control: update standards version to 4.5.0</li>
-</ul>
-
-<p>[ Unit 193 ]</p>
-<ul>
-  <li>New upstream version 4.14.2.
-    <ul>
-      <li>Fix window title alignment (Closes: #953112)</li>
-    </ul>
-  </li>
-  <li>d/control: R³: no.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

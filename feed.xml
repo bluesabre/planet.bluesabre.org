@@ -13,10 +13,81 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Sat, 30 Apr 2022 21:30:15 -0400</lastBuildDate>
+	<lastBuildDate>Sun, 01 May 2022 00:55:07 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[ANNOUNCE: thunar-archive-plugin 0.5.0 released]]></title>
+			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001111.html</link>
+			<pubDate>Sat, 30 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
+		
+		
+			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001111.html</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Fix for ark (Issue #4)</li>
+  <li>automake: INCLUDES -&gt; AM_CPPFLAGS</li>
+  <li>preserve callbacks in tap-provider</li>
+  <li>remove GSpawnChildSetupFunc usage from tap_backend_run</li>
+  <li>Adds new README.md</li>
+  <li>updates AM_INIT_AUTOMAKE macro with foreign option</li>
+  <li>Add basic GitLab pipeline</li>
+  <li>Allow zip files (i.e. odt, docx…) to be compressed (Bug #15295)</li>
+  <li>Start archive application from file's directory (Bug #14773)</li>
+  <li>Replace AC_PROG_LIBTOOL with IT_PROG_INTLTOOL</li>
+  <li>Add support for archive manager for MATE</li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+Croatian, Czech, Danish, Dutch, Eastern Armenian, Eastern Armenian
+(Russia), English (Australia), English (United Kingdom), Esperanto,
+Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kabyle, Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian
+Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi),
+Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
+Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu
+(Pakistan), Uyghur, Uzbek, Uzbek (Latin), Vietnamese</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Fix for ark (Issue #4)</li>
+  <li>automake: INCLUDES -&gt; AM_CPPFLAGS</li>
+  <li>preserve callbacks in tap-provider</li>
+  <li>remove GSpawnChildSetupFunc usage from tap_backend_run</li>
+  <li>Adds new README.md</li>
+  <li>updates AM_INIT_AUTOMAKE macro with foreign option</li>
+  <li>Add basic GitLab pipeline</li>
+  <li>Allow zip files (i.e. odt, docx…) to be compressed (Bug #15295)</li>
+  <li>Start archive application from file's directory (Bug #14773)</li>
+  <li>Replace AC_PROG_LIBTOOL with IT_PROG_INTLTOOL</li>
+  <li>Add support for archive manager for MATE</li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+Croatian, Czech, Danish, Dutch, Eastern Armenian, Eastern Armenian
+(Russia), English (Australia), English (United Kingdom), Esperanto,
+Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kabyle, Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian
+Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi),
+Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
+Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu
+(Pakistan), Uyghur, Uzbek, Uzbek (Latin), Vietnamese</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[xubuntu-meta (2.242) kinetic]]></title>
@@ -2346,76 +2417,6 @@ contributions from newhoa and tux93.</p>
   <li>Update Standards-Version to 4.6.0.1.</li>
 </ul>
 ]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[0.16]]></title>
-			<link>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16</link>
-			<pubDate>Thu, 24 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[elementary Xfce Icon Theme]]></dc:creator>
-		
-		
-			<guid>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16</guid>
-        
-        
-        
-        
-			<description><![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
-contributions from <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> and <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tux93/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tux93">@tux93</a>.</p>
-<ul>
-<li>Add audio overamplified icon</li>
-<li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
-<li>Updates to actions icons</li>
-<li>Update places/sidebar icons</li>
-<li>Add missing mimetype icons</li>
-<li>Add missing icons</li>
-<li>Add places icons at 96px</li>
-<li>Update broken symlink</li>
-<li>Add new person icons, fix some inconsitencies</li>
-<li>Update navigation icons from upstream</li>
-<li>Update session icons (logout, shutdown, etc)</li>
-<li>Fix icon name extension</li>
-<li>Add names to mime archive icons at 128px</li>
-<li>Update emblem icons from upstream</li>
-<li>Add/Update device icons</li>
-<li>Updates and fixes to mime icons</li>
-<li>Add new desktop places icon</li>
-<li>Add support for xfpm 4.16 icons</li>
-<li>Fix broken link</li>
-<li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
-<li>Added json/xz icon, fixed some icon inconsistencies</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
-contributions from <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> and <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/tux93/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/tux93">@tux93</a>.</p>
-<ul>
-<li>Add audio overamplified icon</li>
-<li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
-<li>Updates to actions icons</li>
-<li>Update places/sidebar icons</li>
-<li>Add missing mimetype icons</li>
-<li>Add missing icons</li>
-<li>Add places icons at 96px</li>
-<li>Update broken symlink</li>
-<li>Add new person icons, fix some inconsitencies</li>
-<li>Update navigation icons from upstream</li>
-<li>Update session icons (logout, shutdown, etc)</li>
-<li>Fix icon name extension</li>
-<li>Add names to mime archive icons at 128px</li>
-<li>Update emblem icons from upstream</li>
-<li>Add/Update device icons</li>
-<li>Updates and fixes to mime icons</li>
-<li>Add new desktop places icon</li>
-<li>Add support for xfpm 4.16 icons</li>
-<li>Fix broken link</li>
-<li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
-<li>Added json/xz icon, fixed some icon inconsistencies</li>
-</ul>]]>
         
       </content:encoded>
 		</item>
