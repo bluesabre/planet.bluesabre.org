@@ -13,10 +13,39 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Sun, 01 May 2022 03:30:17 -0400</lastBuildDate>
+	<lastBuildDate>Sun, 01 May 2022 06:54:41 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[thunar (4.17.8-1) experimental]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.17.8-1/changelog</link>
+			<pubDate>Sat, 30 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Yves-Alexis Perez]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.17.8-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>New upstream version 4.17.8</li>
+  <li>d/p/01_support-non-multiarch-modules updated for new upstream</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New upstream version 4.17.8</li>
+  <li>d/p/01_support-non-multiarch-modules updated for new upstream</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[ANNOUNCE: thunar-archive-plugin 0.5.0 released]]></title>
@@ -2388,35 +2417,6 @@ contributions from newhoa and tux93.</p>
 <li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
 <li>Added json/xz icon, fixed some icon inconsistencies</li>
 </ul>]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[elementary-xfce (0.16-0ubuntu1) jammy]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.16-0ubuntu1/changelog</link>
-			<pubDate>Thu, 24 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.16-0ubuntu1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>New upstream version 0.16</li>
-  <li>Update Standards-Version to 4.6.0.1.</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>New upstream version 0.16</li>
-  <li>Update Standards-Version to 4.6.0.1.</li>
-</ul>
-]]>
         
       </content:encoded>
 		</item>

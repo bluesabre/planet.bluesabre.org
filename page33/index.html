@@ -65,6 +65,61 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.8-2ubuntu1/changelog">lightdm-gtk-greeter (2.0.8-2ubuntu1) hirsute</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-01-06">
+                06 Jan 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.8-2ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Merge from Debian unstable. Remaining changes:
+    <ul>
+      <li>debian/{01_ubuntu.conf,60-lightdm-gtk-greeter.conf,rules} add and      install.</li>
+      <li>debian/control:
+        <ul>
+          <li>Build-Depends on liblightdm-gobject-1-dev instead on        liblightdm-gobject-dev as it’s non-existing in archive.</li>
+          <li>Install desktop-base as a suggestion, not as a recommendation        (LP: #1669818)</li>
+          <li>Remove Breaks/Replaces on older budgie-lightdm-theme, lightdm,        and lightdm-gtk packages</li>
+        </ul>
+      </li>
+      <li>debian/copyright: update copyright for lightdm-gtk-greeter.</li>
+      <li>debian/patches/git_indicators_loading.patch,      debian/patches/git_libexec_atspi.patch,      debian/patches/git_new_systemd.patch:
+        <ul>
+          <li>Dropped, included upstream.</li>
+        </ul>
+      </li>
+      <li>debian/lightdm-gtk-greeter.{maintscript,postinst,postrm,preinst}:
+        <ul>
+          <li>No longer remove obsolete ubuntu conf files, files should        be gone after wily.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.8-2ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_21.04/changelog">xubuntu-docs (21.04) hirsute</a></h1>
         </header>
         <header class="post-meta">
@@ -481,68 +536,6 @@ Czech, Japanese, Portuguese, Turkish</li>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.0-1/changelog">xfce4-cpugraph-plugin (1.2.0-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-01-02">
-                02 Jan 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.0-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-</ul>
-
-<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Refer to specific version of license GPL-2+.</li>
-  <li>Update standards version to 4.5.0, no changes needed.</li>
-  <li>Apply multi-arch hints.
-    <ul>
-      <li>xfce4-cpugraph-plugin: Add Multi-Arch: same.</li>
-    </ul>
-  </li>
-</ul>
-
-<p>[ Unit 193 ]</p>
-<ul>
-  <li>d/watch: Update for mirrorbit and use uscan special strings.</li>
-  <li>New upstream version 1.2.0.
-    <ul>
-      <li>Allow compilation with panel 4.15 (Closes: #978186)</li>
-    </ul>
-  </li>
-  <li>d/control:
-    <ul>
-      <li>Bump DH compat to 12.</li>
-      <li>Update ‘Homepage’ field, goodies.xfce → docs.xfce.</li>
-      <li>R³: no.</li>
-    </ul>
-  </li>
-  <li>Update Standards-Version to 4.5.1.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.0-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
