@@ -4,7 +4,56 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sat, 30 Apr 2022 18:54:38 -0400</pubDate>
+    <pubDate>Sat, 30 Apr 2022 21:30:02 -0400</pubDate>
+    <item>
+      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
+      <title>ANNOUNCE: thunar-archive-plugin 0.5.0 released</title>
+      <pubDate>Sat, 30 Apr 2022 04:24:21 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;626cf23570640_6cf82b067380c5c43979@xfce2.mail&amp;gt;</guid>
+      <description>thunar-archive-plugin 0.5.0 is now available for download from
+  
+  https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/thunar-archive-plugin-0.5.0.tar.bz2
+  https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/thunar-archive-plugin-0.5.0.tar.bz2?sha1
+  https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/thunar-archive-plugin-0.5.0.tar.bz2?sha256
+
+
+What is thunar-archive-plugin?
+==============================
+
+The Thunar Archive Plugin allows you to create and extract archive files
+using the file context menus in the Thunar file manager.
+
+Website: 
+  https://docs.xfce.org/xfce/thunar/archive
+
+
+Release notes for 0.5.0
+=======================
+- Fix for ark (Issue #4)
+- automake: INCLUDES -&amp;gt; AM_CPPFLAGS
+- preserve callbacks in tap-provider
+- remove GSpawnChildSetupFunc usage from tap_backend_run
+- Adds new README.md
+- updates AM_INIT_AUTOMAKE macro with foreign option
+- Add basic GitLab pipeline
+- Allow zip files (i.e. odt, docx...) to be compressed (Bug #15295)
+- Start archive application from file&amp;#x27;s directory (Bug #14773)
+- Replace AC_PROG_LIBTOOL with IT_PROG_INTLTOOL
+- Add support for archive manager for MATE
+- Translation Updates:
+  Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
+  Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+  Croatian, Czech, Danish, Dutch, Eastern Armenian, Eastern Armenian
+  (Russia), English (Australia), English (United Kingdom), Esperanto,
+  Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi,
+  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+  Kabyle, Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian
+  Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi),
+  Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
+  Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu
+  (Pakistan), Uyghur, Uzbek, Uzbek (Latin), Vietnamese</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001111.html</link>
+    </item>
     <item>
       <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
       <title>ANNOUNCE: xfce4-terminal 1.0.2 released</title>
@@ -527,50 +576,6 @@ Release notes for 0.5.9
   Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
   Thai, Turkish, Ukrainian, Uyghur</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html</link>
-    </item>
-    <item>
-      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
-      <title>ANNOUNCE: libxfce4ui 4.17.6 released</title>
-      <pubDate>Thu, 31 Mar 2022 17:23:31 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;62461bd477d57_6cf82b067380c5c4377f6@xfce2.mail&amp;gt;</guid>
-      <description>libxfce4ui 4.17.6 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.6.tar.bz2
-  https://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.6.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/libxfce4ui/4.17/libxfce4ui-4.17.6.tar.bz2?sha256
-
-
-What is libxfce4ui?
-===================
-
-Libxfce4ui is used to share commonly used Xfce widgets among the Xfce
-applications.
-
-Website: 
-  https://www.xfce.org/
-
-
-Release notes for 4.17.6
-========================
-[Please note that this is a development release.]
-
-Development release on the master branch, required to be able to make
-use of &amp;#x27;xfce_gtk_toggle_tool_button_new_from_action_entry&amp;#x27; inside
-thunar.
-
-- XfceShortcutsEditor: Do not update editor if shortcut change failed
-- XfceShortcutsEditor: Allow to choose &amp;quot;Space&amp;quot; or &amp;quot;Enter&amp;quot; as shortcut
-- XfceShortcutDialog: Do not propagate key events
-- Function description spelling and format.
-- Add new function xfce_gtk_toggle_tool_button_new_from_action_entry
-- XfceShortcutsGrabber: Fix `-Wanalyzer-null-dereference` warning
-- Secure memory allocations
-- Update COPYING
-- XfceShortcutsGrabber: Detect auto-repeat key press
-- XfceShortcutDialog: Fix a memory leak
-- Translation Updates:
-  Azerbaijani</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html</link>
     </item>
   </channel>
 </rss>
