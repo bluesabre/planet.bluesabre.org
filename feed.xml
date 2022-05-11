@@ -13,10 +13,73 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Wed, 11 May 2022 09:30:20 -0400</lastBuildDate>
+	<lastBuildDate>Wed, 11 May 2022 12:54:30 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[pidgin (1:2.14.9-1ubuntu1) kinetic]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.9-1ubuntu1/changelog</link>
+			<pubDate>Wed, 11 May 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Gianfranco Costamagna]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.9-1ubuntu1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Minimize delta with Debian: remaining changes:
+    <ul>
+      <li>Bump epoch (change committed on git)</li>
+      <li>add unity integration</li>
+      <li>update preferences file.</li>
+      <li>add Ubuntu patches:
+        <ul>
+          <li>04_let_crasher_for_apport.patch</li>
+          <li>05_default_to_irc_ubuntu_com.patch</li>
+          <li>10_docklet_default_off.patch</li>
+          <li>11_buddy_list_really_show.patch</li>
+          <li>13_sounds_and_timers.patch</li>
+          <li>60_1024x600_gtkpounce.c.patch</li>
+          <li>60_1024x600_gtkprefs.c.patch</li>
+          <li>pounce-webview.patch</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Minimize delta with Debian: remaining changes:
+    <ul>
+      <li>Bump epoch (change committed on git)</li>
+      <li>add unity integration</li>
+      <li>update preferences file.</li>
+      <li>add Ubuntu patches:
+        <ul>
+          <li>04_let_crasher_for_apport.patch</li>
+          <li>05_default_to_irc_ubuntu_com.patch</li>
+          <li>10_docklet_default_off.patch</li>
+          <li>11_buddy_list_really_show.patch</li>
+          <li>13_sounds_and_timers.patch</li>
+          <li>60_1024x600_gtkpounce.c.patch</li>
+          <li>60_1024x600_gtkprefs.c.patch</li>
+          <li>pounce-webview.patch</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[thunar (4.17.8-1) experimental]]></title>
@@ -2347,76 +2410,6 @@ Azerbaijani</li>
   <li>Update my email address</li>
 </ul>
 ]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[v0.16: 0.16]]></title>
-			<link>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16</link>
-			<pubDate>Thu, 24 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[elementary Xfce Icon Theme]]></dc:creator>
-		
-		
-			<guid>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16</guid>
-        
-        
-        
-        
-			<description><![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
-contributions from newhoa and tux93.</p>
-<ul>
-<li>Add audio overamplified icon</li>
-<li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
-<li>Updates to actions icons</li>
-<li>Update places/sidebar icons</li>
-<li>Add missing mimetype icons</li>
-<li>Add missing icons</li>
-<li>Add places icons at 96px</li>
-<li>Update broken symlink</li>
-<li>Add new person icons, fix some inconsitencies</li>
-<li>Update navigation icons from upstream</li>
-<li>Update session icons (logout, shutdown, etc)</li>
-<li>Fix icon name extension</li>
-<li>Add names to mime archive icons at 128px</li>
-<li>Update emblem icons from upstream</li>
-<li>Add/Update device icons</li>
-<li>Updates and fixes to mime icons</li>
-<li>Add new desktop places icon</li>
-<li>Add support for xfpm 4.16 icons</li>
-<li>Fix broken link</li>
-<li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
-<li>Added json/xz icon, fixed some icon inconsistencies</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p>This release brings lots of cleanups and more consistency with<br>
-contributions from newhoa and tux93.</p>
-<ul>
-<li>Add audio overamplified icon</li>
-<li>Update the mime office icons (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1066837639" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/239" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/239/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/239">#239</a>)</li>
-<li>Updates to actions icons</li>
-<li>Update places/sidebar icons</li>
-<li>Add missing mimetype icons</li>
-<li>Add missing icons</li>
-<li>Add places icons at 96px</li>
-<li>Update broken symlink</li>
-<li>Add new person icons, fix some inconsitencies</li>
-<li>Update navigation icons from upstream</li>
-<li>Update session icons (logout, shutdown, etc)</li>
-<li>Fix icon name extension</li>
-<li>Add names to mime archive icons at 128px</li>
-<li>Update emblem icons from upstream</li>
-<li>Add/Update device icons</li>
-<li>Updates and fixes to mime icons</li>
-<li>Add new desktop places icon</li>
-<li>Add support for xfpm 4.16 icons</li>
-<li>Fix broken link</li>
-<li>Update removable USB device icon (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="602544325" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/213" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/213/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/213">#213</a>)</li>
-<li>Added json/xz icon, fixed some icon inconsistencies</li>
-</ul>]]>
         
       </content:encoded>
 		</item>

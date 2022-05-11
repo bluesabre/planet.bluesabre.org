@@ -65,6 +65,60 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001032.html">xfdashboard 0.9.3 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-04-26">
+                26 Apr 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001032.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>xfdashboard-0.9.3 "What have I done recently?" was released on
+2021-04-26.</p>
+
+<p>This is a development release.</p>
+
+<ul>
+  <li>New feature: New search provider plugin "recently used" to search
+through list of recently used files provided by GTK+ recent-used
+manager</li>
+  <li>Configuration and data files for application added to
+XfdashboardSettings and also added to plugins for plugin-specific
+configuration and data filesystem</li>
+  <li>Plugins can now use the debug infrastructure of libxfdashboard</li>
+  <li>Improved window placements in XfdashboardWindowsView by centering
+windows in last row in usused space</li>
+  <li>Removed last deprecated function which enables a full debug build
+with –enable-debug=full in configure script (#7)</li>
+  <li>Smaller bug-fixes</li>
+  <li>Clean-ups</li>
+  <li>A hugh amount of new API documentation</li>
+  <li>Updated translations:
+be, bg, ca, da, de, el, es, et, eu, fr, gl, he, id, it, ja, ko, lt,
+nb, nl, pl, pt, pt_BR, ru, sl, sq, sr, sv, tr, zh_CN</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001032.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://bluesabre.org/2021/04/24/whats-new-april-2021/">What's New? April 2021</a></h1>
         </header>
         <header class="post-meta">
@@ -452,51 +506,6 @@ instead of settings object or similar</li>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog">gimp (2.10.22-4) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Simon McVittie
-            
-            
-            <time class="post-date" datetime="2021-04-03">
-                03 Apr 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload</li>
-</ul>
-
-<p>[ Laurent Bigonville ]</p>
-<ul>
-  <li>Drop debian/shlibs.local, not needed anymore.    This file has the adverse effect of lowering the required version of    libbabl-0.1-0. The library now ships a .symbols file with    Build-Depends-Package, so let dh_shlibs adjust the dependency version    automatically (Closes: #983568)</li>
-</ul>
-
-<p>[ Simon McVittie ]</p>
-<ul>
-  <li>d/p/app-Print-2-digit-LittleCMS-minor-versions-correctly.patch:    Print 2-digit lcms minor versions correctly. Related to #900819, #986192.</li>
-  <li>d/p/app-Don-t-second-guess-the-dependency-system.patch:    Don’t require lcms runtime version &gt;= compile-time version.    If no new symbols referenced by GIMP have been introduced (as is the    case when upgrading from 2.9 to 2.12~rc1), we only need a dependency    on version 2.9. (Closes: #900819, #986192)</li>
-  <li>d/p/*_hurd_ftbfs.patch: Add patch metadata</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
