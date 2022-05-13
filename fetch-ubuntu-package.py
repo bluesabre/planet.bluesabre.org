@@ -71,6 +71,8 @@ def get_changelog_url_topdir(package_name):
 
 def get_changelog_url(package_name, version):
     topdir = get_changelog_url_topdir(package_name)
+    if ":" in version:
+        epoch, version = version.split(":", 2)
     return "%s/%s_%s/changelog" % (topdir, package_name, version)
 
 def process_changelog(contents):
