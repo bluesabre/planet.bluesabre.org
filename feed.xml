@@ -13,10 +13,39 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Sat, 14 May 2022 15:31:14 -0400</lastBuildDate>
+	<lastBuildDate>Sat, 14 May 2022 18:55:54 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[xfce4-terminal (1.0.3-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.3-1/changelog</link>
+			<pubDate>Fri, 13 May 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Yves-Alexis Perez]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.3-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>fix typo in README.Debian</li>
+  <li>New upstream version 1.0.3</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>fix typo in README.Debian</li>
+  <li>New upstream version 1.0.3</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[pidgin (1:2.14.9-1ubuntu1) kinetic]]></title>
@@ -2377,37 +2406,6 @@ Azerbaijani</li>
           <![CDATA[<ul>
   <li>Refreshed dependencies</li>
   <li>Removed firefox from desktop-recommends (LP: #1966794)</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[elementary-xfce (0.16-1) unstable]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.16-1/changelog</link>
-			<pubDate>Mon, 28 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.16-1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>New upstream version 0.16</li>
-  <li>Update Standards-Version to 4.6.0.1.</li>
-  <li>Update my email address</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>New upstream version 0.16</li>
-  <li>Update Standards-Version to 4.6.0.1.</li>
-  <li>Update my email address</li>
 </ul>
 ]]>
         
