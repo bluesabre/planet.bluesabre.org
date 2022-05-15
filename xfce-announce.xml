@@ -4,7 +4,46 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sun, 15 May 2022 12:54:12 -0400</pubDate>
+    <pubDate>Sun, 15 May 2022 15:30:02 -0400</pubDate>
+    <item>
+      <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
+      <title>ANNOUNCE: xfce4-terminal 1.0.3 released</title>
+      <pubDate>Thu, 12 May 2022 17:56:53 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;627d82a511935_6cf82b067380c5c4399cc@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-terminal 1.0.3 is now available for download from
+  
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.3.tar.bz2
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.3.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.3.tar.bz2?sha256
+
+
+What is xfce4-terminal?
+=======================
+
+Xfce4-terminal is a modern terminal emulator for the Unix/Linux desktop
+- primarily for the Xfce desktop environment. It is a lightweight
+emulator based on the VTE widget, easy to use and provides an optional
+drop-down window (game-console style).
+
+Website: 
+  https://docs.xfce.org/apps/terminal/start
+
+
+Release notes for 1.0.3
+=======================
+Stable release fixing regressions.
+
+Fixes:
+- Consume KeyEvents when activating a TAB accelerator.
+- Regression: Scrollbar position setting does not work if you start 
+with a hidden scrollbar (Issue #192)
+- Regression: Revert ff94ff30c1f83561f0abad4867846880ba9c6f83 which 
+broke scroll-on-output and change the default value (Issue #191)
+
+Translation Updates:
+  Hebrew, Portuguese (Brazil), Russian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001112.html</link>
+    </item>
     <item>
       <author>alexxcons at xfce.org (Alexander Schwinn)</author>
       <title>ANNOUNCE: thunar-archive-plugin 0.5.0 released</title>
@@ -501,81 +540,6 @@ Fixes
 Translation Updates:
   Danish, Greek, Russian, Turkish</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001103.html</link>
-    </item>
-    <item>
-      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
-      <title>ANNOUNCE: mousepad 0.5.9 released</title>
-      <pubDate>Fri, 01 Apr 2022 09:50:37 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;6247032d1961e_6cf82b067380c5c43798e@xfce2.mail&amp;gt;</guid>
-      <description>mousepad 0.5.9 is now available for download from
-  
-  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.9.tar.bz2
-  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.9.tar.bz2?sha1
-  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.9.tar.bz2?sha256
-
-
-What is mousepad?
-=================
-
-A simple text editor for Xfce.
-
-Website: 
-  https://docs.xfce.org/apps/mousepad/
-
-
-Release notes for 0.5.9
-=======================
-- New Features:
-  - Add shortcuts plugin (#70, !121)
-    Depends on Libxfce4ui 4.17.5 which is a dev version, so will
-    be excluded at configure time on most systems until Xfce 4.18
-    is released.
-  - Add search history (!119)
-  - File monitoring: Add an automatic reloading option
-
-- Appearance Changes / Minor Improvements:
-  - Move the document modification mark to the close button (#63,
-    !122)
-  - Add mousepad styleclass for easier theming (#33)
-  - Hide search bar by pressing Esc key even when not focused
-  - Search: Escape selection when regex search is enabled
-
-- Code Refactoring:
-  - Plugins: Add a skeleton plugin to ease writing of new plugins
-
-- Bug Fixes:
-  - Test plugin: Sanitize memory management of sources
-  - Honor GTK_CSD
-  - Filter entries from `accels.scm` on non-detailed action name
-  - i18n: Check for `bind_textdomain_codeset()`
-  - Update Copying (#160, !120)
-  - Session history: Never clear session array on exit (#162)
-  - Fix broken feature &amp;quot;Show menubar temporarily when hidden&amp;quot;
-  - Force encoding when reloading
-  - Force encoding when it has been explicitly set by the user
-  - Do not consider encoding as always user-set in the &amp;quot;Open&amp;quot;
-    dialog
-  - Fix antonym of the word &amp;quot;indent&amp;quot; in preferences dialog (!118)
-  - File monitoring: Try to filter out fake deletions
-  - Add ellipsis to preferences menu entry (!117)
-  - Switch all labels to title case in prefs dialog (!116)
-  - Correctly restore font size after zooming when using system
-    font (#158)
-  - Printing: Enable line wrapping by default (#156)
-  - Fix a warning from GCC static analyzer
-  - Search: Do not delay the search when the text changes
-
-- Translation Updates:
-  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-  Dutch, Eastern Armenian, English (Australia), English (United
-  Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-  Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
-  1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
-  Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
-  Thai, Turkish, Ukrainian, Uyghur</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html</link>
     </item>
   </channel>
 </rss>
