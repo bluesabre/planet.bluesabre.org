@@ -13,10 +13,73 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Tue, 17 May 2022 03:30:17 -0400</lastBuildDate>
+	<lastBuildDate>Tue, 17 May 2022 06:54:33 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[pidgin (1:2.14.9-2ubuntu1) kinetic]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-2ubuntu1/changelog</link>
+			<pubDate>Tue, 17 May 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Gianfranco Costamagna]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-2ubuntu1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Minimize delta with Debian: remaining changes:
+    <ul>
+      <li>Bump epoch (change committed on git)</li>
+      <li>add unity integration</li>
+      <li>update preferences file.</li>
+      <li>add Ubuntu patches:
+        <ul>
+          <li>04_let_crasher_for_apport.patch</li>
+          <li>05_default_to_irc_ubuntu_com.patch</li>
+          <li>10_docklet_default_off.patch</li>
+          <li>11_buddy_list_really_show.patch</li>
+          <li>13_sounds_and_timers.patch</li>
+          <li>60_1024x600_gtkpounce.c.patch</li>
+          <li>60_1024x600_gtkprefs.c.patch</li>
+          <li>pounce-webview.patch</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Minimize delta with Debian: remaining changes:
+    <ul>
+      <li>Bump epoch (change committed on git)</li>
+      <li>add unity integration</li>
+      <li>update preferences file.</li>
+      <li>add Ubuntu patches:
+        <ul>
+          <li>04_let_crasher_for_apport.patch</li>
+          <li>05_default_to_irc_ubuntu_com.patch</li>
+          <li>10_docklet_default_off.patch</li>
+          <li>11_buddy_list_really_show.patch</li>
+          <li>13_sounds_and_timers.patch</li>
+          <li>60_1024x600_gtkpounce.c.patch</li>
+          <li>60_1024x600_gtkprefs.c.patch</li>
+          <li>pounce-webview.patch</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[xfce4-terminal (1.0.3-1) unstable]]></title>
@@ -2377,35 +2440,6 @@ thunar.</p>
   <li>XfceShortcutDialog: Fix a memory leak</li>
   <li>Translation Updates:
 Azerbaijani</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[xubuntu-meta (2.241) jammy]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.241/changelog</link>
-			<pubDate>Mon, 28 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.241/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>Refreshed dependencies</li>
-  <li>Removed firefox from desktop-recommends (LP: #1966794)</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>Refreshed dependencies</li>
-  <li>Removed firefox from desktop-recommends (LP: #1966794)</li>
 </ul>
 ]]>
         
