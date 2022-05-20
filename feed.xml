@@ -13,7 +13,7 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Fri, 20 May 2022 03:30:17 -0400</lastBuildDate>
+	<lastBuildDate>Fri, 20 May 2022 06:54:33 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
@@ -2030,6 +2030,49 @@ options (Issue #182).</li>
 		</item>
 	
 		<item>
+			<title><![CDATA[greybird-gtk-theme (3.23.1-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-1/changelog</link>
+			<pubDate>Tue, 12 Apr 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>New upstream version 3.23.1 (Closes: #1008647)</li>
+  <li>Update Standards-Version to 4.6.0.1</li>
+  <li>d/copyright: Update copyright to match upstream</li>
+  <li>d/control:
+    <ul>
+      <li>Drop Breaks/Replaces on shimmer-wallpapers, no longer needed.</li>
+      <li>Add myself to Uploaders</li>
+    </ul>
+  </li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New upstream version 3.23.1 (Closes: #1008647)</li>
+  <li>Update Standards-Version to 4.6.0.1</li>
+  <li>d/copyright: Update copyright to match upstream</li>
+  <li>d/control:
+    <ul>
+      <li>Drop Breaks/Replaces on shimmer-wallpapers, no longer needed.</li>
+      <li>Add myself to Uploaders</li>
+    </ul>
+  </li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
 			<title><![CDATA[xubuntu-default-settings (22.04.0) jammy]]></title>
 			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_22.04.0/changelog</link>
 			<pubDate>Sun, 10 Apr 2022 00:00:00 -0400</pubDate>
@@ -2398,48 +2441,6 @@ Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
 1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
 Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
 Thai, Turkish, Ukrainian, Uyghur</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: libxfce4ui 4.17.6 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html</link>
-			<pubDate>Thu, 31 Mar 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[[Please note that this is a development release.]]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p>[Please note that this is a development release.]</p>
-
-<p>Development release on the master branch, required to be able to make
-use of 'xfce_gtk_toggle_tool_button_new_from_action_entry' inside
-thunar.</p>
-
-<ul>
-  <li>XfceShortcutsEditor: Do not update editor if shortcut change failed</li>
-  <li>XfceShortcutsEditor: Allow to choose "Space" or "Enter" as shortcut</li>
-  <li>XfceShortcutDialog: Do not propagate key events</li>
-  <li>Function description spelling and format.</li>
-  <li>Add new function xfce_gtk_toggle_tool_button_new_from_action_entry</li>
-  <li>XfceShortcutsGrabber: Fix <code class="language-plaintext highlighter-rouge">-Wanalyzer-null-dereference</code> warning</li>
-  <li>Secure memory allocations</li>
-  <li>Update COPYING</li>
-  <li>XfceShortcutsGrabber: Detect auto-repeat key press</li>
-  <li>XfceShortcutDialog: Fix a memory leak</li>
-  <li>Translation Updates:
-Azerbaijani</li>
 </ul>
 ]]>
         
