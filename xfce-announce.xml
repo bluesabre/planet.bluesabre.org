@@ -4,7 +4,121 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sun, 22 May 2022 18:54:13 -0400</pubDate>
+    <pubDate>Sun, 22 May 2022 21:30:02 -0400</pubDate>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: xfce4-panel 4.17.1 released</title>
+      <pubDate>Sun, 22 May 2022 16:43:10 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;628aa05e2b934_6cf82b067380c5c44056f@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-panel 4.17.1 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.1.tar.bz2
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.1.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.1.tar.bz2?sha256
+
+
+What is xfce4-panel?
+====================
+
+Xfce&amp;#x27;s panel.
+
+Website: 
+  https://www.xfce.org/
+
+
+Release notes for 4.17.1
+========================
+[Please note that this is a development release.]
+
+- Dependency Changes:
+  - Garcon &amp;gt;= 4.17.0
+
+- New Features:
+  - tasklist: Middle click minimize window groups (!76)
+  - tasklist: Middle click close window groups (#322, !76)
+  - tasklist: Middle click opens new instance (#166, !72)
+
+- Bug Fixes:
+  - Add some autohide blockers (!78)
+  - Bump minimal required Garcon to 4.17.0 (#184, #485)
+  - libxfce4panel: Destroy plugin prefs dialog on plugin &amp;quot;destroy&amp;quot;
+    signal
+  - Autohide fixes (#48, #116, #397, !75)
+  - systray: Hide button menu if button is hidden by its app
+    (Fixes #391)
+  - launcher: Use same icons for item list as in prefs dialog 
+    (Fixes #415)
+  - launcher: Make add dialog consistent with panel add dialog 
+    (Fixes #416)
+  - tasklist: Fix context menu position in deskbar mode
+    (Fixes #417)
+  - systray: Display square systray icons on multiple rows (#426)
+  - panel: Do not rely on borders to trigger autohide animation
+  - Revert &amp;quot;Fix autohide with bg color or image (Bug #16064)&amp;quot; 
+    (#435, #512)
+  - tasklist: Hide wireframe on window buttons (#543, !70)
+  - systray: Icon size and priority fixes (#571, !73)
+  - systray: Disable broken smooth scroll with Xfwm4 (#411, !74)
+  - prefs-dialog: Filter out irrelevant selection changes in
+    &amp;quot;Items&amp;quot; tab
+  - wrapper: Ensure that provider stays alive when processing
+    &amp;quot;g-signal&amp;quot;
+  - Revert &amp;quot;panel: Keep a reference on item during drag and drop&amp;quot;
+  - panel: Clear opaque region so compositor properly apply
+    transparency (#378, #427)
+  - Fix `gdk_rgba_to_string()`-related memory leaks
+  - panel: Refactor background setters
+  - systray: Load icon from theme at desired size (#463)
+  - Take window scaling into account (#465, #486, !71)
+  - panel: Fix a memory leak
+  - clock: Prevent visual glitch when showing calendar window
+    (#466)
+  - tasklist: Fix wireframe for CSD windows (v2) (#562)
+  - systray: Check that the proxy exists when invalidating item
+
+- Translation Updates:
+  Albanian, Bulgarian, Chinese (China), Chinese (Taiwan), Dutch,
+  English (United Kingdom), French, German, Greek, Hebrew, Italian,
+  Japanese, Lithuanian, Malay, Norwegian Bokmål, Panjabi (Punjabi),
+  Polish, Portuguese, Portuguese (Brazil), Serbian, Slovenian, Spanish,
+  Swedish, Turkish</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001115.html</link>
+    </item>
+    <item>
+      <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
+      <title>ANNOUNCE: xfce4-terminal 1.0.4 released</title>
+      <pubDate>Sun, 22 May 2022 05:22:35 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;628a00db81b15_6cf82b067380c5c4403a0@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-terminal 1.0.4 is now available for download from
+  
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.4.tar.bz2
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.4.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.4.tar.bz2?sha256
+
+
+What is xfce4-terminal?
+=======================
+
+Xfce4-terminal is a modern terminal emulator for the Unix/Linux desktop
+- primarily for the Xfce desktop environment. It is a lightweight
+emulator based on the VTE widget, easy to use and provides an optional
+drop-down window (game-console style).
+
+Website: 
+  https://docs.xfce.org/apps/terminal/start
+
+
+Release notes for 1.0.4
+=======================
+Fixes a regression introduced in 1.0.1.
+
+Regressions fixed:
+- URL drag-n-drop adding rubbish characters (Issue #196)
+
+Gitlab:
+- Fix CI build</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001114.html</link>
+    </item>
     <item>
       <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
       <title>ANNOUNCE: garcon 4.17.0 released</title>
@@ -430,132 +544,6 @@ Release notes for 4.6.0
   Albanian, Armenian (Armenia), Basque, Belarusian, English (Canada),
   Finnish, French, Hebrew, Slovenian, Spanish, Thai, Ukrainian, Uyghur</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001106.html</link>
-    </item>
-    <item>
-      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
-      <title>ANNOUNCE: thunar 4.17.8 released</title>
-      <pubDate>Sat, 02 Apr 2022 18:38:35 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;6248d06ba9c75_6cf82b067380c5c4385d9@xfce2.mail&amp;gt;</guid>
-      <description>thunar 4.17.8 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.8.tar.bz2
-  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.8.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.8.tar.bz2?sha256
-
-
-What is thunar?
-===============
-
-Thunar is a modern file manager for the Xfce Desktop Environment. It has
-been designed from the ground up to be fast and easy-to-use. Its user
-interface is clean and intuitive, and does not include any confusing or
-useless options. Thunar is fast and responsive with a good start up time
-and directory load time. Thunar is accessible using Assistive
-Technologies and is fully standards compliant.
-
-Website: 
-  https://docs.xfce.org/xfce/thunar/start
-
-
-Release notes for 4.17.8
-========================
-[Please note that this is a development release.]
-
-Development release on the thunar master branch which ships alot of
-fixes, translation updates and new features.
-
-The highlight are:
-
-- Recursive search
-- Shortcuts editor GUI (Same than xfce4-terminal)
-- Configurable Toolbar
-
-I hope you enjoy !
-
-Here the detailed changelog:
-- Show `Configure Toolbar...` option on right-clicking toolbar items.
-- Add built-in buttons for toolbar customization:
-    Search, Toggle,Reload, Zoom
-- Allow to customize toolbar by using custom actions (Issues #607 #621)
-- Location bar: Make sure to show the correct root button (Issue #725)
-- Recursive search: Do not search when the search query is empty.
-- Column headers: Configure columns popup on right-click
-- Bulk renamer: Use wording &amp;quot;Extension&amp;quot; over &amp;quot;Suffix&amp;quot; (Issue #729)
-- Look for thunar plugins at $THUNARX_DIRS (Issue #748)
-- Speedup search by disabling row-related callbacks while searching
-- Add spinner element to each tab to display search status
-- Add option for vertical split panes (#722)
-- List view name column improvements (#736)
-- Option to show full path in tabs (Issue #627)
-- Generate documentation for internal functions (Issue #617)
-- Fix of various memory leaks
-- Dont reload the view when text is copied (Issue #706)
-- Use &amp;#x27;g_timeout_add_full&amp;#x27; to set tree-view cursor (Issue #351)
-- NULL checks to prevent crash on malformed bookmark URI (Issue #716)
-- Skip files with IO errors during directory scan (Issue #696)
-- Shortcuts View: Allow devices a drag and drop target (Issue #708)
-- Support for thumbnail size x-large and xx-large (Issue #606)
-- Add support for accelerators that include the `Tab` key (Issue #580)
-- Add Recursive Search (!146)
-- Use save way to copy a &amp;quot;struct tm&amp;quot; to prevent crash (Issue #700)
-- Add UCA parameter to specify a number of files (Issue #26)
-- Fix: User disabled accelerators are re-enabled on 2nd restart (!177)
-- Add a GUI shortcuts editor (Issue #279)
-- Use alphabetical sorting for devices in the side-pane (Issue #610)
-
-Translation Updates:
-  Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
-  Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
-  (Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
-  (Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
-  French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
-  Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
-  Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Persian
-  (Iran), Polish, Portuguese, Romanian, Serbian, Slovak, Spanish,
-  Swedish, Telugu, Thai, Turkish, Urdu, Urdu (Pakistan), Uyghur,
-  Vietnamese</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001105.html</link>
-    </item>
-    <item>
-      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
-      <title>ANNOUNCE: thunar 4.16.11 released</title>
-      <pubDate>Sat, 02 Apr 2022 18:10:54 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;6248c9ee58759_6cf82b067380c5c438335@xfce2.mail&amp;gt;</guid>
-      <description>thunar 4.16.11 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/thunar/4.16/thunar-4.16.11.tar.bz2
-  https://archive.xfce.org/src/xfce/thunar/4.16/thunar-4.16.11.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/thunar/4.16/thunar-4.16.11.tar.bz2?sha256
-
-
-What is thunar?
-===============
-
-Thunar is a modern file manager for the Xfce Desktop Environment. It has
-been designed from the ground up to be fast and easy-to-use. Its user
-interface is clean and intuitive, and does not include any confusing or
-useless options. Thunar is fast and responsive with a good start up time
-and directory load time. Thunar is accessible using Assistive
-Technologies and is fully standards compliant.
-
-Website: 
-  https://docs.xfce.org/xfce/thunar/start
-
-
-Release notes for 4.16.11
-=========================
-Bugfix and translation release on the thunar 4.16 branch.
-
-Bugfixes:
-- Dont reload the view when text is copied (Issue #706)
-- NULL checks to prevent crash on malformed bookmark URI (Issue #716)
-- Use &amp;#x27;g_timeout_add_full&amp;#x27; to set tree-view cursor (Issue #351)
-- Fix signal disconnect in thunar_window_unrealize
-- Don&amp;#x27;t go beyond THUNAR_N_VISIBLE_COLUMNS while parsing col widths
-
-Translation Updates:
-  Danish, Greek, Indonesian, Malay, Occitan (post 1500), Romanian</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001104.html</link>
     </item>
   </channel>
 </rss>
