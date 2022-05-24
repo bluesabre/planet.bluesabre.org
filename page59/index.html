@@ -65,6 +65,45 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2020/03/30/xfce-pulseaudio-plugin-0-4-3-released/">Xfce PulseAudio Plugin 0.4.3 Released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2020-03-30">
+                30 Mar 2020
+            </time>
+            <a href="https://bluesabre.org/2020/03/30/xfce-pulseaudio-plugin-0-4-3-released/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2 id="what-s-new">What's New?</h2><h3 id="general">General</h3><ul><li>Exo 0.11 or newer is now required</li><li>Fixed various memory leaks and warnings</li><li>Removed unused dbus-glib include (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=15343">#15343</a>)</li><li>Replaced g_type_class_add_private deprecations</li><li>Updated copyright years</li><li>Updated URLs from goodies.xfce.org to docs.xfce.org (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=16173">#16173</a>)</li></ul><h3 id="mpris-enhancements">MPRIS Enhancements</h3><ul><li>Support for filename icons (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=14329">#14329</a>)</li><li>Support for single-string variants on xesam:artist</li><li>Support for the DesktopEntry property (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=14412">#14412</a>)</li><li>Support for the plasma-browser-integration plugin (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=15487">#15487</a>)</li><li>Detection of artist and title from the track title</li></ul><h3 id="preferences">Preferences</h3><ul><li>Fixed icon rendering for known players</li></ul><h3 id="translation-updates">Translation Updates</h3><img src="https://bluesabre.org/content/images/2020/03/xfce4-pulseaudio-plugin-0.3.4-bluesabre-org.png" alt="Xfce PulseAudio Plugin 0.4.3 Released"><p>Albanian, Belarusian, Chinese (Taiwan), Galician, Interlingue, Slovenian</p><h2 id="plasma-browser-integration">Plasma/Browser Integration</h2><p><em><a href="https://community.kde.org/Plasma/Browser_Integration">Plasma/Browser Integration</a></em> is an extension for Firefox and Chromium-based browsers that better integrates those browsers with the Plasma Shell. It enables the following functionality for Plasma desktops:</p><ul><li>MPRIS2 media controls</li><li>Sending links via KDE Connect</li><li>Showing and controlling downloads from the notification area</li><li>Finding browser tabs in the Run Command window</li></ul><p>Thankfully, this extension does not require Plasma to run! With just a few adjustments to the Xfce PulseAudio Plugin, Xfce users can now also utilize the MPRIS2 media controls and link sharing.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2020/03/xfce4-pulseaudio-plugin-demo-1.png" class="kg-image" alt="Xfce PulseAudio Plugin 0.4.3 Released"><figcaption>Artist, track title, and playlist playback controls. Oh yeah!</figcaption></figure><h3 id="how-to-install">How to Install</h3><p><em>Instructions adapted and simplified from the <a href="https://community.kde.org/Plasma/Browser_Integration#How_to_install">KDE Community website</a>. Check this link if these instructions no longer work.</em></p><p>The extension requires two components: the browser extension and the native host. Once both are installed and correctly configured, active streams should appear in the Xfce PulseAudio Plugin menu.</p><h4 id="browser-extension">Browser Extension</h4><p>Install the plugin appropriate for your browser. Most Chromium-based plugins support extensions installed from the Chrome Web Store.</p><ul><li>Chromium-based browsers including (but not limited to) Google Chrome, Chromium, Brave, and Vivaldi: <a href="https://chrome.google.com/webstore/detail/plasma-integration/cimiefiiaegbelhefglklhhakcgmhkai">Chrome Web Store</a></li><li>Mozilla Firefox: <a href="https://addons.mozilla.org/en-US/firefox/addon/plasma-integration/">Firefox Add-Ons</a></li></ul><h4 id="native-host">Native Host</h4><p>Most distributions should now include a plasma-desktop-integration package in their repositories. Find yours <a href="https://repology.org/project/plasma-browser-integration/versions">here at Repology</a>. If you're using Ubuntu or a derivative, installing the native host is as easy as:</p><pre><code class="language-bash">sudo apt update
+sudo apt install plasma-browser-integration</code></pre><p>Once both components are installed, the extension should just start working!</p><h2 id="downloads">Downloads</h2><p><a href="https://archive.xfce.org/src/panel-plugins/xfce4-pulseaudio-plugin/0.4/xfce4-pulseaudio-plugin-0.4.3.tar.bz2">Source tarball</a></p><pre><code>$ md5sum xfce4-pulseaudio-plugin-0.4.3.tar.bz2 
+3d86032acb9364d47e0a144350c63e1a
+
+$ sha1sum xfce4-pulseaudio-plugin-0.4.3.tar.bz2
+5682fa1ed6976e94fa01c91fc5b7839bfe804241
+
+$ sha256sum xfce4-pulseaudio-plugin-0.4.3.tar.bz2
+5a518237e2137341d8ca6584938950525e20c28a0177e30ecaea3ba8e7a2615b
+</code></pre><p>Xfce PulseAudio Plugin 0.4.3 is included in Xubuntu 20.04 "Focal Fossa", available in April. Users testing the daily images should be able to check it out right now.</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2020/03/30/xfce-pulseaudio-plugin-0-4-3-released/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-session/xfce4-session_4.14.2-0ubuntu1/changelog">xfce4-session (4.14.2-0ubuntu1) focal</a></h1>
         </header>
         <header class="post-meta">
@@ -446,57 +485,6 @@
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.1-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-statusnotifier-plugin/xfce4-statusnotifier-plugin_0.2.2-1/changelog">xfce4-statusnotifier-plugin (0.2.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-03-14">
-                14 Mar 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-statusnotifier-plugin/xfce4-statusnotifier-plugin_0.2.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>d/watch:
-    <ul>
-      <li>Update for upstream’s move to mirrorbit.</li>
-      <li>Use uscan special strings.</li>
-    </ul>
-  </li>
-  <li>New upstream version 0.2.2</li>
-  <li>d/compat, d/control:
-    <ul>
-      <li>Drop d/compat in favor of debhelper-compat, bump to 12.</li>
-    </ul>
-  </li>
-  <li>d/control:
-    <ul>
-      <li>R³: no.</li>
-      <li>Update homepage for move from goodies.xfce.org to docs.xfce.org.</li>
-    </ul>
-  </li>
-  <li>Update Standards-Version to 4.5.0.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-statusnotifier-plugin/xfce4-statusnotifier-plugin_0.2.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

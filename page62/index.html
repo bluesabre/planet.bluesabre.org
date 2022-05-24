@@ -65,6 +65,48 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-3/changelog">lightdm-gtk-greeter-settings (1.2.2-3) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                James Lu
+            
+            
+            <time class="post-date" datetime="2019-12-24">
+                24 Dec 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-3/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>d/control:
+    <ul>
+      <li>Remove outdated X-Python3-Version field (lintian tag      ancient-python-version-field)</li>
+      <li>Bump to Standards-Version 4.4.1 and debhelper 12; no changes needed.</li>
+      <li>Fix insecure-copyright-format-uri Lintian warning</li>
+      <li>Set Rules-Requires-Root: no</li>
+    </ul>
+  </li>
+  <li>d/copyright: update copyright authors and years</li>
+  <li>Add patch 0001-Refresh-translations.patch backported from upstream commit    https://git.launchpad.net/lightdm-gtk-greeter-settings/commit/?id=69e614899be17816d1cc8ce658d95d6731b83bd7    Thanks to Roxfr for suggesting translation updates.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-3/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://bluesabre.org/2019/12/21/catfish-1-4-11-released/">Catfish 1.4.11 Released</a></h1>
         </header>
         <header class="post-meta">
@@ -479,64 +521,6 @@ greeter-session=slick-greeter</code></pre><!--kg-card-end: html--><!--kg-card-be
         <footer>
             
                 <a class="read-more" href="https://bluesabre.org/2019/10/20/install-xubuntu-19-10-on-a-raspberry-pi-4/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2019/10/19/xfce-4-15-development-phase-starting/">Xfce 4.16 development phase starting</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Simon Steinbeiß
-            
-            
-            <time class="post-date" datetime="2019-10-19">
-                19 Oct 2019
-            </time>
-            <a href="https://simon.shimmerproject.org/2019/10/19/xfce-4-15-development-phase-starting/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>As promised we&#8217;ll try to stick to a tighter schedule this time, so without further ado: the development phase towards Xfce 4.16 has officially started! <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-<p>This means that we have a list of features we will try to work on (that is <em>not</em> guaranteed though) and that is detailed on <a href="https://wiki.xfce.org/releng/4.16/roadmap">our roadmap page</a> and its subpages. I&#8217;ll try to summarize and highlight some (obviously with a focus on the stuff I know better because I&#8217;m more involved) of it for you here.</p>
-<h5>Dependency Update</h5>
-<p>Let&#8217;s start with one very important and obvious change: <strong>we will drop Gtk2 support with Xfce 4.16</strong>. This will have a concrete effect on old Panel plugins or Gtk2 applications that rely on libxfce4ui.</p>
-<p>Xfce 4.16 will introduce a new dependency on libgtop to display information about the system (in the &#8220;About&#8221; dialog). We hope this will also have a positive side-effect on e.g. Panel plugins to standardize on this library.</p>
-<h5>General UI</h5>
-<p>In the 4.14 cycle we <em>tried</em> to do a 1:1 port of what used to be our Gtk2 desktop environment, avoiding visual changes. In the 4.16 cycle we plan to harmonize the appearance of certain elements that either became inconsistent through the port or already were inconsistent before (e.g. toolbars or inline toolbars).</p>
-<p>We will also play with client-side decorations where we feel it makes sense (for instance replacing the so-called XfceTitledDialog, that is used for all settings dialogs with a HeaderBar version). Before anyone gets too excited (both positively or negatively): It is not planned to redesign more complex applications (like Thunar) with Headerbars in 4.16. We will however try to keep the experience and looks consistent, which means gradually moving to client side decorations also with our applications (please note that client side decorations are not the same as HeaderBars!). Through this change e.g. &#8220;dark modes&#8221; in applications will look good (see the part about the Panel below).</p>
-<p>Now before there is a shitstorm about this change I would kindly ask everyone to give us time to figure out what exactly we want to change in this cycle. Also, switching to client-side decorations alone is not a big visual departure &#8211; feel free to also dig through <a href="https://wiki.xfce.org/releng/4.16/roadmap/general_ui/csd">the client-side decorations page</a> if you want to read/see more on this.</p>
-<h5>Thunar</h5>
-<p>As mentioned before: no big redesign. But lots and lots of smaller improvements and goodies are planned to up the user experience of the file manager you love!</p>
-<p>This includes extending the API for plugins, installing some Thunar actions by default and storing view settings per directory.</p>
-<h5>Panel</h5>
-<p>Some of the building blocks of what shall be done for the panel is already underway, so I can show off some screenshots in this section (shameless self-advertisement).</p>
-<p>As dark modes are all the rage everywhere and it really makes sense for the panel to have one, here it goes. Now you can easily get a dark panel &#8211; even with bright themes like Adwaita! With having client side decorations, the window borders of the preferences dialog will also look consistent with the rest of the dialog (remember that Xfwm4 doesn&#8217;t &#8211; and won&#8217;t &#8211; support the dark Gtk variant).</p>
-<p><img class="transparent aligncenter" src="https://wiki.xfce.org/_media/releng/4.16/roadmap/general_ui/panel-dark-csd.png" alt="https://wiki.xfce.org/_media/releng/4.16/roadmap/general_ui/panel-dark-csd.png" /></p>
-<p>The panel&#8217;s autohide modes received a &#8220;slide out&#8221; animation, so it&#8217;s more intuitive to understand where the panel went. (We may tweak this feature further or even make it optional, but for the time being it&#8217;s there by default.)</p>
-<p>The launcher plugin will receive a feature from garcon, i.e. showing the Desktop Actions of a launcher item in its right-click menu (i.e. &#8220;Open Private Window&#8221; for Firefox). This is really just a feature preview though, the code is in working but very hacky/rough state.</p>
-<p><img class="size-full wp-image-303 aligncenter" src="http://simon.shimmerproject.org/wp-content/uploads/2019/10/launcher-actions.png" alt="" width="415" height="317" srcset="https://simon.shimmerproject.org/wp-content/uploads/2019/10/launcher-actions.png 415w, https://simon.shimmerproject.org/wp-content/uploads/2019/10/launcher-actions-300x229.png 300w" sizes="(max-width: 415px) 85vw, 415px" /></p>
-<p>Some other core plugins (workspace switcher, tasklist) will also receive tweaks and improvements.</p>
-<h5>Settings</h5>
-<p>Especially the display settings shall receive more attention, introducing support for scaled mirror mode (helpful if not all displays share a reasonable resolution) and more.</p>
-<p>We may also include our own daemon to talk to colord directly to eradicate the need for xiccd.</p>
-<h5>Power Manager</h5>
-<p>&#8220;Night light&#8221; (as in: a timed function that applies a colorfilter to your display to reduce strain on the eyes) will likely be added to the power manager. (Although if we figure out it&#8217;s easier to implement in the settings daemon it may be moved there.) Also some improvements to the panel plugin are planned as well as including a battery histogram in the settings dialog to visualize battery drain.</p>
-<h6>For all other components only smaller changes are planned.</h6>
-<h5>Let&#8217;s get on with it</h5>
-<p>As mentioned before this cycle is intended to be more lightweight to enable us to &#8220;stick to the plan&#8221; and get a release to our user base sooner than with the previous two releases. Also keep in mind that we want to renew some of our infrastructure, which will also take away some time.</p>
-<p>So now let&#8217;s get the 4.15 releases going! <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://simon.shimmerproject.org/2019/10/19/xfce-4-15-development-phase-starting/">&raquo; Original Post</a>
             
         </footer>
     </article>

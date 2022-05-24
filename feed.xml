@@ -13,10 +13,35 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Tue, 24 May 2022 09:30:18 -0400</lastBuildDate>
+	<lastBuildDate>Tue, 24 May 2022 12:54:32 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[xfce4-terminal (1.0.4-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.4-1/changelog</link>
+			<pubDate>Tue, 24 May 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Yves-Alexis Perez]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.4-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New upstream version 1.0.4</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[pidgin (1:2.14.9-2ubuntu1) kinetic]]></title>
@@ -2349,99 +2374,6 @@ The Shortcuts Editor requires libxfce4ui 4.17.2 or greater.</p>
 
 <p>Translation Updates:
   Danish, Greek, Russian, Turkish</p>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: mousepad 0.5.9 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html</link>
-			<pubDate>Fri, 01 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>New Features:
-    <ul>
-      <li>Add shortcuts plugin (#70, !121)
-Depends on Libxfce4ui 4.17.5 which is a dev version, so will
-be excluded at configure time on most systems until Xfce 4.18
-is released.</li>
-      <li>Add search history (!119)</li>
-      <li>File monitoring: Add an automatic reloading option</li>
-    </ul>
-  </li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>New Features:
-    <ul>
-      <li>Add shortcuts plugin (#70, !121)
-Depends on Libxfce4ui 4.17.5 which is a dev version, so will
-be excluded at configure time on most systems until Xfce 4.18
-is released.</li>
-      <li>Add search history (!119)</li>
-      <li>File monitoring: Add an automatic reloading option</li>
-    </ul>
-  </li>
-  <li>Appearance Changes / Minor Improvements:
-    <ul>
-      <li>Move the document modification mark to the close button (#63,
-!122)</li>
-      <li>Add mousepad styleclass for easier theming (#33)</li>
-      <li>Hide search bar by pressing Esc key even when not focused</li>
-      <li>Search: Escape selection when regex search is enabled</li>
-    </ul>
-  </li>
-  <li>Code Refactoring:
-    <ul>
-      <li>Plugins: Add a skeleton plugin to ease writing of new plugins</li>
-    </ul>
-  </li>
-  <li>Bug Fixes:
-    <ul>
-      <li>Test plugin: Sanitize memory management of sources</li>
-      <li>Honor GTK_CSD</li>
-      <li>Filter entries from <code class="language-plaintext highlighter-rouge">accels.scm</code> on non-detailed action name</li>
-      <li>i18n: Check for <code class="language-plaintext highlighter-rouge">bind_textdomain_codeset()</code></li>
-      <li>Update Copying (#160, !120)</li>
-      <li>Session history: Never clear session array on exit (#162)</li>
-      <li>Fix broken feature "Show menubar temporarily when hidden"</li>
-      <li>Force encoding when reloading</li>
-      <li>Force encoding when it has been explicitly set by the user</li>
-      <li>Do not consider encoding as always user-set in the "Open"
-dialog</li>
-      <li>Fix antonym of the word "indent" in preferences dialog (!118)</li>
-      <li>File monitoring: Try to filter out fake deletions</li>
-      <li>Add ellipsis to preferences menu entry (!117)</li>
-      <li>Switch all labels to title case in prefs dialog (!116)</li>
-      <li>Correctly restore font size after zooming when using system
-font (#158)</li>
-      <li>Printing: Enable line wrapping by default (#156)</li>
-      <li>Fix a warning from GCC static analyzer</li>
-      <li>Search: Do not delay the search when the text changes</li>
-    </ul>
-  </li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (United
-Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
-1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
-Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
-Thai, Turkish, Ukrainian, Uyghur</li>
-</ul>
 ]]>
         
       </content:encoded>

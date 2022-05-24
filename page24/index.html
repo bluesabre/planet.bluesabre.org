@@ -65,6 +65,65 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2021/03/23/post-4-16-fatigue-and-whats-next/">Post 4.16 fatigue and what’s next</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon Steinbeiß
+            
+            
+            <time class="post-date" datetime="2021-03-23">
+                23 Mar 2021
+            </time>
+            <a href="https://simon.shimmerproject.org/2021/03/23/post-4-16-fatigue-and-whats-next/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>After we successfully released Xfce 4.16 as an early Christmas gift to all users last year I personally fell into the typical &#8220;post release fatigue&#8221; (PRF). On the one hand I was exhausted, on the other hand that&#8217;s how far our plans had taken us so there were no clear next steps we had settled on (apart from taking a break and recharging :)).</p>
+<p>So what&#8217;s been going on since then&#8230;</p>
+<h3>Xfce 4.16 maintenance</h3>
+<p>First of all, we&#8217;ve done quite a few maintenance release of 4.16 to ensure it&#8217;s stability. We already provided lots of bugfix releases of 4.14 &#8211; some even very recently (<a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001014.html">Desktop</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001013.html">Appfinder</a>) &#8211; but it looks like 4.16 may end up being (at least: among) the best maintained Xfce release so far.</p>
+<p>Thunar is probably the active component with a 6th patch release being available already. Here goes an overview of all patch releases since 4.16.0 in December 2020:</p>
+<ul>
+<li>Thunar: <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000976.html">4.16.1</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000984.html">4.16.2</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001002.html">4.16.3</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001017.html">4.16.4</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001018.html">4.16.5</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001023.html">4.16.6</a></li>
+<li>Panel: <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000994.html">4.16.1</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001008.html">4.16.2</a></li>
+<li>Xfwm4: <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000981.html">4.16.1</a></li>
+<li>Garcon: <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000985.html">4.16.1</a></li>
+<li>Appfinder: <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000987.html">4.16.1</a></li>
+</ul>
+<h3>Developer documentation</h3>
+<p>In order to improve documentation for developers and make it more readily available we have started <a href="https://developer.xfce.org">developer.xfce.org.</a> For now this site hosts the API documentation of most relevant core components. This documentation is automatically kept up-to-date as part of our GitLab CI for the <a href="https://hub.docker.com/r/xfce/xfce-build">xfce/xfce-build Docker container</a> and re-deployed on every week based on the latest 4.16 release tags.</p>
+<p>Furthermore, we improved the shell-based helper scripts for developers, e.g. <a href="https://gitlab.xfce.org/xfce/xfce4-dev-tools/-/blob/master/helpers/xfce-build">xfce-build</a> (to locally run distcheck in the same Docker container used in our CI) with subcommands.</p>
+<h3>Task manager</h3>
+<p>I have fixed some bugs and done maintenance releases of the 1.4 series and started the 1.5 development series, which features a port of Task manager to Xfconf and Client-side decorations.</p>
+<p><img class="aligncenter size-full wp-image-373" src="http://simon.shimmerproject.org/wp-content/uploads/2021/03/taskman17.png" alt="" width="748" height="577" srcset="https://simon.shimmerproject.org/wp-content/uploads/2021/03/taskman17.png 748w, https://simon.shimmerproject.org/wp-content/uploads/2021/03/taskman17-300x231.png 300w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" /></p>
+<h3>New icon naming scheme</h3>
+<p>As we changed the icon names for all Xfce components during the 4.16 cycle, I also migrated some plugins to the new naming scheme.</p>
+<p>To briefly explain the rationale behind our change in 4.16: the previous names were highly inconsistent, overlapped with icons also used/shipped by other packages in distributions (so shipping our own icons with those &#8220;old&#8221; / &#8220;used&#8221; names would lead to unsolvable packaging conflicts). Especially the &#8220;standard&#8221; names like &#8220;preferences-desktop-*&#8221; would have been impossible to update and ship for us. In order to provide a consistent look and also to make it easier for icon theme maintainers to set up icons for Xfce we decided to follow the rDNS naming scheme for desktop files. The same naming scheme is already followed by Gnome, so it is fairly widespread in Gtk-based environments. Finally: previously no icon theme maintainer could even provide dedicated icons because the names overlapped and would also appear in other contexts or Desktop Environments.</p>
+<p>Being an icon theme maintainer myself, I understood that this would lead to work for others. <a href="https://twitter.com/bluesabredavis/status/1348617621990731781">Sean even created a script</a> to make it easier for everyone to update existing themes.</p>
+<h3>Plugin updates</h3>
+<p><img class="aligncenter size-full wp-image-369" src="http://simon.shimmerproject.org/wp-content/uploads/2021/03/xfce-load-plugins.png" alt="" width="443" height="145" srcset="https://simon.shimmerproject.org/wp-content/uploads/2021/03/xfce-load-plugins.png 443w, https://simon.shimmerproject.org/wp-content/uploads/2021/03/xfce-load-plugins-300x98.png 300w" sizes="(max-width: 443px) 85vw, 443px" /></p>
+<p>I have taken a look at the three more prominent &#8220;monitoring plugins&#8221; of Xfce, namely <a href="https://gitlab.xfce.org/panel-plugins/xfce4-cpugraph-plugin">CPU-graph</a>, <a href="https://gitlab.xfce.org/panel-plugins/xfce4-systemload-plugin">Systemload</a> and <a href="https://gitlab.xfce.org/panel-plugins/xfce4-netload-plugin">Netload</a>. I have created new icons for all three of them in a style consistent to the icons introduced in Xfce 4.16 and also ported Systemload to Xfconf.</p>
+<p><img class="aligncenter size-full wp-image-370" src="http://simon.shimmerproject.org/wp-content/uploads/2021/03/org.xfce_.panel_.weather.png" alt="" width="128" height="128" /><img class="aligncenter wp-image-371 size-medium" src="http://simon.shimmerproject.org/wp-content/uploads/2021/03/nodata-300x264.png" alt="" width="300" height="264" srcset="https://simon.shimmerproject.org/wp-content/uploads/2021/03/nodata-300x264.png 300w, https://simon.shimmerproject.org/wp-content/uploads/2021/03/nodata.png 552w" sizes="(max-width: 300px) 85vw, 300px" /></p>
+<p>I have also updated the Weather plugin quite a bit, adding a new icon, porting to Xfconf and improving the UX of the settings and forecast summary windows.</p>
+<p>Finally some of the plugins mentioned above now implement the xfce_dialog_show_help API, which creates a &#8220;Help&#8221; button linking to the plugin&#8217;s documentation. This has been made possible by <a href="https://gitlab.xfce.org/kevinbowen">Kev</a>, who ported the plugin documentation pages to <a href="https://docs.xfce.org/panel-plugins/start">docs.xfce.org</a> and harmonized them, where possible. He also helped with adding more of these &#8220;Help&#8221; buttons and we&#8217;ll probably continue updating our plugins in parallel to the 4.18 cycle to make it easier for users to find the corresponding online documentation.</p>
+<h3>What&#8217;s next</h3>
+<p>The next step for me will likely be to focus on kickstarting the <a href="https://wiki.xfce.org/releng/4.18/roadmap">4.18 cycle</a>, which is still in its planning phase.</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://simon.shimmerproject.org/2021/03/23/post-4-16-fatigue-and-whats-next/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001026.html">xfce4-battery-plugin 1.1.4 released</a></h1>
         </header>
         <header class="post-meta">
@@ -471,36 +530,6 @@ need for Xfconf legacy.</li>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.8.1-0ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/2021/03/16/stable-release-updates-on-xubuntu/">Stable Release Updates on Xubuntu</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2021-03-16">
-                16 Mar 2021
-            </time>
-            <a href="https://bluesabre.org/2021/03/16/stable-release-updates-on-xubuntu/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><img src="https://bluesabre.org/content/images/2021/03/xubuntu_sru.png" alt="Stable Release Updates on Xubuntu"><p>From the moment an Ubuntu release (and flavors) reaches <a href="https://wiki.ubuntu.com/FinalFreeze">Final Freeze</a> until the release is end-of-life (<a href="https://help.ubuntu.com/community/EOL">EOL</a>), updates are released following the &quot;stable release update&quot; procedure, or SRU. This process is documented on the <a href="https://wiki.ubuntu.com/StableReleaseUpdates">Ubuntu Wiki</a>. However, it can be intimidating for new and long-time contributors and also confusing for users. I&apos;d like to explain this process from a Xubuntu perspective.</p><p>We currently have two packages going through the SRU procedure for Xubuntu 20.04 and 20.10. After you&apos;ve read this article, consider checking them out and helping with verification.</p><ul><li><a href="https://bugs.launchpad.net/ubuntu/+source/xfce4-weather-plugin/+bug/1918002">Xfce Weather Plugin</a></li><li><a href="https://bugs.launchpad.net/ubuntu/+source/exo/+bug/1874954">Exo</a></li></ul><h2 id="stable-release-update-procedure">Stable Release Update Procedure</h2><ol><li>Identify the &quot;why&quot;</li><li>Create or update bug reports</li><li>Package and upload the fixes for each release</li><li>Wait for the SRU team to review and accept the upload</li><li>SRU Verification</li><li>Wait for the SRU team to release the package to the -updates pocket</li></ol><h3 id="identify-the-why">Identify the &quot;why&quot;</h3><p>A common misconception about stable Ubuntu releases is that all bug fixes and new releases (small and large) will arrive via an update. There is not an automatic process for these updates to land in a stable release. Further, any fixes and new features have to be documented and tested according to the procedure above. As you might imagine, this can be a massive time sink.</p><p>Stable release updates specific to Xubuntu will generally be limited to high-impact bugs:</p><ul><li>Security vulnerabilities</li><li>Severe regressions</li><li>Bugs that directly cause a loss of user data</li><li>External changes that cause the current version to no longer work</li></ul><p>If an update meets these requirements, it is eligible to be updated with a Stable Release Update. Lower impact bugs will generally not be considered for SRU, but may be fixed in the -backports pocket or the <a href="https://launchpad.net/~xubuntu-dev/+archive/ubuntu/staging">Xubuntu QA Staging PPA</a>.</p><h3 id="create-or-update-bug-reports">Create or update bug reports</h3><p>If the bugs being fixed have already been reported on Launchpad, they will need to be updated with the <a href="https://wiki.ubuntu.com/StableReleaseUpdates#SRU_Bug_Template">SRU template</a>. Other bugs and new features present in an upload should have new bug reports opened. Due to the time-based nature of landing a fix and following the SRU process, it can be a significant setback to have to start over, so more information is better than less. When in doubt, fill it out.</p><p>The standard SRU template typically includes the following sections: <strong>Impact</strong>, <strong>Test Plan</strong>, <strong>Where problems could occur</strong> (formerly Regression Potential), and <strong>Other Info</strong>. These sections help others who may not be completely familiar with the software or bug to be able to test it, and demonstrates that the upload and its regression potential has been sufficiently considered.</p><p>Once the bug reports are ready, the packages can be prepared and uploaded.</p><h3 id="package-and-upload-the-fixes-for-each-release">Package and upload the fixes for each release</h3><p>The first packaging-related step for a Stable Release Update is ensuring the fix is already released on the current development release. This may not always be applicable, but applies more often than not. Once the fix is verified in the development release, packages can be prepared for each affected stable release.</p><p>The packages are prepared with each bug fix linked in the Debian changelog. This will automatically update the affected bugs with status updates and tags and progress the bug status from <strong>In Progress</strong> to <strong>Fix Committed</strong>, and later to <strong>Fix Released</strong>. The packages are then uploaded to the -proposed pocket and <a href="https://launchpad.net/~xubuntu-dev/+archive/ubuntu/sru-staging">Xubuntu SRU Staging PPA</a>.</p><h3 id="wait-for-the-sru-team-to-review-and-accept-the-upload">Wait for the SRU team to review and accept the upload</h3><p>The Ubuntu SRU team is a small and busy one! Sometimes, it may take a few days for the team to review and accept the upload to the -proposed pocket. Once the package has been accepted, this starts the 7-day clock. Even after verification, a package upload must wait a minimum of 7 days before it is accepted into the -updates pocket.</p><h3 id="sru-verification">SRU verification</h3><p><a href="https://wiki.ubuntu.com/StableReleaseUpdates#Verification">SRU verification</a> can be completed by any Launchpad user, and is recommended for getting a fix released to the -updates pocket sooner. Following the test cases documented on each bug report...</p><ul><li>If the fix is sufficient and there&apos;s no regression, replace the verification-needed-<em>release</em> tag with verification-done-<em>release</em>. Add a comment describing the steps taken to verify the package.</li><li>If the fix is insufficient or there are regressions introduced, replace the verification-needed-<em>release</em> tag with verification-failed-<em>release</em>. Add a comment describing steps taken and issues encountered.</li></ul><p>An update is considered verified if it has at least two positive and no negative testimonials. If you&apos;re affected by a bug that is going through SRU verification, please join in and provide your feedback on the fix.</p><h3 id="wait-for-the-sru-team-to-release-the-package-to-the-updates-pocket">Wait for the SRU team to release the package to the -updates pocket</h3><p>Once an uploaded package has met the 7-day minimum wait and has been verified, it is eligible to be reviewed and released by the SRU team. Again, this can sometimes take more than 7 days, but if it seems to be running unusually long, add a comment (but please don&apos;t spam us) on the bug report to check in.</p><p>Finally, <a href="https://wiki.ubuntu.com/StableReleaseUpdates#Phasing">updates are phased</a>, which means that a release package update may not show for a few days. Assuming there are no significant regressions that cause the update to be halted, the update should be available soon. Please be patient and respect that this process is designed to keep your computer running smoothly.</p><h2 id="wrapping-up">Wrapping Up</h2><p>While not an exciting topic, I hope this helped to provide some insight into the inner workings of a stable Xubuntu release. Let me know if you have any questions or if I got something wrong. If you&apos;re working on another Ubuntu flavor or derivative, what&apos;s the post-development release process look like for your team?</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://bluesabre.org/2021/03/16/stable-release-updates-on-xubuntu/">&raquo; Original Post</a>
             
         </footer>
     </article>
