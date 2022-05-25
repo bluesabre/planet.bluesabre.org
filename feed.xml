@@ -13,10 +13,35 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Wed, 25 May 2022 15:30:20 -0400</lastBuildDate>
+	<lastBuildDate>Wed, 25 May 2022 18:54:30 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[xfce4-taskmanager (1.5.3-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.3-1/changelog</link>
+			<pubDate>Wed, 25 May 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Yves-Alexis Perez]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.3-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New upstream version 1.5.3</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[xfce4-terminal (1.0.4-1) unstable]]></title>
@@ -2337,43 +2362,6 @@ fixes, translation updates and new features.</p>
 
 <p>Translation Updates:
   Danish, Greek, Indonesian, Malay, Occitan (post 1500), Romanian</p>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: xfce4-terminal 1.0.0 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001103.html</link>
-			<pubDate>Fri, 01 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001103.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[Stable release including improvements introduced in versions 0.9.0,
-0.9.1 and 0.9.2. 
-The Shortcuts Editor requires libxfce4ui 4.17.2 or greater.]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<h1 id="100">1.0.0</h1>
-
-<p>Stable release including improvements introduced in versions 0.9.0,
-0.9.1 and 0.9.2. 
-The Shortcuts Editor requires libxfce4ui 4.17.2 or greater.</p>
-
-<p>Fixes</p>
-<ul>
-  <li>Remove remaining libxfce4ui 4.16 version guards</li>
-</ul>
-
-<p>Translation Updates:
-  Danish, Greek, Russian, Turkish</p>
 ]]>
         
       </content:encoded>
