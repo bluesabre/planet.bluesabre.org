@@ -4,7 +4,54 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Tue, 24 May 2022 18:54:23 -0400</pubDate>
+    <pubDate>Tue, 24 May 2022 21:30:03 -0400</pubDate>
+    <item>
+      <author>simon at xfce.org (Simon Steinbeiss)</author>
+      <title>ANNOUNCE: xfce4-taskmanager 1.5.3 released</title>
+      <pubDate>Tue, 24 May 2022 05:42:11 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;628ca8731ef96_6cf82b067380c5c4408b5@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-taskmanager 1.5.3 is now available for download from
+  
+  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.3.tar.bz2
+  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.3.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.3.tar.bz2?sha256
+
+
+What is xfce4-taskmanager?
+==========================
+
+Easy to use task manager.
+
+Website: 
+  https://docs.xfce.org/apps/xfce4-taskmanager/start
+
+
+Release notes for 1.5.3
+=======================
+- Fix rendering bug (Fixes #44)
+- Fix rendering bug for swap graph (relates to #44)
+- Fix bindings related to the &amp;quot;show-legend&amp;quot; setting
+- Allow to copy full process command line (#33)
+- Rename Private to Resident Bytes (#7)
+- Avoid grabbing the filter entry if it is not realized
+- Fix intltool lock file problem during make distcheck
+- `uid_name` has been removed from `task` struct
+- Fix invalid casts for &amp;quot;About&amp;quot; and &amp;quot;Help&amp;quot; (Fixes #43)
+- Show localized website label
+- Update COPYING (Issue #49)
+- Updated copyright year, authors, and project links
+- Translation Updates:
+  Albanian, Arabic, Armenian (Armenia), Asturian, Azerbaijani, Basque,
+  Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Hong Kong),
+  Chinese (Taiwan), Croatian, Czech, Danish, Dutch, Eastern Armenian,
+  English (Australia), English (United Kingdom), Estonian, Finnish,
+  French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+  Indonesian, Interlingue, Italian, Japanese, Kazakh, Korean,
+  Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500), Persian
+  (Iran), Polish, Portuguese, Portuguese (Brazil), Russian, Serbian,
+  Slovak, Spanish, Swedish, Telugu, Thai, Turkish, Ukrainian, Uyghur</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001116.html</link>
+    </item>
     <item>
       <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
       <title>ANNOUNCE: xfce4-panel 4.17.1 released</title>
@@ -513,37 +560,6 @@ options (Issue #182).
 Translation Updates:
   Danish, Finnish, Greek, Russian, Turkish</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html</link>
-    </item>
-    <item>
-      <author>andre at andreldm.com (Andre Miranda)</author>
-      <title>ANNOUNCE: xfce4-eyes-plugin 4.6.0 released</title>
-      <pubDate>Mon, 04 Apr 2022 17:40:46 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;624b65de38c38_6cf82b067380c5c438773@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-eyes-plugin 4.6.0 is now available for download from
-  
-  https://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/4.6/xfce4-eyes-plugin-4.6.0.tar.bz2
-  https://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/4.6/xfce4-eyes-plugin-4.6.0.tar.bz2?sha1
-  https://archive.xfce.org/src/panel-plugins/xfce4-eyes-plugin/4.6/xfce4-eyes-plugin-4.6.0.tar.bz2?sha256
-
-
-What is xfce4-eyes-plugin?
-==========================
-
-Eyes is a xfce4 panel plugin that adds eyes which watch your every step.
-Scary!
-
-Website: 
-  https://docs.xfce.org/panel-plugins/xfce4-eyes-plugin
-
-
-Release notes for 4.6.0
-=======================
-- Add Chibi theme (!4)
-- Small code improvements
-- Translation Updates:
-  Albanian, Armenian (Armenia), Basque, Belarusian, English (Canada),
-  Finnish, French, Hebrew, Slovenian, Spanish, Thai, Ukrainian, Uyghur</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001106.html</link>
     </item>
   </channel>
 </rss>
