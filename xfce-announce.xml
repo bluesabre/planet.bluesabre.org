@@ -4,7 +4,44 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Tue, 31 May 2022 18:54:09 -0400</pubDate>
+    <pubDate>Tue, 31 May 2022 21:30:02 -0400</pubDate>
+    <item>
+      <author>simon at xfce.org (Simon Steinbeiss)</author>
+      <title>ANNOUNCE: xfce4-taskmanager 1.5.4 released</title>
+      <pubDate>Tue, 31 May 2022 07:55:40 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;6296023c25c65_6cf82b067380c5c44102a@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-taskmanager 1.5.4 is now available for download from
+  
+  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.4.tar.bz2
+  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.4.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.4.tar.bz2?sha256
+
+
+What is xfce4-taskmanager?
+==========================
+
+Easy to use task manager.
+
+Website: 
+  https://docs.xfce.org/apps/xfce4-taskmanager/start
+
+
+Release notes for 1.5.4
+=======================
+This bugfix release mainly addresses a problem where translations were
+not included in the release tarball.
+
+- Update configure.ac.in syntax
+- Fix #53: taskmanager translations
+- Translation Updates:
+  Albanian, Basque, Belarusian, Bulgarian, Catalan, Chinese (China),
+  Chinese (Taiwan), Czech, Danish, Dutch, Estonian, French, Galician,
+  German, Greek, Hebrew, Indonesian, Italian, Japanese, Kazakh, Korean,
+  Lithuanian, Norwegian Bokmål, Polish, Portuguese, Portuguese
+  (Brazil), Russian, Serbian, Slovak, Spanish, Swedish, Thai, Turkish,
+  Ukrainian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001117.html</link>
+    </item>
     <item>
       <author>simon at xfce.org (Simon Steinbeiss)</author>
       <title>ANNOUNCE: xfce4-taskmanager 1.5.3 released</title>
@@ -511,55 +548,6 @@ Release notes for 4.17.0
   Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Uyghur,
   Vietnamese</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001108.html</link>
-    </item>
-    <item>
-      <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
-      <title>ANNOUNCE: xfce4-terminal 1.0.1 released</title>
-      <pubDate>Wed, 13 Apr 2022 13:04:57 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;625702b97eff4_6cf82b067380c5c438958@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-terminal 1.0.1 is now available for download from
-  
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.1.tar.bz2
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.1.tar.bz2?sha1
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.1.tar.bz2?sha256
-
-
-What is xfce4-terminal?
-=======================
-
-Xfce4-terminal is a modern terminal emulator for the Unix/Linux desktop
-- primarily for the Xfce desktop environment. It is a lightweight
-emulator based on the VTE widget, easy to use and provides an optional
-drop-down window (game-console style).
-
-Website: 
-  https://docs.xfce.org/apps/terminal/start
-
-
-Release notes for 1.0.1
-=======================
-Stable release fixing regressions and a couple of older bugs.
-
-- A new hidden preference `DropdownParametersOnce` has been introduced
-to control whether the drop-down
-  window accepts command line arguments after creation. With the
-introduction of this preference
-  an older bug was fixed where tabs could be added to the drop-down
-window even though they
-  weren&amp;#x27;t supposed to.
-- Options: --active-tab does not behave properly when adding tabs to
-existing windows.
-
-Regressions fixed:
-- Find dialog does not respond to Return key (Issue #176)
-- Dragging a URL from Chromium ends up truncated (Issue #180)
-- Toolbar size changes when the window is maximized (Issue #181).
-- Unable to create a single window with many tabs through command line
-options (Issue #182).
-
-Translation Updates:
-  Danish, Finnish, Greek, Russian, Turkish</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html</link>
     </item>
   </channel>
 </rss>
