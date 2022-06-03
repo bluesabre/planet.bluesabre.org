@@ -13,10 +13,74 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Fri, 03 Jun 2022 03:30:16 -0400</lastBuildDate>
+	<lastBuildDate>Fri, 03 Jun 2022 06:54:42 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[thunar-archive-plugin (0.5.0-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-archive-plugin/thunar-archive-plugin_0.5.0-1/changelog</link>
+			<pubDate>Thu, 02 Jun 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-archive-plugin/thunar-archive-plugin_0.5.0-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[[ Debian Janitor ]
+
+  Trim trailing whitespace.
+  Set debhelper-compat version in Build-Depends.
+  Refer to specific version of license GPL-2+, LGPL-2+.
+  Apply multi-arch hints.
+    
+      thunar-archive-plugin: Add Multi-Arch: same.]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Trim trailing whitespace.</li>
+  <li>Set debhelper-compat version in Build-Depends.</li>
+  <li>Refer to specific version of license GPL-2+, LGPL-2+.</li>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>thunar-archive-plugin: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream version 0.5.0.
+    <ul>
+      <li>Drop patch, upstreamed.  Refresh remaining.</li>
+    </ul>
+  </li>
+  <li>d/watch: Use uscan special strings.</li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 13.</li>
+      <li>R³: no.</li>
+      <li>Add ‘Homepage’ field.</li>
+    </ul>
+  </li>
+  <li>d/rules: Drop –as-needed and dh_missing override, now default.</li>
+  <li>d/thunar-archive-plugin.docs: Drop README, removed upstream.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[xfce4-taskmanager (1.5.3-1) unstable]]></title>
@@ -2327,41 +2391,6 @@ fixes, translation updates and new features.</p>
   (Iran), Polish, Portuguese, Romanian, Serbian, Slovak, Spanish,
   Swedish, Telugu, Thai, Turkish, Urdu, Urdu (Pakistan), Uyghur,
   Vietnamese</p>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: thunar 4.16.11 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001104.html</link>
-			<pubDate>Sat, 02 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001104.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[Bugfix and translation release on the thunar 4.16 branch.]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p>Bugfix and translation release on the thunar 4.16 branch.</p>
-
-<p>Bugfixes:</p>
-<ul>
-  <li>Dont reload the view when text is copied (Issue #706)</li>
-  <li>NULL checks to prevent crash on malformed bookmark URI (Issue #716)</li>
-  <li>Use 'g_timeout_add_full' to set tree-view cursor (Issue #351)</li>
-  <li>Fix signal disconnect in thunar_window_unrealize</li>
-  <li>Don't go beyond THUNAR_N_VISIBLE_COLUMNS while parsing col widths</li>
-</ul>
-
-<p>Translation Updates:
-  Danish, Greek, Indonesian, Malay, Occitan (post 1500), Romanian</p>
 ]]>
         
       </content:encoded>
