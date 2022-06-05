@@ -65,6 +65,91 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001052.html">xfce4-sensors-plugin 1.4.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-07-25">
+                25 Jul 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001052.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Release 1.4.0 of the xfce4-sensors-plugin fixes a number of issues and
+modernizes the plugin's source code for Xfce 4.16 and later.</p>
+
+<ul>
+  <li>Code cleanups</li>
+  <li>Update configuration flags for GitLab distcheck</li>
+  <li>Add basic GitLab pipeline</li>
+  <li>Check for libsensors if it is explicitly enabled</li>
+  <li>Use a drawing area to display sensor data in text UI style</li>
+  <li>Fix a use-after-free error when closing the main window</li>
+  <li>Increase main window size from 400 to 800 pixels</li>
+  <li>Fix a use-after-free error when disabling a tachometer</li>
+  <li>Fix preliminary config memory leak</li>
+  <li>Improved handling of denormal floating-point values</li>
+  <li>Update automatic coloring of progress bars</li>
+  <li>Update and sort the list of authors</li>
+  <li>Corrections to the number of rows when displaying sensor data as text</li>
+  <li>Remove support for lm-sensors 2.x (API &lt; 0x400)</li>
+  <li>Center tachometers vertically</li>
+  <li>Layout sensors when cover-all-rows is toggled</li>
+  <li>Fix invalid "size-changed" callback function declaration</li>
+  <li>Avoid interference of tachometer allocations with GtkBox child allocs</li>
+  <li>configure: Remove nano version and update init arguments</li>
+  <li>configure: Bump required glib to 2.50</li>
+  <li>configure: Bump required Xfce libs to 4.14</li>
+  <li>configure: Remove checks covered by C99</li>
+  <li>configure: Remove UNIX variants check</li>
+  <li>Ellipsize labels only when needed</li>
+  <li>Remove support for libnotify 0.4</li>
+  <li>Enable automatic switching of colors based on light or dark UI theme</li>
+  <li>Move text inside the tachometer</li>
+  <li>Remove unused options.dialog files</li>
+  <li>Use capital letters when spelling NVIDIA</li>
+  <li>Code cleanup: Shorten all variable names to speedup readability</li>
+  <li>Use a single bit to store boolean values</li>
+  <li>Prevent memset2() from compiling because of a double-increment bug</li>
+  <li>Fix fgets() compiler warning</li>
+  <li>Code cleanup: Remove all TRACE() lines</li>
+  <li>Fix invalid order of widgets after changing panel orientation</li>
+  <li>Fix accesses to destroyed widgets when changing the panel orientation</li>
+  <li>Increase icon size in about dialog from 32 to 48 pixels</li>
+  <li>Update copyright year in about dialog</li>
+  <li>Fix invalid state flag</li>
+  <li>Include X11 headers before NVCtrl headers</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+Croatian, Czech, Danish, Dutch, Eastern Armenian, English
+(Australia), English (United Kingdom), Finnish, French, Galician,
+German, Greek, Hebrew, Hungarian, Icelandic, Indonesian, Interlingue,
+Italian, Japanese, Korean, Latvian, Lithuanian, Malay, Norwegian
+Bokmål, Occitan (post 1500), Polish, Portuguese, Portuguese
+(Brazil), Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+Thai, Turkish, Ukrainian, Urdu, Urdu (Pakistan), Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001052.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001051.html">xfce4-dev-tools 4.17.0 released</a></h1>
         </header>
         <header class="post-meta">
@@ -460,86 +545,6 @@ https://gitlab.xfce.org/xfce/libxfce4util/-/merge_requests/18</p>
         <footer>
             
                 <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001049.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html">thunar 4.17.4 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-07-17">
-                17 Jul 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<p>Besides many fixes and translation updates, this development release
-ships various new features brought to you by our GSoC students. My
-personal highlights are:</p>
-
-<ul>
-  <li>Automatic restore of tabs on startup</li>
-  <li>Possibility to 'trust' launchers</li>
-  <li>Support for 'recent:///'</li>
-  <li>Zoom-level as a per-directory setting</li>
-  <li>Various file-copy improvements</li>
-</ul>
-
-<p>Here the complete log:</p>
-<ul>
-  <li>Restore split-view separator position (Issue #616)</li>
-  <li>Skip handler when switching to other split-view tab (Issue #615)</li>
-  <li>Change thunar_file_is_trashed to thunar_file_is_trash</li>
-  <li>New menu item for trashed files: "restore and open folder" (#382)</li>
-  <li>Open restored tabs in correct order (Issue #613)</li>
-  <li>After restoring tabs set focus on the last focused tab</li>
-  <li>For "foo.txt" next available file should be of the form "foo N.txt"</li>
-  <li>Ask "close window with tabs?" as well for STRG+Q (Issue #611)</li>
-  <li>Keep modified time of files copied from foreign locations (#218)</li>
-  <li>Use more general method to pick file names on copy (Issue #244)</li>
-  <li>Add possibility to 'trust' launchers (Issue #156)</li>
-  <li>Remove reload button from toolbar (!125)</li>
-  <li>Add a preference to restore tabs on startup (Issue #338)</li>
-  <li>Use thunar_g_file_new_for_computer and thunar_g_file_new_for_network</li>
-  <li>Add support for gtk-recent (recent:///) (Issue #257)</li>
-  <li>Add zoom-level as a per-directory setting (Issue #418)</li>
-  <li>Generate incremental file name on name collision (Issue #210)</li>
-  <li>Fix GLib-CRITICAL in list-view (Issue #487)</li>
-  <li>thunar_file_is_executable() now checks if .desktop file is safe</li>
-  <li>Fix missing folder in history when opened in new tab (Issue #594)</li>
-  <li>Manage parallel job outside ThunarTransferJob (Issue #569)</li>
-  <li>Replace ExoBinding with GBinding equivalent</li>
-  <li>Move bookmarks into a separate Bookmarks menu (Issue #572)</li>
-  <li>Proper destruction of member variables for thunar-launcher</li>
-  <li>Fixing various memory leaks (Issue #573)</li>
-  <li>Fix showing volume uuid in transfer dialog (Issue #579)</li>
-  <li>Update manpage (Issue #121)</li>
-  <li>Dont show "execute" on context menu for folders</li>
-  <li>Translation Updates:
-Albanian, Basque, Bulgarian, Catalan, Chinese (China), Czech, Danish,
-Dutch, Estonian, French, Galician, German, Hebrew, Italian, Japanese,
-Malay, Norwegian Bokmål, Polish, Portuguese, Portuguese (Brazil),
-Serbian, Spanish, Swedish, Thai, Turkish</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
