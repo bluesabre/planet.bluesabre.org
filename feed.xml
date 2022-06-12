@@ -13,10 +13,76 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Sun, 12 Jun 2022 06:47:36 -0400</lastBuildDate>
+	<lastBuildDate>Sun, 12 Jun 2022 09:30:16 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[MenuLibre 2.3.0]]></title>
+			<link>https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.3.0</link>
+			<pubDate>Sun, 12 Jun 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[MenuLibre]]></dc:creator>
+		
+		
+			<guid>https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.3.0</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p><em>Please note that this is a development release.</em></p>
+<p>The highlight of this release (and the feature most needing testing) is support for the MATE desktop environment, at least as it is found in Solus and Ubuntu MATE. Other notable features are a new uninstallation script and improved automatic quoting support for launcher arguments.</p>
+<h2>Bug Fixes</h2>
+<ul>
+<li>AppStream: Do not install appdata.xml.in (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1007171071" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/85" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/85/hovercard" href="https://github.com/bluesabre/menulibre/issues/85">#85</a>)</li>
+<li>AppStream: Fix screenshot URLs</li>
+<li>Desktop Environments: Add support for admin:// protocol (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="688128341" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/62" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/62/hovercard" href="https://github.com/bluesabre/menulibre/issues/62">#62</a>)</li>
+<li>Desktop Environments: Add support for MATE (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="635869795" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/40" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/40/hovercard" href="https://github.com/bluesabre/menulibre/issues/40">#40</a>)</li>
+<li>Desktop Environments: Add support for Unity</li>
+<li>Desktop Environments: Remove empty menubar on Ubuntu's GNOME</li>
+<li>Desktop Environments: Suggest restarting menu when edits cannot be applied</li>
+<li>Editor: Escape quoted percentage arguments (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1088147784" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/93" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/93/hovercard" href="https://github.com/bluesabre/menulibre/issues/93">#93</a>)</li>
+<li>Editor: Fixed copying filename with Ctrl+C</li>
+<li>Setup: Add an uninstall script (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="854709681" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/80" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/80/hovercard" href="https://github.com/bluesabre/menulibre/issues/80">#80</a>)</li>
+<li>Startup: Assume menu failed to load when empty</li>
+</ul>
+<h2>General</h2>
+<ul>
+<li>AppStream: Add OARS rating</li>
+<li>AppStream: Add developer name</li>
+</ul>
+<h2>Updated Translations</h2>
+<p>Catalan, Dutch, Finnish, French, Italian, Lithuanian, Malay, Malay (Arabic), Polish, Spanish</p>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p><em>Please note that this is a development release.</em></p>
+<p>The highlight of this release (and the feature most needing testing) is support for the MATE desktop environment, at least as it is found in Solus and Ubuntu MATE. Other notable features are a new uninstallation script and improved automatic quoting support for launcher arguments.</p>
+<h2>Bug Fixes</h2>
+<ul>
+<li>AppStream: Do not install appdata.xml.in (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1007171071" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/85" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/85/hovercard" href="https://github.com/bluesabre/menulibre/issues/85">#85</a>)</li>
+<li>AppStream: Fix screenshot URLs</li>
+<li>Desktop Environments: Add support for admin:// protocol (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="688128341" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/62" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/62/hovercard" href="https://github.com/bluesabre/menulibre/issues/62">#62</a>)</li>
+<li>Desktop Environments: Add support for MATE (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="635869795" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/40" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/40/hovercard" href="https://github.com/bluesabre/menulibre/issues/40">#40</a>)</li>
+<li>Desktop Environments: Add support for Unity</li>
+<li>Desktop Environments: Remove empty menubar on Ubuntu's GNOME</li>
+<li>Desktop Environments: Suggest restarting menu when edits cannot be applied</li>
+<li>Editor: Escape quoted percentage arguments (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1088147784" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/93" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/93/hovercard" href="https://github.com/bluesabre/menulibre/issues/93">#93</a>)</li>
+<li>Editor: Fixed copying filename with Ctrl+C</li>
+<li>Setup: Add an uninstall script (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="854709681" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/80" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/80/hovercard" href="https://github.com/bluesabre/menulibre/issues/80">#80</a>)</li>
+<li>Startup: Assume menu failed to load when empty</li>
+</ul>
+<h2>General</h2>
+<ul>
+<li>AppStream: Add OARS rating</li>
+<li>AppStream: Add developer name</li>
+</ul>
+<h2>Updated Translations</h2>
+<p>Catalan, Dutch, Finnish, French, Italian, Lithuanian, Malay, Malay (Arabic), Polish, Spanish</p>]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[xfce4-taskmanager (1.5.4-1) unstable]]></title>
@@ -2299,41 +2365,6 @@ options (Issue #182).</li>
       <li>Fix ‘Web Browser’ launcher with firefox snap (LP: #1967111)</li>
     </ul>
   </li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: xfce4-eyes-plugin 4.6.0 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001106.html</link>
-			<pubDate>Mon, 04 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001106.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>Add Chibi theme (!4)</li>
-  <li>Small code improvements</li>
-  <li>Translation Updates:
-Albanian, Armenian (Armenia), Basque, Belarusian, English (Canada),
-Finnish, French, Hebrew, Slovenian, Spanish, Thai, Ukrainian, Uyghur</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>Add Chibi theme (!4)</li>
-  <li>Small code improvements</li>
-  <li>Translation Updates:
-Albanian, Armenian (Armenia), Basque, Belarusian, English (Canada),
-Finnish, French, Hebrew, Slovenian, Spanish, Thai, Ukrainian, Uyghur</li>
 </ul>
 ]]>
         

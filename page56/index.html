@@ -65,6 +65,118 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000871.html">xfce4-dev-tools 4.15.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-06-24">
+                24 Jun 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000871.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>New macro XDT_VERSION_INIT(SEMVER[, TAG])</li>
+</ul>
+
+<p>This macro takes care of setting up the version numbering.
+It will define the following macros based on SEMVER and TAG:</p>
+
+<ul>
+  <li>xdt_version</li>
+  <li>xdt_version_major</li>
+  <li>xdt_version_minor</li>
+  <li>xdt_version_micro</li>
+  <li>xdt_version_tag</li>
+  <li>xdt_version_build</li>
+  <li>xdt_debug_default</li>
+</ul>
+
+<p>If TAG isn't specified, the xdt_version_tag and xdt_version_git
+will be empty and xdt_debug_default will be set to "minimum",
+otherwise the xdt_version_build will contain a git hash and
+xdt_debug_default will be set to "yes"</p>
+
+<p>Example usage:</p>
+
+<p>XDT_VERSION_INIT([4.15.3],[git])
+  AC_INIT([xfce4-someproject], [xdt_version()])
+  …
+  XDT_FEATURE_DEBUG([xdt_debug_default])</p>
+
+<ul>
+  <li>
+    <p>XDT_I18N macro will now automatically find the linguas if none are
+specified during the autoconf run.</p>
+  </li>
+  <li>
+    <p>Install m4 macros in default search dir. This makes autoconf find the
+macros by default.</p>
+  </li>
+</ul>
+
+<p>By setting version via XDT_VERSION_INIT and using XDT_I18N without
+arguments,
+this is no longer necessary to use a separate configure.ac.in and a
+plain configure.ac can be used !
+A big thank to Natanael Copa (ncopa) for his work on this part !</p>
+
+<ul>
+  <li>
+    <p>xfce4-dev-tools now also handle the CI (docker container,
+.gitlab-ci.yml templates files etc) on our new gitlab instance. A merge
+request or a push to master to any of our projects automatically trigger
+a build. This will help us to catch errors quicker and have better
+quality. Thanks to Jason Yavorska and Simon Steinbeiss.</p>
+  </li>
+  <li>
+    <p>New helpers are also available (xfce-get-release-notes, 
+xfce-get-translations, xfce-update-news) to help our maintainers to do
+releases ! Thanks Simon again.</p>
+  </li>
+  <li>Use datarootdir instead of datadir</li>
+  <li>xdt-autogen: explicitly set search path for m4 macros</li>
+  <li>Install the xfce-helpers</li>
+  <li>Add two new helpers to help releasers</li>
+  <li>Install m4 macros into default $datadir/aclocal</li>
+  <li>Update README for new gitlab urls</li>
+  <li>xdt-autogen: Improve and simplify linguas detection</li>
+  <li>Let XDT_I18N automatically find the po/*.po as default</li>
+  <li>Let configure generate the xdt-autogen script</li>
+  <li>Implement XDT_VERSION_INIT</li>
+  <li>Add manpage and tests to xdt-csource</li>
+  <li>Add xfce4-dev-tools build in addition to container build</li>
+  <li>Check BEFORE_SHA along with changes to .po files</li>
+  <li>gitlabci: Ensure to run autogen in distcheck stage</li>
+  <li>Switch to "foreign" mode for automake</li>
+  <li>Add CI templates notes</li>
+  <li>Update README with explanation of Dockerfile</li>
+  <li>Fix whitespace error</li>
+  <li>Add helper script to get all translation-updates</li>
+  <li>Integrate xfce-build container build/creation</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000871.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000870.html">xfce4-panel 4.15.3 released</a></h1>
         </header>
         <header class="post-meta">
@@ -569,76 +681,6 @@ Uighur, Ukrainian, Urdu, Urdu (Pakistan), Vietnamese</li>
         <footer>
             
                 <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000866.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html">libxfce4ui 4.15.3 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-06-07">
-                07 Jun 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<ul>
-  <li>Update bug URLs to point to gitlab.xfce</li>
-  <li>xfce-about: Hide empty email address tags (Fixes #12)</li>
-  <li>Remove translator email address as per request (Fixes #11)</li>
-  <li>Add missing translator "Hugo Carvalho" to xfce4-about (issue #18)</li>
-  <li>Replace deprecated 'gdk_keyboard_ungrab' function (Fixes #15)</li>
-  <li>shortcuts-grabber: Correctly ungrab keys on updating shortcuts (Fixes
-#16)</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Allow more granular control over menu item accelerators.
-    <ul>
-      <li>No automatic accelerator activation formenu items</li>
-      <li>Added 'gtk_menu_item_set_accel_label'</li>
-      <li>Added 'xfce_gtk_accel_group_connect_action_entries'</li>
-    </ul>
-  </li>
-  <li>renamed 'xfce_gtk_accel_group_append' to
-'xfce_gtk_accel_map_add_entries' and modified internals accordingly.
-No automatic add to an accel_group any more, since this may lead to
-double-activation in some cases.</li>
-  <li>Add "xfce_gtk_accel_group_disconnect_action_entries" to be able to
-revert "xfce_gtk_accel_group_connect_action_entries"</li>
-  <li>Add title to xfce_dialog_confirm_close_tabs</li>
-  <li>Add new methods to libxfce4ui.symbols. Followup of
-231e57daccb5946379f413ed440629c32025f6f3</li>
-  <li>Translation Updates:
-Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Basque,
-Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
-(Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
-Eastern Armenian, English (Australia), English (United Kingdom),
-Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål,
-Norwegian Nynorsk, Occitan (post 1500), Polish, Portuguese,
-Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
-Slovenian, Spanish, Swedish, Telugu, Thai, Turkish,
-Uighur, Ukrainian, Welsh</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
