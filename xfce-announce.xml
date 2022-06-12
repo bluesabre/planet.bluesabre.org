@@ -4,7 +4,81 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sun, 12 Jun 2022 03:30:02 -0400</pubDate>
+    <pubDate>Sun, 12 Jun 2022 06:47:11 -0400</pubDate>
+    <item>
+      <author>mshrimp at sogang.ac.kr (Yongha Hwang)</author>
+      <title>ANNOUNCE: exo 4.16.4 released</title>
+      <pubDate>Fri, 10 Jun 2022 18:02:17 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62a3bf69ccb84_6cf82b067380c5c441497@xfce2.mail&amp;gt;</guid>
+      <description>exo 4.16.4 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/exo/4.16/exo-4.16.4.tar.bz2
+  https://archive.xfce.org/src/xfce/exo/4.16/exo-4.16.4.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/exo/4.16/exo-4.16.4.tar.bz2?sha256
+
+
+What is exo?
+============
+
+Exo is an Xfce library targeted at application development. It contains
+various custom widgets and APIs extending the functionality of GLib and
+GTK. It also ships utilities for defining preferred applications,
+mounting storage devices and more.
+
+Website: 
+  https://www.xfce.org/
+
+
+Release notes for 4.16.4
+========================
+(Security Patch)
+
+- exo-open : Only execute local .desktop files</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001118.html</link>
+    </item>
+    <item>
+      <author>mshrimp at sogang.ac.kr (Yongha Hwang)</author>
+      <title>ANNOUNCE: exo 4.17.2 released</title>
+      <pubDate>Fri, 10 Jun 2022 18:09:02 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62a3c0fe5a9c8_6cf82b067380c5c44165@xfce2.mail&amp;gt;</guid>
+      <description>exo 4.17.2 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.2.tar.bz2
+  https://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.2.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.2.tar.bz2?sha256
+
+
+What is exo?
+============
+
+Exo is an Xfce library targeted at application development. It contains
+various custom widgets and APIs extending the functionality of GLib and
+GTK. It also ships utilities for defining preferred applications,
+mounting storage devices and more.
+
+Website: 
+  https://www.xfce.org/
+
+
+Release notes for 4.17.2
+========================
+[Please note that this is a development release.]
+
+- exo-die: Don&amp;#x27;t touch exe line in .desktop files
+- exo-open : Only execute local .desktop files
+- Fix $DISPLAY being set to wrong value
+- exo-die, exo-open: Remove dependence on exo_str_is_equal(),
+exo_str_looks_like_an_uri()
+- Bump glib/gio/gthread version to 2.66.0
+- Fix unreliable D-BUS-activated app launch behavior
+- exo-open: Try to open Type=Link .desktop files
+- Use xfce-string functions
+- Dont reduce selection in single click mode (Issue #71)
+- Translation Updates:
+  Azerbaijani, Azerbaijani (Azerbaijan), Greek, Korean, Persian (Iran),
+  Romanian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001119.html</link>
+    </item>
     <item>
       <author>simon at xfce.org (Simon Steinbeiss)</author>
       <title>ANNOUNCE: xfce4-taskmanager 1.5.4 released</title>
@@ -381,173 +455,6 @@ accelerators.
 - Translation Updates:
   Russian</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001110.html</link>
-    </item>
-    <item>
-      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
-      <title>ANNOUNCE: xfce4-panel 4.16.4 released</title>
-      <pubDate>Sat, 16 Apr 2022 08:01:41 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;625ab025d0dfb_6cf82b067380c5c4393ee@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-panel 4.16.4 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.4.tar.bz2
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.4.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.16/xfce4-panel-4.16.4.tar.bz2?sha256
-
-
-What is xfce4-panel?
-====================
-
-Xfce&amp;#x27;s panel.
-
-Website: 
-  https://www.xfce.org/
-
-
-Release notes for 4.16.4
-========================
-- Update copyright year and standardize formatting
-- Update and sort author list by name
-- panel: Fix regression &amp;quot;intellihide does not hide when leaving
-  slowly&amp;quot; (#388)
-- panel: Fix regression &amp;quot;&amp;#x27;Span Monitor&amp;#x27; has no effect&amp;quot; (#405)
-- panel: Keep a reference on item during drag and drop
-- Fix `core.UndefinedBinaryOperatorResult` warning from
-  `scan-build` (#142)
-- panel: Fix broken drag and drop between panels (#561)
-- panel: Disconnect from screen signals when window is destroyed
-- systray: Do not connect to proxy signal if async method failed
-- panel: Mitigate a memory leak when removing items (!46)
-- windowmenu: Emit &amp;quot;deactivate&amp;quot; signal when hiding the menu
-  (#22, !68)
-- systray: Fix wrong sanity check
-- systray: Properly initialize systray item
-- systray: Trust the status to update the attention icon
-  (#392, !64)
-- Fixed some window buttons not appearing in the panel (#188, !66)
-- launcher: Only activate under mouse (Fixes #519)
-- libxfce4panel: Review memory management for context menu
-  (#452, !46)
-- actions: Block panel autohide (Fixes #431, !62)
-- launcher: Clear action menu when destroyed (Fixes #540, !61)
-- Translation Updates:
-  Arabic, Armenian (Armenia), Catalan, Malay, Occitan (post 1500),
-  Polish, Romanian, Russian, Slovenian, Spanish, Swedish, Thai</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001109.html</link>
-    </item>
-    <item>
-      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
-      <title>ANNOUNCE: xfce4-panel 4.17.0 released</title>
-      <pubDate>Sat, 16 Apr 2022 07:33:56 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;625aa9a4d44d_6cf82b067380c5c43914e@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-panel 4.17.0 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.0.tar.bz2
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.0.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.0.tar.bz2?sha256
-
-
-What is xfce4-panel?
-====================
-
-Xfce&amp;#x27;s panel.
-
-Website: 
-  https://www.xfce.org/
-
-
-Release notes for 4.17.0
-========================
-[Please note that this is a development release.]
-
-- Dependency Changes:
-  - Garcon &amp;gt;= 0.8.0
-  - GLib &amp;gt;= 2.56.0
-  - Libxfce4ui &amp;gt;= 4.17.1
-
-- Code Refactoring:
-  - Remove unused project files
-  - Use GLib structured logging
-  - Remove obsolete Exo version checks
-  - Bump minimal required Garcon to 0.8.0 i.e. Xfce 4.16
-  - Remove obsolete GTK version checks
-  - Use GLIB_VERSION_MIN/MAX_REQUIRED/ALLOWED
-  - autoconf: Some updates
-  - libxfce4panel: Silence `-Wredundant-decls` warnings (#495)
-  - Revamp the documentation to modernize and uniformize accross
-    components (!35)
-
-- Bug Fixes:
-  - panel: Fix regression &amp;quot;intellihide does not hide when leaving
-    slowly&amp;quot; (#388)
-  - panel: Fix regression &amp;quot;&amp;#x27;Span Monitor&amp;#x27; has no effect&amp;quot; (#405)
-  - panel: Keep a reference on item during drag and drop
-  - panel: Fix a memory leak
-  - systray: Do not apply icon if not yet set
-  - Fix `deadcode.DeadStores` warnings from `scan-build` (!56)
-  - Fix `core.UndefinedBinaryOperatorResult` warning from
-    `scan-build` (#142)
-  - Fix `core.NullDereference` warning from `scan-build` (!57)
-  - panel: Fix broken drag and drop between panels (#561)
-  - systray: Only activate item under mouse
-  - Use a normalized URI internally for the background image
-  - panel: Disconnect from screen signals when window is destroyed
-  - Fix ignored `*.desktop.in` in `.gitignore`
-  - systray: Do not connect to proxy signal if async method failed
-  - actions: Lay out buttons in grid for deskbar (#437, !69)
-  - wrapper: Rework widget drawing (#520, !67)
-  - windowmenu: Emit &amp;quot;deactivate&amp;quot; signal when hiding the menu
-    (#22, !68)
-  - systray: Trust the status to update the attention icon
-    (#392, !64)
-  - tasklist: Add a setting to control the display of tooltips
-    (#548, !63)
-  - Fixed some window buttons not appearing in the panel
-    (#188, !66)
-  - Remove ellipsis (#480, !65)
-  - launcher: Only activate under mouse (Fixes #519)
-  - launcher: Clear action menu when destroyed (Fixes #540, !61)
-  - actions: Block panel autohide (Fixes #431, !62)
-  - panel: Fix grabs for popup commands (Fixes #506, !60)
-  - Fix compilation warnings (#492, #493, #494, !53)
-  - launcher: Adjust menu icon size (Fixes #255, !51)
-  - Fix exit procedure when plugin insertion failed (!49)
-  - libxfce4panel: Review memory management for context menu
-    (#452, !46)
-  - panel: Mitigate a memory leak when removing items (!46)
-  - tasklist: Silence an allocation warning (!48)
-  - launcher: Check for menu item initialization (!47)
-  - panel: Change width of default panel-2 to 1% (Fixes #454, !44)
-  - Fix some `*-CRITICAL` warnings (!43)
-  - libxfce4panel: Do not destroy context menu if popped up
-    (#442, !45)
-  - tasklist: Auto-adjust icon size (v2) (#90, !29)
-  - pager: Allow disable switch with mouse wheel for miniature
-    view (#253, !37)
-  - Add icons to help and about items in panel menu (#421)
-  - pager: Use gobject bindings (Fixes #376, !32)
-  - launcher: avoid double fork (#407, !25)
-  - Fix build warnings (!31)
-  - Display tooltip title of statusnotifier items as plaintext
-    (!30)
-  - pager: Switch to new workspaces icon name
-  - statustray: Prevent crash when parsing properties
-    (Fixes #379, !26)
-  - windowmenu: fix use-after-free in
-    window_menu_plugin_window_item_new (!24)
-
-- Translation Updates:
-  Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
-  Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
-  (Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
-  Eastern Armenian, English (Australia), English (United Kingdom),
-  Estonian, Finnish, French, Galician, Georgian, German, Greek, Hebrew,
-  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-  Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian
-  Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Polish, Portuguese,
-  Portuguese (Brazil), Romanian, Russian, Serbian, Sinhala, Slovak,
-  Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Uyghur,
-  Vietnamese</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001108.html</link>
     </item>
   </channel>
 </rss>
