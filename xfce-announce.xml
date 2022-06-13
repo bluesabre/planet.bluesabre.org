@@ -4,7 +4,65 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sun, 12 Jun 2022 18:54:25 -0400</pubDate>
+    <pubDate>Sun, 12 Jun 2022 21:30:01 -0400</pubDate>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: tumbler 4.17.1 released</title>
+      <pubDate>Sun, 12 Jun 2022 04:30:05 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62a5a40d67bdc_6cf82b067380c5c441850@xfce2.mail&amp;gt;</guid>
+      <description>tumbler 4.17.1 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.1.tar.bz2
+  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.1.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.1.tar.bz2?sha256
+
+
+What is tumbler?
+================
+
+Tumbler is a D-Bus service for applications to request thumbnails for
+various URI schemes and MIME types. It is an implementation of the
+thumbnail management D-Bus specification described on 
+
+  https://wiki.gnome.org/DraftSpecs/ThumbnailerSpec
+
+written in an object-oriented fashion using GLib and GObject. Its
+modular architecture makes it very flexible and useful in many
+situations. It provides plugin interfaces for extending the URI schemes
+and MIME types for which thumbnails can be generated as well as
+
+for replacing the storage backend that is used to store the thumbnails
+on disk. Tumbler&amp;#x27;s functionality can also be extended via specialized
+thumbnailer services implemented in accordance to the thumbnail
+management D-Bus specification.
+
+Website: 
+  https://gitlab.xfce.org/xfce/tumbler/
+
+
+Release notes for 4.17.1
+========================
+[Please note that this is a development release.]
+
+- New Features:
+  - Allow to choose an alternative service name prefix (!21)
+
+- Performance Improvement:
+  - scheduler: Enable multi-threading (#1)
+
+- Bug Fixes:
+  - Store modification time in locale independent format
+  - desktop-thumbnailer: Delete temp file at the same level it was
+    created (#57)
+  - i18n: Add missing initialization
+  - Fix missing mutex unlock in group scheduler (#56)
+  - Build: Check for best possible grep, egrep, sed
+
+- Translation Updates:
+  Basque, Danish, English (United Kingdom), Greek, Malay, Portuguese
+  (Brazil), Romanian, Russian, Serbian, Slovenian, Ukrainian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001120.html</link>
+    </item>
     <item>
       <author>mshrimp at sogang.ac.kr (Yongha Hwang)</author>
       <title>ANNOUNCE: exo 4.16.4 released</title>
@@ -420,41 +478,6 @@ Release notes for 0.5.0
   Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu
   (Pakistan), Uyghur, Uzbek, Uzbek (Latin), Vietnamese</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001111.html</link>
-    </item>
-    <item>
-      <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
-      <title>ANNOUNCE: xfce4-terminal 1.0.2 released</title>
-      <pubDate>Wed, 20 Apr 2022 11:59:14 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;62602dd24eca5_6cf82b067380c5c4395ec@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-terminal 1.0.2 is now available for download from
-  
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.2.tar.bz2
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.2.tar.bz2?sha1
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.2.tar.bz2?sha256
-
-
-What is xfce4-terminal?
-=======================
-
-Xfce4-terminal is a modern terminal emulator for the Unix/Linux desktop
-- primarily for the Xfce desktop environment. It is a lightweight
-emulator based on the VTE widget, easy to use and provides an optional
-drop-down window (game-console style).
-
-Website: 
-  https://docs.xfce.org/apps/terminal/start
-
-
-Release notes for 1.0.2
-=======================
-Stable release fixing a regression related to switch/move tab
-accelerators.
-
-- Regression: MiscCycleTabs preference does not work for accelerators
-(#186, #24).
-- Translation Updates:
-  Russian</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001110.html</link>
     </item>
   </channel>
 </rss>
