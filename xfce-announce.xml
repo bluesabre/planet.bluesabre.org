@@ -4,7 +4,51 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Tue, 14 Jun 2022 18:54:25 -0400</pubDate>
+    <pubDate>Tue, 14 Jun 2022 21:30:03 -0400</pubDate>
+    <item>
+      <author>andre at andreldm.com (Andre Miranda)</author>
+      <title>ANNOUNCE: xfce4-wavelan-plugin 0.6.3 released</title>
+      <pubDate>Tue, 14 Jun 2022 11:19:15 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62a8a6f319edb_6cf82b067380c5c44201f@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-wavelan-plugin 0.6.3 is now available for download from
+  
+  https://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/0.6/xfce4-wavelan-plugin-0.6.3.tar.bz2
+  https://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/0.6/xfce4-wavelan-plugin-0.6.3.tar.bz2?sha1
+  https://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/0.6/xfce4-wavelan-plugin-0.6.3.tar.bz2?sha256
+
+
+What is xfce4-wavelan-plugin?
+=============================
+
+This plugin is used to display stats from a wireless lan interface
+(signal state, signal quality, network name (SSID)). It supports NetBSD,
+OpenBSD, FreeBSD, and Linux.
+
+Website: 
+  https://docs.xfce.org/panel-plugins/xfce4-wavelan-plugin
+
+
+Release notes for 0.6.3
+=======================
+- Fix intltool lock file bug in make distcheck
+- Fix read_config memory leaks
+- Add option to execute command on icon click (!9)
+- Add option to hide signal bar (!8)
+- Prefer symbolic icons and fix icon color (!7)
+- Icon now shows signal strength(!5)
+- remove bogus close function
+- autoconf: Some updates
+- Translation Updates:
+  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+  Dutch, Eastern Armenian, English (Australia), English (Canada),
+  Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+  Hungarian, Icelandic, Indonesian, Italian, Japanese, Kazakh, Korean,
+  Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500), Polish,
+  Portuguese, Portuguese (Brazil), Russian, Serbian, Slovak, Slovenian,
+  Spanish, Swedish, Thai, Turkish, Ukrainian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001121.html</link>
+    </item>
     <item>
       <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
       <title>ANNOUNCE: tumbler 4.17.1 released</title>
@@ -429,55 +473,6 @@ broke scroll-on-output and change the default value (Issue #191)
 Translation Updates:
   Hebrew, Portuguese (Brazil), Russian</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001112.html</link>
-    </item>
-    <item>
-      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
-      <title>ANNOUNCE: thunar-archive-plugin 0.5.0 released</title>
-      <pubDate>Sat, 30 Apr 2022 04:24:21 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;626cf23570640_6cf82b067380c5c43979@xfce2.mail&amp;gt;</guid>
-      <description>thunar-archive-plugin 0.5.0 is now available for download from
-  
-  https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/thunar-archive-plugin-0.5.0.tar.bz2
-  https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/thunar-archive-plugin-0.5.0.tar.bz2?sha1
-  https://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.5/thunar-archive-plugin-0.5.0.tar.bz2?sha256
-
-
-What is thunar-archive-plugin?
-==============================
-
-The Thunar Archive Plugin allows you to create and extract archive files
-using the file context menus in the Thunar file manager.
-
-Website: 
-  https://docs.xfce.org/xfce/thunar/archive
-
-
-Release notes for 0.5.0
-=======================
-- Fix for ark (Issue #4)
-- automake: INCLUDES -&amp;gt; AM_CPPFLAGS
-- preserve callbacks in tap-provider
-- remove GSpawnChildSetupFunc usage from tap_backend_run
-- Adds new README.md
-- updates AM_INIT_AUTOMAKE macro with foreign option
-- Add basic GitLab pipeline
-- Allow zip files (i.e. odt, docx...) to be compressed (Bug #15295)
-- Start archive application from file&amp;#x27;s directory (Bug #14773)
-- Replace AC_PROG_LIBTOOL with IT_PROG_INTLTOOL
-- Add support for archive manager for MATE
-- Translation Updates:
-  Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
-  Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
-  Croatian, Czech, Danish, Dutch, Eastern Armenian, Eastern Armenian
-  (Russia), English (Australia), English (United Kingdom), Esperanto,
-  Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi,
-  Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-  Kabyle, Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian
-  Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi),
-  Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
-  Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu
-  (Pakistan), Uyghur, Uzbek, Uzbek (Latin), Vietnamese</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001111.html</link>
     </item>
   </channel>
 </rss>
