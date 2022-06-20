@@ -4,7 +4,50 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sun, 19 Jun 2022 18:55:06 -0400</pubDate>
+    <pubDate>Sun, 19 Jun 2022 21:30:02 -0400</pubDate>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: tumbler 4.17.2 released</title>
+      <pubDate>Sun, 19 Jun 2022 03:01:39 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62aec9d46bbdb_3492b2258de65c06811@xfce2.mail&amp;gt;</guid>
+      <description>tumbler 4.17.2 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.2.tar.bz2
+  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.2.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.2.tar.bz2?sha256
+
+
+What is tumbler?
+================
+
+Tumbler is a D-Bus service for applications to request thumbnails for
+various URI schemes and MIME types. It is an implementation of the
+thumbnail management D-Bus specification described on 
+
+  https://wiki.gnome.org/DraftSpecs/ThumbnailerSpec
+
+written in an object-oriented fashion using GLib and GObject. Its
+modular architecture makes it very flexible and useful in many
+situations. It provides plugin interfaces for extending the URI schemes
+and MIME types for which thumbnails can be generated as well as
+
+for replacing the storage backend that is used to store the thumbnails
+on disk. Tumbler&amp;#x27;s functionality can also be extended via specialized
+thumbnailer services implemented in accordance to the thumbnail
+management D-Bus specification.
+
+Website: 
+  https://gitlab.xfce.org/xfce/tumbler/
+
+
+Release notes for 4.17.2
+========================
+[Please note that this is a development release.]
+
+- Bug Fixes:
+  - Yet another fix to the modification time storage format</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001122.html</link>
+    </item>
     <item>
       <author>andre at andreldm.com (Andre Miranda)</author>
       <title>ANNOUNCE: xfce4-wavelan-plugin 0.6.3 released</title>
@@ -434,45 +477,6 @@ Release notes for 4.17.0
   Slovak, Slovenian, Spanish, Swedish, Telugu, Thai, Turkish,
   Ukrainian, Uyghur, Uzbek, Uzbek (Latin), Welsh</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001113.html</link>
-    </item>
-    <item>
-      <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
-      <title>ANNOUNCE: xfce4-terminal 1.0.3 released</title>
-      <pubDate>Thu, 12 May 2022 17:56:53 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;627d82a511935_6cf82b067380c5c4399cc@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-terminal 1.0.3 is now available for download from
-  
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.3.tar.bz2
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.3.tar.bz2?sha1
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.3.tar.bz2?sha256
-
-
-What is xfce4-terminal?
-=======================
-
-Xfce4-terminal is a modern terminal emulator for the Unix/Linux desktop
-- primarily for the Xfce desktop environment. It is a lightweight
-emulator based on the VTE widget, easy to use and provides an optional
-drop-down window (game-console style).
-
-Website: 
-  https://docs.xfce.org/apps/terminal/start
-
-
-Release notes for 1.0.3
-=======================
-Stable release fixing regressions.
-
-Fixes:
-- Consume KeyEvents when activating a TAB accelerator.
-- Regression: Scrollbar position setting does not work if you start 
-with a hidden scrollbar (Issue #192)
-- Regression: Revert ff94ff30c1f83561f0abad4867846880ba9c6f83 which 
-broke scroll-on-output and change the default value (Issue #191)
-
-Translation Updates:
-  Hebrew, Portuguese (Brazil), Russian</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001112.html</link>
     </item>
   </channel>
 </rss>
