@@ -13,10 +13,65 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Thu, 23 Jun 2022 03:30:16 -0400</lastBuildDate>
+	<lastBuildDate>Thu, 23 Jun 2022 06:54:35 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[tumbler (4.17.2-1) experimental]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_4.17.2-1/changelog</link>
+			<pubDate>Wed, 22 Jun 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_4.17.2-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 4.17.2.
+    <ul>
+      <li>Drop patch applied upstream.</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 13, drop old dpkg-dev build-depend.</li>
+      <li>Require libxfce4util-dev (&gt;= 4.17.1~)</li>
+    </ul>
+  </li>
+  <li>d/libtumbler-1-0.symbols: Update symbols.</li>
+  <li>d/tumbler.install: Install usr/lib/systemd/ now.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 4.17.2.
+    <ul>
+      <li>Drop patch applied upstream.</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 13, drop old dpkg-dev build-depend.</li>
+      <li>Require libxfce4util-dev (&gt;= 4.17.1~)</li>
+    </ul>
+  </li>
+  <li>d/libtumbler-1-0.symbols: Update symbols.</li>
+  <li>d/tumbler.install: Install usr/lib/systemd/ now.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[menulibre (2.2.2-2) unstable]]></title>
@@ -2564,49 +2619,6 @@ options (Issue #182).</li>
   <li>d/docs:
     <ul>
       <li>README &gt; README.md</li>
-    </ul>
-  </li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[greybird-gtk-theme (3.23.1-1) unstable]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-1/changelog</link>
-			<pubDate>Tue, 12 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>New upstream version 3.23.1 (Closes: #1008647)</li>
-  <li>Update Standards-Version to 4.6.0.1</li>
-  <li>d/copyright: Update copyright to match upstream</li>
-  <li>d/control:
-    <ul>
-      <li>Drop Breaks/Replaces on shimmer-wallpapers, no longer needed.</li>
-      <li>Add myself to Uploaders</li>
-    </ul>
-  </li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>New upstream version 3.23.1 (Closes: #1008647)</li>
-  <li>Update Standards-Version to 4.6.0.1</li>
-  <li>d/copyright: Update copyright to match upstream</li>
-  <li>d/control:
-    <ul>
-      <li>Drop Breaks/Replaces on shimmer-wallpapers, no longer needed.</li>
-      <li>Add myself to Uploaders</li>
     </ul>
   </li>
 </ul>
