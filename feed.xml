@@ -13,7 +13,7 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Sun, 26 Jun 2022 21:30:19 -0400</lastBuildDate>
+	<lastBuildDate>Mon, 27 Jun 2022 00:54:31 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
@@ -669,6 +669,31 @@ environment and improves compatibility with other environments.]]></description>
 </ul>
 <h2>Updated Translations</h2>
 <p>Catalan, Dutch, Finnish, French, Italian, Lithuanian, Malay, Malay (Arabic), Polish, Spanish</p>]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[blueman (2.2.5-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.5-1/changelog</link>
+			<pubDate>Fri, 10 Jun 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Christopher Schramm]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.5-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New release</li>
+</ul>
+]]>
         
       </content:encoded>
 		</item>
@@ -2710,53 +2735,6 @@ Polish, Romanian, Russian, Slovenian, Spanish, Swedish, Thai</li>
   <li>New user-docs for 22.04</li>
   <li>Update Standards-Version to 4.6.0.1.</li>
 </ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: xfce4-terminal 1.0.1 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html</link>
-			<pubDate>Wed, 13 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[<p>Stable release fixing regressions and a couple of older bugs.</p>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p>Stable release fixing regressions and a couple of older bugs.</p>
-
-<ul>
-  <li>A new hidden preference <code class="language-plaintext highlighter-rouge">DropdownParametersOnce</code> has been introduced
-to control whether the drop-down
-window accepts command line arguments after creation. With the
-introduction of this preference
-an older bug was fixed where tabs could be added to the drop-down
-window even though they
-weren't supposed to.</li>
-  <li>Options: –active-tab does not behave properly when adding tabs to
-existing windows.</li>
-</ul>
-
-<p>Regressions fixed:</p>
-<ul>
-  <li>Find dialog does not respond to Return key (Issue #176)</li>
-  <li>Dragging a URL from Chromium ends up truncated (Issue #180)</li>
-  <li>Toolbar size changes when the window is maximized (Issue #181).</li>
-  <li>Unable to create a single window with many tabs through command line
-options (Issue #182).</li>
-</ul>
-
-<p>Translation Updates:
-  Danish, Finnish, Greek, Russian, Turkish</p>
 ]]>
         
       </content:encoded>

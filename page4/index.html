@@ -65,6 +65,61 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html">xfce4-terminal 1.0.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2022-04-13">
+                13 Apr 2022
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Stable release fixing regressions and a couple of older bugs.</p>
+
+<ul>
+  <li>A new hidden preference <code class="language-plaintext highlighter-rouge">DropdownParametersOnce</code> has been introduced
+to control whether the drop-down
+window accepts command line arguments after creation. With the
+introduction of this preference
+an older bug was fixed where tabs could be added to the drop-down
+window even though they
+weren't supposed to.</li>
+  <li>Options: –active-tab does not behave properly when adding tabs to
+existing windows.</li>
+</ul>
+
+<p>Regressions fixed:</p>
+<ul>
+  <li>Find dialog does not respond to Return key (Issue #176)</li>
+  <li>Dragging a URL from Chromium ends up truncated (Issue #180)</li>
+  <li>Toolbar size changes when the window is maximized (Issue #181).</li>
+  <li>Unable to create a single window with many tabs through command line
+options (Issue #182).</li>
+</ul>
+
+<p>Translation Updates:
+  Danish, Finnish, Greek, Russian, Turkish</p>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-community-artwork/xubuntu-community-artwork_22.04.0/changelog">xubuntu-community-artwork (22.04.0) jammy</a></h1>
         </header>
         <header class="post-meta">
@@ -536,56 +591,6 @@ Thai, Turkish, Ukrainian, Uyghur</li>
         <footer>
             
                 <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html">libxfce4ui 4.17.6 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2022-03-31">
-                31 Mar 2022
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<p>Development release on the master branch, required to be able to make
-use of 'xfce_gtk_toggle_tool_button_new_from_action_entry' inside
-thunar.</p>
-
-<ul>
-  <li>XfceShortcutsEditor: Do not update editor if shortcut change failed</li>
-  <li>XfceShortcutsEditor: Allow to choose "Space" or "Enter" as shortcut</li>
-  <li>XfceShortcutDialog: Do not propagate key events</li>
-  <li>Function description spelling and format.</li>
-  <li>Add new function xfce_gtk_toggle_tool_button_new_from_action_entry</li>
-  <li>XfceShortcutsGrabber: Fix <code class="language-plaintext highlighter-rouge">-Wanalyzer-null-dereference</code> warning</li>
-  <li>Secure memory allocations</li>
-  <li>Update COPYING</li>
-  <li>XfceShortcutsGrabber: Detect auto-repeat key press</li>
-  <li>XfceShortcutDialog: Fix a memory leak</li>
-  <li>Translation Updates:
-Azerbaijani</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
