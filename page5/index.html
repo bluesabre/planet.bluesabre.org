@@ -65,6 +65,96 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html">mousepad 0.5.9 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2022-04-01">
+                01 Apr 2022
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New Features:
+    <ul>
+      <li>Add shortcuts plugin (#70, !121)
+Depends on Libxfce4ui 4.17.5 which is a dev version, so will
+be excluded at configure time on most systems until Xfce 4.18
+is released.</li>
+      <li>Add search history (!119)</li>
+      <li>File monitoring: Add an automatic reloading option</li>
+    </ul>
+  </li>
+  <li>Appearance Changes / Minor Improvements:
+    <ul>
+      <li>Move the document modification mark to the close button (#63,
+!122)</li>
+      <li>Add mousepad styleclass for easier theming (#33)</li>
+      <li>Hide search bar by pressing Esc key even when not focused</li>
+      <li>Search: Escape selection when regex search is enabled</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>Plugins: Add a skeleton plugin to ease writing of new plugins</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>Test plugin: Sanitize memory management of sources</li>
+      <li>Honor GTK_CSD</li>
+      <li>Filter entries from <code class="language-plaintext highlighter-rouge">accels.scm</code> on non-detailed action name</li>
+      <li>i18n: Check for <code class="language-plaintext highlighter-rouge">bind_textdomain_codeset()</code></li>
+      <li>Update Copying (#160, !120)</li>
+      <li>Session history: Never clear session array on exit (#162)</li>
+      <li>Fix broken feature "Show menubar temporarily when hidden"</li>
+      <li>Force encoding when reloading</li>
+      <li>Force encoding when it has been explicitly set by the user</li>
+      <li>Do not consider encoding as always user-set in the "Open"
+dialog</li>
+      <li>Fix antonym of the word "indent" in preferences dialog (!118)</li>
+      <li>File monitoring: Try to filter out fake deletions</li>
+      <li>Add ellipsis to preferences menu entry (!117)</li>
+      <li>Switch all labels to title case in prefs dialog (!116)</li>
+      <li>Correctly restore font size after zooming when using system
+font (#158)</li>
+      <li>Printing: Enable line wrapping by default (#156)</li>
+      <li>Fix a warning from GCC static analyzer</li>
+      <li>Search: Do not delay the search when the text changes</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
+Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+Thai, Turkish, Ukrainian, Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html">libxfce4ui 4.17.6 released</a></h1>
         </header>
         <header class="post-meta">
@@ -425,41 +515,6 @@ contributions from <a class="user-mention notranslate" data-hovercard-type="user
         <footer>
             
                 <a class="read-more" href="https://github.com/shimmerproject/Greybird/releases/tag/v3.23.0">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.240/changelog">xubuntu-meta (2.240) jammy</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2022-03-19">
-                19 Mar 2022
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.240/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Refreshed dependencies</li>
-  <li>Added language-selector-common to core, desktop</li>
-  <li>Added libfuse2 to core-recommends, desktop-recommends (LP: #1965636)</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.240/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

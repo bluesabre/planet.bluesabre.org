@@ -65,6 +65,36 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2021/03/16/stable-release-updates-on-xubuntu/">Stable Release Updates on Xubuntu</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-03-16">
+                16 Mar 2021
+            </time>
+            <a href="https://bluesabre.org/2021/03/16/stable-release-updates-on-xubuntu/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><img src="https://bluesabre.org/content/images/2021/03/xubuntu_sru.png" alt="Stable Release Updates on Xubuntu"><p>From the moment an Ubuntu release (and flavors) reaches <a href="https://wiki.ubuntu.com/FinalFreeze">Final Freeze</a> until the release is end-of-life (<a href="https://help.ubuntu.com/community/EOL">EOL</a>), updates are released following the &quot;stable release update&quot; procedure, or SRU. This process is documented on the <a href="https://wiki.ubuntu.com/StableReleaseUpdates">Ubuntu Wiki</a>. However, it can be intimidating for new and long-time contributors and also confusing for users. I&apos;d like to explain this process from a Xubuntu perspective.</p><p>We currently have two packages going through the SRU procedure for Xubuntu 20.04 and 20.10. After you&apos;ve read this article, consider checking them out and helping with verification.</p><ul><li><a href="https://bugs.launchpad.net/ubuntu/+source/xfce4-weather-plugin/+bug/1918002">Xfce Weather Plugin</a></li><li><a href="https://bugs.launchpad.net/ubuntu/+source/exo/+bug/1874954">Exo</a></li></ul><h2 id="stable-release-update-procedure">Stable Release Update Procedure</h2><ol><li>Identify the &quot;why&quot;</li><li>Create or update bug reports</li><li>Package and upload the fixes for each release</li><li>Wait for the SRU team to review and accept the upload</li><li>SRU Verification</li><li>Wait for the SRU team to release the package to the -updates pocket</li></ol><h3 id="identify-the-why">Identify the &quot;why&quot;</h3><p>A common misconception about stable Ubuntu releases is that all bug fixes and new releases (small and large) will arrive via an update. There is not an automatic process for these updates to land in a stable release. Further, any fixes and new features have to be documented and tested according to the procedure above. As you might imagine, this can be a massive time sink.</p><p>Stable release updates specific to Xubuntu will generally be limited to high-impact bugs:</p><ul><li>Security vulnerabilities</li><li>Severe regressions</li><li>Bugs that directly cause a loss of user data</li><li>External changes that cause the current version to no longer work</li></ul><p>If an update meets these requirements, it is eligible to be updated with a Stable Release Update. Lower impact bugs will generally not be considered for SRU, but may be fixed in the -backports pocket or the <a href="https://launchpad.net/~xubuntu-dev/+archive/ubuntu/staging">Xubuntu QA Staging PPA</a>.</p><h3 id="create-or-update-bug-reports">Create or update bug reports</h3><p>If the bugs being fixed have already been reported on Launchpad, they will need to be updated with the <a href="https://wiki.ubuntu.com/StableReleaseUpdates#SRU_Bug_Template">SRU template</a>. Other bugs and new features present in an upload should have new bug reports opened. Due to the time-based nature of landing a fix and following the SRU process, it can be a significant setback to have to start over, so more information is better than less. When in doubt, fill it out.</p><p>The standard SRU template typically includes the following sections: <strong>Impact</strong>, <strong>Test Plan</strong>, <strong>Where problems could occur</strong> (formerly Regression Potential), and <strong>Other Info</strong>. These sections help others who may not be completely familiar with the software or bug to be able to test it, and demonstrates that the upload and its regression potential has been sufficiently considered.</p><p>Once the bug reports are ready, the packages can be prepared and uploaded.</p><h3 id="package-and-upload-the-fixes-for-each-release">Package and upload the fixes for each release</h3><p>The first packaging-related step for a Stable Release Update is ensuring the fix is already released on the current development release. This may not always be applicable, but applies more often than not. Once the fix is verified in the development release, packages can be prepared for each affected stable release.</p><p>The packages are prepared with each bug fix linked in the Debian changelog. This will automatically update the affected bugs with status updates and tags and progress the bug status from <strong>In Progress</strong> to <strong>Fix Committed</strong>, and later to <strong>Fix Released</strong>. The packages are then uploaded to the -proposed pocket and <a href="https://launchpad.net/~xubuntu-dev/+archive/ubuntu/sru-staging">Xubuntu SRU Staging PPA</a>.</p><h3 id="wait-for-the-sru-team-to-review-and-accept-the-upload">Wait for the SRU team to review and accept the upload</h3><p>The Ubuntu SRU team is a small and busy one! Sometimes, it may take a few days for the team to review and accept the upload to the -proposed pocket. Once the package has been accepted, this starts the 7-day clock. Even after verification, a package upload must wait a minimum of 7 days before it is accepted into the -updates pocket.</p><h3 id="sru-verification">SRU verification</h3><p><a href="https://wiki.ubuntu.com/StableReleaseUpdates#Verification">SRU verification</a> can be completed by any Launchpad user, and is recommended for getting a fix released to the -updates pocket sooner. Following the test cases documented on each bug report...</p><ul><li>If the fix is sufficient and there&apos;s no regression, replace the verification-needed-<em>release</em> tag with verification-done-<em>release</em>. Add a comment describing the steps taken to verify the package.</li><li>If the fix is insufficient or there are regressions introduced, replace the verification-needed-<em>release</em> tag with verification-failed-<em>release</em>. Add a comment describing steps taken and issues encountered.</li></ul><p>An update is considered verified if it has at least two positive and no negative testimonials. If you&apos;re affected by a bug that is going through SRU verification, please join in and provide your feedback on the fix.</p><h3 id="wait-for-the-sru-team-to-release-the-package-to-the-updates-pocket">Wait for the SRU team to release the package to the -updates pocket</h3><p>Once an uploaded package has met the 7-day minimum wait and has been verified, it is eligible to be reviewed and released by the SRU team. Again, this can sometimes take more than 7 days, but if it seems to be running unusually long, add a comment (but please don&apos;t spam us) on the bug report to check in.</p><p>Finally, <a href="https://wiki.ubuntu.com/StableReleaseUpdates#Phasing">updates are phased</a>, which means that a release package update may not show for a few days. Assuming there are no significant regressions that cause the update to be halted, the update should be available soon. Please be patient and respect that this process is designed to keep your computer running smoothly.</p><h2 id="wrapping-up">Wrapping Up</h2><p>While not an exciting topic, I hope this helped to provide some insight into the inner workings of a stable Xubuntu release. Let me know if you have any questions or if I got something wrong. If you&apos;re working on another Ubuntu flavor or derivative, what&apos;s the post-development release process look like for your team?</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2021/03/16/stable-release-updates-on-xubuntu/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://bluesabre.org/2021/03/13/first-steps-with-elementary-development/">First Steps with elementary Development</a></h1>
         </header>
         <header class="post-meta">
@@ -388,49 +418,6 @@ can cause high I/O in some cases (Issue #526)</p>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.3-0ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001017.html">thunar 4.16.4 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-03-06">
-                06 Mar 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001017.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>Bugfix and translation release on the thunar 4.16 branch</p>
-
-<ul>
-  <li>Bookmarks no longer need an existing, underlying file (Issue #47)</li>
-  <li>Regression: Select copied files after copy operation (Issue #520)</li>
-  <li>Reintroduce alternative zoom shortcuts (Issue #514)</li>
-  <li>Prevent hangup if a copy task that is blocked is resumed (Issue #467)</li>
-  <li>Regression: Allow custom image files for UCA icons (Issue #517)</li>
-  <li>Dont merge folders when creating copy with same name (Issue #491)</li>
-  <li>Fix incorrect return value in scroll event handler (Issue #512)</li>
-  <li>Translation Updates:
-Galician, Hebrew, Italian, Occitan</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001017.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
