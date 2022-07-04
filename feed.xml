@@ -13,10 +13,126 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Mon, 04 Jul 2022 00:54:34 -0400</lastBuildDate>
+	<lastBuildDate>Mon, 04 Jul 2022 03:30:17 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[0.17]]></title>
+			<link>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.17</link>
+			<pubDate>Mon, 04 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[elementary Xfce Icon Theme]]></dc:creator>
+		
+		
+			<guid>https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.17</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p>This release deprecates elementary-xfce-darker, transitions some monochrome icons back to colored for better legibility in dark/bright themes, drops lots of legacy symlinks (stock_<em>, gnome-</em>) and adds lots of mimetype icons.</p>
+<ul>
+<li>Deprecate elementary-xfce-darkest</li>
+<li>Add programming language mimetypes</li>
+<li>Add system package mimetypes</li>
+<li>Add lightdm settings, mugshot icons</li>
+<li>Add 24px symbolic icons for Thunar 4.17 toolbar</li>
+<li>Add symbolic view icons for Thunar 4.17 toolbar</li>
+<li>Add missing 96px mimetypes, symlinks</li>
+<li>Add USB Hard Drive, IEEE1394 device icons</li>
+<li>Add firewall icon at all sizes, gufw app symlink</li>
+<li>Update index.theme to match directory tree</li>
+<li>Update some settings/app icons</li>
+<li>Update media playback icons</li>
+<li>Update border/shadow style for common mimetypes</li>
+<li>Update archive action icons</li>
+<li>Update and fix some mimetypes</li>
+<li>Update some app names, symlinks, remove unused</li>
+<li>Update Wifi icons at 48px, remove old</li>
+<li>Update some app names and symlinks, remove unused</li>
+<li>Update find action icon</li>
+<li>Fix symbolic media-skip from being media-seek</li>
+<li>Fix issue where xfsm icons don't show in darker</li>
+<li>Fix blurry software-update icon, update others</li>
+<li>Fix blurry symlink emblem in 0.16 release</li>
+<li>Remove and replace start-here</li>
+<li>Remove gnome- prefixed device icon symlinks</li>
+<li>Remove icon causing cache update error (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1272658306" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/305" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/305/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/305">#305</a>)</li>
+<li>Remove unused symlinks from actions</li>
+<li>Remove stock icon symlinks from actions</li>
+<li>Remove unused mimetypes</li>
+<li>Remove unused places icons</li>
+<li>Remove unused categories symlinks</li>
+<li>Remove Stock and Tools folders</li>
+<li>Remove redhat, novell icons</li>
+<li>Remove 22px size mimes</li>
+<li>Remove "gnome-" prefixed mimes</li>
+<li>Remove unused, rename misnamed app icons (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1208166049" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/273" data-hovercard-type="pull_request" data-hovercard-url="/shimmerproject/elementary-xfce/pull/273/hovercard" href="https://github.com/shimmerproject/elementary-xfce/pull/273">#273</a>)</li>
+<li>Refresh folder icon emblems</li>
+<li>Refresh a few Xubuntu default app icons</li>
+<li>Make window-close visible in dark and light themes</li>
+<li>Use package mimetype from upsteam</li>
+<li>Rename battery icons, remove legacy battery icons</li>
+<li>Cleanup app icons</li>
+<li>Session icon fixes</li>
+<li>ci: Add GitHub action to test for dangling symlinks</li>
+</ul>
+<p>All the heavy lifting was done by <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> <g-emoji class="g-emoji" alias="tada" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png">🎉</g-emoji></p>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>This release deprecates elementary-xfce-darker, transitions some monochrome icons back to colored for better legibility in dark/bright themes, drops lots of legacy symlinks (stock_<em>, gnome-</em>) and adds lots of mimetype icons.</p>
+<ul>
+<li>Deprecate elementary-xfce-darkest</li>
+<li>Add programming language mimetypes</li>
+<li>Add system package mimetypes</li>
+<li>Add lightdm settings, mugshot icons</li>
+<li>Add 24px symbolic icons for Thunar 4.17 toolbar</li>
+<li>Add symbolic view icons for Thunar 4.17 toolbar</li>
+<li>Add missing 96px mimetypes, symlinks</li>
+<li>Add USB Hard Drive, IEEE1394 device icons</li>
+<li>Add firewall icon at all sizes, gufw app symlink</li>
+<li>Update index.theme to match directory tree</li>
+<li>Update some settings/app icons</li>
+<li>Update media playback icons</li>
+<li>Update border/shadow style for common mimetypes</li>
+<li>Update archive action icons</li>
+<li>Update and fix some mimetypes</li>
+<li>Update some app names, symlinks, remove unused</li>
+<li>Update Wifi icons at 48px, remove old</li>
+<li>Update some app names and symlinks, remove unused</li>
+<li>Update find action icon</li>
+<li>Fix symbolic media-skip from being media-seek</li>
+<li>Fix issue where xfsm icons don't show in darker</li>
+<li>Fix blurry software-update icon, update others</li>
+<li>Fix blurry symlink emblem in 0.16 release</li>
+<li>Remove and replace start-here</li>
+<li>Remove gnome- prefixed device icon symlinks</li>
+<li>Remove icon causing cache update error (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1272658306" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/305" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/305/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/305">#305</a>)</li>
+<li>Remove unused symlinks from actions</li>
+<li>Remove stock icon symlinks from actions</li>
+<li>Remove unused mimetypes</li>
+<li>Remove unused places icons</li>
+<li>Remove unused categories symlinks</li>
+<li>Remove Stock and Tools folders</li>
+<li>Remove redhat, novell icons</li>
+<li>Remove 22px size mimes</li>
+<li>Remove "gnome-" prefixed mimes</li>
+<li>Remove unused, rename misnamed app icons (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1208166049" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/273" data-hovercard-type="pull_request" data-hovercard-url="/shimmerproject/elementary-xfce/pull/273/hovercard" href="https://github.com/shimmerproject/elementary-xfce/pull/273">#273</a>)</li>
+<li>Refresh folder icon emblems</li>
+<li>Refresh a few Xubuntu default app icons</li>
+<li>Make window-close visible in dark and light themes</li>
+<li>Use package mimetype from upsteam</li>
+<li>Rename battery icons, remove legacy battery icons</li>
+<li>Cleanup app icons</li>
+<li>Session icon fixes</li>
+<li>ci: Add GitHub action to test for dangling symlinks</li>
+</ul>
+<p>All the heavy lifting was done by <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> <g-emoji class="g-emoji" alias="tada" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png">🎉</g-emoji></p>]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[pidgin (1:2.14.10-1ubuntu1) kinetic]]></title>
@@ -2689,85 +2805,6 @@ Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Polish, Portuguese,
 Portuguese (Brazil), Romanian, Russian, Serbian, Sinhala, Slovak,
 Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Uyghur,
 Vietnamese</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: xfce4-panel 4.16.4 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001109.html</link>
-			<pubDate>Sat, 16 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001109.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>Update copyright year and standardize formatting</li>
-  <li>Update and sort author list by name</li>
-  <li>panel: Fix regression "intellihide does not hide when leaving
-slowly" (#388)</li>
-  <li>panel: Fix regression "'Span Monitor' has no effect" (#405)</li>
-  <li>panel: Keep a reference on item during drag and drop</li>
-  <li>Fix <code class="language-plaintext highlighter-rouge">core.UndefinedBinaryOperatorResult</code> warning from
-<code class="language-plaintext highlighter-rouge">scan-build</code> (#142)</li>
-  <li>panel: Fix broken drag and drop between panels (#561)</li>
-  <li>panel: Disconnect from screen signals when window is destroyed</li>
-  <li>systray: Do not connect to proxy signal if async method failed</li>
-  <li>panel: Mitigate a memory leak when removing items (!46)</li>
-  <li>windowmenu: Emit "deactivate" signal when hiding the menu
-(#22, !68)</li>
-  <li>systray: Fix wrong sanity check</li>
-  <li>systray: Properly initialize systray item</li>
-  <li>systray: Trust the status to update the attention icon
-(#392, !64)</li>
-  <li>Fixed some window buttons not appearing in the panel (#188, !66)</li>
-  <li>launcher: Only activate under mouse (Fixes #519)</li>
-  <li>libxfce4panel: Review memory management for context menu
-(#452, !46)</li>
-  <li>actions: Block panel autohide (Fixes #431, !62)</li>
-  <li>launcher: Clear action menu when destroyed (Fixes #540, !61)</li>
-  <li>Translation Updates:
-Arabic, Armenian (Armenia), Catalan, Malay, Occitan (post 1500),
-Polish, Romanian, Russian, Slovenian, Spanish, Swedish, Thai</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>Update copyright year and standardize formatting</li>
-  <li>Update and sort author list by name</li>
-  <li>panel: Fix regression "intellihide does not hide when leaving
-slowly" (#388)</li>
-  <li>panel: Fix regression "'Span Monitor' has no effect" (#405)</li>
-  <li>panel: Keep a reference on item during drag and drop</li>
-  <li>Fix <code class="language-plaintext highlighter-rouge">core.UndefinedBinaryOperatorResult</code> warning from
-<code class="language-plaintext highlighter-rouge">scan-build</code> (#142)</li>
-  <li>panel: Fix broken drag and drop between panels (#561)</li>
-  <li>panel: Disconnect from screen signals when window is destroyed</li>
-  <li>systray: Do not connect to proxy signal if async method failed</li>
-  <li>panel: Mitigate a memory leak when removing items (!46)</li>
-  <li>windowmenu: Emit "deactivate" signal when hiding the menu
-(#22, !68)</li>
-  <li>systray: Fix wrong sanity check</li>
-  <li>systray: Properly initialize systray item</li>
-  <li>systray: Trust the status to update the attention icon
-(#392, !64)</li>
-  <li>Fixed some window buttons not appearing in the panel (#188, !66)</li>
-  <li>launcher: Only activate under mouse (Fixes #519)</li>
-  <li>libxfce4panel: Review memory management for context menu
-(#452, !46)</li>
-  <li>actions: Block panel autohide (Fixes #431, !62)</li>
-  <li>launcher: Clear action menu when destroyed (Fixes #540, !61)</li>
-  <li>Translation Updates:
-Arabic, Armenian (Armenia), Catalan, Malay, Occitan (post 1500),
-Polish, Romanian, Russian, Slovenian, Spanish, Swedish, Thai</li>
 </ul>
 ]]>
         

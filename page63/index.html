@@ -65,6 +65,48 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.7-1/changelog">xfce4-screenshooter (1.9.7-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2019-12-25">
+                25 Dec 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.7-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+  <li>d/watch: Update for upstream’s move to mirrorbit.</li>
+  <li>New upstream version 1.9.7</li>
+  <li>d/control:
+    <ul>
+      <li>Set R³ to no.</li>
+      <li>Update dh compat to 12.</li>
+    </ul>
+  </li>
+  <li>Update Standards-Version to 4.4.1.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.7-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-3/changelog">lightdm-gtk-greeter-settings (1.2.2-3) unstable</a></h1>
         </header>
         <header class="post-meta">
@@ -449,78 +491,6 @@ $ sha256sum catfish-1.4.11.tar.bz2
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_20.04/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/2019/10/20/install-xubuntu-19-10-on-a-raspberry-pi-4/">Install Xubuntu 19.10 on a Raspberry Pi 4</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2019-10-20">
-                20 Oct 2019
-            </time>
-            <a href="https://bluesabre.org/2019/10/20/install-xubuntu-19-10-on-a-raspberry-pi-4/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><!--kg-card-begin: markdown--><h1 id="gettingtheserverimage">Getting the Server Image</h1>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><img src="https://bluesabre.org/content/images/2019/10/xubuntu-pi-featured.png" alt="Install Xubuntu 19.10 on a Raspberry Pi 4"><p>First off, head to the <a href="http://cdimage.ubuntu.com/ubuntu/releases/19.10/release/">Ubuntu 19.10 release images</a>. We want one of the <em>Preinstalled server images</em>, since booting on the Raspberry Pi is still a tricky fiasco. You’ll see two installation options:</p>
-<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2019/11/preinstalled-server-images.png" class="kg-image" alt="Install Xubuntu 19.10 on a Raspberry Pi 4"><figcaption>Two options, but only one right for the desktop.</figcaption></figure><!--kg-card-begin: markdown--><p>We’ll want to choose the first option, Hard-Float. While the Pi 4 does in fact support the 64-bit ARM image, unfortunately <a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi2/+bug/1848703">USB devices fail to initialize</a> with this option. If you have no need for mouse and keyboard, feel free to use the 64-bit option. This should be resolved in time for the 20.04 release.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="installingtheserverimage">Installing the Server Image</h1>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>Once your server image has been downloaded, download and run <a href="https://www.balena.io/etcher/">Etcher</a>. If you’ve never used Etcher before, it’s a simple, cross-platform solution for installing disk images to USB devices. It’s reliable and easy to use, and will help you avoid overwriting your hard drives.</p>
-<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2019/11/balena-etcher.png" class="kg-image" alt="Install Xubuntu 19.10 on a Raspberry Pi 4"><figcaption>Select your image and destination, then flash!</figcaption></figure><!--kg-card-begin: markdown--><p>Select the downloaded image (.xz is fine, no need to extract), select the correct storage location, and the click <em>Flash!</em> After a few minutes, the image will be installed and validated, and you’ll be ready to go. Re-insert your MicroSD card into your Raspberry Pi, connect an ethernet cable, power it on, and proceed to the next step.</p>
-<p><em>Note: Once USB installation finished, I received an error that the checksums did not match, but everything seems to work correctly afterward.</em></p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="loggingin">Logging In</h1>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>This part tripped me up for a while. Once installed, the default username and password are both “ubuntu”. However, the first login to your Raspberry Pi has to be via SSH! First step, find the IP address of your Raspberry Pi device.</p>
-<p><strong>Be mindful that if you’re in a corporate or other shared environment, scanning for devices might be frowned upon.</strong> With that warning out of the way, let’s use <em>nmap</em> to look for our device. I’m not going to cover usage here, but a <a href="https://duckduckgo.com/?q=nmap+to+list+devices+on+your+network&amp;t=h_&amp;ia=web">quick DuckDuckGo search</a> can point you in the right direction. The server installation image defaults the hostname to “ubuntu”, so look for that.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>$ nmap -sP 192.168.1.0/24
-...
-Nmap scan report for ubuntu.attlocal.net (192.168.1.230)
-Host is up (0.00036s latency).
-...
-</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><p>Once you know where the device is, SSH in and reset your password. Enter “yes” to continue connecting if prompted for the fingerprint.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>$ ssh ubuntu@ubuntu.attlocal.net
-ubuntu@ubuntu.attlocal.net's password: 
-You are required to change your password immediately (administrator enforced)
-
-WARNING: Your password has expired.
-You must change your password now and login again!
-Changing password for ubuntu.
-Current password: 
-New password: 
-Retype new password: 
-passwd: password updated successfully
-Connection to ubuntu.attlocal.net closed.</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><p>Now, SSH in once more with your new password, and let’s install Xubuntu!</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="installingxubuntu">Installing Xubuntu</h1>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>We’re almost done! Now it’s time to decide: Do you want <em>Xubuntu Core</em>, the minimal Xubuntu base that you can easily customize to your needs, or <em>Xubuntu Desktop</em>, our standard installation option? I’ll be doing installing Core for this guide, but if you want to install Desktop, just replace “xubuntu-core^” with “xubuntu-desktop^”.</p>
-<p>Also worth noting, while setting up Xubuntu on the Raspberry Pi, I came across an issue that causes our default login screen to fail. This has been fixed upstream, but to work around this issue now we will be using <em>Slick Greeter</em> for our login screen. Now, let’s get back to the installation. Please note that the caret, ^, is not a typo!</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>sudo apt update
-sudo apt install xubuntu-core^ slick-greeter</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><p>This will take a while. Once everything’s installed, the final step is to set <em>Slick Greeter</em> as the login screen. Create <em>/etc/lightdm/lightdm.conf</em> with the following contents using your favorite command-line editor.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>[SeatDefaults]
-greeter-session=slick-greeter</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><p>And finally, reboot!</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>sudo reboot</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><h1 id="installationcomplete">Installation Complete</h1>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>Your Raspberry Pi 4 will now boot into a graphical environment, and you’ll be greeted by <em>Slick Greeter</em>. Login with the password you created earlier, and the Xubuntu desktop will load, same as you’d find outside of the Raspberry Pi.</p>
-<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2019/11/xubuntu-installed.jpg" class="kg-image" alt="Install Xubuntu 19.10 on a Raspberry Pi 4"><figcaption>Up and running with Xubuntu 19.10!</figcaption></figure><!--kg-card-begin: markdown--><h1 id="whatsnext">What's Next?</h1>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>That’s up to you, but the first thing I recommend is creating a new user. The default Ubuntu user is an administrator, and has a bit more power than you’d normally have on the a desktop installation.</p>
-<p>Beyond that, the Pi’s the limit! Have fun, and enjoy running the mouse-based distribution on your mouse-sized computer.</p>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="thanks">Thanks!</h1>
-<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>I purchased my Raspberry Pi 4 with funds from <a href="https://www.patreon.com/bluesabre">my Patreon</a>, so my patrons helped make this project possible. I’ll continue experimenting with the Pi 4, so look forward to even more awesome projects. Thanks everybody!</p>
-<!--kg-card-end: markdown--></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://bluesabre.org/2019/10/20/install-xubuntu-19-10-on-a-raspberry-pi-4/">&raquo; Original Post</a>
             
         </footer>
     </article>
