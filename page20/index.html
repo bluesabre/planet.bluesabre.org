@@ -65,6 +65,74 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001051.html">xfce4-dev-tools 4.17.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-07-25">
+                25 Jul 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001051.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<p>This is the first development release of xfce-dev-tools 4.17.
+To all developers and contributors, please update :)
+Notable changes:</p>
+<ul>
+  <li>Reduce the number of warnings at "./autogen.sh" stage.</li>
+  <li>Simplify the "xdt-autogen" workflow by only calling "autoreconf"</li>
+  <li>autoconf 2.69+ is now needed (released almost 10 years ago)</li>
+  <li>Compilations warnings are now always enabled, whatever the
+"–enable-debug" mode used. This will help us catch compilers warnings.</li>
+  <li>Also, this version get rid of really old m4 macros/usages, like
+AM_GLIB_GNU_GETTEXT or glib-gettextize.</li>
+</ul>
+
+<p>Changelog:</p>
+<ul>
+  <li>Try to build higher version available tag</li>
+  <li>xfce-do-release: A review of confirmation prompts</li>
+  <li>helpers: Improve script portability</li>
+  <li>Improve Xfce Developer Center (developer.xfce.org)</li>
+  <li>xdt-features.m4: Always enable compilation warnings</li>
+  <li>g_locale_to_utf8 is misspelled as g_local_to_utf8</li>
+  <li>xfce-build: Always pick the latest stable release</li>
+  <li>Create the m4/ if it does not exists</li>
+  <li>Use autoreconf to bootstrap xfce4-dev-tools itself</li>
+  <li>Use autoreconf to bootstrap autotools</li>
+  <li>xfce-do-release: Check for <code class="language-plaintext highlighter-rouge">docker</code> installed</li>
+  <li>Add dependencies to build thunarx-python CI</li>
+  <li>Fix location of apidocs</li>
+  <li>xfce-build: Fix conditional in gitlabci</li>
+  <li>Export apidocs as GitLab artifacts</li>
+  <li>Get rid of glib-gettextize usage and XGETTEXT_ARGS custom args</li>
+  <li>Remove obsolete AM_GLIB_GNU_GETTEXT</li>
+  <li>helpers: Fix command-line if git-config core.editor is unset</li>
+  <li>Update obsolete m4 macros</li>
+  <li>helpers: Add 'xfce-build describe' command</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001051.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.238/changelog">xubuntu-meta (2.238) impish</a></h1>
         </header>
         <header class="post-meta">
@@ -472,51 +540,6 @@ Serbian, Spanish, Swedish, Thai, Turkish</li>
         <footer>
             
                 <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001045.html">libxfce4util 4.17.0 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-06-26">
-                26 Jun 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001045.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release]</p>
-
-<p>Development release on the master branch, required to be able to use new
-features in other Xfce components.</p>
-
-<ul>
-  <li>Add xfce_unescape_desktop_entry_value</li>
-  <li>xfce-gio-extensions - management of gvfs trusted attribute</li>
-  <li>libxfce4util needs to be first character Capital</li>
-  <li>Partially revert "Fix (some) GObject introspection warnings"</li>
-  <li>Fix (some) GObject introspection warnings</li>
-  <li>Revamp the documentation to uniformize accross components</li>
-  <li>Translation Updates:
-Belarusian, Estonian, Norwegian Bokmål, Spanish</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001045.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>

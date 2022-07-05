@@ -65,6 +65,66 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001022.html">xfdashboard 0.9.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-03-19">
+                19 Mar 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001022.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>xfdashboard-0.9.1 "Gradients! Whoohoooo!" was released on 2021-03-19.</p>
+
+<p>This is a development release.</p>
+
+<ul>
+  <li>New feature: Move XfdashboardApplication out of library
+libxfdashboard into application xfdashboard and turn
+libxfdashboard into a complete library</li>
+  <li>New feature: Implemented a new color class XfdashboardGradientColor
+which support solid colors (single colors) and path gradients. Path
+gradient will follow a path (the outline) and draw a gradient
+orthogonal with color stops along this path.</li>
+  <li>New feature: Outlines (through XfdashboardoutlineEffect) do now
+use the new XfdashboardGradientColor to support the usual solid
+colors as befeofre as well as a new path gradient.</li>
+  <li>Changed default theme to make use of new path gradients at outlines.</li>
+  <li>Removed all xfdashboard_<em>_get_default() function to access single
+instances of the subsystems/component, like plugins manager etc.,
+as these single instances should now to access through
+XfdashboardCore and its xfdashboard_core_get_</em>(…) functions</li>
+  <li>Dropped support of Xfconf legacy (versions below 4.13.0) because
+of new XfdashboardSettings and XfdashboardPluginSettings object.
+Therefore also the dependency on dbus-glib was dropped which was
+need for Xfconf legacy.</li>
+  <li>Smaller bug-fixes</li>
+  <li>Clean-ups</li>
+  <li>More API documentation</li>
+  <li>Updated localizations:
+  bg, de, es, eu, fr, he, it, ja, nb, pl, sr, zh_CN</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001022.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.8.1-0ubuntu1/changelog">xfdashboard (0.8.1-0ubuntu1) devel</a></h1>
         </header>
         <header class="post-meta">
@@ -386,39 +446,6 @@ can cause high I/O in some cases (Issue #526)</p>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.3-0ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.5-0ubuntu1/changelog">xfce4-cpufreq-plugin (1.2.5-0ubuntu1) devel</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-03-06">
-                06 Mar 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.5-0ubuntu1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream release.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.5-0ubuntu1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
