@@ -13,10 +13,43 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Wed, 06 Jul 2022 21:30:19 -0400</lastBuildDate>
+	<lastBuildDate>Thu, 07 Jul 2022 00:54:22 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[xfce4-wavelan-plugin (0.6.3-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.3-1/changelog</link>
+			<pubDate>Wed, 06 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.3-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 0.6.3.</li>
+  <li>d/rules: Drop –as-needed, default now in stable.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+  <li>New upstream version 0.6.3.</li>
+  <li>d/rules: Drop –as-needed, default now in stable.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[elementary-xfce (0.17-1) unstable]]></title>
@@ -2256,374 +2289,6 @@ accelerators.</p>
 Russian</li>
 </ul>
 ]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[The Road to New Xubuntu Docs]]></title>
-			<link>https://bluesabre.org/news/2022/4/15/the-road-to-new-xubuntu-docs</link>
-			<pubDate>Mon, 18 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
-		
-		
-			<guid>https://bluesabre.org/news/2022/4/15/the-road-to-new-xubuntu-docs</guid>
-        
-        
-        
-        
-			<description><![CDATA[Two years, eight contributors, and numerous Zoom meetings resulted in over 
-eighty commits refreshing our user docs. All in time for the 22.04 release.]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p class="">The new Xubuntu documentation is finally complete. Two years, eight contributors, and numerous Zoom meetings resulted in over eighty commits refreshing our user docs. Incredibly, we managed to land all of the updates in time for the Xubuntu 22.04 “Jammy Jellyfish” release. Here’s how we got here.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/fa7a1384-c46a-473e-8a69-232626609050/about-the-xubuntu-name.png" data-image-dimensions="944x277" data-image-focal-point="0.5,0.5" alt="The &quot;About the Name&quot; section from the new Xubuntu docs. It includes a graphic of Ubuntu, Xfce, and a Heart emoji being added together to equal Xubuntu." data-load="false" data-image-id="625ce06422c55f15c76845c4" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/fa7a1384-c46a-473e-8a69-232626609050/about-the-xubuntu-name.png?format=1000w" />
-            
-          
-        
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">A section from the “What is Xubuntu?” chapter of the new Xubuntu docs.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<h3>Doing Things Differently</h3><p class="">In April 2020, Yousuf <a href="https://lists.ubuntu.com/archives/xubuntu-devel/2020-April/011923.html">reached out</a> to the Xubuntu Development list interested in kicking off some discussions around contributing to Xubuntu documentation. Our previous documentation lead, David Pires, had been offline and unreachable for nearly a year. I agreed to meet with Yousuf in David’s stead. Our first Zoom meeting <a href="https://lists.ubuntu.com/archives/xubuntu-devel/2020-April/011930.html">led to a plan</a>: copy all existing documentation to Google Docs, collaborate on the updates, and apply the changes to our official docs.</p><p class="">The next several weeks consisted of a series of weekend Zoom meetings, Telegram discussions, and lots of documentation edits and reviews. The team consisted of myself, Yousuf, and six other contributors, most of them new to contributing to Xubuntu. Our contributors came from a variety of backgrounds: history, education, networking, software development, and politics (and that’s just what I gathered from our normal conversations)!</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/e47c0fd7-6e44-4123-9d21-0647f03f6fac/xubuntu-docs-homepage.png" data-image-dimensions="512x261" data-image-focal-point="0.5,0.5" alt="A mockup of the Xubuntu documentation language selection page." data-load="false" data-image-id="625cdf6ddd35e935a605f253" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/e47c0fd7-6e44-4123-9d21-0647f03f6fac/xubuntu-docs-homepage.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">A mockup of the new language selection buttons for the Xubuntu docs homepage.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class="">We worked on a chapter at a time. Yousuf would write up the changes, the team would mark them up, and the following weekend we would review, discuss, and apply those changes. We <a href="https://docs.google.com/document/d/1Aj_Wdj9Uq62Ju0bvjhz15NVdaI_SaAMo8xqdU9s67YE/edit">also discussed</a> updating the homepage to modernize the language selection and updating the CSS to better match the current Xubuntu website. Those changes were ultimately scrapped due to time constraints and relative disinterest in that area. As the chapters were completed, we started working on porting the content back to Docbook. This porting process proved to be especially confusing and time-consuming.</p><h3>Docbook, Work Harder to Publish More Easily</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/b1e7d2d3-b682-4e79-b2cb-f9d040a28a0b/docbook-section-example.png" data-image-dimensions="2096x792" data-image-focal-point="0.5,0.5" alt="A screenshot of Docbook XML code to render a section with two paragraphs and an image." data-load="false" data-image-id="625cdb82c5721d4c1767874c" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/b1e7d2d3-b682-4e79-b2cb-f9d040a28a0b/docbook-section-example.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">Docbook: A section with a title, two paragraphs, and an image requires a lot of code.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class=""><a href="https://docbook.org/whatis">Docbook</a> is an XML-based documentation solution that Xubuntu has used for years to produce its user and contributor documentation. It enables us to easily output our documentation in HTML or PDF format so users can easily get the help they need, even offline. The tradeoff is that the format is difficult to get used to and ultimately led to me converting 95% of the docs to the Docbook format by myself. There were some early attempts by the team to port the documentation, but with a litany of unresolved schema validation issues, interest and contributions waned.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/ea00b783-1eda-4abc-9f78-283c37b800eb/docbook-error-example.png" data-image-dimensions="2076x752" data-image-focal-point="0.5,0.5" alt="An example Docbook validation error showing a complex and confusing warning and error message." data-load="false" data-image-id="625cddae9eb0575b59f73afb" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/ea00b783-1eda-4abc-9f78-283c37b800eb/docbook-error-example.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">If your code does not pass Docbook’s strict validation, prepare for an intimidating error log that references the wrong file and line.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class="">That said, it wasn’t all bad news. Along the way, I learned more about GitHub Actions and GitHub Pages and implemented <a href="https://github.com/Xubuntu/xubuntu-docs/blob/master/.github/workflows/build-and-deploy.yml">an automatic testing and deployment workflow</a>. With each new commit or pull request, the submitted code was built and tested, and successful builds were automatically deployed to <a href="https://xubuntu.github.io/xubuntu-docs/"><span>https://xubuntu.github.io/xubuntu-docs/</span></a> for review. These workflows are now a permanent addition to the Xubuntu Documentation and will make it easier to perform code reviews and make sure translations continue to pass validation. And if you want the latest and greatest version of the docs, you can find them in one place.</p><h3>Getting It Done</h3><p class="">Fast forward to this year and the urgency of an impending LTS release. Over the course of a few weeks, I finished converting the docs and pressed others for reviews. The team offered some quality feedback which helped the docs get to an acceptable level. Just days before <a href="https://wiki.ubuntu.com/FinalFreeze">Final Freeze</a> I was able to merge, package, and upload <code><a href="https://launchpad.net/ubuntu/+source/xubuntu-docs/22.04">xubuntu-docs</a></code><a href="https://launchpad.net/ubuntu/+source/xubuntu-docs/22.04"> 22.04</a>. And you can use it today, with the exception of one remaining issue: Snap package confinement.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/0cb64172-0e37-4f41-afa8-12371173f1c0/firefox-snap-xubuntu-docs.png" data-image-dimensions="861x580" data-image-focal-point="0.5,0.5" alt="The Firefox window displaying the error &quot;File not found&quot; when trying to access the Xubuntu docs." data-load="false" data-image-id="625ce16ceef5817d8a2c0bbb" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/0cb64172-0e37-4f41-afa8-12371173f1c0/firefox-snap-xubuntu-docs.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">Attempting to load the new Xubuntu Docs today will show a “File not found” in the Snap-packaged Firefox or Chromium browsers.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class="">With the release of Ubuntu 22.04, all flavors are now using the Firefox Snap package. Snaps are sandboxed, preventing access to most system resources and files. Unfortunately, this also blocks access to the <a href="https://bugs.launchpad.net/ubuntu/jammy/+source/xubuntu-docs/+bug/1967109">Xubuntu Docs</a>, <a href="https://bugs.launchpad.net/ubuntu/+source/libreoffice/+bug/1951210">LibreOffice Help</a>, and many other files that should be accessible. A fix has <a href="https://github.com/snapcore/snapd/commit/ece9bc6a189552f9badf7474721b4cdcddb82c1f">already been applied to snapd</a> and should be landing in the next couple of days. In the meantime, if you want to access the docs you can visit the <a href="https://xubuntu.github.io/xubuntu-docs/">online docs</a> or load the PDF version from <code>/usr/share/xubuntu-docs/user/C/xubuntu-documentation-USletter.pdf</code> in Atril.</p>
-
-
-<p class="">Getting to this point was a long and exhausting journey. I’m grateful to our new contributors for stepping up and bringing our documentation back to a great place. That said, I hope I never have to work with Docbook again. It’s tedious, and if you’re the only one working on it, it can suck up all of your time just getting your code to work. Here’s to hoping it stays maintained this time from community contributions. 🤞</p>]]>
         
       </content:encoded>
 		</item>

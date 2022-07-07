@@ -65,6 +65,43 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/">Catfish 1.4.12 Released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2020-01-01">
+                01 Jan 2020
+            </time>
+            <a href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><img src="https://bluesabre.org/content/images/2020/01/catfish-1.4.12-home.png" alt="Catfish 1.4.12 Released"><p>Welcome to 2020! Let's ring in the new year with a brand new Catfish release.</p><h2 id="what-s-new">What's New</h2><h3 id="wayland-support">Wayland Support</h3><p>Catfish 1.4.12 adds support for running on Wayland. Before now, there were some X-specific dependencies related to handling display sizes. These have now been resolved, and Catfish should run smoothly and consistently everywhere.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2020/01/catfish-on-wayland.png" class="kg-image" alt="Catfish 1.4.12 Released"><figcaption>Catfish 1.4.12 on Wayland on Ubuntu 19.10</figcaption></figure><h3 id="dialog-improvements">Dialog Improvements</h3><p>All dialogs now utilize client-side decorations (CSD) and are modal. The main window will continue to respect the window layout setting introduced in the 1.4.10 release.</p><p>I also applied a number of fixes to the new Preferences and Search Index dialogs, so they should behave more consistently and work well with keyboard navigation.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-about-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-prefs-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-search-index-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div></div></div><figcaption>The new dialogs are more streamlined and standardized.</figcaption></figure><h3 id="release-process-updates">Release Process Updates</h3><p>I've improved the release process to make it easier for maintainers and to ensure builds are free of temporary files. This helps ensure a faster delivery to package maintainers, and therefore to distributions.</p><h3 id="translation-updates">Translation Updates</h3><p>Albanian, Catalan, Chinese (China), Chinese (Taiwan), Czech, Danish, Dutch, French, Galician, German, Italian, Japanese, Norwegian Bokmål, Russian, Serbian, Spanish, Turkish</p><h2 id="downloads">Downloads</h2><p><a href="https://archive.xfce.org/src/apps/catfish/1.4/catfish-1.4.12.tar.bz2">Source tarball</a></p><pre><code>$ md5sum catfish-1.4.12.tar.bz2 
+9aad6a0bc695ec8793d4294880974cb2
+
+$ sha1sum catfish-1.4.12.tar.bz2 
+4e78e291a2f17c85122a85049bdc837b49afdd66
+
+$ sha256sum catfish-1.4.12.tar.bz2 
+c3fb30e02b217752aa493b49769be1a5fc2adde70b22aef381e6c67d5227134a</code></pre><p>Catfish 1.4.12 will be included in Xubuntu 20.04 "Focal Fossa", available in April.</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/parole/parole_1.0.5-1/changelog">parole (1.0.5-1) unstable</a></h1>
         </header>
         <header class="post-meta">
@@ -406,85 +443,6 @@ $ sha256sum catfish-1.4.11.tar.bz2
         <footer>
             
                 <a class="read-more" href="https://github.com/Xubuntu/lightdm-gtk-greeter/releases/tag/lightdm-gtk-greeter-2.0.7">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_20.04/changelog">xubuntu-default-settings (20.04) focal</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2019-11-09">
-                09 Nov 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_20.04/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>debian/control:
-    <ul>
-      <li>Bump Standards-Version to 4.4.0</li>
-      <li>Add Rules-Requires-Root: no</li>
-      <li>Update Vcs- locations</li>
-    </ul>
-  </li>
-  <li>debian/control, debian/compat:
-    <ul>
-      <li>Bump debhelper to version 12</li>
-    </ul>
-  </li>
-  <li>debian/live/*:
-    <ul>
-      <li>Move live config files to subdirectory</li>
-    </ul>
-  </li>
-  <li>debian/live/whiskermenu-1.rc,    debian/xubuntu-live-settings.install:
-    <ul>
-      <li>Remove lock menu option in live since locking is disabled (LP: #1835668)</li>
-    </ul>
-  </li>
-  <li>debian/live/light-locker.desktop,    debian/xubuntu-live-settings.install:
-    <ul>
-      <li>Remove light-locker autostart entry since we no longer ship it</li>
-    </ul>
-  </li>
-  <li>debian/source/lintian-overrides:
-    <ul>
-      <li>Add override for testsuite-autopkgtest-missing</li>
-    </ul>
-  </li>
-  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml:
-    <ul>
-      <li>Drop workspace labels, inconsistent with 5+ workspaces (LP: #1829778)</li>
-    </ul>
-  </li>
-  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml:
-    <ul>
-      <li>Set the Xubuntu wallpaper as default for up to 4 displays</li>
-    </ul>
-  </li>
-  <li>etc/xdg/xdg-xubuntu/menus/xfce-applications.menu,    etc/xdg/xdg-xubuntu/menus/xfce-settings-manager.menu:
-    <ul>
-      <li>Workaround menu handling errors in pyxdg (LP: #1833863)</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_20.04/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

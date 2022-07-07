@@ -65,6 +65,77 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.0-1/changelog">atril (1.24.0-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Mike Gabriel
+            
+            
+            <time class="post-date" datetime="2020-02-14">
+                14 Feb 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.0-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[ Mike Gabriel ]</p>
+<ul>
+  <li>debian/control:
+    <ul>
+      <li>Bump Standards-Version: to 4.5.0. No changes needed.</li>
+      <li>Update versioned B-D on mate-common (&gt;= 1.24.0-1~).</li>
+    </ul>
+  </li>
+  <li>debian/upstream/metadata:
+    <ul>
+      <li>Drop obsolete fields Contact: and Name:.</li>
+      <li>Append .git suffix to URLs in Repository: field.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Martin Wimpress ]</p>
+<ul>
+  <li>New upstream release.</li>
+  <li>debian/patches:
+    <ul>
+      <li>Drop CVE-2019-11459.patch. Applied upstream.</li>
+    </ul>
+  </li>
+  <li>debian/copyright:
+    <ul>
+      <li>Update copyright attributions.</li>
+    </ul>
+  </li>
+  <li>debian/control:
+    <ul>
+      <li>Add B-D libsynctex-dev.</li>
+      <li>Add B-D libxml2-utils.</li>
+    </ul>
+  </li>
+  <li>debian/libatrildocument3.symbols:
+    <ul>
+      <li>Update symbols.</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.0-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu3/changelog">lightdm (1.30.0-0ubuntu3) focal</a></h1>
         </header>
         <header class="post-meta">
@@ -489,43 +560,6 @@ This has now changed and as many bugs apply to both Xfce 4.14 and the current 4.
         <footer>
             
                 <a class="read-more" href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.11">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/">Catfish 1.4.12 Released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2020-01-01">
-                01 Jan 2020
-            </time>
-            <a href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><img src="https://bluesabre.org/content/images/2020/01/catfish-1.4.12-home.png" alt="Catfish 1.4.12 Released"><p>Welcome to 2020! Let's ring in the new year with a brand new Catfish release.</p><h2 id="what-s-new">What's New</h2><h3 id="wayland-support">Wayland Support</h3><p>Catfish 1.4.12 adds support for running on Wayland. Before now, there were some X-specific dependencies related to handling display sizes. These have now been resolved, and Catfish should run smoothly and consistently everywhere.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2020/01/catfish-on-wayland.png" class="kg-image" alt="Catfish 1.4.12 Released"><figcaption>Catfish 1.4.12 on Wayland on Ubuntu 19.10</figcaption></figure><h3 id="dialog-improvements">Dialog Improvements</h3><p>All dialogs now utilize client-side decorations (CSD) and are modal. The main window will continue to respect the window layout setting introduced in the 1.4.10 release.</p><p>I also applied a number of fixes to the new Preferences and Search Index dialogs, so they should behave more consistently and work well with keyboard navigation.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-about-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-prefs-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2020/01/catfish-search-index-ss.png" width="871" height="561" alt="Catfish 1.4.12 Released"></div></div></div><figcaption>The new dialogs are more streamlined and standardized.</figcaption></figure><h3 id="release-process-updates">Release Process Updates</h3><p>I've improved the release process to make it easier for maintainers and to ensure builds are free of temporary files. This helps ensure a faster delivery to package maintainers, and therefore to distributions.</p><h3 id="translation-updates">Translation Updates</h3><p>Albanian, Catalan, Chinese (China), Chinese (Taiwan), Czech, Danish, Dutch, French, Galician, German, Italian, Japanese, Norwegian Bokmål, Russian, Serbian, Spanish, Turkish</p><h2 id="downloads">Downloads</h2><p><a href="https://archive.xfce.org/src/apps/catfish/1.4/catfish-1.4.12.tar.bz2">Source tarball</a></p><pre><code>$ md5sum catfish-1.4.12.tar.bz2 
-9aad6a0bc695ec8793d4294880974cb2
-
-$ sha1sum catfish-1.4.12.tar.bz2 
-4e78e291a2f17c85122a85049bdc837b49afdd66
-
-$ sha256sum catfish-1.4.12.tar.bz2 
-c3fb30e02b217752aa493b49769be1a5fc2adde70b22aef381e6c67d5227134a</code></pre><p>Catfish 1.4.12 will be included in Xubuntu 20.04 "Focal Fossa", available in April.</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://bluesabre.org/2020/01/01/catfish-1-4-12-released/">&raquo; Original Post</a>
             
         </footer>
     </article>
