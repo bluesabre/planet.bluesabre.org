@@ -65,6 +65,36 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2021/09/26/menulibre-2-2-2-release/">MenuLibre 2.2.3 Released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-09-26">
+                26 Sep 2021
+            </time>
+            <a href="https://bluesabre.org/2021/09/26/menulibre-2-2-2-release/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2 id="whats-new">What&apos;s New?</h2><h3 id="new-features">New Features</h3><ul><li>Added diagnostics for failed menu loading</li><li>Added support for GNOME-specific categories (<a href="https://github.com/bluesabre/menulibre/issues/56">#56</a>)</li><li>Added support for PrefersNonDefaultGPU (<a href="https://github.com/bluesabre/menulibre/issues/50">#50</a>)</li><li>Added support for unprefixed applications.menu (<a href="https://github.com/bluesabre/menulibre/issues/67">#67</a>)</li><li>Added support for X-GNOME-UsesNotifications (<a href="https://github.com/bluesabre/menulibre/issues/79">#79</a>)</li><li>Added support for XFCE-specific categories (<a href="https://github.com/bluesabre/menulibre/issues/54">#54</a>)</li><li>Enabled opening a root editor for root-owned files with pkexec (<a href="https://github.com/bluesabre/menulibre/issues/62">#62</a>)</li><li>Enabled searching for Exec key and desktop entry (<a href="https://github.com/bluesabre/menulibre/issues/52">#52</a>)</li></ul><h3 id="general">General</h3><ul><li>Added AppData file (<a href="https://github.com/bluesabre/menulibre/issues/61">#61</a>)</li><li>Documented intltool build requirement (<a href="https://github.com/bluesabre/menulibre/pull/59">#59</a>)</li><li>Switched to the <a href="https://github.com/bluesabre/menulibre/wiki/Recognized-Desktop-Entry-Keys">MenuLibre Wiki</a> for key descriptions (<a href="https://github.com/bluesabre/menulibre/issues/48">#48</a>)</li></ul><h3 id="bug-fixes">Bug Fixes</h3><ul><li>Added valid types to validator, reducing false positives (<a href="https://github.com/bluesabre/menulibre/issues/66">#66</a>)</li><li>Fixed builds with newer versions of GTK (<a href="https://github.com/bluesabre/menulibre/pull/77">#77</a>)</li><li>Fixed history state when editing Name and Comment (<a href="https://github.com/bluesabre/menulibre/issues/57">#57</a>)</li><li>Fixed running with newer versions of GTK (<a href="https://github.com/bluesabre/menulibre/issues/82">#82</a>)</li><li>Fixed selection leaving screen while moving items (<a href="https://github.com/bluesabre/menulibre/issues/25">#25</a>)</li><li>Fixed typo in desktop file processing error</li><li>Fixed msgfmt errors</li></ul><h3 id="updated-translations">Updated Translations</h3><img src="https://bluesabre.org/content/images/2021/09/menulibre-2.2.3-featured.png" alt="MenuLibre 2.2.3 Released"><p>Arabic, Catalan, Chinese (China), Danish, Dutch, English (United Kingdom), French, German, Japanese, Lithuanian, Malay, Malay (Arabic), Polish, Russian, Spanish, Turkish, Ukrainian</p><h2 id="deep-dive-into-new-features">Deep Dive Into New Features</h2><h3 id="newly-added-keys">Newly Added Keys</h3><p><strong>PrefersNonDefaultGPU</strong> was added to the FreeDesktop.org <a href="https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html">Desktop Entry Specification</a> in version 1.4. It&apos;s a hint for the desktop environment to use a non-discrete, more powerful GPU, if it is available. Support for this key was recently added to Xubuntu and elementary, and is making it&apos;s way to other desktop environments as well.</p><p><strong>X-GNOME-UsesNotifications</strong> is used by GNOME, elementary, and other GTK desktops (possibly others as well) to inform the environment that an app can send notifications. This enables management of those notifications through a single interface. This feature is seen in GNOME and elementary.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/09/notifications-elementary.png" width="1040" height="740" loading="lazy" alt="MenuLibre 2.2.3 Released" srcset="https://bluesabre.org/content/images/size/w600/2021/09/notifications-elementary.png 600w, https://bluesabre.org/content/images/size/w1000/2021/09/notifications-elementary.png 1000w, https://bluesabre.org/content/images/2021/09/notifications-elementary.png 1040w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/09/notifications-gnome.png" width="1040" height="740" loading="lazy" alt="MenuLibre 2.2.3 Released" srcset="https://bluesabre.org/content/images/size/w600/2021/09/notifications-gnome.png 600w, https://bluesabre.org/content/images/size/w1000/2021/09/notifications-gnome.png 1000w, https://bluesabre.org/content/images/2021/09/notifications-gnome.png 1040w" sizes="(min-width: 720px) 720px"></div></div></div><figcaption>X-GNOME-UsesNotifications empowers the user to control their notifications.</figcaption></figure><h3 id="improving-cross-platform-support">Improving Cross-Platform Support</h3><p>Support for <strong>GNOME-specific </strong>and <strong>Xfce-specific</strong> application categories has been added. When running in a supported desktop environment, these categories are now available and should enable a tighter integration and more advanced menu management features.</p><p><strong>Un-prefixed applications.menu files</strong>, as seen in <a href="https://manjaro.org/downloads/official/kde/">Manjaro KDE</a>, are now supported. Typically, a desktop environment will use prefixed versions of the applications menu to have separate menu options for different desktop environments. If a prefixed version of the menu cannot be found, the un-prefixed version will be used instead.</p><p>If you&apos;re using a desktop environment or distribution that is still unsupported, the new<strong> diagnostics dialog</strong> will help report the issue and get it resolved sooner. Everything I need to add support is included in the dialog, so just copy and paste or take a screenshot and <a href="https://github.com/bluesabre/menulibre/issues/new">report a bug on GitHub</a>.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/09/diagnostic-dialog-1.png" class="kg-image" alt="MenuLibre 2.2.3 Released" loading="lazy" width="634" height="462" srcset="https://bluesabre.org/content/images/size/w600/2021/09/diagnostic-dialog-1.png 600w, https://bluesabre.org/content/images/2021/09/diagnostic-dialog-1.png 634w"><figcaption>When MenuLibre fails to load your menu, you are now given more details about the failure.</figcaption></figure><h3 id="find-and-edit-faster">Find and Edit Faster</h3><p>MenuLibre&apos;s <strong>search entry</strong> can now search using the Exec key and .desktop filename. This is in addition to the Name and Comment keys that were previously used. It should now be significantly easier to track down a long-lost launcher.</p><p><strong>Menu validation</strong> received some much needed improvements. Valid types such as Link, Directory, and Service are no longer flagged for review. Invalid files that are owned by root can now be instantly edited with a root editor. <code>pkexec</code> is used to launch the editor will superuser permissions to make any needed adjustments.</p><h2 id="downloads"><strong>Downloads</strong></h2><p><a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz">Source tarball</a> (<a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz/+md5">md5</a>, <a href="https://launchpad.net/menulibre/2.2/2.2.3/+download/menulibre-2.2.3.tar.gz.asc">sig</a>)</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2021/09/26/menulibre-2-2-2-release/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.3">MenuLibre 2.2.3</a></h1>
         </header>
         <header class="post-meta">
@@ -473,42 +503,6 @@ Ukrainian</p>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.22.15-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.0-1/changelog">xfce4-whiskermenu-plugin (2.6.0-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-09-23">
-                23 Sep 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.0-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 2.6.0.</li>
-  <li>d/control: Bump DH compat to 13.</li>
-  <li>Update Standards-Version to 4.6.0.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.0-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

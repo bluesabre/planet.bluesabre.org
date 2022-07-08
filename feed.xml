@@ -13,7 +13,7 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Fri, 08 Jul 2022 03:30:16 -0400</lastBuildDate>
+	<lastBuildDate>Fri, 08 Jul 2022 06:54:38 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
@@ -78,6 +78,31 @@
   <li>d/control: Drop old Xubuntu Breaks/Replaces.</li>
   <li>d/copyright: Update years and paths.</li>
   <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[blueman (2.3-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3-1/changelog</link>
+			<pubDate>Tue, 05 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Christopher Schramm]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New release</li>
 </ul>
 ]]>
         
@@ -2255,38 +2280,6 @@ It features a modest set of updates for users coming from Xubuntu 21.10.]]></des
   <li>New upstream version 4.6.0.</li>
   <li>d/copyright: Update years.</li>
   <li>Update Standards-Version to 4.6.0.</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: xfce4-terminal 1.0.2 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001110.html</link>
-			<pubDate>Wed, 20 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001110.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[<p>Stable release fixing a regression related to switch/move tab
-accelerators.</p>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p>Stable release fixing a regression related to switch/move tab
-accelerators.</p>
-
-<ul>
-  <li>Regression: MiscCycleTabs preference does not work for accelerators
-(#186, #24).</li>
-  <li>Translation Updates:
-Russian</li>
 </ul>
 ]]>
         
