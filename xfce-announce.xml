@@ -4,7 +4,39 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sat, 09 Jul 2022 12:54:18 -0400</pubDate>
+    <pubDate>Sat, 09 Jul 2022 15:30:02 -0400</pubDate>
+    <item>
+      <author>simon at xfce.org (Simon Steinbeiss)</author>
+      <title>ANNOUNCE: xfce4-settings 4.16.3 released</title>
+      <pubDate>Tue, 05 Jul 2022 10:00:07 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62c443e7b5066_3492b2258de65c07083@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-settings 4.16.3 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/xfce4-settings/4.16/xfce4-settings-4.16.3.tar.bz2
+  https://archive.xfce.org/src/xfce/xfce4-settings/4.16/xfce4-settings-4.16.3.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/xfce4-settings/4.16/xfce4-settings-4.16.3.tar.bz2?sha256
+
+
+What is xfce4-settings?
+=======================
+
+Settings manager of the Xfce desktop.
+
+Website: 
+  https://xfce.org/
+
+
+Release notes for 4.16.3
+========================
+- xfsettingsd: Fix recursive lock in libX11 (Fixes #369)
+- build: Fix intltool lock file problem during make distcheck
+- Translation Updates:
+  Armenian (Armenia), Belarusian, Catalan, English (Canada), English
+  (United Kingdom), Estonian, Galician, Greek, Indonesian, Kazakh,
+  Korean, Lithuanian, Malay, Occitan (post 1500), Polish, Romanian,
+  Swedish</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001123.html</link>
+    </item>
     <item>
       <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
       <title>ANNOUNCE: tumbler 4.17.2 released</title>
@@ -421,62 +453,6 @@ Regressions fixed:
 Gitlab:
 - Fix CI build</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001114.html</link>
-    </item>
-    <item>
-      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
-      <title>ANNOUNCE: garcon 4.17.0 released</title>
-      <pubDate>Sun, 15 May 2022 14:56:04 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;62814cc4619cb_6cf82b067380c5c440114@xfce2.mail&amp;gt;</guid>
-      <description>garcon 4.17.0 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/garcon/4.17/garcon-4.17.0.tar.bz2
-  https://archive.xfce.org/src/xfce/garcon/4.17/garcon-4.17.0.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/garcon/4.17/garcon-4.17.0.tar.bz2?sha256
-
-
-What is garcon?
-===============
-
-Garcon is an implementation of the freedesktop.org menu specification
-replacing the former Xfce menu library libxfce4menu. It is based on
-GLib/GIO only and aims at covering the entire specification except for
-legacy menus.
-
-Website: 
-  https://www.xfce.org/
-
-
-Release notes for 4.17.0
-========================
-[Please note that this is a development release.]
-
-- Bug Fixes:
-  - build: Fix intltool lock file problem during make distcheck
-  - garcon-gtk: Reduce latency when displaying the menu (#3, #5, !18)
-  - garcon-menu-separator: Fix constructor (!22)
-  - Fix build warnings (!19)
-  - garcon-menu-item: Fix memory leaks (!21)
-  - doc: Various fixes (#24, !20)
-  - Fix build warning and remove redundant code (!17)
-  - Reintroduce the science category (#20, !15)
-  - menu-item: Add get/set for PrefersNonDefaultGPU (#21, !16)
-  - garcon-gtk: Fix a small memory leak (!14)
-  - Revamp the documentation to modernize and uniformize accross
-    components (!13)
-
-- Translation Updates:
-  Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Asturian,
-  Basque, Belarusian, Bengali, Bulgarian, Catalan, Chinese (China),
-  Chinese (Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish,
-  Dutch, Eastern Armenian, English (Australia), English (United
-  Kingdom), Esperanto, Estonian, Finnish, French, Galician, Georgian,
-  German, Greek, Hebrew, Hindi, Hungarian, Icelandic, Indonesian,
-  Interlingue, Italian, Japanese, Kabyle, Kazakh, Korean, Lithuanian,
-  Malay, Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500),
-  Polish, Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian,
-  Slovak, Slovenian, Spanish, Swedish, Telugu, Thai, Turkish,
-  Ukrainian, Uyghur, Uzbek, Uzbek (Latin), Welsh</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001113.html</link>
     </item>
   </channel>
 </rss>
