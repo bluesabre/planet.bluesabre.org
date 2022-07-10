@@ -4,7 +4,197 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sat, 09 Jul 2022 18:54:46 -0400</pubDate>
+    <pubDate>Sat, 09 Jul 2022 21:30:02 -0400</pubDate>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: ristretto 0.12.3 released</title>
+      <pubDate>Sat, 09 Jul 2022 16:54:56 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62c9eb20e2169_3492b2258de65c07685@xfce2.mail&amp;gt;</guid>
+      <description>ristretto 0.12.3 is now available for download from
+  
+  https://archive.xfce.org/src/apps/ristretto/0.12/ristretto-0.12.3.tar.bz2
+  https://archive.xfce.org/src/apps/ristretto/0.12/ristretto-0.12.3.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/ristretto/0.12/ristretto-0.12.3.tar.bz2?sha256
+
+
+What is ristretto?
+==================
+
+Ristretto is an image-viewer for the Xfce desktop environment.
+
+Website: 
+  https://docs.xfce.org/apps/ristretto/start
+
+
+Release notes for 0.12.3
+========================
+- Bug Fixes:
+  - thumbnailer: Fall back on lower qualities in case of
+    unsupported flavor (#81)
+  - Secure error handling when opening multiple files
+  - Use `G_FILE_MONITOR_WATCH_MOVES` for file monitoring
+  - Do not keep sticky state when current file is removed
+  - Fix management of transaction source id
+  - Correctly handle deletion when there is only one image (#89)
+  - Update iter list on insertion and deletion (#88)
+  - build: Fix intltool lock file problem during make distcheck
+  - Display error message on stderr
+  - i18n: Use `xfce_textdomain()` to initialize translations
+  - Ensure that an error is set if no pixbuf is available
+  - Fix some memory leaks
+
+- Code Refactoring:
+  - flatpak: Some updates from Flathub
+  - Remove old icon files
+  - Remove TODO file
+  - Flatpak: Add libopenraw dependency
+
+- Translation Updates:
+  Chinese (China), Danish, Greek, Korean, Malay, Portuguese (Brazil),
+  Turkish</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001126.html</link>
+    </item>
+    <item>
+      <author>alexxcons at xfce.org (Alexander Schwinn)</author>
+      <title>ANNOUNCE: thunar 4.17.9 released</title>
+      <pubDate>Sat, 09 Jul 2022 15:59:33 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62c9de2536a19_3492b2258de65c0748f@xfce2.mail&amp;gt;</guid>
+      <description>thunar 4.17.9 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.9.tar.bz2
+  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.9.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/thunar/4.17/thunar-4.17.9.tar.bz2?sha256
+
+
+What is thunar?
+===============
+
+Thunar is a modern file manager for the Xfce Desktop Environment. It has
+been designed from the ground up to be fast and easy-to-use. Its user
+interface is clean and intuitive, and does not include any confusing or
+useless options. Thunar is fast and responsive with a good start up time
+and directory load time. Thunar is accessible using Assistive
+Technologies and is fully standards compliant.
+
+Website: 
+  https://docs.xfce.org/xfce/thunar/start
+
+
+Release notes for 4.17.9
+========================
+[Please note that this is a development release.]
+
+Development release on the master branch, shipping tons of improvements,
+fixes and translation updates:
+
+- Dont rely on xfconf value for menubar toggle (Issue #777)
+- Dont rely on xfconf value for statusbar toggle (Issue #777)
+- Dont rely on xfconf value for sidepane menu items (Issue #777)
+- Bulk renamer: Rename in multiple iterations (Issue #108)
+- meaningful naming for Location Selector (Issue #826)
+- Prevent GLib-GObject-CRITICAL when using tree-view (Issue #827)
+- Bulk Renamer: Allow multiple matches when using regex (Issue #230)
+- Fix various memory leaks (Issue #573)
+- Ignore escape sequences when executing launchers
+- Fix crash when changing tab titles preferences (#808)
+- Don&amp;#x27;t modify the &amp;#x27;exe&amp;#x27; line in .desktop files unintentionally
+- Search: show symlinks in results (Issue #809)
+- Rename ThunarLauncher class to ThunarActionManager
+- Enable to switch from search entry to other UI elements (Issue #792)
+- Hide accel labels in launcher submenus (Issue #779)
+- Fix broken build with gcc7 : “declaration is not a statement”
+- List View: Show relative paths for column &amp;#x27;location&amp;#x27;
+- Check for empty path property in .desktop files
+- Add tooltips for select by pattern dialog
+- Restore view-type before exiting while search is active (Issue #794)
+- Add menu item &amp;#x27;edit launcher&amp;#x27; for &amp;#x27;.desktop&amp;#x27; files
+- Search string normalization and diacritic stripping (Issue #793)
+- Add border around infobar in trash (Issue #795)
+- Fix segfault when closing Thunar during search (Issue #789)
+- Respect last-show-hidden during search (Issue #785)
+- Allow searching for multiple search terms (Issue #783)
+- Handle special columns properly when ending a search (Issue #782)
+- Replace exo_str_* () with GLib functions
+- Bump up Glib dependency to 2.66.0
+- Fixed folder activation during search in some cases (Issue #774)
+- ExoIconView search workaround: do not save the temporary view type
+- Fix column editor model filter logic
+- Show the `Location` column in `recent:\`.
+- Show the `Search with Catfish...` button only if catfish is installed
+- Tweak order of tab settings in preferences dialog
+- build: Fix intltool lock file problem during make distcheck
+- Add option to show last modified date in the statusbar (Issue #641)
+- Usage of glist to concatinate statusbar strings
+- Add configure option to set thunarx default dirs
+- Add configure option to enable thunarx custom dirs (Issue #771)
+- Sort symlinks like regular files when sorting by type (Issue #71)
+- Make thunar toolbar editor resizable and set a default size
+- Refactor thunarx module loading (Issue #755)
+- Add preference to disable recursive search (Issue #751)
+- Compact View: Optional ellipsization instead word wrap (Issue #595)
+- Add toolbar button to show menubar when hidden (Issue #174)
+- Bookmark accels not working (Issue #762)
+- Toolbar Editor: Default to a bigger dialog size (Issue #758)
+- Toolbar: Make custom actions invisible by default (Issue #757)
+- Dont show a checkbox for &amp;quot;vertical split pane&amp;quot; in the settings
+- Show as well invalid bookmarks in the bookmarks menu (Issue #582)
+- Remove &amp;#x27;Date Deleted&amp;#x27; from &amp;#x27;Configure Column&amp;#x27; List (Issue #750)
+- Move trash infobar to the bottom (Issue #605)
+- Translation Updates:
+  Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
+  Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+  (Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
+  (Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
+  French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+  Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
+  Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Persian
+  (Iran), Polish, Portuguese, Romanian, Serbian, Slovak, Spanish,
+  Swedish, Telugu, Thai, Urdu, Urdu (Pakistan), Uyghur, Vietnamese</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001125.html</link>
+    </item>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: mousepad 0.5.10 released</title>
+      <pubDate>Sat, 09 Jul 2022 14:51:44 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62c9ce404905f_3492b2258de65c0728f@xfce2.mail&amp;gt;</guid>
+      <description>mousepad 0.5.10 is now available for download from
+  
+  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.10.tar.bz2
+  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.10.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/mousepad/0.5/mousepad-0.5.10.tar.bz2?sha256
+
+
+What is mousepad?
+=================
+
+A simple text editor for Xfce.
+
+Website: 
+  https://docs.xfce.org/apps/mousepad/
+
+
+Release notes for 0.5.10
+========================
+- New Features:
+  - Consider unnamed files unchanged when empty (#170, !123)
+
+- Bug Fixes:
+  - session-restore: Manage autosave ids through a GList (#165)
+  - Honor global &amp;quot;gtk-menu-images&amp;quot; setting for icon visibility
+  - search: Do not select first combo box entry when list does not
+    change
+  - Fix encoding conversion when saving
+  - Fix encoding conversion when opening (#172)
+  - Update charset when a byte order mark is detected (#172)
+  - tests: Add plugin settings to the list
+  - build: Fix intltool lock file problem during make distcheck
+  - Fix a memory leak in menu item realignment (#164)
+
+- Translation Updates:
+  Finnish, Greek, Hebrew, Hungarian, Russian, Serbian, Swedish,
+  Turkish, Ukrainian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001124.html</link>
+    </item>
     <item>
       <author>simon at xfce.org (Simon Steinbeiss)</author>
       <title>ANNOUNCE: xfce4-settings 4.16.3 released</title>
@@ -292,167 +482,6 @@ not included in the release tarball.
   (Brazil), Russian, Serbian, Slovak, Spanish, Swedish, Thai, Turkish,
   Ukrainian</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001117.html</link>
-    </item>
-    <item>
-      <author>simon at xfce.org (Simon Steinbeiss)</author>
-      <title>ANNOUNCE: xfce4-taskmanager 1.5.3 released</title>
-      <pubDate>Tue, 24 May 2022 05:42:11 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;628ca8731ef96_6cf82b067380c5c4408b5@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-taskmanager 1.5.3 is now available for download from
-  
-  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.3.tar.bz2
-  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.3.tar.bz2?sha1
-  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.3.tar.bz2?sha256
-
-
-What is xfce4-taskmanager?
-==========================
-
-Easy to use task manager.
-
-Website: 
-  https://docs.xfce.org/apps/xfce4-taskmanager/start
-
-
-Release notes for 1.5.3
-=======================
-- Fix rendering bug (Fixes #44)
-- Fix rendering bug for swap graph (relates to #44)
-- Fix bindings related to the &amp;quot;show-legend&amp;quot; setting
-- Allow to copy full process command line (#33)
-- Rename Private to Resident Bytes (#7)
-- Avoid grabbing the filter entry if it is not realized
-- Fix intltool lock file problem during make distcheck
-- `uid_name` has been removed from `task` struct
-- Fix invalid casts for &amp;quot;About&amp;quot; and &amp;quot;Help&amp;quot; (Fixes #43)
-- Show localized website label
-- Update COPYING (Issue #49)
-- Updated copyright year, authors, and project links
-- Translation Updates:
-  Albanian, Arabic, Armenian (Armenia), Asturian, Azerbaijani, Basque,
-  Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Hong Kong),
-  Chinese (Taiwan), Croatian, Czech, Danish, Dutch, Eastern Armenian,
-  English (Australia), English (United Kingdom), Estonian, Finnish,
-  French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
-  Indonesian, Interlingue, Italian, Japanese, Kazakh, Korean,
-  Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500), Persian
-  (Iran), Polish, Portuguese, Portuguese (Brazil), Russian, Serbian,
-  Slovak, Spanish, Swedish, Telugu, Thai, Turkish, Ukrainian, Uyghur</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001116.html</link>
-    </item>
-    <item>
-      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
-      <title>ANNOUNCE: xfce4-panel 4.17.1 released</title>
-      <pubDate>Sun, 22 May 2022 16:43:10 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;628aa05e2b934_6cf82b067380c5c44056f@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-panel 4.17.1 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.1.tar.bz2
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.1.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.1.tar.bz2?sha256
-
-
-What is xfce4-panel?
-====================
-
-Xfce&amp;#x27;s panel.
-
-Website: 
-  https://www.xfce.org/
-
-
-Release notes for 4.17.1
-========================
-[Please note that this is a development release.]
-
-- Dependency Changes:
-  - Garcon &amp;gt;= 4.17.0
-
-- New Features:
-  - tasklist: Middle click minimize window groups (!76)
-  - tasklist: Middle click close window groups (#322, !76)
-  - tasklist: Middle click opens new instance (#166, !72)
-
-- Bug Fixes:
-  - Add some autohide blockers (!78)
-  - Bump minimal required Garcon to 4.17.0 (#184, #485)
-  - libxfce4panel: Destroy plugin prefs dialog on plugin &amp;quot;destroy&amp;quot;
-    signal
-  - Autohide fixes (#48, #116, #397, !75)
-  - systray: Hide button menu if button is hidden by its app
-    (Fixes #391)
-  - launcher: Use same icons for item list as in prefs dialog 
-    (Fixes #415)
-  - launcher: Make add dialog consistent with panel add dialog 
-    (Fixes #416)
-  - tasklist: Fix context menu position in deskbar mode
-    (Fixes #417)
-  - systray: Display square systray icons on multiple rows (#426)
-  - panel: Do not rely on borders to trigger autohide animation
-  - Revert &amp;quot;Fix autohide with bg color or image (Bug #16064)&amp;quot; 
-    (#435, #512)
-  - tasklist: Hide wireframe on window buttons (#543, !70)
-  - systray: Icon size and priority fixes (#571, !73)
-  - systray: Disable broken smooth scroll with Xfwm4 (#411, !74)
-  - prefs-dialog: Filter out irrelevant selection changes in
-    &amp;quot;Items&amp;quot; tab
-  - wrapper: Ensure that provider stays alive when processing
-    &amp;quot;g-signal&amp;quot;
-  - Revert &amp;quot;panel: Keep a reference on item during drag and drop&amp;quot;
-  - panel: Clear opaque region so compositor properly apply
-    transparency (#378, #427)
-  - Fix `gdk_rgba_to_string()`-related memory leaks
-  - panel: Refactor background setters
-  - systray: Load icon from theme at desired size (#463)
-  - Take window scaling into account (#465, #486, !71)
-  - panel: Fix a memory leak
-  - clock: Prevent visual glitch when showing calendar window
-    (#466)
-  - tasklist: Fix wireframe for CSD windows (v2) (#562)
-  - systray: Check that the proxy exists when invalidating item
-
-- Translation Updates:
-  Albanian, Bulgarian, Chinese (China), Chinese (Taiwan), Dutch,
-  English (United Kingdom), French, German, Greek, Hebrew, Italian,
-  Japanese, Lithuanian, Malay, Norwegian Bokmål, Panjabi (Punjabi),
-  Polish, Portuguese, Portuguese (Brazil), Serbian, Slovenian, Spanish,
-  Swedish, Turkish</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001115.html</link>
-    </item>
-    <item>
-      <author>sergioskefalidis at gmail.com (Sergios - Anestis Kefalidis)</author>
-      <title>ANNOUNCE: xfce4-terminal 1.0.4 released</title>
-      <pubDate>Sun, 22 May 2022 05:22:35 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;628a00db81b15_6cf82b067380c5c4403a0@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-terminal 1.0.4 is now available for download from
-  
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.4.tar.bz2
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.4.tar.bz2?sha1
-  https://archive.xfce.org/src/apps/xfce4-terminal/1.0/xfce4-terminal-1.0.4.tar.bz2?sha256
-
-
-What is xfce4-terminal?
-=======================
-
-Xfce4-terminal is a modern terminal emulator for the Unix/Linux desktop
-- primarily for the Xfce desktop environment. It is a lightweight
-emulator based on the VTE widget, easy to use and provides an optional
-drop-down window (game-console style).
-
-Website: 
-  https://docs.xfce.org/apps/terminal/start
-
-
-Release notes for 1.0.4
-=======================
-Fixes a regression introduced in 1.0.1.
-
-Regressions fixed:
-- URL drag-n-drop adding rubbish characters (Issue #196)
-
-Gitlab:
-- Fix CI build</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001114.html</link>
     </item>
   </channel>
 </rss>
