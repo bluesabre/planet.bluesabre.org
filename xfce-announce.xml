@@ -4,7 +4,103 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sun, 10 Jul 2022 18:54:39 -0400</pubDate>
+    <pubDate>Sun, 10 Jul 2022 21:30:02 -0400</pubDate>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: xfce4-panel 4.17.2 released</title>
+      <pubDate>Sun, 10 Jul 2022 04:50:56 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62ca92f0bfabb_3492b2258de65c0789a@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-panel 4.17.2 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.2.tar.bz2
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.2.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/xfce4-panel/4.17/xfce4-panel-4.17.2.tar.bz2?sha256
+
+
+What is xfce4-panel?
+====================
+
+Xfce&amp;#x27;s panel.
+
+Website: 
+  https://www.xfce.org/
+
+
+Release notes for 4.17.2
+========================
+[Please note that this is a development release.]
+
+- Dependency Changes:
+  - GLib &amp;gt;= 2.66.0
+  - Libxfce4util &amp;gt;= 4.17.2
+
+- New APIs:
+  - libxfce4panel: Add new function
+    `xfce_panel_set_image_from_source()` (!83)
+  - libxfce4panel: Add new function
+    `xfce_panel_plugin_popup_menu()` (!80)
+
+- Deprecated APIs:
+  - libxfce4panel: Deprecate `xfce_panel_plugin_position_menu()` (!80)
+
+- Code Refactoring:
+  - cleanup: Remove useless variable
+  - cleanup: Use already defined panel scale factor
+  - cleanup: Fix old typo
+  - tasklist: Remove redundant function call
+  - refactoring: Consistency of plugin menu callbacks
+  - refactoring: Use `g_file_peek_path()` when appropriate
+  - Autohide refactoring (!77)
+  - Replace soon-to-be-deprecated exo-string functions (!79)
+
+- Bug Fixes:
+  - panel: Silence allocation warning for external plugins (V2) 
+    (#590, !89)
+  - panel: Compare monitor geometries in the right dimension (#54)
+  - panel: Do not compare monitor geometry to itself (#54)
+  - tasklist: Take window scaling into account when detecting 
+    window position (#505)
+  - panel: Be sure to save plugins before xfconf_shutdown()
+  - tasklist: Fix critical warning when starting on a disconnected 
+    device
+  - tasklist: Delay sorting if window list is in use (#594)
+  - libxfce4panel: Allow to show about dialog when prefs dialog is 
+    shown (#221)
+  - panel: Prevent compositing message from affecting dialog size 
+    (Fixes #591)
+  - libxfce4panel: Unblock autohide before removing the plugin 
+    (#592)
+  - Grab devices until the menu takes over for popup commands 
+    (#201, #585)
+  - Fix return value of &amp;quot;remote-event&amp;quot; signal handlers (#585)
+  - Avoid &amp;quot;no trigger event&amp;quot; warning for popup commands
+  - Guard against the return value of `gdk_seat_get_pointer()`
+  - panel: Ensure that handles are always grabbable (Fixes #227)
+  - Allow to set a custom icon in appmenu and dirmenu (#254, !83)
+  - Use RGBA visual only if compositing is enabled (Fixes #251)
+  - launcher: Fix wrong format specifier in config file name (Fixes 
+    #581)
+  - applicationsmenu: Add option to set &amp;quot;small&amp;quot; property (Fixes 
+    #31, #113)
+  - pager: Consistency fixes between &amp;quot;miniature view&amp;quot; and &amp;quot;buttons&amp;quot; 
+    (#74, #209, #253, #257, #274, !82)
+  - libxfce4panel: Make urgency blinking more visible (Fixes #259)
+  - tasklist: Sorting fixes (#29, #126, #323, !81)
+  - systray: Force dbus-menu update when item is invalidated (Fixes 
+    #567)
+  - libxfce4panel: Unregister menu also on &amp;quot;selection-done&amp;quot;
+  - applicationsmenu: Do post-processing on &amp;quot;selection-done&amp;quot;
+  - windowmenu: Do not popup menu item wnck menu at widget
+  - Fix plugin menu popup at pointer (#297)
+  - Add new function `xfce_panel_plugin_popup_menu()` (#147, !80)
+
+- Translation Updates:
+  Albanian, Basque, Bulgarian, Chinese (China), Chinese (Taiwan),
+  Dutch, Estonian, French, German, Greek, Italian, Japanese,
+  Lithuanian, Norwegian Bokmål, Polish, Portuguese, Portuguese
+  (Brazil), Russian, Serbian, Slovenian, Spanish, Turkish, Ukrainian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001127.html</link>
+    </item>
     <item>
       <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
       <title>ANNOUNCE: ristretto 0.12.3 released</title>
@@ -445,43 +541,6 @@ exo_str_looks_like_an_uri()
   Azerbaijani, Azerbaijani (Azerbaijan), Greek, Korean, Persian (Iran),
   Romanian</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001119.html</link>
-    </item>
-    <item>
-      <author>simon at xfce.org (Simon Steinbeiss)</author>
-      <title>ANNOUNCE: xfce4-taskmanager 1.5.4 released</title>
-      <pubDate>Tue, 31 May 2022 07:55:40 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;6296023c25c65_6cf82b067380c5c44102a@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-taskmanager 1.5.4 is now available for download from
-  
-  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.4.tar.bz2
-  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.4.tar.bz2?sha1
-  https://archive.xfce.org/src/apps/xfce4-taskmanager/1.5/xfce4-taskmanager-1.5.4.tar.bz2?sha256
-
-
-What is xfce4-taskmanager?
-==========================
-
-Easy to use task manager.
-
-Website: 
-  https://docs.xfce.org/apps/xfce4-taskmanager/start
-
-
-Release notes for 1.5.4
-=======================
-This bugfix release mainly addresses a problem where translations were
-not included in the release tarball.
-
-- Update configure.ac.in syntax
-- Fix #53: taskmanager translations
-- Translation Updates:
-  Albanian, Basque, Belarusian, Bulgarian, Catalan, Chinese (China),
-  Chinese (Taiwan), Czech, Danish, Dutch, Estonian, French, Galician,
-  German, Greek, Hebrew, Indonesian, Italian, Japanese, Kazakh, Korean,
-  Lithuanian, Norwegian Bokmål, Polish, Portuguese, Portuguese
-  (Brazil), Russian, Serbian, Slovak, Spanish, Swedish, Thai, Turkish,
-  Ukrainian</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-May/001117.html</link>
     </item>
   </channel>
 </rss>
