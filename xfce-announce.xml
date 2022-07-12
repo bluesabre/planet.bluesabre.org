@@ -4,7 +4,43 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Mon, 11 Jul 2022 18:54:28 -0400</pubDate>
+    <pubDate>Mon, 11 Jul 2022 21:30:03 -0400</pubDate>
+    <item>
+      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
+      <title>ANNOUNCE: garcon 4.17.1 released</title>
+      <pubDate>Mon, 11 Jul 2022 03:40:41 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62cbd3f9c28c6_3492b2258de65c08044@xfce2.mail&amp;gt;</guid>
+      <description>garcon 4.17.1 is now available for download from
+  
+  https://archive.xfce.org/src/xfce/garcon/4.17/garcon-4.17.1.tar.bz2
+  https://archive.xfce.org/src/xfce/garcon/4.17/garcon-4.17.1.tar.bz2?sha1
+  https://archive.xfce.org/src/xfce/garcon/4.17/garcon-4.17.1.tar.bz2?sha256
+
+
+What is garcon?
+===============
+
+Garcon is an implementation of the freedesktop.org menu specification
+replacing the former Xfce menu library libxfce4menu. It is based on
+GLib/GIO only and aims at covering the entire specification except for
+legacy menus.
+
+Website: 
+  https://www.xfce.org/
+
+
+Release notes for 4.17.1
+========================
+[Please note that this is a development release.]
+
+- Bug Fixes:
+  - garcon-gtk: A more in-depth review of signal handler connections
+  - garcon-gtk: Disconnect reload callback on finalize (#27, !18)
+
+- Translation Updates:
+  English (United Kingdom), Greek</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001128.html</link>
+    </item>
     <item>
       <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
       <title>ANNOUNCE: xfce4-panel 4.17.2 released</title>
@@ -498,49 +534,6 @@ Release notes for 4.16.4
 
 - exo-open : Only execute local .desktop files</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001118.html</link>
-    </item>
-    <item>
-      <author>mshrimp at sogang.ac.kr (Yongha Hwang)</author>
-      <title>ANNOUNCE: exo 4.17.2 released</title>
-      <pubDate>Fri, 10 Jun 2022 18:09:02 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;62a3c0fe5a9c8_6cf82b067380c5c44165@xfce2.mail&amp;gt;</guid>
-      <description>exo 4.17.2 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.2.tar.bz2
-  https://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.2.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/exo/4.17/exo-4.17.2.tar.bz2?sha256
-
-
-What is exo?
-============
-
-Exo is an Xfce library targeted at application development. It contains
-various custom widgets and APIs extending the functionality of GLib and
-GTK. It also ships utilities for defining preferred applications,
-mounting storage devices and more.
-
-Website: 
-  https://www.xfce.org/
-
-
-Release notes for 4.17.2
-========================
-[Please note that this is a development release.]
-
-- exo-die: Don&amp;#x27;t touch exe line in .desktop files
-- exo-open : Only execute local .desktop files
-- Fix $DISPLAY being set to wrong value
-- exo-die, exo-open: Remove dependence on exo_str_is_equal(),
-exo_str_looks_like_an_uri()
-- Bump glib/gio/gthread version to 2.66.0
-- Fix unreliable D-BUS-activated app launch behavior
-- exo-open: Try to open Type=Link .desktop files
-- Use xfce-string functions
-- Dont reduce selection in single click mode (Issue #71)
-- Translation Updates:
-  Azerbaijani, Azerbaijani (Azerbaijan), Greek, Korean, Persian (Iran),
-  Romanian</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001119.html</link>
     </item>
   </channel>
 </rss>
