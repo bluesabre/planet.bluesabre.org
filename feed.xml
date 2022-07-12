@@ -13,7 +13,7 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Tue, 12 Jul 2022 03:30:16 -0400</lastBuildDate>
+	<lastBuildDate>Tue, 12 Jul 2022 06:54:56 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
@@ -44,6 +44,43 @@
   <li>Team upload.</li>
   <li>New upstream version 0.6.3.</li>
   <li>d/rules: Drop –as-needed, default now in stable.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[exo (4.17.2-1) experimental]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.17.2-1/changelog</link>
+			<pubDate>Wed, 06 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.17.2-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[[ Yves-Alexis Perez ]
+
+  New upstream version 4.17.2]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Yves-Alexis Perez ]</p>
+<ul>
+  <li>New upstream version 4.17.2</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
   <li>Update Standards-Version to 4.6.1.</li>
 </ul>
 ]]>
@@ -2242,46 +2279,6 @@ It features a modest set of updates for users coming from Xubuntu 21.10.]]></des
 
 
 <p>Congratulations, and thanks for your wonderful contributions!</p>]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[xfce4-eyes-plugin (4.6.0-1) unstable]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.6.0-1/changelog</link>
-			<pubDate>Wed, 20 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Unit 193]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.6.0-1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Set upstream metadata fields: Bug-Submit (from ./configure).</li>
-  <li>Update standards version to 4.5.1, no changes needed.</li>
-  <li>Avoid explicitly specifying -Wl,–as-needed linker flag.</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Set upstream metadata fields: Bug-Submit (from ./configure).</li>
-  <li>Update standards version to 4.5.1, no changes needed.</li>
-  <li>Avoid explicitly specifying -Wl,–as-needed linker flag.</li>
-</ul>
-
-<p>[ Unit 193 ]</p>
-<ul>
-  <li>New upstream version 4.6.0.</li>
-  <li>d/copyright: Update years.</li>
-  <li>Update Standards-Version to 4.6.0.</li>
-</ul>
-]]>
         
       </content:encoded>
 		</item>
