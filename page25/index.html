@@ -54,12 +54,116 @@
             <a class="newer-posts" href="/page24" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 25 of 68 </span>
+    <span class="page-number"> Page 25 of 69 </span>
      
         <a class="older-posts" href="/page26" title="Next Page">Older Posts &raquo;</a>
      
 </nav>
     </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog">xubuntu-artwork (21.04.1) hirsute</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-04-07">
+                07 Apr 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[ Pasi Lallinaho ]</p>
+<ul>
+  <li>New wallpaper for Hirsute Hippo (LP: #1922905)</li>
+</ul>
+
+<p>[ Sean Davis ]</p>
+<ul>
+  <li>usr/share/plymouth/themes/xubuntu-logo/passw-dialog.png,    usr/share/plymouth/themes/xubuntu-logo/xubuntu-logo.script:
+    <ul>
+      <li>Replace password prompt with greybird-dark entry (LP: #1917062)</li>
+    </ul>
+  </li>
+  <li>debian/control:
+    <ul>
+      <li>Bump debhelper-compat to 13</li>
+      <li>Bump Standards-Version to 4.5.1</li>
+    </ul>
+  </li>
+  <li>debian/copyright:
+    <ul>
+      <li>Add copyright info for README.md and .github/ISSUE_TEMPLATE/config.yml</li>
+    </ul>
+  </li>
+  <li>debian/source/lintian-overrides:
+    <ul>
+      <li>Remove unused override testsuite-autopkgtest-missing</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog">gimp (2.10.22-4) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon McVittie
+            
+            
+            <time class="post-date" datetime="2021-04-03">
+                03 Apr 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload</li>
+</ul>
+
+<p>[ Laurent Bigonville ]</p>
+<ul>
+  <li>Drop debian/shlibs.local, not needed anymore.    This file has the adverse effect of lowering the required version of    libbabl-0.1-0. The library now ships a .symbols file with    Build-Depends-Package, so let dh_shlibs adjust the dependency version    automatically (Closes: #983568)</li>
+</ul>
+
+<p>[ Simon McVittie ]</p>
+<ul>
+  <li>d/p/app-Print-2-digit-LittleCMS-minor-versions-correctly.patch:    Print 2-digit lcms minor versions correctly. Related to #900819, #986192.</li>
+  <li>d/p/app-Don-t-second-guess-the-dependency-system.patch:    Don’t require lcms runtime version &gt;= compile-time version.    If no new symbols referenced by GIMP have been introduced (as is the    case when upgrading from 2.9 to 2.12~rc1), we only need a dependency    on version 2.9. (Closes: #900819, #986192)</li>
+  <li>d/p/*_hurd_ftbfs.patch: Add patch metadata</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
 
     
 
@@ -425,133 +529,13 @@ Uyghur, Uzbek, Uzbek (Latin), Vietnamese</li>
 
     
 
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001025.html">xfce4-systemload-plugin 1.3.1 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-03-22">
-                22 Mar 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001025.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Update README.md</li>
-  <li>Update and sort the list of authors</li>
-  <li>Add a simple network bandwidth monitor (uses libgtop as a fallback)</li>
-  <li>Remove 4-valued history</li>
-  <li>Fix initial progress bar value</li>
-  <li>Fix system-monitor-command setting (Fixes #15)</li>
-  <li>Distinguish uptime from the appearance of a digital real-time clock</li>
-  <li>Replace "Options" with "Label" in the properties dialog</li>
-  <li>Finish porting to xfconf</li>
-  <li>Update docs URL</li>
-  <li>Code cleanups</li>
-  <li>Translation Updates:
-Bulgarian, Chinese (China), Chinese (Taiwan), Hebrew, Italian,
-Japanese, Norwegian Bokmål, Polish, Portuguese, Portuguese (Brazil),
-Slovak, Spanish, Swedish</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001025.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001024.html">thunar 4.17.1 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-03-21">
-                21 Mar 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001024.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>Development release on the master branch.</p>
-
-<p>One reason to do the next development release was, to get early testers
-for the changes on the shortcuts-view (unified context menu).
-Though the release as well ships various fixes, some smaller features
-and translation updates:</p>
-
-<ul>
-  <li>Use a more specific device eject label (Issue #153)</li>
-  <li>Reload current directory before selecting new files (Issue #524)</li>
-  <li>Shortcuts view: Open new folder after creation</li>
-  <li>ThunarLauncher: Dont expose "select files" closure</li>
-  <li>Use thunar-menu and launcher in shortcuts view (Issue #198)</li>
-  <li>thunar-launcher: Send signal when device operation is
-started/finished</li>
-  <li>Removed 'the root folder has no parent' dialog box</li>
-  <li>tree-view: Hide menu-item "properties" for unmounted devices</li>
-  <li>Regression: Missing "mount"/"unmount" on tree-view devices</li>
-  <li>thunar-launcher: unpack g_value with correct call</li>
-  <li>Remove watches on shortcuts (Issue #513) (Issue #47)</li>
-  <li>Regression: Select copied files after copy operation (Issue #520)</li>
-  <li>Reintroduce alternative zoom shortcuts (Issue #514)</li>
-  <li>Prevent hangup if a copy task that is blocked is resumed (Issue #467)</li>
-  <li>Improve comments in "thumbnail_needs_frame"</li>
-  <li>Improve device unmount messages (Issue #516)</li>
-  <li>Regression: Allow custom image files for UCA icons (Issue #517)</li>
-  <li>Dont merge folders when creating copy with same name (Issue 491)</li>
-  <li>Fix incorrect return value in scroll event handler (Issue #512)</li>
-  <li>Use wording "queued" instead of "frozen" for jobs (Issue #511)</li>
-  <li>Revamp documentation to modernize/uniformize accross components</li>
-  <li>Remove tray icon and related methods (Issue #495)</li>
-  <li>Regression: Skip app info updates on sendto actions (Issue #502)</li>
-  <li>Regression: Toggle menu visibility on F10 if menu hidden (Issue #498)</li>
-  <li>thunar-launcher: Unify way to set selected device/location/files</li>
-  <li>thunar-launcher: Keep ref on ThunarDevice while poking</li>
-  <li>thunar-launcher: Provide service to open locations (bookmarks)</li>
-  <li>Regression: "Shift" + "Select Trash in menu" has to trigger delete</li>
-  <li>Translation Updates:
-Basque, Bulgarian, Chinese (China), Czech, Dutch, Estonian, Finnish,
-French, Galician, German, Greek, Hebrew, Italian, Japanese, Korean,
-Norwegian Bokmål, Occitan (post 1500), Persian (Iran), Portuguese,
-Portuguese (Brazil), Serbian, Spanish, Swedish, Turkish, Uyghur</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001024.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
     <nav class="pagination" role="pagination">
     
         
             <a class="newer-posts" href="/page24" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 25 of 68 </span>
+    <span class="page-number"> Page 25 of 69 </span>
      
         <a class="older-posts" href="/page26" title="Next Page">Older Posts &raquo;</a>
      

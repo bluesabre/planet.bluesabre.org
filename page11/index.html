@@ -54,12 +54,179 @@
             <a class="newer-posts" href="/page10" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 11 of 68 </span>
+    <span class="page-number"> Page 11 of 69 </span>
      
         <a class="older-posts" href="/page12" title="Next Page">Older Posts &raquo;</a>
      
 </nav>
     </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-January/001085.html">tumbler 4.17.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2022-01-01">
+                01 Jan 2022
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-January/001085.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Dependency Changes:
+    <ul>
+      <li>GLib &gt;= 2.56.0</li>
+      <li>gdk-pixbuf &gt;= 2.36.2</li>
+      <li>libxfce4util &gt;= 4.17.1</li>
+    </ul>
+  </li>
+  <li>New Features:
+    <ul>
+      <li>Add support for thumbnail size x-large and xx-large (#51)</li>
+      <li>desktop-thumbnailer: Allow to override configuration in desktop
+files (#52)</li>
+      <li>desktop-thumbnailer: Allow for thumbnailer override (#53)</li>
+      <li>Try all available thumbnailers before declaring failure (#50)</li>
+      <li>Add a corresponding systemd user service for the D-Bus session
+services (#14)</li>
+      <li>Support shared thumbnail repositories of the freedesktop.org
+thumbnail spec</li>
+    </ul>
+  </li>
+  <li>Performance Improvement:
+    <ul>
+      <li>pixbuf-thumbnailer: Stop animated image loading at first frame
+(#48)</li>
+      <li>pixbuf-thumbnailer: Increase loader buffer size (!19)</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>Cleanup: Avoid code duplication</li>
+      <li>Use GLib structured logging</li>
+      <li>Debug: Add some config-file-related messages (#23)</li>
+      <li>Error handling: Fit to the spec and complete message if needed
+(#49)</li>
+      <li>Debug: Add or adjust some traces and dumps</li>
+      <li>Debug: Convert dump functions to <code class="language-plaintext highlighter-rouge">GString, g_debug()</code></li>
+      <li>Debug: Prefer runtime to compile-time check for logging</li>
+      <li>Cleanup: Use <code class="language-plaintext highlighter-rouge">g_file_peek_path()</code> when appropriate</li>
+      <li>Cleanup: Remove deprecated GNOME build and TODO file</li>
+      <li>Do not translate warning messages</li>
+      <li>Define error messages in <code class="language-plaintext highlighter-rouge">tumbler/tumbler-error.h</code></li>
+      <li>poppler-thumbnailer: Fix deprecation warning</li>
+      <li>ffmpeg-thumbnailer: Fix deprecation warning</li>
+      <li>Fix warnings from scan-build (Clang 13.0)</li>
+      <li>Fix <code class="language-plaintext highlighter-rouge">-Wclobbered</code> compilation warnings</li>
+      <li>Use GLIB_VERSION_MIN/MAX_REQUIRED/ALLOWED</li>
+      <li>Remove TUMBLER_ADD_INTERFACE (!16)</li>
+      <li>Fix compilation warnings (!16)</li>
+      <li>autoconf: Some updates (!16)</li>
+      <li>Remove GSourceFunc casts (!13)</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>gepub-thumbnailer: Add missing sanity check</li>
+      <li>Reserve some third-party API messages to debug logging (#10,
+#29)</li>
+      <li>Set the priority of external thumbnailers to 0</li>
+      <li>Revert "Set Max file sizes."</li>
+      <li>xdg-cache: Add missing sanity check</li>
+      <li>xdg-cache: Remove temporary file when saving failed</li>
+      <li>xdg-cache: Set thumbnail permissions to 600</li>
+      <li>pixbuf-thumbnailer: Try to ignore
+<code class="language-plaintext highlighter-rouge">GDK_PIXBUF_ERROR_CORRUPT_IMAGE</code></li>
+      <li>Use microsecond precision for last modification time (#15, !20)</li>
+      <li>poppler-thumbnailer: Fix error handling</li>
+      <li>pixbuf-thumbnailer: Simplify error handling</li>
+      <li>font-thumbnailer: Fix error handling</li>
+      <li>Cache cleanup when a request for a URI fails (#22)</li>
+      <li>jpeg-thumbnailer: Do not use low quality embedded thumbnail
+(#37)</li>
+      <li>gst-thumbnailer: Fix error handling</li>
+      <li>ffmpeg-thumbnailer: Fix error handling</li>
+      <li>odf-thumbnailer: Fix error handling</li>
+      <li>xdg-cache: Ensure read_thumbnail_info() always sets an error on
+failure</li>
+      <li>xdg-cache: Chain-up to parent in <code class="language-plaintext highlighter-rouge">finalize()</code></li>
+      <li>desktop-thumbnailer: Fill in <code class="language-plaintext highlighter-rouge">finalize()</code></li>
+      <li>gepub-thumbnailer: Fix a memory leak</li>
+      <li>desktop-thumbnailer: Fix some memory leaks</li>
+      <li>desktop-thumbnailer: Fix error handling</li>
+      <li>Fix some priority issues</li>
+      <li>pixbuf-thumbnailer: Use a mime-type-specific loader when
+possible (#20, #32, #36, !18)</li>
+      <li>raw-thumbnailer: Check for all possible pkg-config files (#44,
+!18)</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bengali,
+Bulgarian, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+(Taiwan), Croatian, Czech, Danish, Dutch, Eastern Armenian, English
+(Australia), English (United Kingdom), Estonian, Finnish, French,
+Galician, German, Greek, Hebrew, Hindi, Hungarian, Icelandic,
+Indonesian, Italian, Japanese, Kabyle, Kazakh, Korean, Lithuanian,
+Malay, Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500),
+Polish, Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian,
+Slovak, Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-January/001085.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.30-1/changelog">gimp (2.10.30-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Jeremy Bicha
+            
+            
+            <time class="post-date" datetime="2021-12-27">
+                27 Dec 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.30-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream release</li>
+  <li>debian/control.in: Bump minimum gegl to 0.4.34</li>
+  <li>debian/libgimp2.0.symbols: Add new symbols</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.30-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
 
     
 
@@ -384,125 +551,13 @@ make use of "xfce_gtk_handle_tab_accels" in other components.</p>
 
     
 
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001083.html">xfce4-whiskermenu-plugin 2.7.1 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-12-11">
-                11 Dec 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001083.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Fix not selecting second icon in search results. (Issue #50)</li>
-  <li>Fix incorrect selection when leaving treeview.</li>
-  <li>Fix skipping first treeview item.</li>
-  <li>Fix unnecessary button size changes.</li>
-  <li>Translation updates: Catalan, Greek.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001083.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001082.html">xfce4-terminal 0.9.1 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-12-10">
-                10 Dec 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001082.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>This is a development release.</p>
-
-<p>New features:</p>
-<ul>
-  <li>Use GtkScrolledWindow for TerminalScreen and add an overlay-scrolling
-preference (Issue #149)</li>
-  <li>Support the new Shortcuts editor widget (requires libxfce4ui 4.17.2 or
-greater)</li>
-  <li>New preference: Select right click action</li>
-</ul>
-
-<p>Enhancements:</p>
-<ul>
-  <li>Improved <code class="language-plaintext highlighter-rouge">scrolling-on-output</code> behaviour.</li>
-  <li>Unsafe Paste Dialog temporary override (Issue #106)</li>
-</ul>
-
-<p>Fixes:</p>
-<ul>
-  <li>Fix regression: File Menu missing <code class="language-plaintext highlighter-rouge">Close Window</code> entry</li>
-  <li>Fix regression: Disable Help shortcut does not work</li>
-  <li>Fix regression: go-to accelerators not working on startup</li>
-  <li>Fix regression: Revert accelerator paths to maintain backwards
-compatibility</li>
-  <li>Use the latest .glade file structure</li>
-</ul>
-
-<p>Documentation:</p>
-<ul>
-  <li>Change incorrect reference to ${XDG_CONFIG_DIRS} in man page (Issue
-#47)</li>
-  <li>
-    <p>Change outdated documentation links</p>
-  </li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (United
-Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
-1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
-Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
-Ukrainian</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001082.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
     <nav class="pagination" role="pagination">
     
         
             <a class="newer-posts" href="/page10" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 11 of 68 </span>
+    <span class="page-number"> Page 11 of 69 </span>
      
         <a class="older-posts" href="/page12" title="Next Page">Older Posts &raquo;</a>
      

@@ -54,12 +54,136 @@
             <a class="newer-posts" href="/page62" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 63 of 68 </span>
+    <span class="page-number"> Page 63 of 69 </span>
      
         <a class="older-posts" href="/page64" title="Next Page">Older Posts &raquo;</a>
      
 </nav>
     </div>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.22.11-0ubuntu1/changelog">greybird-gtk-theme (3.22.11-0ubuntu1) focal</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2020-01-17">
+                17 Jan 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.22.11-0ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[ Sean Davis ]</p>
+<ul>
+  <li>d/patches/0001-Use-Adwaita-icons-and-cursors.patch:
+    <ul>
+      <li>Refreshed for the dark and light themes</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream release</li>
+  <li>d/control, d/rules: Use the meson buildsystem.</li>
+  <li>d/control: Set R³ to no.</li>
+  <li>Update Standards-Version to 4.4.1.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.22.11-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2020/01/14/xfce-4-14-maintenance-and-4-15-updates/">Xfce 4.14 Maintenance and 4.15 Updates</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon Steinbeiß
+            
+            
+            <time class="post-date" datetime="2020-01-14">
+                14 Jan 2020
+            </time>
+            <a href="https://simon.shimmerproject.org/2020/01/14/xfce-4-14-maintenance-and-4-15-updates/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2>Xfce 4.14 Maintenance</h2>
+<p>As promised we&#8217;re trying to be much better at doing maintenance releases for Xfce 4.14. In part, we had a hard time doing maintenance for Xfce 4.12 because with all the porting work it was hard to focus on fixing Gtk+2 bugs and many bugreports/fixes didn&#8217;t apply to both 4.12 and 4.14.<br />
+This has now changed and as many bugs apply to both Xfce 4.14 and the current 4.15 development versions we can much more easily backport fixes. Consequently we have already done quite a few maintenance releases so far and this week a few more followed, fixing bugs and featuring improved translations:</p>
+<ul>
+<li>xfce4-panel 4.14.3 <span style="color: #808080;">(4.14.2 had a bad release build)</span></li>
+<li>xfce4-session 4.14.1</li>
+<li>xfce4-settings 4.14.2</li>
+<li>xfdesktop 4.14.2</li>
+</ul>
+<h2>Xfce 4.15 Updates</h2>
+<p>One of the major UI changes that we announced for the 4.16 cycle was the switch to GtkHeaderBars or so-called Client-side decorations (CSD). The first big step in this direction has now happened in libxfce4ui, our main user interface library. With the change, almost all dialogs will be converted to using CSD by default without any code changes in existing projects.</p>
+<p>There are quite a few advantages we&#8217;re looking forward to (improved resize areas, consistent theming etc) by making use of this core Gtk feature.</p>
+<p>A few more features that got released (in the xfce4-panel 4.15.1, libxfce4ui 4.15.1, libxfce4util 4.15.0 and xfce4-settings 4.15.0):</p>
+<ul>
+<li>an improved &#8220;About Xfce&#8221; dialog that features basics of the system properties</li>
+<li>improvements to the &#8220;Display&#8221; dialog (show Aspect Ratio, show Preferred Mode)</li>
+<li>only show Gtk themes that support Gtk3 in the &#8220;Appearance&#8221; dialog</li>
+<li>function for improved application icon lookup (used in Xfce Session&#8217;s settings dialog and in the Xfce Panel&#8217;s systray settings for now)</li>
+<li>the panel&#8217; dark mode got enabled by default (which means it will look nicer with Adwaita e.g. on Fedora by default)</li>
+<li>the Directory Menu plugin now allows you to directly create Folders and Files</li>
+<li>we also bumped the overall Xfce version to 4.15 so people testing 4.15 packages should see the right version in e.g. the &#8220;About Xfce&#8221; dialog.</li>
+</ul>
+<p>Enjoy! <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>(and don&#8217;t forget to write bug reports <img src="https://s.w.org/images/core/emoji/11/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> )</p>
+<h3>Some Screenshots</h3>
+<figure id="attachment_328" style="width: 215px" class="wp-caption alignleft"><img class="size-medium wp-image-328" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita-215x300.png" alt="" width="215" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita-215x300.png 215w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance_adwaita.png 452w" sizes="(max-width: 215px) 85vw, 215px" /><figcaption class="wp-caption-text">Appearance Settings (Adwaita)</figcaption></figure>
+<figure id="attachment_315" style="width: 215px" class="wp-caption alignleft"><img class="size-medium wp-image-315" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance-215x300.png" alt="" width="215" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance-215x300.png 215w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/appearance.png 452w" sizes="(max-width: 215px) 85vw, 215px" /><figcaption class="wp-caption-text">Appearance Settings (Greybird)</figcaption></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="mceTemp"></div>
+<figure id="attachment_337" style="width: 300px" class="wp-caption alignleft"><img class="size-medium wp-image-337" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1-300x221.png" alt="" width="300" height="221" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1-300x221.png 300w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/settings-manager-1.png 758w" sizes="(max-width: 300px) 85vw, 300px" /><figcaption class="wp-caption-text">New Settings Manager layout</figcaption></figure>
+<figure id="attachment_333" style="width: 258px" class="wp-caption alignleft"><img class="size-medium wp-image-333" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about-258x300.png" alt="" width="258" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about-258x300.png 258w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/xfce-about.png 602w" sizes="(max-width: 258px) 85vw, 258px" /><figcaption class="wp-caption-text">New and shiny About dialog</figcaption></figure>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<figure id="attachment_336" style="width: 219px" class="wp-caption alignleft"><img class="size-medium wp-image-336" src="http://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray-219x300.png" alt="" width="219" height="300" srcset="https://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray-219x300.png 219w, https://simon.shimmerproject.org/wp-content/uploads/2020/01/panel-systray.png 472w" sizes="(max-width: 219px) 85vw, 219px" /><figcaption class="wp-caption-text">Better app icons (Panel Systray)</figcaption></figure>
+<h3>Technical background: XfceTitledDialog with CSD</h3>
+<p><span style="color: #808080;">(This subsection is targeted at developers.)</span></p>
+<p>Some components (namely Thunar, Thunar volman, xfce4-panel, xfce4-settings, xfburn and xfce4-mixer) inherit the XfceTitledDialogClass explicitly when creating their dialog object have to be fixed by using the new API introduced in the upcoming release libxfce4ui-4.15.1.<br />
+<em>All other dialogs should work out of the box and not require any additional meddling.</em></p>
+<ul>
+<li>xfce_titled_dialog_create_action_area <span style="color: #808080;">(to initialize the custom action area)</span></li>
+<li>xfce_titled_dialog_add_button <span style="color: #808080;">(as an equivalent to gtk_dialog_add_button)</span></li>
+<li class="programlisting">xfce_titled_dialog_add_action_widget<span style="color: #808080;"> (as an equivalent to gtk_dialog_add_action_widget)</span></li>
+<li>xfce_titled_dialog_set_default_response <span style="color: #808080;">(as an equivalent to gtk_dialog_set_default_response)</span></li>
+</ul>
+<p>The point of the new API is packing the dialog&#8217;s action buttons in the action area at the bottom of the dialog (vs. the standard GtkDialog behavior of packing them in the GtkHeaderBar as part of the window decorations). This means that dialogs remain in their previous/traditional layout with minimal effort on the developer&#8217;s/maintainer&#8217;s side, in part because the parameters were kept the same as in their upstream GtkDialog counterparts.</p>
+<p>Here is a (very simple) example commit of how to port existing dialogs that use XfceTitledDialogClass:<br />
+<a href="https://git.xfce.org/xfce/xfce4-panel/commit/?id=35440ee2d9540a3c1afdcbff5f50dc0ee2f83d9b">https://git.xfce.org/xfce/xfce4-panel/commit/?id=35440ee2d9540a3c1afdcbff5f50dc0ee2f83d9b</a></p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://simon.shimmerproject.org/2020/01/14/xfce-4-14-maintenance-and-4-15-updates/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
 
     
 
@@ -405,76 +529,13 @@ $ sha256sum catfish-1.4.11.tar.bz2
 
     
 
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/2019/12/13/the-new-bluesabre-org/">The New bluesabre.org</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2019-12-13">
-                13 Dec 2019
-            </time>
-            <a href="https://bluesabre.org/2019/12/13/the-new-bluesabre-org/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><img src="https://bluesabre.org/content/images/2019/12/site-featured.png" alt="The New bluesabre.org"><p>Behold! And welcome to the new <a href="https://bluesabre.org/">bluesabre.org</a>! If you're a regular, you might have noticed that the site has had a bit of a facelift. After nearly a decade of publishing with <a href="https://wordpress.org/">Wordpress</a>, I've moved to <a href="https://ghost.org/">Ghost</a>. And so far, I'm impressed.</p><h2 id="what-s-new">What's New?</h2><p><strong>It's faster.</strong> Ghost is fast without any help, providing all the publishing tools I need and (from what I can tell) none that I don't. To further speed things up, I've optimized all of the images on my site for small download sizes and super-fast loading.</p><p><strong>It's more open.</strong> Ghost themes, powered by Handlebars templates,  are significantly easier to maintain than Wordpress themes, and you can really go far with the default <a href="https://github.com/TryGhost/Casper">Casper</a> theme. I've forked the theme with a few minor enhancements, and made it available on GitHub. Meet <a href="https://github.com/bluesabre/Mouser">Mouser</a>.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2019/12/Mouser_screenshot.png" class="kg-image" alt="The New bluesabre.org"><figcaption>Left: standard or "light" theme on desktop; Right: "dark" theme on mobile</figcaption></figure><p><strong>It's more consistent.</strong> Years of blogging included years of varying headers, layouts, and custom CSS. With this move, I'll standardized each page and post to make for a less jarring reading experience. Oh, and it now supports dark themes (as sent by your system or browser).</p><figure class="kg-card kg-code-card"><pre><code>/usr/bin/google-chrome-stable --force-dark-mode</code></pre><figcaption>Pro tip: You can force Chrom(ium) to use dark mode in Linux with a commandline flag.</figcaption></figure><p><strong>It's easier for me.</strong> Goodbye plugins, hello everything I need to just write. With a nearly upstream theme, an unmodified core, and no plugins to worry about, I can worry about other things like development, blogging, mentorships, and community engagement. It all gets better from here.</p><h2 id="what-s-next">What's Next?</h2><p>With this site migration finally out of the way, it's time to get back to work on Xubuntu 20.04 LTS "Focal Fossa". There's a lot of work to do, and only a few months to do it. In particular, I'd like to get some appearance items out of the way...</p><ul><li>Greybird-Dark, the new dark variant of the standard Xfce theme, is in <a href="https://github.com/shimmerproject/Greybird">master</a>, and is ready for an initial release.</li><li>We <a href="https://twitter.com/m_wimpress/status/1139376489445486594">should be able</a> to add the Greybird themes to the gtk-common-themes snap package, enabling a consistent look for Snap packages in Xubuntu.</li></ul><p>Let me know what you think of the new site in the comments below. As for me, back to work I go!</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://bluesabre.org/2019/12/13/the-new-bluesabre-org/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.233/changelog">xubuntu-meta (2.233) focal</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Adam Conrad
-            
-            
-            <time class="post-date" datetime="2019-12-10">
-                10 Dec 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.233/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>update.cfg: Stop updating for i386 to avoid unnecessary noise.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.233/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
     <nav class="pagination" role="pagination">
     
         
             <a class="newer-posts" href="/page62" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 63 of 68 </span>
+    <span class="page-number"> Page 63 of 69 </span>
      
         <a class="older-posts" href="/page64" title="Next Page">Older Posts &raquo;</a>
      
