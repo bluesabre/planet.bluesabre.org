@@ -4,7 +4,48 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Thu, 14 Jul 2022 18:54:19 -0400</pubDate>
+    <pubDate>Thu, 14 Jul 2022 21:30:03 -0400</pubDate>
+    <item>
+      <author>simon at xfce.org (Simon Steinbeiss)</author>
+      <title>ANNOUNCE: xfce4-xkb-plugin 0.8.3 released</title>
+      <pubDate>Thu, 14 Jul 2022 02:59:33 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62cfbed534108_3492b2258de65c08234@xfce2.mail&amp;gt;</guid>
+      <description>xfce4-xkb-plugin 0.8.3 is now available for download from
+  
+  https://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/0.8/xfce4-xkb-plugin-0.8.3.tar.bz2
+  https://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/0.8/xfce4-xkb-plugin-0.8.3.tar.bz2?sha1
+  https://archive.xfce.org/src/panel-plugins/xfce4-xkb-plugin/0.8/xfce4-xkb-plugin-0.8.3.tar.bz2?sha256
+
+
+What is xfce4-xkb-plugin?
+=========================
+
+XKB layout switching panel plug-in for the Xfce desktop environment
+
+Website: 
+  https://docs.xfce.org/panel-plugins/xfce4-xkb-plugin
+
+
+Release notes for 0.8.3
+=======================
+- Add optional notification support (Fixes #48)
+- Disable notifications by default
+- Use symbolic icon for notification
+- Add new plugin icon
+- Use Xfce&amp;#x27;s icon name
+- Fix make distcheck
+- build: Fix intltool lock file problem during make distcheck
+- Fix compilation warnings
+- autoconf: Some updates
+- Update `.gitignore`
+- Translation Updates:
+  Albanian, Basque, Belarusian, Bulgarian, Catalan, Chinese (China),
+  Chinese (Taiwan), Dutch, English (Canada), Estonian, French,
+  Galician, Georgian, German, Hebrew, Italian, Japanese, Lithuanian,
+  Norwegian Bokmål, Occitan (post 1500), Polish, Portuguese, Russian,
+  Serbian, Slovak, Slovenian, Spanish, Swedish, Turkish, Ukrainian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001129.html</link>
+    </item>
     <item>
       <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
       <title>ANNOUNCE: garcon 4.17.1 released</title>
@@ -503,37 +544,6 @@ Release notes for 4.17.1
   Basque, Danish, English (United Kingdom), Greek, Malay, Portuguese
   (Brazil), Romanian, Russian, Serbian, Slovenian, Ukrainian</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001120.html</link>
-    </item>
-    <item>
-      <author>mshrimp at sogang.ac.kr (Yongha Hwang)</author>
-      <title>ANNOUNCE: exo 4.16.4 released</title>
-      <pubDate>Fri, 10 Jun 2022 18:02:17 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;62a3bf69ccb84_6cf82b067380c5c441497@xfce2.mail&amp;gt;</guid>
-      <description>exo 4.16.4 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/exo/4.16/exo-4.16.4.tar.bz2
-  https://archive.xfce.org/src/xfce/exo/4.16/exo-4.16.4.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/exo/4.16/exo-4.16.4.tar.bz2?sha256
-
-
-What is exo?
-============
-
-Exo is an Xfce library targeted at application development. It contains
-various custom widgets and APIs extending the functionality of GLib and
-GTK. It also ships utilities for defining preferred applications,
-mounting storage devices and more.
-
-Website: 
-  https://www.xfce.org/
-
-
-Release notes for 4.16.4
-========================
-(Security Patch)
-
-- exo-open : Only execute local .desktop files</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001118.html</link>
     </item>
   </channel>
 </rss>
