@@ -4,7 +4,62 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Fri, 15 Jul 2022 18:54:36 -0400</pubDate>
+    <pubDate>Fri, 15 Jul 2022 21:30:02 -0400</pubDate>
+    <item>
+      <author>nomad at froevel.de (Stephan Haller)</author>
+      <title>ANNOUNCE: xfdashboard 0.9.91 released</title>
+      <pubDate>Fri, 15 Jul 2022 04:35:01 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62d126b568871_3492b2258de65c0849d@xfce2.mail&amp;gt;</guid>
+      <description>xfdashboard 0.9.91 is now available for download from
+  
+  https://archive.xfce.org/src/apps/xfdashboard/0.9/xfdashboard-0.9.91.tar.bz2
+  https://archive.xfce.org/src/apps/xfdashboard/0.9/xfdashboard-0.9.91.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/xfdashboard/0.9/xfdashboard-0.9.91.tar.bz2?sha256
+
+
+What is xfdashboard?
+====================
+
+xfdashboard provides a GNOME shell dashboard like interface for use with
+Xfce desktop. It can be configured to run to any keyboard shortcut and
+when executed provides an overview of applications currently open
+enabling the user to switch between different applications. The search
+feature works like Xfce&amp;#x27;s app finder which makes it convenient to search
+for and start applications.
+
+Website: 
+  https://docs.xfce.org/apps/xfdashboard/start
+
+
+Release notes for 0.9.91
+========================
+xfdashboard-0.9.91 &amp;quot;Last call for boarding 1.0&amp;quot; was released on
+2022-07-15.
+
+This is probably the last release candidate for upcoming stable version
+1.0.0.
+
+
+* Last-minute feature: Added new actions for key bindings to add,
+  remove, toggle or apply CSS classes to a target actor at runtime.
+  Using it by default to switch between list and icon mode at
+  application with &amp;lt;Ctrl&amp;gt;-i for icon mode and &amp;lt;Ctrl&amp;gt;-l for list mode
+  when application view has the focus. (#16)
+* Fixed crash on start-up if xfdashboard was started for the very
+  first time without any settings in xfconf (GH#200)
+* Fixed back button not working in sub-menu &amp;quot;all applications&amp;quot; (#21)
+* Fixed incorrect allocation for quicklaunch actor when horizontal
+  orientation is used. Thanks to michal4132 for the hint where to
+  look at ;) (#2)
+* Fixed switching to workspace of window being activated when window
+  was selected at pop-up menu (#15)
+* Fixed intltool lock file bug in make distcheck. Thanks to Simon :)
+* Fixed typos
+* Updated translations:
+  be, bg, ca, da, de, el, es, et, eu, fr, gl, he, id, it, ja, ko, lt,
+  nb, nl, pl, pt, pt_BR, ru, sl, sq, sr, sv, tr, zh_CN</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001130.html</link>
+    </item>
     <item>
       <author>simon at xfce.org (Simon Steinbeiss)</author>
       <title>ANNOUNCE: xfce4-xkb-plugin 0.8.3 released</title>
@@ -486,64 +541,6 @@ Release notes for 0.6.3
   Portuguese, Portuguese (Brazil), Russian, Serbian, Slovak, Slovenian,
   Spanish, Swedish, Thai, Turkish, Ukrainian</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001121.html</link>
-    </item>
-    <item>
-      <author>gael at xfce.org (=?UTF-8?B?R2HDq2wgQm9uaXRob24=?=)</author>
-      <title>ANNOUNCE: tumbler 4.17.1 released</title>
-      <pubDate>Sun, 12 Jun 2022 04:30:05 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;62a5a40d67bdc_6cf82b067380c5c441850@xfce2.mail&amp;gt;</guid>
-      <description>tumbler 4.17.1 is now available for download from
-  
-  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.1.tar.bz2
-  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.1.tar.bz2?sha1
-  https://archive.xfce.org/src/xfce/tumbler/4.17/tumbler-4.17.1.tar.bz2?sha256
-
-
-What is tumbler?
-================
-
-Tumbler is a D-Bus service for applications to request thumbnails for
-various URI schemes and MIME types. It is an implementation of the
-thumbnail management D-Bus specification described on 
-
-  https://wiki.gnome.org/DraftSpecs/ThumbnailerSpec
-
-written in an object-oriented fashion using GLib and GObject. Its
-modular architecture makes it very flexible and useful in many
-situations. It provides plugin interfaces for extending the URI schemes
-and MIME types for which thumbnails can be generated as well as
-
-for replacing the storage backend that is used to store the thumbnails
-on disk. Tumbler&amp;#x27;s functionality can also be extended via specialized
-thumbnailer services implemented in accordance to the thumbnail
-management D-Bus specification.
-
-Website: 
-  https://gitlab.xfce.org/xfce/tumbler/
-
-
-Release notes for 4.17.1
-========================
-[Please note that this is a development release.]
-
-- New Features:
-  - Allow to choose an alternative service name prefix (!21)
-
-- Performance Improvement:
-  - scheduler: Enable multi-threading (#1)
-
-- Bug Fixes:
-  - Store modification time in locale independent format
-  - desktop-thumbnailer: Delete temp file at the same level it was
-    created (#57)
-  - i18n: Add missing initialization
-  - Fix missing mutex unlock in group scheduler (#56)
-  - Build: Check for best possible grep, egrep, sed
-
-- Translation Updates:
-  Basque, Danish, English (United Kingdom), Greek, Malay, Portuguese
-  (Brazil), Romanian, Russian, Serbian, Slovenian, Ukrainian</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001120.html</link>
     </item>
   </channel>
 </rss>
