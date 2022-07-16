@@ -65,6 +65,270 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_20.04/changelog">xubuntu-artwork (20.04) focal</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2019-10-26">
+                26 Oct 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_20.04/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>debian/xubuntu-wallpapers.links:
+    <ul>
+      <li>Link to development wallpaper</li>
+    </ul>
+  </li>
+  <li>usr/share/plymouth/themes/xubuntu-text/xubuntu-text.plymouth
+    <ul>
+      <li>Bump plymouth-text version number for focal</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_20.04/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2019/10/20/install-xubuntu-19-10-on-a-raspberry-pi-4/">Install Xubuntu 19.10 on a Raspberry Pi 4</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2019-10-20">
+                20 Oct 2019
+            </time>
+            <a href="https://bluesabre.org/2019/10/20/install-xubuntu-19-10-on-a-raspberry-pi-4/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><!--kg-card-begin: markdown--><h1 id="gettingtheserverimage">Getting the Server Image</h1>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><img src="https://bluesabre.org/content/images/2019/10/xubuntu-pi-featured.png" alt="Install Xubuntu 19.10 on a Raspberry Pi 4"><p>First off, head to the <a href="http://cdimage.ubuntu.com/ubuntu/releases/19.10/release/">Ubuntu 19.10 release images</a>. We want one of the <em>Preinstalled server images</em>, since booting on the Raspberry Pi is still a tricky fiasco. You’ll see two installation options:</p>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2019/11/preinstalled-server-images.png" class="kg-image" alt="Install Xubuntu 19.10 on a Raspberry Pi 4"><figcaption>Two options, but only one right for the desktop.</figcaption></figure><!--kg-card-begin: markdown--><p>We’ll want to choose the first option, Hard-Float. While the Pi 4 does in fact support the 64-bit ARM image, unfortunately <a href="https://bugs.launchpad.net/ubuntu/+source/linux-raspi2/+bug/1848703">USB devices fail to initialize</a> with this option. If you have no need for mouse and keyboard, feel free to use the 64-bit option. This should be resolved in time for the 20.04 release.</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="installingtheserverimage">Installing the Server Image</h1>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>Once your server image has been downloaded, download and run <a href="https://www.balena.io/etcher/">Etcher</a>. If you’ve never used Etcher before, it’s a simple, cross-platform solution for installing disk images to USB devices. It’s reliable and easy to use, and will help you avoid overwriting your hard drives.</p>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2019/11/balena-etcher.png" class="kg-image" alt="Install Xubuntu 19.10 on a Raspberry Pi 4"><figcaption>Select your image and destination, then flash!</figcaption></figure><!--kg-card-begin: markdown--><p>Select the downloaded image (.xz is fine, no need to extract), select the correct storage location, and the click <em>Flash!</em> After a few minutes, the image will be installed and validated, and you’ll be ready to go. Re-insert your MicroSD card into your Raspberry Pi, connect an ethernet cable, power it on, and proceed to the next step.</p>
+<p><em>Note: Once USB installation finished, I received an error that the checksums did not match, but everything seems to work correctly afterward.</em></p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="loggingin">Logging In</h1>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>This part tripped me up for a while. Once installed, the default username and password are both “ubuntu”. However, the first login to your Raspberry Pi has to be via SSH! First step, find the IP address of your Raspberry Pi device.</p>
+<p><strong>Be mindful that if you’re in a corporate or other shared environment, scanning for devices might be frowned upon.</strong> With that warning out of the way, let’s use <em>nmap</em> to look for our device. I’m not going to cover usage here, but a <a href="https://duckduckgo.com/?q=nmap+to+list+devices+on+your+network&amp;t=h_&amp;ia=web">quick DuckDuckGo search</a> can point you in the right direction. The server installation image defaults the hostname to “ubuntu”, so look for that.</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>$ nmap -sP 192.168.1.0/24
+...
+Nmap scan report for ubuntu.attlocal.net (192.168.1.230)
+Host is up (0.00036s latency).
+...
+</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><p>Once you know where the device is, SSH in and reset your password. Enter “yes” to continue connecting if prompted for the fingerprint.</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>$ ssh ubuntu@ubuntu.attlocal.net
+ubuntu@ubuntu.attlocal.net's password: 
+You are required to change your password immediately (administrator enforced)
+
+WARNING: Your password has expired.
+You must change your password now and login again!
+Changing password for ubuntu.
+Current password: 
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Connection to ubuntu.attlocal.net closed.</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><p>Now, SSH in once more with your new password, and let’s install Xubuntu!</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="installingxubuntu">Installing Xubuntu</h1>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>We’re almost done! Now it’s time to decide: Do you want <em>Xubuntu Core</em>, the minimal Xubuntu base that you can easily customize to your needs, or <em>Xubuntu Desktop</em>, our standard installation option? I’ll be doing installing Core for this guide, but if you want to install Desktop, just replace “xubuntu-core^” with “xubuntu-desktop^”.</p>
+<p>Also worth noting, while setting up Xubuntu on the Raspberry Pi, I came across an issue that causes our default login screen to fail. This has been fixed upstream, but to work around this issue now we will be using <em>Slick Greeter</em> for our login screen. Now, let’s get back to the installation. Please note that the caret, ^, is not a typo!</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>sudo apt update
+sudo apt install xubuntu-core^ slick-greeter</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><p>This will take a while. Once everything’s installed, the final step is to set <em>Slick Greeter</em> as the login screen. Create <em>/etc/lightdm/lightdm.conf</em> with the following contents using your favorite command-line editor.</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>[SeatDefaults]
+greeter-session=slick-greeter</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><p>And finally, reboot!</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: html--><pre><code>sudo reboot</code></pre><!--kg-card-end: html--><!--kg-card-begin: markdown--><h1 id="installationcomplete">Installation Complete</h1>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>Your Raspberry Pi 4 will now boot into a graphical environment, and you’ll be greeted by <em>Slick Greeter</em>. Login with the password you created earlier, and the Xubuntu desktop will load, same as you’d find outside of the Raspberry Pi.</p>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2019/11/xubuntu-installed.jpg" class="kg-image" alt="Install Xubuntu 19.10 on a Raspberry Pi 4"><figcaption>Up and running with Xubuntu 19.10!</figcaption></figure><!--kg-card-begin: markdown--><h1 id="whatsnext">What's Next?</h1>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>That’s up to you, but the first thing I recommend is creating a new user. The default Ubuntu user is an administrator, and has a bit more power than you’d normally have on the a desktop installation.</p>
+<p>Beyond that, the Pi’s the limit! Have fun, and enjoy running the mouse-based distribution on your mouse-sized computer.</p>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><h1 id="thanks">Thanks!</h1>
+<!--kg-card-end: markdown--><!--kg-card-begin: markdown--><p>I purchased my Raspberry Pi 4 with funds from <a href="https://www.patreon.com/bluesabre">my Patreon</a>, so my patrons helped make this project possible. I’ll continue experimenting with the Pi 4, so look forward to even more awesome projects. Thanks everybody!</p>
+<!--kg-card-end: markdown--></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2019/10/20/install-xubuntu-19-10-on-a-raspberry-pi-4/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2019/10/19/xfce-4-15-development-phase-starting/">Xfce 4.16 development phase starting</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon Steinbeiß
+            
+            
+            <time class="post-date" datetime="2019-10-19">
+                19 Oct 2019
+            </time>
+            <a href="https://simon.shimmerproject.org/2019/10/19/xfce-4-15-development-phase-starting/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>As promised we&#8217;ll try to stick to a tighter schedule this time, so without further ado: the development phase towards Xfce 4.16 has officially started! <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>This means that we have a list of features we will try to work on (that is <em>not</em> guaranteed though) and that is detailed on <a href="https://wiki.xfce.org/releng/4.16/roadmap">our roadmap page</a> and its subpages. I&#8217;ll try to summarize and highlight some (obviously with a focus on the stuff I know better because I&#8217;m more involved) of it for you here.</p>
+<h5>Dependency Update</h5>
+<p>Let&#8217;s start with one very important and obvious change: <strong>we will drop Gtk2 support with Xfce 4.16</strong>. This will have a concrete effect on old Panel plugins or Gtk2 applications that rely on libxfce4ui.</p>
+<p>Xfce 4.16 will introduce a new dependency on libgtop to display information about the system (in the &#8220;About&#8221; dialog). We hope this will also have a positive side-effect on e.g. Panel plugins to standardize on this library.</p>
+<h5>General UI</h5>
+<p>In the 4.14 cycle we <em>tried</em> to do a 1:1 port of what used to be our Gtk2 desktop environment, avoiding visual changes. In the 4.16 cycle we plan to harmonize the appearance of certain elements that either became inconsistent through the port or already were inconsistent before (e.g. toolbars or inline toolbars).</p>
+<p>We will also play with client-side decorations where we feel it makes sense (for instance replacing the so-called XfceTitledDialog, that is used for all settings dialogs with a HeaderBar version). Before anyone gets too excited (both positively or negatively): It is not planned to redesign more complex applications (like Thunar) with Headerbars in 4.16. We will however try to keep the experience and looks consistent, which means gradually moving to client side decorations also with our applications (please note that client side decorations are not the same as HeaderBars!). Through this change e.g. &#8220;dark modes&#8221; in applications will look good (see the part about the Panel below).</p>
+<p>Now before there is a shitstorm about this change I would kindly ask everyone to give us time to figure out what exactly we want to change in this cycle. Also, switching to client-side decorations alone is not a big visual departure &#8211; feel free to also dig through <a href="https://wiki.xfce.org/releng/4.16/roadmap/general_ui/csd">the client-side decorations page</a> if you want to read/see more on this.</p>
+<h5>Thunar</h5>
+<p>As mentioned before: no big redesign. But lots and lots of smaller improvements and goodies are planned to up the user experience of the file manager you love!</p>
+<p>This includes extending the API for plugins, installing some Thunar actions by default and storing view settings per directory.</p>
+<h5>Panel</h5>
+<p>Some of the building blocks of what shall be done for the panel is already underway, so I can show off some screenshots in this section (shameless self-advertisement).</p>
+<p>As dark modes are all the rage everywhere and it really makes sense for the panel to have one, here it goes. Now you can easily get a dark panel &#8211; even with bright themes like Adwaita! With having client side decorations, the window borders of the preferences dialog will also look consistent with the rest of the dialog (remember that Xfwm4 doesn&#8217;t &#8211; and won&#8217;t &#8211; support the dark Gtk variant).</p>
+<p><img class="transparent aligncenter" src="https://wiki.xfce.org/_media/releng/4.16/roadmap/general_ui/panel-dark-csd.png" alt="https://wiki.xfce.org/_media/releng/4.16/roadmap/general_ui/panel-dark-csd.png" /></p>
+<p>The panel&#8217;s autohide modes received a &#8220;slide out&#8221; animation, so it&#8217;s more intuitive to understand where the panel went. (We may tweak this feature further or even make it optional, but for the time being it&#8217;s there by default.)</p>
+<p>The launcher plugin will receive a feature from garcon, i.e. showing the Desktop Actions of a launcher item in its right-click menu (i.e. &#8220;Open Private Window&#8221; for Firefox). This is really just a feature preview though, the code is in working but very hacky/rough state.</p>
+<p><img class="size-full wp-image-303 aligncenter" src="http://simon.shimmerproject.org/wp-content/uploads/2019/10/launcher-actions.png" alt="" width="415" height="317" srcset="https://simon.shimmerproject.org/wp-content/uploads/2019/10/launcher-actions.png 415w, https://simon.shimmerproject.org/wp-content/uploads/2019/10/launcher-actions-300x229.png 300w" sizes="(max-width: 415px) 85vw, 415px" /></p>
+<p>Some other core plugins (workspace switcher, tasklist) will also receive tweaks and improvements.</p>
+<h5>Settings</h5>
+<p>Especially the display settings shall receive more attention, introducing support for scaled mirror mode (helpful if not all displays share a reasonable resolution) and more.</p>
+<p>We may also include our own daemon to talk to colord directly to eradicate the need for xiccd.</p>
+<h5>Power Manager</h5>
+<p>&#8220;Night light&#8221; (as in: a timed function that applies a colorfilter to your display to reduce strain on the eyes) will likely be added to the power manager. (Although if we figure out it&#8217;s easier to implement in the settings daemon it may be moved there.) Also some improvements to the panel plugin are planned as well as including a battery histogram in the settings dialog to visualize battery drain.</p>
+<h6>For all other components only smaller changes are planned.</h6>
+<h5>Let&#8217;s get on with it</h5>
+<p>As mentioned before this cycle is intended to be more lightweight to enable us to &#8220;stick to the plan&#8221; and get a release to our user base sooner than with the previous two releases. Also keep in mind that we want to renew some of our infrastructure, which will also take away some time.</p>
+<p>So now let&#8217;s get the 4.15 releases going! <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://simon.shimmerproject.org/2019/10/19/xfce-4-15-development-phase-starting/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.3-1/changelog">xfce4-dict (0.8.3-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2019-10-08">
+                08 Oct 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.3-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream version 0.8.3</li>
+  <li>d/control: update standards version to 4.4.1</li>
+  <li>d/salsa-ci.yml: add a Salsa CI config file</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.3-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-dropbox-plugin/thunar-dropbox-plugin_0.3.1-1/changelog">thunar-dropbox-plugin (0.3.1-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2019-10-04">
+                04 Oct 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-dropbox-plugin/thunar-dropbox-plugin_0.3.1-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>d/copyright, d/repack-waf, d/watch:
+    <ul>
+      <li>Drop waf repack and move to new upstream.</li>
+    </ul>
+  </li>
+  <li>New upstream version 0.3.1
+    <ul>
+      <li>Drop patch applied upstream.</li>
+    </ul>
+  </li>
+  <li>d/copyright: Update attribution.</li>
+  <li>d/compat, d/control:
+    <ul>
+      <li>Drop d/compat in favor of debhelper-compat, bump to 12.</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Replace python2 B-D with cmake. (Closes: #938664)</li>
+      <li>Set R³ to no.</li>
+    </ul>
+  </li>
+  <li>d/rules: Drop all waf overrides, set CMAKE_LIBRARY_PATH.</li>
+  <li>d/p/multiarch-libdir.patch: Use the multiarch directory for plugins.</li>
+  <li>Update Standards-Version to 4.4.1.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-dropbox-plugin/thunar-dropbox-plugin_0.3.1-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mpc-plugin/xfce4-mpc-plugin_0.5.2-1/changelog">xfce4-mpc-plugin (0.5.2-1) unstable</a></h1>
         </header>
         <header class="post-meta">
@@ -262,211 +526,6 @@
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.1-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-places-plugin/xfce4-places-plugin_1.8.1-1/changelog">xfce4-places-plugin (1.8.1-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2019-08-30">
-                30 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-places-plugin/xfce4-places-plugin_1.8.1-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 1.8.1</li>
-  <li>d/*: Use https where available.</li>
-  <li>d/control: Update missed B-D libgtk2.0-dev → libgtk-3-dev.</li>
-  <li>Trim whitespace from previous changelog entries.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-places-plugin/xfce4-places-plugin_1.8.1-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-genmon-plugin/xfce4-genmon-plugin_4.0.2-1/changelog">xfce4-genmon-plugin (4.0.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2019-08-30">
-                30 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-genmon-plugin/xfce4-genmon-plugin_4.0.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 4.0.2</li>
-  <li>d/compat, d/control:
-    <ul>
-      <li>Drop d/compat in favor of debhelper-compat, bump to 11.</li>
-    </ul>
-  </li>
-  <li>d/control:
-    <ul>
-      <li>Drop libxml-parser-perl from Build-Depends.</li>
-      <li>Mark xfce4-genmon-plugin M-A: same.</li>
-    </ul>
-  </li>
-  <li>Update Standards-Version to 4.4.0.</li>
-  <li>Trim whitespace from previous changelog entries.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-genmon-plugin/xfce4-genmon-plugin_4.0.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.1-1/changelog">xfce4-fsguard-plugin (1.1.1-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2019-08-30">
-                30 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.1-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 1.1.1</li>
-  <li>d/compat, d/control:
-    <ul>
-      <li>Drop d/compat in favor of debhelper-compat, bump to 11.</li>
-    </ul>
-  </li>
-  <li>d/control:
-    <ul>
-      <li>Drop libxml-parser-perl and libxml2-dev from Build-Depends.</li>
-      <li>Mark binary package M-A: same.</li>
-    </ul>
-  </li>
-  <li>Update Standards-Version to 4.4.0.</li>
-  <li>Trim whitespace from previous changelog entries.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.1-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1:1.2.3-1ubuntu1/changelog">xfce4-systemload-plugin (1:1.2.3-1ubuntu1) devel</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2019-08-29">
-                29 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1:1.2.3-1ubuntu1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Merge with Debian unstable. Remaining Ubuntu changes:
-    <ul>
-      <li>Add epoch.</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1:1.2.3-1ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-diskperf-plugin/xfce4-diskperf-plugin_2.6.2-1/changelog">xfce4-diskperf-plugin (2.6.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2019-08-29">
-                29 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-diskperf-plugin/xfce4-diskperf-plugin_2.6.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream version 2.6.2</li>
-  <li>d/control: update standards version to 4.4.0</li>
-  <li>use debhelper-compat b-dep for dh compat level</li>
-  <li>d/control: update dh compat level to 11</li>
-  <li>d/patches: drop patch included upstream</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-diskperf-plugin/xfce4-diskperf-plugin_2.6.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
