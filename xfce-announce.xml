@@ -4,7 +4,59 @@
     <title>The Xfce-announce Archives</title>
     <description>The Xfce-announce Archives</description>
     <link>https://mail.xfce.org/pipermail/xfce-announce/</link>
-    <pubDate>Sun, 17 Jul 2022 18:54:23 -0400</pubDate>
+    <pubDate>Sun, 17 Jul 2022 21:30:02 -0400</pubDate>
+    <item>
+      <author>sean at bluesabre.org (Sean Davis)</author>
+      <title>ANNOUNCE: catfish 4.16.4 released</title>
+      <pubDate>Sun, 17 Jul 2022 16:53:53 -0400</pubDate>
+      <guid isPermaLink="false">&amp;lt;62d476e1ce51e_3492b2258de65c087c8@xfce2.mail&amp;gt;</guid>
+      <description>catfish 4.16.4 is now available for download from
+  
+  https://archive.xfce.org/src/apps/catfish/4.16/catfish-4.16.4.tar.bz2
+  https://archive.xfce.org/src/apps/catfish/4.16/catfish-4.16.4.tar.bz2?sha1
+  https://archive.xfce.org/src/apps/catfish/4.16/catfish-4.16.4.tar.bz2?sha256
+
+
+What is catfish?
+================
+
+Catfish is a handy file searching tool for linux and unix. The interface
+is intentionally lightweight and simple, using only GTK+3. You can
+configure it to your needs by using several command line options.
+
+Website: 
+  https://xfce.org
+
+
+Release notes for 4.16.4
+========================
+- Add &amp;quot;Open with&amp;quot; right click item and dialog (#12)
+- Add a command-line option for setting default sort method
+- Add Ctrl+A accelerator for the treeview (#64)
+- Add option to show file size in binary or decimal
+- Cosmetic changes for search entry and delete dialog
+- Fix Ctrl+H not always toggling hidden files
+- Fix DE detection when launched from Electron apps
+- Fix exo file manager lookup for non-existent keys (#64)
+- Fix file manager lookup outside of Xfce
+- Fix GNOME DE detection in Ubuntu
+- Improve application menu appearance
+- Improve default width for the sidebar
+- Prepend the project root directory to sys.path
+- Support running without Xfconf (no preference saving)
+- Switch to using the super() method
+- Use correct executable for elementary Files
+- Translation Updates:
+  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), Estonian, Finnish, French,
+Galician, German, Greek, Hebrew, Hungarian, Icelandic, Indonesian,
+Interlingue, Italian, Japanese, Korean, Lithuanian, Malay, Norwegian
+Bokmål, Norwegian Nynorsk, Polish, Portuguese, Portuguese (Brazil),
+Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
+Ukrainian</description>
+      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-July/001131.html</link>
+    </item>
     <item>
       <author>nomad at froevel.de (Stephan Haller)</author>
       <title>ANNOUNCE: xfdashboard 0.9.91 released</title>
@@ -497,50 +549,6 @@ Release notes for 4.17.2
 - Bug Fixes:
   - Yet another fix to the modification time storage format</description>
       <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001122.html</link>
-    </item>
-    <item>
-      <author>andre at andreldm.com (Andre Miranda)</author>
-      <title>ANNOUNCE: xfce4-wavelan-plugin 0.6.3 released</title>
-      <pubDate>Tue, 14 Jun 2022 11:19:15 -0400</pubDate>
-      <guid isPermaLink="false">&amp;lt;62a8a6f319edb_6cf82b067380c5c44201f@xfce2.mail&amp;gt;</guid>
-      <description>xfce4-wavelan-plugin 0.6.3 is now available for download from
-  
-  https://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/0.6/xfce4-wavelan-plugin-0.6.3.tar.bz2
-  https://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/0.6/xfce4-wavelan-plugin-0.6.3.tar.bz2?sha1
-  https://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/0.6/xfce4-wavelan-plugin-0.6.3.tar.bz2?sha256
-
-
-What is xfce4-wavelan-plugin?
-=============================
-
-This plugin is used to display stats from a wireless lan interface
-(signal state, signal quality, network name (SSID)). It supports NetBSD,
-OpenBSD, FreeBSD, and Linux.
-
-Website: 
-  https://docs.xfce.org/panel-plugins/xfce4-wavelan-plugin
-
-
-Release notes for 0.6.3
-=======================
-- Fix intltool lock file bug in make distcheck
-- Fix read_config memory leaks
-- Add option to execute command on icon click (!9)
-- Add option to hide signal bar (!8)
-- Prefer symbolic icons and fix icon color (!7)
-- Icon now shows signal strength(!5)
-- remove bogus close function
-- autoconf: Some updates
-- Translation Updates:
-  Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-  Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-  Dutch, Eastern Armenian, English (Australia), English (Canada),
-  Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-  Hungarian, Icelandic, Indonesian, Italian, Japanese, Kazakh, Korean,
-  Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500), Polish,
-  Portuguese, Portuguese (Brazil), Russian, Serbian, Slovak, Slovenian,
-  Spanish, Swedish, Thai, Turkish, Ukrainian</description>
-      <link>https://mail.xfce.org/pipermail/xfce-announce/2022-June/001121.html</link>
     </item>
   </channel>
 </rss>
