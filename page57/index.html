@@ -65,6 +65,164 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000876.html">xfce4-whiskermenu-plugin 2.4.5 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-07-21">
+                21 Jul 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000876.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Fix saving plugin title with overridden default text. (Bug #16822)</li>
+  <li>Fix extra key press to select search items. (Issue #8)</li>
+  <li>Fix icon view skipping first item when pressing arrow key.</li>
+  <li>Fix incorrect signal name.</li>
+  <li>Fix nonfunctional grab check.</li>
+  <li>Translation updates: Asturian, Dutch, Esperanto, Hungarian,
+Icelandic, Portuguese, Portuguese (Brazil), Russian.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000876.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://blog.alteroot.org/articles/2020-07-18/xfce-infrastructure-2020.html">Xfce infrastructure in 2020</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Romain Bouvier
+            
+            
+            <time class="post-date" datetime="2020-07-18">
+                18 Jul 2020
+            </time>
+            <a href="https://blog.alteroot.org/articles/2020-07-18/xfce-infrastructure-2020.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Oh boy, 3 years without any blogpost ! So much things happened in the Xfce world!<br />
+First, we finally released <a href="https://www.xfce.org/about/news/?post=1565568000">Xfce 4.14</a> in August 2019, more than 4 years of effort, a migration to gtk3, and so much new things, but you already know that, and you surely already run it.
+We are now working on <a href="https://wiki.xfce.org/releng/4.16/roadmap">Xfce 4.16</a> , with the hope to release it this year  (yes, in 2020) !<br />
+You can read more development news on our <a href="https://blog.xfce.org">blog</a>.<br />
+Some buzzwords: new icons, CSD, drop of gtk2 support, UI revamp, and tons of other stuff.</p>
+
+<p><a src="https://blog.alteroot.org/media/images/xfce4-settings-manager-4.15.png"><img src="https://blog.alteroot.org/media/images/xfce4-settings-manager-4.15.png" alt="xfce4-setting-manager 4.15" /></a></p>
+
+<p>I want to talk a bit about the infrastructure.<br />
+Last year, we had a <a href="https://gandi.net">Gandi</a> sponsorship for our servers. I started an Ansible repository with all our services (no more -undocumented- local modifications!), and we migrated a big part of our infra to the new servers (docs, www, wiki etc).</p>
+
+<p>Then came the time to think about our development environment. We used the <code class="language-plaintext highlighter-rouge">cgit/gitolite/bugzilla</code> triptych, which worked fine for us for more than a decade, but make difficulty to have new contributor (our workflow was…hm, suboptimal).<br />
+We tested differents solutions (mainly Gitea and GitLab), and we opted for the famous <a href="https://about.gitlab.com">Gitlab</a>, already used by multiples open source projects. In the core team we were several to use it at work, so we were in a familiar environment.</p>
+
+<p>For months, a gitlab was running on one of our Gandi instance, to do tests and prepare the transition.</p>
+
+<p>But it was so much work that we never started the real migration. Then came the Covid-19 lockdown. No friends, no bars, lot of free time, so why not spent it on Xfce ?</p>
+
+<p>With Simon (ochosi) and Andre (andreldm), we started to use our own gitlab by opening issues, creating todo, doing merge requests etc related to the migration.<br />
+The 1st of May, we finally did <a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">the migration to GitLab</a> ! Woot !</p>
+
+<p>Jason (j4yav), working for Gitlab inc, joined us and proposed to help us for the Gitlab CI/CD setup. At the same time, we got a new (sponsored !) VM from <a href="https://fosshost.org/">FossHost</a> ! Perfect timing, we can now run a dedicated <code class="language-plaintext highlighter-rouge">gitlab-runner</code> instance, and we <a href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/">started to use gitlab-ci</a> !</p>
+
+<p>As of July 2020, almost all <code class="language-plaintext highlighter-rouge">Xfce</code> components (core, apps, panel plugins) run <code class="language-plaintext highlighter-rouge">make distcheck</code> on every merge requests and push to master, thanks to our <a href="https://hub.docker.com/r/xfce/xfce-build/tags">xfce-build</a> docker container.</p>
+
+<p><a src="https://blog.alteroot.org/media/images/xfce-gitlab-pipelines.png"><img src="https://blog.alteroot.org/media/images/xfce-gitlab-pipelines.png" alt="xfce gitlab-ci pipelines" /></a></p>
+
+<p>Now that we have a beautiful <a href="https://gitlab.xfce.org">GitLab</a>, merge requests and CI, the only missing part was… the migration from Bugzilla !<br />
+I forked and modified <a href="https://gitlab.xfce.org/infra/bztogl">bztogl</a>, a tool developped and used by Gnome and Freedesktop folks when they migrated away from bugzilla to gitlab in 2018/2019.<br />
+Initially, we wanted to migrate all bugzilla issues to gitlab (opened and closed ones). But we had more than 15000 issues ! We decided to only migrate opened issues. We took the opportunity to do a biiig cleanup of old bugs by closing more than 500 of them.</p>
+
+<p>A important condition of the bugzilla migration was to not lose our 15 years of history.<br />
+AndreLDM did a huge work by creating <a href="https://gitlab.xfce.org/andreldm/bzstatic">bzstatic</a>, a tool to snapshot a bugzilla instance and make it a simple static html version : <a href="https://bugzilla.xfce.org">https://bugzilla.xfce.org</a>.<br />
+He open sourced it at <a href="https://gitlab.xfce.org/andreldm/bzstatic">https://gitlab.xfce.org/andreldm/bzstatic</a> !</p>
+
+<p><a src="https://blog.alteroot.org/media/images/xfce-bugzilla-bzstatic.png"><img src="https://blog.alteroot.org/media/images/xfce-bugzilla-bzstatic.png" alt="xfce bugzillla bzstatic" /></a></p>
+
+<p>As a result, we now have a modern developments workflow, fully integrated with gitlab.
+We enabled github and gitlab.com auth on our instance (some people requested it), and since 3 months, we’ve seen a surge of new contributors, issues and merge requests ! Really a good news for the Xfce project ! 
+We also had a sponsorship from <a href="https://www.scaleway.com">Scaleway</a> lately, that we need to set up !</p>
+
+<p>So much things left to do, like update all our documentations for the new workflow, work on <code class="language-plaintext highlighter-rouge">Xfce 4.16</code>, get rid of our old release manager app and use gitlab-ci to generate artifacts, simplify our translation workflow and tons of other things !</p>
+
+<p>Enjoy !</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://blog.alteroot.org/articles/2020-07-18/xfce-infrastructure-2020.html">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000874.html">xfconf 4.15.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-07-16">
+                16 Jul 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000874.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Implement custom test driver</li>
+  <li>Use 'gsettings' as a common channel name for the GSetting backend</li>
+  <li>Bug #14789 Fix GSettings backend assertion error, when probed but not
+used</li>
+  <li>Enable GSettings backend build by default</li>
+  <li>Add Bash completion for xfconf-query</li>
+  <li>Bug #15960: Add some missing xfconf_shutdown() in xfconf-query</li>
+  <li>Bug #15951: Fix 'xfconf_get_error_quark' introspecting warning</li>
+  <li>Remove perl bindings</li>
+  <li>Fix vala binding in dist tarball</li>
+  <li>Translation Updates: be, da, el, es, he, hr, hu, hye, gl, nl,
+sl, sq, zh_CN, zh_HK, zh_TW</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000874.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-July/000875.html">libxfce4util 4.15.2 released</a></h1>
         </header>
         <header class="post-meta">
@@ -356,282 +514,6 @@ Turkish,</li>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.15.1-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1/changelog">xfce4-eyes-plugin (4.5.1-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-06-24">
-                24 Jun 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>d/watch: Update for upstream’s move to mirrorbit.</li>
-  <li>New upstream version 4.5.1.</li>
-  <li>d/compat, d/control:
-    <ul>
-      <li>Drop d/compat in favor of debhelper-compat, bump to 13.</li>
-    </ul>
-  </li>
-  <li>d/control, d/copyright: Update my email address, bump years.</li>
-  <li>d/control:
-    <ul>
-      <li>Update homepage.</li>
-      <li>Set xfce4-eyes-plugin M-A: same.</li>
-      <li>R³: no.</li>
-    </ul>
-  </li>
-  <li>d/rules: Drop dh_autoreconf and dh_clean overrides.</li>
-  <li>d/watch: Use uscan special strings.</li>
-  <li>Update Standards-Version to 4.5.0.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://alexxcons.github.io/2020/06/24/thunar-GtkAction-and-a-big-mess.html">Thunar, GtkAction and a big mess</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Alexander Schwinn
-            
-            
-            <time class="post-date" datetime="2020-06-24">
-                24 Jun 2020
-            </time>
-            <a href="https://alexxcons.github.io/2020/06/24/thunar-GtkAction-and-a-big-mess.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><h3 id="overview">Overview</h3>
-
-<p>My journey into the <a href="https://developer.gnome.org/gtk3/stable/GtkAction.html">GtkAction</a> abysses of <a href="https://gitlab.xfce.org/xfce/thunar">Thunar</a> began in the mid of 2019. Be warned, it is no story of success. It is rather a story about finding a way through a maze while walking into almost every dead end.</p>
-
-<p>Actually I just wanted to fix <a href="https://gitlab.xfce.org/xfce/thunar/-/issues/198">#198 (Merge all file-context-menus into one)</a>. But somehow things got weird. More than half a year later and after numerous interactive rebases I finally merged my branch into master \o/</p>
-
-<h3 id="motivation">Motivation</h3>
-
-<p>The old Thunar used to create the same menu items in different places using different code. In the past that led to inconsistencies. E.g. the location bar only provided a very minimal context menu, no <a href="https://docs.xfce.org/xfce/thunar/custom-actions">custom actions</a> at all.</p>
-
-<p><img src="https://alexxcons.github.io/assets/img/location_buttons_context_menu.png" alt="location button context menu" /></p>
-
-<p>From time to time I found myself right-clicking on a <code class="language-plaintext highlighter-rouge">location-button</code>, just to find out that there still is no <code class="language-plaintext highlighter-rouge">custom action</code>. At some point of maximal annoyance I decided to fix that problem … not sure if I would have done so when I knew how long that road would be.</p>
-
-<p>Looking at <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/xfce-4.14/thunar/thunar-location-button.c">thunar-location-buttons.c</a> revealed a lot of duplicated code. <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/xfce-4.14/thunar/thunar-standard-view.c">thunar-standard-view</a> and <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/xfce-4.14/thunar/thunar-window.c">thunar-window</a> both used the deprecated <a href="https://developer.gnome.org/gtk3/stable/GtkActionGroup.html#GtkActionEntry">GtkActionEntry</a> to define <code class="language-plaintext highlighter-rouge">menu item labels</code> and related actions. The <code class="language-plaintext highlighter-rouge">location buttons</code> just mirrored parts of that code. On top some other actions were defined in <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/xfce-4.14/thunar/thunar-standard-view.c">thunar-launcher</a> or had their own classes, inheriting <code class="language-plaintext highlighter-rouge">GtkAction</code>.</p>
-
-<p>So yay, lets just copy+paste the missing stuff to the location buttons?
-Nah, that would be too easy. As a developer who values <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>, it would hurt my belief in clean code to produce more mess.</p>
-
-<h3 id="lets-start-hacking">Let’s Start Hacking</h3>
-
-<p>I started to do some coding .. first I created a new widget <a href="https://gitlab.xfce.org/xfce/thunar/-/blob/master/thunar/thunar-menu.c">thunar-menu</a> which internally is a <a href="https://developer.gnome.org/gtk3/stable/GtkMenu.html">gtk-menu</a>, and moved menu-item creation and the related actions for copy/cut/paste/delete/move_to_trash there to have them at some central place, so they can be reused by different menus. I as well moved the actions from <code class="language-plaintext highlighter-rouge">thunar-launcher</code> to <code class="language-plaintext highlighter-rouge">thunar-menu</code> (I guess the original intention of the launcher was, to actually launch things, not to manage menu-items) and replaced separate action classes in favour of methods inside <code class="language-plaintext highlighter-rouge">thunar-menu</code>.</p>
-
-<p>Meanwhile the location-button-menu and the context-menu, which I used for testing, were populated with some items again.</p>
-
-<p>The old code made massive use of the deprecated <code class="language-plaintext highlighter-rouge">GtkAction</code> and <code class="language-plaintext highlighter-rouge">GtkActionEntry</code> classes together with <code class="language-plaintext highlighter-rouge">GtkUiManager</code>. I did not want to add more <code class="language-plaintext highlighter-rouge">G_GNUC_BEGIN_IGNORE_DEPRECATIONS</code> to silence warnings. So I decided to replace the deprecated calls.</p>
-
-<p>Looking into the gtk3 documentation revealed that there now is <a href="https://developer.gnome.org/GAction/">GAction</a> and <a href="https://developer.gnome.org/gio/stable/GActionMap.html#GActionEntry">GActionEntry</a> which provides some service around accelerator activation, and there is <a href="https://developer.gnome.org/gtk3/stable/GtkMenu.html">GtkMenu</a>/<a href="https://developer.gnome.org/gio/stable/GMenu.html">GMenu</a> for which at that time I had no clear idea why there are two of them.</p>
-
-<p>The <a href="https://developer.gnome.org/GAction/">documentation of GAction</a> told me that it should not be used for anything related to labels, icons or creation of visual widgets, damn. So at that time I did not see an advantage in using this class. I decided to rather go for <code class="language-plaintext highlighter-rouge">GtkMenu</code> together with some custom replacement for <code class="language-plaintext highlighter-rouge">GtkActionEntry</code>: <a href="https://gitlab.xfce.org/xfce/libxfce4ui/-/blob/master/libxfce4ui/xfce-gtk-extensions.h#L45">XfceGtkActionEntry</a>.</p>
-
-<p>In retrospective ignoring <code class="language-plaintext highlighter-rouge">GAction</code> might not have been my smartest move. Meanwhile I understood how <code class="language-plaintext highlighter-rouge">GAction</code> can be used with <code class="language-plaintext highlighter-rouge">GtkMenu</code>, and I will most likely go for it at some later point.</p>
-
-<p>Regarding <a href="https://developer.gnome.org/gtk3/stable/GtkUIManager.html">GtkUiManager</a>: The definition of menu-items of Thunar was scattered across <a href="https://gitlab.xfce.org/xfce/thunar/-/commit/ed46f9c3baa3533629d8c1000511300fb0e6fdd5">7 different *-ui.xml files</a>, making it hard to figure out what belongs together. Because of that I decided to just get rid of the deprecated <code class="language-plaintext highlighter-rouge">GtkUiManager</code> and create menu-items in the code instead of predefining their order in xml. IMO the usage of xml files might be nice for static GUI’s, though for dynamic menu-creation it just introduces unnecessary complexity.</p>
-
-<p>So I started to build <code class="language-plaintext highlighter-rouge">XfceGtkActionEntry</code> and some support methods.<code class="language-plaintext highlighter-rouge">XfceGtkActionEntry</code> is a structure which holds labels, tooltips, icons, types, the accelerator paths and callbacks to the related actions. Like <code class="language-plaintext highlighter-rouge">GtkActionEntry</code> it is just a struct and can be filled in a static way.</p>
-
-<p>Next problem: The menus in Thunar so far did not get destroyed, but were updated whenever the selected items got changed, and got shown when needed. That sounded wrong to me. Why should I want to update menu-items, which can be expensive, while no menu is visible at all ?
-There were bugs about menu flickering and slowness while rubber banding/mass select which seem to be related. Since I anyhow needed to touch that part, I decided to build menus only when they need to be shown.</p>
-
-<p>Things went well, I came to the point where I needed some items from <code class="language-plaintext highlighter-rouge">thunar-window</code>, like the zoom-section and the view-specific settings. As well most file-menu items in the <code class="language-plaintext highlighter-rouge">thunar-window</code> menu did not work any more since I moved management of them from <code class="language-plaintext highlighter-rouge">thunar-launcher</code> to<code class="language-plaintext highlighter-rouge"> thunar-menu</code>. So next step clearly was: Introduce <code class="language-plaintext highlighter-rouge">XfceGtkActionEntry</code> to <code class="language-plaintext highlighter-rouge">thunar-window</code> … and than shit hit the fan.</p>
-
-<p>So far the <code class="language-plaintext highlighter-rouge">thunar-window</code> menu was always present and took care for any accelerator actions. Since my concept was “create menu on request”, there was no menu instance which could take care for accelerators any more, leading to dysfunctional accelerator keys, rendering my whole concept as faulty .. aargh.</p>
-
-<h3 id="start-all-over-again">Start all over again</h3>
-
-<p>After some time of grieve and doubts I fixed the problem by moving most of the code from <code class="language-plaintext highlighter-rouge">thunar-menu</code> back to <code class="language-plaintext highlighter-rouge">thunar-launcher</code>, which lifetime is coupled to <code class="language-plaintext highlighter-rouge">thunar-window</code>.</p>
-
-<p>From now on <code class="language-plaintext highlighter-rouge">thunar-menu</code> was more or less just an convenience wrapper for <code class="language-plaintext highlighter-rouge">thunar-launcher</code> … still useful, but sadly it lost its glory. <code class="language-plaintext highlighter-rouge">thunar-launcher</code> now builds volatile menu items on request and permanently listens to the related accelerators. Finally accelerators started to work fine, and I was able to continue to fight with the window menu.</p>
-
-<p>I had much more trouble with that menu, too much to tell it here .. however somehow I managed to get it functional, so that it mostly worked like before.</p>
-
-<h3 id="an-unpleasant-discovery">An unpleasant discovery</h3>
-
-<p>Later on, while <a href="https://gitlab.gnome.org/GNOME/gtk/-/issues/2375">reporting a bug against gtk</a> I learned that the class <a href="https://developer.gnome.org/gtk3/stable/gtk3-Accelerator-Maps.html">gtk_accel_map</a>, which I use as a central part will be deprecated soon … aargh again. The gtk devs so far just missed to set a deprecation macro. So it seems like I will need to touch the accelerator part again. This time I plan to make use of the <a href="https://developer.gnome.org/gio/stable/GActionMap.html">GActionMap</a> interface .. going to be a story for another day.</p>
-
-<h3 id="testing-and-open-issues">Testing and open issues</h3>
-
-<p>For first testing and code-review I luckily got support of some early adopters. They found many more defects and regressions which kept me busy a long while. Fortunately nothing concept-breaking was found.</p>
-
-<p>While writing this there are still some regressions I introduced, waiting to get fixed by me before a stable release:</p>
-<ul>
-  <li><a href="https://gitlab.xfce.org/xfce/thunar/-/issues/331">Regression: Missing accelerators for bookmark items</a></li>
-  <li><a href="https://gitlab.xfce.org/xfce/thunar/-/issues/319">GObject-WARNING on closing thunar in some conditions</a></li>
-</ul>
-
-<p>And there are related tasks on my agenda, for which I just did not find the time so far:</p>
-<ul>
-  <li>rename <code class="language-plaintext highlighter-rouge">thunar-launcher</code> to e.g. <code class="language-plaintext highlighter-rouge">thunar-action-manager</code></li>
-  <li>use <code class="language-plaintext highlighter-rouge">thunar-menu</code> in <code class="language-plaintext highlighter-rouge">bookmark view</code></li>
-  <li>use <code class="language-plaintext highlighter-rouge">thunar-menu</code> in <code class="language-plaintext highlighter-rouge">Tree view</code></li>
-  <li>many minor things</li>
-</ul>
-
-<h3 id="conclusion">Conclusion</h3>
-
-<p>Finally I ended up with <a href="https://gitlab.xfce.org/xfce/thunar/-/merge_requests/10">25 commits and +4717 / -7149 line changes</a>. The occurrence of <code class="language-plaintext highlighter-rouge">G_GNUC_BEGIN_IGNORE_DEPRECATIONS</code> got reduced from 250 to 35. The remaining 35 occurrences will further drop when using GtkMenu for bookmark-view/tree-view. That should simplify the move to gtk4 in the future. The <code class="language-plaintext highlighter-rouge">location-button</code> context menu shows custom-actions now, and as well some other bugs got fixed with the changes.</p>
-
-<p>So overall, the result does not look too bad I guess.</p>
-
-<p>Well, this blogpost grew by far too long. I hope you nevertheless enjoyed the journey into the Thunar internals!</p>
-
-<p>… enough storytelling for now, I really need to take care of these remaining regressions! :)</p>
-
-<p>Thanks to <a href="https://gitlab.xfce.org/reubengreen73">Reuben</a>, <a href="https://gitlab.xfce.org/andreldm">AndreLDM</a>, <a href="https://gitlab.xfce.org/DarkTrick">DarkTrick</a> and others for early testing and bug reporting! Special thanks to AndreLDM, motivating me to write this blogpost at all :D.</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://alexxcons.github.io/2020/06/24/thunar-GtkAction-and-a-big-mess.html">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000871.html">xfce4-dev-tools 4.15.0 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-06-24">
-                24 Jun 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000871.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<ul>
-  <li>New macro XDT_VERSION_INIT(SEMVER[, TAG])</li>
-</ul>
-
-<p>This macro takes care of setting up the version numbering.
-It will define the following macros based on SEMVER and TAG:</p>
-
-<ul>
-  <li>xdt_version</li>
-  <li>xdt_version_major</li>
-  <li>xdt_version_minor</li>
-  <li>xdt_version_micro</li>
-  <li>xdt_version_tag</li>
-  <li>xdt_version_build</li>
-  <li>xdt_debug_default</li>
-</ul>
-
-<p>If TAG isn't specified, the xdt_version_tag and xdt_version_git
-will be empty and xdt_debug_default will be set to "minimum",
-otherwise the xdt_version_build will contain a git hash and
-xdt_debug_default will be set to "yes"</p>
-
-<p>Example usage:</p>
-
-<p>XDT_VERSION_INIT([4.15.3],[git])
-  AC_INIT([xfce4-someproject], [xdt_version()])
-  …
-  XDT_FEATURE_DEBUG([xdt_debug_default])</p>
-
-<ul>
-  <li>
-    <p>XDT_I18N macro will now automatically find the linguas if none are
-specified during the autoconf run.</p>
-  </li>
-  <li>
-    <p>Install m4 macros in default search dir. This makes autoconf find the
-macros by default.</p>
-  </li>
-</ul>
-
-<p>By setting version via XDT_VERSION_INIT and using XDT_I18N without
-arguments,
-this is no longer necessary to use a separate configure.ac.in and a
-plain configure.ac can be used !
-A big thank to Natanael Copa (ncopa) for his work on this part !</p>
-
-<ul>
-  <li>
-    <p>xfce4-dev-tools now also handle the CI (docker container,
-.gitlab-ci.yml templates files etc) on our new gitlab instance. A merge
-request or a push to master to any of our projects automatically trigger
-a build. This will help us to catch errors quicker and have better
-quality. Thanks to Jason Yavorska and Simon Steinbeiss.</p>
-  </li>
-  <li>
-    <p>New helpers are also available (xfce-get-release-notes, 
-xfce-get-translations, xfce-update-news) to help our maintainers to do
-releases ! Thanks Simon again.</p>
-  </li>
-  <li>Use datarootdir instead of datadir</li>
-  <li>xdt-autogen: explicitly set search path for m4 macros</li>
-  <li>Install the xfce-helpers</li>
-  <li>Add two new helpers to help releasers</li>
-  <li>Install m4 macros into default $datadir/aclocal</li>
-  <li>Update README for new gitlab urls</li>
-  <li>xdt-autogen: Improve and simplify linguas detection</li>
-  <li>Let XDT_I18N automatically find the po/*.po as default</li>
-  <li>Let configure generate the xdt-autogen script</li>
-  <li>Implement XDT_VERSION_INIT</li>
-  <li>Add manpage and tests to xdt-csource</li>
-  <li>Add xfce4-dev-tools build in addition to container build</li>
-  <li>Check BEFORE_SHA along with changes to .po files</li>
-  <li>gitlabci: Ensure to run autogen in distcheck stage</li>
-  <li>Switch to "foreign" mode for automake</li>
-  <li>Add CI templates notes</li>
-  <li>Update README with explanation of Dockerfile</li>
-  <li>Fix whitespace error</li>
-  <li>Add helper script to get all translation-updates</li>
-  <li>Integrate xfce-build container build/creation</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-June/000871.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>

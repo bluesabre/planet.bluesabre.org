@@ -65,6 +65,119 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2019/09/13/catfish-1-4-10-released/">Catfish 1.4.10 Released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2019-09-13">
+                13 Sep 2019
+            </time>
+            <a href="https://bluesabre.org/2019/09/13/catfish-1-4-10-released/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><h2 id="what-s-new">What’s New?</h2><h3 id="new-features">New Features</h3><ul><li><strong><strong>A brand new Preferences dialog.</strong></strong> This dialog includes options for window layout, display options, custom exclude directories <em><em>(new!)</em></em>, and an option to close Catfish after opening a file <em><em>(new!)</em></em>.</li><li><strong><strong>Custom exclude directories.</strong></strong> Previous releases of Catfish excluded various directories (/dev, ~/.cache, ~/.gvfs) to boost performance. This latest feature makes path exclusions customizable so users can further speed up their searches. (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=15317">#15317</a>)</li><li><strong><strong>Close after select.</strong></strong> Frequent file searcher? This feature will let you find and open your missing file, and close Catfish right away, keeping your application list at bay. (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=14888">#14888</a>)</li></ul><h3 id="bug-fixes">Bug Fixes</h3><ul><li>The previous release, Catfish 1.4.9 meant to include fixes for path exclusions. Somehow, <a href="https://git.xfce.org/apps/catfish/commit/?id=02399ff3a6315057e3ae5a844eb43a87e7cf61a5">I forgot to include the actual fix</a>! So here it is, path exclusions are fixed and search performance should be increased as a result. (Debian <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=926850">#926850</a>)</li><li>Icons are now always displayed at a consistent size in the results. Previously, some icons would be displayed much larger than others, breaking the visual flow.</li></ul><h3 id="improved-application-menu">Improved Application menu</h3><img src="https://bluesabre.org/content/images/2019/09/catfish-1.4.10-featured.png" alt="Catfish 1.4.10 Released"><p>In the past, clicking the application menu in Catfish meant seeing a cluttered, inconsistently spaced and aligned popover with poorly-worded options. No more!</p><ul><li>Better use of space, padding, and margins</li><li>Clearer purpose labels</li><li>Keyboard accelerators are now displayed in the menu</li></ul><h3 id="search-improvements">Search Improvements</h3><!--kg-card-begin: markdown--><ul>
+<li>Symbolic links are now traversed, with actual paths only processed once</li>
+<li>Added search priority, surfacing more relevant results faster. Folders are now descended with the following priority, then alphabetically:
+<ul>
+<li>XDG paths (Desktop, Documents, Pictures, Videos, etc)</li>
+<li>Visible paths</li>
+<li>Hidden paths</li>
+</ul>
+</li>
+</ul>
+<!--kg-card-end: markdown--><h3 id="general">General</h3><ul><li>Better use of alt-accelerators</li><li>Improved installation instructions (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=15105">#15105</a>)</li><li>Reduced warnings displayed in the terminal</li><li>Simplified Python 2/3 compatibility code</li><li>Various code quality fixes (pylint, flake)</li></ul><h3 id="translation-updates">Translation Updates</h3><ul><li>Simplified welcome text. While not visually different, the 3 translatable phrases were merged into a single sentence to simplify translations. (Xfce <a href="https://bugzilla.xfce.org/show_bug.cgi?id=15596">#15596</a>)</li></ul><p>Albanian, Basque, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan), Croatian, Danish, Dutch, French, Galician, German, Hungarian, Italian, Korean, Lithuanian, Norwegian Bokmål, Polish, Portuguese, Portuguese (Brazil), Russian, Serbian, Spanish, Turkish</p><h2 id="screenshots">Screenshots</h2><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2019/12/catfish-1.4.10-1-1.png" width="800" height="580" alt="Catfish 1.4.10 Released"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2019/12/catfish-1.4.10-2-1.png" width="800" height="580" alt="Catfish 1.4.10 Released"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2019/12/catfish-1.4.10-3-1.png" width="800" height="580" alt="Catfish 1.4.10 Released"></div></div></div></figure><h2 id="downloads">Downloads</h2><p><a href="https://archive.xfce.org/src/apps/catfish/1.4/catfish-1.4.10.tar.bz2">Source tarball</a> (<a href="https://archive.xfce.org/src/apps/catfish/1.4/catfish-1.4.10.tar.bz2.md5">md5</a>, <a href="https://archive.xfce.org/src/apps/catfish/1.4/catfish-1.4.10.tar.bz2.sha1">sha1</a>, <a href="https://archive.xfce.org/src/apps/catfish/1.4/catfish-1.4.10.tar.bz2.sha256">sha256</a>)</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2019/09/13/catfish-1-4-10-released/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-smartbookmark-plugin/xfce4-smartbookmark-plugin_0.5.1-1/changelog">xfce4-smartbookmark-plugin (0.5.1-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2019-09-05">
+                05 Sep 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-smartbookmark-plugin/xfce4-smartbookmark-plugin_0.5.1-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream version 0.5.1</li>
+  <li>use debhelper-compat b-dep for dh compat level</li>
+  <li>d/control: update dh compat level to 11</li>
+  <li>d/control: update standards version to 4.4.0</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-smartbookmark-plugin/xfce4-smartbookmark-plugin_0.5.1-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.3.2-1/changelog">xfce4-netload-plugin (1.3.2-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2019-09-04">
+                04 Sep 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.3.2-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream version 1.3.2</li>
+  <li>use debhelper-compat b-dep for dh compat level</li>
+  <li>d/control: update dh compat level to 11</li>
+  <li>d/control: update standards version to 4.4.0</li>
+  <li>d/patches refreshed for new upstream</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.3.2-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.1-1/changelog">menulibre (2.2.1-1) unstable</a></h1>
         </header>
         <header class="post-meta">
@@ -349,121 +462,6 @@
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-datetime-plugin/xfce4-datetime-plugin_0.8.0-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.1-1/changelog">xfce4-wavelan-plugin (0.6.1-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2019-08-28">
-                28 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.1-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream version 0.6.1</li>
-  <li>d/control: update standards version to 4.4.0</li>
-  <li>use debhelper-compat b-deps for dh compat level</li>
-  <li>d/control: update dh compat level to 11</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.1-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xiccd/xiccd_0.3.0-1/changelog">xiccd (0.3.0-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Faidon Liambotis
-            
-            
-            <time class="post-date" datetime="2019-08-27">
-                27 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xiccd/xiccd_0.3.0-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream release.
-    <ul>
-      <li>Fix a condition during which xiccd uses 100% CPU.      (Closes: #875371)</li>
-      <li>Drop xiccd.desktop manual install to /etc/xdg/autostart, fixed upstream.</li>
-    </ul>
-  </li>
-  <li>Switch Vcs-* to salsa.debian.org.</li>
-  <li>Bump debhelper compatibility level to 12.</li>
-  <li>Bump Standards-Version to 4.4.0, no changes needed.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xiccd/xiccd_0.3.0-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.14.1-1ubuntu1/changelog">libxfce4ui (4.14.1-1ubuntu1) devel</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2019-08-27">
-                27 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.14.1-1ubuntu1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Merge from Debian, remaining changes:
-    <ul>
-      <li>d/control: Add libxfce4ui-glade</li>
-      <li>d/rules: Drop –disable-gladeui2</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.14.1-1ubuntu1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

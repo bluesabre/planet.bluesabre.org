@@ -65,6 +65,160 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/">GitLab CI is up and running</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon Steinbeiß
+            
+            
+            <time class="post-date" datetime="2020-05-10">
+                10 May 2020
+            </time>
+            <a href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p><img class="transparent alignright" src="https://fosshost.org/wp-content/uploads/2020/05/Fosshost_Oficial_Logo_400px.png" alt="https://fosshost.org/wp-content/uploads/2020/05/Fosshost_Oficial_Logo_400px.png" /></p>
+<p>As announced less than two weeks ago, the next steps in <a href="https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/">our GitLab migration</a> are following. While we originally planned that the migration from Bugzilla to GitLab issues would be the next step we received generous support from <a href="https://fosshost.org">the brand new <strong>fosshost</strong> project</a>: They provided us with the virtual infrastructure to be able to set up <strong>our first GitLab Runner</strong>.<br />
+A huge thank you to the fosshost for welcoming us aboard (and in record time)!</p>
+<p>Standing on the shoulders of the <a href="https://github.com/schuellerf/xfce-test">xfce-test</a> project by Florian and with support from <span class="author">Jason we managed to get a Docker container <a href="https://hub.docker.com/r/xfce/xfce-build">xfce-build</a> up and running that we now use for a (for now: very basic) test, aka &#8220;does it build?&#8221;. </span>A nice side-effect of having this container published on Dockerhub is that everyone can easily use it locally by running <strong>docker pull xfce/xfce-build</strong>.</p>
+<p>If you&#8217;re curious what&#8217;s inside the container you can take a look at the <a href="https://gitlab.xfce.org/xfce/xfce4-dev-tools/-/blob/master/Dockerfile">Dockerfile</a>. In short we use the latest Ubuntu 20.04 as a basis and then compile the Xfce core libraries based on the latest Git tag on the master branch.</p>
+<p>The first project I set a pipeline up for is <a href="https://gitlab.xfce.org/xfce/xfce4-settings">xfce4-settings</a>. So from now on every commit and merge request will be built automatically and we as developers will receive immediate feedback. If you want to see what this looks like <a href="https://gitlab.xfce.org/xfce/xfce4-settings/-/commit/0e688e7f5ed7aaa9d9f8797baf30026210f4f6ed/pipelines?ref=master">feel free to click here</a>.</p>
+<h3>Next steps</h3>
+<p>Enabling the pipeline in more core repos will certainly be the next step. This should be as easy as adding <a href="https://gitlab.xfce.org/xfce/xfce4-settings/-/blob/master/.gitlab-ci.yml">this .gitlab-ci.yml</a> file to the repository&#8217;s master branch and enabling the CI/CD feature of the project.</p>
+<p>In parallel we have continued to work on the Bugzilla migration, but more on that later. Stay tuned!</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog">xfce4-taskmanager (1.2.3-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-05-09">
+                09 May 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Trim trailing whitespace.</li>
+  <li>Use secure copyright file specification URI.</li>
+  <li>Bump debhelper from old 10 to 12.</li>
+  <li>Set debhelper-compat version in Build-Depends.</li>
+  <li>Update standards version to 4.4.1, no changes needed.</li>
+</ul>
+
+<p>[ Mateusz Łukasik ]</p>
+<ul>
+  <li>Update d/watch.</li>
+  <li>New upstream version 1.2.3</li>
+  <li>d/control: update standards version to 4.5.0</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>d/control: R³: no.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog">xfwm4 (4.14.2-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-05-03">
+                03 May 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Trim trailing whitespace.</li>
+  <li>Bump debhelper from old 11 to 12.</li>
+  <li>Set upstream metadata fields: Name (from ./configure), Repository.</li>
+  <li>Fix day-of-week for changelog entry 4.0.0.final-1.</li>
+</ul>
+
+<p>[ Mateusz Łukasik ]</p>
+<ul>
+  <li>d/watch: Update to working version.</li>
+  <li>New upstream version 4.14.1
+    <ul>
+      <li>Fix raise delay (Closes: #940796)</li>
+    </ul>
+  </li>
+  <li>d/control: update standards version to 4.5.0</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream version 4.14.2.
+    <ul>
+      <li>Fix window title alignment (Closes: #953112)</li>
+    </ul>
+  </li>
+  <li>d/control: R³: no.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.14.4-1/changelog">xfce4-panel (4.14.4-1) unstable</a></h1>
         </header>
         <header class="post-meta">
@@ -305,131 +459,6 @@ Please poke us on IRC or the mailinglist if you&#8217;re lacking repository acce
         <footer>
             
                 <a class="read-more" href="https://bluesabre.org/2020/04/12/xubuntu-20-04-in-screenshots-the-installer/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.14.3-0ubuntu1/changelog">xfce4-settings (4.14.3-0ubuntu1) focal</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2020-04-12">
-                12 Apr 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.14.3-0ubuntu1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream bugfix release.
-    <ul>
-      <li>Fixes xfsettingsd crash with VNC (LP: #1837071)</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.14.3-0ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-community-artwork/xubuntu-community-artwork_20.04.0/changelog">xubuntu-community-artwork (20.04.0) focal</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2020-04-05">
-                05 Apr 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-community-artwork/xubuntu-community-artwork_20.04.0/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Include winners from the Xubuntu 20.04 Community Contest</li>
-  <li>d/compat, d/control:
-    <ul>
-      <li>Bump debhelper to 12, drop d/compat</li>
-    </ul>
-  </li>
-  <li>d/control:
-    <ul>
-      <li>Bump Standards-Version to 4.5.0</li>
-      <li>Set Rules-Requires-Root: no</li>
-      <li>Drop Breaks/Replaces for 16.04</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-community-artwork/xubuntu-community-artwork_20.04.0/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_2:1.6.1-1/changelog">xfce4-clipman-plugin (2:1.6.1-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-04-05">
-                05 Apr 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_2:1.6.1-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 1.6.1</li>
-  <li>d/control:
-    <ul>
-      <li>Update B-D: libexo-1-dev → libexo-2-dev, drop libxml-parser-perl.</li>
-      <li>Bump DH compat to 12.</li>
-      <li>R³: no.</li>
-    </ul>
-  </li>
-  <li>d/xfce4-clipman.install: Install appstream data.</li>
-  <li>Trim whitespace from previous changelog entries.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_2:1.6.1-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

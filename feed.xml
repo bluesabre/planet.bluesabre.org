@@ -13,7 +13,7 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Tue, 19 Jul 2022 15:30:20 -0400</lastBuildDate>
+	<lastBuildDate>Tue, 19 Jul 2022 18:54:30 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
@@ -59,6 +59,162 @@
   <li>d/docs: Follow rename, README → README.md.</li>
   <li>d/rules: Drop –as-needed and autoreconf override, no longer needed.</li>
   <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-netload-plugin (1.4.0-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.4.0-1/changelog</link>
+			<pubDate>Tue, 19 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.4.0-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[[ Debian Janitor ]
+
+  Trim trailing whitespace.
+  Use secure copyright file specification URI.
+  Use secure URI in Homepage field.
+  Update standards version to 4.4.1, no changes needed.
+  Update standards version to 4.5.0, no changes needed.
+  Apply multi-arch hints.
+    
+      xfce4-netload-plugin: Add Multi-Arch: same.]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Trim trailing whitespace.</li>
+  <li>Use secure copyright file specification URI.</li>
+  <li>Use secure URI in Homepage field.</li>
+  <li>Update standards version to 4.4.1, no changes needed.</li>
+  <li>Update standards version to 4.5.0, no changes needed.</li>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>xfce4-netload-plugin: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream version 1.4.0.
+    <ul>
+      <li>Refresh patch.</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 13.</li>
+      <li>R³: no.</li>
+      <li>Update ‘homepage’ field.</li>
+    </ul>
+  </li>
+  <li>d/rules:
+    <ul>
+      <li>Enable all hardening options.</li>
+      <li>Drop ‘–as-needed’ from LDFLAGS, default in stable now.</li>
+    </ul>
+  </li>
+  <li>d/watch: Use uscan special strings.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-battery-plugin (1.1.4-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-battery-plugin/xfce4-battery-plugin_1.1.4-1/changelog</link>
+			<pubDate>Tue, 19 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-battery-plugin/xfce4-battery-plugin_1.1.4-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[[ Debian Janitor ]
+
+  Apply multi-arch hints.
+    
+      xfce4-battery-plugin: Add Multi-Arch: same.
+    
+  
+  Trim trailing whitespace.
+  Update standards version to 4.5.0, no changes needed.]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>xfce4-battery-plugin: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
+  <li>Trim trailing whitespace.</li>
+  <li>Update standards version to 4.5.0, no changes needed.</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream version 1.1.4.</li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 13.</li>
+      <li>R³: no.</li>
+      <li>Update ‘homepage’ field.</li>
+    </ul>
+  </li>
+  <li>d/rules: Drop ‘–as-needed’ from LDFLAGS, default in stable now.</li>
+  <li>d/watch: Use uscan special strings.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[blueman (2.3.1-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3.1-1/changelog</link>
+			<pubDate>Mon, 18 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Christopher Schramm]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3.1-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New release</li>
 </ul>
 ]]>
         
@@ -1579,143 +1735,6 @@ environment and improves compatibility with other environments.]]></description>
           <![CDATA[<ul>
   <li>New upstream version 4.17.8</li>
   <li>d/p/01_support-non-multiarch-modules updated for new upstream</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[ANNOUNCE: thunar-archive-plugin 0.5.0 released]]></title>
-			<link>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001111.html</link>
-			<pubDate>Sat, 30 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Xfce Announcements]]></dc:creator>
-		
-		
-			<guid>https://mail.xfce.org/pipermail/xfce-announce/2022-April/001111.html</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>Fix for ark (Issue #4)</li>
-  <li>automake: INCLUDES -&gt; AM_CPPFLAGS</li>
-  <li>preserve callbacks in tap-provider</li>
-  <li>remove GSpawnChildSetupFunc usage from tap_backend_run</li>
-  <li>Adds new README.md</li>
-  <li>updates AM_INIT_AUTOMAKE macro with foreign option</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Allow zip files (i.e. odt, docx…) to be compressed (Bug #15295)</li>
-  <li>Start archive application from file's directory (Bug #14773)</li>
-  <li>Replace AC_PROG_LIBTOOL with IT_PROG_INTLTOOL</li>
-  <li>Add support for archive manager for MATE</li>
-  <li>Translation Updates:
-Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
-Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
-Croatian, Czech, Danish, Dutch, Eastern Armenian, Eastern Armenian
-(Russia), English (Australia), English (United Kingdom), Esperanto,
-Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kabyle, Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian
-Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi),
-Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
-Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu
-(Pakistan), Uyghur, Uzbek, Uzbek (Latin), Vietnamese</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>Fix for ark (Issue #4)</li>
-  <li>automake: INCLUDES -&gt; AM_CPPFLAGS</li>
-  <li>preserve callbacks in tap-provider</li>
-  <li>remove GSpawnChildSetupFunc usage from tap_backend_run</li>
-  <li>Adds new README.md</li>
-  <li>updates AM_INIT_AUTOMAKE macro with foreign option</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Allow zip files (i.e. odt, docx…) to be compressed (Bug #15295)</li>
-  <li>Start archive application from file's directory (Bug #14773)</li>
-  <li>Replace AC_PROG_LIBTOOL with IT_PROG_INTLTOOL</li>
-  <li>Add support for archive manager for MATE</li>
-  <li>Translation Updates:
-Albanian, Amharic, Arabic, Armenian (Armenia), Asturian, Basque,
-Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
-Croatian, Czech, Danish, Dutch, Eastern Armenian, Eastern Armenian
-(Russia), English (Australia), English (United Kingdom), Esperanto,
-Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kabyle, Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian
-Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi),
-Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
-Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu
-(Pakistan), Uyghur, Uzbek, Uzbek (Latin), Vietnamese</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[xubuntu-meta (2.242) kinetic]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.242/changelog</link>
-			<pubDate>Tue, 26 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Steve Langasek]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.242/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>Update to kinetic.</li>
-  <li>Refreshed dependencies</li>
-  <li>Removed acpi-support from core-recommends [amd64], desktop-    recommends [amd64]</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>Update to kinetic.</li>
-  <li>Refreshed dependencies</li>
-  <li>Removed acpi-support from core-recommends [amd64], desktop-    recommends [amd64]</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[mousepad (0.5.9-1) unstable]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.9-1/changelog</link>
-			<pubDate>Sat, 23 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Unit 193]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.9-1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>Team upload.</li>
-  <li>New upstream version 0.5.9.</li>
-  <li>d/control: Bump DH compat to 13.</li>
-  <li>d/rules: Drop –as-needed and autoreconf override, no longer needed.</li>
-  <li>d/libmousepad0.symbols: Update symbols and add Build-Depends-Package.</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>Team upload.</li>
-  <li>New upstream version 0.5.9.</li>
-  <li>d/control: Bump DH compat to 13.</li>
-  <li>d/rules: Drop –as-needed and autoreconf override, no longer needed.</li>
-  <li>d/libmousepad0.symbols: Update symbols and add Build-Depends-Package.</li>
 </ul>
 ]]>
         

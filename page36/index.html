@@ -65,6 +65,181 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screensaver/xfce4-screensaver_4.16.0-1/changelog">xfce4-screensaver (4.16.0-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2021-01-06">
+                06 Jan 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screensaver/xfce4-screensaver_4.16.0-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+  <li>New upstream version 4.16.0.</li>
+  <li>d/control:
+    <ul>
+      <li>Recommend gir1.2-xfconf-0 and gir1.2-libxfce4util-1.0, drop xfconf.</li>
+    </ul>
+  </li>
+  <li>d/copyright: Update years and my email address.</li>
+  <li>Update Standards-Version to 4.5.1.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screensaver/xfce4-screensaver_4.16.0-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.8-2ubuntu1/changelog">lightdm-gtk-greeter (2.0.8-2ubuntu1) hirsute</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-01-06">
+                06 Jan 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.8-2ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Merge from Debian unstable. Remaining changes:
+    <ul>
+      <li>debian/{01_ubuntu.conf,60-lightdm-gtk-greeter.conf,rules} add and      install.</li>
+      <li>debian/control:
+        <ul>
+          <li>Build-Depends on liblightdm-gobject-1-dev instead on        liblightdm-gobject-dev as it’s non-existing in archive.</li>
+          <li>Install desktop-base as a suggestion, not as a recommendation        (LP: #1669818)</li>
+          <li>Remove Breaks/Replaces on older budgie-lightdm-theme, lightdm,        and lightdm-gtk packages</li>
+        </ul>
+      </li>
+      <li>debian/copyright: update copyright for lightdm-gtk-greeter.</li>
+      <li>debian/patches/git_indicators_loading.patch,      debian/patches/git_libexec_atspi.patch,      debian/patches/git_new_systemd.patch:
+        <ul>
+          <li>Dropped, included upstream.</li>
+        </ul>
+      </li>
+      <li>debian/lightdm-gtk-greeter.{maintscript,postinst,postrm,preinst}:
+        <ul>
+          <li>No longer remove obsolete ubuntu conf files, files should        be gone after wily.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.8-2ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_21.04/changelog">xubuntu-docs (21.04) hirsute</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2021-01-04">
+                04 Jan 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_21.04/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[ flocculant ]</p>
+<ul>
+  <li>Updated contributor-docs to current practice, ppa’s used,    milestones vs testing weeks</li>
+</ul>
+
+<p>[ Pasi Lallinaho ]</p>
+<ul>
+  <li>Update the webchat link to accommodate new syntax</li>
+</ul>
+
+<p>[ Unit 193 / Krytarik Raido ]</p>
+<ul>
+  <li>Move from deprecated gnome-doc-utils to itstool. (LP: #1905548)</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>Align appendix-packages to seed changes.
+    <ul>
+      <li>Drop gtk-theme-config.</li>
+      <li>evince → atril.</li>
+      <li>gnome-calculator → mate-calc.</li>
+    </ul>
+  </li>
+  <li>Fix makefile ordering.</li>
+  <li>Update copyright years.</li>
+  <li>d/compat, d/control:
+    <ul>
+      <li>Drop d/compat in favor of debhelper-compat, bump to 13.</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>R³: no.</li>
+      <li>Add Vcs-* and homepage fields.</li>
+    </ul>
+  </li>
+  <li>Update Standards-Version to 4.5.1.</li>
+</ul>
+
+<p>[ Sean Davis ]</p>
+<ul>
+  <li>Fix linkend refs in FR translation</li>
+</ul>
+
+<p>[ Yousuf Philips ]</p>
+<ul>
+  <li>Recommended was mispelt</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_21.04/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001000.html">xfce4-screensaver 4.16.0 released</a></h1>
         </header>
         <header class="post-meta">
@@ -355,153 +530,6 @@ Czech, Japanese, Portuguese, Turkish</li>
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mount-plugin/xfce4-mount-plugin_1.1.5-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.2-1/changelog">xfce4-fsguard-plugin (1.1.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-01-02">
-                02 Jan 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>d/watch: Update for mirrorbit and use uscan special strings.</li>
-  <li>New upstream version 1.1.2.
-    <ul>
-      <li>Replace obsolete xfce_create_panel_button usage (Closes: #978169)</li>
-    </ul>
-  </li>
-  <li>d/control:
-    <ul>
-      <li>Bump DH compat to 12.</li>
-      <li>Update ‘Homepage’ field, goodies.xfce → docs.xfce.</li>
-      <li>R³: no.</li>
-    </ul>
-  </li>
-  <li>Update Standards-Version to 4.5.1.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.0-1/changelog">xfce4-cpugraph-plugin (1.2.0-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-01-02">
-                02 Jan 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.0-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-</ul>
-
-<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Refer to specific version of license GPL-2+.</li>
-  <li>Update standards version to 4.5.0, no changes needed.</li>
-  <li>Apply multi-arch hints.
-    <ul>
-      <li>xfce4-cpugraph-plugin: Add Multi-Arch: same.</li>
-    </ul>
-  </li>
-</ul>
-
-<p>[ Unit 193 ]</p>
-<ul>
-  <li>d/watch: Update for mirrorbit and use uscan special strings.</li>
-  <li>New upstream version 1.2.0.
-    <ul>
-      <li>Allow compilation with panel 4.15 (Closes: #978186)</li>
-    </ul>
-  </li>
-  <li>d/control:
-    <ul>
-      <li>Bump DH compat to 12.</li>
-      <li>Update ‘Homepage’ field, goodies.xfce → docs.xfce.</li>
-      <li>R³: no.</li>
-    </ul>
-  </li>
-  <li>Update Standards-Version to 4.5.1.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.0-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.1-1/changelog">thunar (4.16.1-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-01-02">
-                02 Jan 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.1-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 4.16.1.
-    <ul>
-      <li>Prevent crash on Ctrl+H when there is no sidepane (Closes: #978969)</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.1-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
