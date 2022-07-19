@@ -65,6 +65,85 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_20.04/changelog">xubuntu-default-settings (20.04) focal</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2019-11-09">
+                09 Nov 2019
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_20.04/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>debian/control:
+    <ul>
+      <li>Bump Standards-Version to 4.4.0</li>
+      <li>Add Rules-Requires-Root: no</li>
+      <li>Update Vcs- locations</li>
+    </ul>
+  </li>
+  <li>debian/control, debian/compat:
+    <ul>
+      <li>Bump debhelper to version 12</li>
+    </ul>
+  </li>
+  <li>debian/live/*:
+    <ul>
+      <li>Move live config files to subdirectory</li>
+    </ul>
+  </li>
+  <li>debian/live/whiskermenu-1.rc,    debian/xubuntu-live-settings.install:
+    <ul>
+      <li>Remove lock menu option in live since locking is disabled (LP: #1835668)</li>
+    </ul>
+  </li>
+  <li>debian/live/light-locker.desktop,    debian/xubuntu-live-settings.install:
+    <ul>
+      <li>Remove light-locker autostart entry since we no longer ship it</li>
+    </ul>
+  </li>
+  <li>debian/source/lintian-overrides:
+    <ul>
+      <li>Add override for testsuite-autopkgtest-missing</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml:
+    <ul>
+      <li>Drop workspace labels, inconsistent with 5+ workspaces (LP: #1829778)</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml:
+    <ul>
+      <li>Set the Xubuntu wallpaper as default for up to 4 displays</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/menus/xfce-applications.menu,    etc/xdg/xdg-xubuntu/menus/xfce-settings-manager.menu:
+    <ul>
+      <li>Workaround menu handling errors in pyxdg (LP: #1833863)</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_20.04/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_20.04/changelog">xubuntu-artwork (20.04) focal</a></h1>
         </header>
         <header class="post-meta">
@@ -481,51 +560,6 @@ greeter-session=slick-greeter</code></pre><!--kg-card-end: html--><!--kg-card-be
         <footer>
             
                 <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.3.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.1-1/changelog">menulibre (2.2.1-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2019-08-31">
-                31 Aug 2019
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.1-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[ Ondřej Nový ]</p>
-<ul>
-  <li>Use debhelper-compat instead of debian/compat.</li>
-</ul>
-
-<p>[ Sean Davis ]</p>
-<ul>
-  <li>New upstream release. Closes: #934755, #937736.</li>
-  <li>d/control:
-    <ul>
-      <li>Update Standards-Version to 4.4.0</li>
-      <li>Bump debhelper compatibility to 12</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.1-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>

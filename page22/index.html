@@ -65,6 +65,86 @@
 
     <article class="post">
         <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html">thunar 4.17.4 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-07-17">
+                17 Jul 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<p>Besides many fixes and translation updates, this development release
+ships various new features brought to you by our GSoC students. My
+personal highlights are:</p>
+
+<ul>
+  <li>Automatic restore of tabs on startup</li>
+  <li>Possibility to 'trust' launchers</li>
+  <li>Support for 'recent:///'</li>
+  <li>Zoom-level as a per-directory setting</li>
+  <li>Various file-copy improvements</li>
+</ul>
+
+<p>Here the complete log:</p>
+<ul>
+  <li>Restore split-view separator position (Issue #616)</li>
+  <li>Skip handler when switching to other split-view tab (Issue #615)</li>
+  <li>Change thunar_file_is_trashed to thunar_file_is_trash</li>
+  <li>New menu item for trashed files: "restore and open folder" (#382)</li>
+  <li>Open restored tabs in correct order (Issue #613)</li>
+  <li>After restoring tabs set focus on the last focused tab</li>
+  <li>For "foo.txt" next available file should be of the form "foo N.txt"</li>
+  <li>Ask "close window with tabs?" as well for STRG+Q (Issue #611)</li>
+  <li>Keep modified time of files copied from foreign locations (#218)</li>
+  <li>Use more general method to pick file names on copy (Issue #244)</li>
+  <li>Add possibility to 'trust' launchers (Issue #156)</li>
+  <li>Remove reload button from toolbar (!125)</li>
+  <li>Add a preference to restore tabs on startup (Issue #338)</li>
+  <li>Use thunar_g_file_new_for_computer and thunar_g_file_new_for_network</li>
+  <li>Add support for gtk-recent (recent:///) (Issue #257)</li>
+  <li>Add zoom-level as a per-directory setting (Issue #418)</li>
+  <li>Generate incremental file name on name collision (Issue #210)</li>
+  <li>Fix GLib-CRITICAL in list-view (Issue #487)</li>
+  <li>thunar_file_is_executable() now checks if .desktop file is safe</li>
+  <li>Fix missing folder in history when opened in new tab (Issue #594)</li>
+  <li>Manage parallel job outside ThunarTransferJob (Issue #569)</li>
+  <li>Replace ExoBinding with GBinding equivalent</li>
+  <li>Move bookmarks into a separate Bookmarks menu (Issue #572)</li>
+  <li>Proper destruction of member variables for thunar-launcher</li>
+  <li>Fixing various memory leaks (Issue #573)</li>
+  <li>Fix showing volume uuid in transfer dialog (Issue #579)</li>
+  <li>Update manpage (Issue #121)</li>
+  <li>Dont show "execute" on context menu for folders</li>
+  <li>Translation Updates:
+Albanian, Basque, Bulgarian, Catalan, Chinese (China), Czech, Danish,
+Dutch, Estonian, French, Galician, German, Hebrew, Italian, Japanese,
+Malay, Norwegian Bokmål, Polish, Portuguese, Portuguese (Brazil),
+Serbian, Spanish, Swedish, Thai, Turkish</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
             <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001045.html">libxfce4util 4.17.0 released</a></h1>
         </header>
         <header class="post-meta">
@@ -579,96 +659,6 @@ Turkish, Ukrainian, Urdu, Urdu (Pakistan), Vietnamese</li>
         <footer>
             
                 <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-May/001041.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-May/001040.html">mousepad 0.5.5 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-05-12">
-                12 May 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-May/001040.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New Features:
-    <ul>
-      <li>Add a <code class="language-plaintext highlighter-rouge">.desktop</code> file to make Mousepad appear in Xfce settings
-(!94)</li>
-      <li>Add a command line option to open the prefs dialog (!94)</li>
-      <li>Plugin support (!92)</li>
-      <li>Add gspell plugin (#1, !92)</li>
-      <li>Disable and wipe recent history if recent-menu-items is set to 0
-(#112, !89)</li>
-      <li>Support -ve line and column values for "Go to" location
-(#113, !84)</li>
-    </ul>
-  </li>
-  <li>Appearance Changes:
-    <ul>
-      <li>Switch to client-side decorations (!97)</li>
-    </ul>
-  </li>
-  <li>Code Refactoring:
-    <ul>
-      <li>Remove Xfconf dependency (#60, #122, !98)</li>
-      <li>A general review of sanity checks</li>
-      <li>A review of window lifetime management</li>
-      <li>A review of document lifetime management</li>
-      <li>Automate and sanitize memory management of sources</li>
-      <li>A small review of GSettings use</li>
-      <li>Do not use <code class="language-plaintext highlighter-rouge">== (TRUE|FALSE)</code> for boolean conditions</li>
-    </ul>
-  </li>
-  <li>Bug Fixes:
-    <ul>
-      <li>Fix actions to show/hide bars in fullscreen mode (#129)</li>
-      <li>Fix broken "Revert" action</li>
-      <li>Fix and extend "Move Lines" action (#87, #116, !96)</li>
-      <li>Support for drag and drop of tabs when search is active</li>
-      <li>Do a silent search when changing tabs with the search bar enabled</li>
-      <li>Use get/set_real_line_offset () functions for "Paste as Column"
-(#114, !91)</li>
-      <li>Restore cursor position after transpose (#115, !88)</li>
-      <li>Fix "Delete Line" action (#117, !86)</li>
-      <li>Fix recent_sort function (!90)</li>
-      <li>Reset line and column number if not given on command line
-(#121, !87)</li>
-      <li>menu: "Spaces to Tabs" converter converts leading spaces
-(#118, !85)</li>
-      <li>Make window require attention when opening new tabs (2) (#119)</li>
-    </ul>
-  </li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (United
-Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
-1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
-Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
-Thai, Turkish, Ukrainian, Uyghur</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-May/001040.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
