@@ -13,7 +13,7 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Tue, 19 Jul 2022 21:30:19 -0400</lastBuildDate>
+	<lastBuildDate>Wed, 20 Jul 2022 00:54:37 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
@@ -58,6 +58,37 @@
   </li>
   <li>d/docs: Follow rename, README → README.md.</li>
   <li>d/rules: Drop –as-needed and autoreconf override, no longer needed.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
+	
+		<item>
+			<title><![CDATA[xfce4-time-out-plugin (1.1.2-0ubuntu1) devel]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.2-0ubuntu1/changelog</link>
+			<pubDate>Tue, 19 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Unit 193]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.2-0ubuntu1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<ul>
+  <li>New upstream release.</li>
+  <li>d/rules: Drop ‘–as-needed’ from LDFLAGS, this is default.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<ul>
+  <li>New upstream release.</li>
+  <li>d/rules: Drop ‘–as-needed’ from LDFLAGS, this is default.</li>
   <li>Update Standards-Version to 4.6.1.</li>
 </ul>
 ]]>
@@ -1706,35 +1737,6 @@ environment and improves compatibility with other environments.]]></description>
       </li>
     </ul>
   </li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[thunar (4.17.8-1) experimental]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.17.8-1/changelog</link>
-			<pubDate>Sat, 30 Apr 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Yves-Alexis Perez]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.17.8-1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>New upstream version 4.17.8</li>
-  <li>d/p/01_support-non-multiarch-modules updated for new upstream</li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>New upstream version 4.17.8</li>
-  <li>d/p/01_support-non-multiarch-modules updated for new upstream</li>
 </ul>
 ]]>
         
