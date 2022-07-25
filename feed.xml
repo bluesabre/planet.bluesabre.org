@@ -13,10 +13,49 @@
 	<atom:link href="https://planet.bluesabre.org/feed.xml" rel="self" type="application/rss+xml" />
 	<link>https://planet.bluesabre.org/</link>
 	<description><![CDATA[All the latest from Xfce, Xubuntu, & Friends]]></description>
-	<lastBuildDate>Sun, 24 Jul 2022 21:30:16 -0400</lastBuildDate>
+	<lastBuildDate>Mon, 25 Jul 2022 00:54:27 -0400</lastBuildDate>
 	<language>en-US</language>
 	<generator>Jekyll v4.2.0</generator>
 
+	
+		<item>
+			<title><![CDATA[catfish (4.16.4-1) unstable]]></title>
+			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.4-1/changelog</link>
+			<pubDate>Sun, 24 Jul 2022 00:00:00 -0400</pubDate>
+			<dc:creator><![CDATA[Sean Davis]]></dc:creator>
+		
+		
+			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.4-1/changelog</guid>
+        
+        
+        
+        
+			<description><![CDATA[<p>[ Sean Davis ]</p>
+<ul>
+  <li>New upstream release.</li>
+  <li>d/copyright: Bump copyright years</li>
+  <li>d/u/metadata: Bug-Browse -&gt; Bug-Database</li>
+</ul>]]></description>
+      <content:encoded>
+        
+          
+          
+          <![CDATA[<p>[ Sean Davis ]</p>
+<ul>
+  <li>New upstream release.</li>
+  <li>d/copyright: Bump copyright years</li>
+  <li>d/u/metadata: Bug-Browse -&gt; Bug-Database</li>
+</ul>
+
+<p>[ Nilesh Patra ]</p>
+<ul>
+  <li>Bump Standards-Version to 4.6.1 (no changes needed)</li>
+  <li>Add d/salsa-ci.yml</li>
+</ul>
+]]>
+        
+      </content:encoded>
+		</item>
 	
 		<item>
 			<title><![CDATA[xfce4-xkb-plugin (1:0.8.3-1) unstable]]></title>
@@ -1674,69 +1713,6 @@ environment and improves compatibility with other environments.]]></description>
           <![CDATA[<ul>
   <li>fix typo in README.Debian</li>
   <li>New upstream version 1.0.3</li>
-</ul>
-]]>
-        
-      </content:encoded>
-		</item>
-	
-		<item>
-			<title><![CDATA[pidgin (1:2.14.9-1ubuntu1) kinetic]]></title>
-			<link>http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-1ubuntu1/changelog</link>
-			<pubDate>Wed, 11 May 2022 00:00:00 -0400</pubDate>
-			<dc:creator><![CDATA[Gianfranco Costamagna]]></dc:creator>
-		
-		
-			<guid>http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-1ubuntu1/changelog</guid>
-        
-        
-        
-        
-			<description><![CDATA[<ul>
-  <li>Minimize delta with Debian: remaining changes:
-    <ul>
-      <li>Bump epoch (change committed on git)</li>
-      <li>add unity integration</li>
-      <li>update preferences file.</li>
-      <li>add Ubuntu patches:
-        <ul>
-          <li>04_let_crasher_for_apport.patch</li>
-          <li>05_default_to_irc_ubuntu_com.patch</li>
-          <li>10_docklet_default_off.patch</li>
-          <li>11_buddy_list_really_show.patch</li>
-          <li>13_sounds_and_timers.patch</li>
-          <li>60_1024x600_gtkpounce.c.patch</li>
-          <li>60_1024x600_gtkprefs.c.patch</li>
-          <li>pounce-webview.patch</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>]]></description>
-      <content:encoded>
-        
-          
-          
-          <![CDATA[<ul>
-  <li>Minimize delta with Debian: remaining changes:
-    <ul>
-      <li>Bump epoch (change committed on git)</li>
-      <li>add unity integration</li>
-      <li>update preferences file.</li>
-      <li>add Ubuntu patches:
-        <ul>
-          <li>04_let_crasher_for_apport.patch</li>
-          <li>05_default_to_irc_ubuntu_com.patch</li>
-          <li>10_docklet_default_off.patch</li>
-          <li>11_buddy_list_really_show.patch</li>
-          <li>13_sounds_and_timers.patch</li>
-          <li>60_1024x600_gtkpounce.c.patch</li>
-          <li>60_1024x600_gtkprefs.c.patch</li>
-          <li>pounce-webview.patch</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
 </ul>
 ]]>
         
