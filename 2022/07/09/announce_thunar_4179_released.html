@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ANNOUNCE: thunar 4.17.9 released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2022-07-09">09 Jul 2022</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2022-07-09">09 Jul 2022</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">ANNOUNCE: thunar 4.17.9 released</h1> -->
+
+        <section class="post-content">
+            <p>[Please note that this is a development release.]</p>
+
+<p>Development release on the master branch, shipping tons of improvements,
+fixes and translation updates:</p>
+
+<ul>
+  <li>Dont rely on xfconf value for menubar toggle (Issue #777)</li>
+  <li>Dont rely on xfconf value for statusbar toggle (Issue #777)</li>
+  <li>Dont rely on xfconf value for sidepane menu items (Issue #777)</li>
+  <li>Bulk renamer: Rename in multiple iterations (Issue #108)</li>
+  <li>meaningful naming for Location Selector (Issue #826)</li>
+  <li>Prevent GLib-GObject-CRITICAL when using tree-view (Issue #827)</li>
+  <li>Bulk Renamer: Allow multiple matches when using regex (Issue #230)</li>
+  <li>Fix various memory leaks (Issue #573)</li>
+  <li>Ignore escape sequences when executing launchers</li>
+  <li>Fix crash when changing tab titles preferences (#808)</li>
+  <li>Don't modify the 'exe' line in .desktop files unintentionally</li>
+  <li>Search: show symlinks in results (Issue #809)</li>
+  <li>Rename ThunarLauncher class to ThunarActionManager</li>
+  <li>Enable to switch from search entry to other UI elements (Issue #792)</li>
+  <li>Hide accel labels in launcher submenus (Issue #779)</li>
+  <li>Fix broken build with gcc7 : “declaration is not a statement”</li>
+  <li>List View: Show relative paths for column 'location'</li>
+  <li>Check for empty path property in .desktop files</li>
+  <li>Add tooltips for select by pattern dialog</li>
+  <li>Restore view-type before exiting while search is active (Issue #794)</li>
+  <li>Add menu item 'edit launcher' for '.desktop' files</li>
+  <li>Search string normalization and diacritic stripping (Issue #793)</li>
+  <li>Add border around infobar in trash (Issue #795)</li>
+  <li>Fix segfault when closing Thunar during search (Issue #789)</li>
+  <li>Respect last-show-hidden during search (Issue #785)</li>
+  <li>Allow searching for multiple search terms (Issue #783)</li>
+  <li>Handle special columns properly when ending a search (Issue #782)</li>
+  <li>Replace exo_str_* () with GLib functions</li>
+  <li>Bump up Glib dependency to 2.66.0</li>
+  <li>Fixed folder activation during search in some cases (Issue #774)</li>
+  <li>ExoIconView search workaround: do not save the temporary view type</li>
+  <li>Fix column editor model filter logic</li>
+  <li>Show the <code class="language-plaintext highlighter-rouge">Location</code> column in <code class="language-plaintext highlighter-rouge">recent:\</code>.</li>
+  <li>Show the <code class="language-plaintext highlighter-rouge">Search with Catfish...</code> button only if catfish is installed</li>
+  <li>Tweak order of tab settings in preferences dialog</li>
+  <li>build: Fix intltool lock file problem during make distcheck</li>
+  <li>Add option to show last modified date in the statusbar (Issue #641)</li>
+  <li>Usage of glist to concatinate statusbar strings</li>
+  <li>Add configure option to set thunarx default dirs</li>
+  <li>Add configure option to enable thunarx custom dirs (Issue #771)</li>
+  <li>Sort symlinks like regular files when sorting by type (Issue #71)</li>
+  <li>Make thunar toolbar editor resizable and set a default size</li>
+  <li>Refactor thunarx module loading (Issue #755)</li>
+  <li>Add preference to disable recursive search (Issue #751)</li>
+  <li>Compact View: Optional ellipsization instead word wrap (Issue #595)</li>
+  <li>Add toolbar button to show menubar when hidden (Issue #174)</li>
+  <li>Bookmark accels not working (Issue #762)</li>
+  <li>Toolbar Editor: Default to a bigger dialog size (Issue #758)</li>
+  <li>Toolbar: Make custom actions invisible by default (Issue #757)</li>
+  <li>Dont show a checkbox for "vertical split pane" in the settings</li>
+  <li>Show as well invalid bookmarks in the bookmarks menu (Issue #582)</li>
+  <li>Remove 'Date Deleted' from 'Configure Column' List (Issue #750)</li>
+  <li>Move trash infobar to the bottom (Issue #605)</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
+Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+(Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
+(Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
+French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
+Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
+Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Persian
+(Iran), Polish, Portuguese, Romanian, Serbian, Slovak, Spanish,
+Swedish, Telugu, Thai, Urdu, Urdu (Pakistan), Uyghur, Vietnamese</li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

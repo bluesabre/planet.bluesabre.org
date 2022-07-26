@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page13" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 14 of 70 </span>
+    <span class="page-number"> Page 14 of 71 </span>
      
         <a class="older-posts" href="/page15" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,35 +65,57 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.8-1/changelog">mousepad (0.5.8-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.26.0-1/changelog">mate-calc (1.26.0-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Yves-Alexis Perez
+                Mike Gabriel
             
             
-            <time class="post-date" datetime="2021-11-27">
-                27 Nov 2021
+            <time class="post-date" datetime="2021-12-12">
+                12 Dec 2021
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.8-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.26.0-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><ul>
-  <li>New upstream version 0.5.8</li>
-  <li>d/control: add b-d on libgspell-1-dev for gspell plugin</li>
-  <li>d/control: update standards version to 4.6.0</li>
-  <li>split libmousepad to separate packages</li>
-  <li>d/control: build against gtksourceview 4</li>
+            <section class="post-content"><p>[ Martin Wimpress ]</p>
+<ul>
+  <li>New upstream release.</li>
+  <li>debian/control:
+    <ul>
+      <li>Dependencies updated for MATE 1.26.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Mike Gabriel ]</p>
+<ul>
+  <li>debian/control:
+    <ul>
+      <li>Fix pretty name in Maintainer: field.</li>
+      <li>Bump Standards-Version: to 4.6.0. No changes needed.</li>
+    </ul>
+  </li>
+  <li>debian/watch:
+    <ul>
+      <li>Use format version 4.</li>
+    </ul>
+  </li>
+  <li>debian/copyright:
+    <ul>
+      <li>Update copyright attributions.</li>
+    </ul>
+  </li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.8-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.26.0-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -102,17 +124,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001079.html">ristretto 0.12.1 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001083.html">xfce4-whiskermenu-plugin 2.7.1 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2021-11-26">
-                26 Nov 2021
+            <time class="post-date" datetime="2021-12-11">
+                11 Dec 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001079.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001083.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -120,50 +142,75 @@
         
         
             <section class="post-content"><ul>
-  <li>Dependency Changes:
-    <ul>
-      <li>GLib &gt;= 2.44.0</li>
-    </ul>
-  </li>
-  <li>Performance Improvement:
-    <ul>
-      <li>Optimize sorting by content type</li>
-      <li>Load images asynchronously (#16, #29, #32, !34)</li>
-      <li>Increase image loading buffer size (!34)</li>
-    </ul>
-  </li>
-  <li>Appearance Changes:
-    <ul>
-      <li>Allow to display all files in the open dialog (!33)</li>
-    </ul>
-  </li>
-  <li>Code Refactoring:
-    <ul>
-      <li>Rework the file opening procedure (!33)</li>
-    </ul>
-  </li>
-  <li>Bug Fixes:
-    <ul>
-      <li>Fix a memory leak when closing the window directly</li>
-      <li>Refactoring: Clarify thumbnailer queue management</li>
-      <li>Thumbnailer: Do not empty an unprocessed file list</li>
-      <li>Update window title on image deletion or insertion</li>
-      <li>Perform content-based filtering wherever necessary</li>
-      <li>Set device scale for animated images</li>
-      <li>Properly recognize SVG compressed image files</li>
-      <li>Use the generic pixbuf loader for RAW image files</li>
-      <li>Fix pointer behavior in fullscreen mode</li>
-      <li>Icon bar: Properly highlight item under the cursor</li>
-      <li>Icon bar: Center on the active item for any size change</li>
-      <li>Fix regression: Exif orientation is not respected (#69)</li>
-      <li>Do not try to load images whose pixbuf is not available (!34)</li>
-      <li>Fix memory management of image loading objects (!34)</li>
-      <li>Use URIs instead of filenames in the <code class="language-plaintext highlighter-rouge">.desktop</code> file (#49)</li>
-      <li>Directory loading: Allow to load a directory via the cli</li>
-      <li>Flatpak: Access remote locations with GVfs</li>
-      <li>Directory loading: Fix improper use of GFileEnumerator APIs
-(#68)</li>
-    </ul>
+  <li>Fix not selecting second icon in search results. (Issue #50)</li>
+  <li>Fix incorrect selection when leaving treeview.</li>
+  <li>Fix skipping first treeview item.</li>
+  <li>Fix unnecessary button size changes.</li>
+  <li>Translation updates: Catalan, Greek.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001083.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001082.html">xfce4-terminal 0.9.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-12-10">
+                10 Dec 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001082.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is a development release.</p>
+
+<p>New features:</p>
+<ul>
+  <li>Use GtkScrolledWindow for TerminalScreen and add an overlay-scrolling
+preference (Issue #149)</li>
+  <li>Support the new Shortcuts editor widget (requires libxfce4ui 4.17.2 or
+greater)</li>
+  <li>New preference: Select right click action</li>
+</ul>
+
+<p>Enhancements:</p>
+<ul>
+  <li>Improved <code class="language-plaintext highlighter-rouge">scrolling-on-output</code> behaviour.</li>
+  <li>Unsafe Paste Dialog temporary override (Issue #106)</li>
+</ul>
+
+<p>Fixes:</p>
+<ul>
+  <li>Fix regression: File Menu missing <code class="language-plaintext highlighter-rouge">Close Window</code> entry</li>
+  <li>Fix regression: Disable Help shortcut does not work</li>
+  <li>Fix regression: go-to accelerators not working on startup</li>
+  <li>Fix regression: Revert accelerator paths to maintain backwards
+compatibility</li>
+  <li>Use the latest .glade file structure</li>
+</ul>
+
+<p>Documentation:</p>
+<ul>
+  <li>Change incorrect reference to ${XDG_CONFIG_DIRS} in man page (Issue
+#47)</li>
+  <li>
+    <p>Change outdated documentation links</p>
   </li>
   <li>Translation Updates:
 Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
@@ -174,13 +221,13 @@ Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
 Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
 1500), Polish, Portuguese, Portuguese (Brazil), Romanian, Russian,
 Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
-Ukrainian, Uyghur</li>
+Ukrainian</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001079.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001082.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -189,78 +236,17 @@ Ukrainian, Uyghur</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001078.html">mousepad 0.5.8 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001081.html">libxfce4ui 4.17.2 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2021-11-26">
-                26 Nov 2021
+            <time class="post-date" datetime="2021-12-09">
+                09 Dec 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001078.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Bug Fixes:
-    <ul>
-      <li>Revert "Chain-up to parent in <code class="language-plaintext highlighter-rouge">mousepad_window_scroll_event()</code>"
-(#150)</li>
-      <li>Search: Fix a memory leak</li>
-      <li>Search: Remove obsolete workaround for the document finalization</li>
-      <li>Drop restrictions on URI scheme</li>
-      <li>Update <code class="language-plaintext highlighter-rouge">POTFILES.in</code></li>
-      <li>Printing: Remove the "Page Setup" dialog (#148)</li>
-      <li>Flatpak: Complete scripts</li>
-      <li>Flatpak: Access remote locations with GVfs</li>
-      <li>Search: Fix the history cleanup</li>
-      <li>Search: Prevent GTask warnings when replacing text</li>
-      <li>Search: Ensure settings synchronization before searching</li>
-      <li>Fix translation domain in Appdata file</li>
-      <li>flatpak: Update README</li>
-      <li>flatpak: Add generic manifest and basic scripts</li>
-    </ul>
-  </li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (United
-Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
-1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
-Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
-Thai, Turkish, Ukrainian, Uyghur</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001078.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001077.html">thunar 4.17.7 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-11-22">
-                22 Nov 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001077.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001081.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -269,42 +255,29 @@ Thai, Turkish, Ukrainian, Uyghur</li>
         
             <section class="post-content"><p>[Please note that this is a development release.]</p>
 
-<p>Development release on the master branch. Released now to fix some
-rather inconvenient regressions/crashes, so that early testers dont have
-to suffer from them.</p>
-
-<p>Here the complete changelog:</p>
+<p>Development (and translation) release on the master branch, majorly to
+be able to use the new shortcuts editor widget in other packages.</p>
 
 <ul>
-  <li>Use GList over gchar** for getting an uri list (Issue #684)</li>
-  <li>Prevent crash when restoring non-existing URI (Issue #684)</li>
-  <li>Regression: Can't copy and replace a directory any more (Issue #682)</li>
-  <li>'New file' dialog: Dont highlight template extension (Issue #676)</li>
-  <li>Use g_strcmp0 over strcmp to prevent crash (Issue #679)</li>
-  <li>Inherit sort column/order of new tabs from current tab (Issue #678)</li>
-  <li>Feature: Statusbar customization (Issue #666)</li>
-  <li>Add link to thunar doc. to uca chooser dialog (Issue #245)</li>
-  <li>Dont replace ACSII characters &lt; 0 for FAT filesystems (Issue #655)</li>
-  <li>Fix: Side pane tree view loading time increased (Issue #659)</li>
-  <li>Remove the <code class="language-plaintext highlighter-rouge">file://</code> prefix in the location column</li>
-  <li>Support '.' in themed desktop-file names</li>
+  <li>xfce-about: Fix potential NULL pointer access</li>
+  <li>Introduce a shortcuts editor widget</li>
   <li>Translation Updates:
-Albanian, Arabic, Armenian, Armenian (Armenia), Asturian, Basque,
-Bengali, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
-(Taiwan), Czech, Danish, Dutch, Eastern Armenian, English
-(Australia), English (United Kingdom), Esperanto, Estonian, Finnish,
-French, Galician, German, Greek, Hebrew, Hungarian, Icelandic,
-Indonesian, Interlingue, Japanese, Kazakh, Korean, Latvian, Malay,
-Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Panjabi
-(Punjabi), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
-Romanian, Serbian, Slovak, Spanish, Swedish, Telugu, Thai, Turkish,
-Urdu, Urdu (Pakistan), Uyghur, Vietnamese</li>
+Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Basque,
+Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
+(Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+Eastern Armenian, English (Australia), English (United Kingdom),
+Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål,
+Norwegian Nynorsk, Occitan (post 1500), Polish, Portuguese,
+Portuguese (Brazil), Romanian, Russian, Serbian, Slovak, Slovenian,
+Spanish, Swedish, Telugu, Thai, Turkish, Ukrainian, Uyghur, Welsh</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001077.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001081.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -313,136 +286,42 @@ Urdu, Urdu (Pakistan), Uyghur, Vietnamese</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.2-1/changelog">xfce4-sensors-plugin (1.4.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2021-11-21">
-                21 Nov 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream version 1.4.2</li>
-  <li>d/control: update standards version to 4.6.0</li>
-  <li>update lintian overrides</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001076.html">xfce4-whiskermenu-plugin 2.7.0 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001080.html">exo 4.16.3 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2021-11-20">
-                20 Nov 2021
+            <time class="post-date" datetime="2021-12-07">
+                07 Dec 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001076.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001080.html" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><ul>
-  <li>Add showing categories as icons on top or bottom. (Issue #62)</li>
-  <li>Add hiding username. (Issue #36)</li>
-  <li>Add rounded profile picture.</li>
-  <li>Add optional AccountsService support.</li>
-  <li>Add catfish search action.</li>
-  <li>Add CSS classes for theming.</li>
-  <li>Improve search result relevance.</li>
-  <li>Make stripping release builds optional.</li>
-  <li>Rearrange settings dialog.</li>
-  <li>Remove sliding out search results.</li>
-  <li>Remove useless grab check.</li>
-  <li>Rename icon to follow reverse DNS scheme.</li>
-  <li>Replace size grip with resizing from edges.</li>
-  <li>Replace slots with lambdas.</li>
-  <li>Use original menu layout.</li>
-  <li>Use dm-tool for switching users.</li>
-  <li>Translation updates: Basque, Bulgarian, Chinese (Taiwan), Danish,
-Dutch, French, Greek, Lithuanian, Portuguese, Portuguese (Brazil),
-Slovak, Spanish, Swedish, Turkish, Ukrainian.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001076.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
+            <section class="post-content"><p>Bugfix release on the 4.16 branch.</p>
 
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001075.html">xfce4-sensors-plugin 1.4.2 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-11-15">
-                15 Nov 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001075.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>Besides the bug fixes and feature updates listed below, this release
-migrates the source code from C to C++ in order to increase type-safety,
-to use reference counting and containers for semi-automatic memory
-management where possible, and to slightly improve source code
-readability.</p>
+<p>Here the changelog:</p>
 
 <ul>
-  <li>Prevent overlap of tachometer titles</li>
-  <li>Improved standalone app layout</li>
-  <li>Fix crash in hddtemp codepath with a SATA SSD drive</li>
-  <li>Increase default temperature ranges of HDDs and NVIDIA GPUs by 10℃</li>
-  <li>Remove default values from RC configuration files</li>
-  <li>Suppress title after the user adds the 1st sensor</li>
-  <li>Remove hard-coded limits restricting the maximum number of sensors</li>
-  <li>Test all possible build configurations using brute-force search</li>
-  <li>Use xfce4::connect instead of the less safe g_signal_connect</li>
-  <li>Enable lm_sensors in GitLab distcheck</li>
-  <li>Fix memory leaks</li>
-  <li>Translation Updates:
-Basque, Danish, Hebrew, Indonesian, Italian, Korean, Malay,
-Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
+  <li>Dont reduce selection in single click mode (Issue #71)</li>
+  <li>Add typecheck to prevent Gtk-CRITICAL (Issue #63)</li>
+  <li>exo_strdup_strftime: Support additional encoding (Issue #66)</li>
+  <li>Free hover_path in tree-view if not NULL</li>
+  <li>Fix compilation warnings</li>
+  <li>exo-icon-chooser-dialog: Focus filter entry by default</li>
+  <li>exo-icon-chooser-dialog: Set default to show to all icons</li>
+  <li>exo-icon-chooser-dialog: Speed up sorting the icon view model</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001075.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-December/001080.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -451,17 +330,17 @@ Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.2-1/changelog">xfce4-whiskermenu-plugin (2.6.2-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.7.0-1/changelog">xfce4-whiskermenu-plugin (2.7.0-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Yves-Alexis Perez
+                Unit 193
             
             
-            <time class="post-date" datetime="2021-11-14">
-                14 Nov 2021
+            <time class="post-date" datetime="2021-12-03">
+                03 Dec 2021
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.2-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.7.0-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -469,14 +348,14 @@ Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
         
         
             <section class="post-content"><ul>
-  <li>New upstream version 2.6.2</li>
-  <li>d/u/metadata: add bugs entries</li>
+  <li>Team upload.</li>
+  <li>New upstream version 2.7.0.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.2-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.7.0-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -485,17 +364,17 @@ Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001074.html">xfce4-whiskermenu-plugin 2.6.2 released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.5-1/changelog">xfce4-cpugraph-plugin (1.2.5-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Xfce Announcements
+                Unit 193
             
             
-            <time class="post-date" datetime="2021-11-13">
-                13 Nov 2021
+            <time class="post-date" datetime="2021-12-03">
+                03 Dec 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001074.html" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.5-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -503,15 +382,16 @@ Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
         
         
             <section class="post-content"><ul>
-  <li>Fix background shifting when showing menu. (Issue #41)</li>
-  <li>Fix menu not toggling after pressing escape. (Issue #65)</li>
-  <li>Properly prevent interactive search in treeview.</li>
+  <li>Team upload.</li>
+  <li>New upstream version 1.2.5.</li>
+  <li>d/rules: Drop ‘–as-needed’, as it’s default in stable.</li>
+  <li>Update Standards-Version to 4.6.0.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-November/001074.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.5-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -520,17 +400,17 @@ Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu5/changelog">lightdm (1.30.0-0ubuntu5) jammy</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.10-1/changelog">thunar (4.16.10-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Dan Streetman
+                Unit 193
             
             
-            <time class="post-date" datetime="2021-11-05">
-                05 Nov 2021
+            <time class="post-date" datetime="2021-12-03">
+                03 Dec 2021
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu5/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.10-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -538,9 +418,60 @@ Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
         
         
             <section class="post-content"><ul>
-  <li>debian/lightdm.lightdm-greeter.pam,    debian/lightdm.pam:
+  <li>Team upload.</li>
+  <li>New upstream version 4.16.10.</li>
+  <li>d/control: Bump DH compat to 13.</li>
+  <li>d/rules: Drop ‘–as-needed’ and dh_missing override, now defaults.</li>
+  <li>Update Standards-Version to 4.6.0.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.10-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.8-1ubuntu1/changelog">pidgin (1:2.14.8-1ubuntu1) jammy</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Gianfranco Costamagna
+            
+            
+            <time class="post-date" datetime="2021-12-01">
+                01 Dec 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.8-1ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Minimize delta with Debian: remaining changes:
     <ul>
-      <li>Suppress log error for missing pam modules (LP: #1949970)</li>
+      <li>Bump epoch (change committed on git)</li>
+      <li>add unity integration</li>
+      <li>update preferences file.</li>
+      <li>add Ubuntu patches:
+        <ul>
+          <li>04_let_crasher_for_apport.patch</li>
+          <li>05_default_to_irc_ubuntu_com.patch</li>
+          <li>10_docklet_default_off.patch</li>
+          <li>11_buddy_list_really_show.patch</li>
+          <li>13_sounds_and_timers.patch</li>
+          <li>60_1024x600_gtkpounce.c.patch</li>
+          <li>60_1024x600_gtkprefs.c.patch</li>
+          <li>pounce-webview.patch</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -548,7 +479,40 @@ Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu5/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.8-1ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.12.1-1/changelog">ristretto (0.12.1-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2021-11-29">
+                29 Nov 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.12.1-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream version 0.12.1</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.12.1-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -561,7 +525,7 @@ Portuguese (Brazil), Serbian, Slovenian, Turkish</li>
             <a class="newer-posts" href="/page13" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 14 of 70 </span>
+    <span class="page-number"> Page 14 of 71 </span>
      
         <a class="older-posts" href="/page15" title="Next Page">Older Posts &raquo;</a>
      

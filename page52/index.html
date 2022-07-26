@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page51" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 52 of 70 </span>
+    <span class="page-number"> Page 52 of 71 </span>
      
         <a class="older-posts" href="/page53" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,101 +65,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu3/changelog">lightdm-gtk-greeter (2.0.6-0ubuntu3) hirsute</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sebastien Bacher
-            
-            
-            <time class="post-date" datetime="2020-10-27">
-                27 Oct 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu3/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>debian/patches/git_indicators_loading.patch:
-    <ul>
-      <li>don’t try loading indicators using upstart</li>
-    </ul>
-  </li>
-  <li>debian/patches/git_libexec_atspi.patch:
-    <ul>
-      <li>use the correct directory for the atspi service</li>
-    </ul>
-  </li>
-  <li>debian/patches/git_new_systemd.patch:
-    <ul>
-      <li>disable mlockall, it’s leading to the greeter hitting memory errors      using the new systemd version (lp: #1890394)</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu3/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu2/changelog">lightdm-gtk-greeter (2.0.6-0ubuntu2) groovy</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sebastien Bacher
-            
-            
-            <time class="post-date" datetime="2020-10-27">
-                27 Oct 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu2/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>debian/patches/git_new_systemd.patch:
-    <ul>
-      <li>disable mlockall, it’s leading to the greeter hitting memory errors      using the new systemd version (lp: #1890394)</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu2/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000900.html">catfish 4.15.0 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000910.html">xfce4-dev-tools 4.15.1 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2020-10-25">
-                25 Oct 2020
+            <time class="post-date" datetime="2020-11-02">
+                02 Nov 2020
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000900.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000910.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -168,64 +84,84 @@
         
             <section class="post-content"><p>[Please note that this is a development release.]</p>
 
-<p>Disclaimer on the significant version bump (1.4.x to 4.15.x):
-With this release, Catfish has started integrating Xfce components.
-Going forward, Catfish's versioning scheme will reflect the target Xfce
-release.</p>
+<p>Various improvements to the helpers introduced in 4.15.0,
+cleanup of xdt-autogen code (thanks to Gaël Bonithon), various fixes for
+our CI.</p>
 
-<p>Dependency Changes:</p>
 <ul>
-  <li>GTK &gt;= 3.22</li>
-  <li>GLib &gt;= 2.42</li>
-  <li>Python 2 support has been removed</li>
-  <li>Python 3 &gt;= 3.2 (#33)</li>
-  <li>Xfconf &gt;= 4.14.0 (requires GObject Introspection, see INSTALL)</li>
-  <li>Zeitgeist optional dependency now requires GObject Introspection</li>
+  <li>get-translations: Fix line wrapping</li>
+  <li>xdt-autogen: Various small improvements</li>
+  <li>xdt-autogen: Properly handle whitespaces in filenames</li>
+  <li>xdt-autogen: Use sed instead of tr to replace strings</li>
+  <li>Updates README.md</li>
+  <li>xfce-build: Add libclutter-1.0-dev for xfdashboard build</li>
+  <li>Update .gitignore</li>
+  <li>helpers: Use blank line for tags message</li>
+  <li>helpers: Reuse release notes from NEWS for tag message</li>
+  <li>helpers: Simplify xfce-update-news</li>
+  <li>helpers: Do not strip NEWS blank line at EOF</li>
+  <li>helpers: Install xfce-do-release</li>
+  <li>xfce-build: Add depend for mousepad (Fixes #37)</li>
+  <li>helpers: Add do-release helper and Readme</li>
+  <li>xfce-build: Install python3 version of distutils-extra</li>
+  <li>helpers: Make get-translations executable</li>
+  <li>get-translations: Remove last comma</li>
+  <li>get-translations: Correctly get locale from commit messages</li>
+  <li>xfce-build: Replace build-dep with package names</li>
 </ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000910.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
 
-<p>New Features:</p>
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000909.html">thunar-volman 4.15.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-11-02">
+                02 Nov 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000909.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is a development release of Thunar-volman aiming the upcoming
+release of Xfce 4.16.</p>
+
 <ul>
-  <li>Added Ctrl+H shortcut to show/hide hidden files (#16)</li>
-  <li>Added "Today" and "Month" filters to the sidebar (#23)</li>
-  <li>Fulltext searches now include more text files (#7)</li>
-</ul>
-
-<p>General:</p>
-<ul>
-  <li>New app icon, now using an rDNS icon name (org.xfce.catfish)</li>
-  <li>Migrated ChangeLog to NEWS to better match Xfce projects</li>
-  <li>Renamed README to README.md and updated to match Xfce projects</li>
-  <li>Updated INSTALL to reference python3-specific packages (#36)</li>
-  <li>Various in-app icon updates (#15, #17, #26)</li>
-  <li>Added additional padding to Other and Custom gear icons (#20)</li>
-</ul>
-
-<p>Bug Fixes:</p>
-<ul>
-  <li>Check if zeitgeist daemon is running at startup (#34)</li>
-  <li>Correctly position custom filter popups above gear icon (#18)</li>
-  <li>Default to the current date in the custom date filters (#24)</li>
-  <li>Fix 'list' object has no attribute 'lower' (#9)</li>
-  <li>Fix fulltext freeze with special files (#32)</li>
-  <li>Fix python crash when some extension scheme is used (#35)</li>
-  <li>Fix statusbar moving on mouseover</li>
-  <li>Move custom file extension hint to tooltip (#25)</li>
-  <li>Sidebar entries no longer move when losing focus (#22)</li>
-</ul>
-
-<p>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), Estonian, Finnish, French,
+  <li>Fix typo in README</li>
+  <li>Adds new README.md updates AM_INIT_AUTOMAKE</li>
+  <li>Translation Updates:
+Albanian, Amharic, Arabic, Armenian (Armenia), Basque, Belarusian,
+Bulgarian, Catalan, Chinese (China), Chinese (Hong Kong), Chinese
+(Taiwan), Croatian, Czech, Danish, Dutch, Eastern Armenian, English
+(Australia), English (United Kingdom), Estonian, Finnish, French,
 Galician, German, Greek, Hebrew, Hungarian, Icelandic, Indonesian,
-Interlingue, Italian, Japanese, Korean, Lithuanian, Malay, Norwegian
-Bokmål, Norwegian Nynorsk, Polish, Portuguese, Portuguese (Brazil),
-Russian, Serbian, Slovak, Slovenian, Spanish, Thai, Turkish, Ukrainian</p>
+Interlingue, Italian, Japanese, Kazakh, Korean, Latvian, Malay,
+Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Polish,
+Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
+Slovenian, Spanish, Swedish, Telugu, Thai, Turkish, Ukrainian, Urdu,
+Urdu (Pakistan), Uyghur, Vietnamese</li>
+</ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000900.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000909.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -234,17 +170,17 @@ Russian, Serbian, Slovak, Slovenian, Spanish, Thai, Turkish, Ukrainian</p>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.4-1/changelog">xfce4-dict (0.8.4-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.6-1/changelog">xfwm4 (4.14.6-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Unit 193
+                Yves-Alexis Perez
             
             
-            <time class="post-date" datetime="2020-10-16">
-                16 Oct 2020
+            <time class="post-date" datetime="2020-11-01">
+                01 Nov 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.4-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.6-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -252,33 +188,13 @@ Russian, Serbian, Slovak, Slovenian, Spanish, Thai, Turkish, Ukrainian</p>
         
         
             <section class="post-content"><ul>
-  <li>Team upload.</li>
-</ul>
-
-<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Bump debhelper from old 11 to 12.</li>
-  <li>Set debhelper-compat version in Build-Depends.</li>
-  <li>Update standards version to 4.5.0, no changes needed.</li>
-</ul>
-
-<p>[ Unit 193 ]</p>
-<ul>
-  <li>d/watch: Use uscan special strings and update for mirrorbit.</li>
-  <li>New upstream version 0.8.4.</li>
-  <li>d/control:
-    <ul>
-      <li>Drop Build-Depend on libxml-parser-perl.</li>
-      <li>R³: no.</li>
-      <li>Update homepage, goodies.xfce.org → docs.xfce.org.</li>
-    </ul>
-  </li>
+  <li>New upstream version 4.14.6</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.4-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.6-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -287,17 +203,102 @@ Russian, Serbian, Slovak, Slovenian, Spanish, Thai, Turkish, Ukrainian</p>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.2-1/changelog">xfce4-cpufreq-plugin (1.2.2-1) unstable</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000906.html">xfwm4 4.15.3 released</a></h1>
         </header>
         <header class="post-meta">
             
-                Unit 193
+                Xfce Announcements
             
             
-            <time class="post-date" datetime="2020-10-15">
-                15 Oct 2020
+            <time class="post-date" datetime="2020-11-01">
+                01 Nov 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.2-1/changelog" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000906.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Quick release after 4.15.2 to fix a regression with opaque
+regions leaving trails of unpainted areas on resize.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000906.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000904.html">xfwm4 4.15.2 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-11-01">
+                01 Nov 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000904.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note this is a preview release of a development version]</p>
+
+<ul>
+  <li>Add support for opaque regions in the compositor</li>
+  <li>Make cursor zoom optional (xfce/xfwm4#439)</li>
+  <li>Remove the deprecated options "–daemon" (Pablo Mazzini)</li>
+  <li>Disable Xi2 support by default</li>
+  <li>Add column sorting in settings</li>
+  <li>Optimize window matching in the compositor with a hash table
+(Michael Banack)</li>
+  <li>Add more XErrors traps</li>
+  <li>I18n: Updated translations: ar, ast, be, be at tarask, bg, bn, ca,
+cs, da, de, el, en_AU, en_CA, en_GB, es, et, eu, fa_IR, fi, fr,
+gl, he, hr, hu, hy_AM, hye, id, ie, is, it, ja, ka, kk, ko, lt,
+lv, ms, nb, nl, nn, oc, pl, pt, pt_BR, ro, ru, sk, sl, sq, sr,
+sv, th, tr, ug, uk, ur, ur_PK,
+vi, zh_CN, zh_HK, zh_TW
+New translations: be at tarask, fa_IR, hye, ka</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000904.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000903.html">xfwm4 4.14.6 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-11-01">
+                01 Nov 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000903.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -305,38 +306,141 @@ Russian, Serbian, Slovak, Slovenian, Spanish, Thai, Turkish, Ukrainian</p>
         
         
             <section class="post-content"><ul>
-  <li>Team upload.</li>
+  <li>Add more XErrors traps</li>
+  <li>I18n: Update translations: da, es, et, he, lt, oc, ug</li>
 </ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000903.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
 
-<p>[ Debian Janitor ]</p>
-<ul>
-  <li>Trim trailing whitespace.</li>
-  <li>Bump debhelper from old 10 to 12.</li>
-  <li>Set debhelper-compat version in Build-Depends.</li>
-</ul>
+    
 
-<p>[ Unit 193 ]</p>
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000905.html">exo 4.15.3 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-11-01">
+                01 Nov 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000905.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
 <ul>
-  <li>d/watch: Use uscan special strings.</li>
-  <li>New upstream version 1.2.2.
-    <ul>
-      <li>Fix compilation with gcc-10 (Closes: #957979)</li>
-    </ul>
+  <li>Re-grab tree selection to prevent rare crash (Issue #46)</li>
+  <li>Remove unneeded RTL adjustment (Issue #45)</li>
+  <li>exo-open: Wrap long URI in error dialog (Issue #26)</li>
+  <li>Avoid truncated text in small zoom levels (#42)</li>
+  <li>Make ExoIconView reduce selection on a single click (issue #39)</li>
+  <li>Partially restore 6fcefce9 (Issue #18)</li>
+  <li>Adds new, foreign README.md</li>
+  <li>Add check for valid GtkTreeSelection (issue #40)</li>
+  <li>Reset cursor on drag end in single-click mode</li>
+  <li>exo-open: Change priority of command line parameters (Fixes #20)</li>
+  <li>Prevent label from overlapping icon in RTL (Fixes #36)</li>
+  <li>Prevent "selection_changed" bursts (#37)</li>
+  <li>Small change to documentation for exo_strdup_strftime</li>
+  <li>desktop-item-edit: Fix fallback for desktop file type detection</li>
+  <li>desktop-item-edit: Improve detection of invalid icon names (#33)</li>
+  <li>AC_CONFIG_MACRO_DIR → AC_CONFIG_MACRO_DIRS (Closes !9)</li>
+  <li>
+    <p>Translation Updates:
+Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Asturian, 
+Basque, Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), 
+Chinese (Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,</p>
+
+    <p>Eastern Armenian, English (Australia), English (United Kingdom), 
+Estonian, Finnish, French, Galician, Greek, Hebrew, Hungarian, 
+Icelandic, Indonesian, Interlingue, Italian, Japanese, Kannada, 
+Latvian, Malay, Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 
+1500), Panjabi (Punjabi), Persian (Iran), Polish, Portuguese (Brazil),</p>
+
+    <p>Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, 
+Telugu, Thai, Turkish, Ukrainian, Urdu, Urdu (Pakistan), Uyghur, 
+Vietnamese,</p>
   </li>
-  <li>d/control:
-    <ul>
-      <li>R³: no.</li>
-      <li>Add homepage field.</li>
-    </ul>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000905.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000902.html">thunar 4.15.3 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-10-31">
+                31 Oct 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000902.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is a development release of Thunar aiming the upcoming release of
+Xfce 4.16.</p>
+
+<ul>
+  <li>No special treatment on "rename" for .desktop files (Issue #56)</li>
+  <li>Show full filename/extention for .desktop files (Issue #56)</li>
+  <li>Focus view when location selector is closed (Issue #420)</li>
+  <li>Thunar shows wrong content after outside operations (Issue #355)</li>
+  <li>Regression: Restore file menu section arrangement</li>
+  <li>Use same README.md structure than other xfce projects</li>
+  <li>Fall back to fast content type if regular is unavilable in file 
+attributes (!36)</li>
+  <li>Fix Regressions around menu bar spinner (Issue #394)</li>
+  <li>Fix error for custom date format in details view (issue #389)</li>
+  <li>Add support for transparency in gtk-themes (!31)</li>
+  <li>Regression: Apply accel keys only to current tab (Issue #386)</li>
+  <li>
+    <p>Translation Updates:
+Albanian, Arabic, Armenian, Armenian (Armenia), Basque, Bengali, 
+Catalan, Chinese (Hong Kong), Czech, Danish, Dutch, Eastern Armenian,</p>
+
+    <p>English (Australia), English (United Kingdom), Esperanto, Estonian, 
+Finnish, French, Greek, Hebrew, Hungarian, Icelandic, Indonesian, 
+Interlingue, Kazakh, Korean, Latvian, Malay, Norwegian Bokmål, 
+Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Persian 
+(Iran), Polish, Portuguese, Portuguese (Brazil), Romanian, Serbian, 
+Slovak, Spanish, Swedish, Telugu, Thai, Turkish, Ukrainian, Urdu, Urdu</p>
+
+    <p>(Pakistan), Uyghur, Vietnamese,</p>
   </li>
-  <li>d/dirs: Drop, no longer needed.</li>
-  <li>Update Standards-Version to 4.5.0.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.2-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000902.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -345,45 +449,46 @@ Russian, Serbian, Slovak, Slovenian, Spanish, Thai, Turkish, Ukrainian</p>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000897.html">xfce4-dict 0.8.4 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000901.html">thunar 1.8.16 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2020-10-15">
-                15 Oct 2020
+            <time class="post-date" datetime="2020-10-31">
+                31 Oct 2020
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000897.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000901.html" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p>This is a maintenance release featuring:</p>
+            <section class="post-content"><p>Bugfix release for the xfce-4.14 branch</p>
 
+<h1 id="1816">1.8.16</h1>
 <ul>
-  <li>Update URLs and use https where possible</li>
-  <li>Fix font size in speedreader (#3)</li>
-  <li>Added new icons and use reverse DNS file names</li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English
-(United Kingdom), Estonian, Finnish, French, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Italian, Japanese, Kazakh, Korean,
-Latvian, Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500),
-Polish, Portuguese, Russian, Serbian, Slovak, Slovenian, Spanish,
-Swedish, Thai, Turkish, Uighur, Ukrainian, Urdu, Urdu (Pakistan),
-Vietnamese</li>
+  <li>Add missing parameter to ThunarBrowserPokeDeviceFunc function</li>
+  <li>Fix error for custom date format in details view (issue #389)</li>
+  <li>Fix unavailable rubber banding in detailed view (Issue #326)</li>
+  <li>Ghost file ocasionally remains when dropping file into directory
+(Fixes #312)</li>
+  <li>
+    <p>Translation Updates:
+Albanian, Armenian, Armenian (Armenia), Basque, Belarusian, Chinese 
+(China), Chinese (Hong Kong), Croatian, Eastern Armenian, Esperanto, 
+Estonian, Finnish, French, Hebrew, Hungarian, Indonesian, Interlingue,</p>
+
+    <p>Italian, Kazakh, Korean, Lithuanian, Portuguese, Slovak, Swedish,</p>
+  </li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000897.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000901.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -392,119 +497,17 @@ Vietnamese</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000898.html">xfce4-cpufreq-plugin 1.2.2 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-10-15">
-                15 Oct 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000898.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>This is a maintenance release featuring:</p>
-
-<ul>
-  <li>Update URLs and copyright year</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Fix compilation with gcc-10</li>
-  <li>Update URLs from goodies.x.o to docs.x.o (Bug #16156)</li>
-  <li>s/http/https</li>
-  <li>Fix build with panel 4.15</li>
-  <li>Replace GtkStock buttons</li>
-  <li>Rename applet to plugin (Bug #15582)</li>
-  <li>Post release tag bump</li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Asturian, Basque, Belarusian,
-Bulgarian, Catalan, Chinese (China), Chinese (Taiwan), Croatian,
-Czech, Danish, Dutch, Eastern Armenian, English (Australia),
-English (United Kingdom), Finnish, French, Galician, German, Greek,
-Hebrew, Hungarian, Icelandic, Indonesian, Interlingue, Italian,
-Japanese, Korean, Lithuanian, Malay, Norwegian Bokmål,
-Occitan (post 1500), Polish, Portuguese, Portuguese (Brazil),
-Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai, Turkish,
-Uighur, Ukrainian</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000898.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000899.html">xfce4-appfinder 4.15.2 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-10-15">
-                15 Oct 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000899.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>Please note that this is a development release.</p>
-
-<ul>
-  <li>Add small delay before reloading menu tree (!6)</li>
-  <li>Clear entry's error icon and tooltip</li>
-  <li>Update copyright year</li>
-  <li>GitLab is the new bugtracker</li>
-  <li>Remove unnecessary code for unsupported glib versions</li>
-  <li>Remove padding from context menu</li>
-  <li>Fix memory leaks when sorting items</li>
-  <li>Update README.md</li>
-  <li>Apply light blue to 16px icon</li>
-  <li>Improved and simplified icons for better scaling</li>
-  <li>Add back git tag</li>
-  <li>Remove extra spaces in configure.ac.in so xfce-do-release works as
-expected</li>
-  <li>Translation Updates:
-Belarusian, Czech, Hindi, Indonesian, Slovak, Swedish, Thai</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-October/000899.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu1/changelog">blueman (2.1.3-2ubuntu1) groovy</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu2/changelog">blueman (2.1.3-2ubuntu2) hirsute</a></h1>
         </header>
         <header class="post-meta">
             
                 Emilia Torino
             
             
-            <time class="post-date" datetime="2020-10-13">
-                13 Oct 2020
+            <time class="post-date" datetime="2020-10-30">
+                30 Oct 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu2/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -512,10 +515,9 @@ Belarusian, Czech, Hindi, Indonesian, Slovak, Swedish, Thai</li>
         
         
             <section class="post-content"><ul>
-  <li>SECURITY UPDATE: privilege escalation on DhcpClient
+  <li>SECURITY UPDATE: Polkit-1 support disabled
     <ul>
-      <li>debian/patches/CVE-2020-15238.patch: pass object path instead of network      interface name to DhcpClient</li>
-      <li>CVE-2020-15238</li>
+      <li>debian/control: add libpolkit-agent-1-dev to build deps</li>
     </ul>
   </li>
 </ul>
@@ -523,46 +525,7 @@ Belarusian, Czech, Hindi, Indonesian, Slovak, Swedish, Thai</li>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-1/changelog">gimp (2.10.22-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Jeremy Bicha
-            
-            
-            <time class="post-date" datetime="2020-10-06">
-                06 Oct 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream release</li>
-  <li>Bump minimum gegl to 0.4.26</li>
-  <li>Drop build-Prefer-to-find-libwmf-using-pkg-config.patch:
-    <ul>
-      <li>Applied in new release</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu2/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -575,7 +538,7 @@ Belarusian, Czech, Hindi, Indonesian, Slovak, Swedish, Thai</li>
             <a class="newer-posts" href="/page51" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 52 of 70 </span>
+    <span class="page-number"> Page 52 of 71 </span>
      
         <a class="older-posts" href="/page53" title="Next Page">Older Posts &raquo;</a>
      

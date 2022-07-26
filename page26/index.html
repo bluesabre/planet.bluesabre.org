@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page25" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 26 of 70 </span>
+    <span class="page-number"> Page 26 of 71 </span>
      
         <a class="older-posts" href="/page27" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,304 +65,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001029.html">xfdashboard 0.9.2 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-04-08">
-                08 Apr 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001029.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>xfdashboard-0.9.2 "Gradients! Whoohoooo!" was released on 2021-04-08.</p>
-
-<p>This is a development release.</p>
-
-<ul>
-  <li>New feature: Enhanced new color class XfdashboardGradientColor
-to support also linear gradients besided solid colors
-(single colors) and path gradients. Added support to specify
-colors for XfdashboardGradientColor in CSS.</li>
-  <li>Background fill color of XfdashboardBackground as well as outline
-color of XfdashboardOutlineEffect do support all types of new
-color class XfdashboardGradientColor, i.e solid colors, linear
-gradients and path gradients</li>
-  <li>Fix failing to create texture for outlines because either width or
-height is zero (#8)</li>
-  <li>Fix visual bug in default theme drawing wrong fill and outlines
-corners at workspace selector</li>
-  <li>Fix not to draw outlines with rounded corners if background type
-has not set rounded corners like fill background has already checked
-for years</li>
-  <li>Improved algorithm to detect application and determine its desktop
-file (*.desktop) for X11 windows by checking for the X atom called
-"_GTK_APPLICATION_ID" at X11 window properties and at Linux also
-lookup executable file from /proc filesystem in application database.
-For *BSD unixes I need help!</li>
-  <li>Disabled applications-search-provider statistics as it uses a file
-instead of settings object or similar</li>
-  <li>Smaller bug-fixes</li>
-  <li>Clean-ups</li>
-  <li>More API documentation</li>
-  <li>Updated localizations:
-  es, eu, gl, lt, nb, pt_BR, sv, tr</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001029.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog">xubuntu-artwork (21.04.1) hirsute</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2021-04-07">
-                07 Apr 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[ Pasi Lallinaho ]</p>
-<ul>
-  <li>New wallpaper for Hirsute Hippo (LP: #1922905)</li>
-</ul>
-
-<p>[ Sean Davis ]</p>
-<ul>
-  <li>usr/share/plymouth/themes/xubuntu-logo/passw-dialog.png,    usr/share/plymouth/themes/xubuntu-logo/xubuntu-logo.script:
-    <ul>
-      <li>Replace password prompt with greybird-dark entry (LP: #1917062)</li>
-    </ul>
-  </li>
-  <li>debian/control:
-    <ul>
-      <li>Bump debhelper-compat to 13</li>
-      <li>Bump Standards-Version to 4.5.1</li>
-    </ul>
-  </li>
-  <li>debian/copyright:
-    <ul>
-      <li>Add copyright info for README.md and .github/ISSUE_TEMPLATE/config.yml</li>
-    </ul>
-  </li>
-  <li>debian/source/lintian-overrides:
-    <ul>
-      <li>Remove unused override testsuite-autopkgtest-missing</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog">gimp (2.10.22-4) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Simon McVittie
-            
-            
-            <time class="post-date" datetime="2021-04-03">
-                03 Apr 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload</li>
-</ul>
-
-<p>[ Laurent Bigonville ]</p>
-<ul>
-  <li>Drop debian/shlibs.local, not needed anymore.    This file has the adverse effect of lowering the required version of    libbabl-0.1-0. The library now ships a .symbols file with    Build-Depends-Package, so let dh_shlibs adjust the dependency version    automatically (Closes: #983568)</li>
-</ul>
-
-<p>[ Simon McVittie ]</p>
-<ul>
-  <li>d/p/app-Print-2-digit-LittleCMS-minor-versions-correctly.patch:    Print 2-digit lcms minor versions correctly. Related to #900819, #986192.</li>
-  <li>d/p/app-Don-t-second-guess-the-dependency-system.patch:    Don’t require lcms runtime version &gt;= compile-time version.    If no new symbols referenced by GIMP have been introduced (as is the    case when upgrading from 2.9 to 2.12~rc1), we only need a dependency    on version 2.9. (Closes: #900819, #986192)</li>
-  <li>d/p/*_hurd_ftbfs.patch: Add patch metadata</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001028.html">mousepad 0.5.4 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-04-02">
-                02 Apr 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001028.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New Features:
-    <ul>
-      <li>Add –line/-l and –column/-c number (#107, !83)</li>
-      <li>Port to GtkSourceView 4 (#55, #80, !10)</li>
-    </ul>
-  </li>
-  <li>Bug Fixes:
-    <ul>
-      <li>Delay request to scroll to cursor for the correct active view</li>
-      <li>Monitor hardlinks with glib 2.56.2 (#110, !82)</li>
-      <li>Transfer encoding from remote to primary instance (#109)</li>
-      <li>Prevent a crash when no language is found</li>
-      <li>Make window require attention when opening new tabs (#106, #93,
-!81)</li>
-      <li>Fix BOM array (!80)</li>
-      <li>Correctly initialize toolbar style combo box (#103)</li>
-      <li>Allow checking parent sources when looking up schema (#101)</li>
-      <li>Fix missing parameter to "select-all" signal (!79)</li>
-    </ul>
-  </li>
-  <li>Translation Updates:
-Hebrew, Indonesian, Spanish, Swedish</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001028.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.2-0ubuntu1/changelog">mate-calc (1.24.2-0ubuntu1) hirsute</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Martin Wimpress
-            
-            
-            <time class="post-date" datetime="2021-03-27">
-                27 Mar 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.2-0ubuntu1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream maintenance release.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.2-0ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.2-0ubuntu1/changelog">engrampa (1.24.2-0ubuntu1) hirsute</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Martin Wimpress
-            
-            
-            <time class="post-date" datetime="2021-03-27">
-                27 Mar 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.2-0ubuntu1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream maintenance release.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.2-0ubuntu1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.6-0ubuntu1/changelog">thunar (4.16.6-0ubuntu1) devel</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.2-0ubuntu1/changelog">gigolo (0.5.2-0ubuntu1) devel</a></h1>
         </header>
         <header class="post-meta">
             
                 Unit 193
             
             
-            <time class="post-date" datetime="2021-03-25">
-                25 Mar 2021
+            <time class="post-date" datetime="2021-04-30">
+                30 Apr 2021
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.6-0ubuntu1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.2-0ubuntu1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -376,7 +89,7 @@ Hebrew, Indonesian, Spanish, Swedish</li>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.6-0ubuntu1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.2-0ubuntu1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -385,139 +98,17 @@ Hebrew, Indonesian, Spanish, Swedish</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001027.html">gigolo 0.5.2 released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.2-0ubuntu1/changelog">exo (4.16.2-0ubuntu1) devel</a></h1>
         </header>
         <header class="post-meta">
             
-                Xfce Announcements
+                Unit 193
             
             
-            <time class="post-date" datetime="2021-03-24">
-                24 Mar 2021
+            <time class="post-date" datetime="2021-04-30">
+                30 Apr 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001027.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>A bugfix and translation update, a new icon, various cleanups.. thanks
-to all contributors !</p>
-
-<p>======</p>
-<ul>
-  <li>Update TODO</li>
-  <li>Refresh Glade file, drop unused tab labels (fixes #13)</li>
-  <li>move the logic setting GtkSpin port value to setup_for_type() (#11)</li>
-  <li>Use new icon in window titlebar</li>
-  <li>Fix compilation warnings</li>
-  <li>autoconf: Some updates</li>
-  <li>Only show an error dialog if the host field is visible/required</li>
-  <li>Remove capitalization from icon name</li>
-  <li>Update GenericName (#2)</li>
-  <li>Fix comment style.</li>
-  <li>Remove GSourceFunc casts</li>
-  <li>Update Makefile.am</li>
-  <li>Add gigolo.ui to POTFILES.in (Issue #6)</li>
-  <li>Added new icons following new style and reverse DNS format.</li>
-  <li>Add new README.md and update AM_INIT_AUTOMAKE</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Bug #16717: Move from exo-csource to xdt-csource</li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (Canada),
-Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål, Occitan
-(post 1500), Polish, Portuguese (Brazil), Portuguese, Russian,
-Serbian, Slovak, Slovenian, Spanish, Swedish, Telugu, Thai, Turkish,
-Ukrainian, Urdu (Pakistan), Urdu, Uyghur</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001027.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://simon.shimmerproject.org/2021/03/23/post-4-16-fatigue-and-whats-next/">Post 4.16 fatigue and what’s next</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Simon Steinbeiß
-            
-            
-            <time class="post-date" datetime="2021-03-23">
-                23 Mar 2021
-            </time>
-            <a href="https://simon.shimmerproject.org/2021/03/23/post-4-16-fatigue-and-whats-next/" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>After we successfully released Xfce 4.16 as an early Christmas gift to all users last year I personally fell into the typical &#8220;post release fatigue&#8221; (PRF). On the one hand I was exhausted, on the other hand that&#8217;s how far our plans had taken us so there were no clear next steps we had settled on (apart from taking a break and recharging :)).</p>
-<p>So what&#8217;s been going on since then&#8230;</p>
-<h3>Xfce 4.16 maintenance</h3>
-<p>First of all, we&#8217;ve done quite a few maintenance release of 4.16 to ensure it&#8217;s stability. We already provided lots of bugfix releases of 4.14 &#8211; some even very recently (<a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001014.html">Desktop</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001013.html">Appfinder</a>) &#8211; but it looks like 4.16 may end up being (at least: among) the best maintained Xfce release so far.</p>
-<p>Thunar is probably the active component with a 6th patch release being available already. Here goes an overview of all patch releases since 4.16.0 in December 2020:</p>
-<ul>
-<li>Thunar: <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000976.html">4.16.1</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000984.html">4.16.2</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001002.html">4.16.3</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001017.html">4.16.4</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001018.html">4.16.5</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001023.html">4.16.6</a></li>
-<li>Panel: <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000994.html">4.16.1</a>, <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-February/001008.html">4.16.2</a></li>
-<li>Xfwm4: <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000981.html">4.16.1</a></li>
-<li>Garcon: <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000985.html">4.16.1</a></li>
-<li>Appfinder: <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-January/000987.html">4.16.1</a></li>
-</ul>
-<h3>Developer documentation</h3>
-<p>In order to improve documentation for developers and make it more readily available we have started <a href="https://developer.xfce.org">developer.xfce.org.</a> For now this site hosts the API documentation of most relevant core components. This documentation is automatically kept up-to-date as part of our GitLab CI for the <a href="https://hub.docker.com/r/xfce/xfce-build">xfce/xfce-build Docker container</a> and re-deployed on every week based on the latest 4.16 release tags.</p>
-<p>Furthermore, we improved the shell-based helper scripts for developers, e.g. <a href="https://gitlab.xfce.org/xfce/xfce4-dev-tools/-/blob/master/helpers/xfce-build">xfce-build</a> (to locally run distcheck in the same Docker container used in our CI) with subcommands.</p>
-<h3>Task manager</h3>
-<p>I have fixed some bugs and done maintenance releases of the 1.4 series and started the 1.5 development series, which features a port of Task manager to Xfconf and Client-side decorations.</p>
-<p><img class="aligncenter size-full wp-image-373" src="http://simon.shimmerproject.org/wp-content/uploads/2021/03/taskman17.png" alt="" width="748" height="577" srcset="https://simon.shimmerproject.org/wp-content/uploads/2021/03/taskman17.png 748w, https://simon.shimmerproject.org/wp-content/uploads/2021/03/taskman17-300x231.png 300w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" /></p>
-<h3>New icon naming scheme</h3>
-<p>As we changed the icon names for all Xfce components during the 4.16 cycle, I also migrated some plugins to the new naming scheme.</p>
-<p>To briefly explain the rationale behind our change in 4.16: the previous names were highly inconsistent, overlapped with icons also used/shipped by other packages in distributions (so shipping our own icons with those &#8220;old&#8221; / &#8220;used&#8221; names would lead to unsolvable packaging conflicts). Especially the &#8220;standard&#8221; names like &#8220;preferences-desktop-*&#8221; would have been impossible to update and ship for us. In order to provide a consistent look and also to make it easier for icon theme maintainers to set up icons for Xfce we decided to follow the rDNS naming scheme for desktop files. The same naming scheme is already followed by Gnome, so it is fairly widespread in Gtk-based environments. Finally: previously no icon theme maintainer could even provide dedicated icons because the names overlapped and would also appear in other contexts or Desktop Environments.</p>
-<p>Being an icon theme maintainer myself, I understood that this would lead to work for others. <a href="https://twitter.com/bluesabredavis/status/1348617621990731781">Sean even created a script</a> to make it easier for everyone to update existing themes.</p>
-<h3>Plugin updates</h3>
-<p><img class="aligncenter size-full wp-image-369" src="http://simon.shimmerproject.org/wp-content/uploads/2021/03/xfce-load-plugins.png" alt="" width="443" height="145" srcset="https://simon.shimmerproject.org/wp-content/uploads/2021/03/xfce-load-plugins.png 443w, https://simon.shimmerproject.org/wp-content/uploads/2021/03/xfce-load-plugins-300x98.png 300w" sizes="(max-width: 443px) 85vw, 443px" /></p>
-<p>I have taken a look at the three more prominent &#8220;monitoring plugins&#8221; of Xfce, namely <a href="https://gitlab.xfce.org/panel-plugins/xfce4-cpugraph-plugin">CPU-graph</a>, <a href="https://gitlab.xfce.org/panel-plugins/xfce4-systemload-plugin">Systemload</a> and <a href="https://gitlab.xfce.org/panel-plugins/xfce4-netload-plugin">Netload</a>. I have created new icons for all three of them in a style consistent to the icons introduced in Xfce 4.16 and also ported Systemload to Xfconf.</p>
-<p><img class="aligncenter size-full wp-image-370" src="http://simon.shimmerproject.org/wp-content/uploads/2021/03/org.xfce_.panel_.weather.png" alt="" width="128" height="128" /><img class="aligncenter wp-image-371 size-medium" src="http://simon.shimmerproject.org/wp-content/uploads/2021/03/nodata-300x264.png" alt="" width="300" height="264" srcset="https://simon.shimmerproject.org/wp-content/uploads/2021/03/nodata-300x264.png 300w, https://simon.shimmerproject.org/wp-content/uploads/2021/03/nodata.png 552w" sizes="(max-width: 300px) 85vw, 300px" /></p>
-<p>I have also updated the Weather plugin quite a bit, adding a new icon, porting to Xfconf and improving the UX of the settings and forecast summary windows.</p>
-<p>Finally some of the plugins mentioned above now implement the xfce_dialog_show_help API, which creates a &#8220;Help&#8221; button linking to the plugin&#8217;s documentation. This has been made possible by <a href="https://gitlab.xfce.org/kevinbowen">Kev</a>, who ported the plugin documentation pages to <a href="https://docs.xfce.org/panel-plugins/start">docs.xfce.org</a> and harmonized them, where possible. He also helped with adding more of these &#8220;Help&#8221; buttons and we&#8217;ll probably continue updating our plugins in parallel to the 4.18 cycle to make it easier for users to find the corresponding online documentation.</p>
-<h3>What&#8217;s next</h3>
-<p>The next step for me will likely be to focus on kickstarting the <a href="https://wiki.xfce.org/releng/4.18/roadmap">4.18 cycle</a>, which is still in its planning phase.</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://simon.shimmerproject.org/2021/03/23/post-4-16-fatigue-and-whats-next/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001026.html">xfce4-battery-plugin 1.1.4 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-03-23">
-                23 Mar 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001026.html" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.2-0ubuntu1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -525,34 +116,340 @@ Ukrainian, Urdu (Pakistan), Urdu, Uyghur</li>
         
         
             <section class="post-content"><ul>
-  <li>Add help button to properties dialog</li>
-  <li>Drop subtitle from settings dialog</li>
-  <li>Fix labels alignment for very small panels</li>
-  <li>Fix compilation warnings</li>
-  <li>automake: INCLUDES -&gt; AM_CPPFLAGS</li>
-  <li>autoconf: Some updates</li>
-  <li>Remove unnecessary boxes</li>
-  <li>Remove GSourceFunc casts</li>
-  <li>Add new README.md, update AM_INIT_AUTOMAKE</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Update URLs from goodies.xfce.org to docs.xfce.org (Bug #16154)</li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (Canada),
-English (United Kingdom), Estonian, Finnish, French, Galician,
-German, Greek, Hebrew, Hungarian, Icelandic, Indonesian, Interlingue,
-Italian, Japanese, Kazakh, Korean, Latvian, Lithuanian, Malay,
-Norwegian Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Polish,
-Portuguese, Portuguese (Brazil), Russian, Serbian, Slovak, Slovenian,
-Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu (Pakistan),
-Uyghur, Uzbek, Uzbek (Latin), Vietnamese</li>
+  <li>New upstream release.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-March/001026.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.2-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001032.html">xfdashboard 0.9.3 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-04-26">
+                26 Apr 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001032.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>xfdashboard-0.9.3 "What have I done recently?" was released on
+2021-04-26.</p>
+
+<p>This is a development release.</p>
+
+<ul>
+  <li>New feature: New search provider plugin "recently used" to search
+through list of recently used files provided by GTK+ recent-used
+manager</li>
+  <li>Configuration and data files for application added to
+XfdashboardSettings and also added to plugins for plugin-specific
+configuration and data filesystem</li>
+  <li>Plugins can now use the debug infrastructure of libxfdashboard</li>
+  <li>Improved window placements in XfdashboardWindowsView by centering
+windows in last row in usused space</li>
+  <li>Removed last deprecated function which enables a full debug build
+with –enable-debug=full in configure script (#7)</li>
+  <li>Smaller bug-fixes</li>
+  <li>Clean-ups</li>
+  <li>A hugh amount of new API documentation</li>
+  <li>Updated translations:
+be, bg, ca, da, de, el, es, et, eu, fr, gl, he, id, it, ja, ko, lt,
+nb, nl, pl, pt, pt_BR, ru, sl, sq, sr, sv, tr, zh_CN</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001032.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://bluesabre.org/2021/04/24/whats-new-april-2021/">What's New? April 2021</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-04-24">
+                24 Apr 2021
+            </time>
+            <a href="https://bluesabre.org/2021/04/24/whats-new-april-2021/" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><img src="https://images.unsplash.com/photo-1560258018-c7db7645254e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwxMTc3M3wwfDF8c2VhcmNofDR8fHNwcmluZ3xlbnwwfHx8fDE2MTkyNjc1Mzk&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=2000" alt="What&apos;s New? April 2021"><p>This month has been one of my busiest in quite some time. With Xubuntu 21.04 arriving earlier this week, we&apos;ve been pushing to test and land fixes and translations. Since there weren&apos;t any respins of the final image, we didn&apos;t have do repeat tests which saved a tremendous amount of time. I&apos;m also continuing to use and hack on elementary which has been a great deal of fun. But before all that...</p><h2 id="ghost-40">Ghost 4.0</h2><p>Oh hey, a brand new Ghost release. I was going to write a couple days sooner, but when I see an update notification, I go for it! Ghost 4.0 is a massive release with <a href="https://ghost.org/changelog/4/">tons of new features</a>. The standout features to me are the new dashboard, email newsletters, and performance improvements. Here&apos;s my thoughts...</p><p>The new dashboard seems to prioritize membership and revenue, so I&apos;m not sure how much use I&apos;ll get out of it. I currently have sponsorship platforms on <a href="https://github.com/sponsors/bluesabre">GitHub</a>, <a href="https://www.patreon.com/bluesabre">Patreon</a>, and <a href="https://paypal.me/bluesabre">PayPal</a>. Would you prefer being able to sponsor me on my website instead? Chime in in the comments!</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/04/ghost-dashboard.png" class="kg-image" alt="What&apos;s New? April 2021" loading="lazy" width="1257" height="965" srcset="https://bluesabre.org/content/images/size/w600/2021/04/ghost-dashboard.png 600w, https://bluesabre.org/content/images/size/w1000/2021/04/ghost-dashboard.png 1000w, https://bluesabre.org/content/images/2021/04/ghost-dashboard.png 1257w" sizes="(min-width: 720px) 720px"><figcaption>The new Ghost dashboard. If you&apos;re not monetizing your content, there&apos;s not much here for now.</figcaption></figure><p>Email newsletters are now built into Ghost. You may have noticed a few new &quot;Subscribe&quot; buttons and sections on the website... these are that. If you subscribe, you&apos;ll automatically get an email of each new post. With how infrequently I write, I can guarantee that your inbox won&apos;t become cluttered because of me, so go ahead and subscribe. If I start writing more... well, I&apos;m sorry. &#x1F60F;&#xFE0F;</p><p>Performance improvements including automatically responsive and lazy-loading images, improved requests-per-second, and reduced latency sound like a nice overall improvement. I already worked hard at speeding up my site with optimized images and caching, so I&apos;m excited to see just how much faster it is going forward.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/04/lighthouse.png" class="kg-image" alt="What&apos;s New? April 2021" loading="lazy" width="961" height="184" srcset="https://bluesabre.org/content/images/size/w600/2021/04/lighthouse.png 600w, https://bluesabre.org/content/images/2021/04/lighthouse.png 961w" sizes="(min-width: 720px) 720px"><figcaption>There&apos;s some work to do, but I&apos;ll take it! Source: https://web.dev/measure/</figcaption></figure><p><a href="https://ghost.org/docs/update/">Upgrading to Ghost 4.0</a> was trivially easy. It&apos;s still not quite as easy as upgrading a Wordpress instance&#x2013;you have to use the CLI. But the commands are simple and fast. I upgraded to the latest 3.x release, and then on to the 4.x release with no issues whatsoever. For the latest theme features, I pulled the latest Casper theme changes into the Mouser theme and made a few minor adjustments. You can pick up Mouser 4.0.4 on <a href="https://github.com/bluesabre/Mouser/releases/tag/mouser-v4.0.4">GitHub</a>.</p><p>As an aside, has Ghost always had integration with Unsplash? I wasn&apos;t quite sure what to do for the feature image this time around, but then saw the Unsplash button and... <a href="https://unsplash.com/photos/CgyrwbE6Hm4">success</a>. &quot;green grass field sunset scenery photo&quot; by Aniket Bhattacharya captured April... at least in my mind and in the allergies I suffer from.</p><h2 id="xubuntu-2104-hirsute-hippo">Xubuntu 21.04 &quot;Hirsute Hippo&quot;</h2><p>Xubuntu 21.04 <a href="https://xubuntu.org/news/xubuntu-21-04-released/">is here</a>! This release was one of our largest in quite some time. The latest release includes Xfce 4.16, numerous UX improvements, some packageset updates, a brand new minimal install option on the main image, and many translation updates. Lots of individual contributors came together to make this release a reality, and it really shows. I&apos;m working on a overly descriptive and enthusiastic post for this, you can expect it sometime in the next day or so.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/04/xubuntu_21.04.png" class="kg-image" alt="What&apos;s New? April 2021" loading="lazy" width="1024" height="768" srcset="https://bluesabre.org/content/images/size/w600/2021/04/xubuntu_21.04.png 600w, https://bluesabre.org/content/images/size/w1000/2021/04/xubuntu_21.04.png 1000w, https://bluesabre.org/content/images/2021/04/xubuntu_21.04.png 1024w" sizes="(min-width: 720px) 720px"><figcaption>Xubuntu 21.04 &quot;Hirsute Hippo&quot; includes a clean and attractive desktop.</figcaption></figure><h2 id="elementary-development-update">elementary Development Update</h2><p>I&apos;ve mainly been hacking on the Sound Indicator recently, adding and expanding on the input and output device selectors and improving MPRIS support. Meanwhile, I&apos;ve been picking up some useful knowledge with Vala and more obscure Gtk/GLib components.</p><p>Early this month I finished <a href="https://github.com/elementary/wingpanel-indicator-sound/pull/187">adding support</a> for selecting audio devices in the Sound Indicator. This was a continuation of a previous attempt by another contributor who laid a solid foundation to build on. After a few adjustments, this was merged in! I&apos;ve been iterating and improving on this integration since, and I think you&apos;re going to enjoy it in elementary 6!</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/04/sound-indicator.png" class="kg-image" alt="What&apos;s New? April 2021" loading="lazy" width="344" height="430"><figcaption>Input and output device selection in the Sound Indicator.</figcaption></figure><p>I&apos;ve been working on a few other improvements as well. Temporary MPRIS players, such as those created by Chromium and Firefox when playing YouTube content, will <a href="https://github.com/elementary/wingpanel-indicator-sound/pull/196">no longer stick around</a> once playback is over. Once merged, the Sound Indicator will <a href="https://github.com/elementary/wingpanel-indicator-sound/pull/192">remember previously-used devices</a> while also keeping the list of options tidy. I&apos;ve been chasing an interesting issue where the Sound Indicator <a href="https://github.com/elementary/wingpanel-indicator-sound/pull/195">doesn&apos;t quite reconnect</a> after it&apos;s updated, and I think I&apos;m close to having it fixed.</p><h2 id="onward">Onward!</h2><p>I&apos;ll be finishing out the month with some writing about Xubuntu 21.04, planning for Xubuntu 21.10 &quot;<a href="https://www.omgubuntu.co.uk/2021/04/ubuntu-21-10-codename-revealed">Impish Indri</a>&quot;, reviewing some <a href="https://gitlab.xfce.org/apps/catfish/-/merge_requests">merge requests for Catfish</a>, and doing some additional elementary development! I&apos;m having fun and feeling pretty motivated these days, so look forward to some more updates soon. Thanks for reading!</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/2021/04/24/whats-new-april-2021/">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.04.2/changelog">xubuntu-default-settings (21.04.2) hirsute</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-04-17">
+                17 Apr 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.04.2/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>usr/share/xubuntu/applications/po/xds-desktop-files.pot:
+    <ul>
+      <li>Make the new Sound entry translateable</li>
+    </ul>
+  </li>
+  <li>Translation updates: ar, de, en, es, fr, hi, hu, id, it, ko, lt,    nl, oc, pl, pt, sk, tr, ur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.04.2/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.237/changelog">xubuntu-meta (2.237) hirsute</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-04-16">
+                16 Apr 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.237/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Refreshed dependencies</li>
+  <li>Moved gnome-software to desktop (LP: #1922157)</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.237/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4~20.10.1/changelog">lightdm (1.30.0-0ubuntu4~20.10.1) groovy</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Gunnar Hjalmarsson
+            
+            
+            <time class="post-date" datetime="2021-04-12">
+                12 Apr 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4~20.10.1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>debian/patches/fix-guest-session-ICEauthority-error.patch:
+    <ul>
+      <li>Fixes AppArmor issue which prevented access to the guest session      feature in e.g. MATE (LP: #1921655). Thanks to Jonas Wiegert for      the solution!</li>
+    </ul>
+  </li>
+  <li>debian/patches/dont-turn-format-warnings-into-errors.patch:
+    <ul>
+      <li>Works around FTBFS on s390x with gcc versions higher than gcc-9.</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4~20.10.1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001031.html">xfce4-settings 4.16.1 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-04-12">
+                12 Apr 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001031.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>display: Fix scale by rounding (Fixes #258)</li>
+  <li>Drop preferences-desktop-default-applications icon name</li>
+  <li>Also allocate terminating element</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Asturian, Basque, Belarusian,
+Belarusian (Tarask), Bengali, Bulgarian, Catalan, Chinese (China),
+Chinese (Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (Canada),
+English (United Kingdom), Estonian, Finnish, French, Galician,
+German, Greek, Hebrew, Hungarian, Icelandic, Indonesian, Interlingue,
+Italian, Japanese, Kabyle, Kazakh, Korean, Lithuanian, Malay,
+Norwegian Bokmål, Norwegian Nynorsk, Occitan (post 1500), Polish,
+Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
+Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001031.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001030.html">exo 4.16.2 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-04-12">
+                12 Apr 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001030.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Debug release on the 4.16 branch in order to fix a critical bug which
+occurs when assertions are enabled in gtk packages.</p>
+
+<ul>
+  <li>Properly initialize GdkRectangle to prevent crash (Issue #57)</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-April/001030.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4/changelog">lightdm (1.30.0-0ubuntu4) hirsute</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Gunnar Hjalmarsson
+            
+            
+            <time class="post-date" datetime="2021-04-11">
+                11 Apr 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>debian/patches/fix-guest-session-ICEauthority-error.patch:
+    <ul>
+      <li>Fixes AppArmor issue which prevented access to the guest session      feature in e.g. MATE (LP: #1921655). Thanks to Jonas Wiegert for      the solution!</li>
+    </ul>
+  </li>
+  <li>debian/patches/Glibc-2.33-fix.patch:
+    <ul>
+      <li>Cherry picked from upstream to prevent FTBFS</li>
+    </ul>
+  </li>
+  <li>debian/patches/dont-turn-format-warnings-into-errors.patch:
+    <ul>
+      <li>Works around FTBFS on s390x with gcc versions higher than gcc-9.</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -565,7 +462,7 @@ Uyghur, Uzbek, Uzbek (Latin), Vietnamese</li>
             <a class="newer-posts" href="/page25" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 26 of 70 </span>
+    <span class="page-number"> Page 26 of 71 </span>
      
         <a class="older-posts" href="/page27" title="Next Page">Older Posts &raquo;</a>
      

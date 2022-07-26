@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page39" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 40 of 70 </span>
+    <span class="page-number"> Page 40 of 71 </span>
      
         <a class="older-posts" href="/page41" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,44 +65,85 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000964.html">xfce4-wavelan-plugin 0.6.2 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000967.html">parole 4.15.0 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2020-12-24">
-                24 Dec 2020
+            <time class="post-date" datetime="2020-12-27">
+                27 Dec 2020
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000964.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000967.html" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><ul>
-  <li>Fix build with panel 4.15</li>
-  <li>Fix ISO C90 forbids mixed declarations and code</li>
-  <li>Update configure.ac.in syntax and enable debug when building from git</li>
-  <li>Create README.md. Update configure.ac.in</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Update .gitignore, fix configure scripts</li>
-  <li>Update URLs from goodies.x.o to docs.x.o (Bug #16181)</li>
-  <li>Make build less verbose</li>
-  <li>s/http/https</li>
-  <li>Translation Updates:
-Albanian, Armenian (Armenia), Belarusian, Bulgarian, Chinese
-(Taiwan), Eastern Armenian, English (Canada), French, Galician,
-Greek, Hebrew, Hungarian, Polish, Slovak, Slovenian, Spanish,
-Turkish, Uyghur</li>
+            <section class="post-content"><p>This is a development release aimed at testers and translators. Parole
+4.16.0 should be expected in the coming weeks.</p>
+
+<p>Playlist Improvements:</p>
+<ul>
+  <li>Playlist is now an in-window popover instead of a slide-out panel</li>
+  <li>Shuffle functionality now utilizes a sort filter instead of randomly
+selecting the next track, making it possible makeing the playback
+history more accurate (#32)</li>
 </ul>
+
+<p>DVD Support:</p>
+<ul>
+  <li>Added a menu option to activate the subpicture menu</li>
+  <li>DVD chapter selection from the playlist is functional again</li>
+  <li>The DVD menu will now automatically load if playback does not start
+successfully</li>
+</ul>
+
+<p>Dialog Appearance Improvements:
+Each of the dialogs were ported to CSD with some cleanup and default
+buttons marked as "suggested". The following dialogs had some additional
+improvements:</p>
+<ul>
+  <li>Go To Position: Timestamp inputs changed to vertical orientation for
+better clock-like appearance</li>
+  <li>Keyboard Shortcuts: Adjusted to "always-center" positioning since
+transient positioning failed</li>
+  <li>Open File: Spinner configured as the FileChooser "extra" widget</li>
+  <li>Open Location: Removed some duplicated text</li>
+  <li>Plugins: Rearranged the plugins manager, and moved credits to a
+per-plugin About dialog</li>
+  <li>Save Playlist: File type panel replaced with a combobox that also
+filters the FileChooser</li>
+</ul>
+
+<p>General:</p>
+<ul>
+  <li>Added basic GitLab pipeline</li>
+  <li>Added new icon and icon name "org.xfce.parole"</li>
+  <li>Added README.md</li>
+  <li>Fixed distcheck builds with intltool 0.51.0</li>
+  <li>Fixed full-debug builds with GLib 2.35+</li>
+  <li>Fixed missing-prototypes errors</li>
+  <li>Player controls are no longer hidden while the sound popover is open</li>
+  <li>Selecting an option on the "Stream is taking too long" dialog will now
+dismiss the dialog</li>
+  <li>Sort POTFILES.in to make it easier to review</li>
+</ul>
+
+<p>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
+Eastern Armenian, English (Australia), Estonian, Galician, German,
+Greek, Hebrew, Hungarian, Icelandic, Indonesian, Interlingue, Italian,
+Japanese, Kazakh, Lithuanian, Occitan (post 1500), Polish, Portuguese,
+Slovak, Slovenian, Spanish, Swedish, Telugu, Turkish, Ukrainian, Uyghur</p>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000964.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000967.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -111,17 +152,17 @@ Turkish, Uyghur</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000962.html">xfce4-smartbookmark-plugin 0.5.2 released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.8.0-0ubuntu1/changelog">xfdashboard (0.8.0-0ubuntu1) devel</a></h1>
         </header>
         <header class="post-meta">
             
-                Xfce Announcements
+                Unit 193
             
             
-            <time class="post-date" datetime="2020-12-24">
-                24 Dec 2020
+            <time class="post-date" datetime="2020-12-26">
+                26 Dec 2020
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000962.html" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.8.0-0ubuntu1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -129,25 +170,16 @@ Turkish, Uyghur</li>
         
         
             <section class="post-content"><ul>
-  <li>Fix build with panel 4.15</li>
-  <li>Fix ISO C90 forbids mixed declarations and code</li>
-  <li>Update configure.ac.in syntax</li>
-  <li>Create README.md. Update configure.ac.in</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Update URLs from goodies.x.o to docs.x.o (Bug #16176)</li>
-  <li>Fix build with panel 4.15</li>
-  <li>Make build less verbose</li>
-  <li>s/http/https</li>
-  <li>Translation Updates:
-Albanian, Belarusian, Bulgarian, Eastern Armenian, English (Canada),
-Estonian, Galician, Hebrew, Hindi, Icelandic, Slovak, Slovenian,
-Spanish, Turkish, Uyghur</li>
+  <li>New upstream version 0.8.0.</li>
+  <li>d/libxfdashboard0.symbols: Update for new version.</li>
+  <li>d/control: Update Vcs-* fields for new location.</li>
+  <li>Update Standards-Version to 4.5.1.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000962.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.8.0-0ubuntu1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -156,17 +188,17 @@ Spanish, Turkish, Uyghur</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000965.html">xfce4-datetime-plugin 0.8.1 released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-xkb-plugin/xfce4-xkb-plugin_0.8.2-1/changelog">xfce4-xkb-plugin (1:0.8.2-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Xfce Announcements
+                Unit 193
             
             
-            <time class="post-date" datetime="2020-12-24">
-                24 Dec 2020
+            <time class="post-date" datetime="2020-12-26">
+                26 Dec 2020
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000965.html" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-xkb-plugin/xfce4-xkb-plugin_0.8.2-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -174,26 +206,42 @@ Spanish, Turkish, Uyghur</li>
         
         
             <section class="post-content"><ul>
-  <li>Fix build with panel 4.15</li>
-  <li>Update configure.ac.in syntax and enable debug when building from git</li>
-  <li>Remove GSourceFunc casts</li>
-  <li>Fix font size (#30)</li>
-  <li>Add new README.md and update AM_INIT_AUTOMAKE</li>
-  <li>Add basic GitLab pipeline</li>
-  <li>Update URLs from goodies.x.o to docs.x.o (Bug #16159)</li>
-  <li>s/http/https</li>
-  <li>Update .gitignore</li>
-  <li>Make build less verbose</li>
-  <li>Translation Updates:
-Albanian, Armenian (Armenia), Belarusian, Eastern Armenian, English
-(Canada), Estonian, Galician, Hebrew, Interlingue, Persian (Iran),
-Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Bump debhelper from old 10 to 12.</li>
+  <li>Set debhelper-compat version in Build-Depends.</li>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>xfce4-xkb-plugin: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>d/watch: Update for mirrorbit and use uscan special strings.</li>
+  <li>New upstream version 0.8.2.
+    <ul>
+      <li>Fix build with panel 4.15 (Closes: #978217)</li>
+      <li>Drop patch applied upstream.</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Update ‘Homepage’ field, goodies.xfce → docs.xfce.</li>
+      <li>R³: no.</li>
+    </ul>
+  </li>
+  <li>Update Standards-Version to 4.5.1.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000965.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-xkb-plugin/xfce4-xkb-plugin_0.8.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -202,17 +250,17 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.16.0-1/changelog">xfwm4 (4.16.0-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.2-1/changelog">xfce4-wavelan-plugin (0.6.2-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Yves-Alexis Perez
+                Unit 193
             
             
-            <time class="post-date" datetime="2020-12-23">
-                23 Dec 2020
+            <time class="post-date" datetime="2020-12-26">
+                26 Dec 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.16.0-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.2-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -220,132 +268,45 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
         
         
             <section class="post-content"><ul>
-  <li>d/watch: use version 4 and follow latest branch</li>
-  <li>New upstream version 4.16.0</li>
-  <li>d/control: update standards version to 4.5.1</li>
-  <li>d/control: update Homepage</li>
-  <li>d/control: add version to xfce4-dev-tools b-dep for 4.16</li>
-  <li>Upload to unstable</li>
+  <li>Team upload.</li>
 </ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.16.0-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
 
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdesktop4/xfdesktop4_4.16.0-1/changelog">xfdesktop4 (4.16.0-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2020-12-23">
-                23 Dec 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdesktop4/xfdesktop4_4.16.0-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>d/control: drop Lionel from uploaders, thanks!</li>
-  <li>New upstream version 4.16.0</li>
-  <li>d/control: update standards version to 4.5.1</li>
-  <li>d/control: update Homepage</li>
-  <li>d/control: version xfce4-dev-tools b-dep for 4.16</li>
-  <li>Upload to unstable</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdesktop4/xfdesktop4_4.16.0-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.16.0-2/changelog">xfconf (4.16.0-2) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2020-12-23">
-                23 Dec 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.16.0-2/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>d/control: version xfce4-dev-tool build-dep to 4.16</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.16.0-2/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4/xfce4_4.16/changelog">xfce4 (4.16) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2020-12-23">
-                23 Dec 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4/xfce4_4.16/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[ Debian Janitor ]</p>
+<p>[ Debian Janitor ]</p>
 <ul>
   <li>Trim trailing whitespace.</li>
-  <li>Bump debhelper from old 11 to 12.</li>
-  <li>Fix day-of-week for changelog entries 4.0.0.final-1,    4.0.0+cvs.20021127-1.</li>
+  <li>Use secure URI in Homepage field.</li>
   <li>Update standards version to 4.4.1, no changes needed.</li>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>xfce4-wavelan-plugin: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
+  <li>Update standards version to 4.5.0, no changes needed.</li>
 </ul>
 
-<p>[ Yves-Alexis Perez ]</p>
+<p>[ Unit 193 ]</p>
 <ul>
-  <li>update dependencies for Xfce 4.16</li>
-  <li>d/control: update standards version to 4.5.1</li>
+  <li>d/watch: Update for mirrorbit and use uscan special strings.</li>
+  <li>New upstream version 0.6.2.
+    <ul>
+      <li>Fix build with panel 4.15 (Closes: #978184)</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 12.</li>
+      <li>Drop libxml-parser-perl and libxml2-dev from Build-Depends.</li>
+      <li>Update ‘Homepage’ field, goodies.xfce → docs.xfce.</li>
+      <li>R³: no.</li>
+    </ul>
+  </li>
+  <li>Update Standards-Version to 4.5.1.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4/xfce4_4.16/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -354,17 +315,17 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_0.8.10-1/changelog">xfce4-terminal (0.8.10-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-smartbookmark-plugin/xfce4-smartbookmark-plugin_0.5.2-1/changelog">xfce4-smartbookmark-plugin (0.5.2-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Yves-Alexis Perez
+                Unit 193
             
             
-            <time class="post-date" datetime="2020-12-23">
-                23 Dec 2020
+            <time class="post-date" datetime="2020-12-26">
+                26 Dec 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_0.8.10-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-smartbookmark-plugin/xfce4-smartbookmark-plugin_0.5.2-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -372,18 +333,38 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
         
         
             <section class="post-content"><ul>
-  <li>New upstream version 0.8.10</li>
-  <li>d/control: update standards version to 4.5.1</li>
-  <li>d/control: version xfce4-dev-tools b-deps for 4.16</li>
-  <li>d/control: add build-dep on gtk-doc-tools</li>
-  <li>d/docs: README has been renamed to README.md</li>
-  <li>d/watch: update to standards version 4</li>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>xfce4-smartbookmark-plugin: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>d/watch: Update for mirrorbit and use uscan special strings.</li>
+  <li>New upstream version 0.5.2.</li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 12.</li>
+      <li>Drop libgtk2.0-dev, libxml-parser-perl, libxml2-dev,      and libxt-dev from Build-Depends.</li>
+      <li>Update ‘Homepage’ field, goodies.xfce → docs.xfce.</li>
+      <li>R³: no.</li>
+    </ul>
+  </li>
+  <li>d/docs: Follow rename, README → README.md.</li>
+  <li>Update Standards-Version to 4.5.1.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_0.8.10-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-smartbookmark-plugin/xfce4-smartbookmark-plugin_0.5.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -392,17 +373,17 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.8-1/changelog">xfce4-screenshooter (1.9.8-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mount-plugin/xfce4-mount-plugin_1.1.4-1/changelog">xfce4-mount-plugin (1.1.4-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Yves-Alexis Perez
+                Unit 193
             
             
-            <time class="post-date" datetime="2020-12-23">
-                23 Dec 2020
+            <time class="post-date" datetime="2020-12-26">
+                26 Dec 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.8-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mount-plugin/xfce4-mount-plugin_1.1.4-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -410,17 +391,45 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
         
         
             <section class="post-content"><ul>
-  <li>New upstream version 1.9.8</li>
-  <li>d/control: update build-deps for Xfce 4.16</li>
-  <li>d/control: update standards version to 4.5.1</li>
-  <li>d/docs: README has been renamed to README.md</li>
-  <li>d/watch: update to standards version 4</li>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Trim trailing whitespace.</li>
+  <li>Bump debhelper from old 10 to 12.</li>
+  <li>Set debhelper-compat version in Build-Depends.</li>
+  <li>Set upstream metadata fields: Name (from ./configure).</li>
+  <li>Update standards version to 4.4.1, no changes needed.</li>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>xfce4-mount-plugin: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>d/watch: Update for mirrorbit and use uscan special strings.</li>
+  <li>New upstream version 1.1.4.
+    <ul>
+      <li>Fix build with panel 4.15 (Closes: #978213)</li>
+    </ul>
+  </li>
+  <li>d/control, d/copyright: Update ‘Homepage’ field, goodies.xfce → docs.xfce.</li>
+  <li>d/control:
+    <ul>
+      <li>Drop libstartup-notification0-dev, libxml-parser-perl      and libxml2-dev from Build-Depends..</li>
+      <li>R³: no.</li>
+    </ul>
+  </li>
+  <li>Update Standards-Version to 4.5.1.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.8-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mount-plugin/xfce4-mount-plugin_1.1.4-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -429,17 +438,17 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_4.16.0-1/changelog">xfce4-power-manager (4.16.0-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.5.0-1/changelog">xfce4-whiskermenu-plugin (2.5.0-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Yves-Alexis Perez
+                Unit 193
             
             
-            <time class="post-date" datetime="2020-12-23">
-                23 Dec 2020
+            <time class="post-date" datetime="2020-12-24">
+                24 Dec 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_4.16.0-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.5.0-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -447,18 +456,186 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
         
         
             <section class="post-content"><ul>
-  <li>New upstream version 4.16.0</li>
-  <li>d/control: version xfce4-dev-tools b-dep for 4.16</li>
-  <li>d/control: update standards version to 4.5.1</li>
-  <li>d/xfce4-power-information.1 removed (binary is gone)</li>
-  <li>d/watch: use standards version 4</li>
-  <li>Upload to unstable</li>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Apply multi-arch hints. + xfce4-whiskermenu-plugin: Add Multi-Arch: same.</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream version 2.5.0.</li>
+  <li>Update Standards-Version to 4.5.1.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_4.16.0-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.5.0-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-datetime-plugin/xfce4-datetime-plugin_0.8.1-1/changelog">xfce4-datetime-plugin (0.8.1-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-12-24">
+                24 Dec 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-datetime-plugin/xfce4-datetime-plugin_0.8.1-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Debian Janitor ]</p>
+<ul>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>xfce4-datetime-plugin: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>New upstream version 0.8.1.</li>
+  <li>d/control:
+    <ul>
+      <li>Bump requirement on xfce4-dev-tools.</li>
+      <li>Update ‘Homepage’ field, goodies.xfce → docs.xfce.</li>
+      <li>R³: no.</li>
+    </ul>
+  </li>
+  <li>d/watch:
+    <ul>
+      <li>Update for upstream’s move to mirrorbit.</li>
+      <li>Use uscan special strings.</li>
+    </ul>
+  </li>
+  <li>Update Standards-Version to 4.5.1.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-datetime-plugin/xfce4-datetime-plugin_0.8.1-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000963.html">xfce4-xkb-plugin 0.8.2 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-12-24">
+                24 Dec 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000963.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Fix build with panel 4.15</li>
+  <li>Update configure.ac.in syntax</li>
+  <li>scale alternate layout dots to be visible on hi dpi displays</li>
+  <li>Add basic GitLab pipeline</li>
+  <li>Minor build updates</li>
+  <li>Update URLs from goodies.x.o to docs.x.o (Bug #16184)</li>
+  <li>Update .gitignore</li>
+  <li>s/http/https</li>
+  <li>Update Myanmar flag</li>
+  <li>Improve spacing (Bug #14684)</li>
+  <li>Fix compilation warnings</li>
+  <li>Add -lX11 to libxkb_la_LIBADD</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Asturian, Basque, Belarusian,
+Bulgarian, Catalan, Chinese (China), Chinese (Taiwan), Croatian,
+Czech, Danish, Dutch, Eastern Armenian, English (Australia), English
+(Canada), English (United Kingdom), Estonian, Finnish, French,
+Galician, Georgian, German, Greek, Hebrew, Hungarian, Icelandic,
+Indonesian, Interlingue, Italian, Japanese, Kazakh, Korean, Latvian,
+Lithuanian, Malay, Norwegian Bokmål, Occitan (post 1500), Polish,
+Portuguese, Portuguese (Brazil), Romanian, Russian, Serbian, Slovak,
+Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, Urdu
+(Pakistan), Uyghur, Uzbek, Uzbek (Latin)</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000963.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000966.html">xfce4-whiskermenu-plugin 2.5.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-12-24">
+                24 Dec 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000966.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Add option to show all applications by default. (Issue #4)</li>
+  <li>Rearrange sidebar buttons to match default category. (Issue #9)</li>
+  <li>Show panel button title as tooltip in icon-only mode. (Issue #12)</li>
+  <li>Always sort top-level categories.</li>
+  <li>Vertically center contents of header.</li>
+  <li>Use new Xfce action icons.</li>
+  <li>Use new desktop ids for default programs.</li>
+  <li>Rewrite to hide menu on focus out.</li>
+  <li>Refactor code to use new Xfce functions.</li>
+  <li>Refactor building translations.</li>
+  <li>Translation updates: Bulgarian, Chinese (China), Chinese (Taiwan),
+Croatian, Czech, Danish, Dutch, Esperanto, French, Galician,
+German, Italian, Korean, Lithuanian, Malay, Polish, Portuguese,
+Portuguese (Brazil), Slovak, Spanish, Swedish, Turkish.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000966.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -471,7 +648,7 @@ Slovak, Spanish, Turkish, Uyghur, Uzbek</li>
             <a class="newer-posts" href="/page39" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 40 of 70 </span>
+    <span class="page-number"> Page 40 of 71 </span>
      
         <a class="older-posts" href="/page41" title="Next Page">Older Posts &raquo;</a>
      

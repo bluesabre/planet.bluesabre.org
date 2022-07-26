@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page21" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 22 of 70 </span>
+    <span class="page-number"> Page 22 of 71 </span>
      
         <a class="older-posts" href="/page23" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,17 +65,167 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001050.html">catfish 4.16.1 released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.1/changelog">xubuntu-default-settings (21.10.1) impish</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-07-31">
+                31 Jul 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>debian/xubuntu-default-settings.gsettings-override:
+    <ul>
+      <li>Enable rhythmbox alternative-toolbar plugin</li>
+      <li>Replace obsolete ‘Both’ setting for org.xfce.mousepad.state.search</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/thunar.xml:
+    <ul>
+      <li>Enable full path in Thunar titlebar</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml:
+    <ul>
+      <li>Remove obsolete Super+{1,3,4} keyboard shortcuts</li>
+    </ul>
+  </li>
+  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-screensaver.xml:
+    <ul>
+      <li>Set ‘onboard -e’ as default on-screen keyboard command</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001054.html">mousepad 0.5.6 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2021-07-20">
-                20 Jul 2021
+            <time class="post-date" datetime="2021-07-31">
+                31 Jul 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001050.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001054.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New Features:</li>
+  <li>Add session backup and restore</li>
+  <li>Remember windows and tabs (#21, !108)</li>
+  <li>Handle unsaved documents (#32, !109)</li>
+  <li>DE session support (#3, !110)</li>
+  <li>Extend the use of recent history (!107)</li>
+  <li>Add use of <code class="language-plaintext highlighter-rouge">GtkSourceView:smart-backspace</code> (!101)</li>
+  <li>
+    <p>Add a "Move Words" action (!100)</p>
+  </li>
+  <li>Appearance Changes:</li>
+  <li>Add a setting to control tab expansion (#100)</li>
+  <li>Prefs dialog: Substitute CSD for status bar visibility</li>
+  <li>Add a "File" tab to the prefs dialog (!108)</li>
+  <li>Make search input fields less flickery (!104)</li>
+  <li>Allow saving non-existent, empty but named file (#120, !103)</li>
+  <li>Enable "Save" action for read-only documents (#126, !103)</li>
+  <li>Make "Find as you type" an option (!102)</li>
+  <li>
+    <p>Reveal hidden setting "indent-on-tab" (!101)</p>
+  </li>
+  <li>Code Refactoring:</li>
+  <li>
+    <p>A review of duplicated view-related actions (#127)</p>
+  </li>
+  <li>Tests:</li>
+  <li>Add a test plugin to monitor application state (!105)</li>
+  <li>
+    <p>Add a test script for Mousepad (!99)</p>
+  </li>
+  <li>Bug Fixes:</li>
+  <li>Filter notebook click events also on y-coordinate (#144)</li>
+  <li>Allow to open files from the trash can (#141, !112)</li>
+  <li>Monitor file deletion (#140, !111)</li>
+  <li>Printing: Create config file if it does not exist</li>
+  <li>Check all windows for the file to be opened</li>
+  <li>Fix wrong externally modified document in some situations</li>
+  <li>Plugin support: Properly handle plugin settings (#136)</li>
+  <li>Direct monitoring of symlink targets</li>
+  <li>Set the state of submenu actions</li>
+  <li>print-dialog: Fix some memory leaks</li>
+  <li>Fix a type inconsistency in the "encoding-changed" signal</li>
+  <li>Always check if the user has explicitly set a filetype</li>
+  <li>Fix monitoring events to listen to</li>
+  <li>Ensure statefull actions exist until their state is recovered</li>
+  <li>Fix GVariant-related memory leaks</li>
+  <li>Do not warn if the plugin directory does not exist</li>
+  <li>Add a sanity check on the window for "Externally Modified"</li>
+  <li>Do not set the style scheme id as translatable</li>
+  <li>Properly update recent menu in case of file deletion</li>
+  <li>CSD: Set the decoration layout for all windows</li>
+  <li>Add a sanity check on file location for monitoring</li>
+  <li>
+    <p>Add "preferences" action to <code class="language-plaintext highlighter-rouge">mousepad.desktop</code> (#130)</p>
+  </li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
+Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
+Dutch, Eastern Armenian, English (Australia), English (United
+Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
+Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
+Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Occitan (post
+1500), Persian (Iran), Polish, Portuguese, Portuguese (Brazil),
+Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+Thai, Turkish, Ukrainian, Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001054.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001055.html">catfish 4.16.2 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-07-31">
+                31 Jul 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001055.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -84,31 +234,29 @@
         
             <section class="post-content"><p>General:</p>
 <ul>
-  <li>Enable sidebar by default (#45)</li>
-  <li>Enable installation using pip (local source) (!20)</li>
-  <li>Add support for searching compressed files (#29)</li>
-  <li>Add persistent settings for searching file contents (#10)</li>
-  <li>Add persistent settings for thumbnail view (#14)</li>
-  <li>Add message and troff mimetypes to fulltext search (!22)</li>
-  <li>Add PDF support to fulltext search (#37)</li>
-  <li>Fix loading in Wayland (#50)</li>
-  <li>Stop current search when new one starts (!28)</li>
-  <li>Use local MIME database info (!21)</li>
+  <li>Use standard icon name application-x-executable-symbolic instead of
+applications-other-symbolic</li>
+  <li>Fix install with rpm/pkgbuild/pip (#58, #59)</li>
+  <li>Added keyboard hotkeys for search entry, new open dialog</li>
+  <li>Fix Thunar "Show in FM" bug, better FM support (#43)</li>
+  <li>Stops freezes with special files when zip search enabled</li>
+  <li>Better and safer refreshing of selected results (#48)</li>
 </ul>
 
 <p>Translation Updates:
 Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
 Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), French, Galician, German,
-Greek, Hebrew, Hungarian, Icelandic, Indonesian, Interlingue, Italian,
-Japanese, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian
-Nynorsk, Polish, Portuguese, Portuguese (Brazil), Russian, Slovak,
-Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian</p>
+Dutch, Eastern Armenian, English (Australia), Estonian, Finnish, French,
+Galician, German, Greek, Hebrew, Hungarian, Icelandic, Indonesian,
+Interlingue, Italian, Japanese, Kabyle, Korean, Lithuanian, Malay,
+Norwegian Bokmål, Norwegian Nynorsk, Polish, Portuguese, Portuguese
+(Brazil), Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, Thai,
+Turkish, Ukrainian</p>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001050.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001055.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -117,95 +265,28 @@ Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian</p>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.24-2/changelog">gimp (2.10.24-2) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Jeremy Bicha
-            
-            
-            <time class="post-date" datetime="2021-07-18">
-                18 Jul 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.24-2/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Include epoch in dependencies on babl &amp; gegl</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.24-2/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.24-1/changelog">gimp (2.10.24-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Jeremy Bicha
-            
-            
-            <time class="post-date" datetime="2021-07-18">
-                18 Jul 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.24-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream release</li>
-  <li>Bump minimum gegl to 0.4.30</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.24-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/2021/07/18/busy-summer-elementary-update/">Busy Summer: elementary Update</a></h1>
+            <h1 class="post-title"><a href="https://bluesabre.org/2021/07/29/xubuntu-21-10-dev-update/">Xubuntu 21.10 Dev Update</a></h1>
         </header>
         <header class="post-meta">
             
                 Sean Davis
             
             
-            <time class="post-date" datetime="2021-07-18">
-                18 Jul 2021
+            <time class="post-date" datetime="2021-07-29">
+                29 Jul 2021
             </time>
-            <a href="https://bluesabre.org/2021/07/18/busy-summer-elementary-update/" class="post-permalink">
+            <a href="https://bluesabre.org/2021/07/29/xubuntu-21-10-dev-update/" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><img src="https://bluesabre.org/content/images/2021/07/busy-summer-elementary-update-1.png" alt="Busy Summer: elementary Update"><p>I&apos;ve been quiet the last few months. With an increased (at-work) workload and the start of returning to a normal life, I simply haven&apos;t had the time to sit down and focus on FOSS. Despite that, I still managed to contribute some worthwhile improvements to elementary.</p><p><strong>Disclaimer:</strong> elementary 6 &quot;Odin&quot; is still in development, so the features displayed below are not final. Watch the <a href="https://blog.elementary.io/">elementary Blog</a> for updates on the next release.</p><h2 id="sound-indicator">Sound Indicator</h2><p>After <a href="https://bluesabre.org/2021/04/24/whats-new-april-2021/#elementary-development-update">adding device management support</a>, I continued making incremental improvements to the sound indicator. It will now remember previously selected devices, so switching between various setups is now easier (<a href="https://github.com/elementary/wingpanel-indicator-sound/pull/192">#192</a>). Devices with long names (HDMI from graphics cards can be pretty bad) are now ellipsized, keeping the popup menu reasonable sized (<a href="https://github.com/elementary/wingpanel-indicator-sound/pull/193">#193</a>). Finally, MPRIS players created by browsers will now go away once playback is complete, keeping the menu tidy (<a href="https://github.com/elementary/wingpanel-indicator-sound/pull/196">#196</a>).</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-sound-1.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-sound-2.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-sound-3.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div></div></div><figcaption>MPRIS players from web browsers disappear once they&apos;re complete. Secondary audio devices can be easily activated after being used once, simplifying switching between audio setups.</figcaption></figure><h2 id="notifications">Notifications</h2><p>Notifications in elementary 6 are now more compliant with the FreeDesktop.org <a href="https://specifications.freedesktop.org/notification-spec/latest/index.html">Desktop Notifications Specification</a>. Application icons and images sourced from a URI (<a href="https://github.com/elementary/notifications/pull/120">#120</a>) as well as raw image data (<a href="https://github.com/elementary/notifications/pull/123">#123</a>, <a href="https://github.com/elementary/wingpanel-indicator-notifications/pull/211">#211</a>) are now supported in both the notifications and the indicator. Support for actions has also been added (<a href="https://github.com/elementary/notifications/pull/125">#125</a>), making notifications interactive.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-notifications-1.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-notifications-2.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/elementary-notifications-3.png" width="370" height="400" loading="lazy" alt="Busy Summer: elementary Update"></div></div></div><figcaption>Improved image support and actions make notifications more effective and useful.</figcaption></figure><h2 id="darkbar-my-first-elementary-app">Darkbar: My First elementary App</h2><figure class="kg-card kg-embed-card"><iframe width="200" height="113" src="https://www.youtube.com/embed/HElpBJXgfIE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure><p>As I started using more non-elementary applications, I found a few that didn&apos;t correctly support the dark theme. In particular, I found VS Code and GIMP annoying with dark content and a light titlebar, and sought to find a solution. The VS Code extension <a href="https://marketplace.visualstudio.com/items?itemName=fkrull.gtk-dark-titlebar">GTK Dark Title Bar</a> did the trick. <a href="https://github.com/fkrull/vscode-gtk-dark-titlebar/blob/main/src/setGtkThemeVariant.ts#L50">Diving into it&apos;s source code</a>, I found the necessary <code>xprop</code> command to force a window to use dark styles.</p><p>After some experimentation, <a href="https://github.com/bluesabre/darkbar">Darkbar</a> was born. Darkbar runs in the background, and applies your theme preference to X11 windows using server-side decorations (SSD). This works well for GTK2 applications like GIMP, and electron-based apps like Slack and Todoist. It even works in other desktop environments, with some caveats:</p><ul><li>It only works in X11. Wayland is not supported.</li><li>It only works windows managers supporting GTK dark style variants. This includes Gala in elementary, and Mutter in GNOME. Xfwm4 is not currently supported as it doesn&apos;t support the style variants.</li></ul><p>If you&apos;re running elementary 6, you can download and install Darkbar from <a href="https://github.com/bluesabre/darkbar/releases">here</a>. Otherwise, you&apos;ll need to configure the elementary AppCenter repo (instructions intentionally left off until it&apos;s official) and build the Flatpak yourself.</p><pre><code class="language-bash">flatpak-builder build org.bluesabre.darkbar.yml --user --install --force-clean</code></pre><h2 id="whats-next">What&apos;s Next?</h2><p>I&apos;ve started getting back in the groove with Xubuntu and Xfce development. I&apos;ll be working on some releases over the next couple of days and will have another blog post shortly with the latest updates there. If you want to support my work, sponsor me on <a href="https://github.com/sponsors/bluesabre">GitHub</a> or <a href="https://www.patreon.com/bluesabre">Patreon</a>. Every little bit is appreciated!</p><p><em>Post photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/summer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p></section>
+            <section class="post-content"><img src="https://bluesabre.org/content/images/2021/07/busy-summer-xubuntu-update.png" alt="Xubuntu 21.10 Dev Update"><p>I&apos;m finally getting back to regular FOSS development time, this time focusing again on Xubuntu. Resuming team votes and getting community feedback has kicked off development on Xubuntu 21.10 &quot;Impish Indri&quot;. Recent team votes have expanded Xubuntu&apos;s collection of apps. Read on to learn more!</p><p><strong>Update 7/31: </strong>Added Hexchat as another GTK 2 application. Thanks Yousuf!</p><h2 id="new-additions">New Additions</h2><h3 id="disk-usage-analyzer-baobab">Disk Usage Analyzer (baobab)</h3><p><a href="https://wiki.gnome.org/action/show/Apps/DiskUsageAnalyzer?action=show&amp;redirect=Apps%2FBaobab"><strong>Baobab</strong></a> is a utility that scans your storage devices and remote locations and reports on the disk space used by each file or directory. It&apos;s useful for tracking down what&apos;s eating your disk space so you can keep your storage from filling up.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/07/21.10-baobab.png" class="kg-image" alt="Xubuntu 21.10 Dev Update" loading="lazy" width="1440" height="900" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-baobab.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-baobab.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-baobab.png 1440w" sizes="(min-width: 720px) 720px"><figcaption>Baobab makes it easy to visual your disk usage and drill down to find large files.</figcaption></figure><h3 id="disks-gnome-disk-utility">Disks (gnome-disk-utility)</h3><p><a href="https://wiki.gnome.org/Apps/Disks"><strong>Disks</strong></a> is an all-in-one utility for managing storage devices. It&apos;s feature list is expansive, but some key features include:</p><ul><li>Create and restore disk images (including flashing ISOs to thumb drives)</li><li>Partition and format disks, with encryption support</li><li>Inspect drive speed and health</li><li>Edit mounting rules (basically a user-friendly fstab editor)</li></ul><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/07/21.10-gnome-disk-utility.png" class="kg-image" alt="Xubuntu 21.10 Dev Update" loading="lazy" width="1440" height="900" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-gnome-disk-utility.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-gnome-disk-utility.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-gnome-disk-utility.png 1440w" sizes="(min-width: 720px) 720px"><figcaption>GNOME Disks makes managing your storage a lot easier. Never manually edit fstab again.</figcaption></figure><h3 id="rhythmbox">Rhythmbox</h3><p><a href="https://wiki.gnome.org/Apps/Rhythmbox"><strong>Rhythmbox</strong></a> is a music playing and library application. It supports local files and audio streams, and includes a radio browser to find online radio stations. In Xubuntu, we&apos;re currently using the default layout (see left screenshot), but members of the community have proposed using the Alternative Toolbar plugin. Which do you prefer? Vote in the <a href="https://twitter.com/bluesabredavis/status/1420516955803553793">Twitter poll</a>!</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/21.10-rhythmbox-a.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-rhythmbox-a.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-rhythmbox-a.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-rhythmbox-a.png 1440w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/21.10-rhythmbox-b.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-rhythmbox-b.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-rhythmbox-b.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-rhythmbox-b.png 1440w" sizes="(min-width: 720px) 720px"></div></div></div><figcaption>Left: default layout; Right: Alternative Toolbar layout.</figcaption></figure><h3 id="clipman-xfce4-clipman-plugin">Clipman (xfce4-clipman-plugin)</h3><p><a href="https://docs.xfce.org/panel-plugins/xfce4-clipman-plugin/start"><strong>Clipman</strong></a> is a clipboard management application and plugin. It keeps a history of text and images copied to the clipboard and allows you to paste it later. Clipboard history can also be searched with the included <code>xfce4-clipman-history</code> command.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/07/21.10-clipman-plugin.png" class="kg-image" alt="Xubuntu 21.10 Dev Update" loading="lazy" width="1440" height="900" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-clipman-plugin.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-clipman-plugin.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-clipman-plugin.png 1440w" sizes="(min-width: 720px) 720px"><figcaption>Clipman remembers your clipboard history and makes it easy to paste later.</figcaption></figure><h2 id="removals">Removals</h2><h3 id="pidgin">Pidgin</h3><p><a href="https://pidgin.im/"><strong>Pidgin</strong></a> is a multi-client chat program that has been included in Xubuntu since the beginning, when it was known as Gaim. In recent years, as chat services have moved to proprietary and locked down protocols, Pidgin has become less and less useful, leading to its removal in Xubuntu. If you want to install Pidgin on your system, it can be found on GNOME Software.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://bluesabre.org/content/images/2021/07/21.10-pidgin.png" class="kg-image" alt="Xubuntu 21.10 Dev Update" loading="lazy" width="1440" height="900" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-pidgin.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-pidgin.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-pidgin.png 1440w" sizes="(min-width: 720px) 720px"><figcaption>If you&apos;re still using Pidgin, you can easily find and install it from GNOME Software.</figcaption></figure><h2 id="active-team-votes">Active Team Votes</h2><h3 id="themes">Themes</h3><p>We&apos;ve got an active team vote to <a href="https://lists.ubuntu.com/archives/xubuntu-devel/2021-July/012109.html">add two new themes</a> to our seed. The themes in question are Arc and Numix Blue.</p><p>The <strong><a href="https://github.com/jnsh/arc-theme">Arc theme</a> </strong>is a series of flat themes with transparent elements. It includes both light and dark themes with support for numerous desktop environments and applications.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/21.10-arc-theme.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-arc-theme.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-arc-theme.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-arc-theme.png 1440w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/21.10-arc-dark-theme.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-arc-dark-theme.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-arc-dark-theme.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-arc-dark-theme.png 1440w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/21.10-arc-darker-theme.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-arc-darker-theme.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-arc-darker-theme.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-arc-darker-theme.png 1440w" sizes="(min-width: 720px) 720px"></div></div></div><figcaption>Arc comes in four variants: Arc, Dark, Darker, and Lighter (not pictured).</figcaption></figure><p><strong><a href="https://github.com/encounter/numix-blue-gtk-theme">Numix Blue</a> </strong>is a blue variation of the <a href="https://github.com/numixproject/numix-gtk-theme">Numix</a> theme already included in Xubuntu. It&apos;s an unofficial fork that does have some graphical differences beside the switch to a blue accent color.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/21.10-numix.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-numix.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-numix.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-numix.png 1440w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/21.10-numix-blue.png" width="1440" height="900" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/21.10-numix-blue.png 600w, https://bluesabre.org/content/images/size/w1000/2021/07/21.10-numix-blue.png 1000w, https://bluesabre.org/content/images/2021/07/21.10-numix-blue.png 1440w" sizes="(min-width: 720px) 720px"></div></div></div><figcaption>Numix (left) has been a part of Xubuntu for years. Numix Blue offers a &quot;cooler&quot; version for your desktop.</figcaption></figure><h3 id="clipman-by-default">Clipman by Default</h3><p>Since we added Clipman to Xubuntu, we now have a <a href="https://lists.ubuntu.com/archives/xubuntu-devel/2021-July/012108.html">second vote</a> for including it in the panel by default. This would automatically enable Clipman&apos;s clipboard management, which I&apos;m personally opposed to. For my use case, I frequently copy sensitive strings to the clipboard, and I don&apos;t want them to be saved or displayed anywhere. New users would have no idea the clipboard monitor is even running.</p><h2 id="process-updates">Process Updates</h2><h3 id="xubuntu-seed">Xubuntu Seed</h3><p>Because our seed is also updated by Ubuntu maintainers, it is important that the code continues to be hosted on Launchpad. The <a href="https://github.com/Xubuntu/xubuntu-seed">@Xubuntu/xubuntu-seed</a> code is mirrored from Launchpad every few hours. To help reduce the friction between the two systems, I made some small improvements.</p><p>Issues are now synced from Launchpad for the <a href="https://bugs.launchpad.net/ubuntu/+source/xubuntu-meta">xubuntu-meta</a> source package. I found a solution by the <a href="https://github.com/ubuntu/yaru/blob/master/.github/lpbugtracker.py">Yaru team</a> for syncing the issues using GitHub actions. Our <a href="https://github.com/Xubuntu/xubuntu-seed/blob/impish/.github/workflows/track-lp-issues.yaml">syncing scripts</a> run daily, syncing both newly created issues and issues that have been closed out.</p><figure class="kg-card kg-gallery-card kg-width-wide kg-card-hascaption"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/github-issue-sync.png" width="919" height="556" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/github-issue-sync.png 600w, https://bluesabre.org/content/images/2021/07/github-issue-sync.png 919w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="https://bluesabre.org/content/images/2021/07/github-issue-update.png" width="922" height="519" loading="lazy" alt="Xubuntu 21.10 Dev Update" srcset="https://bluesabre.org/content/images/size/w600/2021/07/github-issue-update.png 600w, https://bluesabre.org/content/images/2021/07/github-issue-update.png 922w" sizes="(min-width: 720px) 720px"></div></div></div><figcaption>Syncing issues from Launchpad makes it easier to browse issues from a single location on GitHub.</figcaption></figure><p>I&apos;ve also added a <a href="https://github.com/Xubuntu/xubuntu-seed/blob/impish/.github/workflows/lockdown.yml">GitHub action</a> to prevent pull requests on our mirror repository. Since the repository is a mirror repository, pull requests are not actionable on GitHub. This action automatically closes those pull requests with a comment pointing the contributor in the right direction.</p><h2 id="whats-next">What&apos;s Next?</h2><p>Votes are ongoing, and there&apos;s a lot of activity in the Ubuntu space. GNOME 40 and GTK 4 are starting to land, so there&apos;s a strong likelihood that GTK 4 components will make their way into Xubuntu. This means we&apos;ll now have 3 versions of the toolkit thanks to GIMP and Hexchat (GTK 2), Xfce (GTK 3), GNOME 40 (GTK 4). Hopefully we&apos;ll see a stable <a href="https://wiki.gimp.org/wiki/Roadmap#GIMP_3.0">GIMP 3.0</a> release soon so we can free up some space.</p><p>There&apos;s some important dates coming soon in the <a href="https://discourse.ubuntu.com/t/impish-indri-release-schedule/18540">Impish Indri Release Schedule</a>. August 19 marks <a href="https://wiki.ubuntu.com/FeatureFreeze">Feature Freeze</a>, so the outstanding team votes and new feature requests should be settled soon. A couple weeks later, we have the <a href="https://wiki.ubuntu.com/UserInterfaceFreeze">User Interface Freeze</a> on September 9. Let&apos;s keep Xubuntu development rolling forward!</p><p><em>Post photo by <a href="https://unsplash.com/@adriel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Adriel Kloppenburg</a> on <a href="https://unsplash.com/s/photos/beach-waves?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p></section>
         
         <footer>
             
-                <a class="read-more" href="https://bluesabre.org/2021/07/18/busy-summer-elementary-update/">&raquo; Original Post</a>
+                <a class="read-more" href="https://bluesabre.org/2021/07/29/xubuntu-21-10-dev-update/">&raquo; Original Post</a>
             
         </footer>
     </article>
@@ -214,17 +295,135 @@ Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian</p>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001049.html">libxfce4util 4.17.1 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001053.html">xfce4-sensors-plugin 1.4.1 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2021-07-18">
-                18 Jul 2021
+            <time class="post-date" datetime="2021-07-26">
+                26 Jul 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001049.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001053.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Update hddtemp netcat support</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001053.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001052.html">xfce4-sensors-plugin 1.4.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-07-25">
+                25 Jul 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001052.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>Release 1.4.0 of the xfce4-sensors-plugin fixes a number of issues and
+modernizes the plugin's source code for Xfce 4.16 and later.</p>
+
+<ul>
+  <li>Code cleanups</li>
+  <li>Update configuration flags for GitLab distcheck</li>
+  <li>Add basic GitLab pipeline</li>
+  <li>Check for libsensors if it is explicitly enabled</li>
+  <li>Use a drawing area to display sensor data in text UI style</li>
+  <li>Fix a use-after-free error when closing the main window</li>
+  <li>Increase main window size from 400 to 800 pixels</li>
+  <li>Fix a use-after-free error when disabling a tachometer</li>
+  <li>Fix preliminary config memory leak</li>
+  <li>Improved handling of denormal floating-point values</li>
+  <li>Update automatic coloring of progress bars</li>
+  <li>Update and sort the list of authors</li>
+  <li>Corrections to the number of rows when displaying sensor data as text</li>
+  <li>Remove support for lm-sensors 2.x (API &lt; 0x400)</li>
+  <li>Center tachometers vertically</li>
+  <li>Layout sensors when cover-all-rows is toggled</li>
+  <li>Fix invalid "size-changed" callback function declaration</li>
+  <li>Avoid interference of tachometer allocations with GtkBox child allocs</li>
+  <li>configure: Remove nano version and update init arguments</li>
+  <li>configure: Bump required glib to 2.50</li>
+  <li>configure: Bump required Xfce libs to 4.14</li>
+  <li>configure: Remove checks covered by C99</li>
+  <li>configure: Remove UNIX variants check</li>
+  <li>Ellipsize labels only when needed</li>
+  <li>Remove support for libnotify 0.4</li>
+  <li>Enable automatic switching of colors based on light or dark UI theme</li>
+  <li>Move text inside the tachometer</li>
+  <li>Remove unused options.dialog files</li>
+  <li>Use capital letters when spelling NVIDIA</li>
+  <li>Code cleanup: Shorten all variable names to speedup readability</li>
+  <li>Use a single bit to store boolean values</li>
+  <li>Prevent memset2() from compiling because of a double-increment bug</li>
+  <li>Fix fgets() compiler warning</li>
+  <li>Code cleanup: Remove all TRACE() lines</li>
+  <li>Fix invalid order of widgets after changing panel orientation</li>
+  <li>Fix accesses to destroyed widgets when changing the panel orientation</li>
+  <li>Increase icon size in about dialog from 32 to 48 pixels</li>
+  <li>Update copyright year in about dialog</li>
+  <li>Fix invalid state flag</li>
+  <li>Include X11 headers before NVCtrl headers</li>
+  <li>Translation Updates:
+Albanian, Arabic, Armenian (Armenia), Asturian, Basque,
+Belarusian, Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
+Croatian, Czech, Danish, Dutch, Eastern Armenian, English
+(Australia), English (United Kingdom), Finnish, French, Galician,
+German, Greek, Hebrew, Hungarian, Icelandic, Indonesian, Interlingue,
+Italian, Japanese, Korean, Latvian, Lithuanian, Malay, Norwegian
+Bokmål, Occitan (post 1500), Polish, Portuguese, Portuguese
+(Brazil), Russian, Serbian, Slovak, Slovenian, Spanish, Swedish,
+Thai, Turkish, Ukrainian, Urdu, Urdu (Pakistan), Uyghur</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001052.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001051.html">xfce4-dev-tools 4.17.0 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2021-07-25">
+                25 Jul 2021
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001051.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -233,26 +432,47 @@ Slovenian, Spanish, Swedish, Thai, Turkish, Ukrainian</p>
         
             <section class="post-content"><p>[Please note that this is a development release.]</p>
 
-<p>Release required in order to prepare shared thumbnail support.
-(Method shared by thunar and tumbler)</p>
-
-<p>More details here:</p>
-
-<p>https://gitlab.xfce.org/xfce/thunar/-/issues/262
-https://gitlab.xfce.org/xfce/thunar/-/merge_requests/126
-https://gitlab.xfce.org/xfce/tumbler/-/merge_requests/17
-https://gitlab.xfce.org/xfce/libxfce4util/-/merge_requests/18</p>
+<p>This is the first development release of xfce-dev-tools 4.17.
+To all developers and contributors, please update :)
+Notable changes:</p>
+<ul>
+  <li>Reduce the number of warnings at "./autogen.sh" stage.</li>
+  <li>Simplify the "xdt-autogen" workflow by only calling "autoreconf"</li>
+  <li>autoconf 2.69+ is now needed (released almost 10 years ago)</li>
+  <li>Compilations warnings are now always enabled, whatever the
+"–enable-debug" mode used. This will help us catch compilers warnings.</li>
+  <li>Also, this version get rid of really old m4 macros/usages, like
+AM_GLIB_GNU_GETTEXT or glib-gettextize.</li>
+</ul>
 
 <p>Changelog:</p>
 <ul>
-  <li>Create new function xfce_create_shared_thumbnail_path</li>
-  <li>usage of g_file_peek_path requires glib 2.56</li>
+  <li>Try to build higher version available tag</li>
+  <li>xfce-do-release: A review of confirmation prompts</li>
+  <li>helpers: Improve script portability</li>
+  <li>Improve Xfce Developer Center (developer.xfce.org)</li>
+  <li>xdt-features.m4: Always enable compilation warnings</li>
+  <li>g_locale_to_utf8 is misspelled as g_local_to_utf8</li>
+  <li>xfce-build: Always pick the latest stable release</li>
+  <li>Create the m4/ if it does not exists</li>
+  <li>Use autoreconf to bootstrap xfce4-dev-tools itself</li>
+  <li>Use autoreconf to bootstrap autotools</li>
+  <li>xfce-do-release: Check for <code class="language-plaintext highlighter-rouge">docker</code> installed</li>
+  <li>Add dependencies to build thunarx-python CI</li>
+  <li>Fix location of apidocs</li>
+  <li>xfce-build: Fix conditional in gitlabci</li>
+  <li>Export apidocs as GitLab artifacts</li>
+  <li>Get rid of glib-gettextize usage and XGETTEXT_ARGS custom args</li>
+  <li>Remove obsolete AM_GLIB_GNU_GETTEXT</li>
+  <li>helpers: Fix command-line if git-config core.editor is unset</li>
+  <li>Update obsolete m4 macros</li>
+  <li>helpers: Add 'xfce-build describe' command</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001049.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001051.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -261,78 +481,37 @@ https://gitlab.xfce.org/xfce/libxfce4util/-/merge_requests/18</p>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html">thunar 4.17.4 released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.238/changelog">xubuntu-meta (2.238) impish</a></h1>
         </header>
         <header class="post-meta">
             
-                Xfce Announcements
+                Sean Davis
             
             
-            <time class="post-date" datetime="2021-07-17">
-                17 Jul 2021
+            <time class="post-date" datetime="2021-07-21">
+                21 Jul 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.238/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<p>Besides many fixes and translation updates, this development release
-ships various new features brought to you by our GSoC students. My
-personal highlights are:</p>
-
-<ul>
-  <li>Automatic restore of tabs on startup</li>
-  <li>Possibility to 'trust' launchers</li>
-  <li>Support for 'recent:///'</li>
-  <li>Zoom-level as a per-directory setting</li>
-  <li>Various file-copy improvements</li>
-</ul>
-
-<p>Here the complete log:</p>
-<ul>
-  <li>Restore split-view separator position (Issue #616)</li>
-  <li>Skip handler when switching to other split-view tab (Issue #615)</li>
-  <li>Change thunar_file_is_trashed to thunar_file_is_trash</li>
-  <li>New menu item for trashed files: "restore and open folder" (#382)</li>
-  <li>Open restored tabs in correct order (Issue #613)</li>
-  <li>After restoring tabs set focus on the last focused tab</li>
-  <li>For "foo.txt" next available file should be of the form "foo N.txt"</li>
-  <li>Ask "close window with tabs?" as well for STRG+Q (Issue #611)</li>
-  <li>Keep modified time of files copied from foreign locations (#218)</li>
-  <li>Use more general method to pick file names on copy (Issue #244)</li>
-  <li>Add possibility to 'trust' launchers (Issue #156)</li>
-  <li>Remove reload button from toolbar (!125)</li>
-  <li>Add a preference to restore tabs on startup (Issue #338)</li>
-  <li>Use thunar_g_file_new_for_computer and thunar_g_file_new_for_network</li>
-  <li>Add support for gtk-recent (recent:///) (Issue #257)</li>
-  <li>Add zoom-level as a per-directory setting (Issue #418)</li>
-  <li>Generate incremental file name on name collision (Issue #210)</li>
-  <li>Fix GLib-CRITICAL in list-view (Issue #487)</li>
-  <li>thunar_file_is_executable() now checks if .desktop file is safe</li>
-  <li>Fix missing folder in history when opened in new tab (Issue #594)</li>
-  <li>Manage parallel job outside ThunarTransferJob (Issue #569)</li>
-  <li>Replace ExoBinding with GBinding equivalent</li>
-  <li>Move bookmarks into a separate Bookmarks menu (Issue #572)</li>
-  <li>Proper destruction of member variables for thunar-launcher</li>
-  <li>Fixing various memory leaks (Issue #573)</li>
-  <li>Fix showing volume uuid in transfer dialog (Issue #579)</li>
-  <li>Update manpage (Issue #121)</li>
-  <li>Dont show "execute" on context menu for folders</li>
-  <li>Translation Updates:
-Albanian, Basque, Bulgarian, Catalan, Chinese (China), Czech, Danish,
-Dutch, Estonian, French, Galician, German, Hebrew, Italian, Japanese,
-Malay, Norwegian Bokmål, Polish, Portuguese, Portuguese (Brazil),
-Serbian, Spanish, Swedish, Thai, Turkish</li>
+            <section class="post-content"><ul>
+  <li>Refreshed dependencies</li>
+  <li>Added baobab to desktop-recommends (LP: #1934932)</li>
+  <li>Added gnome-disk-utility to desktop-recommends (LP: #1934932)</li>
+  <li>Added rhythmbox to desktop-recommends (LP: #1934926)</li>
+  <li>Added xfce4-clipman-plugin to desktop-recommends (LP: #1934925)</li>
+  <li>Removed pidgin from desktop-recommends (LP: #1936417)</li>
+  <li>Removed pidgin-otr from desktop-recommends</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.238/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -341,43 +520,56 @@ Serbian, Spanish, Swedish, Thai, Turkish</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001045.html">libxfce4util 4.17.0 released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.0/changelog">xubuntu-default-settings (21.10.0) impish</a></h1>
         </header>
         <header class="post-meta">
             
-                Xfce Announcements
+                Sean Davis
             
             
-            <time class="post-date" datetime="2021-06-26">
-                26 Jun 2021
+            <time class="post-date" datetime="2021-07-21">
+                21 Jul 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001045.html" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.0/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p>[Please note that this is a development release]</p>
-
-<p>Development release on the master branch, required to be able to use new
-features in other Xfce components.</p>
-
-<ul>
-  <li>Add xfce_unescape_desktop_entry_value</li>
-  <li>xfce-gio-extensions - management of gvfs trusted attribute</li>
-  <li>libxfce4util needs to be first character Capital</li>
-  <li>Partially revert "Fix (some) GObject introspection warnings"</li>
-  <li>Fix (some) GObject introspection warnings</li>
-  <li>Revamp the documentation to uniformize accross components</li>
-  <li>Translation Updates:
-Belarusian, Estonian, Norwegian Bokmål, Spanish</li>
+            <section class="post-content"><ul>
+  <li>debian/xubuntu-default-settings.gsettings-override,    etc/xdg/xdg-xubuntu/xfce4/panel/default.xml,    etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml,    usr/share/xubuntu/applications/defaults.list:
+    <ul>
+      <li>Integrate rhythmbox (LP: #1934926)</li>
+    </ul>
+  </li>
+  <li>debian/live/whiskermenu-1.rc,    etc/xdg/xdg-xubuntu/xfce4/whiskermenu/defaults.rc,    etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml:
+    <ul>
+      <li>Remove shortcuts for pidgin (LP: #1936417)</li>
+    </ul>
+  </li>
+  <li>etc/skel/.config/hexchat/servlist.conf:
+    <ul>
+      <li>Switch Freenode to Libera</li>
+    </ul>
+  </li>
+  <li>debian/control:
+    <ul>
+      <li>Bump Standards-Version to 4.5.1</li>
+      <li>Bump debhelper-compat to 13</li>
+    </ul>
+  </li>
+  <li>debian/source/lintian-overrides:
+    <ul>
+      <li>Deleted, no longer needed</li>
+    </ul>
+  </li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001045.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.0/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -386,209 +578,40 @@ Belarusian, Estonian, Norwegian Bokmål, Spanish</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001046.html">libxfce4ui 4.17.0 released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.10/changelog">xubuntu-artwork (21.10) impish</a></h1>
         </header>
         <header class="post-meta">
             
-                Xfce Announcements
+                Sean Davis
             
             
-            <time class="post-date" datetime="2021-06-26">
-                26 Jun 2021
+            <time class="post-date" datetime="2021-07-21">
+                21 Jul 2021
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001046.html" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.10/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<p>Development release on the master branch, required to be able to use new
-features in other Xfce components.</p>
-
-<ul>
-  <li>added xfce_gtk_label_set_a11y_relation to be used by various
-components</li>
-  <li>initialize base_property prior xfce_shortcuts_provider_register</li>
-  <li>about: Replace stock with regular button</li>
-  <li>about: Make Close button translateable (Fixes #41)</li>
-  <li>Check if pixbuf is valid before unref</li>
-  <li>shortcuts: Add Alt+Super+s for orca (Fixes #39)</li>
-  <li>shortcuts-grabber: Filter grabbing by key group</li>
-  <li>shortcuts-grabber: Redesign shortcut regrabbing (Bug #33)</li>
-  <li>shortcuts-grabber: Stop search when the first match is found</li>
-  <li>shortcuts: Fix a memory leak</li>
-  <li>shortcuts-grabber: Record xkb state group (Bug #33)</li>
-  <li>about: Fix invalid length and Zink renderer string</li>
-  <li>Don't leak pixbuf</li>
-  <li>XfceTitledDialog: Add pixbuf support as fallback</li>
-  <li>Revamp the documentation to uniformize accross components</li>
-  <li>Prevent resizing on message display with XfceFilenameInput</li>
-  <li>Delay whitespace warning in XfceFilenameInput</li>
-  <li>Fix cast alignment warning</li>
-  <li>Remove Gtk2 leftovers</li>
-  <li>Don't reserve vertical space for subtitles in headerbars</li>
-  <li>Translation Updates:
-Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Basque,
-Belarusian, Bengali, Bulgarian, Catalan, Chinese (China), Chinese
-(Hong Kong), Chinese (Taiwan), Croatian, Czech, Danish, Dutch,
-Eastern Armenian, English (Australia), English (United Kingdom),
-Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kazakh, Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål,
-Norwegian Nynorsk, Occitan (post 1500), Polish, Portuguese,
-Portuguese (Brazil), Romanian, Russian, Serbian, Slovak, Slovenian,
-Spanish, Swedish, Telugu, Thai, Turkish, Ukrainian, Uyghur, Welsh</li>
+            <section class="post-content"><ul>
+  <li>debian/xubuntu-wallpapers.links:
+    <ul>
+      <li>Link to development wallpaper</li>
+    </ul>
+  </li>
+  <li>usr/share/plymouth/themes/xubuntu-text/xubuntu-text.plymouth
+    <ul>
+      <li>Bump plymouth-text version number for impish</li>
+    </ul>
+  </li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001046.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001047.html">exo 4.17.0 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2021-06-26">
-                26 Jun 2021
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001047.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<p>Development release on the master branch, required to be able to use new
-features in other Xfce components.</p>
-
-<ul>
-  <li>Keep execute permission bit after launcher modification (Issue #64)</li>
-  <li>Deprecate ExoBinding and ExoMutualBinding In favor of GBinding</li>
-  <li>Free hover_path in tree-view if not NULL</li>
-  <li>Drop preferences-desktop-default-applications icon</li>
-  <li>Properly initialize GdkRectangle to prevent crash (Issue #57)</li>
-  <li>Revamp the documentation to uniformize accross components</li>
-  <li>exo-icon-chooser-dialog: Throttle search requests</li>
-  <li>exo-icon-chooser-dialog: Focus filter entry by default</li>
-  <li>exo-icon-chooser-dialog: Set default to show to all icons</li>
-  <li>exo-icon-chooser-dialog: Speed up sorting the icon view model</li>
-  <li>Fix keyboard navigation when only one item is present (#53)</li>
-  <li>configure.ac: Allow cross-compiling</li>
-  <li>Translation Updates:
-Amharic, Arabic, Armenian, Armenian (Armenia), Asturian, Belarusian,
-Bengali, Bulgarian, Catalan, Chinese (Hong Kong), Croatian, Czech,
-Danish, Dutch, Eastern Armenian, English (Australia), English (United
-Kingdom), Estonian, Finnish, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Interlingue, Italian, Kabyle, Kannada, Kazakh,
-Korean, Latvian, Lithuanian, Malay, Norwegian Bokmål, Norwegian
-Nynorsk, Occitan (post 1500), Panjabi (Punjabi), Persian (Iran),
-Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian,
-Spanish, Telugu, Thai, Turkish, Ukrainian, Urdu, Urdu (Pakistan),
-Uyghur</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2021-June/001047.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://alexxcons.github.io/2021/06/23/xfce-participates-in-gsoc.html">Xfce participation in GSoC 2021</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Alexander Schwinn
-            
-            
-            <time class="post-date" datetime="2021-06-23">
-                23 Jun 2021
-            </time>
-            <a href="https://alexxcons.github.io/2021/06/23/xfce-participates-in-gsoc.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>I am a bit late with my blog post .. though I suppose better late than never :D</p>
-
-<p>This year Xfce applied to the <a href="https://summerofcode.withgoogle.com/organizations/6058796058673152/">Google Summer of Code</a> program and I am happy to tell you that we accomplished to get 3 slots ! (That’s very good, since new organization usually only receive one or two slots)</p>
-
-<p>There was a lot of interest by students. In total 15 proposals were received for Xfce.
-So sadly we had to refuse several nice proposals. However the number of mentors as well was limited, so that this year Xfce anyhow would not be able to mentor more students.</p>
-
-<p>Now there are 3 very motivated GSoC students supporting Xfce. Allow me to introduce:</p>
-
-<p><strong>Yongha Hwang</strong>, who applied for various thunar issues, mostly related to file transmission.</p>
-
-<p><strong>Sergios Anestis Kefalidis</strong>, who as well works on thunar, targeting a wide range of features.</p>
-
-<p><strong>Vishal Sharma</strong>, who is looking into sample/skeleton panel plugins in different GOI supported languages.</p>
-
-<p>Since I maintain thunar, I am the main mentor of Sergios and Yongha.</p>
-
-<p>These two and as well some other thunar focused GSoC applicants kept me very busy by adding many contributions long before the official coding part started :)
-Already now I think mentoring for GSoC was a good thing to do. The gain by far outweighs the burden. I don’t have much time left to work on issues myself, though the students overcompensate that by magnitudes.</p>
-
-<p>Here a small taste of the recent activity related to GSoC:</p>
-<ul>
-  <li><a href="https://gitlab.xfce.org/xfce/thunar/-/issues?scope=all&amp;utf8=%E2%9C%93&amp;state=closed&amp;label_name[]=8.%20GSoC%202021">Thunar issues fixed by GSoC students</a></li>
-  <li><a href="https://gitlab.xfce.org/xfce/thunar/-/merge_requests">Currently 12 open thunar merge requests, 9 opened by GSoC students</a></li>
-</ul>
-
-<p>… and that is only thunar. There is as well a lot of activity on exo and libxfce4-util !</p>
-
-<p>Many various smaller tweaks already made it into <a href="https://gitlab.xfce.org/xfce/thunar/-/tags/thunar-4.17.2">thunar 4.17.2</a>. Some bigger ones, e.g. issues from the <a href="https://wiki.xfce.org/projects/gsoc/start#project_ideas">project ideas list</a>  are currently in work, or even already landed in the current master.</p>
-
-<p>If you want to take a peek on the upcoming changes and new features already now, you can check the students frequent blog posts:</p>
-
-<p><strong><a href="https://dev.ikx.kr">Yongha Hwang</a></strong>:</p>
-<ul>
-  <li><a href="https://dev.ikx.kr/GSOC-2021">GSoC Posting1</a></li>
-  <li><a href="https://dev.ikx.kr/2nd-Saturday/">GSoC Posting2</a></li>
-  <li><a href="https://dev.ikx.kr/GSOC-3rd/">GSoC Posting3</a></li>
-</ul>
-
-<p><strong><a href="http://users.uoa.gr/~sdi1800073/sources/">Sergios Anestis Kefalidis</a></strong>:</p>
-<ul>
-  <li><a href="http://users.uoa.gr/~sdi1800073/sources/xfce_blog01.html">GSoC Posting1</a></li>
-  <li><a href="http://users.uoa.gr/~sdi1800073/sources/xfce_blog02.html">GSoC Posting2</a></li>
-</ul>
-
-<p><strong><a href="https://freshlybuilt.com/members/vishalsharma/">Vishal Sharma</a></strong>:</p>
-<ul>
-  <li><a href="https://freshlybuilt.com/my-journey-to-gsoc-2021-through-xfce">GSoC Posting1</a></li>
-  <li><a href="https://freshlybuilt.com/xfce-panel-plugin-development-using-python-javascript-part-1/">GSoC Posting2</a></li>
-  <li><a href="https://freshlybuilt.com/xfce-panel-plugin-development-using-python-javascript-part-2/">GSoC Posting3</a></li>
-</ul>
-
-<p>Hope you will enjoy the upcoming changes!</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://alexxcons.github.io/2021/06/23/xfce-participates-in-gsoc.html">&raquo; Original Post</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.10/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -601,7 +624,7 @@ Already now I think mentoring for GSoC was a good thing to do. The gain by far o
             <a class="newer-posts" href="/page21" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 22 of 70 </span>
+    <span class="page-number"> Page 22 of 71 </span>
      
         <a class="older-posts" href="/page23" title="Next Page">Older Posts &raquo;</a>
      

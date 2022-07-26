@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends</title>
+    <meta name="description" content="Planet Bluesabre - All the latest from Xfce, Xubuntu, & Friends" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css " />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="home-template">
+
+    <header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">ANNOUNCE: xfce4-panel 4.17.2 released</h1>
+            <section class="post-meta">
+                
+                <time class="post-date" datetime="2022-07-10">10 Jul 2022</time>
+            </section>
+        </header>
+
+<!--         <header class="post-header">
+            <a id="blog-logo" href="https://planet.bluesabre.org">
+                
+                    <span class="blog-title">Planet Bluesabre</span>
+                
+            </a>
+        </header> -->
+
+        <!-- <span class="post-meta">
+            <time datetime="2022-07-10">10 Jul 2022</time>
+            
+        </span> -->
+
+        <!-- <h1 class="post-title">ANNOUNCE: xfce4-panel 4.17.2 released</h1> -->
+
+        <section class="post-content">
+            <p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Dependency Changes:
+    <ul>
+      <li>GLib &gt;= 2.66.0</li>
+      <li>Libxfce4util &gt;= 4.17.2</li>
+    </ul>
+  </li>
+  <li>New APIs:
+    <ul>
+      <li>libxfce4panel: Add new function
+<code class="language-plaintext highlighter-rouge">xfce_panel_set_image_from_source()</code> (!83)</li>
+      <li>libxfce4panel: Add new function
+<code class="language-plaintext highlighter-rouge">xfce_panel_plugin_popup_menu()</code> (!80)</li>
+    </ul>
+  </li>
+  <li>Deprecated APIs:
+    <ul>
+      <li>libxfce4panel: Deprecate <code class="language-plaintext highlighter-rouge">xfce_panel_plugin_position_menu()</code> (!80)</li>
+    </ul>
+  </li>
+  <li>Code Refactoring:
+    <ul>
+      <li>cleanup: Remove useless variable</li>
+      <li>cleanup: Use already defined panel scale factor</li>
+      <li>cleanup: Fix old typo</li>
+      <li>tasklist: Remove redundant function call</li>
+      <li>refactoring: Consistency of plugin menu callbacks</li>
+      <li>refactoring: Use <code class="language-plaintext highlighter-rouge">g_file_peek_path()</code> when appropriate</li>
+      <li>Autohide refactoring (!77)</li>
+      <li>Replace soon-to-be-deprecated exo-string functions (!79)</li>
+    </ul>
+  </li>
+  <li>Bug Fixes:
+    <ul>
+      <li>panel: Silence allocation warning for external plugins (V2) 
+(#590, !89)</li>
+      <li>panel: Compare monitor geometries in the right dimension (#54)</li>
+      <li>panel: Do not compare monitor geometry to itself (#54)</li>
+      <li>tasklist: Take window scaling into account when detecting 
+window position (#505)</li>
+      <li>panel: Be sure to save plugins before xfconf_shutdown()</li>
+      <li>tasklist: Fix critical warning when starting on a disconnected 
+device</li>
+      <li>tasklist: Delay sorting if window list is in use (#594)</li>
+      <li>libxfce4panel: Allow to show about dialog when prefs dialog is 
+shown (#221)</li>
+      <li>panel: Prevent compositing message from affecting dialog size 
+(Fixes #591)</li>
+      <li>libxfce4panel: Unblock autohide before removing the plugin 
+(#592)</li>
+      <li>Grab devices until the menu takes over for popup commands 
+(#201, #585)</li>
+      <li>Fix return value of "remote-event" signal handlers (#585)</li>
+      <li>Avoid "no trigger event" warning for popup commands</li>
+      <li>Guard against the return value of <code class="language-plaintext highlighter-rouge">gdk_seat_get_pointer()</code></li>
+      <li>panel: Ensure that handles are always grabbable (Fixes #227)</li>
+      <li>Allow to set a custom icon in appmenu and dirmenu (#254, !83)</li>
+      <li>Use RGBA visual only if compositing is enabled (Fixes #251)</li>
+      <li>launcher: Fix wrong format specifier in config file name (Fixes 
+#581)</li>
+      <li>applicationsmenu: Add option to set "small" property (Fixes 
+#31, #113)</li>
+      <li>pager: Consistency fixes between "miniature view" and "buttons" 
+(#74, #209, #253, #257, #274, !82)</li>
+      <li>libxfce4panel: Make urgency blinking more visible (Fixes #259)</li>
+      <li>tasklist: Sorting fixes (#29, #126, #323, !81)</li>
+      <li>systray: Force dbus-menu update when item is invalidated (Fixes 
+#567)</li>
+      <li>libxfce4panel: Unregister menu also on "selection-done"</li>
+      <li>applicationsmenu: Do post-processing on "selection-done"</li>
+      <li>windowmenu: Do not popup menu item wnck menu at widget</li>
+      <li>Fix plugin menu popup at pointer (#297)</li>
+      <li>Add new function <code class="language-plaintext highlighter-rouge">xfce_panel_plugin_popup_menu()</code> (#147, !80)</li>
+    </ul>
+  </li>
+  <li>Translation Updates:
+Albanian, Basque, Bulgarian, Chinese (China), Chinese (Taiwan),
+Dutch, Estonian, French, German, Greek, Italian, Japanese,
+Lithuanian, Norwegian Bokmål, Polish, Portuguese, Portuguese
+(Brazil), Russian, Serbian, Slovenian, Spanish, Turkish, Ukrainian</li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="">Planet Bluesabre</a> &copy; 
+              2022 Xfce & Xubuntu contributors
+      </section>
+      <section class="poweredby">Made with Jekyll using 
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

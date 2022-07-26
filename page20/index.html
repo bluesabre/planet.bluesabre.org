@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page19" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 20 of 70 </span>
+    <span class="page-number"> Page 20 of 71 </span>
      
         <a class="older-posts" href="/page21" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,17 +65,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.9-1/changelog">xfce4-screenshooter (1.9.9-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1.3.1-1ubuntu1/changelog">xfce4-systemload-plugin (1:1.3.1-1ubuntu1) devel</a></h1>
         </header>
         <header class="post-meta">
             
-                Unit 193
+                Sean Davis
             
             
-            <time class="post-date" datetime="2021-08-16">
-                16 Aug 2021
+            <time class="post-date" datetime="2021-08-29">
+                29 Aug 2021
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.9-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1.3.1-1ubuntu1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -83,22 +83,17 @@
         
         
             <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 1.9.9.</li>
-  <li>d/control:
+  <li>Merge with Debian unstable. Remaining Ubuntu changes:
     <ul>
-      <li>Bump DH compat to 13.</li>
-      <li>Drop Build-Depends on exo-utils.</li>
-      <li>Update ‘homepage’ field.</li>
+      <li>Add epoch.</li>
     </ul>
   </li>
-  <li>d/watch: Use uscan special strings.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.9-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1.3.1-1ubuntu1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -107,17 +102,275 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.5-1/changelog">xfce4-cpufreq-plugin (1.2.5-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.16.2-1ubuntu1/changelog">xfce4-settings (4.16.2-1ubuntu1) impish</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-08-28">
+                28 Aug 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.16.2-1ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Merge from Debian unstable. Remaining changes:
+    <ul>
+      <li>d/p/xubuntu_vanilla-session-themes.patch:
+        <ul>
+          <li>Fix missing gtk and icon themes with the vanilla Xfce session.</li>
+        </ul>
+      </li>
+      <li>Add elementary-xfce-icon-theme and greybird-gtk-theme to Recommends      LP: #1050012, #1157706, #1322305</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.16.2-1ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.1-1/changelog">xfce4-sensors-plugin (1.4.1-1) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2021-08-24">
+                24 Aug 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.1-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Upload to unstable.</li>
+  <li>New upstream version 1.4.1 (Closes: #991687)
+    <ul>
+      <li>fix some memory leaks (Closes: #871717)</li>
+      <li>prevent settings dropping (Closes: #989933, #851407)</li>
+    </ul>
+  </li>
+  <li>d/p/0001-Fix-multiple-definition-errors-under-GCC-10.0 dropped</li>
+  <li>d/control: update standards version to 4.5.1</li>
+  <li>d/watch: update version</li>
+  <li>d/control: R³: no</li>
+  <li>d/control: drop libxml2-dev and libxml-parser-perl b-deps</li>
+  <li>d/control: update Homepage</li>
+  <li>d/rules: drop manual call to dh_autoreconf</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.1-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.26.0-0ubuntu1/changelog">mate-calc (1.26.0-0ubuntu1) impish</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Martin Wimpress
+            
+            
+            <time class="post-date" datetime="2021-08-21">
+                21 Aug 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.26.0-0ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream release.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.26.0-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.26.0-0ubuntu1/changelog">engrampa (1.26.0-0ubuntu1) impish</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Martin Wimpress
+            
+            
+            <time class="post-date" datetime="2021-08-21">
+                21 Aug 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.26.0-0ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream release.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.26.0-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.26.0-0ubuntu1/changelog">atril (1.26.0-0ubuntu1) impish</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Martin Wimpress
+            
+            
+            <time class="post-date" datetime="2021-08-21">
+                21 Aug 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.26.0-0ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream release.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.26.0-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.239/changelog">xubuntu-meta (2.239) impish</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-08-19">
+                19 Aug 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.239/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Refreshed dependencies</li>
+  <li>Added xcape to core-recommends, desktop-recommends</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.239/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.3/changelog">xubuntu-default-settings (21.10.3) impish</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Sean Davis
+            
+            
+            <time class="post-date" datetime="2021-08-19">
+                19 Aug 2021
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.3/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>etc/xdg/xdg-xubuntu/autostart/xcape-super-binding.desktop:
+    <ul>
+      <li>Add Super key binding to open Whisker Menu</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.3/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.2-1/changelog">xfce4-taskmanager (1.5.2-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
                 Unit 193
             
             
-            <time class="post-date" datetime="2021-08-16">
-                16 Aug 2021
+            <time class="post-date" datetime="2021-08-18">
+                18 Aug 2021
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.5-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.2-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -126,15 +379,24 @@
         
             <section class="post-content"><ul>
   <li>Team upload.</li>
-  <li>New upstream version 1.2.5.</li>
-  <li>d/control: Bump DH compat to 13.</li>
-  <li>d/rules: Drop autoreconf workaround.</li>
+  <li>New upstream version 1.5.2.
+    <ul>
+      <li>Refresh patch.</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Build-Depend on libxfce4ui-2-dev and libxfconf-0-dev.</li>
+      <li>Bump DH compat to 13.</li>
+    </ul>
+  </li>
+  <li>Update Standards-Version to 4.6.0.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.5-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -143,17 +405,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_1.6.2-1/changelog">xfce4-clipman-plugin (2:1.6.2-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.11.0-1/changelog">ristretto (0.11.0-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
                 Unit 193
             
             
-            <time class="post-date" datetime="2021-08-16">
-                16 Aug 2021
+            <time class="post-date" datetime="2021-08-18">
+                18 Aug 2021
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_1.6.2-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.11.0-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -166,299 +428,35 @@
 
 <p>[ Debian Janitor ]</p>
 <ul>
-  <li>Use secure URI in Homepage field.</li>
-  <li>Apply multi-arch hints. + xfce4-clipman-plugin: Add Multi-Arch: same.</li>
+  <li>Bump debhelper from old 11 to 12.</li>
+  <li>Set upstream metadata fields: Repository.</li>
+  <li>Update standards version to 4.4.1, no changes needed.</li>
+  <li>Update standards version to 4.5.0, no changes needed.</li>
 </ul>
 
 <p>[ Unit 193 ]</p>
 <ul>
-  <li>New upstream version 1.6.2.</li>
-  <li>d/control:
-    <ul>
-      <li>Bump DH compat to 13.</li>
-      <li>Update ‘homepage’ field.</li>
-    </ul>
-  </li>
-  <li>d/xfce4-clipman.install: Update metainfo install location.</li>
-  <li>Update Standards-Version to 4.5.1.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_1.6.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.2-1/changelog">gigolo (0.5.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-08-16">
-                16 Aug 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 0.5.2.</li>
-  <li>d/control:
-    <ul>
-      <li>Bump DH compat to 13.</li>
-      <li>R³: no.</li>
-      <li>Update ‘homepage’ field.</li>
-      <li>Recommend gvfs-backends. (Closes: #752190)</li>
-    </ul>
-  </li>
-  <li>d/watch: Bump to compat 4.</li>
-  <li>Update Standards-Version to 4.5.1.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.3-1/changelog">xfce4-panel (4.16.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-08-15">
-                15 Aug 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 4.16.3.</li>
-  <li>d/control: Bump DH compat to 13.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.3-1/changelog">xfce4-cpugraph-plugin (1.2.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-08-15">
-                15 Aug 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 1.2.3.</li>
-  <li>d/control: Bump DH compat to 13.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.2-1/changelog">exo (4.16.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2021-08-15">
-                15 Aug 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 4.16.2.</li>
-  <li>d/libexo-2-0.symbols: Set Build-Depends-Package.</li>
+  <li>New upstream version 0.11.0.</li>
+  <li>d/docs: Follow upstream rename, README → README.md.</li>
   <li>d/control:
     <ul>
       <li>Bump DH compat to 13.</li>
       <li>R³: no.</li>
     </ul>
   </li>
-  <li>d/libexo-common.(maintscript,preinst): Drop obsolete migration code.</li>
-  <li>d/rules: Drop autoreconf workaround and dbgsym migration.</li>
-  <li>Trim trailing whitespace from previous changelog entries.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.2-1/changelog">blueman (2.2.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Christopher Schramm
-            
-            
-            <time class="post-date" datetime="2021-08-07">
-                07 Aug 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New release (Closes: #991410)</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.2-1/changelog">catfish (4.16.2-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2021-08-04">
-                04 Aug 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.2-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream release.</li>
-  <li>d/control:
+  <li>d/watch:
     <ul>
-      <li>Bump debhelper-compat to 13</li>
-      <li>Use new uploader email address</li>
+      <li>Update for upstream’s move to mirrorbit.</li>
+      <li>Use uscan special strings.</li>
     </ul>
   </li>
-  <li>d/copyright:
-    <ul>
-      <li>Update upstream name, contact, and source</li>
-    </ul>
-  </li>
+  <li>Update Standards-Version to 4.6.0.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.2-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.2/changelog">xubuntu-default-settings (21.10.2) impish</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Sean Davis
-            
-            
-            <time class="post-date" datetime="2021-08-02">
-                02 Aug 2021
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.2/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>etc/xdg/xdg-xubuntu/xfce4/xfconf/xfce-perchannel-xml/xfce4-screensaver.xml:
-    <ul>
-      <li>Removed, conflicting package with xubuntu-live-settings breaks builds.</li>
-    </ul>
-  </li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.2/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.11.0-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -471,7 +469,7 @@
             <a class="newer-posts" href="/page19" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 20 of 70 </span>
+    <span class="page-number"> Page 20 of 71 </span>
      
         <a class="older-posts" href="/page21" title="Next Page">Older Posts &raquo;</a>
      

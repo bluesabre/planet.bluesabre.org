@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page62" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 63 of 70 </span>
+    <span class="page-number"> Page 63 of 71 </span>
      
         <a class="older-posts" href="/page64" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,17 +65,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.0-2/changelog">engrampa (1.24.0-2) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.18-1/changelog">gimp (2.10.18-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Mike Gabriel
+                Jeremy Bicha
             
             
-            <time class="post-date" datetime="2020-02-28">
-                28 Feb 2020
+            <time class="post-date" datetime="2020-03-29">
+                29 Mar 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.0-2/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.18-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -83,17 +83,18 @@
         
         
             <section class="post-content"><ul>
-  <li>debian/control:
-    <ul>
-      <li>Add B:/R: relation (engrampa-common) to parchives (« 1.1.5-1~). (Closes:      #952717).</li>
-    </ul>
-  </li>
+  <li>New upstream release (Closes: #954143)</li>
+  <li>Bump minimum libbabl-dev to 0.1.74 &amp; libgegl-dev to 0.4.22</li>
+  <li>Bump minimum libmypaint-dev to 1.14</li>
+  <li>Disable automatic update checking since the distro handles that</li>
+  <li>debian/libgimp2.0.symbols: Add new symbols</li>
+  <li>Drop the 3 backported patches applied in the new release</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.0-2/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.18-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -102,72 +103,49 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/2020/02/20/sgt-puzzles-collection-0-2-5-released/">SGT Puzzles Collection 0.2.5 Released</a></h1>
+            <h1 class="post-title"><a href="https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.15">v0.15</a></h1>
         </header>
         <header class="post-meta">
             
-                Sean Davis
+                elementary Xfce Icon Theme
             
             
-            <time class="post-date" datetime="2020-02-20">
-                20 Feb 2020
+            <time class="post-date" datetime="2020-03-26">
+                26 Mar 2020
             </time>
-            <a href="https://bluesabre.org/2020/02/20/sgt-puzzles-collection-0-2-5-released/" class="post-permalink">
+            <a href="https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.15" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><h3 id="what-is-this">What Is This?</h3><img src="https://bluesabre.org/content/images/2020/02/sgt-launcher-featured.png" alt="SGT Puzzles Collection 0.2.5 Released"><p><em>SGT Puzzles Collection</em>, or simply <em>sgt-launcher</em>, is a game launcher and wrapper for <a href="http://www.chiark.greenend.org.uk/~sgtatham/puzzles/"><em><em><em><em>Simon Tatham’s Portable Puzzle Collection</em></em></em></em></a>, a popular collection of logic games by the <a href="http://www.chiark.greenend.org.uk/~sgtatham/">developer</a> of <em><em><em><em>PuTTY</em></em></em></em>.</p><p>Joining the Xubuntu package set way back in Xubuntu 17.10 "Artful Aardvark", SGT Puzzles Collection has quietly provided Xubuntu users with a variety of distracting games for several releases. If you want to learn more about the project, check out my <a href="https://bluesabre.org/2016/11/06/sgt-puzzles-collection-introduction/">introductory blog post</a>.</p><h3 id="what-s-new">What's New?</h3><ul><li>Fixed issues with looping when launching a game (LP: <a href="https://launchpad.net/bugs/1697107">#1697107</a>)</li><li>Added "Report a Bug..." option to the menu which takes the user straight to the bug tracker for SGT Puzzles Collection</li><li>Added support for closing the application with Ctrl-C in the terminal</li><li>Fixed AppData validation and added some additional details</li><li>Switched the AppData and launcher to RDN-style (org.bluesabre.SgtLauncher) to follow FreeDesktop standards. Installations from source may now have duplicate launchers, just delete sgt-launcher.desktop</li><li>Updated Danish translation</li></ul><h2 id="downloads">Downloads</h2><p><a href="https://launchpad.net/sgt-launcher/0.2/0.2.5/+download/sgt-launcher-0.2.5.tar.gz">Source tarball</a></p><pre><code>$ md5sum sgt-launcher-0.2.5.tar.gz
-28e77a28faeb9ed6105cab09c90f1ea0
-
-$ sha1sum sgt-launcher-0.2.5.tar.gz
-59595b926950e3b76230b35ee540e883407e8132
-
-$ sha256sum sgt-launcher-0.2.5.tar.gz
-2aa00b35b3cb19c041246bfa9e892862f3bcb133843a1f2f3767e9f5be278fc7</code></pre><p>SGT Puzzles Collection 0.2.5 will be included in Xubuntu 20.04 "Focal Fossa", available in April. Users testing the daily images should be able to test it <a href="https://launchpad.net/ubuntu/+source/sgt-launcher/0.2.5-0ubuntu1">any moment now</a>.</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://bluesabre.org/2020/02/20/sgt-puzzles-collection-0-2-5-released/">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://github.com/bluesabre/sgt-launcher/releases/tag/sgt-launcher-0.2.5">SGT Puzzles Collection 0.2.5</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                SGT Puzzles Collection
-            
-            
-            <time class="post-date" datetime="2020-02-19">
-                19 Feb 2020
-            </time>
-            <a href="https://github.com/bluesabre/sgt-launcher/releases/tag/sgt-launcher-0.2.5" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-<li>Fix game launching loop (LP: <a href="https://bugs.launchpad.net/sgt-launcher/+bug/1697107" rel="nofollow">#1697107</a>)</li>
-<li>Add bug reporting to the application menu</li>
-<li>Allow application shutdown with Ctrl-C in terminal</li>
-<li>Fix appdata validation; added more information</li>
-<li>Move to RDN-format for appdata and the launcher (source installations may result in duplicate .desktop files, just delete sgt-launcher.desktop)</li>
-<li>Translation Update: Danish</li>
+            <section class="post-content"><h2>Features</h2>
+<ul>
+<li>Added 24px clipman icon</li>
+<li>Dropped Firefox, Chrome, and Chromium icons in favor of upstream</li>
+<li>Revamped all 16px panel icons</li>
+<li>Synced network icons from elementary upstream</li>
+<li>Vacuumed all SVGs</li>
+</ul>
+<h2>Bug Fixes</h2>
+<ul>
+<li>Dropped file reference in draw-text.svg (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="542447917" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/171" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/171/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/171">#171</a>)</li>
+<li>Dropped unused styles from thunderbird SVGs</li>
+<li>Fixed Bluetooth Manager icon in application menu (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="363156202" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/129" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/129/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/129">#129</a>)</li>
+<li>Fixed home icon in darker theme</li>
+<li>Fixed icon for Gnome Software Center (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="576924902" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/181" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/181/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/181">#181</a>)</li>
+<li>Fixed some close and eject icons for dark theme</li>
+<li>Fixed user-desktop icons broken with move to manila folders</li>
+<li>Fixed various symlink issues with icons and documentation</li>
+<li>Relinked bad icons in darker theme (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="582161590" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/191" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/191/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/191">#191</a>)</li>
+<li>Removed conflicting icon names</li>
+<li>Renamed false SVGs to PNG</li>
 </ul></section>
         
         <footer>
             
-                <a class="read-more" href="https://github.com/bluesabre/sgt-launcher/releases/tag/sgt-launcher-0.2.5">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.15">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -176,17 +154,98 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-launcher/sgt-launcher_0.2.5-0ubuntu1/changelog">sgt-launcher (0.2.5-0ubuntu1) focal</a></h1>
+            <h1 class="post-title"><a href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.12">Greybird 3.22.12</a></h1>
         </header>
         <header class="post-meta">
             
-                Sean Davis
+                Greybird GTK Theme
             
             
-            <time class="post-date" datetime="2020-02-19">
-                19 Feb 2020
+            <time class="post-date" datetime="2020-03-21">
+                21 Mar 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-launcher/sgt-launcher_0.2.5-0ubuntu1/changelog" class="post-permalink">
+            <a href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.12" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>This is a feature release.</p>
+<h2>Features</h2>
+<ul>
+<li>Rebase partly on Adwaita 3.24 to get features and reduce diff</li>
+<li>Sync dark theme with light theme and use symlinks to reduce file size and simplify maintenance</li>
+<li>Messagedialog: Reduce buttonbox button height</li>
+<li>notifyd: Tweak the theme's appearance (button hover)</li>
+</ul></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.12">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-goodies/xfce4-goodies_4.14.0/changelog">xfce4-goodies (4.14.0) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2020-03-20">
+                20 Mar 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-goodies/xfce4-goodies_4.14.0/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[ Debian Janitor ]</p>
+<ul>
+  <li>Trim trailing whitespace.</li>
+  <li>Bump debhelper from old 10 to 12.</li>
+  <li>Set debhelper-compat version in Build-Depends.</li>
+  <li>Update standards version to 4.4.1, no changes needed.</li>
+</ul>
+
+<p>[ Yves-Alexis Perez ]</p>
+<ul>
+  <li>d/control: update standards version to 4.5.0</li>
+  <li>d/control: demote xfce4-notes-plugin to suggests</li>
+  <li>d/control: fix typo in long description</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-goodies/xfce4-goodies_4.14.0/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.7.0-1/changelog">xfce4-power-manager (1.7.0-1) experimental</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Yves-Alexis Perez
+            
+            
+            <time class="post-date" datetime="2020-03-15">
+                15 Mar 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.7.0-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -194,30 +253,13 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
         
         
             <section class="post-content"><ul>
-  <li>New upstream release.</li>
-  <li>d/compat, d/control:
-    <ul>
-      <li>Bump compat to 12</li>
-      <li>Bump Standards-Version to 4.4.0</li>
-      <li>Set Rules-Requires-Root to no</li>
-    </ul>
-  </li>
-  <li>d/copyright:
-    <ul>
-      <li>Add missing CC0-1.0 license</li>
-    </ul>
-  </li>
-  <li>d/prerm, d/postrm:
-    <ul>
-      <li>Add /bin/sh interpreter (script-without-interpreter)</li>
-    </ul>
-  </li>
+  <li>New upstream version 1.7.0</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-launcher/sgt-launcher_0.2.5-0ubuntu1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.7.0-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -226,69 +268,42 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.0-1/changelog">mate-calc (1.24.0-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.6.6-1/changelog">xfce4-power-manager (1.6.6-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Mike Gabriel
+                Yves-Alexis Perez
             
             
-            <time class="post-date" datetime="2020-02-14">
-                14 Feb 2020
+            <time class="post-date" datetime="2020-03-15">
+                15 Mar 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.0-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.6.6-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p>[ Mike Gabriel ]</p>
+            <section class="post-content"><p>[ Debian Janitor ]</p>
 <ul>
-  <li>debian/control:
-    <ul>
-      <li>Add Rules-Requires-Root: field and set it to no.</li>
-      <li>Bump Standards-Version: to 4.5.0. No changes needed.</li>
-    </ul>
-  </li>
-  <li>debian/upstream/metadata:
-    <ul>
-      <li>Drop obsolete fields Contact: and Name:.</li>
-      <li>Append .git suffix to URLs in Repository: field.</li>
-    </ul>
-  </li>
+  <li>Trim trailing whitespace.</li>
+  <li>Bump debhelper from old 11 to 12.</li>
+  <li>Set upstream metadata fields: Name (from ./configure), Repository.</li>
+  <li>Update standards version to 4.4.1, no changes needed.</li>
 </ul>
 
-<p>[ Martin Wimpress ]</p>
+<p>[ Yves-Alexis Perez ]</p>
 <ul>
-  <li>New upstream release.</li>
-  <li>debian/patches:
-    <ul>
-      <li>Drop 1001_add-keywords-field-to-desktop-file.patch. Applied upstream.</li>
-    </ul>
-  </li>
-  <li>debian/copyright:
-    <ul>
-      <li>Update copyright attributions.</li>
-    </ul>
-  </li>
-  <li>debian/control:
-    <ul>
-      <li>Add B-D libxml2-utils.</li>
-      <li>Update Build-Depends: to support MATE Desktop 1.24.</li>
-    </ul>
-  </li>
-  <li>debian/mate-calc-common.install:
-    <ul>
-      <li>Remove obsolete reference to usr/share/mate-calc/.</li>
-    </ul>
-  </li>
+  <li>d/watch: use uscan special strings</li>
+  <li>New upstream version 1.6.6</li>
+  <li>d/control: update standards version to 4.5.0</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.0-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.6.6-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -297,69 +312,44 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.0-1/changelog">atril (1.24.0-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfburn/xfburn_0.6.2-1/changelog">xfburn (0.6.2-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Mike Gabriel
+                Yves-Alexis Perez
             
             
-            <time class="post-date" datetime="2020-02-14">
-                14 Feb 2020
+            <time class="post-date" datetime="2020-03-15">
+                15 Mar 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.0-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfburn/xfburn_0.6.2-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p>[ Mike Gabriel ]</p>
+            <section class="post-content"><p>[ Debian Janitor ]</p>
 <ul>
-  <li>debian/control:
-    <ul>
-      <li>Bump Standards-Version: to 4.5.0. No changes needed.</li>
-      <li>Update versioned B-D on mate-common (&gt;= 1.24.0-1~).</li>
-    </ul>
-  </li>
-  <li>debian/upstream/metadata:
-    <ul>
-      <li>Drop obsolete fields Contact: and Name:.</li>
-      <li>Append .git suffix to URLs in Repository: field.</li>
-    </ul>
-  </li>
+  <li>Trim trailing whitespace.</li>
+  <li>Set upstream metadata fields: Name (from ./configure).</li>
 </ul>
 
-<p>[ Martin Wimpress ]</p>
+<p>[ Yves-Alexis Perez ]</p>
 <ul>
-  <li>New upstream release.</li>
-  <li>debian/patches:
-    <ul>
-      <li>Drop CVE-2019-11459.patch. Applied upstream.</li>
-    </ul>
-  </li>
-  <li>debian/copyright:
-    <ul>
-      <li>Update copyright attributions.</li>
-    </ul>
-  </li>
-  <li>debian/control:
-    <ul>
-      <li>Add B-D libsynctex-dev.</li>
-      <li>Add B-D libxml2-utils.</li>
-    </ul>
-  </li>
-  <li>debian/libatrildocument3.symbols:
-    <ul>
-      <li>Update symbols.</li>
-    </ul>
-  </li>
+  <li>d/watch: use uscan special strings</li>
+  <li>d/control: update standards version to 4.5.0</li>
+  <li>New upstream version 0.6.2</li>
+  <li>d/patches: refresh for new upstream</li>
+  <li>d/rules: don’t try to move appdata</li>
+  <li>d/rules: run auto tests</li>
+  <li>d/rules: don’t override clean rules</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.0-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfburn/xfburn_0.6.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -368,35 +358,41 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu3/changelog">lightdm (1.30.0-0ubuntu3) focal</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.1-1/changelog">gigolo (0.5.1-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Gunnar Hjalmarsson
+                Yves-Alexis Perez
             
             
-            <time class="post-date" datetime="2020-02-07">
-                07 Feb 2020
+            <time class="post-date" datetime="2020-03-15">
+                15 Mar 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu3/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.1-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><ul>
-  <li>debian/patches/04_language_handling.patch:
-    <ul>
-      <li>Only set LANGUAGE if not in a live session (LP: #1861481).</li>
-    </ul>
-  </li>
+            <section class="post-content"><p>[ Debian Janitor ]</p>
+<ul>
+  <li>Use secure URI in Homepage field.</li>
+  <li>Update standards version to 4.4.1, no changes needed.</li>
+</ul>
+
+<p>[ Yves-Alexis Perez ]</p>
+<ul>
+  <li>New upstream version 0.5.0</li>
+  <li>d/watch: use uscan special strings</li>
+  <li>d/control: update standards version to 4.5.0</li>
+  <li>New upstream version 0.5.1</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu3/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.1-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -405,50 +401,17 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-puzzles/sgt-puzzles_20191231.79a5378-3/changelog">sgt-puzzles (20191231.79a5378-3) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Ben Hutchings
-            
-            
-            <time class="post-date" datetime="2020-02-02">
-                02 Feb 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-puzzles/sgt-puzzles_20191231.79a5378-3/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Update German translation, thanks to Helge Kreutzmann</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-puzzles/sgt-puzzles_20191231.79a5378-3/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.0-0ubuntu1/changelog">xfce4-time-out-plugin (1.1.0-0ubuntu1) devel</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-statusnotifier-plugin/xfce4-statusnotifier-plugin_0.2.2-1/changelog">xfce4-statusnotifier-plugin (0.2.2-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
                 Unit 193
             
             
-            <time class="post-date" datetime="2020-01-31">
-                31 Jan 2020
+            <time class="post-date" datetime="2020-03-14">
+                14 Mar 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.0-0ubuntu1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-statusnotifier-plugin/xfce4-statusnotifier-plugin_0.2.2-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -456,8 +419,13 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
         
         
             <section class="post-content"><ul>
-  <li>d/watch: Update to use uscan special strings, fix for move to mirrorbit.</li>
-  <li>New upstream version 1.1.0</li>
+  <li>d/watch:
+    <ul>
+      <li>Update for upstream’s move to mirrorbit.</li>
+      <li>Use uscan special strings.</li>
+    </ul>
+  </li>
+  <li>New upstream version 0.2.2</li>
   <li>d/compat, d/control:
     <ul>
       <li>Drop d/compat in favor of debhelper-compat, bump to 12.</li>
@@ -465,18 +433,8 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
   </li>
   <li>d/control:
     <ul>
-      <li>Update build-depends for GTK-3 port.</li>
-      <li>Drop libxml-parser-perl from build-depends.</li>
-      <li>Update homepage.</li>
       <li>R³: no.</li>
-    </ul>
-  </li>
-  <li>d/rules:
-    <ul>
-      <li>Enable all hardening options.</li>
-      <li>Update override to delete ‘.la’ files to be uniform with other plugins.</li>
-      <li>Drop dh_makeshlibs override, no longer needed.</li>
-      <li>Append -lX11 to LDFLAGS, missing upstream.</li>
+      <li>Update homepage for move from goodies.xfce.org to docs.xfce.org.</li>
     </ul>
   </li>
   <li>Update Standards-Version to 4.5.0.</li>
@@ -485,7 +443,7 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.0-0ubuntu1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-statusnotifier-plugin/xfce4-statusnotifier-plugin_0.2.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -494,17 +452,17 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel-profiles/xfce4-panel-profiles_1.0.10-0ubuntu1/changelog">xfce4-panel-profiles (1.0.10-0ubuntu1) devel</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-weather-plugin/xfce4-weather-plugin_0.10.1-1/changelog">xfce4-weather-plugin (0.10.1-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Unit 193
+                Yves-Alexis Perez
             
             
-            <time class="post-date" datetime="2020-01-22">
-                22 Jan 2020
+            <time class="post-date" datetime="2020-03-01">
+                01 Mar 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel-profiles/xfce4-panel-profiles_1.0.10-0ubuntu1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-weather-plugin/xfce4-weather-plugin_0.10.1-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -512,22 +470,15 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
         
         
             <section class="post-content"><ul>
-  <li>New upstream release.</li>
-  <li>d/compat, d/control:
-    <ul>
-      <li>Drop d/compat in favor of debhelepr-compat, bump to 12.</li>
-    </ul>
-  </li>
-  <li>d/control: R³: no.</li>
-  <li>d/copyright: Update years.</li>
-  <li>d/watch: Use uscan special strings.</li>
-  <li>Update Standards-Version to 4.5.0.</li>
+  <li>d/watch: switch to uscan special strings</li>
+  <li>New upstream version 0.10.1</li>
+  <li>update standards version to 4.5.0</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel-profiles/xfce4-panel-profiles_1.0.10-0ubuntu1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-weather-plugin/xfce4-weather-plugin_0.10.1-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -540,7 +491,7 @@ $ sha256sum sgt-launcher-0.2.5.tar.gz
             <a class="newer-posts" href="/page62" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 63 of 70 </span>
+    <span class="page-number"> Page 63 of 71 </span>
      
         <a class="older-posts" href="/page64" title="Next Page">Older Posts &raquo;</a>
      

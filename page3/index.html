@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page2" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 3 of 70 </span>
+    <span class="page-number"> Page 3 of 71 </span>
      
         <a class="older-posts" href="/page4" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,37 +65,34 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-2/changelog">menulibre (2.2.2-2) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.3-1/changelog">xfce4-wavelan-plugin (0.6.3-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                Jelmer Vernooĳ
+                Unit 193
             
             
-            <time class="post-date" datetime="2022-06-17">
-                17 Jun 2022
+            <time class="post-date" datetime="2022-07-06">
+                06 Jul 2022
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-2/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.3-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p>[ Debian Janitor ]</p>
-<ul>
-  <li>Remove constraints unnecessary since buster:
-    <ul>
-      <li>Build-Depends: Drop versioned constraint on libgnome-menu-3-dev and      python3-distutils-extra.</li>
-      <li>menulibre: Drop versioned constraint on gir1.2-gmenu-3.0, gnome-menus and      python3-gi in Depends.</li>
-    </ul>
-  </li>
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+  <li>New upstream version 0.6.3.</li>
+  <li>d/rules: Drop –as-needed, default now in stable.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-2/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.3-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -104,304 +101,41 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://bluesabre.org/news/2022/6/12/menulibre-230-released">MenuLibre 2.3.0 Released</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.17.2-1/changelog">exo (4.17.2-1) experimental</a></h1>
         </header>
         <header class="post-meta">
             
-                Sean Davis
+                Unit 193
             
             
-            <time class="post-date" datetime="2022-06-12">
-                12 Jun 2022
+            <time class="post-date" datetime="2022-07-06">
+                06 Jul 2022
             </time>
-            <a href="https://bluesabre.org/news/2022/6/12/menulibre-230-released" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.17.2-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><h2>What’s New?</h2><h3>New Features</h3><ul data-rte-list="default"><li><p class="">Added experimental support for the MATE desktop environment (<a href="https://github.com/bluesabre/menulibre/issues/40">#40</a>), as found in Solus and Ubuntu MATE</p></li><li><p class="">Added support for the Unity desktop environment, as found in Ubuntu Unity</p></li><li><p class="">Added support for the <code>admin://</code> protocol for editing root-owned files in the parsing errors dialog</p></li><li><p class="">Added a new prompt for automatically restarting the application menu when edits cannot be immediately applied</p></li><li><p class="">Added an uninstallation script (not that you’d ever need it)</p></li></ul><h3>Bug Fixes</h3><ul data-rte-list="default"><li><p class="">AppStream: Do not install <code>appdata.xml.in</code> (<a href="https://github.com/bluesabre/menulibre/issues/85">#85</a>)</p></li><li><p class="">AppStream: Fix screenshot URLs (404 errors)</p></li><li><p class="">Desktop Environments: Remove empty menubar on Ubuntu's GNOME</p></li><li><p class="">Editor: Escape quoted percentage arguments (<a href="https://github.com/bluesabre/menulibre/issues/93">#93</a>)</p></li><li><p class="">Editor: Fixed copying filename with Ctrl+C</p></li><li><p class="">Startup: Assume menu loading failed when the menu is empty</p></li></ul><h3>General</h3><ul data-rte-list="default"><li><p class="">AppStream: Add OARS rating</p></li><li><p class="">AppStream: Add developer name</p></li></ul><h3>Updated Translations</h3><p class="">Catalan, Dutch, Finnish, French, Italian, Lithuanian, Malay, Malay (Arabic), Polish, Spanish</p><h2>Adding Support for MATE (and other environments)</h2><p class="">Adding (or fixing) support for the MATE desktop environment proved to be a challenge. Due to some incompatibility been <code>gnome-menus</code>, <code>xdg-desktop-menu</code>, MATE, and probably something that MenuLibre is doing wrong with all three… MenuLibre was failing to read the MATE directories which resulted in an always-empty menu structure. Getting past that, I found that some updates such as renaming menu items would either fail to update the menu or add duplicate directories.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/390e4f5c-6720-4cfd-ba74-7c5f23ac6b91/menulibre-empty-menu.png" data-image-dimensions="800x700" data-image-focal-point="0.5,0.5" alt="A screenshot of MenuLibre without any detected menu items." data-load="false" data-image-id="62a5e7df642f3b51276d1767" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/390e4f5c-6720-4cfd-ba74-7c5f23ac6b91/menulibre-empty-menu.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">MenuLibre 2.2.3 failed to detect any menus in the MATE desktop environment.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class="">The first improvement that came out of this series of fixes was to correctly determine that an empty menu is one that failed to load. MenuLibre will now correctly capture this and present the diagnostic dialog at startup to help with reporting a bug.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/b19de8ba-6a98-4019-a3b8-9ec1ceed913f/menulibre-failed-to-load.png" data-image-dimensions="800x700" data-image-focal-point="0.5,0.5" alt="A screenshot of MenuLibre showing menu loading errors." data-load="false" data-image-id="62a5e84fc1c4bb2b6f40d89c" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/b19de8ba-6a98-4019-a3b8-9ec1ceed913f/menulibre-failed-to-load.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">When MenuLibre correctly detects a loading error, it will display diagnostic information that can be used to identify related issues.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class="">The second improvement was adding support for the vendor-prefixed directory structures. The KDE support already had this to some extent, but it’s now been further refined and should work for any desktop environment. Launchers found in <code>vendor/vendor-*.desktop</code> paths are now properly supported.</p><p class="">Third, and this is when things start getting hacky, was adding support for MATE in such a way that all of the systems would play together nicely. At startup, MenuLibre will now sync vendor directories (e.g. <code>mate/mate-accessories.directory</code>) to your user path and create temporary symbolic links to the top level:</p><ul data-rte-list="default"><li><p class=""><code>~/.local/share/desktop-directories/mate/mate-accessories.directory</code></p></li><li><p class=""><code>~/.local/share/desktop-directories/mate-accessories.directory</code></p></li></ul><p class="">This allows everything to speak the same language. When MenuLibre writes the menu file, it will resolve the real paths so the symbolic links are not needed, and clean up after itself. I don’t love this solution, but it’s proven to be the most stable.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/9bd668f8-8f82-4f3a-b336-72e8657a615a/menulibre-directory-files.png" data-image-dimensions="1600x900" data-image-focal-point="0.5,0.5" alt="A screenshot of MenuLibre and the files created to properly support loading the menus." data-load="false" data-image-id="62a5e8d9c5fe2f1af45396fd" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/9bd668f8-8f82-4f3a-b336-72e8657a615a/menulibre-directory-files.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">By copying the system directory files and linking to them, MenuLibre is able to correctly read and write to the MATE applications menu.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<p class="">The final improvement that came from adding support for MATE was accepting that not all menu updates can be made on the fly. MenuLibre will now prompt you to automatically restart your menu (the panels on MATE and Xfce, and Unity shell) when updates fail to apply. This feature is limited to only MATE, Xfce, and Unity for now.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    
-  
-    
-
-      
-
-      
-        <figure class="
-              sqs-block-image-figure
-              intrinsic
-            "
-        >
-          
-        
-        
-
-        
-          
-            
-              
-              
-          
-            
-              <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/6e8b2c0f-d287-4bf0-ab98-e6184fc7d755/menulibre-restart-menu.png" data-image-dimensions="800x700" data-image-focal-point="0.5,0.5" alt="A screenshot of MenuLibre and its menu restart prompt." data-load="false" data-image-id="62a5e9427e724a70775ba26a" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/6e8b2c0f-d287-4bf0-ab98-e6184fc7d755/menulibre-restart-menu.png?format=1000w" />
-            
-          
-        
-            
-          
-        
-
-        
-          
-          <figcaption class="image-caption-wrapper">
-            <p class="">In supported desktop environments, MenuLibre can automatically restart the applications menu to apply any additional updates.</p>
-          </figcaption>
-        
-      
-        </figure>
-      
-
-    
-  
-
-
-  
-
-
-<h2>Next Steps</h2><p class="">I’m going to continue improving upon MenuLibre in the coming weeks but I’d like to get some early feedback on the features and fixes introduced in MenuLibre 2.3.0. Please <a href="https://github.com/bluesabre/menulibre/issues">report any issues on GitHub</a> and try to refrain from shipping this development release on production systems.</p><p class="">Next, I’m going to start work on a snapshot system that will make it easier to reverse changes or even completely undo the changes MenuLibre makes to your system. There have been far too many reports of failed menu updates and empty menus and MenuLibre needs to better protect its users.</p><h2>Downloads</h2><p class=""><a href="https://github.com/bluesabre/menulibre/releases/download/menulibre-2.3.0/menulibre-2.3.0.tar.gz">Source tarball</a> (<a href="https://github.com/bluesabre/menulibre/releases/download/menulibre-2.3.0/menulibre-2.3.0.tar.gz.asc">sig</a>)</p></section>
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+</ul>
+
+<p>[ Yves-Alexis Perez ]</p>
+<ul>
+  <li>New upstream version 4.17.2</li>
+</ul>
+
+<p>[ Unit 193 ]</p>
+<ul>
+  <li>Update Standards-Version to 4.6.1.</li>
+</ul>
+</section>
         
         <footer>
             
-                <a class="read-more" href="https://bluesabre.org/news/2022/6/12/menulibre-230-released">&raquo; Original Post</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.17.2-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -410,50 +144,34 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.3.0">MenuLibre 2.3.0</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.17-1/changelog">elementary-xfce (0.17-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
-                MenuLibre
+                Unit 193
             
             
-            <time class="post-date" datetime="2022-06-12">
-                12 Jun 2022
+            <time class="post-date" datetime="2022-07-05">
+                05 Jul 2022
             </time>
-            <a href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.3.0" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.17-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p><em>Please note that this is a development release.</em></p>
-<p>The highlight of this release (and the feature most needing testing) is support for the MATE desktop environment, at least as it is found in Solus and Ubuntu MATE. Other notable features are a new uninstallation script and improved automatic quoting support for launcher arguments.</p>
-<h2>Bug Fixes</h2>
-<ul>
-<li>AppStream: Do not install appdata.xml.in (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1007171071" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/85" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/85/hovercard" href="https://github.com/bluesabre/menulibre/issues/85">#85</a>)</li>
-<li>AppStream: Fix screenshot URLs</li>
-<li>Desktop Environments: Add support for admin:// protocol (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="688128341" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/62" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/62/hovercard" href="https://github.com/bluesabre/menulibre/issues/62">#62</a>)</li>
-<li>Desktop Environments: Add support for MATE (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="635869795" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/40" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/40/hovercard" href="https://github.com/bluesabre/menulibre/issues/40">#40</a>)</li>
-<li>Desktop Environments: Add support for Unity</li>
-<li>Desktop Environments: Remove empty menubar on Ubuntu's GNOME</li>
-<li>Desktop Environments: Suggest restarting menu when edits cannot be applied</li>
-<li>Editor: Escape quoted percentage arguments (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1088147784" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/93" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/93/hovercard" href="https://github.com/bluesabre/menulibre/issues/93">#93</a>)</li>
-<li>Editor: Fixed copying filename with Ctrl+C</li>
-<li>Setup: Add an uninstall script (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="854709681" data-permission-text="Title is private" data-url="https://github.com/bluesabre/menulibre/issues/80" data-hovercard-type="issue" data-hovercard-url="/bluesabre/menulibre/issues/80/hovercard" href="https://github.com/bluesabre/menulibre/issues/80">#80</a>)</li>
-<li>Startup: Assume menu failed to load when empty</li>
+            <section class="post-content"><ul>
+  <li>New upstream version 0.17.</li>
+  <li>d/control: Drop old Xubuntu Breaks/Replaces.</li>
+  <li>d/copyright: Update years and paths.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
 </ul>
-<h2>General</h2>
-<ul>
-<li>AppStream: Add OARS rating</li>
-<li>AppStream: Add developer name</li>
-</ul>
-<h2>Updated Translations</h2>
-<p>Catalan, Dutch, Finnish, French, Italian, Lithuanian, Malay, Malay (Arabic), Polish, Spanish</p></section>
+</section>
         
         <footer>
             
-                <a class="read-more" href="https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.3.0">&raquo; Release Announcement</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.17-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -462,17 +180,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.5-1/changelog">blueman (2.2.5-1) unstable</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3-1/changelog">blueman (2.3-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
                 Christopher Schramm
             
             
-            <time class="post-date" datetime="2022-06-10">
-                10 Jun 2022
+            <time class="post-date" datetime="2022-07-05">
+                05 Jul 2022
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.5-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -486,7 +204,7 @@
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.5-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -495,17 +213,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.4-1/changelog">xfce4-taskmanager (1.5.4-1) unstable</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-July/001123.html">xfce4-settings 4.16.3 released</a></h1>
         </header>
         <header class="post-meta">
             
-                Yves-Alexis Perez
+                Xfce Announcements
             
             
-            <time class="post-date" datetime="2022-06-04">
-                04 Jun 2022
+            <time class="post-date" datetime="2022-07-05">
+                05 Jul 2022
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.4-1/changelog" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-July/001123.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -513,13 +231,19 @@
         
         
             <section class="post-content"><ul>
-  <li>New upstream version 1.5.4</li>
+  <li>xfsettingsd: Fix recursive lock in libX11 (Fixes #369)</li>
+  <li>build: Fix intltool lock file problem during make distcheck</li>
+  <li>Translation Updates:
+Armenian (Armenia), Belarusian, Catalan, English (Canada), English
+(United Kingdom), Estonian, Galician, Greek, Indonesian, Kazakh,
+Korean, Lithuanian, Malay, Occitan (post 1500), Polish, Romanian,
+Swedish</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.4-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-July/001123.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -528,63 +252,75 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-archive-plugin/thunar-archive-plugin_0.5.0-1/changelog">thunar-archive-plugin (0.5.0-1) unstable</a></h1>
+            <h1 class="post-title"><a href="https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.17">0.17</a></h1>
         </header>
         <header class="post-meta">
             
-                Unit 193
+                elementary Xfce Icon Theme
             
             
-            <time class="post-date" datetime="2022-06-02">
-                02 Jun 2022
+            <time class="post-date" datetime="2022-07-04">
+                04 Jul 2022
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-archive-plugin/thunar-archive-plugin_0.5.0-1/changelog" class="post-permalink">
+            <a href="https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.17" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-</ul>
-
-<p>[ Debian Janitor ]</p>
+            <section class="post-content"><p>This release deprecates elementary-xfce-darker, transitions some monochrome icons back to colored for better legibility in dark/bright themes, drops lots of legacy symlinks (stock_<em>, gnome-</em>) and adds lots of mimetype icons.</p>
 <ul>
-  <li>Trim trailing whitespace.</li>
-  <li>Set debhelper-compat version in Build-Depends.</li>
-  <li>Refer to specific version of license GPL-2+, LGPL-2+.</li>
-  <li>Apply multi-arch hints.
-    <ul>
-      <li>thunar-archive-plugin: Add Multi-Arch: same.</li>
-    </ul>
-  </li>
+<li>Deprecate elementary-xfce-darkest</li>
+<li>Add programming language mimetypes</li>
+<li>Add system package mimetypes</li>
+<li>Add lightdm settings, mugshot icons</li>
+<li>Add 24px symbolic icons for Thunar 4.17 toolbar</li>
+<li>Add symbolic view icons for Thunar 4.17 toolbar</li>
+<li>Add missing 96px mimetypes, symlinks</li>
+<li>Add USB Hard Drive, IEEE1394 device icons</li>
+<li>Add firewall icon at all sizes, gufw app symlink</li>
+<li>Update index.theme to match directory tree</li>
+<li>Update some settings/app icons</li>
+<li>Update media playback icons</li>
+<li>Update border/shadow style for common mimetypes</li>
+<li>Update archive action icons</li>
+<li>Update and fix some mimetypes</li>
+<li>Update some app names, symlinks, remove unused</li>
+<li>Update Wifi icons at 48px, remove old</li>
+<li>Update some app names and symlinks, remove unused</li>
+<li>Update find action icon</li>
+<li>Fix symbolic media-skip from being media-seek</li>
+<li>Fix issue where xfsm icons don't show in darker</li>
+<li>Fix blurry software-update icon, update others</li>
+<li>Fix blurry symlink emblem in 0.16 release</li>
+<li>Remove and replace start-here</li>
+<li>Remove gnome- prefixed device icon symlinks</li>
+<li>Remove icon causing cache update error (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1272658306" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/305" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/elementary-xfce/issues/305/hovercard" href="https://github.com/shimmerproject/elementary-xfce/issues/305">#305</a>)</li>
+<li>Remove unused symlinks from actions</li>
+<li>Remove stock icon symlinks from actions</li>
+<li>Remove unused mimetypes</li>
+<li>Remove unused places icons</li>
+<li>Remove unused categories symlinks</li>
+<li>Remove Stock and Tools folders</li>
+<li>Remove redhat, novell icons</li>
+<li>Remove 22px size mimes</li>
+<li>Remove "gnome-" prefixed mimes</li>
+<li>Remove unused, rename misnamed app icons (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1208166049" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/elementary-xfce/issues/273" data-hovercard-type="pull_request" data-hovercard-url="/shimmerproject/elementary-xfce/pull/273/hovercard" href="https://github.com/shimmerproject/elementary-xfce/pull/273">#273</a>)</li>
+<li>Refresh folder icon emblems</li>
+<li>Refresh a few Xubuntu default app icons</li>
+<li>Make window-close visible in dark and light themes</li>
+<li>Use package mimetype from upsteam</li>
+<li>Rename battery icons, remove legacy battery icons</li>
+<li>Cleanup app icons</li>
+<li>Session icon fixes</li>
+<li>ci: Add GitHub action to test for dangling symlinks</li>
 </ul>
-
-<p>[ Unit 193 ]</p>
-<ul>
-  <li>New upstream version 0.5.0.
-    <ul>
-      <li>Drop patch, upstreamed.  Refresh remaining.</li>
-    </ul>
-  </li>
-  <li>d/watch: Use uscan special strings.</li>
-  <li>d/control:
-    <ul>
-      <li>Bump DH compat to 13.</li>
-      <li>R³: no.</li>
-      <li>Add ‘Homepage’ field.</li>
-    </ul>
-  </li>
-  <li>d/rules: Drop –as-needed and dh_missing override, now default.</li>
-  <li>d/thunar-archive-plugin.docs: Drop README, removed upstream.</li>
-  <li>Update Standards-Version to 4.6.1.</li>
-</ul>
-</section>
+<p>All the heavy lifting was done by <a class="user-mention notranslate" data-hovercard-type="user" data-hovercard-url="/users/newhoa/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/newhoa">@newhoa</a> <g-emoji class="g-emoji" alias="tada" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png">🎉</g-emoji></p></section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-archive-plugin/thunar-archive-plugin_0.5.0-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.17">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -593,83 +329,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.3-1/changelog">xfce4-taskmanager (1.5.3-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2022-05-25">
-                25 May 2022
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.3-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream version 1.5.3</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.3-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.4-1/changelog">xfce4-terminal (1.0.4-1) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Yves-Alexis Perez
-            
-            
-            <time class="post-date" datetime="2022-05-24">
-                24 May 2022
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.4-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>New upstream version 1.0.4</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.4-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-2ubuntu1/changelog">pidgin (1:2.14.9-2ubuntu1) kinetic</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.10-1ubuntu1/changelog">pidgin (1:2.14.10-1ubuntu1) kinetic</a></h1>
         </header>
         <header class="post-meta">
             
                 Gianfranco Costamagna
             
             
-            <time class="post-date" datetime="2022-05-17">
-                17 May 2022
+            <time class="post-date" datetime="2022-07-01">
+                01 Jul 2022
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-2ubuntu1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.10-1ubuntu1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -701,7 +371,7 @@
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-2ubuntu1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.10-1ubuntu1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -710,17 +380,220 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.3-1/changelog">xfce4-terminal (1.0.3-1) unstable</a></h1>
+            <h1 class="post-title"><a href="https://bluesabre.org/news/2022/6/22/darkbar-101-released">Darkbar 1.0.1 Released</a></h1>
         </header>
         <header class="post-meta">
             
-                Yves-Alexis Perez
+                Sean Davis
             
             
-            <time class="post-date" datetime="2022-05-13">
-                13 May 2022
+            <time class="post-date" datetime="2022-06-24">
+                24 Jun 2022
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.3-1/changelog" class="post-permalink">
+            <a href="https://bluesabre.org/news/2022/6/22/darkbar-101-released" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p class="">Darkbar is a tool for pixel perfectionists and dark mode users. It allows you to control whether an application uses dark or light styles for the window controls. It supports X11 and XWayland windows using traditional titlebars (e.g. no client side decorations) like you might find with The GIMP or Electron-based applications.</p>
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+    
+      
+
+        
+          
+            
+              
+                <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1655903931053-54LL95XC8FASHLH1PH4U/elementary-light.png" data-image-dimensions="1600x900" data-image-focal-point="0.5,0.5" alt="Darkbar on elementary OS (default style)" data-load="false" data-image-id="62b316b720e4cd460815c5e0" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1655903931053-54LL95XC8FASHLH1PH4U/elementary-light.png?format=1000w" /><br>
+              
+
+              
+                
+                  
+                  
+                    
+                      Darkbar on elementary OS (default style)
+                      
+                    
+                  
+                
+              
+              
+            
+          
+          
+        
+
+        
+
+        
+
+      
+
+        
+          
+            
+              
+                <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1655903930862-R9YJHYKNWLPL8Z28K9WD/elementary-dark.png" data-image-dimensions="1600x900" data-image-focal-point="0.5,0.5" alt="Darkbar on elementary OS (dark style)" data-load="false" data-image-id="62b316b74a9fd511340e8894" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1655903930862-R9YJHYKNWLPL8Z28K9WD/elementary-dark.png?format=1000w" /><br>
+              
+
+              
+                
+                  
+                  
+                    
+                      Darkbar on elementary OS (dark style)
+                      
+                    
+                  
+                
+              
+              
+            
+          
+          
+        
+
+        
+
+        
+
+      
+
+        
+          
+            
+              
+                <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1655903933005-K82AC1FCMPIU9YOZPYPO/gnome-light.png" data-image-dimensions="1600x900" data-image-focal-point="0.5,0.5" alt="Darkbar on GNOME (default style)" data-load="false" data-image-id="62b316bc180cc26a91613ab9" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1655903933005-K82AC1FCMPIU9YOZPYPO/gnome-light.png?format=1000w" /><br>
+              
+
+              
+                
+                  
+                  
+                    
+                      Darkbar on GNOME (default style)
+                      
+                    
+                  
+                
+              
+              
+            
+          
+          
+        
+
+        
+
+        
+
+      
+
+        
+          
+            
+              
+                <img class="thumb-image" data-image="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1655903932152-X7KYYCC9ID6KT6DZ53H1/gnome-dark.png" data-image-dimensions="1600x900" data-image-focal-point="0.5,0.5" alt="Darkbar on GNOME (dark style)" data-load="false" data-image-id="62b316bb1846b90ebe98a4b8" data-type="image" src="https://images.squarespace-cdn.com/content/v1/61ff1e1701ec5b7bb883b7d5/1655903932152-X7KYYCC9ID6KT6DZ53H1/gnome-dark.png?format=1000w" /><br>
+              
+
+              
+                
+                  
+                  
+                    
+                      Darkbar on GNOME (dark style)
+                      
+                    
+                  
+                
+              
+              
+            
+          
+          
+        
+
+        
+
+        
+
+      
+    
+  
+
+  
+    
+    
+    
+      
+      
+        
+          <a tabindex="0" role="button" class="previous" aria-label="Previous Slide"
+          ></a>
+          <a tabindex="0" role="button" class="next" aria-label="Next Slide"
+          ></a>
+        
+      
+    
+    
+     
+  
+
+
+
+
+
+
+
+
+<h2>What’s New?</h2><p class="">Darkbar <a href="https://github.com/bluesabre/darkbar/releases/tag/1.0.0">1.0.0</a> and <a href="https://github.com/bluesabre/darkbar/releases/tag/1.0.1">1.0.1</a> improve support for Flatpak installations and extend support to GNOME and other desktop environments supporting the FreeDesktop.org dark style preference. And for the first time, Darkbar is <a href="https://flathub.org/apps/details/com.github.bluesabre.darkbar">available on Flathub</a>!</p><h3>New Features</h3><ul data-rte-list="default"><li><p class="">Support for the FreeDesktop.org dark style preference</p></li><li><p class="">Support for user-defined window controls (minimize, maximize, close) layout (<a href="https://github.com/bluesabre/darkbar/issues/6">#6</a>)</p></li><li><p class="">Support for running under Wayland (only for Xwayland windows) (<a href="https://github.com/bluesabre/darkbar/issues/12">#12</a>)</p></li><li><p class="">Added default style preference for new identified windows (<a href="https://github.com/bluesabre/darkbar/issues/3">#3</a>)</p></li></ul><h3>Bug Fixes</h3><ul data-rte-list="default"><li><p class="">Ignore windows that cannot be identified or lack and XID</p></li><li><p class="">Reload the window list if invalid windows are encountered</p></li></ul><h3>Ignored Applications</h3><p class=""><em>Windows that cannot be controlled by Darkbar.</em></p><ul data-rte-list="default"><li><p class="">Chrome/Edge PWA and web app windows (always drawn by the app)</p></li><li><p class="">elementary OS apps (always uses CSD)</p></li><li><p class="">Zoom join windows (<code>join?</code>, always unique)</p></li></ul><h3>Flatpak Support</h3><ul data-rte-list="default"><li><p class="">Improved app identification and icon support (<a href="https://github.com/bluesabre/darkbar/issues/8">#8</a>)</p></li><li><p class="">Switch to using sandboxed <code>xprop</code>, no more spawning apps outside of the sandbox</p></li><li><p class="">X11 is now enforced, guaranteeing Xwayland windows can be correctly detected</p></li><li><p class="">Reduced requested permissions</p></li></ul><h3>Updated Translations</h3><p class="">Chinese, Chinese (China), Dutch, French, Italian, Italian, Japanese, Lithuanian, Malay, Malay (Arabic), Polish, Polish, Portuguese, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, Swedish, Turkish</p><h2>Desktop Environment Support</h2><p class="">To be able to use Darkbar, your desktop environment’s window manager needs to support dark style variants. Darkbar has been tested and proven to work with Gala (as found in the Pantheon desktop environment on elementary OS) and Mutter (GNOME’s window manager). It does not work with Xfwm, the Xfce window manager, at this time.</p><h2>How to Get Darkbar</h2><p class="">Darkbar is packaged as a Flatpak on the elementary OS AppCenter and on Flathub. If you are averse to Flatpaks (I’m sure you have your reasons), you can also find the building and installation instructions <a href="https://github.com/bluesabre/darkbar#building">on GitHub</a>.</p>
+
+
+<center>
+<a href="https://appcenter.elementary.io/com.github.bluesabre.darkbar"><img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" /></a>
+
+<a href="https://flathub.org/apps/details/com.github.bluesabre.darkbar"><img height="50" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-en.png"/></a>  
+</center>
+<p class="">I hope you enjoy using Darkbar and that it helps make your desktop experience more consistent. If you do, consider sending me a tip on AppCenter or on <a href="https://github.com/sponsors/bluesabre">GitHub Sponsors</a>!</p></section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://bluesabre.org/news/2022/6/22/darkbar-101-released">&raquo; Original Post</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_4.17.2-1/changelog">tumbler (4.17.2-1) experimental</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2022-06-22">
+                22 Jun 2022
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_4.17.2-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -728,14 +601,66 @@
         
         
             <section class="post-content"><ul>
-  <li>fix typo in README.Debian</li>
-  <li>New upstream version 1.0.3</li>
+  <li>Team upload.</li>
+  <li>New upstream version 4.17.2.
+    <ul>
+      <li>Drop patch applied upstream.</li>
+    </ul>
+  </li>
+  <li>d/control:
+    <ul>
+      <li>Bump DH compat to 13, drop old dpkg-dev build-depend.</li>
+      <li>Require libxfce4util-dev (&gt;= 4.17.1~)</li>
+    </ul>
+  </li>
+  <li>d/libtumbler-1-0.symbols: Update symbols.</li>
+  <li>d/tumbler.install: Install usr/lib/systemd/ now.</li>
+  <li>Update Standards-Version to 4.6.1.</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.3-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_4.17.2-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2022-June/001122.html">tumbler 4.17.2 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2022-06-19">
+                19 Jun 2022
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2022-June/001122.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]</p>
+
+<ul>
+  <li>Bug Fixes:
+    <ul>
+      <li>Yet another fix to the modification time storage format</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2022-June/001122.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -748,7 +673,7 @@
             <a class="newer-posts" href="/page2" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 3 of 70 </span>
+    <span class="page-number"> Page 3 of 71 </span>
      
         <a class="older-posts" href="/page4" title="Next Page">Older Posts &raquo;</a>
      

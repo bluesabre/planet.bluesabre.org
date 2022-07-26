@@ -54,7 +54,7 @@
             <a class="newer-posts" href="/page46" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 47 of 70 </span>
+    <span class="page-number"> Page 47 of 71 </span>
      
         <a class="older-posts" href="/page48" title="Next Page">Older Posts &raquo;</a>
      
@@ -65,341 +65,17 @@
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.5-1/changelog">libxfce4ui (4.15.5-1) experimental</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-11-20">
-                20 Nov 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.5-1/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>New upstream version 4.15.5.</li>
-  <li>d/libxfce4ui-2-0.symbols: Add new symbol.</li>
-  <li>d/watch: Bump to version 4.</li>
-  <li>Update Standards-Version to 4.5.1.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.5-1/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000927.html">mousepad 0.4.90 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000930.html">libxfce4ui 4.15.6 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2020-11-20">
-                20 Nov 2020
+            <time class="post-date" datetime="2020-12-10">
+                10 Dec 2020
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000927.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a release candidate for upcoming stable
-version 0.5, released in about a week if nothing blocks.]</p>
-
-<ul>
-  <li>Dependency Changes:
-    <ul>
-      <li>GLib &gt;= 2.45.8</li>
-      <li>GTK+ &gt;= 3.20</li>
-      <li>GtkSourceView &gt;= 3.24</li>
-      <li>GTK+ 2 support has been removed</li>
-      <li>GtkSourceView 2 support has been removed</li>
-    </ul>
-  </li>
-  <li>New Features:
-    <ul>
-      <li>Add keybindings to show the menubar temporarily when hidden</li>
-      <li>Add command line option and setting for file opening mode</li>
-      <li>Improve encoding dialog</li>
-      <li>Add regex search</li>
-    </ul>
-  </li>
-  <li>Discontinued Features
-    <ul>
-      <li>multi-select (GTK+ 2)</li>
-    </ul>
-  </li>
-  <li>Appearance Changes
-    <ul>
-      <li>Replace <code class="language-plaintext highlighter-rouge">$HOME</code> with a tilde in displayed filename</li>
-      <li>Add new default keybindings and reveal some hidden ones</li>
-      <li>Search bar tweaks</li>
-      <li>Make tabs expanded for consistency with other Xfce programs</li>
-      <li>Add copyright and license info to About dialog</li>
-      <li>Improve label texts of "Find and Replace" dialog and search bar</li>
-      <li>Make the statusbar smaller</li>
-      <li>Add new app icon and switch to reverse DNS name</li>
-      <li>Save the state of the "highlight all" button in the search bar</li>
-      <li>Update window title of Find and Replace dialog</li>
-      <li>Add "Wrap around" check box to Find and Replace dialog (Bug #11290)</li>
-      <li>Infer filetype from shebang line (Bug #10514)</li>
-      <li>Show info when Templates directory does not exist (Bug #10486)</li>
-    </ul>
-  </li>
-  <li>Code Refactoring
-    <ul>
-      <li>Restore the use of the file <code class="language-plaintext highlighter-rouge">accels.scm</code></li>
-      <li>Code refactoring around saving and restoring window geometry</li>
-      <li>Improve save-related actions</li>
-      <li>Fully switch to GtkApplication</li>
-      <li>Avoid deprecation warnings 5: CSS related</li>
-      <li>Avoid deprecation warnings 4: GtkUIManager and GtkAction</li>
-      <li>GtkStock</li>
-      <li>Avoid deprecation warnings 2: miscellaneous</li>
-      <li>Avoid deprecation warnings 1: alignment and padding</li>
-      <li>Avoid compilation warnings other than deprecation</li>
-      <li>Remove support for GTK+2</li>
-      <li>Switch to README.md and foreign automake mode</li>
-      <li>Add basic GitLab pipeline</li>
-    </ul>
-  </li>
-  <li>Bug Fixes:
-    <ul>
-      <li>Remove README.md from DISTCLEANFILES, it's not generated</li>
-      <li>Fix crash when dragging tab to GSV widget</li>
-      <li>Change GtkTextView wrap mode to GTK_WRAP_WORD_CHAR</li>
-      <li>Initialize the recent manager if needed at startup</li>
-      <li>Prevent search bar from overlapping the document</li>
-      <li>Properly disconnect signal handlers</li>
-      <li>Fix make distcheck</li>
-      <li>Fix color modifications in search entries</li>
-      <li>Do not open an empty document when encoding failed</li>
-      <li>Do not search for previously selected text</li>
-      <li>Update search field with selected text</li>
-      <li>Bug #16717: Move from exo-csource to xdt-csource</li>
-      <li>Remember last save location (Bug #14165)</li>
-      <li>Use g_get_user_dir to get Templates directory (Bug #11048)</li>
-      <li>Sync remaining menu actions to their settings (Bug #11046)</li>
-      <li>Install appstream in metainfo folder (Bug #11200)</li>
-      <li>Add appdata file (Bug #11200)</li>
-      <li>Fix building with <code class="language-plaintext highlighter-rouge">--enable-dbus --disable-gtk3</code></li>
-      <li>Change visibility of fullscreen bars after small delay (Bug #9735)</li>
-      <li>Fix return type of fullscreen settings (Bug #9735)</li>
-    </ul>
-  </li>
-  <li>Translation Updates:
-Albanian, Arabic, Armenian (Armenia), Basque, Belarusian, Bulgarian,
-Catalan, Chinese (China), Chinese (Taiwan), Croatian, Czech, Danish,
-Dutch, Eastern Armenian, English (Australia), English (United
-Kingdom), Estonian, Finnish, French, Galician, German, Greek, Hebrew,
-Hungarian, Icelandic, Indonesian, Interlingue, Italian, Japanese,
-Kazakh, Korean, Lithuanian, Malay, Norwegian Bokmål, Norwegian
-Nynorsk, Occitan (post 1500), Polish, Portuguese, Portuguese
-(Brazil), Romanian, Russian, Serbian, Slovak, Slovenian, Spanish,
-Swedish, Telugu, Thai, Turkish, Ukrainian, Uyghur</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000927.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://andreldm.com/2020/11/19/xfce4.16pre2.html">Xfce 4.16pre2 released!</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                André Miranda
-            
-            
-            <time class="post-date" datetime="2020-11-19">
-                19 Nov 2020
-            </time>
-            <a href="https://andreldm.com/2020/11/19/xfce4.16pre2.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>We are pleased to announce the second pre-release of Xfce 4.16 (a.k.a. xfce4.16pre2), moving us closer to the final release. As you all may have noticed, we are again a bit behind the <a href="https://wiki.xfce.org/releng/4.16/roadmap">schedule</a>, but nothing like the 4+ years it took from 4.12 to 4.14, so please hold your excitement a tad longer while we are polishing the rough edges. For now, help yourself with the latest batch of changes:</p>
-
-<h3 id="notable-changes">Notable Changes</h3>
-
-<h4 id="general">General</h4>
-<ul>
-  <li>More new app icons with rDNS naming scheme</li>
-  <li>Bugfixes and minor improvements in all components</li>
-  <li>Translation updates</li>
-</ul>
-
-<h4 id="settings">Settings</h4>
-<ul>
-  <li>Disable UPower support by default</li>
-  <li>Improve UX of settings dialogs (inline toolbar labels etc)</li>
-  <li>Default Applications: Add ‘Open with…’ button to settings dialog</li>
-</ul>
-
-<h4 id="libxfce4ui">Libxfce4ui</h4>
-<ul>
-  <li>Revamped About Xfce tab</li>
-  <li>Improve UI for setting shortcuts</li>
-  <li>New API to launch “daemonized” processes</li>
-</ul>
-
-<h4 id="panel">Panel</h4>
-<ul>
-  <li>Icon and appearance improvements</li>
-</ul>
-
-<h4 id="power-manager">Power Manager</h4>
-<ul>
-  <li>More accurate status icons (Fixes #95) - 10 percent steps instead of “low, good, full”</li>
-  <li>Respect the notification daemon’s timeouts (Fixes #57)</li>
-</ul>
-
-<h4 id="session">Session</h4>
-<ul>
-  <li>Tweak settings dialog (making columns sortable etc)</li>
-  <li>Add xfsm-lock icon</li>
-</ul>
-
-<h4 id="thunar">Thunar</h4>
-<ul>
-  <li>Add support for transparency in gtk themes</li>
-</ul>
-
-<h4 id="tumbler">Tumbler</h4>
-<ul>
-  <li>New thumbnailer plugin for epub files</li>
-</ul>
-
-<h3 id="where-can-you-get-it">Where can you get it?</h3>
-
-<p>Similary to pre1, you can either manually compile the <a href="https://archive.xfce.org/xfce/4.16pre2/src/">tarballs</a> or use <a href="https://github.com/schuellerf/xfce-test">xfce-test</a> (<code class="language-plaintext highlighter-rouge">ubuntu_20.04-xfce-4.16pre2</code> tag should be available at any moment) to enjoy a safe preview of Xfce 4.16. See the previous <a src="https://andreldm.com/2020/09/12/xfce4.16pre1#where-can-you-get-it">post</a> for more options.</p>
-
-<h3 id="whats-next">What’s next?</h3>
-
-<p>Finally, we will decide based on the feedback we get on pre2 whether to do a third pre-release or to go straight for the Xfce 4.16 stable release towards the end of the year. If no showstoppers are found we will try to release 4.16 still in 2020.</p></section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://andreldm.com/2020/11/19/xfce4.16pre2.html">&raquo; Original Post</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu3/changelog">blueman (2.1.3-2ubuntu3) hirsute</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Matthias Klose
-            
-            
-            <time class="post-date" datetime="2020-11-19">
-                19 Nov 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu3/changelog" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><ul>
-  <li>No-change rebuild to build with python3.9 as default.</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu3/changelog">&raquo; Changelog</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000926.html">Xfce 4.16pre2 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-11-19">
-                19 Nov 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000926.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>We are happy to announce the second - and potentially last - pre-release
-leading up to Xfce 4.16!</p>
-
-<p>Please note that this is a platform release: For a detailed list of
-changes please refer to the release notes of the individual components.
-A blog post with an overview of the highlights will follow in the coming
-days.</p>
-
-<p>For our release schedule please refer to our roadmap page for Xfce
-4.16:
-https://wiki.xfce.org/releng/4.16/roadmap</p>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000926.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000925.html">libxfce4ui 4.15.5 released</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Xfce Announcements
-            
-            
-            <time class="post-date" datetime="2020-11-19">
-                19 Nov 2020
-            </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000925.html" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000930.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -408,26 +84,26 @@ https://wiki.xfce.org/releng/4.16/roadmap</p>
         
             <section class="post-content"><p>[Please note that this is a development release.]</p>
 <ul>
-  <li>Add new API xfce_spawn_no_child (!8):
-Launch processes re-parenting them to init vs. as children</li>
-  <li>about: Fix icon names</li>
-  <li>about: Display userspace bitness if it differs from OS kernel bitness</li>
-  <li>about: Print GPU name in system info</li>
-  <li>about: Use more understandable arch labels (Issue #27)</li>
-  <li>Improve xfce_icon_name API</li>
-  <li>No startup notification in wayland to prevent crash (Issue #17)</li>
-  <li>Add missing docstring</li>
-  <li>Fix typos</li>
-  <li>Add README.md to EXTRA_DIST</li>
+  <li>Introduce xfce_spawn and xfce_spawn_command_line
+in favor and instead of xfce_spawn_no_child</li>
+  <li>Bump GLib (and gio, gthread, etc) minimum to 2.50.0</li>
+  <li>about: Support multiple GPUs and print GPU memory size</li>
+  <li>about: Drop window subtitle</li>
+  <li>Always perform sanity check</li>
+  <li>Avoid checking for epoxy if libgtop is disabled</li>
+  <li>XfceTitledDialog: Fix erroneous check (Fixes #30)</li>
+  <li>No startup notification in Wayland to prevent crash (Issue #17)</li>
   <li>Translation Updates:
-Catalan, Chinese (China), Danish, Galician, German, Italian,
-Lithuanian, Turkish</li>
+Chinese (China), Chinese (Taiwan), Estonian, French, German, Hebrew,
+Indonesian, Italian, Japanese, Lithuanian, Norwegian Bokmål,
+Portuguese, Portuguese (Brazil), Russian, Serbian, Spanish, Swedish,
+Turkish</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000925.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-December/000930.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -436,54 +112,39 @@ Lithuanian, Turkish</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000924.html">xfdashboard 0.7.90 released</a></h1>
+            <h1 class="post-title"><a href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.13">Greybird 3.22.13</a></h1>
         </header>
         <header class="post-meta">
             
-                Xfce Announcements
+                Greybird GTK Theme
             
             
-            <time class="post-date" datetime="2020-11-17">
-                17 Nov 2020
+            <time class="post-date" datetime="2020-11-30">
+                30 Nov 2020
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000924.html" class="post-permalink">
+            <a href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.13" class="post-permalink">
                 Permalink
             </a>
         </header>
         
         
         
-            <section class="post-content"><p>xfdashboard-0.7.90 "On my way to 0.8" was released on 2020-11-17.</p>
-
-<p>This is a release candidate for upcoming stable version 0.8.0.</p>
-
+            <section class="post-content"><p>This is a bugfix release.</p>
+<h2>Bugfixes</h2>
 <ul>
-  <li>New feature: Support of animation if an actor is destroyed. It
-will be marked as destroyed by adding a CSS pseudo class 
-"destroying". The actor will be destroyed finally when animation
-ends.</li>
-  <li>The allocation animation will not be applied when actor is
-created. This behaviour has changed. If an actor should do an
-allocation animation also at the first time shown (created) the
-properties for x/y coordinates and/or width, height must be
-specified at "created" animation</li>
-  <li>New application icon which follows rDNS naming</li>
-  <li>Updated README.md for consistency</li>
-  <li>Use xfce library function instead of implementing own version</li>
-  <li>[plugin] Hot corner: Support also additional monitors and not
-primary monitor only. This option is configurable by user.</li>
-  <li>Enviroment varible XFDASHBOARD_PLUGINS_PATH supports now more
-than one additional path with a colon-seperated list</li>
-  <li>Reduced number of translatable string drastically</li>
-  <li>Lots of new (id,nl,bg,nb,sl,sq,sv,zh_CN,pt_BR) and updated
-translations (da,de,es,fr,gl,he,lt,pl,ru,sr,tr)</li>
-  <li>Thanks to all translator and contributors</li>
-</ul>
-</section>
+<li>Improve dark xfwm4 tabwin contrast</li>
+<li>Improve contrast of dark entry (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="576770662" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/263" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/263/hovercard" href="https://github.com/shimmerproject/Greybird/issues/263">#263</a>)</li>
+<li>More normal-sized inline-toolbar buttons</li>
+<li>Add workaround for Gnome Builder (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="589534212" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/264" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/264/hovercard" href="https://github.com/shimmerproject/Greybird/issues/264">#264</a>)</li>
+<li>Fix progressbar in unfocused windows (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="709640245" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/284" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/284/hovercard" href="https://github.com/shimmerproject/Greybird/issues/284">#284</a>)</li>
+<li>Rebase parts of the %linked code (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="593757690" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/265" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/265/hovercard" href="https://github.com/shimmerproject/Greybird/issues/265">#265</a>)</li>
+<li>Fix Thunar CSD when not focused (Fixes <a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="632008359" data-permission-text="Title is private" data-url="https://github.com/shimmerproject/Greybird/issues/274" data-hovercard-type="issue" data-hovercard-url="/shimmerproject/Greybird/issues/274/hovercard" href="https://github.com/shimmerproject/Greybird/issues/274">#274</a>)</li>
+<li>Fix GTK3 dark colors (Nico Kaiser)</li>
+</ul></section>
         
         <footer>
             
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000924.html">&raquo; Release Announcement</a>
+                <a class="read-more" href="https://github.com/shimmerproject/Greybird/releases/tag/v3.22.13">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -492,57 +153,17 @@ translations (da,de,es,fr,gl,he,lt,pl,ru,sr,tr)</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000923.html">tumbler 0.3.1 released</a></h1>
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000929.html">mousepad 0.5.0 released</a></h1>
         </header>
         <header class="post-meta">
             
                 Xfce Announcements
             
             
-            <time class="post-date" datetime="2020-11-15">
-                15 Nov 2020
+            <time class="post-date" datetime="2020-11-30">
+                30 Nov 2020
             </time>
-            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000923.html" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        
-        
-        
-            <section class="post-content"><p>[Please note that this is a development release.]</p>
-
-<ul>
-  <li>New plugin for epub books, using libgepub thumbnailer plugin
-(Contributed by Duchateau Olivier)</li>
-  <li>Fix documentation URL</li>
-  <li>Add README.md and EXTRA_DIST</li>
-  <li>Add new icon needed for xfce4-about-dialog</li>
-  <li>Translation Updates: lt, oc, he, hi, hu, sk, tr, ug</li>
-</ul>
-</section>
-        
-        <footer>
-            
-                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000923.html">&raquo; Release Announcement</a>
-            
-        </footer>
-    </article>
-
-    
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.3-2/changelog">xfconf (4.14.3-2) unstable</a></h1>
-        </header>
-        <header class="post-meta">
-            
-                Unit 193
-            
-            
-            <time class="post-date" datetime="2020-11-14">
-                14 Nov 2020
-            </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.3-2/changelog" class="post-permalink">
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000929.html" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -550,18 +171,20 @@ translations (da,de,es,fr,gl,he,lt,pl,ru,sr,tr)</li>
         
         
             <section class="post-content"><ul>
-  <li>Team upload.</li>
-  <li>d/control, d/libxfconf-0-dev.install, d/rules:
-    <ul>
-      <li>Enable and install introspection support.</li>
-    </ul>
-  </li>
+  <li>Bump required GTK+ in <code class="language-plaintext highlighter-rouge">mousepad-prefs-dialog.ui</code> (#78)</li>
+  <li>Fix an oversight in updating actions state (#76)</li>
+  <li>Remove TODO file (#74)</li>
+  <li>Ensure that opening modes are excluded from translation</li>
+  <li>Translation Updates:
+Albanian, Bulgarian, Chinese (China), Dutch, French, German, Greek,
+Hebrew, Indonesian, Italian, Norwegian Bokmål, Portuguese,
+Portuguese (Brazil), Slovenian, Spanish</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.3-2/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000929.html">&raquo; Release Announcement</a>
             
         </footer>
     </article>
@@ -570,17 +193,17 @@ translations (da,de,es,fr,gl,he,lt,pl,ru,sr,tr)</li>
 
     <article class="post">
         <header class="post-header">
-            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.3.0-1/changelog">tumbler (0.3.0-1) experimental</a></h1>
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.4-1/changelog">xfconf (4.14.4-1) unstable</a></h1>
         </header>
         <header class="post-meta">
             
                 Yves-Alexis Perez
             
             
-            <time class="post-date" datetime="2020-11-14">
-                14 Nov 2020
+            <time class="post-date" datetime="2020-11-29">
+                29 Nov 2020
             </time>
-            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.3.0-1/changelog" class="post-permalink">
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.4-1/changelog" class="post-permalink">
                 Permalink
             </a>
         </header>
@@ -589,20 +212,246 @@ translations (da,de,es,fr,gl,he,lt,pl,ru,sr,tr)</li>
         
             <section class="post-content"><p>[ Debian Janitor ]</p>
 <ul>
-  <li>Apply multi-arch hints. + libtumbler-1-0, libtumbler-1-dev,    tumbler-plugins-extra: Add Multi-Arch: same.+ tumbler-common: Add    Multi-Arch: foreign.</li>
+  <li>Apply multi-arch hints.
+    <ul>
+      <li>libxfconf-0-3, libxfconf-0-dev: Add Multi-Arch: same.</li>
+    </ul>
+  </li>
 </ul>
 
 <p>[ Yves-Alexis Perez ]</p>
 <ul>
-  <li>New upstream version 0.3.0</li>
-  <li>d/watch: update to version 4</li>
-  <li>d/control: also mark tumbler as ma:same</li>
+  <li>New upstream version 4.14.4</li>
+  <li>d/watch: update to format 4</li>
+  <li>d/control: update standards version to 4.5.1</li>
 </ul>
 </section>
         
         <footer>
             
-                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.3.0-1/changelog">&raquo; Changelog</a>
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.4-1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.4.90-0ubuntu1/changelog">mousepad (0.4.90-0ubuntu1) devel</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-11-24">
+                24 Nov 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.4.90-0ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream release.</li>
+  <li>d/docs: README → README.md.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.4.90-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.15.5-0ubuntu1/changelog">libxfce4util (4.15.5-0ubuntu1) devel</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-11-24">
+                24 Nov 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.15.5-0ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream development release.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.15.5-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-2/changelog">gimp (2.10.22-2) unstable</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Simon McVittie
+            
+            
+            <time class="post-date" datetime="2020-11-24">
+                24 Nov 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-2/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload</li>
+  <li>Preferentially build-depend on libgdk-pixbuf-2.0-dev.    We don’t need the deprecated Xlib integration that is also pulled in    by the older libgdk-pixbuf2.0-dev package (see #974870).</li>
+  <li>Remove hard-coded dependency on libgdk-pixbuf2.0-0.    We can (and do) get a newer versioned dependency from dpkg-shlibdeps.</li>
+  <li>Mark libgimp2.0 as Multi-Arch: same</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-2/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.15.0-0ubuntu1/changelog">catfish (4.15.0-0ubuntu1) devel</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-11-22">
+                22 Nov 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.15.0-0ubuntu1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>New upstream release.</li>
+  <li>d/control:
+    <ul>
+      <li>Move python3-pexpect from Depends to Build-Depends.</li>
+      <li>Depend on gir1.2-xfconf-0.</li>
+      <li>Add plocate as primary alternative to the ‘locate’ group of Recommends.</li>
+      <li>Suggest gir1.2-zeitgeist-2.0.</li>
+    </ul>
+  </li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.15.0-0ubuntu1/changelog">&raquo; Changelog</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000928.html">libxfce4util 4.15.5 released</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Xfce Announcements
+            
+            
+            <time class="post-date" datetime="2020-11-21">
+                21 Nov 2020
+            </time>
+            <a href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000928.html" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><p>[Please note that this is a development release.]
+This is an emergency release to account for the lack of version bump to
+4.16pre2 in 4.15.4.</p>
+
+<ul>
+  <li>Bump Xfce version to 4.16pre2</li>
+  <li>Add README.md to EXTRA_DIST</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="https://mail.xfce.org/pipermail/xfce-announce/2020-November/000928.html">&raquo; Release Announcement</a>
+            
+        </footer>
+    </article>
+
+    
+
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title"><a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.3.1-1/changelog">tumbler (0.3.1-1) experimental</a></h1>
+        </header>
+        <header class="post-meta">
+            
+                Unit 193
+            
+            
+            <time class="post-date" datetime="2020-11-20">
+                20 Nov 2020
+            </time>
+            <a href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.3.1-1/changelog" class="post-permalink">
+                Permalink
+            </a>
+        </header>
+        
+        
+        
+            <section class="post-content"><ul>
+  <li>Team upload.</li>
+  <li>New upstream version 0.3.1.</li>
+  <li>d/control: Add libgepub-0.6-dev to Build-Depend for epub support.</li>
+  <li>d/rules: Drop dh_autoreconf override, no longer needed.</li>
+  <li>d/libtumbler-1-0.symbols: Set Build-Depends-Package.</li>
+  <li>d/tumbler-common.install: Install new icon.</li>
+  <li>d/tumbler-plugins-extra.install: Install new epub plugin.</li>
+  <li>Update Standards-Version to 4.5.1.</li>
+</ul>
+</section>
+        
+        <footer>
+            
+                <a class="read-more" href="http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.3.1-1/changelog">&raquo; Changelog</a>
             
         </footer>
     </article>
@@ -615,7 +464,7 @@ translations (da,de,es,fr,gl,he,lt,pl,ru,sr,tr)</li>
             <a class="newer-posts" href="/page46" title="Previous Page">&laquo; Newer Posts</a>
       
     
-    <span class="page-number"> Page 47 of 70 </span>
+    <span class="page-number"> Page 47 of 71 </span>
      
         <a class="older-posts" href="/page48" title="Next Page">Older Posts &raquo;</a>
      
