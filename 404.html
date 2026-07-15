@@ -1,26 +1,54 @@
 ---
-layout: default
-title: Page Not Found
-cover: false
-post_class: home-template
+layout: null
 permalink: /404.html
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include pb-head.html title="Page Not Found" description="Page not found — Planet Bluesabre has been discontinued." %}
+</head>
+<body>
+    <div class="pb-page">
+        <div class="pb-stars pb-star-a"></div>
+        <img src="/android-chrome-512x512.png" alt="" class="pb-planet lighten">
 
-<header class="main-header no-cover">
-    <nav class="main-nav overlay clearfix"></nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">Page not found &mdash; and Planet Bluesabre has been discontinued.</h2>
-        </div>
-    </div>
-</header>
+        <main class="pb-hero" role="main">
+            <div class="pb-content">
+                <span class="tag tag-outline pb-status">Status: 404</span>
+                <h1 class="pb-title">Page not found</h1>
+                <p class="pb-subhead">This link has drifted out of orbit &mdash; and Planet Bluesabre is already dark.</p>
+                <p class="pb-body">
+                    Whatever you were looking for isn't here anymore. The aggregation ended &mdash; think of it as a
+                    controlled deorbit, not a crash &mdash; but the projects it followed are still transmitting loud
+                    and clear:
+                </p>
+            </div>
 
-<main id="content" class="content" role="main">
-    <div class="inner landing">
-        {% include landing-links.html %}
-        <section class="redirect-banner">
-            <p>You may be looking for one of: <a href="https://xfce.org">Xfce</a>, <a href="https://xubuntu.org">Xubuntu</a>, or <a href="https://seand.xyz">Sean's site</a>.</p>
-        </section>
+            {% include pb-links.html %}
+
+            <section id="redirect-banner" class="pb-redirect-banner" hidden>
+                <p id="redirect-banner-text"></p>
+            </section>
+        </main>
+
+        {% include pb-footer.html tagline="No signal received." %}
     </div>
-</main>
+
+    <script>
+    (function () {
+        var banners = {
+            xfce:    { url: "https://xfce.org",     label: "Xfce" },
+            xubuntu: { url: "https://xubuntu.org",  label: "Xubuntu" },
+            sean:    { url: "https://seand.xyz", label: "Sean's site (seand.xyz)" }
+        };
+        var params = new URLSearchParams(window.location.search);
+        var bucket = banners[params.get("from")];
+        if (bucket) {
+            document.getElementById("redirect-banner-text").innerHTML =
+                "You may be looking for this: <a href=\"" + bucket.url + "\">" + bucket.label + "</a>.";
+            document.getElementById("redirect-banner").hidden = false;
+        }
+    })();
+    </script>
+</body>
+</html>

@@ -1,43 +1,53 @@
 ---
-layout: default
-title: Home
-cover: false
-post_class: home-template
+layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include pb-head.html %}
+</head>
+<body>
+    <div class="pb-page">
+        <div class="pb-stars pb-star-b"></div>
+        <img src="/android-chrome-512x512.png" alt="" class="pb-planet lighten">
 
-<header class="main-header no-cover">
-    <nav class="main-nav overlay clearfix"></nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">Planet Bluesabre has been discontinued.</h2>
-        </div>
+        <main class="pb-hero" role="main">
+            <div class="pb-content">
+                <span class="tag tag-outline pb-status">Status: dark</span>
+                <h1 class="pb-title">{{ site.name }}</h1>
+                <p class="pb-subhead">This planet has gone dark. All systems nominal elsewhere.</p>
+                <p class="pb-body">
+                    Planet Bluesabre spent years aggregating release announcements and blog posts from across the
+                    Xfce and Xubuntu community. The aggregation has ended &mdash; think of it as a controlled
+                    deorbit, not a crash &mdash; but the projects it followed are still transmitting loud and clear:
+                </p>
+            </div>
+
+            {% include pb-links.html %}
+
+            <section id="redirect-banner" class="pb-redirect-banner" hidden>
+                <p id="redirect-banner-text"></p>
+            </section>
+        </main>
+
+        {% include pb-footer.html tagline="Last transmission logged." %}
     </div>
-</header>
 
-<main id="content" class="content" role="main">
-    <div class="inner landing">
-        {% include landing-links.html %}
-
-        <section id="redirect-banner" class="redirect-banner" hidden>
-            <p id="redirect-banner-text"></p>
-        </section>
-    </div>
-</main>
-
-<script>
-(function () {
-    var banners = {
-        xfce:    { url: "https://xfce.org",     label: "Xfce" },
-        xubuntu: { url: "https://xubuntu.org",  label: "Xubuntu" },
-        sean:    { url: "https://seand.xyz", label: "Sean's site (seand.xyz)" }
-    };
-    var params = new URLSearchParams(window.location.search);
-    var bucket = banners[params.get("from")];
-    if (bucket) {
-        document.getElementById("redirect-banner-text").innerHTML =
-            "You may be looking for this: <a href=\"" + bucket.url + "\">" + bucket.label + "</a>.";
-        document.getElementById("redirect-banner").hidden = false;
-    }
-})();
-</script>
+    <script>
+    (function () {
+        var banners = {
+            xfce:    { url: "https://xfce.org",     label: "Xfce" },
+            xubuntu: { url: "https://xubuntu.org",  label: "Xubuntu" },
+            sean:    { url: "https://seand.xyz", label: "Sean's site (seand.xyz)" }
+        };
+        var params = new URLSearchParams(window.location.search);
+        var bucket = banners[params.get("from")];
+        if (bucket) {
+            document.getElementById("redirect-banner-text").innerHTML =
+                "You may be looking for this: <a href=\"" + bucket.url + "\">" + bucket.label + "</a>.";
+            document.getElementById("redirect-banner").hidden = false;
+        }
+    })();
+    </script>
+</body>
+</html>
