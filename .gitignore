@@ -23,11 +23,3 @@ tmp
 .yardoc
 _yardoc
 doc/
-
-
-#############
-# exclude *.dbs and posts for testing
-
-planet.db
-_posts/
-xfce-announce.xml

@@ -5,23 +5,12 @@ timezone: America/New_York
 
 markdown: kramdown
 highlighter: rouge
-logo: false
-paginate: 10
 domain_name: "https://planet.bluesabre.org"
-plugins: [jekyll-paginate]
 
-# Details for the RSS feed generator
 url: "https://planet.bluesabre.org"
 author: "Sean Davis"
 
 exclude:
   - build
   - build.sh
-  - LICENSE.txt
-  - fetch-ubuntu-package.py
-  - fetch-xfce-announce.py
-  - planet.ini
-  - planet.db
-  - planet.rb
   - README.md
-  - xfce-announce.json

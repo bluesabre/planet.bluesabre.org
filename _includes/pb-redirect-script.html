@@ -1,0 +1,33 @@
+<script>
+(function () {
+    var banner = document.getElementById("redirect-banner");
+    var text = document.getElementById("redirect-banner-text");
+    if (!banner || !text) return;
+
+    var key = new URLSearchParams(window.location.search).get("post");
+    if (!key) return;
+
+    fetch("{{ '/redirects.json' | relative_url }}")
+        .then(function (response) { return response.ok ? response.json() : null; })
+        .then(function (redirects) {
+            var entry = redirects && Object.prototype.hasOwnProperty.call(redirects, key) ? redirects[key] : null;
+            if (!entry) return;
+
+            var host;
+            try {
+                host = new URL(entry.url).hostname;
+            } catch (e) {
+                return;
+            }
+
+            text.textContent = "You may be looking for this: ";
+            var a = document.createElement("a");
+            a.href = entry.url;
+            a.textContent = entry.title;
+            text.appendChild(a);
+            text.appendChild(document.createTextNode(" (" + host + ")"));
+            banner.hidden = false;
+        })
+        .catch(function () {});
+})();
+</script>
