@@ -7,3 +7,19 @@
 @import
 	"syntax"
 ;
+
+.landing-links {
+    list-style: none;
+    padding: 0;
+    margin: 2em 0;
+}
+.landing-links li {
+    margin: 0.75em 0;
+    font-size: 1.15em;
+}
+.redirect-banner {
+    margin-top: 2em;
+    padding: 1em 1.5em;
+    border-left: 4px solid #1f8dd6;
+    background: rgba(31, 141, 214, 0.08);
+}

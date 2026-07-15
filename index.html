@@ -2,108 +2,42 @@
 layout: default
 title: Home
 cover: false
+post_class: home-template
 ---
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-        {% if paginator.previous_page %}
-        <a class="back-button icon-arrow-left" href="{{'/' | relative_url }}">Home</a>
-        {% endif %}
-        <a class="subscribe-button icon-feed" href="{{'feed.xml' | relative_url }} ">Subscribe</a>
-    </nav>
+<header class="main-header no-cover">
+    <nav class="main-nav overlay clearfix"></nav>
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">
-                {% if site.description %} {{ site.description }}. {% endif %}
-            </h2>
-            {% if paginator.previous_page %}
-            {% else %}
-            <br>
-            <p>
-                Developer? Blogger? Get the source and submit your own blog at <a href="https://github.com/bluesabre/planet.bluesabre.org">GitHub</a>
-            </p>
-            {% endif %}
+            <h2 class="page-description">Planet Bluesabre has been discontinued.</h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
-
 <main id="content" class="content" role="main">
+    <div class="inner landing">
+        {% include landing-links.html %}
 
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
+        <section id="redirect-banner" class="redirect-banner" hidden>
+            <p id="redirect-banner-text"></p>
+        </section>
     </div>
-
-    {% for post in paginator.posts %}
-
-    <article class="post">
-        <header class="post-header">
-            <h1 class="post-title"><a href="{{ post.original_link }}">{{ post.title | replace_first: "ANNOUNCE: ", "" }}</a></h1>
-        </header>
-        <header class="post-meta">
-            {% if post.author %}
-                {{ post.author }}
-            {% endif %}
-            {% if post.categories.size > 0 %} 
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
-            {% endif %}
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-                {{ post.date | date_to_string }}
-            </time>
-            <a href="{{ post.original_link }}" class="post-permalink">
-                Permalink
-            </a>
-        </header>
-        {% assign useContent = false %}
-        {% if post.excerpt_only==true %}
-            {% assign excerptSize = post.excerpt | number_of_words %}
-            {% if post.summary %}
-                {% assign summarySize = post.summary | number_of_words %}
-            {% endif %}
-            {% assign excerptAlt = post.content | split:"<p>" | shift | first | strip_html %}
-            {% if post.original_link contains "github.com" or post.original_link contains "mail.xfce.org" or post.original_link contains "changelogs.ubuntu.com" %}
-                {% assign useContent = true %}
-                {% assign content = post.content %}
-            {% elsif post.summary and summarySize > 0 and summarySize < 200 %}
-                {% assign content = post.summary %}
-            {% elsif excerptSize < 10 %}
-                {% assign content = excerptAlt %}
-            {% else %}
-                {% assign content = post.excerpt | strip_html %}
-            {% endif %}
-        {% else %}
-            {% assign useContent = true %}
-            {% assign srcReplace = 'src="' | append: post.hostname %}
-            {% assign hrefReplace = 'src="' | append: post.hostname %}
-            {% assign content = post.content | replace: 'src="/', srcReplace | replace: 'href="/', hrefReplace %}
-        {% endif %}
-        {% if useContent==true %}
-            <section class="post-content">{{ content }}</section>
-        {% else %}
-            <section class="post-excerpt"><p>{{ content }}</p></section>
-        {% endif %}
-        <footer>
-            {% if post.original_link contains "github.com" or post.original_link contains "mail.xfce.org" %}
-                <a class="read-more" href="{{ post.original_link }}">&raquo; Release Announcement</a>
-            {% elsif post.original_link contains "changelogs.ubuntu.com" %}
-                <a class="read-more" href="{{ post.original_link }}">&raquo; Changelog</a>
-            {% elsif useContent==true %}
-                <a class="read-more" href="{{ post.original_link }}">&raquo; Original Post</a>
-            {% else %}
-                <a class="read-more" href="{{ post.original_link }}">&raquo; Continue reading <em>{{ post.title }}</em>...</a>
-            {% endif %}
-        </footer>
-    </article>
-
-    {% endfor %}
-
-    {% include pagination.html %}
-
 </main>
+
+<script>
+(function () {
+    var banners = {
+        xfce:    { url: "https://xfce.org",     label: "Xfce" },
+        xubuntu: { url: "https://xubuntu.org",  label: "Xubuntu" },
+        sean:    { url: "https://seand.xyz", label: "Sean's site (seand.xyz)" }
+    };
+    var params = new URLSearchParams(window.location.search);
+    var bucket = banners[params.get("from")];
+    if (bucket) {
+        document.getElementById("redirect-banner-text").innerHTML =
+            "You may be looking for this: <a href=\"" + bucket.url + "\">" + bucket.label + "</a>.";
+        document.getElementById("redirect-banner").hidden = false;
+    }
+})();
+</script>
