@@ -7,7 +7,9 @@ layout: null
 <meta charset="UTF-8">
 <meta name="robots" content="noindex">
 <title>{{ page.title | default: "Redirecting" }} - Planet Bluesabre</title>
-{% assign target = "/" | relative_url | append: "?from=" | append: page.bucket %}
+{% assign post_key = page.path | split: "/" | last | remove: ".html" %}
+{% assign esc_key = post_key | cgi_escape %}
+{% assign target = "/" | relative_url | append: "?post=" | append: esc_key %}
 <meta http-equiv="refresh" content="0; url={{ target }}">
 <link rel="canonical" href="{{ site.url }}/">
 <script>window.location.replace({{ target | jsonify }});</script>

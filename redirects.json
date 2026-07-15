@@ -1,0 +1,3512 @@
+{
+ "2016-08-06-shimmer-themes_2.1.3_yakkety": {
+  "bucket": "xubuntu",
+  "title": "shimmer-themes (2.1.3) yakkety",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/s/shimmer-themes/shimmer-themes_2.1.3/changelog"
+ },
+ "2018-03-10-xubuntu-docs_18.04_bionic": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-docs (18.04) bionic",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_18.04/changelog"
+ },
+ "2018-03-28-xfce4-timer-plugin_1.7.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-timer-plugin (1.7.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-timer-plugin/xfce4-timer-plugin_1.7.0-1/changelog"
+ },
+ "2018-05-06-xfce4-verve-plugin_2.0.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-verve-plugin (2.0.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-verve-plugin/xfce4-verve-plugin_2.0.0-1/changelog"
+ },
+ "2018-06-26-xfce4-indicator-plugin_2.3.4-0ubuntu2_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-indicator-plugin (2.3.4-0ubuntu2) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-indicator-plugin/xfce4-indicator-plugin_2.3.4-0ubuntu2/changelog"
+ },
+ "2018-08-21-thunar-vcs-plugin_0.2.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar-vcs-plugin (0.2.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-vcs-plugin/thunar-vcs-plugin_0.2.0-1/changelog"
+ },
+ "2018-09-17-lightdm-gtk-greeter_2.0.6-0ubuntu1_cosmic": {
+  "bucket": "xubuntu",
+  "title": "lightdm-gtk-greeter (2.0.6-0ubuntu1) cosmic",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu1/changelog"
+ },
+ "2018-09-23-xfce4-cpufreq-plugin_1.2.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpufreq-plugin (1.2.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.1-1/changelog"
+ },
+ "2018-10-22-thunar-archive-plugin_0.4.0-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar-archive-plugin (0.4.0-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-archive-plugin/thunar-archive-plugin_0.4.0-2/changelog"
+ },
+ "2018-11-12-thunar-media-tags-plugin_0.3.0-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar-media-tags-plugin (0.3.0-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-media-tags-plugin/thunar-media-tags-plugin_0.3.0-2/changelog"
+ },
+ "2018-12-08-xfce4-mailwatch-plugin_1.2.0-3_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-mailwatch-plugin (1.2.0-3) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mailwatch-plugin/xfce4-mailwatch-plugin_1.2.0-3/changelog"
+ },
+ "2018-12-15-xfce4-xkb-plugin_1-0.8.1-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-xkb-plugin (1:0.8.1-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-xkb-plugin/xfce4-xkb-plugin_1:0.8.1-2/changelog"
+ },
+ "2018-12-27-xfce4-mount-plugin_1.1.3-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-mount-plugin (1.1.3-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mount-plugin/xfce4-mount-plugin_1.1.3-2/changelog"
+ },
+ "2019-01-16-xfce4-sensors-plugin_1.3.92-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-sensors-plugin (1.3.92-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.3.92-1/changelog"
+ },
+ "2019-05-23-pidgin_1-2.13.0-2ubuntu1_eoan": {
+  "bucket": "xubuntu",
+  "title": "pidgin (1:2.13.0-2ubuntu1) eoan",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.13.0-2ubuntu1/changelog"
+ },
+ "2019-07-10-xfce4-notifyd_0.4.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-notifyd (0.4.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notifyd/xfce4-notifyd_0.4.4-1/changelog"
+ },
+ "2019-08-04-mugshot_0.4.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mugshot (0.4.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mugshot/mugshot_0.4.2-1/changelog"
+ },
+ "2019-08-14-libxfce4util_4.14.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "libxfce4util (4.14.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.14.0-1/changelog"
+ },
+ "2019-08-15-garcon_0.6.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "garcon (0.6.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/garcon/garcon_0.6.4-1/changelog"
+ },
+ "2019-08-15-thunar-volman_0.9.5-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar-volman (0.9.5-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-volman/thunar-volman_0.9.5-1/changelog"
+ },
+ "2019-08-15-xfce4-appfinder_4.14.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-appfinder (4.14.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-appfinder/xfce4-appfinder_4.14.0-1/changelog"
+ },
+ "2019-08-15-xfce4_4.14_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4 (4.14) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4/xfce4_4.14/changelog"
+ },
+ "2019-08-22-xfce4-battery-plugin_1.1.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-battery-plugin (1.1.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-battery-plugin/xfce4-battery-plugin_1.1.3-1/changelog"
+ },
+ "2019-08-22-xfce4-notes-plugin_1.8.1-3_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-notes-plugin (1.8.1-3) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notes-plugin/xfce4-notes-plugin_1.8.1-3/changelog"
+ },
+ "2019-08-23-ristretto_0.10.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "ristretto (0.10.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.10.0-1/changelog"
+ },
+ "2019-08-23-xfce4-cpugraph-plugin_1.1.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpugraph-plugin (1.1.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.1.0-1/changelog"
+ },
+ "2019-08-25-mousepad_0.4.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.4.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.4.2-1/changelog"
+ },
+ "2019-08-27-libxfce4ui_4.14.1-1ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.14.1-1ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.14.1-1ubuntu1/changelog"
+ },
+ "2019-08-27-xiccd_0.3.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xiccd (0.3.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xiccd/xiccd_0.3.0-1/changelog"
+ },
+ "2019-08-28-xfce4-wavelan-plugin_0.6.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-wavelan-plugin (0.6.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.1-1/changelog"
+ },
+ "2019-08-29-xfce4-datetime-plugin_0.8.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-datetime-plugin (0.8.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-datetime-plugin/xfce4-datetime-plugin_0.8.0-1/changelog"
+ },
+ "2019-08-29-xfce4-diskperf-plugin_2.6.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-diskperf-plugin (2.6.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-diskperf-plugin/xfce4-diskperf-plugin_2.6.2-1/changelog"
+ },
+ "2019-08-29-xfce4-systemload-plugin_1-1.2.3-1ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-systemload-plugin (1:1.2.3-1ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1:1.2.3-1ubuntu1/changelog"
+ },
+ "2019-08-30-xfce4-fsguard-plugin_1.1.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-fsguard-plugin (1.1.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.1-1/changelog"
+ },
+ "2019-08-30-xfce4-genmon-plugin_4.0.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-genmon-plugin (4.0.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-genmon-plugin/xfce4-genmon-plugin_4.0.2-1/changelog"
+ },
+ "2019-08-30-xfce4-places-plugin_1.8.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-places-plugin (1.8.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-places-plugin/xfce4-places-plugin_1.8.1-1/changelog"
+ },
+ "2019-08-31-menulibre_2.2.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "menulibre (2.2.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.1-1/changelog"
+ },
+ "2019-09-04-xfce4-netload-plugin_1.3.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-netload-plugin (1.3.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.3.2-1/changelog"
+ },
+ "2019-09-05-xfce4-smartbookmark-plugin_0.5.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-smartbookmark-plugin (0.5.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-smartbookmark-plugin/xfce4-smartbookmark-plugin_0.5.1-1/changelog"
+ },
+ "2019-09-13-catfish_1410_released": {
+  "bucket": "sean",
+  "title": "Catfish 1.4.10 Released",
+  "url": "https://seand.xyz/blog/2019/09/13/catfish-1-4-10-released/"
+ },
+ "2019-09-25-xfce4-mpc-plugin_0.5.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-mpc-plugin (0.5.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mpc-plugin/xfce4-mpc-plugin_0.5.2-1/changelog"
+ },
+ "2019-10-04-thunar-dropbox-plugin_0.3.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar-dropbox-plugin (0.3.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-dropbox-plugin/thunar-dropbox-plugin_0.3.1-1/changelog"
+ },
+ "2019-10-08-xfce4-dict_0.8.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-dict (0.8.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.3-1/changelog"
+ },
+ "2019-10-19-xfce_416_development_phase_starting": {
+  "bucket": "xfce",
+  "title": "Xfce 4.16 development phase starting",
+  "url": "https://simon.shimmerproject.org/2019/10/19/xfce-4-15-development-phase-starting/"
+ },
+ "2019-10-20-install_xubuntu_1910_on_a_raspberry_pi_4": {
+  "bucket": "sean",
+  "title": "Install Xubuntu 19.10 on a Raspberry Pi 4",
+  "url": "https://seand.xyz/blog/2019/10/20/install-xubuntu-19-10-on-a-raspberry-pi-4/"
+ },
+ "2019-10-26-xubuntu-artwork_20.04_focal": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-artwork (20.04) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_20.04/changelog"
+ },
+ "2019-11-09-xubuntu-default-settings_20.04_focal": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (20.04) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_20.04/changelog"
+ },
+ "2019-11-15-lightdm_gtk_greeter_207": {
+  "bucket": "xubuntu",
+  "title": "LightDM GTK+ Greeter 2.0.7",
+  "url": "https://github.com/Xubuntu/lightdm-gtk-greeter/releases/tag/lightdm-gtk-greeter-2.0.7"
+ },
+ "2019-11-18-numix-gtk-theme_2.6.7-5_unstable": {
+  "bucket": "xubuntu",
+  "title": "numix-gtk-theme (2.6.7-5) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/n/numix-gtk-theme/numix-gtk-theme_2.6.7-5/changelog"
+ },
+ "2019-12-10-xubuntu-meta_2.233_focal": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.233) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.233/changelog"
+ },
+ "2019-12-13-the_new_bluesabreorg": {
+  "bucket": "sean",
+  "title": "The New bluesabre.org",
+  "url": "https://seand.xyz/blog/2019/12/13/the-new-bluesabre-org/"
+ },
+ "2019-12-19-xfdashboard_0.7.7-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfdashboard (0.7.7-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.7.7-0ubuntu1/changelog"
+ },
+ "2019-12-21-catfish_1411_released": {
+  "bucket": "sean",
+  "title": "Catfish 1.4.11 Released",
+  "url": "https://seand.xyz/blog/2019/12/21/catfish-1-4-11-released/"
+ },
+ "2019-12-24-lightdm-gtk-greeter-settings_1.2.2-3_unstable": {
+  "bucket": "xubuntu",
+  "title": "lightdm-gtk-greeter-settings (1.2.2-3) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-3/changelog"
+ },
+ "2019-12-25-xfce4-screenshooter_1.9.7-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-screenshooter (1.9.7-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.7-1/changelog"
+ },
+ "2019-12-31-parole_1.0.5-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "parole (1.0.5-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/parole/parole_1.0.5-1/changelog"
+ },
+ "2020-01-01-catfish_1412_released": {
+  "bucket": "sean",
+  "title": "Catfish 1.4.12 Released",
+  "url": "https://seand.xyz/blog/2020/01/01/catfish-1-4-12-released/"
+ },
+ "2020-01-04-greybird_32211": {
+  "bucket": "xubuntu",
+  "title": "Greybird 3.22.11",
+  "url": "https://github.com/shimmerproject/Greybird/releases/tag/v3.22.11"
+ },
+ "2020-01-14-catfish_1.4.13-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "catfish (1.4.13-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_1.4.13-1/changelog"
+ },
+ "2020-01-14-xfce_414_maintenance_and_415_updates": {
+  "bucket": "xfce",
+  "title": "Xfce 4.14 Maintenance and 4.15 Updates",
+  "url": "https://simon.shimmerproject.org/2020/01/14/xfce-4-14-maintenance-and-4-15-updates/"
+ },
+ "2020-01-17-greybird-gtk-theme_3.22.11-0ubuntu1_focal": {
+  "bucket": "xubuntu",
+  "title": "greybird-gtk-theme (3.22.11-0ubuntu1) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.22.11-0ubuntu1/changelog"
+ },
+ "2020-01-18-xfdesktop4_4.14.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfdesktop4 (4.14.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdesktop4/xfdesktop4_4.14.2-1/changelog"
+ },
+ "2020-01-22-xfce4-panel-profiles_1.0.10-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel-profiles (1.0.10-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel-profiles/xfce4-panel-profiles_1.0.10-0ubuntu1/changelog"
+ },
+ "2020-01-31-xfce4-time-out-plugin_1.1.0-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-time-out-plugin (1.1.0-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.0-0ubuntu1/changelog"
+ },
+ "2020-02-02-sgt-puzzles_20191231.79a5378-3_unstable": {
+  "bucket": "xubuntu",
+  "title": "sgt-puzzles (20191231.79a5378-3) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-puzzles/sgt-puzzles_20191231.79a5378-3/changelog"
+ },
+ "2020-02-07-lightdm_1.30.0-0ubuntu3_focal": {
+  "bucket": "xubuntu",
+  "title": "lightdm (1.30.0-0ubuntu3) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu3/changelog"
+ },
+ "2020-02-14-atril_1.24.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "atril (1.24.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.0-1/changelog"
+ },
+ "2020-02-14-mate-calc_1.24.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mate-calc (1.24.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.0-1/changelog"
+ },
+ "2020-02-19-sgt-launcher_0.2.5-0ubuntu1_focal": {
+  "bucket": "xubuntu",
+  "title": "sgt-launcher (0.2.5-0ubuntu1) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-launcher/sgt-launcher_0.2.5-0ubuntu1/changelog"
+ },
+ "2020-02-19-sgt_puzzles_collection_025": {
+  "bucket": "sean",
+  "title": "SGT Puzzles Collection 0.2.5",
+  "url": "https://github.com/bluesabre/sgt-launcher/releases/tag/sgt-launcher-0.2.5"
+ },
+ "2020-02-20-sgt_puzzles_collection_025_released": {
+  "bucket": "sean",
+  "title": "SGT Puzzles Collection 0.2.5 Released",
+  "url": "https://seand.xyz/blog/2020/02/20/sgt-puzzles-collection-0-2-5-released/"
+ },
+ "2020-02-28-engrampa_1.24.0-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "engrampa (1.24.0-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.0-2/changelog"
+ },
+ "2020-03-01-xfce4-weather-plugin_0.10.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-weather-plugin (0.10.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-weather-plugin/xfce4-weather-plugin_0.10.1-1/changelog"
+ },
+ "2020-03-14-xfce4-statusnotifier-plugin_0.2.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-statusnotifier-plugin (0.2.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-statusnotifier-plugin/xfce4-statusnotifier-plugin_0.2.2-1/changelog"
+ },
+ "2020-03-15-gigolo_0.5.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "gigolo (0.5.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.1-1/changelog"
+ },
+ "2020-03-15-xfburn_0.6.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfburn (0.6.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfburn/xfburn_0.6.2-1/changelog"
+ },
+ "2020-03-15-xfce4-power-manager_1.6.6-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-power-manager (1.6.6-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.6.6-1/changelog"
+ },
+ "2020-03-15-xfce4-power-manager_1.7.0-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-power-manager (1.7.0-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.7.0-1/changelog"
+ },
+ "2020-03-20-xfce4-goodies_4.14.0_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-goodies (4.14.0) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-goodies/xfce4-goodies_4.14.0/changelog"
+ },
+ "2020-03-21-greybird_32212": {
+  "bucket": "xubuntu",
+  "title": "Greybird 3.22.12",
+  "url": "https://github.com/shimmerproject/Greybird/releases/tag/v3.22.12"
+ },
+ "2020-03-26-v015": {
+  "bucket": "xubuntu",
+  "title": "v0.15",
+  "url": "https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.15"
+ },
+ "2020-03-29-gimp_2.10.18-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.18-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.18-1/changelog"
+ },
+ "2020-03-30-xfce4-session_4.14.2-0ubuntu1_focal": {
+  "bucket": "xubuntu",
+  "title": "xfce4-session (4.14.2-0ubuntu1) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-session/xfce4-session_4.14.2-0ubuntu1/changelog"
+ },
+ "2020-03-30-xfce_pulseaudio_plugin_043_released": {
+  "bucket": "sean",
+  "title": "Xfce PulseAudio Plugin 0.4.3 Released",
+  "url": "https://seand.xyz/blog/2020/03/30/xfce-pulseaudio-plugin-0-4-3-released/"
+ },
+ "2020-04-02-xfce4-screensaver_0.1.10-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-screensaver (0.1.10-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screensaver/xfce4-screensaver_0.1.10-1/changelog"
+ },
+ "2020-04-03-xfce4-pulseaudio-plugin_0.4.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-pulseaudio-plugin (0.4.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-pulseaudio-plugin/xfce4-pulseaudio-plugin_0.4.3-1/changelog"
+ },
+ "2020-04-03-xfce4-terminal_0.8.9.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-terminal (0.8.9.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_0.8.9.2-1/changelog"
+ },
+ "2020-04-05-xfce4-clipman-plugin_2-1.6.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-clipman-plugin (2:1.6.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_2:1.6.1-1/changelog"
+ },
+ "2020-04-05-xubuntu-community-artwork_20.04.0_focal": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-community-artwork (20.04.0) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-community-artwork/xubuntu-community-artwork_20.04.0/changelog"
+ },
+ "2020-04-12-xfce4-settings_4.14.3-0ubuntu1_focal": {
+  "bucket": "xubuntu",
+  "title": "xfce4-settings (4.14.3-0ubuntu1) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.14.3-0ubuntu1/changelog"
+ },
+ "2020-04-12-xubuntu_2004_in_screenshots_installation": {
+  "bucket": "sean",
+  "title": "Xubuntu 20.04 In Screenshots: Installation",
+  "url": "https://seand.xyz/blog/2020/04/12/xubuntu-20-04-in-screenshots-the-installer/"
+ },
+ "2020-04-15-exo_0.12.11-1ubuntu1_focal": {
+  "bucket": "xubuntu",
+  "title": "exo (0.12.11-1ubuntu1) focal",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_0.12.11-1ubuntu1/changelog"
+ },
+ "2020-04-17-xubuntu_2004_in_screenshots_desktop": {
+  "bucket": "sean",
+  "title": "Xubuntu 20.04 In Screenshots: Desktop",
+  "url": "https://seand.xyz/blog/2020/04/17/xubuntu-20-04-in-screenshots-desktop/"
+ },
+ "2020-04-26-xfce4-whiskermenu-plugin_2.4.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.4.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.4.4-1/changelog"
+ },
+ "2020-04-30-tumbler_0.2.8-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "tumbler (0.2.8-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.2.8-2/changelog"
+ },
+ "2020-04-30-xfce_switches_to_gitlab": {
+  "bucket": "xfce",
+  "title": "Xfce switches to GitLab",
+  "url": "https://simon.shimmerproject.org/2020/04/30/xfce-switches-to-gitlab/"
+ },
+ "2020-05-03-xfce4-panel_4.14.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.14.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.14.4-1/changelog"
+ },
+ "2020-05-03-xfwm4_4.14.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfwm4 (4.14.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.2-1/changelog"
+ },
+ "2020-05-09-xfce4-taskmanager_1.2.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-taskmanager (1.2.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.2.3-1/changelog"
+ },
+ "2020-05-10-gitlab_ci_is_up_and_running": {
+  "bucket": "xfce",
+  "title": "GitLab CI is up and running",
+  "url": "https://simon.shimmerproject.org/2020/05/10/gitlab-ci-is-up-and-running/"
+ },
+ "2020-05-12-xfconf_4.14.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfconf (4.14.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.3-1/changelog"
+ },
+ "2020-05-27-announce_exo_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-May/000863.html"
+ },
+ "2020-05-27-announce_xfce4-settings_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-settings 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-May/000862.html"
+ },
+ "2020-06-02-blueman_2.1.3-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.1.3-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2/changelog"
+ },
+ "2020-06-03-announce_xfce4-stopwatch-plugin_040_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-stopwatch-plugin 0.4.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-June/000864.html"
+ },
+ "2020-06-04-hello_world": {
+  "bucket": "xfce",
+  "title": "Hello World",
+  "url": "https://alexxcons.github.io/2020/06/04/hello-world.html"
+ },
+ "2020-06-05-xfce_in_2020": {
+  "bucket": "xfce",
+  "title": "Xfce in 2020",
+  "url": "http://0.0.0.0:4000/articles/2020-06-05/xfce-in-2020.html"
+ },
+ "2020-06-07-announce_libxfce4ui_4153_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.15.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-June/000865.html"
+ },
+ "2020-06-18-announce_thunar_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-June/000866.html"
+ },
+ "2020-06-18-announce_xfdesktop_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdesktop 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-June/000867.html"
+ },
+ "2020-06-18-why_bountysource_why": {
+  "bucket": "xfce",
+  "title": "Why Bountysource? Why?",
+  "url": "https://simon.shimmerproject.org/2020/06/18/why-bountysource-why/"
+ },
+ "2020-06-20-thunar_1.8.15-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (1.8.15-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_1.8.15-1/changelog"
+ },
+ "2020-06-21-announce_libxfce4util_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-June/000869.html"
+ },
+ "2020-06-21-announce_xfce4-eyes-plugin_451_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-eyes-plugin 4.5.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-June/000868.html"
+ },
+ "2020-06-22-lightdm_gtk_greeter_208": {
+  "bucket": "xubuntu",
+  "title": "LightDM GTK+ Greeter 2.0.8",
+  "url": "https://github.com/Xubuntu/lightdm-gtk-greeter/releases/tag/lightdm-gtk-greeter-2.0.8"
+ },
+ "2020-06-22-v0151": {
+  "bucket": "xubuntu",
+  "title": "v0.15.1",
+  "url": "https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.15.1"
+ },
+ "2020-06-23-announce_xfce4-panel_4153_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.15.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-June/000870.html"
+ },
+ "2020-06-24-announce_xfce4-dev-tools_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-dev-tools 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-June/000871.html"
+ },
+ "2020-06-24-thunar_gtkaction_and_a_big_mess": {
+  "bucket": "xfce",
+  "title": "Thunar, GtkAction and a big mess",
+  "url": "https://alexxcons.github.io/2020/06/24/thunar-GtkAction-and-a-big-mess.html"
+ },
+ "2020-06-24-xfce4-eyes-plugin_4.5.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-eyes-plugin (4.5.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1/changelog"
+ },
+ "2020-06-25-elementary-xfce_0.15.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "elementary-xfce (0.15.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.15.1-1/changelog"
+ },
+ "2020-06-26-bountysource_update": {
+  "bucket": "xfce",
+  "title": "Bountysource update",
+  "url": "https://simon.shimmerproject.org/2020/06/26/bountysource-update/"
+ },
+ "2020-06-29-xfce4-notifyd_0.6.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-notifyd (0.6.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notifyd/xfce4-notifyd_0.6.1-1/changelog"
+ },
+ "2020-07-02-announce_thunar_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-July/000872.html"
+ },
+ "2020-07-06-xfce4-time-out-plugin_1.1.1-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-time-out-plugin (1.1.1-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.1-0ubuntu1/changelog"
+ },
+ "2020-07-07-announce_xfce4-time-out-plugin_111_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-time-out-plugin 1.1.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-July/000873.html"
+ },
+ "2020-07-16-announce_libxfce4util_4152_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.15.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-July/000875.html"
+ },
+ "2020-07-16-announce_xfconf_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfconf 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-July/000874.html"
+ },
+ "2020-07-18-xfce_infrastructure_in_2020": {
+  "bucket": "xfce",
+  "title": "Xfce infrastructure in 2020",
+  "url": "https://blog.alteroot.org/articles/2020-07-18/xfce-infrastructure-2020.html"
+ },
+ "2020-07-21-announce_xfce4-whiskermenu-plugin_245_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.4.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-July/000876.html"
+ },
+ "2020-07-22-xfce4-whiskermenu-plugin_2.4.5-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.4.5-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.4.5-1/changelog"
+ },
+ "2020-07-23-announce_xfce4-timer-plugin_171_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-timer-plugin 1.7.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-July/000878.html"
+ },
+ "2020-07-23-announce_xfce4-whiskermenu-plugin_246_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.4.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-July/000877.html"
+ },
+ "2020-07-26-announce_xfwm4_4143_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.14.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-July/000879.html"
+ },
+ "2020-07-29-xfce4-timer-plugin_1.7.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-timer-plugin (1.7.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-timer-plugin/xfce4-timer-plugin_1.7.1-1/changelog"
+ },
+ "2020-07-30-sgt_puzzles_collection_026": {
+  "bucket": "sean",
+  "title": "SGT Puzzles Collection 0.2.6",
+  "url": "https://github.com/bluesabre/sgt-launcher/releases/tag/sgt-launcher-0.2.6"
+ },
+ "2020-07-30-xfce4-whiskermenu-plugin_2.4.6-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.4.6-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.4.6-1/changelog"
+ },
+ "2020-08-01-announce_xfwm4_4144_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.14.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000880.html"
+ },
+ "2020-08-01-announce_xfwm4_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000881.html"
+ },
+ "2020-08-06-announce_tumbler_029_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: tumbler 0.2.9 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000882.html"
+ },
+ "2020-08-09-announce_xfwm4_4145_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.14.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000883.html"
+ },
+ "2020-08-09-announce_xfwm4_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000884.html"
+ },
+ "2020-08-13-announce_tumbler_030_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: tumbler 0.3.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000885.html"
+ },
+ "2020-08-13-announce_xfce4-session_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-session 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000886.html"
+ },
+ "2020-08-17-mate-calc_1.24.1-0ubuntu1_groovy": {
+  "bucket": "xubuntu",
+  "title": "mate-calc (1.24.1-0ubuntu1) groovy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.1-0ubuntu1/changelog"
+ },
+ "2020-08-18-announce_garcon_071_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: garcon 0.7.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000887.html"
+ },
+ "2020-08-18-engrampa_1.24.1-0ubuntu1_groovy": {
+  "bucket": "xubuntu",
+  "title": "engrampa (1.24.1-0ubuntu1) groovy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.1-0ubuntu1/changelog"
+ },
+ "2020-08-19-announce_xfce4-settings_4152_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-settings 4.15.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000888.html"
+ },
+ "2020-08-20-announce_exo_4152_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.15.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000889.html"
+ },
+ "2020-08-20-announce_thunar-volman_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar-volman 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000891.html"
+ },
+ "2020-08-20-announce_xfce4-appfinder_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-appfinder 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000890.html"
+ },
+ "2020-08-21-announce_xfce4-panel_4154_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.15.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000892.html"
+ },
+ "2020-08-21-mate-calc_1.24.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mate-calc (1.24.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.1-1/changelog"
+ },
+ "2020-08-21-xfwm4_4.14.5-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfwm4 (4.14.5-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.5-1/changelog"
+ },
+ "2020-08-22-engrampa_1.24.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "engrampa (1.24.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.1-1/changelog"
+ },
+ "2020-08-23-announce_thunar_4152_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.15.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000893.html"
+ },
+ "2020-08-27-announce_libxfce4util_4153_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.15.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000894.html"
+ },
+ "2020-08-27-announce_xfce_416pre1_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: Xfce 4.16pre1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-August/000895.html"
+ },
+ "2020-08-27-gimp_2.10.18-1build1_groovy": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.18-1build1) groovy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.18-1build1/changelog"
+ },
+ "2020-08-28-libxfce4util_4.15.3-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4util (4.15.3-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.15.3-1/changelog"
+ },
+ "2020-08-31-announce_xfce4-notifyd_062_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-notifyd 0.6.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-September/000896.html"
+ },
+ "2020-09-05-gimp_2.10.18-1build2_groovy": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.18-1build2) groovy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.18-1build2/changelog"
+ },
+ "2020-09-11-libxfce4ui_4.15.3-2_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.15.3-2) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.3-2/changelog"
+ },
+ "2020-09-12-xfce_416pre1_released": {
+  "bucket": "xfce",
+  "title": "Xfce 4.16pre1 released!",
+  "url": "https://andreldm.com/2020/09/12/xfce4.16pre1.html"
+ },
+ "2020-09-17-garcon_0.7.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "garcon (0.7.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/garcon/garcon_0.7.1-1/changelog"
+ },
+ "2020-09-17-xfce4-appfinder_4.15.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-appfinder (4.15.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-appfinder/xfce4-appfinder_4.15.1-1/changelog"
+ },
+ "2020-09-17-xfce4-panel_4.15.4-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.15.4-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.15.4-1/changelog"
+ },
+ "2020-09-18-thunar-volman_4.15.0-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "thunar-volman (4.15.0-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-volman/thunar-volman_4.15.0-1/changelog"
+ },
+ "2020-09-19-thunar_4.15.2-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.15.2-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.15.2-1/changelog"
+ },
+ "2020-09-20-libxfce4util_4.14.0-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "libxfce4util (4.14.0-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.14.0-2/changelog"
+ },
+ "2020-09-23-xfdashboard_0.7.8-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfdashboard (0.7.8-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.7.8-0ubuntu1/changelog"
+ },
+ "2020-10-06-blueman_2.1.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.1.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.4-1/changelog"
+ },
+ "2020-10-06-gimp_2.10.22-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.22-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-1/changelog"
+ },
+ "2020-10-13-blueman_2.1.3-2ubuntu1_groovy": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.1.3-2ubuntu1) groovy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu1/changelog"
+ },
+ "2020-10-15-announce_xfce4-appfinder_4152_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-appfinder 4.15.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-October/000899.html"
+ },
+ "2020-10-15-announce_xfce4-cpufreq-plugin_122_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpufreq-plugin 1.2.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-October/000898.html"
+ },
+ "2020-10-15-announce_xfce4-dict_084_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-dict 0.8.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-October/000897.html"
+ },
+ "2020-10-15-xfce4-cpufreq-plugin_1.2.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpufreq-plugin (1.2.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.2-1/changelog"
+ },
+ "2020-10-16-xfce4-dict_0.8.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-dict (0.8.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.4-1/changelog"
+ },
+ "2020-10-25-announce_catfish_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: catfish 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-October/000900.html"
+ },
+ "2020-10-27-lightdm-gtk-greeter_2.0.6-0ubuntu2_groovy": {
+  "bucket": "xubuntu",
+  "title": "lightdm-gtk-greeter (2.0.6-0ubuntu2) groovy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu2/changelog"
+ },
+ "2020-10-27-lightdm-gtk-greeter_2.0.6-0ubuntu3_hirsute": {
+  "bucket": "xubuntu",
+  "title": "lightdm-gtk-greeter (2.0.6-0ubuntu3) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.6-0ubuntu3/changelog"
+ },
+ "2020-10-30-blueman_2.1.3-2ubuntu2_hirsute": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.1.3-2ubuntu2) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu2/changelog"
+ },
+ "2020-10-31-announce_thunar_1816_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 1.8.16 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-October/000901.html"
+ },
+ "2020-10-31-announce_thunar_4153_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.15.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000902.html"
+ },
+ "2020-11-01-announce_exo_4153_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.15.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000905.html"
+ },
+ "2020-11-01-announce_xfwm4_4146_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.14.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000903.html"
+ },
+ "2020-11-01-announce_xfwm4_4152_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.15.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000904.html"
+ },
+ "2020-11-01-announce_xfwm4_4153_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.15.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000906.html"
+ },
+ "2020-11-01-xfwm4_4.14.6-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfwm4 (4.14.6-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.14.6-1/changelog"
+ },
+ "2020-11-02-announce_thunar-volman_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar-volman 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000909.html"
+ },
+ "2020-11-02-announce_xfce4-dev-tools_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-dev-tools 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000910.html"
+ },
+ "2020-11-02-announce_xfce4-panel_4155_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.15.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000911.html"
+ },
+ "2020-11-02-announce_xfdesktop_4143_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdesktop 4.14.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000908.html"
+ },
+ "2020-11-02-announce_xfdesktop_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdesktop 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000907.html"
+ },
+ "2020-11-03-announce_libxfce4ui_4154_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.15.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000912.html"
+ },
+ "2020-11-03-announce_libxfce4util_4154_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.15.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000913.html"
+ },
+ "2020-11-05-libxfce4ui_4.15.4-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.15.4-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.4-1/changelog"
+ },
+ "2020-11-05-libxfce4util_4.15.4-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4util (4.15.4-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.15.4-1/changelog"
+ },
+ "2020-11-05-xfwm4_4.15.3-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfwm4 (4.15.3-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.15.3-1/changelog"
+ },
+ "2020-11-06-announce_xfce4-power-manager_171_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-power-manager 1.7.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000914.html"
+ },
+ "2020-11-07-announce_xfce4-session_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-session 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000915.html"
+ },
+ "2020-11-07-exo_4.15.3-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "exo (4.15.3-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.15.3-1/changelog"
+ },
+ "2020-11-07-xfdesktop4_4.14.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfdesktop4 (4.14.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdesktop4/xfdesktop4_4.14.3-1/changelog"
+ },
+ "2020-11-07-xfdesktop4_4.15.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfdesktop4 (4.15.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdesktop4/xfdesktop4_4.15.1-1/changelog"
+ },
+ "2020-11-08-announce_xfce4-mailwatch-plugin_130_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-mailwatch-plugin 1.3.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000917.html"
+ },
+ "2020-11-08-announce_xfce4-screensaver_0111_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-screensaver 0.1.11 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000916.html"
+ },
+ "2020-11-09-announce_garcon_072_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: garcon 0.7.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000920.html"
+ },
+ "2020-11-09-announce_xfce4-weather-plugin_0102_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-weather-plugin 0.10.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000921.html"
+ },
+ "2020-11-09-announce_xfconf_4144_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfconf 4.14.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000919.html"
+ },
+ "2020-11-09-announce_xfconf_4151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfconf 4.15.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000918.html"
+ },
+ "2020-11-09-thunar-volman_4.15.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "thunar-volman (4.15.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-volman/thunar-volman_4.15.1-1/changelog"
+ },
+ "2020-11-09-xfce4-appfinder_4.15.2-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-appfinder (4.15.2-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-appfinder/xfce4-appfinder_4.15.2-1/changelog"
+ },
+ "2020-11-10-garcon_0.7.2-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "garcon (0.7.2-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/garcon/garcon_0.7.2-1/changelog"
+ },
+ "2020-11-10-xfce4-mailwatch-plugin_1.3.0-0ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xfce4-mailwatch-plugin (1.3.0-0ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mailwatch-plugin/xfce4-mailwatch-plugin_1.3.0-0ubuntu1/changelog"
+ },
+ "2020-11-10-xfce4-panel_4.15.5-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.15.5-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.15.5-1/changelog"
+ },
+ "2020-11-10-xfce4-screensaver_0.1.11-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-screensaver (0.1.11-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screensaver/xfce4-screensaver_0.1.11-1/changelog"
+ },
+ "2020-11-10-xfce4-settings_4.15.2-2ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-settings (4.15.2-2ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.15.2-2ubuntu1/changelog"
+ },
+ "2020-11-10-xfce4-weather-plugin_0.10.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-weather-plugin (0.10.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-weather-plugin/xfce4-weather-plugin_0.10.2-1/changelog"
+ },
+ "2020-11-13-xfce4-power-manager_1.7.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-power-manager (1.7.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_1.7.1-1/changelog"
+ },
+ "2020-11-14-announce_xfce4-settings_4153_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-settings 4.15.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000922.html"
+ },
+ "2020-11-14-thunar_4.15.3-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.15.3-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.15.3-1/changelog"
+ },
+ "2020-11-14-tumbler_0.3.0-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "tumbler (0.3.0-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.3.0-1/changelog"
+ },
+ "2020-11-14-xfconf_4.14.3-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfconf (4.14.3-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.3-2/changelog"
+ },
+ "2020-11-15-announce_tumbler_031_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: tumbler 0.3.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000923.html"
+ },
+ "2020-11-17-announce_xfdashboard_0790_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.7.90 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000924.html"
+ },
+ "2020-11-19-announce_libxfce4ui_4155_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.15.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000925.html"
+ },
+ "2020-11-19-announce_xfce_416pre2_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: Xfce 4.16pre2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000926.html"
+ },
+ "2020-11-19-blueman_2.1.3-2ubuntu3_hirsute": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.1.3-2ubuntu3) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.1.3-2ubuntu3/changelog"
+ },
+ "2020-11-19-xfce_416pre2_released": {
+  "bucket": "xfce",
+  "title": "Xfce 4.16pre2 released!",
+  "url": "https://andreldm.com/2020/11/19/xfce4.16pre2.html"
+ },
+ "2020-11-20-announce_mousepad_0490_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.4.90 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000927.html"
+ },
+ "2020-11-20-libxfce4ui_4.15.5-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.15.5-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.5-1/changelog"
+ },
+ "2020-11-20-tumbler_0.3.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "tumbler (0.3.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_0.3.1-1/changelog"
+ },
+ "2020-11-21-announce_libxfce4util_4155_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.15.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000928.html"
+ },
+ "2020-11-22-catfish_4.15.0-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "catfish (4.15.0-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.15.0-0ubuntu1/changelog"
+ },
+ "2020-11-24-gimp_2.10.22-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.22-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-2/changelog"
+ },
+ "2020-11-24-libxfce4util_4.15.5-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "libxfce4util (4.15.5-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.15.5-0ubuntu1/changelog"
+ },
+ "2020-11-24-mousepad_0.4.90-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.4.90-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.4.90-0ubuntu1/changelog"
+ },
+ "2020-11-29-xfconf_4.14.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfconf (4.14.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.14.4-1/changelog"
+ },
+ "2020-11-30-announce_mousepad_050_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-November/000929.html"
+ },
+ "2020-11-30-greybird_32213": {
+  "bucket": "xubuntu",
+  "title": "Greybird 3.22.13",
+  "url": "https://github.com/shimmerproject/Greybird/releases/tag/v3.22.13"
+ },
+ "2020-12-10-announce_libxfce4ui_4156_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.15.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000930.html"
+ },
+ "2020-12-10-libxfce4ui_4.15.6-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.15.6-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.6-1/changelog"
+ },
+ "2020-12-10-mousepad_0.5.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.5.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.0-1/changelog"
+ },
+ "2020-12-11-xfce4-notifyd_0.6.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-notifyd (0.6.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notifyd/xfce4-notifyd_0.6.2-1/changelog"
+ },
+ "2020-12-12-xubuntu-artwork_21.04.0_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-artwork (21.04.0) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.0/changelog"
+ },
+ "2020-12-12-xubuntu-default-settings_21.04.0_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (21.04.0) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.04.0/changelog"
+ },
+ "2020-12-12-xubuntu-meta_2.234_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.234) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.234/changelog"
+ },
+ "2020-12-12-xubuntu-meta_2.235_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.235) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.235/changelog"
+ },
+ "2020-12-13-announce_libxfce4util_4156_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.15.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000931.html"
+ },
+ "2020-12-13-announce_xfce4-panel_4156_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.15.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000932.html"
+ },
+ "2020-12-13-xfconf_4.15.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfconf (4.15.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.15.1-1/changelog"
+ },
+ "2020-12-14-announce_garcon_073_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: garcon 0.7.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000934.html"
+ },
+ "2020-12-14-announce_libxfce4ui_4157_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.15.7 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000933.html"
+ },
+ "2020-12-14-libxfce4ui_4.15.6-1build1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.15.6-1build1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.6-1build1/changelog"
+ },
+ "2020-12-16-announce_libxfce4ui_4158_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.15.8 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000935.html"
+ },
+ "2020-12-16-garcon_0.7.3-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "garcon (0.7.3-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/garcon/garcon_0.7.3-1/changelog"
+ },
+ "2020-12-16-libxfce4ui_4.15.8-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.15.8-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.15.8-1/changelog"
+ },
+ "2020-12-16-libxfce4util_4.15.6-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4util (4.15.6-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.15.6-1/changelog"
+ },
+ "2020-12-16-xfce4-panel_4.15.6-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.15.6-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.15.6-1/changelog"
+ },
+ "2020-12-16-xfce4-session_4.15.1-1ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-session (4.15.1-1ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-session/xfce4-session_4.15.1-1ubuntu1/changelog"
+ },
+ "2020-12-16-xfce4-settings_4.15.3-1ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-settings (4.15.3-1ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.15.3-1ubuntu1/changelog"
+ },
+ "2020-12-19-greybird-gtk-theme_3.22.13-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "greybird-gtk-theme (3.22.13-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.22.13-1/changelog"
+ },
+ "2020-12-20-announce_xfce4-diskperf-plugin_263_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-diskperf-plugin 2.6.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000937.html"
+ },
+ "2020-12-20-announce_xfce4-mount-plugin_114_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-mount-plugin 1.1.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000938.html"
+ },
+ "2020-12-20-announce_xfce4-systemload-plugin_124_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-systemload-plugin 1.2.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000936.html"
+ },
+ "2020-12-21-xfce4-diskperf-plugin_2.6.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-diskperf-plugin (2.6.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-diskperf-plugin/xfce4-diskperf-plugin_2.6.3-1/changelog"
+ },
+ "2020-12-22-announce_exo_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000951.html"
+ },
+ "2020-12-22-announce_thunar-volman_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar-volman 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000955.html"
+ },
+ "2020-12-22-announce_thunar_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000950.html"
+ },
+ "2020-12-22-announce_tumbler_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: tumbler 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000953.html"
+ },
+ "2020-12-22-announce_xfce4-appfinder_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-appfinder 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000952.html"
+ },
+ "2020-12-22-announce_xfce_416_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: Xfce 4.16 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000956.html"
+ },
+ "2020-12-22-announce_xfdesktop_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdesktop 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000954.html"
+ },
+ "2020-12-22-xfce_416_released": {
+  "bucket": "xfce",
+  "title": "Xfce 4.16 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000956.html"
+ },
+ "2020-12-23-announce_mousepad_051_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000957.html"
+ },
+ "2020-12-23-announce_xfce4-calculator-plugin_071_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-calculator-plugin 0.7.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000960.html"
+ },
+ "2020-12-23-announce_xfce4-genmon-plugin_410_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-genmon-plugin 4.1.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000958.html"
+ },
+ "2020-12-23-announce_xfce4-screenshooter_198_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-screenshooter 1.9.8 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000959.html"
+ },
+ "2020-12-23-announce_xfdashboard_080_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.8.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000961.html"
+ },
+ "2020-12-23-exo_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "exo (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.0-1/changelog"
+ },
+ "2020-12-23-garcon_0.8.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "garcon (0.8.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/garcon/garcon_0.8.0-1/changelog"
+ },
+ "2020-12-23-libxfce4ui_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.16.0-1/changelog"
+ },
+ "2020-12-23-libxfce4util_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "libxfce4util (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.16.0-1/changelog"
+ },
+ "2020-12-23-mousepad_0.5.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.5.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.1-1/changelog"
+ },
+ "2020-12-23-thunar-volman_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar-volman (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-volman/thunar-volman_4.16.0-1/changelog"
+ },
+ "2020-12-23-thunar_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.0-1/changelog"
+ },
+ "2020-12-23-thunar_4.16.0-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.0-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.0-2/changelog"
+ },
+ "2020-12-23-tumbler_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "tumbler (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_4.16.0-1/changelog"
+ },
+ "2020-12-23-xfce4-appfinder_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-appfinder (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-appfinder/xfce4-appfinder_4.16.0-1/changelog"
+ },
+ "2020-12-23-xfce4-genmon-plugin_4.1.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-genmon-plugin (4.1.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-genmon-plugin/xfce4-genmon-plugin_4.1.0-1/changelog"
+ },
+ "2020-12-23-xfce4-panel_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.0-1/changelog"
+ },
+ "2020-12-23-xfce4-power-manager_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-power-manager (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-power-manager/xfce4-power-manager_4.16.0-1/changelog"
+ },
+ "2020-12-23-xfce4-screenshooter_1.9.8-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-screenshooter (1.9.8-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.8-1/changelog"
+ },
+ "2020-12-23-xfce4-terminal_0.8.10-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-terminal (0.8.10-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_0.8.10-1/changelog"
+ },
+ "2020-12-23-xfce4_4.16_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4 (4.16) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4/xfce4_4.16/changelog"
+ },
+ "2020-12-23-xfconf_4.16.0-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfconf (4.16.0-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfconf/xfconf_4.16.0-2/changelog"
+ },
+ "2020-12-23-xfdesktop4_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfdesktop4 (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdesktop4/xfdesktop4_4.16.0-1/changelog"
+ },
+ "2020-12-23-xfwm4_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfwm4 (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.16.0-1/changelog"
+ },
+ "2020-12-24-announce_xfce4-datetime-plugin_081_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-datetime-plugin 0.8.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000965.html"
+ },
+ "2020-12-24-announce_xfce4-smartbookmark-plugin_052_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-smartbookmark-plugin 0.5.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000962.html"
+ },
+ "2020-12-24-announce_xfce4-wavelan-plugin_062_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-wavelan-plugin 0.6.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000964.html"
+ },
+ "2020-12-24-announce_xfce4-whiskermenu-plugin_250_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.5.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000966.html"
+ },
+ "2020-12-24-announce_xfce4-xkb-plugin_082_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-xkb-plugin 0.8.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000963.html"
+ },
+ "2020-12-24-xfce4-datetime-plugin_0.8.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-datetime-plugin (0.8.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-datetime-plugin/xfce4-datetime-plugin_0.8.1-1/changelog"
+ },
+ "2020-12-24-xfce4-whiskermenu-plugin_2.5.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.5.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.5.0-1/changelog"
+ },
+ "2020-12-26-xfce4-mount-plugin_1.1.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-mount-plugin (1.1.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mount-plugin/xfce4-mount-plugin_1.1.4-1/changelog"
+ },
+ "2020-12-26-xfce4-smartbookmark-plugin_0.5.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-smartbookmark-plugin (0.5.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-smartbookmark-plugin/xfce4-smartbookmark-plugin_0.5.2-1/changelog"
+ },
+ "2020-12-26-xfce4-wavelan-plugin_0.6.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-wavelan-plugin (0.6.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.2-1/changelog"
+ },
+ "2020-12-26-xfce4-xkb-plugin_1-0.8.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-xkb-plugin (1:0.8.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-xkb-plugin/xfce4-xkb-plugin_0.8.2-1/changelog"
+ },
+ "2020-12-26-xfdashboard_0.8.0-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfdashboard (0.8.0-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.8.0-0ubuntu1/changelog"
+ },
+ "2020-12-27-announce_parole_4150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: parole 4.15.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000967.html"
+ },
+ "2020-12-27-announce_xfce4-fsguard-plugin_112_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-fsguard-plugin 1.1.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000969.html"
+ },
+ "2020-12-27-announce_xfce4-verve-plugin_201_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-verve-plugin 2.0.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000968.html"
+ },
+ "2020-12-27-parole_media_player_4150_released": {
+  "bucket": "sean",
+  "title": "Parole Media Player 4.15.0 Released",
+  "url": "https://seand.xyz/blog/2020/12/27/parole-media-player-4-15-0-released/"
+ },
+ "2020-12-27-xfce4-verve-plugin_2.0.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-verve-plugin (2.0.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-verve-plugin/xfce4-verve-plugin_2.0.1-1/changelog"
+ },
+ "2020-12-28-announce_xfce4-cpugraph-plugin_120_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpugraph-plugin 1.2.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000970.html"
+ },
+ "2020-12-28-announce_xfce4-mount-plugin_115_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-mount-plugin 1.1.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000971.html"
+ },
+ "2020-12-28-announce_xfce4-panel-profiles_1011_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel-profiles 1.0.11 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000974.html"
+ },
+ "2020-12-28-announce_xfce4-sensors-plugin_1395_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-sensors-plugin 1.3.95 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000972.html"
+ },
+ "2020-12-28-announce_xfce4-taskmanager_140_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-taskmanager 1.4.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000973.html"
+ },
+ "2020-12-29-announce_thunar_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000976.html"
+ },
+ "2020-12-29-announce_xfce4-panel-profiles_1012_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel-profiles 1.0.12 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2020-December/000975.html"
+ },
+ "2020-12-29-mugshot_043": {
+  "bucket": "sean",
+  "title": "Mugshot 0.4.3",
+  "url": "https://github.com/bluesabre/mugshot/releases/tag/mugshot-0.4.3"
+ },
+ "2021-01-01-mugshot_0.4.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mugshot (0.4.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mugshot/mugshot_0.4.3-1/changelog"
+ },
+ "2021-01-02-announce_xfce4-indicator-plugin_240_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-indicator-plugin 2.4.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000978.html"
+ },
+ "2021-01-02-announce_xfce4-whiskermenu-plugin_251_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.5.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000977.html"
+ },
+ "2021-01-02-thunar_4.16.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.1-1/changelog"
+ },
+ "2021-01-02-xfce4-cpugraph-plugin_1.2.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpugraph-plugin (1.2.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.0-1/changelog"
+ },
+ "2021-01-02-xfce4-fsguard-plugin_1.1.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-fsguard-plugin (1.1.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-fsguard-plugin/xfce4-fsguard-plugin_1.1.2-1/changelog"
+ },
+ "2021-01-02-xfce4-mount-plugin_1.1.5-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-mount-plugin (1.1.5-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mount-plugin/xfce4-mount-plugin_1.1.5-1/changelog"
+ },
+ "2021-01-02-xfce4-mpc-plugin_0.5.2-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-mpc-plugin (0.5.2-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mpc-plugin/xfce4-mpc-plugin_0.5.2-2/changelog"
+ },
+ "2021-01-02-xfce4-session_4.16.0-1ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xfce4-session (4.16.0-1ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-session/xfce4-session_4.16.0-1ubuntu1/changelog"
+ },
+ "2021-01-02-xfce4-settings_4.16.0-1ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xfce4-settings (4.16.0-1ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.16.0-1ubuntu1/changelog"
+ },
+ "2021-01-02-xfce4-taskmanager_1.4.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-taskmanager (1.4.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.4.0-1/changelog"
+ },
+ "2021-01-02-xfce4-whiskermenu-plugin_2.5.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.5.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.5.1-1/changelog"
+ },
+ "2021-01-03-announce_xfce4-screensaver_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-screensaver 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001000.html"
+ },
+ "2021-01-04-xubuntu-docs_21.04_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-docs (21.04) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_21.04/changelog"
+ },
+ "2021-01-06-lightdm-gtk-greeter_2.0.8-2ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "lightdm-gtk-greeter (2.0.8-2ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.8-2ubuntu1/changelog"
+ },
+ "2021-01-06-xfce4-screensaver_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-screensaver (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screensaver/xfce4-screensaver_4.16.0-1/changelog"
+ },
+ "2021-01-08-announce_catfish_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: catfish 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001001.html"
+ },
+ "2021-01-08-catfish_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "catfish (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.0-1/changelog"
+ },
+ "2021-01-09-announce_xfwm4_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfwm4 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001002.html"
+ },
+ "2021-01-10-greybird-gtk-theme_3.22.14-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "greybird-gtk-theme (3.22.14-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.22.14-1/changelog"
+ },
+ "2021-01-10-greybird_32214": {
+  "bucket": "xubuntu",
+  "title": "Greybird 3.22.14",
+  "url": "https://github.com/shimmerproject/Greybird/releases/tag/v3.22.14"
+ },
+ "2021-01-10-v0152": {
+  "bucket": "xubuntu",
+  "title": "v0.15.2",
+  "url": "https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.15.2"
+ },
+ "2021-01-10-xfwm4_4.16.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfwm4 (4.16.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfwm4/xfwm4_4.16.1-1/changelog"
+ },
+ "2021-01-11-announce_parole_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: parole 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001003.html"
+ },
+ "2021-01-11-elementary-xfce_0.15.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "elementary-xfce (0.15.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.15.2-1/changelog"
+ },
+ "2021-01-11-parole_4.16.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "parole (4.16.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/parole/parole_4.16.0-1/changelog"
+ },
+ "2021-01-12-announce_thunar_4162_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001005.html"
+ },
+ "2021-01-12-announce_xfce4-cpufreq-plugin_123_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpufreq-plugin 1.2.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001004.html"
+ },
+ "2021-01-12-thunar_4.16.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.2-1/changelog"
+ },
+ "2021-01-12-xfce4-cpufreq-plugin_1.2.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpufreq-plugin (1.2.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.3-1/changelog"
+ },
+ "2021-01-12-xfce4-indicator-plugin_2.4.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-indicator-plugin (2.4.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-indicator-plugin/xfce4-indicator-plugin_2.4.0-1/changelog"
+ },
+ "2021-01-15-announce_garcon_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: garcon 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001006.html"
+ },
+ "2021-01-15-announce_xfce4-whiskermenu-plugin_252_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.5.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001007.html"
+ },
+ "2021-01-17-announce_xfce4-appfinder_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-appfinder 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001008.html"
+ },
+ "2021-01-18-announce_xfce4-notes-plugin_190_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-notes-plugin 1.9.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001009.html"
+ },
+ "2021-01-18-garcon_4.16.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "garcon (4.16.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/garcon/garcon_4.16.1-1/changelog"
+ },
+ "2021-01-18-xfce4-appfinder_4.16.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-appfinder (4.16.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-appfinder/xfce4-appfinder_4.16.1-1/changelog"
+ },
+ "2021-01-18-xfce4-whiskermenu-plugin_2.5.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.5.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.5.2-1/changelog"
+ },
+ "2021-01-19-announce_xfce4-stopwatch-plugin_050_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-stopwatch-plugin 0.5.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001010.html"
+ },
+ "2021-01-19-xfce4-notes-plugin_1.9.0-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-notes-plugin (1.9.0-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notes-plugin/xfce4-notes-plugin_1.9.0-1/changelog"
+ },
+ "2021-01-22-announce_thunar_4170_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001011.html"
+ },
+ "2021-01-24-announce_xfce4-genmon-plugin_411_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-genmon-plugin 4.1.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000991.html"
+ },
+ "2021-01-24-announce_xfce4-whiskermenu-plugin_253_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.5.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000992.html"
+ },
+ "2021-01-27-announce_xfce4-panel_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000994.html"
+ },
+ "2021-01-27-announce_xfce4-statusnotifier-plugin_023_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-statusnotifier-plugin 0.2.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000993.html"
+ },
+ "2021-01-28-xfce4-panel_4.16.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.16.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.1-1/changelog"
+ },
+ "2021-01-30-announce_thunarx-python_052_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunarx-python 0.5.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000995.html"
+ },
+ "2021-01-30-announce_xfce4-cpugraph-plugin_121_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpugraph-plugin 1.2.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000996.html"
+ },
+ "2021-01-31-announce_mousepad_052_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-January/000997.html"
+ },
+ "2021-02-02-announce_xfce4-cpufreq-plugin_124_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpufreq-plugin 1.2.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/000998.html"
+ },
+ "2021-02-03-mousepad_0.5.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.5.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.2-1/changelog"
+ },
+ "2021-02-04-pidgin_1-2.14.1-1ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "pidgin (1:2.14.1-1ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.1-1ubuntu1/changelog"
+ },
+ "2021-02-04-xfce4-cpufreq-plugin_1.2.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpufreq-plugin (1.2.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.4-1/changelog"
+ },
+ "2021-02-04-xfce4-cpugraph-plugin_1.2.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpugraph-plugin (1.2.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.1-1/changelog"
+ },
+ "2021-02-04-xfce4-genmon-plugin_4.1.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-genmon-plugin (4.1.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-genmon-plugin/xfce4-genmon-plugin_4.1.1-1/changelog"
+ },
+ "2021-02-04-xfce4-whiskermenu-plugin_2.5.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.5.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.5.3-1/changelog"
+ },
+ "2021-02-05-xfce4-statusnotifier-plugin_0.2.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-statusnotifier-plugin (0.2.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-statusnotifier-plugin/xfce4-statusnotifier-plugin_0.2.3-1/changelog"
+ },
+ "2021-02-06-announce_xfce4-taskmanager_150_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-taskmanager 1.5.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/000999.html"
+ },
+ "2021-02-07-announce_xfce4-taskmanager_141_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-taskmanager 1.4.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001000.html"
+ },
+ "2021-02-09-announce_thunar_4163_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001002.html"
+ },
+ "2021-02-09-announce_xfce4-taskmanager_142_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-taskmanager 1.4.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001001.html"
+ },
+ "2021-02-11-announce_xfce4-weather-plugin_0110_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-weather-plugin 0.11.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001003.html"
+ },
+ "2021-02-12-xfce4-weather-plugin_0.11.0-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-weather-plugin (0.11.0-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-weather-plugin/xfce4-weather-plugin_0.11.0-0ubuntu1/changelog"
+ },
+ "2021-02-13-lightdm-gtk-greeter-settings_1.2.2-4_unstable": {
+  "bucket": "xubuntu",
+  "title": "lightdm-gtk-greeter-settings (1.2.2-4) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm-gtk-greeter-settings/lightdm-gtk-greeter-settings_1.2.2-4/changelog"
+ },
+ "2021-02-14-announce_xfce4-cpugraph-plugin_122_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpugraph-plugin 1.2.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001004.html"
+ },
+ "2021-02-16-xfce4-session_4.16.0-1ubuntu2_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xfce4-session (4.16.0-1ubuntu2) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-session/xfce4-session_4.16.0-1ubuntu2/changelog"
+ },
+ "2021-02-18-announce_xfce4-taskmanager_151_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-taskmanager 1.5.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001005.html"
+ },
+ "2021-02-18-howto_migrate_from_ghost_v3_to_squarespace": {
+  "bucket": "sean",
+  "title": "HOWTO: Migrate from Ghost v3 to Squarespace",
+  "url": "https://seand.xyz/blog/2021/02/18/how-to-migrate-from-ghost-v3-to-squarespace/"
+ },
+ "2021-02-18-thunar_4.16.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.3-1/changelog"
+ },
+ "2021-02-21-announce_xfce4-panel-profiles_1013_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel-profiles 1.0.13 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001006.html"
+ },
+ "2021-02-22-xfce4-panel-profiles_1.0.13-0ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel-profiles (1.0.13-0ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel-profiles/xfce4-panel-profiles_1.0.13-0ubuntu1/changelog"
+ },
+ "2021-02-22-xfce4-weather-plugin_0.11.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-weather-plugin (0.11.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-weather-plugin/xfce4-weather-plugin_0.11.0-1/changelog"
+ },
+ "2021-02-22-xfce_panel_profiles_1013_released": {
+  "bucket": "sean",
+  "title": "Xfce Panel Profiles 1.0.13 Released",
+  "url": "https://seand.xyz/blog/2021/02/22/xfce-panel-profiles-1-0-13-released/"
+ },
+ "2021-02-22-xubuntu-default-settings_21.04.1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (21.04.1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.04.1/changelog"
+ },
+ "2021-02-22-xubuntu-meta_2.236_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.236) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.236/changelog"
+ },
+ "2021-02-23-announce_xfce4-cpugraph-plugin_123_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpugraph-plugin 1.2.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001007.html"
+ },
+ "2021-02-23-xfce4-panel-profiles_1.0.13-0ubuntu2_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel-profiles (1.0.13-0ubuntu2) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel-profiles/xfce4-panel-profiles_1.0.13-0ubuntu2/changelog"
+ },
+ "2021-02-25-announce_xfce4-panel_4162_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.16.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001008.html"
+ },
+ "2021-02-25-xubuntu_2104_progress_update": {
+  "bucket": "sean",
+  "title": "Xubuntu 21.04 Progress Update",
+  "url": "https://seand.xyz/blog/2021/02/25/xubuntu-21-04-progress-update/"
+ },
+ "2021-02-27-announce_xfce4-taskmanager_152_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-taskmanager 1.5.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001009.html"
+ },
+ "2021-02-27-xfce4-panel_4.16.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.16.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.2-1/changelog"
+ },
+ "2021-02-28-and_now_for_something_completely_different": {
+  "bucket": "sean",
+  "title": "And Now For Something Completely Different",
+  "url": "https://seand.xyz/blog/2021/02/28/and-now-for-something-completely-different/"
+ },
+ "2021-02-28-announce_mousepad_053_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001010.html"
+ },
+ "2021-02-28-announce_xfce4-time-out-plugin_112_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-time-out-plugin 1.1.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-February/001011.html"
+ },
+ "2021-03-02-announce_xfce4-cpufreq-plugin_125_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpufreq-plugin 1.2.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001012.html"
+ },
+ "2021-03-04-announce_xfce4-appfinder_4141_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-appfinder 4.14.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001013.html"
+ },
+ "2021-03-04-announce_xfdashboard_081_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.8.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001015.html"
+ },
+ "2021-03-04-announce_xfdesktop_4144_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdesktop 4.14.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001014.html"
+ },
+ "2021-03-05-announce_xfdashboard_090_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.9.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001016.html"
+ },
+ "2021-03-06-announce_thunar_4164_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001017.html"
+ },
+ "2021-03-06-mousepad_0.5.3-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.5.3-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.3-0ubuntu1/changelog"
+ },
+ "2021-03-06-xfce4-cpufreq-plugin_1.2.5-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpufreq-plugin (1.2.5-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.5-0ubuntu1/changelog"
+ },
+ "2021-03-06-xfce4-cpugraph-plugin_1.2.3-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpugraph-plugin (1.2.3-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.3-0ubuntu1/changelog"
+ },
+ "2021-03-07-thunar_4.16.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.4-1/changelog"
+ },
+ "2021-03-08-announce_thunar_4165_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001018.html"
+ },
+ "2021-03-10-announce_xfce4-netload-plugin_140_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-netload-plugin 1.4.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001019.html"
+ },
+ "2021-03-10-announce_xfce4-systemload-plugin_130_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-systemload-plugin 1.3.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001020.html"
+ },
+ "2021-03-12-announce_exo_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001021.html"
+ },
+ "2021-03-13-first_steps_with_elementary_development": {
+  "bucket": "sean",
+  "title": "First Steps with elementary Development",
+  "url": "https://seand.xyz/blog/2021/03/13/first-steps-with-elementary-development/"
+ },
+ "2021-03-16-stable_release_updates_on_xubuntu": {
+  "bucket": "sean",
+  "title": "Stable Release Updates on Xubuntu",
+  "url": "https://seand.xyz/blog/2021/03/16/stable-release-updates-on-xubuntu/"
+ },
+ "2021-03-16-xfdashboard_0.8.1-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfdashboard (0.8.1-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfdashboard/xfdashboard_0.8.1-0ubuntu1/changelog"
+ },
+ "2021-03-19-announce_xfdashboard_091_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.9.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001022.html"
+ },
+ "2021-03-20-gimp_2.10.22-3_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.22-3) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-3/changelog"
+ },
+ "2021-03-20-xfce4-systemload-plugin_1-1.2.4-1ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-systemload-plugin (1:1.2.4-1ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1:1.2.4-1ubuntu1/changelog"
+ },
+ "2021-03-21-announce_thunar_4166_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001023.html"
+ },
+ "2021-03-21-announce_thunar_4171_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001024.html"
+ },
+ "2021-03-22-announce_xfce4-systemload-plugin_131_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-systemload-plugin 1.3.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001025.html"
+ },
+ "2021-03-22-atril_1.24.1-0ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "atril (1.24.1-0ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.24.1-0ubuntu1/changelog"
+ },
+ "2021-03-23-announce_xfce4-battery-plugin_114_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-battery-plugin 1.1.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001026.html"
+ },
+ "2021-03-23-post_416_fatigue_and_whats_next": {
+  "bucket": "xfce",
+  "title": "Post 4.16 fatigue and what’s next",
+  "url": "https://simon.shimmerproject.org/2021/03/23/post-4-16-fatigue-and-whats-next/"
+ },
+ "2021-03-24-announce_gigolo_052_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: gigolo 0.5.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-March/001027.html"
+ },
+ "2021-03-25-thunar_4.16.6-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.6-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.6-0ubuntu1/changelog"
+ },
+ "2021-03-27-engrampa_1.24.2-0ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "engrampa (1.24.2-0ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.24.2-0ubuntu1/changelog"
+ },
+ "2021-03-27-mate-calc_1.24.2-0ubuntu1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "mate-calc (1.24.2-0ubuntu1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.24.2-0ubuntu1/changelog"
+ },
+ "2021-04-02-announce_mousepad_054_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-April/001028.html"
+ },
+ "2021-04-03-gimp_2.10.22-4_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.22-4) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.22-4/changelog"
+ },
+ "2021-04-07-xubuntu-artwork_21.04.1_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-artwork (21.04.1) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.04.1/changelog"
+ },
+ "2021-04-08-announce_xfdashboard_092_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.9.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-April/001029.html"
+ },
+ "2021-04-11-lightdm_1.30.0-0ubuntu4_hirsute": {
+  "bucket": "xubuntu",
+  "title": "lightdm (1.30.0-0ubuntu4) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4/changelog"
+ },
+ "2021-04-12-announce_exo_4162_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.16.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-April/001030.html"
+ },
+ "2021-04-12-announce_xfce4-settings_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-settings 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-April/001031.html"
+ },
+ "2021-04-12-lightdm_1.30.0-0ubuntu4~20.10.1_groovy": {
+  "bucket": "xubuntu",
+  "title": "lightdm (1.30.0-0ubuntu4~20.10.1) groovy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu4~20.10.1/changelog"
+ },
+ "2021-04-16-xubuntu-meta_2.237_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.237) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.237/changelog"
+ },
+ "2021-04-17-xubuntu-default-settings_21.04.2_hirsute": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (21.04.2) hirsute",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.04.2/changelog"
+ },
+ "2021-04-24-whats_new_april_2021": {
+  "bucket": "sean",
+  "title": "What's New? April 2021",
+  "url": "https://seand.xyz/blog/2021/04/24/whats-new-april-2021/"
+ },
+ "2021-04-26-announce_xfdashboard_093_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.9.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-April/001032.html"
+ },
+ "2021-04-30-exo_4.16.2-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "exo (4.16.2-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.2-0ubuntu1/changelog"
+ },
+ "2021-04-30-gigolo_0.5.2-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "gigolo (0.5.2-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.2-0ubuntu1/changelog"
+ },
+ "2021-04-30-mousepad_0.5.4-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.5.4-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.4-0ubuntu1/changelog"
+ },
+ "2021-05-03-announce_xfce4-clipman-plugin_162_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-clipman-plugin 1.6.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001033.html"
+ },
+ "2021-05-03-xfce4-battery-plugin_1.1.4-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-battery-plugin (1.1.4-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-battery-plugin/xfce4-battery-plugin_1.1.4-0ubuntu1/changelog"
+ },
+ "2021-05-03-xfce4-clipman-plugin_2-1.6.2-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-clipman-plugin (2:1.6.2-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_2:1.6.2-0ubuntu1/changelog"
+ },
+ "2021-05-03-xfce4-netload-plugin_1.4.0-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-netload-plugin (1.4.0-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.4.0-0ubuntu1/changelog"
+ },
+ "2021-05-03-xfce4-taskmanager_1.5.2-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-taskmanager (1.5.2-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.2-0ubuntu1/changelog"
+ },
+ "2021-05-06-announce_thunar_4167_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.7 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001036.html"
+ },
+ "2021-05-06-announce_xfce4-panel_4163_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.16.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001034.html"
+ },
+ "2021-05-06-announce_xfce4-settings_4144_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-settings 4.14.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001035.html"
+ },
+ "2021-05-07-announce_thunar_4168_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.8 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001038.html"
+ },
+ "2021-05-07-announce_thunar_4172_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001037.html"
+ },
+ "2021-05-07-announce_thunar_4173_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001039.html"
+ },
+ "2021-05-07-thunar_4.16.8-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.8-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.8-0ubuntu1/changelog"
+ },
+ "2021-05-10-numix-gtk-theme_2.6.7-6_unstable": {
+  "bucket": "xubuntu",
+  "title": "numix-gtk-theme (2.6.7-6) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/n/numix-gtk-theme/numix-gtk-theme_2.6.7-6/changelog"
+ },
+ "2021-05-12-announce_mousepad_055_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001040.html"
+ },
+ "2021-05-13-announce_thunar_1817_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 1.8.17 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001041.html"
+ },
+ "2021-05-13-thunar_4.16.8-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.8-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.8-1/changelog"
+ },
+ "2021-05-19-announce_xfce4-screenshooter_199_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-screenshooter 1.9.9 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-May/001042.html"
+ },
+ "2021-06-08-announce_xfce4-settings_4162_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-settings 4.16.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-June/001043.html"
+ },
+ "2021-06-11-announce_ristretto_0110_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: ristretto 0.11.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-June/001044.html"
+ },
+ "2021-06-23-xfce_participation_in_gsoc_2021": {
+  "bucket": "xfce",
+  "title": "Xfce participation in GSoC 2021",
+  "url": "https://alexxcons.github.io/2021/06/23/xfce-participates-in-gsoc.html"
+ },
+ "2021-06-26-announce_exo_4170_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.17.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-June/001047.html"
+ },
+ "2021-06-26-announce_libxfce4ui_4170_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.17.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-June/001046.html"
+ },
+ "2021-06-26-announce_libxfce4util_4170_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.17.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-June/001045.html"
+ },
+ "2021-07-17-announce_thunar_4174_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-July/001048.html"
+ },
+ "2021-07-18-announce_libxfce4util_4171_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.17.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-July/001049.html"
+ },
+ "2021-07-18-busy_summer_elementary_update": {
+  "bucket": "sean",
+  "title": "Busy Summer: elementary Update",
+  "url": "https://seand.xyz/blog/2021/07/18/busy-summer-elementary-update/"
+ },
+ "2021-07-18-gimp_2.10.24-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.24-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.24-1/changelog"
+ },
+ "2021-07-18-gimp_2.10.24-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.24-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.24-2/changelog"
+ },
+ "2021-07-20-announce_catfish_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: catfish 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-July/001050.html"
+ },
+ "2021-07-21-xubuntu-artwork_21.10_impish": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-artwork (21.10) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_21.10/changelog"
+ },
+ "2021-07-21-xubuntu-default-settings_21.10.0_impish": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (21.10.0) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.0/changelog"
+ },
+ "2021-07-21-xubuntu-meta_2.238_impish": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.238) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.238/changelog"
+ },
+ "2021-07-25-announce_xfce4-dev-tools_4170_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-dev-tools 4.17.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-July/001051.html"
+ },
+ "2021-07-25-announce_xfce4-sensors-plugin_140_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-sensors-plugin 1.4.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-July/001052.html"
+ },
+ "2021-07-26-announce_xfce4-sensors-plugin_141_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-sensors-plugin 1.4.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-July/001053.html"
+ },
+ "2021-07-29-xubuntu_2110_dev_update": {
+  "bucket": "sean",
+  "title": "Xubuntu 21.10 Dev Update",
+  "url": "https://seand.xyz/blog/2021/07/29/xubuntu-21-10-dev-update/"
+ },
+ "2021-07-31-announce_catfish_4162_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: catfish 4.16.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-July/001055.html"
+ },
+ "2021-07-31-announce_mousepad_056_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-July/001054.html"
+ },
+ "2021-07-31-xubuntu-default-settings_21.10.1_impish": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (21.10.1) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.1/changelog"
+ },
+ "2021-08-02-xubuntu-default-settings_21.10.2_impish": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (21.10.2) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.2/changelog"
+ },
+ "2021-08-04-catfish_4.16.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "catfish (4.16.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.2-1/changelog"
+ },
+ "2021-08-07-blueman_2.2.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.2.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.2-1/changelog"
+ },
+ "2021-08-15-exo_4.16.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "exo (4.16.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.2-1/changelog"
+ },
+ "2021-08-15-xfce4-cpugraph-plugin_1.2.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpugraph-plugin (1.2.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.3-1/changelog"
+ },
+ "2021-08-15-xfce4-panel_4.16.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.16.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.3-1/changelog"
+ },
+ "2021-08-16-gigolo_0.5.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "gigolo (0.5.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gigolo/gigolo_0.5.2-1/changelog"
+ },
+ "2021-08-16-xfce4-clipman-plugin_2-1.6.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-clipman-plugin (2:1.6.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-clipman-plugin/xfce4-clipman-plugin_1.6.2-1/changelog"
+ },
+ "2021-08-16-xfce4-cpufreq-plugin_1.2.5-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpufreq-plugin (1.2.5-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.5-1/changelog"
+ },
+ "2021-08-16-xfce4-screenshooter_1.9.9-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-screenshooter (1.9.9-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.9-1/changelog"
+ },
+ "2021-08-18-ristretto_0.11.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "ristretto (0.11.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.11.0-1/changelog"
+ },
+ "2021-08-18-xfce4-taskmanager_1.5.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-taskmanager (1.5.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.2-1/changelog"
+ },
+ "2021-08-19-xubuntu-default-settings_21.10.3_impish": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (21.10.3) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_21.10.3/changelog"
+ },
+ "2021-08-19-xubuntu-meta_2.239_impish": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.239) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.239/changelog"
+ },
+ "2021-08-21-atril_1.26.0-0ubuntu1_impish": {
+  "bucket": "xubuntu",
+  "title": "atril (1.26.0-0ubuntu1) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.26.0-0ubuntu1/changelog"
+ },
+ "2021-08-21-engrampa_1.26.0-0ubuntu1_impish": {
+  "bucket": "xubuntu",
+  "title": "engrampa (1.26.0-0ubuntu1) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.26.0-0ubuntu1/changelog"
+ },
+ "2021-08-21-mate-calc_1.26.0-0ubuntu1_impish": {
+  "bucket": "xubuntu",
+  "title": "mate-calc (1.26.0-0ubuntu1) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.26.0-0ubuntu1/changelog"
+ },
+ "2021-08-24-xfce4-sensors-plugin_1.4.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-sensors-plugin (1.4.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.1-1/changelog"
+ },
+ "2021-08-28-xfce4-settings_4.16.2-1ubuntu1_impish": {
+  "bucket": "xubuntu",
+  "title": "xfce4-settings (4.16.2-1ubuntu1) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.16.2-1ubuntu1/changelog"
+ },
+ "2021-08-29-xfce4-systemload-plugin_1-1.3.1-1ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-systemload-plugin (1:1.3.1-1ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-systemload-plugin/xfce4-systemload-plugin_1.3.1-1ubuntu1/changelog"
+ },
+ "2021-08-29-xubuntu_development_update_august_2021": {
+  "bucket": "sean",
+  "title": "Xubuntu Development Update August 2021",
+  "url": "https://seand.xyz/blog/2021/08/29/xubuntu-development-update-august-2021/"
+ },
+ "2021-09-05-announce_libxfce4ui_4161_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.16.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001056.html"
+ },
+ "2021-09-06-announce_libxfce4ui_4171_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.17.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001057.html"
+ },
+ "2021-09-11-announce_thunar_4169_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.9 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001058.html"
+ },
+ "2021-09-11-announce_thunar_4175_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001059.html"
+ },
+ "2021-09-11-sgt_puzzles_collection_027": {
+  "bucket": "sean",
+  "title": "SGT Puzzles Collection 0.2.7",
+  "url": "https://github.com/bluesabre/sgt-launcher/releases/tag/sgt-launcher-0.2.7"
+ },
+ "2021-09-11-shiny_new_things_in_thunar_thanks_to_gsoc_2021": {
+  "bucket": "xfce",
+  "title": "Shiny new things in Thunar thanks to GSoC 2021",
+  "url": "https://alexxcons.github.io/2021/09/11/shiny-new-things-in-thunar.html"
+ },
+ "2021-09-12-sgt-launcher_0.2.7-0ubuntu1_impish": {
+  "bucket": "xubuntu",
+  "title": "sgt-launcher (0.2.7-0ubuntu1) impish",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-launcher/sgt-launcher_0.2.7-0ubuntu1/changelog"
+ },
+ "2021-09-17-announce_thunar_41610_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.10 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001060.html"
+ },
+ "2021-09-18-libxfce4ui_4.16.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.16.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.16.1-1/changelog"
+ },
+ "2021-09-19-announce_xfce4-whiskermenu-plugin_260_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.6.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001061.html"
+ },
+ "2021-09-19-gimp_2.10.28-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.28-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.28-1/changelog"
+ },
+ "2021-09-21-announce_xfce4-appfinder_4170_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-appfinder 4.17.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001062.html"
+ },
+ "2021-09-22-announce_xfdashboard_094_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.9.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001063.html"
+ },
+ "2021-09-23-announce_mousepad_057_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.7 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001064.html"
+ },
+ "2021-09-23-xfce4-whiskermenu-plugin_2.6.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.6.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.0-1/changelog"
+ },
+ "2021-09-25-greybird-gtk-theme_3.22.15-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "greybird-gtk-theme (3.22.15-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.22.15-1/changelog"
+ },
+ "2021-09-25-greybird_32215": {
+  "bucket": "xubuntu",
+  "title": "Greybird 3.22.15",
+  "url": "https://github.com/shimmerproject/Greybird/releases/tag/v3.22.15"
+ },
+ "2021-09-25-menulibre-222": {
+  "bucket": "sean",
+  "title": "menulibre-2.2.2",
+  "url": "https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.2"
+ },
+ "2021-09-25-menulibre_222": {
+  "bucket": "sean",
+  "title": "MenuLibre 2.2.2",
+  "url": "https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.2"
+ },
+ "2021-09-26-announce_catfish_4163_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: catfish 4.16.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001065.html"
+ },
+ "2021-09-26-announce_thunar_4176_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001066.html"
+ },
+ "2021-09-26-catfish_4.16.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "catfish (4.16.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.3-1/changelog"
+ },
+ "2021-09-26-menulibre_2.2.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "menulibre (2.2.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-1/changelog"
+ },
+ "2021-09-26-menulibre_223": {
+  "bucket": "sean",
+  "title": "MenuLibre 2.2.3",
+  "url": "https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.2.3"
+ },
+ "2021-09-26-menulibre_223_released": {
+  "bucket": "sean",
+  "title": "MenuLibre 2.2.3 Released",
+  "url": "https://seand.xyz/blog/2021/09/26/menulibre-2-2-2-release/"
+ },
+ "2021-09-29-announce_exo_4171_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.17.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-September/001067.html"
+ },
+ "2021-10-01-announce_xfce4-cpugraph-plugin_124_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpugraph-plugin 1.2.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-October/001068.html"
+ },
+ "2021-10-02-announce_xfdashboard_095_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.9.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-October/001069.html"
+ },
+ "2021-10-03-xubuntu_development_update_september_2021": {
+  "bucket": "sean",
+  "title": "Xubuntu Development Update September 2021",
+  "url": "https://seand.xyz/blog/2021/10/03/xubuntu-development-update-september-2021/"
+ },
+ "2021-10-09-announce_xfce4-cpugraph-plugin_125_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpugraph-plugin 1.2.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-October/001070.html"
+ },
+ "2021-10-11-announce_ristretto_0120_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: ristretto 0.12.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-October/001071.html"
+ },
+ "2021-10-13-announce_xfce4-whiskermenu-plugin_261_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.6.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-October/001072.html"
+ },
+ "2021-10-15-pidgin_1-2.14.7-2ubuntu1_jammy": {
+  "bucket": "xubuntu",
+  "title": "pidgin (1:2.14.7-2ubuntu1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.7-2ubuntu1/changelog"
+ },
+ "2021-10-15-xfce4-whiskermenu-plugin_2.6.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.6.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.1-1/changelog"
+ },
+ "2021-10-15-xubuntu_2110_released": {
+  "bucket": "xubuntu",
+  "title": "Xubuntu 21.10 released!",
+  "url": "https://xubuntu.org/news/xubuntu-21-10-released/"
+ },
+ "2021-10-16-announce_xfce4-terminal_090_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-terminal 0.9.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-October/001073.html"
+ },
+ "2021-10-17-xubuntu_2110_released": {
+  "bucket": "sean",
+  "title": "Xubuntu 21.10 Released",
+  "url": "https://seand.xyz/blog/2021/10/17/xubuntu-21-10-released/"
+ },
+ "2021-10-28-blueman_2.2.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.2.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.3-1/changelog"
+ },
+ "2021-11-04-xubuntu-artwork_22.04_jammy": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-artwork (22.04) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-artwork/xubuntu-artwork_22.04/changelog"
+ },
+ "2021-11-05-lightdm_1.30.0-0ubuntu5_jammy": {
+  "bucket": "xubuntu",
+  "title": "lightdm (1.30.0-0ubuntu5) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/l/lightdm/lightdm_1.30.0-0ubuntu5/changelog"
+ },
+ "2021-11-13-announce_xfce4-whiskermenu-plugin_262_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.6.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-November/001074.html"
+ },
+ "2021-11-14-xfce4-whiskermenu-plugin_2.6.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.6.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.6.2-1/changelog"
+ },
+ "2021-11-15-announce_xfce4-sensors-plugin_142_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-sensors-plugin 1.4.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-November/001075.html"
+ },
+ "2021-11-20-announce_xfce4-whiskermenu-plugin_270_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.7.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-November/001076.html"
+ },
+ "2021-11-21-xfce4-sensors-plugin_1.4.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-sensors-plugin (1.4.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.2-1/changelog"
+ },
+ "2021-11-22-announce_thunar_4177_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.7 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-November/001077.html"
+ },
+ "2021-11-26-announce_mousepad_058_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.8 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-November/001078.html"
+ },
+ "2021-11-26-announce_ristretto_0121_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: ristretto 0.12.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-November/001079.html"
+ },
+ "2021-11-27-mousepad_0.5.8-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.5.8-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.8-1/changelog"
+ },
+ "2021-11-29-ristretto_0.12.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "ristretto (0.12.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.12.1-1/changelog"
+ },
+ "2021-12-01-pidgin_1-2.14.8-1ubuntu1_jammy": {
+  "bucket": "xubuntu",
+  "title": "pidgin (1:2.14.8-1ubuntu1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.8-1ubuntu1/changelog"
+ },
+ "2021-12-03-thunar_4.16.10-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.16.10-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.16.10-1/changelog"
+ },
+ "2021-12-03-xfce4-cpugraph-plugin_1.2.5-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpugraph-plugin (1.2.5-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.5-1/changelog"
+ },
+ "2021-12-03-xfce4-whiskermenu-plugin_2.7.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.7.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.7.0-1/changelog"
+ },
+ "2021-12-07-announce_exo_4163_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: exo 4.16.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-December/001080.html"
+ },
+ "2021-12-09-announce_libxfce4ui_4172_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.17.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-December/001081.html"
+ },
+ "2021-12-10-announce_xfce4-terminal_091_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-terminal 0.9.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-December/001082.html"
+ },
+ "2021-12-11-announce_xfce4-whiskermenu-plugin_271_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-whiskermenu-plugin 2.7.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-December/001083.html"
+ },
+ "2021-12-12-mate-calc_1.26.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mate-calc (1.26.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mate-calc/mate-calc_1.26.0-1/changelog"
+ },
+ "2021-12-14-exo_4.16.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "exo (4.16.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.16.3-1/changelog"
+ },
+ "2021-12-14-xfce4-terminal_0.9.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-terminal (0.9.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_0.9.1-1/changelog"
+ },
+ "2021-12-14-xfce4-whiskermenu-plugin_2.7.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-whiskermenu-plugin (2.7.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin_2.7.1-1/changelog"
+ },
+ "2021-12-18-exo_4.17.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "exo (4.17.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.17.1-1/changelog"
+ },
+ "2021-12-19-thunar_4.17.7-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.17.7-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.17.7-1/changelog"
+ },
+ "2021-12-21-xfce4-sensors-plugin_1.4.2-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-sensors-plugin (1.4.2-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.2-2/changelog"
+ },
+ "2021-12-26-announce_libxfce4ui_4173_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.17.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2021-December/001084.html"
+ },
+ "2021-12-27-gimp_2.10.30-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.30-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.30-1/changelog"
+ },
+ "2022-01-01-announce_tumbler_4170_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: tumbler 4.17.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-January/001085.html"
+ },
+ "2022-01-08-announce_xfce4-indicator-plugin_241_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-indicator-plugin 2.4.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-January/001086.html"
+ },
+ "2022-01-11-xfce4-indicator-plugin_2.4.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-indicator-plugin (2.4.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-indicator-plugin/xfce4-indicator-plugin_2.4.1-1/changelog"
+ },
+ "2022-01-13-blueman_2.2.3-1build1_jammy": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.2.3-1build1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.3-1build1/changelog"
+ },
+ "2022-01-14-announce_ristretto_0122_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: ristretto 0.12.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-January/001087.html"
+ },
+ "2022-01-26-atril_1.26.0-1ubuntu1_jammy": {
+  "bucket": "xubuntu",
+  "title": "atril (1.26.0-1ubuntu1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/a/atril/atril_1.26.0-1ubuntu1/changelog"
+ },
+ "2022-01-26-engrampa_1.26.0-1ubuntu1_jammy": {
+  "bucket": "xubuntu",
+  "title": "engrampa (1.26.0-1ubuntu1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/engrampa/engrampa_1.26.0-1ubuntu1/changelog"
+ },
+ "2022-01-29-announce_xfce4-cpufreq-plugin_126_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpufreq-plugin 1.2.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-January/001088.html"
+ },
+ "2022-02-01-announce_xfce4-cpufreq-plugin_127_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpufreq-plugin 1.2.7 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-February/001089.html"
+ },
+ "2022-02-02-announce_xfce4-cpugraph-plugin_126_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-cpugraph-plugin 1.2.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-February/001090.html"
+ },
+ "2022-02-02-announce_xfce4-sensors-plugin_143_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-sensors-plugin 1.4.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-February/001091.html"
+ },
+ "2022-02-02-gimp_2.10.30-1build1_jammy": {
+  "bucket": "xubuntu",
+  "title": "gimp (2.10.30-1build1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/gimp/gimp_2.10.30-1build1/changelog"
+ },
+ "2022-02-06-pidgin_1-2.14.8-1ubuntu2_jammy": {
+  "bucket": "xubuntu",
+  "title": "pidgin (1:2.14.8-1ubuntu2) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_1:2.14.8-1ubuntu2/changelog"
+ },
+ "2022-02-07-xfce4-panel-profiles_1.0.13-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel-profiles (1.0.13-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel-profiles/xfce4-panel-profiles_1.0.13-1/changelog"
+ },
+ "2022-02-10-blueman_2.2.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.2.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.4-1/changelog"
+ },
+ "2022-02-11-announce_xfce4-notifyd_063_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-notifyd 0.6.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-February/001092.html"
+ },
+ "2022-02-14-sgt-puzzles_20191231.79a5378-4_unstable": {
+  "bucket": "xubuntu",
+  "title": "sgt-puzzles (20191231.79a5378-4) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-puzzles/sgt-puzzles_20191231.79a5378-4/changelog"
+ },
+ "2022-02-14-sgt-puzzles_20191231.79a5378-5_unstable": {
+  "bucket": "xubuntu",
+  "title": "sgt-puzzles (20191231.79a5378-5) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-puzzles/sgt-puzzles_20191231.79a5378-5/changelog"
+ },
+ "2022-02-15-ristretto_0.12.2-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "ristretto (0.12.2-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.12.2-1/changelog"
+ },
+ "2022-02-15-xfce4-cpufreq-plugin_1.2.7-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpufreq-plugin (1.2.7-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpufreq-plugin/xfce4-cpufreq-plugin_1.2.7-1/changelog"
+ },
+ "2022-02-15-xfce4-cpugraph-plugin_1.2.6-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-cpugraph-plugin (1.2.6-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-cpugraph-plugin/xfce4-cpugraph-plugin_1.2.6-1/changelog"
+ },
+ "2022-02-15-xfce4-notifyd_0.6.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-notifyd (0.6.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-notifyd/xfce4-notifyd_0.6.3-1/changelog"
+ },
+ "2022-02-15-xfce4-sensors-plugin_1.4.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-sensors-plugin (1.4.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-sensors-plugin/xfce4-sensors-plugin_1.4.3-1/changelog"
+ },
+ "2022-02-16-sgt-puzzles_20191231.79a5378-6_unstable": {
+  "bucket": "xubuntu",
+  "title": "sgt-puzzles (20191231.79a5378-6) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/s/sgt-puzzles/sgt-puzzles_20191231.79a5378-6/changelog"
+ },
+ "2022-02-18-unlock_multi-touch_gestures_in_xubuntu": {
+  "bucket": "sean",
+  "title": "Unlock Multi-Touch Gestures in Xubuntu",
+  "url": "https://seand.xyz/blog/2022/02/17/unlock-multi-touch-gestures-in-xubuntu/"
+ },
+ "2022-02-19-use_mainline_to_easily_upgrade_your_kernel": {
+  "bucket": "sean",
+  "title": "Use mainline to easily upgrade your kernel",
+  "url": "https://seand.xyz/blog/2022/02/18/use-mainline-to-easily-upgrade-your-kernel/"
+ },
+ "2022-02-21-announce_libxfce4ui_4174_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.17.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-February/001094.html"
+ },
+ "2022-02-21-announce_libxfce4util_4172_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4util 4.17.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-February/001093.html"
+ },
+ "2022-02-23-install_xubuntu_2004_2110_or_2204_on_raspberry_pi_4": {
+  "bucket": "sean",
+  "title": "Install Xubuntu 20.04, 21.10, or 22.04 on Raspberry Pi 4",
+  "url": "https://seand.xyz/blog/2022/02/22/install-xubuntu-2004-2110-or-2204-on-raspberry-pi-4/"
+ },
+ "2022-02-25-xubuntu_2204_community_wallpaper_contest": {
+  "bucket": "xubuntu",
+  "title": "Xubuntu 22.04 Community Wallpaper Contest",
+  "url": "https://xubuntu.org/news/xubuntu-22-04-community-wallpaper-contest/"
+ },
+ "2022-03-03-announce_xfce4-diskperf-plugin_270_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-diskperf-plugin 2.7.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-March/001095.html"
+ },
+ "2022-03-04-announce_xfce4-terminal_092_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-terminal 0.9.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-March/001097.html"
+ },
+ "2022-03-04-announce_xfdashboard_0990_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.9.90 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-March/001096.html"
+ },
+ "2022-03-06-announce_xfce4-screenshooter_1910_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-screenshooter 1.9.10 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-March/001098.html"
+ },
+ "2022-03-11-xfce_accepted_to_google_summer_of_code_2022": {
+  "bucket": "xfce",
+  "title": "Xfce accepted to Google Summer of Code 2022",
+  "url": "https://alexxcons.github.io/blogpost_4.html"
+ },
+ "2022-03-12-xfburn_0.6.2-1build1_jammy": {
+  "bucket": "xubuntu",
+  "title": "xfburn (0.6.2-1build1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfburn/xfburn_0.6.2-1build1/changelog"
+ },
+ "2022-03-12-xfce4-dict_0.8.4-1build1_jammy": {
+  "bucket": "xubuntu",
+  "title": "xfce4-dict (0.8.4-1build1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-dict/xfce4-dict_0.8.4-1build1/changelog"
+ },
+ "2022-03-12-xfce4-eyes-plugin_4.5.1-1build1_jammy": {
+  "bucket": "xubuntu",
+  "title": "xfce4-eyes-plugin (4.5.1-1build1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.5.1-1build1/changelog"
+ },
+ "2022-03-12-xfce4-mailwatch-plugin_1.3.0-0ubuntu2_jammy": {
+  "bucket": "xubuntu",
+  "title": "xfce4-mailwatch-plugin (1.3.0-0ubuntu2) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-mailwatch-plugin/xfce4-mailwatch-plugin_1.3.0-0ubuntu2/changelog"
+ },
+ "2022-03-12-xfce4-places-plugin_1.8.1-1build1_jammy": {
+  "bucket": "xubuntu",
+  "title": "xfce4-places-plugin (1.8.1-1build1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-places-plugin/xfce4-places-plugin_1.8.1-1build1/changelog"
+ },
+ "2022-03-12-xfce4-time-out-plugin_1.1.1-0ubuntu2_jammy": {
+  "bucket": "xubuntu",
+  "title": "xfce4-time-out-plugin (1.1.1-0ubuntu2) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.1-0ubuntu2/changelog"
+ },
+ "2022-03-15-announce_libxfce4ui_4175_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.17.5 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-March/001099.html"
+ },
+ "2022-03-17-announce_orage_4160_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: orage 4.16.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-March/001100.html"
+ },
+ "2022-03-18-xfce4-screenshooter_1.9.10-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-screenshooter (1.9.10-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-screenshooter/xfce4-screenshooter_1.9.10-1/changelog"
+ },
+ "2022-03-19-xubuntu-meta_2.240_jammy": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.240) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.240/changelog"
+ },
+ "2022-03-22-3230": {
+  "bucket": "xubuntu",
+  "title": "3.23.0",
+  "url": "https://github.com/shimmerproject/Greybird/releases/tag/v3.23.0"
+ },
+ "2022-03-23-3231": {
+  "bucket": "xubuntu",
+  "title": "3.23.1",
+  "url": "https://github.com/shimmerproject/Greybird/releases/tag/v3.23.1"
+ },
+ "2022-03-23-greybird-gtk-theme_3.23.1-0ubuntu1_jammy": {
+  "bucket": "xubuntu",
+  "title": "greybird-gtk-theme (3.23.1-0ubuntu1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-0ubuntu1/changelog"
+ },
+ "2022-03-24-016": {
+  "bucket": "xubuntu",
+  "title": "0.16",
+  "url": "https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16"
+ },
+ "2022-03-24-elementary-xfce_0.16-0ubuntu1_jammy": {
+  "bucket": "xubuntu",
+  "title": "elementary-xfce (0.16-0ubuntu1) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.16-0ubuntu1/changelog"
+ },
+ "2022-03-24-v016_016": {
+  "bucket": "xubuntu",
+  "title": "v0.16: 0.16",
+  "url": "https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.16"
+ },
+ "2022-03-28-elementary-xfce_0.16-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "elementary-xfce (0.16-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.16-1/changelog"
+ },
+ "2022-03-28-xubuntu-meta_2.241_jammy": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.241) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.241/changelog"
+ },
+ "2022-03-31-announce_libxfce4ui_4176_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: libxfce4ui 4.17.6 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-March/001101.html"
+ },
+ "2022-04-01-announce_mousepad_059_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.9 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001102.html"
+ },
+ "2022-04-01-announce_xfce4-terminal_100_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-terminal 1.0.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001103.html"
+ },
+ "2022-04-02-announce_thunar_41611_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.16.11 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001104.html"
+ },
+ "2022-04-02-announce_thunar_4178_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.8 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001105.html"
+ },
+ "2022-04-04-announce_xfce4-eyes-plugin_460_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-eyes-plugin 4.6.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001106.html"
+ },
+ "2022-04-10-xfce4-settings_4.16.2-1ubuntu2_jammy": {
+  "bucket": "xubuntu",
+  "title": "xfce4-settings (4.16.2-1ubuntu2) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-settings/xfce4-settings_4.16.2-1ubuntu2/changelog"
+ },
+ "2022-04-10-xubuntu-default-settings_22.04.0_jammy": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-default-settings (22.04.0) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-default-settings/xubuntu-default-settings_22.04.0/changelog"
+ },
+ "2022-04-12-greybird-gtk-theme_3.23.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "greybird-gtk-theme (3.23.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/greybird-gtk-theme/greybird-gtk-theme_3.23.1-1/changelog"
+ },
+ "2022-04-12-xubuntu-community-artwork_22.04.0_jammy": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-community-artwork (22.04.0) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-community-artwork/xubuntu-community-artwork_22.04.0/changelog"
+ },
+ "2022-04-13-announce_xfce4-terminal_101_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-terminal 1.0.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001107.html"
+ },
+ "2022-04-13-xubuntu-docs_22.04_jammy": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-docs (22.04) jammy",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-docs/xubuntu-docs_22.04/changelog"
+ },
+ "2022-04-16-announce_xfce4-panel_4164_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.16.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001109.html"
+ },
+ "2022-04-16-announce_xfce4-panel_4170_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.17.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001108.html"
+ },
+ "2022-04-18-the_road_to_new_xubuntu_docs": {
+  "bucket": "sean",
+  "title": "The Road to New Xubuntu Docs",
+  "url": "https://seand.xyz/blog/2022/4/15/the-road-to-new-xubuntu-docs/"
+ },
+ "2022-04-20-announce_xfce4-terminal_102_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-terminal 1.0.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001110.html"
+ },
+ "2022-04-20-xfce4-eyes-plugin_4.6.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-eyes-plugin (4.6.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-eyes-plugin/xfce4-eyes-plugin_4.6.0-1/changelog"
+ },
+ "2022-04-21-xubuntu_2204_community_wallpaper_contest_winners": {
+  "bucket": "xubuntu",
+  "title": "Xubuntu 22.04 Community Wallpaper Contest Winners",
+  "url": "https://xubuntu.org/news/xubuntu-22-04-community-wallpaper-contest-winners/"
+ },
+ "2022-04-21-xubuntu_2204_new_since_2110": {
+  "bucket": "sean",
+  "title": "Xubuntu 22.04: New Since 21.10",
+  "url": "https://seand.xyz/blog/2022/4/20/xubuntu-2204-released/"
+ },
+ "2022-04-21-xubuntu_2204_released": {
+  "bucket": "xubuntu",
+  "title": "Xubuntu 22.04 released!",
+  "url": "https://xubuntu.org/news/xubuntu-22-04-released/"
+ },
+ "2022-04-22-libxfce4ui_4.17.6-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4ui (4.17.6-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4ui/libxfce4ui_4.17.6-1/changelog"
+ },
+ "2022-04-22-libxfce4util_4.17.2-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "libxfce4util (4.17.2-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/libx/libxfce4util/libxfce4util_4.17.2-1/changelog"
+ },
+ "2022-04-22-xfce4-diskperf-plugin_2.7.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-diskperf-plugin (2.7.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-diskperf-plugin/xfce4-diskperf-plugin_2.7.0-1/changelog"
+ },
+ "2022-04-22-xfce4-panel_4.16.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.16.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.16.4-1/changelog"
+ },
+ "2022-04-23-mousepad_0.5.9-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.5.9-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.9-1/changelog"
+ },
+ "2022-04-26-xubuntu-meta_2.242_kinetic": {
+  "bucket": "xubuntu",
+  "title": "xubuntu-meta (2.242) kinetic",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xubuntu-meta/xubuntu-meta_2.242/changelog"
+ },
+ "2022-04-30-announce_thunar-archive-plugin_050_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar-archive-plugin 0.5.0 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-April/001111.html"
+ },
+ "2022-04-30-thunar_4.17.8-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.17.8-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.17.8-1/changelog"
+ },
+ "2022-05-11-pidgin_1-2.14.9-1ubuntu1_kinetic": {
+  "bucket": "xubuntu",
+  "title": "pidgin (1:2.14.9-1ubuntu1) kinetic",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-1ubuntu1/changelog"
+ },
+ "2022-05-13-xfce4-terminal_1.0.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-terminal (1.0.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.3-1/changelog"
+ },
+ "2022-05-17-pidgin_1-2.14.9-2ubuntu1_kinetic": {
+  "bucket": "xubuntu",
+  "title": "pidgin (1:2.14.9-2ubuntu1) kinetic",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.9-2ubuntu1/changelog"
+ },
+ "2022-05-24-xfce4-terminal_1.0.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-terminal (1.0.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-terminal/xfce4-terminal_1.0.4-1/changelog"
+ },
+ "2022-05-25-xfce4-taskmanager_1.5.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-taskmanager (1.5.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.3-1/changelog"
+ },
+ "2022-06-02-thunar-archive-plugin_0.5.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "thunar-archive-plugin (0.5.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar-archive-plugin/thunar-archive-plugin_0.5.0-1/changelog"
+ },
+ "2022-06-04-xfce4-taskmanager_1.5.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-taskmanager (1.5.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-taskmanager/xfce4-taskmanager_1.5.4-1/changelog"
+ },
+ "2022-06-10-blueman_2.2.5-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.2.5-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.2.5-1/changelog"
+ },
+ "2022-06-12-menulibre_230": {
+  "bucket": "sean",
+  "title": "MenuLibre 2.3.0",
+  "url": "https://github.com/bluesabre/menulibre/releases/tag/menulibre-2.3.0"
+ },
+ "2022-06-12-menulibre_230_released": {
+  "bucket": "sean",
+  "title": "MenuLibre 2.3.0 Released",
+  "url": "https://seand.xyz/blog/2022/6/12/menulibre-230-released/"
+ },
+ "2022-06-17-menulibre_2.2.2-2_unstable": {
+  "bucket": "xubuntu",
+  "title": "menulibre (2.2.2-2) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/menulibre/menulibre_2.2.2-2/changelog"
+ },
+ "2022-06-19-announce_tumbler_4172_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: tumbler 4.17.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-June/001122.html"
+ },
+ "2022-06-22-tumbler_4.17.2-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "tumbler (4.17.2-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/tumbler/tumbler_4.17.2-1/changelog"
+ },
+ "2022-06-24-darkbar_101_released": {
+  "bucket": "sean",
+  "title": "Darkbar 1.0.1 Released",
+  "url": "https://seand.xyz/blog/2022/6/22/darkbar-101-released/"
+ },
+ "2022-07-01-pidgin_1-2.14.10-1ubuntu1_kinetic": {
+  "bucket": "xubuntu",
+  "title": "pidgin (1:2.14.10-1ubuntu1) kinetic",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/p/pidgin/pidgin_2.14.10-1ubuntu1/changelog"
+ },
+ "2022-07-04-017": {
+  "bucket": "xubuntu",
+  "title": "0.17",
+  "url": "https://github.com/shimmerproject/elementary-xfce/releases/tag/v0.17"
+ },
+ "2022-07-05-announce_xfce4-settings_4163_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-settings 4.16.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001123.html"
+ },
+ "2022-07-05-blueman_2.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3-1/changelog"
+ },
+ "2022-07-05-elementary-xfce_0.17-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "elementary-xfce (0.17-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/elementary-xfce/elementary-xfce_0.17-1/changelog"
+ },
+ "2022-07-06-exo_4.17.2-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "exo (4.17.2-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/e/exo/exo_4.17.2-1/changelog"
+ },
+ "2022-07-06-xfce4-wavelan-plugin_0.6.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-wavelan-plugin (0.6.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-wavelan-plugin/xfce4-wavelan-plugin_0.6.3-1/changelog"
+ },
+ "2022-07-09-announce_mousepad_0510_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: mousepad 0.5.10 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001124.html"
+ },
+ "2022-07-09-announce_ristretto_0123_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: ristretto 0.12.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001126.html"
+ },
+ "2022-07-09-announce_thunar_4179_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: thunar 4.17.9 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001125.html"
+ },
+ "2022-07-10-announce_xfce4-panel_4172_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-panel 4.17.2 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001127.html"
+ },
+ "2022-07-11-announce_garcon_4171_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: garcon 4.17.1 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001128.html"
+ },
+ "2022-07-12-garcon_4.17.1-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "garcon (4.17.1-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/g/garcon/garcon_4.17.1-1/changelog"
+ },
+ "2022-07-12-mousepad_0.5.10-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "mousepad (0.5.10-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/m/mousepad/mousepad_0.5.10-1/changelog"
+ },
+ "2022-07-12-ristretto_0.12.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "ristretto (0.12.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/r/ristretto/ristretto_0.12.3-1/changelog"
+ },
+ "2022-07-12-xfce4-appfinder_4.17.0-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-appfinder (4.17.0-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-appfinder/xfce4-appfinder_4.17.0-1/changelog"
+ },
+ "2022-07-13-thunar_4.17.9-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "thunar (4.17.9-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/t/thunar/thunar_4.17.9-1/changelog"
+ },
+ "2022-07-14-announce_xfce4-xkb-plugin_083_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfce4-xkb-plugin 0.8.3 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001129.html"
+ },
+ "2022-07-14-xfce4-panel_4.17.2-1_experimental": {
+  "bucket": "xubuntu",
+  "title": "xfce4-panel (4.17.2-1) experimental",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-panel/xfce4-panel_4.17.2-1/changelog"
+ },
+ "2022-07-15-announce_xfdashboard_0991_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: xfdashboard 0.9.91 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001130.html"
+ },
+ "2022-07-17-announce_catfish_4164_released": {
+  "bucket": "xfce",
+  "title": "ANNOUNCE: catfish 4.16.4 released",
+  "url": "https://mail.xfce.org/pipermail/xfce-announce/2022-July/001131.html"
+ },
+ "2022-07-18-blueman_2.3.1-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "blueman (2.3.1-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/b/blueman/blueman_2.3.1-1/changelog"
+ },
+ "2022-07-19-xfce4-battery-plugin_1.1.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-battery-plugin (1.1.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-battery-plugin/xfce4-battery-plugin_1.1.4-1/changelog"
+ },
+ "2022-07-19-xfce4-netload-plugin_1.4.0-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-netload-plugin (1.4.0-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-netload-plugin/xfce4-netload-plugin_1.4.0-1/changelog"
+ },
+ "2022-07-19-xfce4-time-out-plugin_1.1.2-0ubuntu1_devel": {
+  "bucket": "xubuntu",
+  "title": "xfce4-time-out-plugin (1.1.2-0ubuntu1) devel",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-time-out-plugin/xfce4-time-out-plugin_1.1.2-0ubuntu1/changelog"
+ },
+ "2022-07-19-xfce4-xkb-plugin_1-0.8.3-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "xfce4-xkb-plugin (1:0.8.3-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/x/xfce4-xkb-plugin/xfce4-xkb-plugin_0.8.3-1/changelog"
+ },
+ "2022-07-24-catfish_4.16.4-1_unstable": {
+  "bucket": "xubuntu",
+  "title": "catfish (4.16.4-1) unstable",
+  "url": "http://changelogs.ubuntu.com/changelogs/pool/universe/c/catfish/catfish_4.16.4-1/changelog"
+ }
+}

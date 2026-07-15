@@ -34,21 +34,6 @@ permalink: /404.html
         {% include pb-footer.html tagline="No signal received." %}
     </div>
 
-    <script>
-    (function () {
-        var banners = {
-            xfce:    { url: "https://xfce.org",     label: "Xfce" },
-            xubuntu: { url: "https://xubuntu.org",  label: "Xubuntu" },
-            sean:    { url: "https://seand.xyz", label: "Sean's site (seand.xyz)" }
-        };
-        var params = new URLSearchParams(window.location.search);
-        var bucket = banners[params.get("from")];
-        if (bucket) {
-            document.getElementById("redirect-banner-text").innerHTML =
-                "You may be looking for this: <a href=\"" + bucket.url + "\">" + bucket.label + "</a>.";
-            document.getElementById("redirect-banner").hidden = false;
-        }
-    })();
-    </script>
+    {% include pb-redirect-script.html %}
 </body>
 </html>
