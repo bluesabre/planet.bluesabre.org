@@ -5,9 +5,9 @@ timezone: America/New_York
 
 markdown: kramdown
 highlighter: rouge
-domain_name: "https://planet.bluesabre.org"
+domain_name: "https://planetbluesabre.seand.xyz"
 
-url: "https://planet.bluesabre.org"
+url: "https://planetbluesabre.seand.xyz"
 author: "Sean Davis"
 
 exclude:
